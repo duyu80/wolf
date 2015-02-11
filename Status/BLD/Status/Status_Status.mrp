@@ -1,0 +1,539 @@
+             Lattice Mapping Report File for Design Module 'TOP'
+
+Design Information
+------------------
+
+Command line:   map -a MachXO2 -p LCMXO2-2000HC -t TQFP144 -s 4 -oc Commercial
+     Status_Status.ngd -o Status_Status_map.ncd -pr Status_Status.prf -mp
+     Status_Status.mrp -lpf
+     F:/project/wolf/Status/BLD/Status/Status_Status_synplify.lpf -lpf
+     F:/project/wolf/Status/BLD/../SRC/Status.lpf -c 0 -gui
+Target Vendor:  LATTICE
+Target Device:  LCMXO2-2000HCTQFP144
+Target Performance:   4
+Mapper:  xo2c00,  version:  Diamond (64-bit) 3.2.0.134
+Mapped on:  11/07/14  15:34:29
+
+Design Summary
+--------------
+
+   Number of registers:    550 out of  2448 (22%)
+      PFU registers:          474 out of  2112 (22%)
+      PIO registers:           76 out of   336 (23%)
+   Number of SLICEs:       368 out of  1056 (35%)
+      SLICEs as Logic/ROM:    368 out of  1056 (35%)
+      SLICEs as RAM:            0 out of   792 (0%)
+      SLICEs as Carry:         96 out of  1056 (9%)
+   Number of LUT4s:        732 out of  2112 (35%)
+      Number of logic LUTs:      540
+      Number of distributed RAM:   0 (0 LUT4s)
+      Number of ripple logic:     96 (192 LUT4s)
+      Number of shift registers:   0
+   Number of PIO sites used: 88 + 4(JTAG) out of 112 (82%)
+   Number of block RAMs:  0 out of 8 (0%)
+   Number of GSRs:  1 out of 1 (100%)
+   EFB used :       No
+   JTAG used :      No
+   Readback used :  No
+   Oscillator used :  No
+   Startup used :   No
+   POR :            On
+   Bandgap :        On
+   Number of Power Controller:  0 out of 1 (0%)
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 6 (0%)
+   Number of Dynamic Bank Controller (BCLVDSO):  0 out of 1 (0%)
+   Number of DCCA:  0 out of 8 (0%)
+   Number of DCMA:  0 out of 2 (0%)
+   Number of PLLs:  0 out of 1 (0%)
+   Number of DQSDLLs:  0 out of 2 (0%)
+   Number of CLKDIVC:  0 out of 4 (0%)
+   Number of ECLKSYNCA:  0 out of 4 (0%)
+   Number of ECLKBRIDGECS:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of
+     distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and
+     ripple logic.
+   Number of clocks:  2
+     Net SYSCLK_c: 327 loads, 323 rising, 4 falling (Driver: PIO SYSCLK )
+     Net I2C_INST/N_14_i: 4 loads, 4 rising, 0 falling (Driver:
+     I2C_INST/CNT8_RNIR9LQ )
+
+                                    Page 1
+
+
+
+
+Design:  TOP                                           Date:  11/07/14  15:34:29
+
+Design Summary (cont)
+---------------------
+   Number of Clock Enables:  39
+     Net SGPIO_INST1.STATE[4]: 36 loads, 0 LSLICEs
+     Net I2C_INST/N_21: 1 loads, 1 LSLICEs
+     Net RESET_N_c: 2 loads, 2 LSLICEs
+     Net I2C_INST/SCL_NCLK: 1 loads, 1 LSLICEs
+     Net I2C_INST/N_19: 4 loads, 4 LSLICEs
+     Net I2C_INST/un9_LOC_i: 5 loads, 5 LSLICEs
+     Net I2C_INST/un7_SHIFT_DIN_i: 4 loads, 4 LSLICEs
+     Net I2C_INST/SCL_PCLKD2: 1 loads, 1 LSLICEs
+     Net I2C_INST/RD_END2: 4 loads, 4 LSLICEs
+     Net I2C_INST/N_27: 1 loads, 1 LSLICEs
+     Net I2C_INST/un1_DOUT_0_a2_0_a3: 4 loads, 4 LSLICEs
+     Net I2C_INST/N_29: 2 loads, 2 LSLICEs
+     Net I2C_INST/un2_RD_WR_0_a2_0_a3: 1 loads, 1 LSLICEs
+     Net N_67_i: 1 loads, 0 LSLICEs
+     Net SGPIO_INST2/N_30_i: 4 loads, 4 LSLICEs
+     Net SGPIO_INST2.STATE[4]: 36 loads, 0 LSLICEs
+     Net SGPIO_INST2/un7_CNT_i: 13 loads, 13 LSLICEs
+     Net SGPIO_INST2/N_153_i: 18 loads, 18 LSLICEs
+     Net SGPIO_INST1/N_61_i: 4 loads, 4 LSLICEs
+     Net SGPIO_INST1/un7_CNT_i: 13 loads, 13 LSLICEs
+     Net SGPIO_INST1/N_153_i: 18 loads, 18 LSLICEs
+     Net HEADER_INST/N_12_i: 2 loads, 2 LSLICEs
+     Net GPIO_INST/N_278_i: 4 loads, 4 LSLICEs
+     Net GPIO_INST/un1_GPO_F_0_a2: 4 loads, 4 LSLICEs
+     Net GPIO_INST/un1_GPO_E_0_a2: 4 loads, 4 LSLICEs
+     Net GPIO_INST/un1_GPO_D_0_a2: 4 loads, 4 LSLICEs
+     Net GPIO_INST/un1_GPO_C_0_a2: 4 loads, 4 LSLICEs
+     Net GPIO_INST/un1_GPO_B_0_a2: 4 loads, 4 LSLICEs
+     Net GPIO_INST/un1_GPO_A: 4 loads, 4 LSLICEs
+     Net GPIO_INST/un1_GPO_9_0_a2: 4 loads, 4 LSLICEs
+     Net GPIO_INST/un1_GPO_8_0_a2: 4 loads, 4 LSLICEs
+     Net GPIO_INST/un1_GPO_7_0_a2: 4 loads, 4 LSLICEs
+     Net GPIO_INST/un1_GPO_6_0_a2: 4 loads, 4 LSLICEs
+     Net GPIO_INST/un1_GPO_5: 4 loads, 4 LSLICEs
+     Net GPIO_INST/un1_GPO_4_0_a2: 4 loads, 4 LSLICEs
+     Net GPIO_INST/un1_GPO_3_0_a2: 4 loads, 4 LSLICEs
+     Net GPIO_INST/un1_GPO_2_0_a2: 4 loads, 4 LSLICEs
+     Net GPIO_INST/un1_GPO_1: 4 loads, 4 LSLICEs
+     Net GPIO_INST/un1_GPO_0_0_a2: 4 loads, 4 LSLICEs
+   Number of local set/reset loads for net RESET_N_c merged into GSR:  540
+   Number of LSRs:  0
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net SGPIO_INST1.STATE[4]: 75 loads
+     Net SGPIO_INST2.STATE[4]: 75 loads
+     Net SGPIO_INST1/STATE[0]: 38 loads
+     Net SGPIO_INST2/STATE[0]: 38 loads
+     Net RD_WR: 36 loads
+     Net SGPIO_INST1/STATE_i[0]: 26 loads
+     Net SGPIO_INST2/STATE_i[0]: 26 loads
+     Net PORT_CS[1]: 18 loads
+     Net SGPIO_INST1/N_153_i: 18 loads
+     Net SGPIO_INST2/N_153_i: 18 loads
+
+
+
+                                    Page 2
+
+
+
+
+Design:  TOP                                           Date:  11/07/14  15:34:29
+
+
+
+
+   Number of warnings:  1
+   Number of errors:    0
+
+Design Errors/Warnings
+----------------------
+
+WARNING - map: Using local reset signal 'RESET_N_c' to infer global GSR net.
+
+IO (PIO) Attributes
+-------------------
+
++---------------------+-----------+-----------+------------+
+| IO Name             | Direction | Levelmode | IO         |
+|                     |           |  IO_TYPE  | Register   |
++---------------------+-----------+-----------+------------+
+| SDA                 | BIDIR     | LVCMOS33  | IN         |
++---------------------+-----------+-----------+------------+
+| DRV1_ACT_LED_CATH_L | OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| SYSCLK              | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV_ACT_LED_EN_L    | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| SGPIO_DATA2         | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| SGPIO_LD2           | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| SGPIO_CK2           | INPUT     | LVCMOS33  | IN         |
++---------------------+-----------+-----------+------------+
+| SGPIO_DATA1         | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| SGPIO_LD1           | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| SGPIO_CK1           | INPUT     | LVCMOS33  | IN         |
++---------------------+-----------+-----------+------------+
+| DRV_FLT_AMBER_LED_L | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| COM_FLT_AMBER_LED_L | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| COVER_OPEN_AMBER_LED_L| OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| SES_INENT_BLUE_LED_L| OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| SES_FLT_AMBER_LED_L | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV72_ACT_LED_CATH_L| OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| DRV71_ACT_LED_CATH_L| OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| DRV70_ACT_LED_CATH_L| OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| DRV69_ACT_LED_CATH_L| OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| DRV68_ACT_LED_CATH_L| OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+
+                                    Page 3
+
+
+
+
+Design:  TOP                                           Date:  11/07/14  15:34:29
+
+IO (PIO) Attributes (cont)
+--------------------------
+| DRV67_ACT_LED_CATH_L| OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| DRV66_ACT_LED_CATH_L| OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| DRV65_ACT_LED_CATH_L| OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| DRV64_ACT_LED_CATH_L| OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| DRV63_ACT_LED_CATH_L| OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| DRV62_ACT_LED_CATH_L| OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| DRV61_ACT_LED_CATH_L| OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| DRV60_ACT_LED_CATH_L| OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| DRV59_ACT_LED_CATH_L| OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| DRV58_ACT_LED_CATH_L| OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| DRV57_ACT_LED_CATH_L| OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| DRV56_ACT_LED_CATH_L| OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| DRV55_ACT_LED_CATH_L| OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| DRV54_ACT_LED_CATH_L| OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| DRV53_ACT_LED_CATH_L| OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| DRV52_ACT_LED_CATH_L| OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| DRV51_ACT_LED_CATH_L| OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| DRV50_ACT_LED_CATH_L| OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| DRV49_ACT_LED_CATH_L| OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| DRV48_ACT_LED_CATH_L| OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| DRV47_ACT_LED_CATH_L| OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| DRV46_ACT_LED_CATH_L| OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| DRV45_ACT_LED_CATH_L| OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| DRV44_ACT_LED_CATH_L| OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| DRV43_ACT_LED_CATH_L| OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| DRV42_ACT_LED_CATH_L| OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| DRV41_ACT_LED_CATH_L| OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| DRV40_ACT_LED_CATH_L| OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+
+                                    Page 4
+
+
+
+
+Design:  TOP                                           Date:  11/07/14  15:34:29
+
+IO (PIO) Attributes (cont)
+--------------------------
+| DRV39_ACT_LED_CATH_L| OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| DRV38_ACT_LED_CATH_L| OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| DRV37_ACT_LED_CATH_L| OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| DRV36_ACT_LED_CATH_L| OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| DRV35_ACT_LED_CATH_L| OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| DRV34_ACT_LED_CATH_L| OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| DRV33_ACT_LED_CATH_L| OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| DRV32_ACT_LED_CATH_L| OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| DRV31_ACT_LED_CATH_L| OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| DRV30_ACT_LED_CATH_L| OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| DRV29_ACT_LED_CATH_L| OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| DRV28_ACT_LED_CATH_L| OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| DRV27_ACT_LED_CATH_L| OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| DRV26_ACT_LED_CATH_L| OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| DRV25_ACT_LED_CATH_L| OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| DRV24_ACT_LED_CATH_L| OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| DRV23_ACT_LED_CATH_L| OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| DRV22_ACT_LED_CATH_L| OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| DRV21_ACT_LED_CATH_L| OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| DRV20_ACT_LED_CATH_L| OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| DRV19_ACT_LED_CATH_L| OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| DRV18_ACT_LED_CATH_L| OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| DRV17_ACT_LED_CATH_L| OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| DRV16_ACT_LED_CATH_L| OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| DRV15_ACT_LED_CATH_L| OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| DRV14_ACT_LED_CATH_L| OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| DRV13_ACT_LED_CATH_L| OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| DRV12_ACT_LED_CATH_L| OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+
+                                    Page 5
+
+
+
+
+Design:  TOP                                           Date:  11/07/14  15:34:29
+
+IO (PIO) Attributes (cont)
+--------------------------
+| DRV11_ACT_LED_CATH_L| OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| DRV10_ACT_LED_CATH_L| OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| DRV9_ACT_LED_CATH_L | OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| DRV8_ACT_LED_CATH_L | OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| DRV7_ACT_LED_CATH_L | OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| DRV6_ACT_LED_CATH_L | OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| DRV5_ACT_LED_CATH_L | OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| DRV4_ACT_LED_CATH_L | OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| DRV3_ACT_LED_CATH_L | OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| DRV2_ACT_LED_CATH_L | OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| SCL                 | INPUT     | LVCMOS33  | IN         |
++---------------------+-----------+-----------+------------+
+| RESET_N             | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+
+Removed logic
+-------------
+
+Block VCC undriven or does not drive anything - clipped.
+Block GPIO_INST/GND undriven or does not drive anything - clipped.
+Block GPIO_INST/VCC undriven or does not drive anything - clipped.
+Block LED_INST/GND undriven or does not drive anything - clipped.
+Block HEADER_INST/GND undriven or does not drive anything - clipped.
+Block HEADER_INST/VCC undriven or does not drive anything - clipped.
+Block SGPIO_INST1/VCC undriven or does not drive anything - clipped.
+Block SGPIO_INST2/VCC undriven or does not drive anything - clipped.
+Signal RESET_N_c_i was merged into signal RESET_N_c
+Signal I2C_INST/CN was merged into signal SYSCLK_c
+Signal LED_CNT_INST/GND undriven or does not drive anything - clipped.
+Signal SGPIO_INST1/GND undriven or does not drive anything - clipped.
+Signal SGPIO_INST2/GND undriven or does not drive anything - clipped.
+Signal I2C_INST/GND undriven or does not drive anything - clipped.
+Signal VCC undriven or does not drive anything - clipped.
+Signal LED_CNT_INST/un5_CNT_1_s_23_0_S1 undriven or does not drive anything -
+     clipped.
+Signal LED_CNT_INST/un5_CNT_1_s_23_0_COUT undriven or does not drive anything -
+     clipped.
+Signal LED_CNT_INST/un3_CNT_500MS_1_cry_0_0_S1 undriven or does not drive
+     anything - clipped.
+Signal LED_CNT_INST/un3_CNT_500MS_1_cry_0_0_S0 undriven or does not drive
+     anything - clipped.
+Signal LED_CNT_INST/N_2 undriven or does not drive anything - clipped.
+Signal LED_CNT_INST/un3_CNT_500MS_1_s_23_0_S1 undriven or does not drive
+     anything - clipped.
+Signal LED_CNT_INST/un3_CNT_500MS_1_s_23_0_COUT undriven or does not drive
+     anything - clipped.
+
+                                    Page 6
+
+
+
+
+Design:  TOP                                           Date:  11/07/14  15:34:29
+
+Removed logic (cont)
+--------------------
+Signal LED_CNT_INST/un6_CNT_3500MS_1_cry_0_0_S1 undriven or does not drive
+     anything - clipped.
+Signal LED_CNT_INST/un6_CNT_3500MS_1_cry_0_0_S0 undriven or does not drive
+     anything - clipped.
+Signal LED_CNT_INST/N_3 undriven or does not drive anything - clipped.
+Signal LED_CNT_INST/un6_CNT_3500MS_1_s_25_0_S1 undriven or does not drive
+     anything - clipped.
+Signal LED_CNT_INST/un6_CNT_3500MS_1_s_25_0_COUT undriven or does not drive
+     anything - clipped.
+Signal LED_CNT_INST/un5_CNT_07S_1_cry_0_0_S1 undriven or does not drive anything
+     - clipped.
+Signal LED_CNT_INST/un5_CNT_07S_1_cry_0_0_S0 undriven or does not drive anything
+     - clipped.
+Signal LED_CNT_INST/N_4 undriven or does not drive anything - clipped.
+Signal LED_CNT_INST/un5_CNT_07S_1_cry_21_0_COUT undriven or does not drive
+     anything - clipped.
+Signal LED_CNT_INST/un5_CNT_1_cry_0_0_S1 undriven or does not drive anything -
+     clipped.
+Signal LED_CNT_INST/un5_CNT_1_cry_0_0_S0 undriven or does not drive anything -
+     clipped.
+Signal LED_CNT_INST/N_1 undriven or does not drive anything - clipped.
+Signal SGPIO_INST1/HDD_CNT_cry_0_S0[0] undriven or does not drive anything -
+     clipped.
+Signal SGPIO_INST1/N_73 undriven or does not drive anything - clipped.
+Signal SGPIO_INST1/HDD_CNT_s_0_S1[5] undriven or does not drive anything -
+     clipped.
+Signal SGPIO_INST1/HDD_CNT_s_0_COUT[5] undriven or does not drive anything -
+     clipped.
+Signal SGPIO_INST1/CNT_cry_0_S0[0] undriven or does not drive anything -
+     clipped.
+Signal SGPIO_INST1/N_74 undriven or does not drive anything - clipped.
+Signal SGPIO_INST1/CNT_cry_0_COUT[23] undriven or does not drive anything -
+     clipped.
+Signal SGPIO_INST2/HDD_CNT_cry_0_S0_0[0] undriven or does not drive anything -
+     clipped.
+Signal SGPIO_INST2/N_73 undriven or does not drive anything - clipped.
+Signal SGPIO_INST2/HDD_CNT_s_0_S1_0[5] undriven or does not drive anything -
+     clipped.
+Signal SGPIO_INST2/HDD_CNT_s_0_COUT_0[5] undriven or does not drive anything -
+     clipped.
+Signal SGPIO_INST2/CNT_cry_0_S0_0[0] undriven or does not drive anything -
+     clipped.
+Signal SGPIO_INST2/N_74 undriven or does not drive anything - clipped.
+Signal SGPIO_INST2/CNT_cry_0_COUT_0[23] undriven or does not drive anything -
+     clipped.
+Signal I2C_INST/LOC_cry_0_S0[0] undriven or does not drive anything - clipped.
+Signal I2C_INST/N_1 undriven or does not drive anything - clipped.
+Signal I2C_INST/LOC_s_0_S1[7] undriven or does not drive anything - clipped.
+Signal I2C_INST/LOC_s_0_COUT[7] undriven or does not drive anything - clipped.
+Signal I2C_INST/un1_REG_DIN_1_cry_0_0_S1 undriven or does not drive anything -
+     clipped.
+Signal I2C_INST/un1_REG_DIN_1_cry_0_0_S0 undriven or does not drive anything -
+     clipped.
+Signal I2C_INST/N_2 undriven or does not drive anything - clipped.
+Signal I2C_INST/un1_REG_DIN_1_s_7_0_S1 undriven or does not drive anything -
+     clipped.
+
+                                    Page 7
+
+
+
+
+Design:  TOP                                           Date:  11/07/14  15:34:29
+
+Removed logic (cont)
+--------------------
+Signal I2C_INST/un1_REG_DIN_1_s_7_0_COUT undriven or does not drive anything -
+     clipped.
+Block RESET_N_pad_RNI43B3 was optimized away.
+Block I2C_INST/REG_DIN_7_.CN was optimized away.
+Block LED_CNT_INST/GND was optimized away.
+Block SGPIO_INST1/GND was optimized away.
+Block SGPIO_INST2/GND was optimized away.
+Block I2C_INST/GND was optimized away.
+
+Memory Usage
+------------
+
+
+GSR Usage
+---------
+
+GSR Component:
+   The local reset signal 'RESET_N_c' of the design has been inferred as Global
+        Set Reset (GSR). The reset signal used for GSR control is 'RESET_N_c'.
+
+GSR Property:
+   The design components with GSR property set to ENABLED will respond to global
+        set reset while the components with GSR property set to DISABLED will
+        not.
+
+Components on inferred reset domain with GSR Property disabled
+--------------------------------------------------------------
+
+These components have the GSR property set to DISABLED and are on the inferred
+     reset domain. The components will respond to the reset signal 'RESET_N_c'
+     via the local reset on the component and not the GSR component.
+
+Type and number of components of the type:
+   Register = 2
+
+Type and instance name of component:
+   Register : I2C_INST/SCL_PCLK
+   Register : I2C_INST/SCL_NCLK
+
+Run Time and Memory Usage
+-------------------------
+
+   Total CPU Time: 1 secs
+   Total REAL Time: 2 secs
+   Peak Memory Usage: 54 MB
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    Page 8
+
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995
+     AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent
+     Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems
+     All rights reserved.
+Copyright (c) 2002-2014 Lattice Semiconductor
+     Corporation,  All rights reserved.

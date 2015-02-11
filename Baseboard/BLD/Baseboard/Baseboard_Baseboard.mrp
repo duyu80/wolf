@@ -1,0 +1,1331 @@
+            Lattice Mapping Report File for Design Module 'BB_TOP'
+
+Design Information
+------------------
+
+Command line:   map -a MachXO2 -p LCMXO2-7000HC -t FPBGA484 -s 4 -oc Commercial
+     Baseboard_Baseboard.ngd -o Baseboard_Baseboard_map.ncd -pr
+     Baseboard_Baseboard.prf -mp Baseboard_Baseboard.mrp -lpf
+     F:/project/wolf/Baseboard/BLD/Baseboard/Baseboard_Baseboard_synplify.lpf
+     -lpf F:/project/wolf/Baseboard/BLD/../SRC/Baseboard.lpf -c 0 -gui
+Target Vendor:  LATTICE
+Target Device:  LCMXO2-7000HCFPBGA484
+Target Performance:   4
+Mapper:  xo2c00,  version:  Diamond (64-bit) 3.2.0.134
+Mapped on:  11/09/14  21:27:53
+
+Design Summary
+--------------
+
+   Number of registers:   1436 out of  7869 (18%)
+      PFU registers:         1358 out of  6864 (20%)
+      PIO registers:           78 out of  1005 (8%)
+   Number of SLICEs:      1634 out of  3432 (48%)
+      SLICEs as Logic/ROM:   1634 out of  3432 (48%)
+      SLICEs as RAM:            0 out of  2574 (0%)
+      SLICEs as Carry:        106 out of  3432 (3%)
+   Number of LUT4s:        3261 out of  6864 (48%)
+      Number of logic LUTs:      3049
+      Number of distributed RAM:   0 (0 LUT4s)
+      Number of ripple logic:    106 (212 LUT4s)
+      Number of shift registers:   0
+   Number of PIO sites used: 278 + 4(JTAG) out of 335 (84%)
+   Number of block RAMs:  0 out of 26 (0%)
+   Number of GSRs:  1 out of 1 (100%)
+   EFB used :       No
+   JTAG used :      No
+   Readback used :  No
+   Oscillator used :  No
+   Startup used :   No
+   POR :            On
+   Bandgap :        On
+   Number of Power Controller:  0 out of 1 (0%)
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 6 (0%)
+   Number of Dynamic Bank Controller (BCLVDSO):  0 out of 1 (0%)
+   Number of DCCA:  0 out of 8 (0%)
+   Number of DCMA:  0 out of 2 (0%)
+   Number of PLLs:  0 out of 2 (0%)
+   Number of DQSDLLs:  0 out of 2 (0%)
+   Number of CLKDIVC:  0 out of 4 (0%)
+   Number of ECLKSYNCA:  0 out of 4 (0%)
+   Number of ECLKBRIDGECS:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of
+     distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and
+     ripple logic.
+   Number of clocks:  3
+     Net SYSCLK_c: 785 loads, 777 rising, 8 falling (Driver: PIO SYSCLK )
+     Net I2C_INS_2/un1_DOUT_1: 4 loads, 4 rising, 0 falling (Driver:
+     I2C_INS_2/un1_DOUT_0_a2_0_a3_1 )
+
+                                    Page 1
+
+
+
+
+Design:  BB_TOP                                        Date:  11/09/14  21:27:53
+
+Design Summary (cont)
+---------------------
+     Net I2C_INS_1/un1_DOUT_1: 4 loads, 4 rising, 0 falling (Driver:
+     I2C_INS_1/un1_DOUT_0_a2_0_a3_1 )
+   Number of Clock Enables:  148
+     Net N_170_i: 1 loads, 0 LSLICEs
+     Net PRSNT_LED_CTRL_INST.un3_CNT_i: 54 loads, 18 LSLICEs
+     Net I2C_INS_2/N_28: 4 loads, 4 LSLICEs
+     Net I2C_INS_2/SDA_OE_i_RNO: 1 loads, 1 LSLICEs
+     Net I2C_INS_2/un9_LOC_i: 5 loads, 5 LSLICEs
+     Net I2C_INS_2/un7_SHIFT_DIN_i: 4 loads, 4 LSLICEs
+     Net I2C_INS_2/SCL_NCLK: 1 loads, 1 LSLICEs
+     Net I2C_INS_2/SCL_PCLKD2: 1 loads, 1 LSLICEs
+     Net RESET_N_c: 4 loads, 4 LSLICEs
+     Net I2C_INS_2/RD_END2: 4 loads, 4 LSLICEs
+     Net I2C_INS_2/N_36: 1 loads, 1 LSLICEs
+     Net I2C_INS_2/un1_DOUT_0_a2_0_a3_0: 4 loads, 4 LSLICEs
+     Net I2C_INS_2/N_38: 2 loads, 2 LSLICEs
+     Net I2C_INS_2/un2_RD_WR_0_a2_0_a3_0: 1 loads, 1 LSLICEs
+     Net N_2145_i: 1 loads, 0 LSLICEs
+     Net I2C_INS_1/SCL_NCLK: 1 loads, 1 LSLICEs
+     Net I2C_INS_1/SCL_D2_RNIE4DF: 4 loads, 4 LSLICEs
+     Net I2C_INS_1/N_25: 1 loads, 1 LSLICEs
+     Net I2C_INS_1/un9_LOC_i: 5 loads, 5 LSLICEs
+     Net I2C_INS_1/un7_SHIFT_DIN_i: 4 loads, 4 LSLICEs
+     Net I2C_INS_1/SCL_PCLKD2: 1 loads, 1 LSLICEs
+     Net I2C_INS_1/RD_END2: 4 loads, 4 LSLICEs
+     Net I2C_INS_1/un5_RD_WR_i_0_0: 1 loads, 1 LSLICEs
+     Net I2C_INS_1/un1_DOUT_0_a2_0_a3: 4 loads, 4 LSLICEs
+     Net I2C_INS_1/un7_CNT_i_0_0: 2 loads, 2 LSLICEs
+     Net I2C_INS_1/un2_RD_WR_0_a2_0_a3: 1 loads, 1 LSLICEs
+     Net N_1724_i: 1 loads, 0 LSLICEs
+     Net BB_SGPIO_INST/N_163_i: 4 loads, 4 LSLICEs
+     Net BB_SGPIO_INST/N_41_i: 18 loads, 18 LSLICEs
+     Net un1_STATE_9_i_i: 1 loads, 0 LSLICEs
+     Net GPOA_INST/N_21: 4 loads, 4 LSLICEs
+     Net GPOA_INST/N_267: 4 loads, 4 LSLICEs
+     Net GPOA_INST/un27_DO6_i_o2_RNIRT8I1: 4 loads, 4 LSLICEs
+     Net GPOA_INST/un27_DO5_i: 4 loads, 4 LSLICEs
+     Net GPOA_INST/un10_DOUT2_i_i_a2: 4 loads, 4 LSLICEs
+     Net GPOA_INST/N_16_i: 4 loads, 4 LSLICEs
+     Net GPOA_INST/N_269: 4 loads, 4 LSLICEs
+     Net GPOA_INST/un27_DO8_i_0_0: 4 loads, 4 LSLICEs
+     Net GPOA_INST/un27_DO7_i_0: 4 loads, 4 LSLICEs
+     Net GPOA_INST/un27_DO2_i_0: 4 loads, 4 LSLICEs
+     Net GPOA_INST/un27_DO1_i_0_1: 4 loads, 4 LSLICEs
+     Net GPOA_INST/N_11: 4 loads, 4 LSLICEs
+     Net GPOA_INST/N_9: 4 loads, 4 LSLICEs
+     Net GPOA_INST/un27_DO13_i_0_0: 4 loads, 4 LSLICEs
+     Net GPOA_INST/N_7: 4 loads, 4 LSLICEs
+     Net GPOA_INST/N_5: 4 loads, 4 LSLICEs
+     Net GPOA_INST/un27_DO10_i_0_0: 4 loads, 4 LSLICEs
+     Net GPOA_INST/un27_DO0_i_0: 4 loads, 4 LSLICEs
+     Net GPI9_INST/N_174: 1 loads, 1 LSLICEs
+     Net GPI9_INST/N_460: 1 loads, 1 LSLICEs
+     Net GPI8_INST/un1_DOUT2_i_i_a3: 1 loads, 1 LSLICEs
+     Net GPI8_INST/N_459: 1 loads, 1 LSLICEs
+     Net GPO7_INST/N_59_i: 4 loads, 4 LSLICEs
+
+                                    Page 2
+
+
+
+
+Design:  BB_TOP                                        Date:  11/09/14  21:27:53
+
+Design Summary (cont)
+---------------------
+     Net GPO7_INST/N_620: 4 loads, 4 LSLICEs
+     Net GPO7_INST/un27_DO9_i_0_0: 4 loads, 4 LSLICEs
+     Net GPO7_INST/N_22: 4 loads, 4 LSLICEs
+     Net GPO7_INST/N_19: 4 loads, 4 LSLICEs
+     Net GPO7_INST/N_16: 4 loads, 4 LSLICEs
+     Net GPO7_INST/N_13: 4 loads, 4 LSLICEs
+     Net GPO7_INST/N_10: 4 loads, 4 LSLICEs
+     Net GPO7_INST/N_7: 4 loads, 4 LSLICEs
+     Net GPO7_INST/N_4: 4 loads, 4 LSLICEs
+     Net GPO7_INST/un27_DO1_i_0_0: 4 loads, 4 LSLICEs
+     Net GPO7_INST/N_36: 4 loads, 4 LSLICEs
+     Net GPO7_INST/N_34: 4 loads, 4 LSLICEs
+     Net GPO7_INST/N_31: 4 loads, 4 LSLICEs
+     Net GPO7_INST/N_28: 4 loads, 4 LSLICEs
+     Net GPO7_INST/N_63: 4 loads, 4 LSLICEs
+     Net GPO7_INST/N_25: 4 loads, 4 LSLICEs
+     Net GPO7_INST/N_61: 4 loads, 4 LSLICEs
+     Net GPO6_INST/N_817_i: 4 loads, 4 LSLICEs
+     Net GPO6_INST/N_8_i: 4 loads, 4 LSLICEs
+     Net GPO6_INST/N_11: 4 loads, 4 LSLICEs
+     Net GPO6_INST/N_17: 4 loads, 4 LSLICEs
+     Net GPO6_INST/N_15: 4 loads, 4 LSLICEs
+     Net GPO6_INST/N_301: 4 loads, 4 LSLICEs
+     Net GPO6_INST/N_13: 4 loads, 4 LSLICEs
+     Net GPO6_INST/N_55: 4 loads, 4 LSLICEs
+     Net GPO6_INST/N_9: 4 loads, 4 LSLICEs
+     Net GPO6_INST/N_10: 4 loads, 4 LSLICEs
+     Net GPO6_INST/un27_DO15_i_0_0_0_0: 4 loads, 4 LSLICEs
+     Net GPO6_INST/N_6: 4 loads, 4 LSLICEs
+     Net GPO6_INST/N_26: 4 loads, 4 LSLICEs
+     Net GPO6_INST/N_23: 4 loads, 4 LSLICEs
+     Net GPO6_INST/N_20: 4 loads, 4 LSLICEs
+     Net GPO6_INST/N_57: 4 loads, 4 LSLICEs
+     Net GPO6_INST/N_14: 4 loads, 4 LSLICEs
+     Net GPO6_INST/N_7: 4 loads, 4 LSLICEs
+     Net GPO5_INST/N_59_i: 4 loads, 4 LSLICEs
+     Net GPO5_INST/N_620: 4 loads, 4 LSLICEs
+     Net GPO5_INST/un27_DO9_i_0: 4 loads, 4 LSLICEs
+     Net GPO5_INST/N_22: 4 loads, 4 LSLICEs
+     Net GPO5_INST/N_19: 4 loads, 4 LSLICEs
+     Net GPO5_INST/N_16: 4 loads, 4 LSLICEs
+     Net GPO5_INST/N_13: 4 loads, 4 LSLICEs
+     Net GPO5_INST/N_10: 4 loads, 4 LSLICEs
+     Net GPO5_INST/N_7: 4 loads, 4 LSLICEs
+     Net GPO5_INST/N_4: 4 loads, 4 LSLICEs
+     Net GPO5_INST/N_34: 4 loads, 4 LSLICEs
+     Net GPO5_INST/un27_DO1_i_0: 4 loads, 4 LSLICEs
+     Net GPO5_INST/N_36: 4 loads, 4 LSLICEs
+     Net GPO5_INST/N_31: 4 loads, 4 LSLICEs
+     Net GPO5_INST/N_28: 4 loads, 4 LSLICEs
+     Net GPO5_INST/N_25: 4 loads, 4 LSLICEs
+     Net GPO5_INST/N_63: 4 loads, 4 LSLICEs
+     Net GPO5_INST/N_61: 4 loads, 4 LSLICEs
+     Net GPO4_INST/N_817_i: 4 loads, 4 LSLICEs
+     Net GPO4_INST/N_8_i: 4 loads, 4 LSLICEs
+     Net GPO4_INST/N_11: 4 loads, 4 LSLICEs
+
+                                    Page 3
+
+
+
+
+Design:  BB_TOP                                        Date:  11/09/14  21:27:53
+
+Design Summary (cont)
+---------------------
+     Net GPO4_INST/N_17: 4 loads, 4 LSLICEs
+     Net GPO4_INST/N_15: 4 loads, 4 LSLICEs
+     Net GPO4_INST/N_301: 4 loads, 4 LSLICEs
+     Net GPO4_INST/N_13: 4 loads, 4 LSLICEs
+     Net GPO4_INST/N_55: 4 loads, 4 LSLICEs
+     Net GPO4_INST/N_9: 4 loads, 4 LSLICEs
+     Net GPO4_INST/N_10: 4 loads, 4 LSLICEs
+     Net GPO4_INST/un27_DO15_i_0_0_0: 4 loads, 4 LSLICEs
+     Net GPO4_INST/N_26: 4 loads, 4 LSLICEs
+     Net GPO4_INST/N_23: 4 loads, 4 LSLICEs
+     Net GPO4_INST/N_20: 4 loads, 4 LSLICEs
+     Net GPO4_INST/N_14: 4 loads, 4 LSLICEs
+     Net GPO4_INST/N_6: 4 loads, 4 LSLICEs
+     Net GPO4_INST/N_57: 4 loads, 4 LSLICEs
+     Net GPO4_INST/N_7: 4 loads, 4 LSLICEs
+     Net GPI3_INST/N_172: 4 loads, 4 LSLICEs
+     Net GPI3_INST/un2_DOUT1_i_i_a2: 4 loads, 4 LSLICEs
+     Net GPO2_INST/un9_DO0_i_0_0: 4 loads, 4 LSLICEs
+     Net GPO2_INST/un9_DO6_i_0_0: 4 loads, 4 LSLICEs
+     Net GPO2_INST/un1_DO15_0_o4_0_RNIUAEB1: 4 loads, 4 LSLICEs
+     Net GPO2_INST/un1_DOUT2_i_i_a2: 4 loads, 4 LSLICEs
+     Net GPO2_INST/N_453_i: 4 loads, 4 LSLICEs
+     Net GPO2_INST/un9_DO9_i_0: 4 loads, 4 LSLICEs
+     Net GPO2_INST/un9_DO8_i_0_0: 4 loads, 4 LSLICEs
+     Net GPO2_INST/un9_DO7_i_0: 4 loads, 4 LSLICEs
+     Net GPO2_INST/un9_DO5_i_0_0: 4 loads, 4 LSLICEs
+     Net GPO2_INST/un9_DO4_i_0_0: 4 loads, 4 LSLICEs
+     Net GPO2_INST/un9_DO3_i_0: 4 loads, 4 LSLICEs
+     Net GPO2_INST/N_257: 4 loads, 4 LSLICEs
+     Net GPO2_INST/N_259: 4 loads, 4 LSLICEs
+     Net GPO2_INST/N_10: 4 loads, 4 LSLICEs
+     Net GPO2_INST/un9_DO14_i_0_0: 4 loads, 4 LSLICEs
+     Net GPO2_INST/un9_DO12_i_0_0: 4 loads, 4 LSLICEs
+     Net GPO2_INST/N_263: 4 loads, 4 LSLICEs
+     Net GPO2_INST/N_265: 4 loads, 4 LSLICEs
+     Net GPI1_INST/un1_DOUT2_i_i_a3_0: 4 loads, 4 LSLICEs
+     Net GPI1_INST/un2_DOUT1_i_i_a2_0: 4 loads, 4 LSLICEs
+     Net GPI0_INST/un2_DOUT1_i_i_a2_1: 3 loads, 3 LSLICEs
+     Net GPI0_INST/un1_DOUT2_i_i_a3_1: 3 loads, 3 LSLICEs
+   Number of local set/reset loads for net RESET_N_c merged into GSR:  1416
+   Number of LSRs:  0
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net GPO4_INST/N_602: 144 loads
+     Net GPO5_INST/N_380: 144 loads
+     Net GPO6_INST/N_602: 144 loads
+     Net GPO7_INST/N_380: 144 loads
+     Net GPO2_INST/N_1728: 127 loads
+     Net OFFSET_SEL_1[0]: 122 loads
+     Net OFFSET_SEL_1[1]: 119 loads
+     Net N_1995: 109 loads
+     Net OFFSET_SEL_1[7]: 109 loads
+     Net OFFSET_SEL_1[8]: 109 loads
+
+
+
+
+                                    Page 4
+
+
+
+
+Design:  BB_TOP                                        Date:  11/09/14  21:27:53
+
+
+
+
+   Number of warnings:  39
+   Number of errors:    0
+
+Design Errors/Warnings
+----------------------
+
+WARNING - map: F:/project/wolf/Baseboard/BLD/../SRC/Baseboard.lpf(431): Semantic
+     error in "LOCATE COMP "DRV24_PCIE_CLK_A_OE_L" SITE "W6" ;": COMP
+     "DRV24_PCIE_CLK_A_OE_L" not found in design. Disable this preference.
+WARNING - map: F:/project/wolf/Baseboard/BLD/../SRC/Baseboard.lpf(432): Semantic
+     error in "LOCATE COMP "DRV24_PCIE_CLK_B_OE_L" SITE "R17" ;": COMP
+     "DRV24_PCIE_CLK_B_OE_L" not found in design. Disable this preference.
+WARNING - map: F:/project/wolf/Baseboard/BLD/../SRC/Baseboard.lpf(435): Semantic
+     error in "LOCATE COMP "DRV24_PWROK" SITE "M4" ;": COMP "DRV24_PWROK" not
+     found in design. Disable this preference.
+WARNING - map: F:/project/wolf/Baseboard/BLD/../SRC/Baseboard.lpf(438): Semantic
+     error in "LOCATE COMP "DRV25_PCIE_CLK_A_OE_L" SITE "V9" ;": COMP
+     "DRV25_PCIE_CLK_A_OE_L" not found in design. Disable this preference.
+WARNING - map: F:/project/wolf/Baseboard/BLD/../SRC/Baseboard.lpf(439): Semantic
+     error in "LOCATE COMP "DRV25_PCIE_CLK_B_OE_L" SITE "R21" ;": COMP
+     "DRV25_PCIE_CLK_B_OE_L" not found in design. Disable this preference.
+WARNING - map: F:/project/wolf/Baseboard/BLD/../SRC/Baseboard.lpf(442): Semantic
+     error in "LOCATE COMP "DRV25_PWROK" SITE "E7" ;": COMP "DRV25_PWROK" not
+     found in design. Disable this preference.
+WARNING - map: F:/project/wolf/Baseboard/BLD/../SRC/Baseboard.lpf(445): Semantic
+     error in "LOCATE COMP "DRV26_PCIE_CLK_A_OE_L" SITE "J17" ;": COMP
+     "DRV26_PCIE_CLK_A_OE_L" not found in design. Disable this preference.
+WARNING - map: F:/project/wolf/Baseboard/BLD/../SRC/Baseboard.lpf(446): Semantic
+     error in "LOCATE COMP "DRV26_PCIE_CLK_B_OE_L" SITE "L2" ;": COMP
+     "DRV26_PCIE_CLK_B_OE_L" not found in design. Disable this preference.
+WARNING - map: F:/project/wolf/Baseboard/BLD/../SRC/Baseboard.lpf(449): Semantic
+     error in "LOCATE COMP "DRV26_PWROK" SITE "B14" ;": COMP "DRV26_PWROK" not
+     found in design. Disable this preference.
+WARNING - map: F:/project/wolf/Baseboard/BLD/../SRC/Baseboard.lpf(452): Semantic
+     error in "LOCATE COMP "DRV27_PCIE_CLK_A_OE_L" SITE "C13" ;": COMP
+     "DRV27_PCIE_CLK_A_OE_L" not found in design. Disable this preference.
+WARNING - map: F:/project/wolf/Baseboard/BLD/../SRC/Baseboard.lpf(453): Semantic
+     error in "LOCATE COMP "DRV27_PCIE_CLK_B_OE_L" SITE "K3" ;": COMP
+     "DRV27_PCIE_CLK_B_OE_L" not found in design. Disable this preference.
+WARNING - map: F:/project/wolf/Baseboard/BLD/../SRC/Baseboard.lpf(456): Semantic
+     error in "LOCATE COMP "DRV27_PWROK" SITE "L21" ;": COMP "DRV27_PWROK" not
+     found in design. Disable this preference.
+WARNING - map: F:/project/wolf/Baseboard/BLD/../SRC/Baseboard.lpf(459): Semantic
+     error in "LOCATE COMP "DRV28_PCIE_CLK_A_OE_L" SITE "AB3" ;": COMP
+     "DRV28_PCIE_CLK_A_OE_L" not found in design. Disable this preference.
+WARNING - map: F:/project/wolf/Baseboard/BLD/../SRC/Baseboard.lpf(460): Semantic
+     error in "LOCATE COMP "DRV28_PCIE_CLK_B_OE_L" SITE "L4" ;": COMP
+     "DRV28_PCIE_CLK_B_OE_L" not found in design. Disable this preference.
+WARNING - map: F:/project/wolf/Baseboard/BLD/../SRC/Baseboard.lpf(463): Semantic
+     error in "LOCATE COMP "DRV28_PWROK" SITE "N16" ;": COMP "DRV28_PWROK" not
+     found in design. Disable this preference.
+WARNING - map: F:/project/wolf/Baseboard/BLD/../SRC/Baseboard.lpf(466): Semantic
+     error in "LOCATE COMP "DRV29_PCIE_CLK_A_OE_L" SITE "K20" ;": COMP
+     "DRV29_PCIE_CLK_A_OE_L" not found in design. Disable this preference.
+WARNING - map: F:/project/wolf/Baseboard/BLD/../SRC/Baseboard.lpf(467): Semantic
+
+                                    Page 5
+
+
+
+
+Design:  BB_TOP                                        Date:  11/09/14  21:27:53
+
+Design Errors/Warnings (cont)
+-----------------------------
+     error in "LOCATE COMP "DRV29_PCIE_CLK_B_OE_L" SITE "L5" ;": COMP
+     "DRV29_PCIE_CLK_B_OE_L" not found in design. Disable this preference.
+WARNING - map: F:/project/wolf/Baseboard/BLD/../SRC/Baseboard.lpf(470): Semantic
+     error in "LOCATE COMP "DRV29_PWROK" SITE "D12" ;": COMP "DRV29_PWROK" not
+     found in design. Disable this preference.
+WARNING - map: F:/project/wolf/Baseboard/BLD/../SRC/Baseboard.lpf(473): Semantic
+     error in "LOCATE COMP "DRV30_PCIE_CLK_A_OE_L" SITE "B22" ;": COMP
+     "DRV30_PCIE_CLK_A_OE_L" not found in design. Disable this preference.
+WARNING - map: F:/project/wolf/Baseboard/BLD/../SRC/Baseboard.lpf(474): Semantic
+     error in "LOCATE COMP "DRV30_PCIE_CLK_B_OE_L" SITE "L7" ;": COMP
+     "DRV30_PCIE_CLK_B_OE_L" not found in design. Disable this preference.
+WARNING - map: F:/project/wolf/Baseboard/BLD/../SRC/Baseboard.lpf(477): Semantic
+     error in "LOCATE COMP "DRV30_PWROK" SITE "F15" ;": COMP "DRV30_PWROK" not
+     found in design. Disable this preference.
+WARNING - map: F:/project/wolf/Baseboard/BLD/../SRC/Baseboard.lpf(480): Semantic
+     error in "LOCATE COMP "DRV31_PCIE_CLK_A_OE_L" SITE "G17" ;": COMP
+     "DRV31_PCIE_CLK_A_OE_L" not found in design. Disable this preference.
+WARNING - map: F:/project/wolf/Baseboard/BLD/../SRC/Baseboard.lpf(481): Semantic
+     error in "LOCATE COMP "DRV31_PCIE_CLK_B_OE_L" SITE "H1" ;": COMP
+     "DRV31_PCIE_CLK_B_OE_L" not found in design. Disable this preference.
+WARNING - map: F:/project/wolf/Baseboard/BLD/../SRC/Baseboard.lpf(484): Semantic
+     error in "LOCATE COMP "DRV31_PWROK" SITE "F11" ;": COMP "DRV31_PWROK" not
+     found in design. Disable this preference.
+WARNING - map: F:/project/wolf/Baseboard/BLD/../SRC/Baseboard.lpf(487): Semantic
+     error in "LOCATE COMP "DRV32_PCIE_CLK_A_OE_L" SITE "G13" ;": COMP
+     "DRV32_PCIE_CLK_A_OE_L" not found in design. Disable this preference.
+WARNING - map: F:/project/wolf/Baseboard/BLD/../SRC/Baseboard.lpf(488): Semantic
+     error in "LOCATE COMP "DRV32_PCIE_CLK_B_OE_L" SITE "P3" ;": COMP
+     "DRV32_PCIE_CLK_B_OE_L" not found in design. Disable this preference.
+WARNING - map: F:/project/wolf/Baseboard/BLD/../SRC/Baseboard.lpf(491): Semantic
+     error in "LOCATE COMP "DRV32_PWROK" SITE "E11" ;": COMP "DRV32_PWROK" not
+     found in design. Disable this preference.
+WARNING - map: F:/project/wolf/Baseboard/BLD/../SRC/Baseboard.lpf(494): Semantic
+     error in "LOCATE COMP "DRV33_PCIE_CLK_A_OE_L" SITE "C22" ;": COMP
+     "DRV33_PCIE_CLK_A_OE_L" not found in design. Disable this preference.
+WARNING - map: F:/project/wolf/Baseboard/BLD/../SRC/Baseboard.lpf(495): Semantic
+     error in "LOCATE COMP "DRV33_PCIE_CLK_B_OE_L" SITE "L1" ;": COMP
+     "DRV33_PCIE_CLK_B_OE_L" not found in design. Disable this preference.
+WARNING - map: F:/project/wolf/Baseboard/BLD/../SRC/Baseboard.lpf(498): Semantic
+     error in "LOCATE COMP "DRV33_PWROK" SITE "B8" ;": COMP "DRV33_PWROK" not
+     found in design. Disable this preference.
+WARNING - map: F:/project/wolf/Baseboard/BLD/../SRC/Baseboard.lpf(501): Semantic
+     error in "LOCATE COMP "DRV34_PCIE_CLK_A_OE_L" SITE "F18" ;": COMP
+     "DRV34_PCIE_CLK_A_OE_L" not found in design. Disable this preference.
+WARNING - map: F:/project/wolf/Baseboard/BLD/../SRC/Baseboard.lpf(502): Semantic
+     error in "LOCATE COMP "DRV34_PCIE_CLK_B_OE_L" SITE "H21" ;": COMP
+     "DRV34_PCIE_CLK_B_OE_L" not found in design. Disable this preference.
+WARNING - map: F:/project/wolf/Baseboard/BLD/../SRC/Baseboard.lpf(505): Semantic
+     error in "LOCATE COMP "DRV34_PWROK" SITE "G8" ;": COMP "DRV34_PWROK" not
+     found in design. Disable this preference.
+WARNING - map: F:/project/wolf/Baseboard/BLD/../SRC/Baseboard.lpf(508): Semantic
+     error in "LOCATE COMP "DRV35_PCIE_CLK_A_OE_L" SITE "F13" ;": COMP
+     "DRV35_PCIE_CLK_A_OE_L" not found in design. Disable this preference.
+WARNING - map: F:/project/wolf/Baseboard/BLD/../SRC/Baseboard.lpf(509): Semantic
+     error in "LOCATE COMP "DRV35_PCIE_CLK_B_OE_L" SITE "U13" ;": COMP
+     "DRV35_PCIE_CLK_B_OE_L" not found in design. Disable this preference.
+
+                                    Page 6
+
+
+
+
+Design:  BB_TOP                                        Date:  11/09/14  21:27:53
+
+Design Errors/Warnings (cont)
+-----------------------------
+WARNING - map: F:/project/wolf/Baseboard/BLD/../SRC/Baseboard.lpf(512): Semantic
+     error in "LOCATE COMP "DRV35_PWROK" SITE "Y1" ;": COMP "DRV35_PWROK" not
+     found in design. Disable this preference.
+WARNING - map: Preference parsing results:  36 semantic errors detected
+WARNING - map: Using local reset signal 'RESET_N_c' to infer global GSR net.
+WARNING - map: There are semantic errors in the preference file
+     F:/project/wolf/Baseboard/BLD/../SRC/Baseboard.lpf.
+
+IO (PIO) Attributes
+-------------------
+
++---------------------+-----------+-----------+------------+
+| IO Name             | Direction | Levelmode | IO         |
+|                     |           |  IO_TYPE  | Register   |
++---------------------+-----------+-----------+------------+
+| SDA_1               | BIDIR     | LVCMOS33  | IN         |
++---------------------+-----------+-----------+------------+
+| DRV3_PWR_EN_L       | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| SYSCLK              | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| HEART               | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| SGPIO_DATA          | OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| SGPIO_LD            | OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| SGPIO_CK            | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| CPLD_SLOT_ID        | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| CANISTER_B_PCIE_CLK_ACT_L| INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| CANISTER_A_PCIE_CLK_ACT_L| INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| BB_CPLD_ALT_L       | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV20_PCIE_CLK_B_OE_L| OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV21_PCIE_CLK_B_OE_L| OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV22_PCIE_CLK_B_OE_L| OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV23_PCIE_CLK_B_OE_L| OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV16_PCIE_CLK_B_OE_L| OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV17_PCIE_CLK_B_OE_L| OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV18_PCIE_CLK_B_OE_L| OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV19_PCIE_CLK_B_OE_L| OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV12_PCIE_CLK_B_OE_L| OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV13_PCIE_CLK_B_OE_L| OUTPUT    | LVCMOS33  |            |
+
+                                    Page 7
+
+
+
+
+Design:  BB_TOP                                        Date:  11/09/14  21:27:53
+
+IO (PIO) Attributes (cont)
+--------------------------
++---------------------+-----------+-----------+------------+
+| DRV14_PCIE_CLK_B_OE_L| OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV15_PCIE_CLK_B_OE_L| OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV8_PCIE_CLK_B_OE_L| OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV9_PCIE_CLK_B_OE_L| OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV10_PCIE_CLK_B_OE_L| OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV11_PCIE_CLK_B_OE_L| OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV4_PCIE_CLK_B_OE_L| OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV5_PCIE_CLK_B_OE_L| OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV6_PCIE_CLK_B_OE_L| OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV7_PCIE_CLK_B_OE_L| OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV0_PCIE_CLK_B_OE_L| OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV1_PCIE_CLK_B_OE_L| OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV2_PCIE_CLK_B_OE_L| OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV3_PCIE_CLK_B_OE_L| OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV20_PCIE_CLK_A_OE_L| OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV21_PCIE_CLK_A_OE_L| OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV22_PCIE_CLK_A_OE_L| OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV23_PCIE_CLK_A_OE_L| OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV16_PCIE_CLK_A_OE_L| OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV17_PCIE_CLK_A_OE_L| OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV18_PCIE_CLK_A_OE_L| OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV19_PCIE_CLK_A_OE_L| OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV12_PCIE_CLK_A_OE_L| OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV13_PCIE_CLK_A_OE_L| OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV14_PCIE_CLK_A_OE_L| OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV15_PCIE_CLK_A_OE_L| OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV8_PCIE_CLK_A_OE_L| OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV9_PCIE_CLK_A_OE_L| OUTPUT    | LVCMOS33  |            |
+
+                                    Page 8
+
+
+
+
+Design:  BB_TOP                                        Date:  11/09/14  21:27:53
+
+IO (PIO) Attributes (cont)
+--------------------------
++---------------------+-----------+-----------+------------+
+| DRV10_PCIE_CLK_A_OE_L| OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV11_PCIE_CLK_A_OE_L| OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV4_PCIE_CLK_A_OE_L| OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV5_PCIE_CLK_A_OE_L| OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV6_PCIE_CLK_A_OE_L| OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV7_PCIE_CLK_A_OE_L| OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV0_PCIE_CLK_A_OE_L| OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV1_PCIE_CLK_A_OE_L| OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV2_PCIE_CLK_A_OE_L| OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV3_PCIE_CLK_A_OE_L| OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| PE_RST_DRV20_B_L    | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| PE_RST_DRV21_B_L    | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| PE_RST_DRV22_B_L    | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| PE_RST_DRV23_B_L    | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| PE_RST_DRV16_B_L    | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| PE_RST_DRV17_B_L    | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| PE_RST_DRV18_B_L    | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| PE_RST_DRV19_B_L    | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| PE_RST_DRV12_B_L    | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| PE_RST_DRV13_B_L    | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| PE_RST_DRV14_B_L    | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| PE_RST_DRV15_B_L    | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| PE_RST_DRV8_B_L     | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| PE_RST_DRV9_B_L     | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| PE_RST_DRV10_B_L    | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| PE_RST_DRV11_B_L    | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| PE_RST_DRV4_B_L     | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| PE_RST_DRV5_B_L     | OUTPUT    | LVCMOS33  |            |
+
+                                    Page 9
+
+
+
+
+Design:  BB_TOP                                        Date:  11/09/14  21:27:53
+
+IO (PIO) Attributes (cont)
+--------------------------
++---------------------+-----------+-----------+------------+
+| PE_RST_DRV6_B_L     | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| PE_RST_DRV7_B_L     | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| PE_RST_DRV0_B_L     | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| PE_RST_DRV1_B_L     | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| PE_RST_DRV2_B_L     | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| PE_RST_DRV3_B_L     | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| PE_RST_DRV20_A_L    | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| PE_RST_DRV21_A_L    | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| PE_RST_DRV22_A_L    | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| PE_RST_DRV23_A_L    | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| PE_RST_DRV16_A_L    | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| PE_RST_DRV17_A_L    | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| PE_RST_DRV18_A_L    | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| PE_RST_DRV19_A_L    | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| PE_RST_DRV12_A_L    | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| PE_RST_DRV13_A_L    | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| PE_RST_DRV14_A_L    | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| PE_RST_DRV15_A_L    | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| PE_RST_DRV8_A_L     | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| PE_RST_DRV9_A_L     | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| PE_RST_DRV10_A_L    | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| PE_RST_DRV11_A_L    | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| PE_RST_DRV4_A_L     | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| PE_RST_DRV5_A_L     | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| PE_RST_DRV6_A_L     | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| PE_RST_DRV7_A_L     | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| PE_RST_DRV0_A_L     | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| PE_RST_DRV1_A_L     | OUTPUT    | LVCMOS33  |            |
+
+                                   Page 10
+
+
+
+
+Design:  BB_TOP                                        Date:  11/09/14  21:27:53
+
+IO (PIO) Attributes (cont)
+--------------------------
++---------------------+-----------+-----------+------------+
+| PE_RST_DRV2_A_L     | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| PE_RST_DRV3_A_L     | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV32_IFDET_BLUE_LED| BIDIR     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV33_IFDET_BLUE_LED| BIDIR     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV34_IFDET_BLUE_LED| BIDIR     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV35_IFDET_BLUE_LED| BIDIR     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV28_IFDET_BLUE_LED| BIDIR     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV29_IFDET_BLUE_LED| BIDIR     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV30_IFDET_BLUE_LED| BIDIR     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV31_IFDET_BLUE_LED| BIDIR     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV24_IFDET_BLUE_LED| BIDIR     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV25_IFDET_BLUE_LED| BIDIR     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV26_IFDET_BLUE_LED| BIDIR     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV27_IFDET_BLUE_LED| BIDIR     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV20_IFDET_BLUE_LED| BIDIR     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV21_IFDET_BLUE_LED| BIDIR     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV22_IFDET_BLUE_LED| BIDIR     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV23_IFDET_BLUE_LED| BIDIR     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV16_IFDET_BLUE_LED| BIDIR     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV17_IFDET_BLUE_LED| BIDIR     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV18_IFDET_BLUE_LED| BIDIR     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV19_IFDET_BLUE_LED| BIDIR     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV12_IFDET_BLUE_LED| BIDIR     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV13_IFDET_BLUE_LED| BIDIR     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV14_IFDET_BLUE_LED| BIDIR     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV15_IFDET_BLUE_LED| BIDIR     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV8_IFDET_BLUE_LED | BIDIR     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV9_IFDET_BLUE_LED | BIDIR     | LVCMOS33  |            |
+
+                                   Page 11
+
+
+
+
+Design:  BB_TOP                                        Date:  11/09/14  21:27:53
+
+IO (PIO) Attributes (cont)
+--------------------------
++---------------------+-----------+-----------+------------+
+| DRV10_IFDET_BLUE_LED| BIDIR     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV11_IFDET_BLUE_LED| BIDIR     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV4_IFDET_BLUE_LED | BIDIR     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV5_IFDET_BLUE_LED | BIDIR     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV6_IFDET_BLUE_LED | BIDIR     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV7_IFDET_BLUE_LED | BIDIR     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV0_IFDET_BLUE_LED | BIDIR     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV1_IFDET_BLUE_LED | BIDIR     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV2_IFDET_BLUE_LED | BIDIR     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV3_IFDET_BLUE_LED | BIDIR     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV32_PRSNT_AMBER_LED| BIDIR     | LVCMOS33  | IN         |
++---------------------+-----------+-----------+------------+
+| DRV33_PRSNT_AMBER_LED| BIDIR     | LVCMOS33  | IN         |
++---------------------+-----------+-----------+------------+
+| DRV34_PRSNT_AMBER_LED| BIDIR     | LVCMOS33  | IN         |
++---------------------+-----------+-----------+------------+
+| DRV35_PRSNT_AMBER_LED| BIDIR     | LVCMOS33  | IN         |
++---------------------+-----------+-----------+------------+
+| DRV28_PRSNT_AMBER_LED| BIDIR     | LVCMOS33  | IN         |
++---------------------+-----------+-----------+------------+
+| DRV29_PRSNT_AMBER_LED| BIDIR     | LVCMOS33  | IN         |
++---------------------+-----------+-----------+------------+
+| DRV30_PRSNT_AMBER_LED| BIDIR     | LVCMOS33  | IN         |
++---------------------+-----------+-----------+------------+
+| DRV31_PRSNT_AMBER_LED| BIDIR     | LVCMOS33  | IN         |
++---------------------+-----------+-----------+------------+
+| DRV24_PRSNT_AMBER_LED| BIDIR     | LVCMOS33  | IN         |
++---------------------+-----------+-----------+------------+
+| DRV25_PRSNT_AMBER_LED| BIDIR     | LVCMOS33  | IN         |
++---------------------+-----------+-----------+------------+
+| DRV26_PRSNT_AMBER_LED| BIDIR     | LVCMOS33  | IN         |
++---------------------+-----------+-----------+------------+
+| DRV27_PRSNT_AMBER_LED| BIDIR     | LVCMOS33  | IN         |
++---------------------+-----------+-----------+------------+
+| DRV20_PRSNT_AMBER_LED| BIDIR     | LVCMOS33  | IN         |
++---------------------+-----------+-----------+------------+
+| DRV21_PRSNT_AMBER_LED| BIDIR     | LVCMOS33  | IN         |
++---------------------+-----------+-----------+------------+
+| DRV22_PRSNT_AMBER_LED| BIDIR     | LVCMOS33  | IN         |
++---------------------+-----------+-----------+------------+
+| DRV23_PRSNT_AMBER_LED| BIDIR     | LVCMOS33  | IN         |
++---------------------+-----------+-----------+------------+
+| DRV16_PRSNT_AMBER_LED| BIDIR     | LVCMOS33  | IN         |
++---------------------+-----------+-----------+------------+
+| DRV17_PRSNT_AMBER_LED| BIDIR     | LVCMOS33  | IN         |
+
+                                   Page 12
+
+
+
+
+Design:  BB_TOP                                        Date:  11/09/14  21:27:53
+
+IO (PIO) Attributes (cont)
+--------------------------
++---------------------+-----------+-----------+------------+
+| DRV18_PRSNT_AMBER_LED| BIDIR     | LVCMOS33  | IN         |
++---------------------+-----------+-----------+------------+
+| DRV19_PRSNT_AMBER_LED| BIDIR     | LVCMOS33  | IN         |
++---------------------+-----------+-----------+------------+
+| DRV12_PRSNT_AMBER_LED| BIDIR     | LVCMOS33  | IN         |
++---------------------+-----------+-----------+------------+
+| DRV13_PRSNT_AMBER_LED| BIDIR     | LVCMOS33  | IN         |
++---------------------+-----------+-----------+------------+
+| DRV14_PRSNT_AMBER_LED| BIDIR     | LVCMOS33  | IN         |
++---------------------+-----------+-----------+------------+
+| DRV15_PRSNT_AMBER_LED| BIDIR     | LVCMOS33  | IN         |
++---------------------+-----------+-----------+------------+
+| DRV8_PRSNT_AMBER_LED| BIDIR     | LVCMOS33  | IN         |
++---------------------+-----------+-----------+------------+
+| DRV9_PRSNT_AMBER_LED| BIDIR     | LVCMOS33  | IN         |
++---------------------+-----------+-----------+------------+
+| DRV10_PRSNT_AMBER_LED| BIDIR     | LVCMOS33  | IN         |
++---------------------+-----------+-----------+------------+
+| DRV11_PRSNT_AMBER_LED| BIDIR     | LVCMOS33  | IN         |
++---------------------+-----------+-----------+------------+
+| DRV4_PRSNT_AMBER_LED| BIDIR     | LVCMOS33  | IN         |
++---------------------+-----------+-----------+------------+
+| DRV5_PRSNT_AMBER_LED| BIDIR     | LVCMOS33  | IN         |
++---------------------+-----------+-----------+------------+
+| DRV6_PRSNT_AMBER_LED| BIDIR     | LVCMOS33  | IN         |
++---------------------+-----------+-----------+------------+
+| DRV7_PRSNT_AMBER_LED| BIDIR     | LVCMOS33  | IN         |
++---------------------+-----------+-----------+------------+
+| DRV0_PRSNT_AMBER_LED| BIDIR     | LVCMOS33  | IN         |
++---------------------+-----------+-----------+------------+
+| DRV1_PRSNT_AMBER_LED| BIDIR     | LVCMOS33  | IN         |
++---------------------+-----------+-----------+------------+
+| DRV2_PRSNT_AMBER_LED| BIDIR     | LVCMOS33  | IN         |
++---------------------+-----------+-----------+------------+
+| DRV3_PRSNT_AMBER_LED| BIDIR     | LVCMOS33  | IN         |
++---------------------+-----------+-----------+------------+
+| DRV20_PWROK         | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV21_PWROK         | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV22_PWROK         | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV23_PWROK         | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV16_PWROK         | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV17_PWROK         | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV18_PWROK         | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV19_PWROK         | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV12_PWROK         | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV13_PWROK         | INPUT     | LVCMOS33  |            |
+
+                                   Page 13
+
+
+
+
+Design:  BB_TOP                                        Date:  11/09/14  21:27:53
+
+IO (PIO) Attributes (cont)
+--------------------------
++---------------------+-----------+-----------+------------+
+| DRV14_PWROK         | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV15_PWROK         | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV8_PWROK          | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV9_PWROK          | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV10_PWROK         | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV11_PWROK         | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV4_PWROK          | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV5_PWROK          | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV6_PWROK          | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV7_PWROK          | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV0_PWROK          | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV1_PWROK          | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV2_PWROK          | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV3_PWROK          | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV32_PWR_EN_L      | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV33_PWR_EN_L      | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV34_PWR_EN_L      | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV35_PWR_EN_L      | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV28_PWR_EN_L      | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV29_PWR_EN_L      | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV30_PWR_EN_L      | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV31_PWR_EN_L      | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV24_PWR_EN_L      | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV25_PWR_EN_L      | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV26_PWR_EN_L      | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV27_PWR_EN_L      | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV20_PWR_EN_L      | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV21_PWR_EN_L      | OUTPUT    | LVCMOS33  |            |
+
+                                   Page 14
+
+
+
+
+Design:  BB_TOP                                        Date:  11/09/14  21:27:53
+
+IO (PIO) Attributes (cont)
+--------------------------
++---------------------+-----------+-----------+------------+
+| DRV22_PWR_EN_L      | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV23_PWR_EN_L      | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV16_PWR_EN_L      | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV17_PWR_EN_L      | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV18_PWR_EN_L      | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV19_PWR_EN_L      | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV12_PWR_EN_L      | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV13_PWR_EN_L      | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV14_PWR_EN_L      | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV15_PWR_EN_L      | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV8_PWR_EN_L       | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV9_PWR_EN_L       | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV10_PWR_EN_L      | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV11_PWR_EN_L      | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV4_PWR_EN_L       | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV5_PWR_EN_L       | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV6_PWR_EN_L       | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV7_PWR_EN_L       | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV0_PWR_EN_L       | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV1_PWR_EN_L       | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV2_PWR_EN_L       | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV32_ACT_LED       | INPUT     | LVCMOS33  | IN         |
++---------------------+-----------+-----------+------------+
+| DRV33_ACT_LED       | INPUT     | LVCMOS33  | IN         |
++---------------------+-----------+-----------+------------+
+| DRV34_ACT_LED       | INPUT     | LVCMOS33  | IN         |
++---------------------+-----------+-----------+------------+
+| DRV35_ACT_LED       | INPUT     | LVCMOS33  | IN         |
++---------------------+-----------+-----------+------------+
+| DRV28_ACT_LED       | INPUT     | LVCMOS33  | IN         |
++---------------------+-----------+-----------+------------+
+| DRV29_ACT_LED       | INPUT     | LVCMOS33  | IN         |
++---------------------+-----------+-----------+------------+
+| DRV30_ACT_LED       | INPUT     | LVCMOS33  | IN         |
+
+                                   Page 15
+
+
+
+
+Design:  BB_TOP                                        Date:  11/09/14  21:27:53
+
+IO (PIO) Attributes (cont)
+--------------------------
++---------------------+-----------+-----------+------------+
+| DRV31_ACT_LED       | INPUT     | LVCMOS33  | IN         |
++---------------------+-----------+-----------+------------+
+| DRV24_ACT_LED       | INPUT     | LVCMOS33  | IN         |
++---------------------+-----------+-----------+------------+
+| DRV25_ACT_LED       | INPUT     | LVCMOS33  | IN         |
++---------------------+-----------+-----------+------------+
+| DRV26_ACT_LED       | INPUT     | LVCMOS33  | IN         |
++---------------------+-----------+-----------+------------+
+| DRV27_ACT_LED       | INPUT     | LVCMOS33  | IN         |
++---------------------+-----------+-----------+------------+
+| DRV20_ACT_LED       | INPUT     | LVCMOS33  | IN         |
++---------------------+-----------+-----------+------------+
+| DRV21_ACT_LED       | INPUT     | LVCMOS33  | IN         |
++---------------------+-----------+-----------+------------+
+| DRV22_ACT_LED       | INPUT     | LVCMOS33  | IN         |
++---------------------+-----------+-----------+------------+
+| DRV23_ACT_LED       | INPUT     | LVCMOS33  | IN         |
++---------------------+-----------+-----------+------------+
+| DRV16_ACT_LED       | INPUT     | LVCMOS33  | IN         |
++---------------------+-----------+-----------+------------+
+| DRV17_ACT_LED       | INPUT     | LVCMOS33  | IN         |
++---------------------+-----------+-----------+------------+
+| DRV18_ACT_LED       | INPUT     | LVCMOS33  | IN         |
++---------------------+-----------+-----------+------------+
+| DRV19_ACT_LED       | INPUT     | LVCMOS33  | IN         |
++---------------------+-----------+-----------+------------+
+| DRV12_ACT_LED       | INPUT     | LVCMOS33  | IN         |
++---------------------+-----------+-----------+------------+
+| DRV13_ACT_LED       | INPUT     | LVCMOS33  | IN         |
++---------------------+-----------+-----------+------------+
+| DRV14_ACT_LED       | INPUT     | LVCMOS33  | IN         |
++---------------------+-----------+-----------+------------+
+| DRV15_ACT_LED       | INPUT     | LVCMOS33  | IN         |
++---------------------+-----------+-----------+------------+
+| DRV8_ACT_LED        | INPUT     | LVCMOS33  | IN         |
++---------------------+-----------+-----------+------------+
+| DRV9_ACT_LED        | INPUT     | LVCMOS33  | IN         |
++---------------------+-----------+-----------+------------+
+| DRV10_ACT_LED       | INPUT     | LVCMOS33  | IN         |
++---------------------+-----------+-----------+------------+
+| DRV11_ACT_LED       | INPUT     | LVCMOS33  | IN         |
++---------------------+-----------+-----------+------------+
+| DRV4_ACT_LED        | INPUT     | LVCMOS33  | IN         |
++---------------------+-----------+-----------+------------+
+| DRV5_ACT_LED        | INPUT     | LVCMOS33  | IN         |
++---------------------+-----------+-----------+------------+
+| DRV6_ACT_LED        | INPUT     | LVCMOS33  | IN         |
++---------------------+-----------+-----------+------------+
+| DRV7_ACT_LED        | INPUT     | LVCMOS33  | IN         |
++---------------------+-----------+-----------+------------+
+| DRV0_ACT_LED        | INPUT     | LVCMOS33  | IN         |
++---------------------+-----------+-----------+------------+
+| DRV1_ACT_LED        | INPUT     | LVCMOS33  | IN         |
++---------------------+-----------+-----------+------------+
+| DRV2_ACT_LED        | INPUT     | LVCMOS33  | IN         |
+
+                                   Page 16
+
+
+
+
+Design:  BB_TOP                                        Date:  11/09/14  21:27:53
+
+IO (PIO) Attributes (cont)
+--------------------------
++---------------------+-----------+-----------+------------+
+| DRV3_ACT_LED        | INPUT     | LVCMOS33  | IN         |
++---------------------+-----------+-----------+------------+
+| SDA_2               | BIDIR     | LVCMOS33  | IN         |
++---------------------+-----------+-----------+------------+
+| SCL_2               | INPUT     | LVCMOS33  | IN         |
++---------------------+-----------+-----------+------------+
+| SCL_1               | INPUT     | LVCMOS33  | IN         |
++---------------------+-----------+-----------+------------+
+| RESET_N             | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+
+Removed logic
+-------------
+
+Block GPI0_INST/VCC undriven or does not drive anything - clipped.
+Block GPI0_INST/GND undriven or does not drive anything - clipped.
+Block GPI1_INST/GND undriven or does not drive anything - clipped.
+Block GPI1_INST/VCC undriven or does not drive anything - clipped.
+Block GPO2_INST/GND undriven or does not drive anything - clipped.
+Block GPO2_INST/VCC undriven or does not drive anything - clipped.
+Block GPI3_INST/GND undriven or does not drive anything - clipped.
+Block GPI3_INST/VCC undriven or does not drive anything - clipped.
+Block GPO4_INST/GND undriven or does not drive anything - clipped.
+Block GPO4_INST/VCC undriven or does not drive anything - clipped.
+Block GPO5_INST/GND undriven or does not drive anything - clipped.
+Block GPO5_INST/VCC undriven or does not drive anything - clipped.
+Block GPO6_INST/GND undriven or does not drive anything - clipped.
+Block GPO6_INST/VCC undriven or does not drive anything - clipped.
+Block GPO7_INST/GND undriven or does not drive anything - clipped.
+Block GPO7_INST/VCC undriven or does not drive anything - clipped.
+Block GPI8_INST/GND undriven or does not drive anything - clipped.
+Block GPI8_INST/VCC undriven or does not drive anything - clipped.
+Block GPI9_INST/GND undriven or does not drive anything - clipped.
+Block GPI9_INST/VCC undriven or does not drive anything - clipped.
+Block GPOA_INST/VCC undriven or does not drive anything - clipped.
+Block GPOA_INST/GND undriven or does not drive anything - clipped.
+Block FLT_AMB_LED_INST0/GND undriven or does not drive anything - clipped.
+Block FLT_AMB_LED_INST1/GND undriven or does not drive anything - clipped.
+Block FLT_AMB_LED_INST2/GND undriven or does not drive anything - clipped.
+Block IFDET_BLUE_LED_INST0/GND undriven or does not drive anything - clipped.
+Block IFDET_BLUE_LED_INST1/GND undriven or does not drive anything - clipped.
+Block IFDET_BLUE_LED_INST2/GND undriven or does not drive anything - clipped.
+Signal RESET_N_c_i was merged into signal RESET_N_c
+Signal I2C_INS_2.REG_DIN_0_.CN was merged into signal SYSCLK_c
+Signal DRV_PRSNT_AMBER_LED_EN_i[0] was merged into signal
+     PRSNT_LED_CTRL_INST/DRV_PRSNT_AMBER_LED_EN[0]
+Signal GND undriven or does not drive anything - clipped.
+Signal LED_CNT_INST/GND undriven or does not drive anything - clipped.
+Signal BB_SGPIO_INST/GND undriven or does not drive anything - clipped.
+Signal I2C_INS_1/GND undriven or does not drive anything - clipped.
+Signal I2C_INS_2/GND undriven or does not drive anything - clipped.
+Signal PRSNT_LED_CTRL_INST/GND undriven or does not drive anything - clipped.
+Signal un5_CNT_1_cry_23_0_COUT undriven or does not drive anything - clipped.
+Signal LED_CNT_INST/un7_CNT_1_cry_0_0_S1 undriven or does not drive anything -
+     clipped.
+
+                                   Page 17
+
+
+
+
+Design:  BB_TOP                                        Date:  11/09/14  21:27:53
+
+Removed logic (cont)
+--------------------
+Signal LED_CNT_INST/un7_CNT_1_cry_0_0_S0 undriven or does not drive anything -
+     clipped.
+Signal LED_CNT_INST/N_1 undriven or does not drive anything - clipped.
+Signal LED_CNT_INST/un7_CNT_1_cry_23_0_COUT undriven or does not drive anything
+     - clipped.
+Signal LED_CNT_INST/un4_CNT_500MS_1_cry_0_0_S1 undriven or does not drive
+     anything - clipped.
+Signal LED_CNT_INST/un4_CNT_500MS_1_cry_0_0_S0 undriven or does not drive
+     anything - clipped.
+Signal LED_CNT_INST/N_2 undriven or does not drive anything - clipped.
+Signal LED_CNT_INST/un4_CNT_500MS_1_cry_23_0_COUT undriven or does not drive
+     anything - clipped.
+Signal LED_CNT_INST/un6_CNT_3500MS_1_cry_0_0_S1 undriven or does not drive
+     anything - clipped.
+Signal LED_CNT_INST/un6_CNT_3500MS_1_cry_0_0_S0 undriven or does not drive
+     anything - clipped.
+Signal LED_CNT_INST/N_3 undriven or does not drive anything - clipped.
+Signal LED_CNT_INST/un6_CNT_3500MS_1_cry_25_0_COUT undriven or does not drive
+     anything - clipped.
+Signal LED_CNT_INST/un5_CNT_07S_1_cry_0_0_S1 undriven or does not drive anything
+     - clipped.
+Signal LED_CNT_INST/un5_CNT_07S_1_cry_0_0_S0 undriven or does not drive anything
+     - clipped.
+Signal LED_CNT_INST/N_4 undriven or does not drive anything - clipped.
+Signal LED_CNT_INST/un5_CNT_07S_1_cry_23_0_COUT undriven or does not drive
+     anything - clipped.
+Signal BB_SGPIO_INST/HDD_CNT_cry_0_S0[0] undriven or does not drive anything -
+     clipped.
+Signal BB_SGPIO_INST/N_1 undriven or does not drive anything - clipped.
+Signal BB_SGPIO_INST/HDD_CNT_s_0_S1[5] undriven or does not drive anything -
+     clipped.
+Signal BB_SGPIO_INST/HDD_CNT_s_0_COUT[5] undriven or does not drive anything -
+     clipped.
+Signal BB_SGPIO_INST/un5_CNT_cry_0_0_S1 undriven or does not drive anything -
+     clipped.
+Signal BB_SGPIO_INST/un5_CNT_cry_0_0_S0 undriven or does not drive anything -
+     clipped.
+Signal BB_SGPIO_INST/N_2 undriven or does not drive anything - clipped.
+Signal BB_SGPIO_INST/un5_CNT_cry_5_0_COUT undriven or does not drive anything -
+     clipped.
+Signal I2C_INS_1/LOC_cry_0_S0[0] undriven or does not drive anything - clipped.
+Signal I2C_INS_1/N_1 undriven or does not drive anything - clipped.
+Signal I2C_INS_1/LOC_s_0_S1[7] undriven or does not drive anything - clipped.
+Signal I2C_INS_1/LOC_s_0_COUT[7] undriven or does not drive anything - clipped.
+Signal I2C_INS_1/un1_REG_DIN_1_cry_0_0_S1_0 undriven or does not drive anything
+     - clipped.
+Signal I2C_INS_1/un1_REG_DIN_1_cry_0_0_S0_0 undriven or does not drive anything
+     - clipped.
+Signal I2C_INS_1/N_2 undriven or does not drive anything - clipped.
+Signal I2C_INS_1/un1_REG_DIN_1_s_7_0_S1_0 undriven or does not drive anything -
+     clipped.
+Signal I2C_INS_1/un1_REG_DIN_1_s_7_0_COUT_0 undriven or does not drive anything
+     - clipped.
+Signal I2C_INS_2/LOC_cry_0_S0_0[0] undriven or does not drive anything -
+     clipped.
+Signal I2C_INS_2/N_1 undriven or does not drive anything - clipped.
+
+                                   Page 18
+
+
+
+
+Design:  BB_TOP                                        Date:  11/09/14  21:27:53
+
+Removed logic (cont)
+--------------------
+Signal I2C_INS_2/LOC_s_0_S1_0[7] undriven or does not drive anything - clipped.
+Signal I2C_INS_2/LOC_s_0_COUT_0[7] undriven or does not drive anything -
+     clipped.
+Signal I2C_INS_2/un1_REG_DIN_1_cry_0_0_S1 undriven or does not drive anything -
+     clipped.
+Signal I2C_INS_2/un1_REG_DIN_1_cry_0_0_S0 undriven or does not drive anything -
+     clipped.
+Signal I2C_INS_2/N_2 undriven or does not drive anything - clipped.
+Signal I2C_INS_2/un1_REG_DIN_1_s_7_0_S1 undriven or does not drive anything -
+     clipped.
+Signal I2C_INS_2/un1_REG_DIN_1_s_7_0_COUT undriven or does not drive anything -
+     clipped.
+Signal PRSNT_LED_CTRL_INST/un5_CNT_1_cry_0_0_S1 undriven or does not drive
+     anything - clipped.
+Signal PRSNT_LED_CTRL_INST/un5_CNT_1_cry_0_0_S0 undriven or does not drive
+     anything - clipped.
+Signal PRSNT_LED_CTRL_INST/N_1 undriven or does not drive anything - clipped.
+Signal PRSNT_LED_CTRL_INST/un5_CNT_1_s_21_0_S1 undriven or does not drive
+     anything - clipped.
+Signal PRSNT_LED_CTRL_INST/un5_CNT_1_s_21_0_COUT undriven or does not drive
+     anything - clipped.
+Signal un5_CNT_1_cry_0_0_S1_0 undriven or does not drive anything - clipped.
+Signal un5_CNT_1_cry_0_0_S0_0 undriven or does not drive anything - clipped.
+Signal N_1 undriven or does not drive anything - clipped.
+Block RESET_N_pad_RNI43B3 was optimized away.
+Block I2C_INS_1/REG_DIN_7_.CN was optimized away.
+Block PRSNT_LED_CTRL_INST/DRV_PRSNT_AMBER_LED_EN_RNI0V0F[0] was optimized away.
+Block GND was optimized away.
+Block LED_CNT_INST/GND was optimized away.
+Block BB_SGPIO_INST/GND was optimized away.
+Block I2C_INS_1/GND was optimized away.
+Block I2C_INS_2/GND was optimized away.
+Block PRSNT_LED_CTRL_INST/GND was optimized away.
+
+Memory Usage
+------------
+
+
+GSR Usage
+---------
+
+GSR Component:
+   The local reset signal 'RESET_N_c' of the design has been inferred as Global
+        Set Reset (GSR). The reset signal used for GSR control is 'RESET_N_c'.
+
+GSR Property:
+   The design components with GSR property set to ENABLED will respond to global
+        set reset while the components with GSR property set to DISABLED will
+        not.
+
+Components on inferred reset domain with GSR Property disabled
+--------------------------------------------------------------
+
+These components have the GSR property set to DISABLED and are on the inferred
+     reset domain. The components will respond to the reset signal 'RESET_N_c'
+     via the local reset on the component and not the GSR component.
+
+Type and number of components of the type:
+   Register = 4
+
+                                   Page 19
+
+
+
+
+Design:  BB_TOP                                        Date:  11/09/14  21:27:53
+
+GSR Usage (cont)
+----------------
+
+Type and instance name of component:
+   Register : I2C_INS_1/SCL_PCLK
+   Register : I2C_INS_1/SCL_NCLK
+   Register : I2C_INS_2/SCL_NCLK
+   Register : I2C_INS_2/SCL_PCLK
+
+Run Time and Memory Usage
+-------------------------
+
+   Total CPU Time: 7 secs
+   Total REAL Time: 7 secs
+   Peak Memory Usage: 90 MB
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   Page 20
+
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995
+     AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent
+     Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems
+     All rights reserved.
+Copyright (c) 2002-2014 Lattice Semiconductor
+     Corporation,  All rights reserved.

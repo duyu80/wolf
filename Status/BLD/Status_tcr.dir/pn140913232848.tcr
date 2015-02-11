@@ -1,0 +1,8 @@
+#Start recording tcl command: 9/13/2014 23:02:31
+#Project Location: F:/project/wolf/Status/BLD; Project name: Status
+prj_project open "F:/project/wolf/Status/BLD/Status.ldf"
+prj_run Export -impl Status -task Bitgen -forceAll
+prj_run Export -impl Status -forceAll
+prj_run Export -impl Status -forceAll
+prj_run Export -impl Status -forceAll
+#Stop recording: 9/13/2014 23:28:48

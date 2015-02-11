@@ -1,0 +1,51 @@
+#Build: Synplify Pro I-2013.09L-SP1-1 , Build 098R, Apr 15 2014
+#install: C:\lscc\diamond\3.2_x64\synpbase
+#OS: Windows 7 6.1
+#Hostname: HOME-LAPTOP
+
+#Implementation: Baseboard
+
+$ Start of Compile
+#Wed Oct 01 20:20:19 2014
+
+Synopsys Verilog Compiler, version comp201309rcp1, Build 147R, built Apr 16 2014
+@N|Running in 64-bit mode
+Copyright (C) 1994-2013 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use or distribution of the software is strictly prohibited.
+
+@I::"C:\lscc\diamond\3.2_x64\synpbase\lib\lucent\machxo2.v"
+@I::"C:\lscc\diamond\3.2_x64\synpbase\lib\lucent\pmi_def.v"
+@I::"C:\lscc\diamond\3.2_x64\synpbase\lib\vlog\umr_capim.v"
+@I::"C:\lscc\diamond\3.2_x64\synpbase\lib\vlog\scemi_objects.v"
+@I::"C:\lscc\diamond\3.2_x64\synpbase\lib\vlog\scemi_pipes.svh"
+@I::"C:\lscc\diamond\3.2_x64\synpbase\lib\vlog\hypermods.v"
+@I::"F:\project\wolf\Baseboard\SRC\baseboard_define.v"
+@I::"F:\project\wolf\Baseboard\SRC\BB_SGPIO.pp.v"
+@I:"F:\project\wolf\Baseboard\SRC\BB_SGPIO.pp.v":"F:\project\wolf\Baseboard\SRC\../SRC\baseboard_define.v"
+@E: CG244 :"F:\project\wolf\Baseboard\SRC\BB_SGPIO.pp.v":15:0:15:0|Expecting port direction input/output/inout
+@I::"F:\project\wolf\Baseboard\SRC\BB_SGPIO.v"
+@I::"F:\project\wolf\Baseboard\SRC\BB_TOP.pp.v"
+@E: CG244 :"F:\project\wolf\Baseboard\SRC\BB_TOP.pp.v":21:0:21:0|Expecting port direction input/output/inout
+@I::"F:\project\wolf\Baseboard\SRC\BB_TOP.v"
+@I::"F:\project\wolf\Baseboard\SRC\GPI.v"
+@I::"F:\project\wolf\Baseboard\SRC\GPO.v"
+@I::"F:\project\wolf\Baseboard\SRC\I2C.v"
+@I::"F:\project\wolf\Baseboard\SRC\LED.v"
+@I::"F:\project\wolf\Baseboard\SRC\LED_CNT.v"
+@I::"F:\project\wolf\Baseboard\SRC\PCIE_RST_CTRL.pp.v"
+@E: CS112 :"F:\project\wolf\Baseboard\SRC\PCIE_RST_CTRL.pp.v":13:0:13:0|Expecting port name
+@I::"F:\project\wolf\Baseboard\SRC\PCIE_RST_CTRL.v"
+@W: CG679 :"F:\project\wolf\Baseboard\SRC\PCIE_RST_CTRL.pp.v":10:7:10:19|Previous module with same name PCIE_RST_CTRL
+@N: CG1223 :"F:\project\wolf\Baseboard\SRC\PCIE_RST_CTRL.v":10:7:10:19|Setting "set_option -dup {1}" in project file allows duplicate modules
+@E: CG855 :"F:\project\wolf\Baseboard\SRC\PCIE_RST_CTRL.v":10:7:10:19|Duplicate module name PCIE_RST_CTRL
+@I::"F:\project\wolf\Baseboard\SRC\PRSNT_LED_CTRL.pp.v"
+@E: CG244 :"F:\project\wolf\Baseboard\SRC\PRSNT_LED_CTRL.pp.v":15:0:15:0|Expecting port direction input/output/inout
+@I::"F:\project\wolf\Baseboard\SRC\PRSNT_LED_CTRL.v"
+@W: CG679 :"F:\project\wolf\Baseboard\SRC\PRSNT_LED_CTRL.pp.v":10:7:10:20|Previous module with same name PRSNT_LED_CTRL
+@N: CG1223 :"F:\project\wolf\Baseboard\SRC\PRSNT_LED_CTRL.v":10:7:10:20|Setting "set_option -dup {1}" in project file allows duplicate modules
+@E: CG855 :"F:\project\wolf\Baseboard\SRC\PRSNT_LED_CTRL.v":10:7:10:20|Duplicate module name PRSNT_LED_CTRL
+6 syntax errors
+@END
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Wed Oct 01 20:20:20 2014
+
+###########################################################]

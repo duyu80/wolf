@@ -1,0 +1,49 @@
+Synopsys Lattice Technology Pre-mapping, Version maplat, Build 908R, Built Apr 16 2014 10:10:17
+Copyright (C) 1994-2013, Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use or distribution of the software is strictly prohibited.
+Product Version I-2013.09L-SP1-1 
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
+
+@L: F:\project\wolf\Baseboard\BLD\Baseboard\Baseboard_scck.rpt 
+Printing clock  summary report in "F:\project\wolf\Baseboard\BLD\Baseboard\Baseboard_scck.rpt" file 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled 
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 102MB peak: 104MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 102MB peak: 104MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 113MB peak: 114MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 114MB peak: 116MB)
+
+@W: BN132 :"f:\project\wolf\baseboard\bld\..\src\prsnt_led_ctrl.v":64:0:64:5|Removing sequential instance PRSNT_LED_CTRL_INST.PRSNT[35:0],  because it is equivalent to instance PRSNT_LED_CTRL_INST.IDENT[35:0]
+@W: MT462 :"f:\project\wolf\baseboard\bld\..\src\i2c.v":122:43:122:48|Net I2C_INS_2.un1_CNT8 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"f:\project\wolf\baseboard\bld\..\src\i2c.v":122:43:122:48|Net I2C_INS_1.un1_CNT8 appears to be an unidentified clock source. Assuming default frequency. 
+syn_allowed_resources : blockrams=26  set on top level netlist BB_TOP
+
+
+Clock Summary
+**************
+
+Start             Requested     Requested     Clock        Clock                
+Clock             Frequency     Period        Type         Group                
+--------------------------------------------------------------------------------
+BB_TOP|SYSCLK     4.1 MHz       242.334       inferred     Autoconstr_clkgroup_0
+System            1.0 MHz       1000.000      system       system_clkgroup      
+================================================================================
+
+@W: MT531 :"f:\project\wolf\baseboard\bld\..\src\i2c.v":122:43:122:82|Found signal identified as System clock which controls 16 sequential elements including I2C_INS_1.CHECKSUM_OUT[7:0].  Using this clock, which has no specified timing constraint, can prevent conversion of gated or generated clocks and can adversely impact design performance. 
+@W: MT529 :"f:\project\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Found inferred clock BB_TOP|SYSCLK which controls 1428 sequential elements including GPI0_INST.DOUT2[7:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 82MB peak: 148MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Fri Oct 03 00:06:19 2014
+
+###########################################################]

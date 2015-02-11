@@ -1,0 +1,2 @@
+@E: CG906 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":322:46:322:51|Reference to unknown variable PRSNT0.
+

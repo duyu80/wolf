@@ -1,0 +1,11 @@
+c:\lscc\diamond\3.2_x64\synpbase\bin64\m_gen_lattice.exe  -prodtype  synplify_pro  -encrypt  -pro  -rundir  F:\project\wolf\Baseboard\BLD\Baseboard  -part LCMXO2_7000HC  -package FG484C  -grade -4   -maxfan 1000    -pipe -forcenogsr -fixgatedclocks 1 -fixgeneratedclocks 1 -RWCheckOnRam 1  -use_rename_in_edif 1 -Write_declared_clocks_only 1     -summaryfile F:\project\wolf\Baseboard\BLD\Baseboard\synlog\report\Baseboard_Baseboard_fpga_mapper.xml -top_level_module  BB_TOP  -flow mapping  -oedif  F:\project\wolf\Baseboard\BLD\Baseboard\Baseboard_Baseboard.edi  -freq 1.000  F:\project\wolf\Baseboard\BLD\Baseboard\synwork\Baseboard_Baseboard_prem.srd  -devicelib  c:\lscc\diamond\3.2_x64\synpbase\lib\lucent\machxo2.v  -devicelib  c:\lscc\diamond\3.2_x64\synpbase\lib\lucent\pmi_def.v  -ologparam  F:\project\wolf\Baseboard\BLD\Baseboard\syntmp\Baseboard_Baseboard.plg  -osyn  F:\project\wolf\Baseboard\BLD\Baseboard\Baseboard_Baseboard.srm  -prjdir  F:\project\wolf\Baseboard\BLD\Baseboard\  -prjname  proj_1  -log  F:\project\wolf\Baseboard\BLD\Baseboard\synlog\Baseboard_Baseboard_fpga_mapper.srr 
+rc:1 success:1
+F:\project\wolf\Baseboard\BLD\Baseboard\Baseboard_Baseboard.edi|o|1415539664|2822121
+F:\project\wolf\Baseboard\BLD\Baseboard\synwork\Baseboard_Baseboard_prem.srd|i|1415539645|154984
+c:\lscc\diamond\3.2_x64\synpbase\lib\lucent\machxo2.v|i|1397610298|51625
+c:\lscc\diamond\3.2_x64\synpbase\lib\lucent\pmi_def.v|i|1397610298|40584
+F:\project\wolf\Baseboard\BLD\Baseboard\syntmp\Baseboard_Baseboard.plg|o|1415539665|1660
+F:\project\wolf\Baseboard\BLD\Baseboard\Baseboard_Baseboard.srm|o|1415539663|294772
+F:\project\wolf\Baseboard\BLD\Baseboard\synlog\Baseboard_Baseboard_fpga_mapper.srr|o|1415539665|33287
+c:\lscc\diamond\3.2_x64\synpbase\bin64\m_gen_lattice.exe|i|1397614522|24119808
+c:\lscc\diamond\3.2_x64\synpbase\bin\m_gen_lattice.exe|i|1397611902|20611584

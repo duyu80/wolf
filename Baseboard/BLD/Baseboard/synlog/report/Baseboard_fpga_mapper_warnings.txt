@@ -1,0 +1,33 @@
+@W: MT462 :"f:\project\wolf\baseboard\bld\..\src\i2c.v":122:43:122:48|Net I2C_INS_2.un1_CNT8 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"f:\project\wolf\baseboard\bld\..\src\i2c.v":122:43:122:48|Net I2C_INS_1.un1_CNT8 appears to be an unidentified clock source. Assuming default frequency. 
+@W: BN132 :"f:\project\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing instance GPI0_INST.DOUT2[7],  because it is equivalent to instance GPI0_INST.DOUT2[6]
+@W: BN132 :"f:\project\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI0_INST.DOUT1[1],  because it is equivalent to instance GPI0_INST.DOUT1[0]
+@W: BN132 :"f:\project\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI9_INST.DOUT1[7],  because it is equivalent to instance GPI9_INST.DOUT1[6]
+@W: BN132 :"f:\project\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI9_INST.DOUT1[6],  because it is equivalent to instance GPI9_INST.DOUT1[5]
+@W: BN132 :"f:\project\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI9_INST.DOUT1[5],  because it is equivalent to instance GPI9_INST.DOUT1[4]
+@W: BN132 :"f:\project\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI9_INST.DOUT1[4],  because it is equivalent to instance GPI9_INST.DOUT1[3]
+@W: BN132 :"f:\project\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI9_INST.DOUT1[3],  because it is equivalent to instance GPI9_INST.DOUT1[2]
+@W: BN132 :"f:\project\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI9_INST.DOUT1[2],  because it is equivalent to instance GPI9_INST.DOUT1[1]
+@W: BN132 :"f:\project\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing instance GPI0_INST.DOUT2[1],  because it is equivalent to instance GPI0_INST.DOUT2[0]
+@W: BN132 :"f:\project\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing instance GPI9_INST.DOUT2[7],  because it is equivalent to instance GPI9_INST.DOUT2[6]
+@W: BN132 :"f:\project\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing instance GPI9_INST.DOUT2[6],  because it is equivalent to instance GPI9_INST.DOUT2[5]
+@W: BN132 :"f:\project\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing instance GPI9_INST.DOUT2[5],  because it is equivalent to instance GPI9_INST.DOUT2[4]
+@W: BN132 :"f:\project\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing instance GPI9_INST.DOUT2[4],  because it is equivalent to instance GPI9_INST.DOUT2[3]
+@W: BN132 :"f:\project\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing instance GPI9_INST.DOUT2[3],  because it is equivalent to instance GPI9_INST.DOUT2[2]
+@W: BN132 :"f:\project\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing instance GPI9_INST.DOUT2[2],  because it is equivalent to instance GPI9_INST.DOUT2[1]
+@W: BN132 :"f:\project\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI8_INST.DOUT1[7],  because it is equivalent to instance GPI8_INST.DOUT1[6]
+@W: BN132 :"f:\project\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI8_INST.DOUT1[6],  because it is equivalent to instance GPI8_INST.DOUT1[5]
+@W: BN132 :"f:\project\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI8_INST.DOUT1[5],  because it is equivalent to instance GPI8_INST.DOUT1[4]
+@W: BN132 :"f:\project\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI8_INST.DOUT1[4],  because it is equivalent to instance GPI8_INST.DOUT1[3]
+@W: BN132 :"f:\project\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI8_INST.DOUT1[3],  because it is equivalent to instance GPI8_INST.DOUT1[2]
+@W: BN132 :"f:\project\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI0_INST.DOUT1[7],  because it is equivalent to instance GPI0_INST.DOUT1[6]
+@W: BN132 :"f:\project\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing instance GPI8_INST.DOUT2[7],  because it is equivalent to instance GPI8_INST.DOUT2[6]
+@W: BN132 :"f:\project\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing instance GPI8_INST.DOUT2[6],  because it is equivalent to instance GPI8_INST.DOUT2[5]
+@W: BN132 :"f:\project\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing instance GPI8_INST.DOUT2[5],  because it is equivalent to instance GPI8_INST.DOUT2[4]
+@W: BN132 :"f:\project\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing instance GPI8_INST.DOUT2[4],  because it is equivalent to instance GPI8_INST.DOUT2[3]
+@W: BN132 :"f:\project\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing instance GPI8_INST.DOUT2[3],  because it is equivalent to instance GPI8_INST.DOUT2[2]
+@W: MT462 :"f:\project\wolf\baseboard\bld\..\src\i2c.v":122:43:122:82|Net I2C_INS_2.N_2195_i appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"f:\project\wolf\baseboard\bld\..\src\i2c.v":122:43:122:48|Net I2C_INS_1.N_254 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"f:\project\wolf\baseboard\bld\..\src\i2c.v":122:43:122:82|Net I2C_INS_2.N_2195_i appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"f:\project\wolf\baseboard\bld\..\src\i2c.v":122:43:122:48|Net I2C_INS_1.N_254 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT420 |Found inferred clock BB_TOP|SYSCLK with period 7.03ns. Please declare a user-defined clock on object "p:SYSCLK"

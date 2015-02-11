@@ -1,0 +1,52 @@
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled 
+@N: MT206 |Auto Constrain mode is enabled
+@N: BN362 :"f:\project\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing sequential instance GPI0_INST.DOUT1[0] in hierarchy view:work.BB_TOP(verilog) because there are no references to its outputs 
+@N: BN362 :"f:\project\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing sequential instance GPI0_INST.DOUT2[0] in hierarchy view:work.BB_TOP(verilog) because there are no references to its outputs 
+@N: BN362 :"f:\project\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing sequential instance GPI8_INST.DOUT1[2] in hierarchy view:work.BB_TOP(verilog) because there are no references to its outputs 
+@N: BN362 :"f:\project\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing sequential instance GPI8_INST.DOUT2[2] in hierarchy view:work.BB_TOP(verilog) because there are no references to its outputs 
+@N: BN362 :"f:\project\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing sequential instance GPI9_INST.DOUT1[1] in hierarchy view:work.BB_TOP(verilog) because there are no references to its outputs 
+@N: BN362 :"f:\project\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing sequential instance GPI9_INST.DOUT2[1] in hierarchy view:work.BB_TOP(verilog) because there are no references to its outputs 
+@N: BN362 :"f:\project\wolf\baseboard\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CSD1[15] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C(verilog) because there are no references to its outputs 
+@N: BN362 :"f:\project\wolf\baseboard\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CSD1[14] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C(verilog) because there are no references to its outputs 
+@N: BN362 :"f:\project\wolf\baseboard\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CSD1[13] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C(verilog) because there are no references to its outputs 
+@N: BN362 :"f:\project\wolf\baseboard\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CSD1[12] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C(verilog) because there are no references to its outputs 
+@N: BN362 :"f:\project\wolf\baseboard\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CSD1[11] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C(verilog) because there are no references to its outputs 
+@N: BN362 :"f:\project\wolf\baseboard\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CS[15] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C(verilog) because there are no references to its outputs 
+@N: BN362 :"f:\project\wolf\baseboard\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CS[14] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C(verilog) because there are no references to its outputs 
+@N: BN362 :"f:\project\wolf\baseboard\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CS[13] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C(verilog) because there are no references to its outputs 
+@N: BN362 :"f:\project\wolf\baseboard\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CS[12] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C(verilog) because there are no references to its outputs 
+@N: BN362 :"f:\project\wolf\baseboard\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CS[11] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C(verilog) because there are no references to its outputs 
+@N: BN362 :"f:\project\wolf\baseboard\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CSD1[15] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C_I2C_INS_2(verilog) because there are no references to its outputs 
+@N: BN362 :"f:\project\wolf\baseboard\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CSD1[14] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C_I2C_INS_2(verilog) because there are no references to its outputs 
+@N: BN362 :"f:\project\wolf\baseboard\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CSD1[13] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C_I2C_INS_2(verilog) because there are no references to its outputs 
+@N: BN362 :"f:\project\wolf\baseboard\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CSD1[12] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C_I2C_INS_2(verilog) because there are no references to its outputs 
+@N: BN362 :"f:\project\wolf\baseboard\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CSD1[11] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C_I2C_INS_2(verilog) because there are no references to its outputs 
+@N: BN362 :"f:\project\wolf\baseboard\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CS[15] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C_I2C_INS_2(verilog) because there are no references to its outputs 
+@N: BN362 :"f:\project\wolf\baseboard\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CS[14] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C_I2C_INS_2(verilog) because there are no references to its outputs 
+@N: BN362 :"f:\project\wolf\baseboard\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CS[13] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C_I2C_INS_2(verilog) because there are no references to its outputs 
+@N: BN362 :"f:\project\wolf\baseboard\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CS[12] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C_I2C_INS_2(verilog) because there are no references to its outputs 
+@N: BN362 :"f:\project\wolf\baseboard\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CS[11] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C_I2C_INS_2(verilog) because there are no references to its outputs 
+@N: FX271 :"f:\project\wolf\baseboard\bld\..\src\i2c.v":242:0:242:5|Instance "I2C_INS_2.DOUT[0]" with 98 loads replicated 3 times to improve timing 
+@N: FX271 :"f:\project\wolf\baseboard\bld\..\src\i2c.v":242:0:242:5|Instance "I2C_INS_2.DOUT[2]" with 97 loads replicated 3 times to improve timing 
+@N: FX271 :"f:\project\wolf\baseboard\bld\..\src\i2c.v":242:0:242:5|Instance "I2C_INS_2.DOUT[1]" with 97 loads replicated 3 times to improve timing 
+@N: FX271 :"f:\project\wolf\baseboard\bld\..\src\i2c.v":242:0:242:5|Instance "I2C_INS_1.DOUT[0]" with 98 loads replicated 3 times to improve timing 
+@N: FX271 :"f:\project\wolf\baseboard\bld\..\src\i2c.v":242:0:242:5|Instance "I2C_INS_1.DOUT[1]" with 97 loads replicated 3 times to improve timing 
+@N: FX271 :"f:\project\wolf\baseboard\bld\..\src\i2c.v":242:0:242:5|Instance "I2C_INS_1.DOUT[2]" with 97 loads replicated 3 times to improve timing 
+@N: FX271 :"f:\project\wolf\baseboard\bld\..\src\i2c.v":242:0:242:5|Instance "I2C_INS_2.DOUT[3]" with 97 loads replicated 3 times to improve timing 
+@N: FX271 :"f:\project\wolf\baseboard\bld\..\src\i2c.v":242:0:242:5|Instance "I2C_INS_2.DOUT[4]" with 97 loads replicated 3 times to improve timing 
+@N: FX271 :"f:\project\wolf\baseboard\bld\..\src\i2c.v":242:0:242:5|Instance "I2C_INS_1.DOUT[3]" with 97 loads replicated 3 times to improve timing 
+@N: FX271 :"f:\project\wolf\baseboard\bld\..\src\i2c.v":242:0:242:5|Instance "I2C_INS_1.DOUT[4]" with 97 loads replicated 3 times to improve timing 
+@N: FX271 :"f:\project\wolf\baseboard\bld\..\src\led_cnt.v":53:0:53:5|Instance "LED_CNT_INST.CNT_500MS[17]" with 15 loads replicated 1 times to improve timing 
+@N: FX271 :"f:\project\wolf\baseboard\bld\..\src\i2c.v":242:0:242:5|Instance "I2C_INS_2.DOUT[6]" with 97 loads replicated 3 times to improve timing 
+@N: FX271 :"f:\project\wolf\baseboard\bld\..\src\i2c.v":242:0:242:5|Instance "I2C_INS_2.DOUT[5]" with 97 loads replicated 3 times to improve timing 
+@N: FX271 :"f:\project\wolf\baseboard\bld\..\src\i2c.v":242:0:242:5|Instance "I2C_INS_1.DOUT[5]" with 97 loads replicated 3 times to improve timing 
+@N: FX271 :"f:\project\wolf\baseboard\bld\..\src\i2c.v":242:0:242:5|Instance "I2C_INS_1.DOUT[6]" with 97 loads replicated 3 times to improve timing 
+@N: FX271 :"f:\project\wolf\baseboard\bld\..\src\i2c.v":229:0:229:5|Instance "I2C_INS_1.LOC[2]" with 122 loads replicated 3 times to improve timing 
+@N: FX271 :"f:\project\wolf\baseboard\bld\..\src\i2c.v":229:0:229:5|Instance "I2C_INS_1.LOC[0]" with 75 loads replicated 3 times to improve timing 
+@N: FX164 |The option to pack flops in the IOB has not been specified 
+@N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
+@N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.
+@N: MT322 |Clock constraints cover only FF-to-FF paths associated with the clock.
+@N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.
+@N: MT322 |Clock constraints cover only FF-to-FF paths associated with the clock.

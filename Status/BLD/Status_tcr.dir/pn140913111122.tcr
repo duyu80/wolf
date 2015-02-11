@@ -1,0 +1,8 @@
+#Start recording tcl command: 9/13/2014 11:01:06
+#Project Location: F:/project/wolf/Status/BLD; Project name: Status
+prj_project new -name "Status" -impl "Status" -dev LCMXO2-2000HC-4TG144C -synthesis "synplify"
+prj_src add "F:/project/wolf/Status/SRC/GPIO.v" "F:/project/wolf/Status/SRC/HEADER.v" "F:/project/wolf/Status/SRC/I2C.v" "F:/project/wolf/Status/SRC/LED.v" "F:/project/wolf/Status/SRC/LED_CNT.v" "F:/project/wolf/Status/SRC/SGPIO.v" "F:/project/wolf/Status/SRC/status_define.v" "F:/project/wolf/Status/SRC/TOP.v"
+prj_project save
+prj_run Export -impl Status -forceAll
+prj_run PAR -impl Status -task IOTiming
+#Stop recording: 9/13/2014 11:11:22

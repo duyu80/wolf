@@ -1,0 +1,16 @@
+c:\lscc\diamond\3.2_x64\synpbase\bin64\c_ver.exe  -osyn  F:\project\wolf\Status\BLD\Status\synwork\Status_Status_comp.srs  -top  TOP  -prodtype  synplify_pro  -dspmac -fixsmult -infer_seqShift -nram -divnmod -I F:\project\wolf\Status\BLD  -I F:\project\wolf\Status\BLD\Status\  -I c:\lscc\diamond\3.2_x64\synpbase\lib  -v2001  -devicelib  c:\lscc\diamond\3.2_x64\synpbase\lib\lucent\machxo2.v  -devicelib  c:\lscc\diamond\3.2_x64\synpbase\lib\lucent\pmi_def.v  -encrypt  -pro  -dmgen  F:\project\wolf\Status\BLD\Status\dm  -ui -fid2 -ram -sharing on  -ll 2000 -autosm -D_MULTIPLE_FILE_COMPILATION_UNIT_ -lib work F:\project\wolf\Status\BLD\..\SRC\GPIO.v -lib work F:\project\wolf\Status\BLD\..\SRC\HEADER.v -lib work F:\project\wolf\Status\BLD\..\SRC\I2C.v -lib work F:\project\wolf\Status\BLD\..\SRC\LED.v -lib work F:\project\wolf\Status\BLD\..\SRC\LED_CNT.v -lib work F:\project\wolf\Status\BLD\..\SRC\SGPIO.v -lib work F:\project\wolf\Status\BLD\..\SRC\status_define.v -lib work F:\project\wolf\Status\BLD\..\SRC\TOP.v -loga  F:\project\wolf\Status\BLD\Status\Status_Status.srr 
+rc:1 success:1
+F:\project\wolf\Status\BLD\Status\synwork\Status_Status_comp.srs|o|1415345655|38672
+c:\lscc\diamond\3.2_x64\synpbase\lib\lucent\machxo2.v|i|1397610298|51625
+c:\lscc\diamond\3.2_x64\synpbase\lib\lucent\pmi_def.v|i|1397610298|40584
+F:\project\wolf\Status\BLD\..\SRC\GPIO.v|i|1409843497|6225
+F:\project\wolf\Status\BLD\..\SRC\HEADER.v|i|1410065714|1485
+F:\project\wolf\Status\BLD\..\SRC\I2C.v|i|1409842665|17026
+F:\project\wolf\Status\BLD\..\SRC\LED.v|i|1409843697|7444
+F:\project\wolf\Status\BLD\..\SRC\LED_CNT.v|i|1409586146|2673
+F:\project\wolf\Status\BLD\..\SRC\SGPIO.v|i|1410449697|3074
+F:\project\wolf\Status\BLD\..\SRC\status_define.v|i|1415345623|7436
+F:\project\wolf\Status\BLD\..\SRC\TOP.v|i|1410620642|13631
+F:\project\wolf\Status\BLD\Status\Status_Status.srr|o|1415345655|17436
+c:\lscc\diamond\3.2_x64\synpbase\bin64\c_ver.exe|i|1397577714|5735936
+c:\lscc\diamond\3.2_x64\synpbase\bin\c_ver.exe|i|1397577496|2207232

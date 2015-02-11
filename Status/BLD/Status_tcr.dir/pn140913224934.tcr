@@ -1,0 +1,5 @@
+#Start recording tcl command: 9/13/2014 22:06:32
+#Project Location: F:/project/wolf/Status/BLD; Project name: Status
+prj_project open "F:/project/wolf/Status/BLD/Status.ldf"
+prj_src add -exclude "F:/project/wolf/Status/SRC/Status.lpf"
+#Stop recording: 9/13/2014 22:49:34

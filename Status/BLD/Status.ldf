@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliProject version="3.2" title="Status" device="LCMXO2-2000HC-4TG144C" default_implementation="Status">
+    <Options/>
+    <Implementation title="Status" dir="Status" description="Status" synthesis="synplify" default_strategy="Strategy1">
+        <Options def_top="TOP"/>
+        <Source name="../SRC/GPIO.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../SRC/HEADER.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../SRC/I2C.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../SRC/LED.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../SRC/LED_CNT.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../SRC/SGPIO.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../SRC/status_define.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../SRC/TOP.v" type="Verilog" type_short="Verilog">
+            <Options top_module="TOP"/>
+        </Source>
+        <Source name="Status/Status.xcf" type="Programming Project File" type_short="Programming">
+            <Options/>
+        </Source>
+        <Source name="../SRC/Status.lpf" type="Logic Preference" type_short="LPF">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Strategy name="Strategy1" file="Status1.sty"/>
+</BaliProject>

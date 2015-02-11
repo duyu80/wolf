@@ -1,0 +1,40 @@
+
+fsm_encoding {7810811} sequential
+
+fsm_state_encoding {7810811} 00000001 {00}
+
+fsm_state_encoding {7810811} 00000010 {01}
+
+fsm_state_encoding {7810811} 00000100 {10}
+
+fsm_state_encoding {7810811} 00001000 {11}
+
+fsm_registers {7810811} {STATE[1]}  {STATE[0]} 
+
+fsm_encoding {1535703572} onehot
+
+fsm_state_encoding {1535703572} CASE_I2C_IDLE {00001}
+
+fsm_state_encoding {1535703572} CASE_I2C_ADD {00010}
+
+fsm_state_encoding {1535703572} CASE_I2C_LOC {00100}
+
+fsm_state_encoding {1535703572} CASE_I2C_DATA1 {01000}
+
+fsm_state_encoding {1535703572} CASE_I2C_END {10000}
+
+fsm_registers {1535703572} {STATE[4]}  {STATE[3]}  {STATE[2]}  {STATE[1]}  {STATE[0]} 
+
+fsm_encoding {1535703572} onehot
+
+fsm_state_encoding {1535703572} CASE_I2C_IDLE {00001}
+
+fsm_state_encoding {1535703572} CASE_I2C_ADD {00010}
+
+fsm_state_encoding {1535703572} CASE_I2C_LOC {00100}
+
+fsm_state_encoding {1535703572} CASE_I2C_DATA1 {01000}
+
+fsm_state_encoding {1535703572} CASE_I2C_END {10000}
+
+fsm_registers {1535703572} {STATE[4]}  {STATE[3]}  {STATE[2]}  {STATE[1]}  {STATE[0]} 

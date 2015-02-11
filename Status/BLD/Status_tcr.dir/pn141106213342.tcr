@@ -1,0 +1,5 @@
+#Start recording tcl command: 11/6/2014 21:31:36
+#Project Location: F:/project/wolf/Status/BLD; Project name: Status
+prj_project open "F:/project/wolf/Status/BLD/Status.ldf"
+prj_run Export -impl Status
+#Stop recording: 11/6/2014 21:33:42

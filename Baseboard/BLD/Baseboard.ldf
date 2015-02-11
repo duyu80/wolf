@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliProject version="3.2" title="Baseboard" device="LCMXO2-7000HC-4FG484C" default_implementation="Baseboard">
+    <Options/>
+    <Implementation title="Baseboard" dir="Baseboard" description="Baseboard" synthesis="synplify" default_strategy="Strategy1">
+        <Options def_top="BB_TOP" top="BB_TOP"/>
+        <Source name="../SRC/baseboard_define.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../SRC/BB_SGPIO.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../SRC/BB_TOP.v" type="Verilog" type_short="Verilog">
+            <Options top_module="BB_TOP"/>
+        </Source>
+        <Source name="../SRC/GPI.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../SRC/GPO.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../SRC/I2C.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../SRC/LED.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../SRC/LED_CNT.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../SRC/PCIE_RST_CTRL.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../SRC/PRSNT_LED_CTRL.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../SRC/Baseboard.lpf" type="Logic Preference" type_short="LPF">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Strategy name="Strategy1" file="Baseboard1.sty"/>
+</BaliProject>

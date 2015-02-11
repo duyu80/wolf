@@ -1,0 +1,133 @@
+----------------------------------------------------------------------
+Report for cell TOP.verilog
+
+Register bits: 542 of 2112 (26%)
+Latch bits:      8
+PIC Latch:       0
+I/O cells:       88
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                                 BB        1       100.0
+                              CCU2D       96       100.0
+                            FD1P3AX        2       100.0
+                            FD1P3BX        1       100.0
+                            FD1P3DX      322       100.0
+                            FD1S1AY        8       100.0
+                            FD1S3BX        3       100.0
+                            FD1S3DX      138       100.0
+                                GSR        1       100.0
+                                 IB        9       100.0
+                           IFS1P3DX        4       100.0
+                                INV        5       100.0
+                                 OB       78       100.0
+                           OFS1P3DX       72       100.0
+                           ORCALUT4      536       100.0
+                              PFUMX       10       100.0
+                                PUR        1       100.0
+                                VHI        7       100.0
+                                VLO        8       100.0
+SUB MODULES 
+                               GPIO        1       100.0
+                             HEADER        1       100.0
+                                I2C        1       100.0
+                                LED        1       100.0
+                            LED_CNT        1       100.0
+                              SGPIO        1       100.0
+                            SGPIO_0        1       100.0
+                            
+                         TOTAL          1309           
+----------------------------------------------------------------------
+Report for cell I2C.netlist
+     Instance path:  I2C_INST
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2D       10        10.4
+                            FD1P3AX        2       100.0
+                            FD1P3BX        1       100.0
+                            FD1P3DX       48        14.9
+                            FD1S1AY        8       100.0
+                            FD1S3BX        1        33.3
+                            FD1S3DX       21        15.2
+                                INV        2        40.0
+                           ORCALUT4      103        19.2
+                                VHI        1        14.3
+                                VLO        1        12.5
+                            
+                         TOTAL           198           
+----------------------------------------------------------------------
+Report for cell SGPIO_0.netlist
+  Original Cell name SGPIO
+     Instance path:  SGPIO_INST2
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2D       17        17.7
+                            FD1P3DX       67        20.8
+                            FD1S3BX        1        33.3
+                            FD1S3DX        7         5.1
+                                INV        1        20.0
+                           ORCALUT4       72        13.4
+                                VHI        1        14.3
+                                VLO        1        12.5
+                            
+                         TOTAL           167           
+----------------------------------------------------------------------
+Report for cell SGPIO.netlist
+  Original Cell name SGPIO
+     Instance path:  SGPIO_INST1
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2D       17        17.7
+                            FD1P3DX       67        20.8
+                            FD1S3BX        1        33.3
+                            FD1S3DX        7         5.1
+                                INV        1        20.0
+                           ORCALUT4       72        13.4
+                                VHI        1        14.3
+                                VLO        1        12.5
+                            
+                         TOTAL           167           
+----------------------------------------------------------------------
+Report for cell HEADER.netlist
+     Instance path:  HEADER_INST
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                            FD1P3DX        4         1.2
+                           ORCALUT4        2         0.4
+                                VHI        1        14.3
+                                VLO        1        12.5
+                            
+                         TOTAL             8           
+----------------------------------------------------------------------
+Report for cell LED.netlist
+     Instance path:  LED_INST
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                           ORCALUT4       24         4.5
+                              PFUMX        5        50.0
+                                VLO        1        12.5
+                            
+                         TOTAL            30           
+----------------------------------------------------------------------
+Report for cell LED_CNT.netlist
+     Instance path:  LED_CNT_INST
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2D       52        54.2
+                            FD1S3DX      103        74.6
+                           ORCALUT4      153        28.5
+                              PFUMX        5        50.0
+                                VHI        1        14.3
+                                VLO        1        12.5
+                            
+                         TOTAL           315           
+----------------------------------------------------------------------
+Report for cell GPIO.netlist
+     Instance path:  GPIO_INST
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                            FD1P3DX      136        42.2
+                           ORCALUT4      110        20.5
+                                VHI        1        14.3
+                                VLO        1        12.5
+                            
+                         TOTAL           248           

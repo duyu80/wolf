@@ -1,0 +1,22 @@
+
+
+#### START OF CLOCK OPTIMIZATION REPORT #####[
+
+1 non-gated/non-generated clock tree(s) driving 542 clock pin(s) of sequential element(s)
+1 gated/generated clock tree(s) driving 8 clock pin(s) of sequential element(s)
+0 instances converted, 8 sequential instances remain driven by gated/generated clocks
+
+================================ Non-Gated/Non-Generated Clocks =================================
+Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance          
+-------------------------------------------------------------------------------------------------
+@K:CKID0002       SYSCLK              port                   542        I2C_INST_MASTER_RD_NACKio
+=================================================================================================
+====================================================== Gated/Generated Clocks ======================================================
+Clock Tree ID     Driving Element           Drive Element Type     Fanout     Sample Instance              Explanation              
+------------------------------------------------------------------------------------------------------------------------------------
+@K:CKID0001       I2C_INST.CNT8_RNIR9LQ     ORCALUT4               8          I2C_INST.CHECKSUM_OUT[0]     No clocks found on inputs
+====================================================================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+

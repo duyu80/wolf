@@ -1,0 +1,13 @@
+c:\lscc\diamond\3.2_x64\synpbase\bin64\m_gen_lattice.exe  -prodtype  synplify_pro  -encrypt  -pro  -rundir  F:\project\wolf\Status\BLD\Status  -part LCMXO2_2000HC  -package TG144C  -grade -4   -maxfan 1000    -pipe -forcenogsr -fixgatedclocks 1 -fixgeneratedclocks 1 -RWCheckOnRam 1  -use_rename_in_edif 1 -Write_declared_clocks_only 1     -summaryfile F:\project\wolf\Status\BLD\Status\synlog\report\Status_Status_premap.xml -top_level_module  TOP  -oedif  F:\project\wolf\Status\BLD\Status\Status_Status.edi  -conchk_prepass  F:\project\wolf\Status\BLD\Status\Status_Status_cck_prepass.rpt  -freq 1.000  F:\project\wolf\Status\BLD\Status\synwork\Status_Status_comp.srs  -flow prepass  -gcc_prepass  -osrd  F:\project\wolf\Status\BLD\Status\synwork\Status_Status_prem.srd  -devicelib  c:\lscc\diamond\3.2_x64\synpbase\lib\lucent\machxo2.v  -devicelib  c:\lscc\diamond\3.2_x64\synpbase\lib\lucent\pmi_def.v  -ologparam  F:\project\wolf\Status\BLD\Status\syntmp\Status_Status.plg  -osyn  F:\project\wolf\Status\BLD\Status\synwork\Status_Status_prem.srd  -prjdir  F:\project\wolf\Status\BLD\Status\  -prjname  proj_1  -log  F:\project\wolf\Status\BLD\Status\synlog\Status_Status_premap.srr 
+rc:1 success:1
+F:\project\wolf\Status\BLD\Status\Status_Status.edi|o|1415280774|721263
+F:\project\wolf\Status\BLD\Status\Status_Status_cck_prepass.rpt|o|0|0
+F:\project\wolf\Status\BLD\Status\synwork\Status_Status_comp.srs|i|1415345655|38672
+F:\project\wolf\Status\BLD\Status\synwork\Status_Status_prem.srd|o|1415345657|52441
+c:\lscc\diamond\3.2_x64\synpbase\lib\lucent\machxo2.v|i|1397610298|51625
+c:\lscc\diamond\3.2_x64\synpbase\lib\lucent\pmi_def.v|i|1397610298|40584
+F:\project\wolf\Status\BLD\Status\syntmp\Status_Status.plg|o|1415345656|0
+F:\project\wolf\Status\BLD\Status\synwork\Status_Status_prem.srd|o|1415345657|52441
+F:\project\wolf\Status\BLD\Status\synlog\Status_Status_premap.srr|o|1415345657|3975
+c:\lscc\diamond\3.2_x64\synpbase\bin64\m_gen_lattice.exe|i|1397614522|24119808
+c:\lscc\diamond\3.2_x64\synpbase\bin\m_gen_lattice.exe|i|1397611902|20611584

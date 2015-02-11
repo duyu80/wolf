@@ -1,0 +1,1501 @@
+
+synpwrap -prj "Status_Status_synplify.tcl" -log "Status_Status.srf"
+Copyright (C) 1992-2014 Lattice Semiconductor Corporation. All rights reserved.
+Lattice Diamond Version 3.2.0.134
+
+==contents of Status_Status.srf
+#Build: Synplify Pro I-2013.09L-SP1-1 , Build 098R, Apr 15 2014
+#install: c:\lscc\diamond\3.2_x64\synpbase
+#OS: Windows 7 6.1
+#Hostname: HOME-LAPTOP
+
+#Implementation: Status
+
+$ Start of Compile
+#Fri Nov 07 15:34:14 2014
+
+Synopsys Verilog Compiler, version comp201309rcp1, Build 147R, built Apr 16 2014
+@N|Running in 64-bit mode
+Copyright (C) 1994-2013 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use or distribution of the software is strictly prohibited.
+
+@I::"c:\lscc\diamond\3.2_x64\synpbase\lib\lucent\machxo2.v"
+@I::"c:\lscc\diamond\3.2_x64\synpbase\lib\lucent\pmi_def.v"
+@I::"c:\lscc\diamond\3.2_x64\synpbase\lib\vlog\umr_capim.v"
+@I::"c:\lscc\diamond\3.2_x64\synpbase\lib\vlog\scemi_objects.v"
+@I::"c:\lscc\diamond\3.2_x64\synpbase\lib\vlog\scemi_pipes.svh"
+@I::"c:\lscc\diamond\3.2_x64\synpbase\lib\vlog\hypermods.v"
+@I::"F:\project\wolf\Status\BLD\..\SRC\GPIO.v"
+@I:"F:\project\wolf\Status\BLD\..\SRC\GPIO.v":"F:\project\wolf\Status\BLD\..\SRC\../SRC\status_define.v"
+@I::"F:\project\wolf\Status\BLD\..\SRC\HEADER.v"
+@I::"F:\project\wolf\Status\BLD\..\SRC\I2C.v"
+@I::"F:\project\wolf\Status\BLD\..\SRC\LED.v"
+@I::"F:\project\wolf\Status\BLD\..\SRC\LED_CNT.v"
+@I::"F:\project\wolf\Status\BLD\..\SRC\SGPIO.v"
+@I::"F:\project\wolf\Status\BLD\..\SRC\status_define.v"
+@I::"F:\project\wolf\Status\BLD\..\SRC\TOP.v"
+Verilog syntax check successful!
+File F:\project\wolf\Status\BLD\..\SRC\../SRC/status_define.v changed - recompiling
+File F:\project\wolf\Status\BLD\..\SRC\../SRC/status_define.v changed - recompiling
+File F:\project\wolf\Status\BLD\..\SRC\../SRC/status_define.v changed - recompiling
+File F:\project\wolf\Status\BLD\..\SRC\../SRC/status_define.v changed - recompiling
+File F:\project\wolf\Status\BLD\..\SRC\../SRC/status_define.v changed - recompiling
+File F:\project\wolf\Status\BLD\..\SRC\../SRC/status_define.v changed - recompiling
+File F:\project\wolf\Status\BLD\..\SRC\status_define.v changed - recompiling
+File F:\project\wolf\Status\BLD\..\SRC\../SRC/status_define.v changed - recompiling
+Selecting top level module TOP
+@N: CG364 :"F:\project\wolf\Status\BLD\..\SRC\I2C.v":18:7:18:9|Synthesizing module I2C
+
+@N: CG179 :"F:\project\wolf\Status\BLD\..\SRC\I2C.v":191:105:191:107|Removing redundant assignment
+@N: CG179 :"F:\project\wolf\Status\BLD\..\SRC\I2C.v":209:82:209:90|Removing redundant assignment
+@N: CG179 :"F:\project\wolf\Status\BLD\..\SRC\I2C.v":223:66:223:70|Removing redundant assignment
+@N: CG179 :"F:\project\wolf\Status\BLD\..\SRC\I2C.v":224:83:224:88|Removing redundant assignment
+@N: CG179 :"F:\project\wolf\Status\BLD\..\SRC\I2C.v":237:116:237:118|Removing redundant assignment
+@N: CG179 :"F:\project\wolf\Status\BLD\..\SRC\I2C.v":251:65:251:68|Removing redundant assignment
+@N: CG179 :"F:\project\wolf\Status\BLD\..\SRC\I2C.v":252:72:252:82|Removing redundant assignment
+@N: CG179 :"F:\project\wolf\Status\BLD\..\SRC\I2C.v":292:208:292:213|Removing redundant assignment
+@N: CG179 :"F:\project\wolf\Status\BLD\..\SRC\I2C.v":314:73:314:79|Removing redundant assignment
+@N: CG179 :"F:\project\wolf\Status\BLD\..\SRC\I2C.v":333:127:333:136|Removing redundant assignment
+@N: CG179 :"F:\project\wolf\Status\BLD\..\SRC\I2C.v":335:44:335:50|Removing redundant assignment
+@N: CG179 :"F:\project\wolf\Status\BLD\..\SRC\I2C.v":350:80:350:87|Removing redundant assignment
+@N: CG179 :"F:\project\wolf\Status\BLD\..\SRC\I2C.v":351:117:351:130|Removing redundant assignment
+@W: CG360 :"F:\project\wolf\Status\BLD\..\SRC\I2C.v":53:8:53:19|No assignment to wire TIMER_OVFLOW
+
+@W: CG133 :"F:\project\wolf\Status\BLD\..\SRC\I2C.v":54:7:54:17|No assignment to TIMER_CLR_N
+@W: CL169 :"F:\project\wolf\Status\BLD\..\SRC\I2C.v":257:0:257:5|Pruning register RD_END3 
+
+@W: CL169 :"F:\project\wolf\Status\BLD\..\SRC\I2C.v":257:0:257:5|Pruning register WR_END1 
+
+@W: CL169 :"F:\project\wolf\Status\BLD\..\SRC\I2C.v":257:0:257:5|Pruning register WR_END2 
+
+@W: CL169 :"F:\project\wolf\Status\BLD\..\SRC\I2C.v":257:0:257:5|Pruning register PORT_CSD2[15:0] 
+
+@W: CL169 :"F:\project\wolf\Status\BLD\..\SRC\I2C.v":242:0:242:5|Pruning register CHECKSUM_IN[7:0] 
+
+@W: CL169 :"F:\project\wolf\Status\BLD\..\SRC\I2C.v":178:0:178:5|Pruning register CNT9 
+
+@W: CL169 :"F:\project\wolf\Status\BLD\..\SRC\I2C.v":162:0:162:5|Pruning register START 
+
+@W: CL169 :"F:\project\wolf\Status\BLD\..\SRC\I2C.v":162:0:162:5|Pruning register STOP 
+
+@W: CL169 :"F:\project\wolf\Status\BLD\..\SRC\I2C.v":141:0:141:5|Pruning register SCL_PCLKD3 
+
+@W: CL169 :"F:\project\wolf\Status\BLD\..\SRC\I2C.v":141:0:141:5|Pruning register SDA_NCLK 
+
+@W: CL169 :"F:\project\wolf\Status\BLD\..\SRC\I2C.v":141:0:141:5|Pruning register SDA_PCLK 
+
+@A: CL282 :"F:\project\wolf\Status\BLD\..\SRC\I2C.v":141:0:141:5|Feedback mux created for signal SCL_PCLK -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
+@A: CL282 :"F:\project\wolf\Status\BLD\..\SRC\I2C.v":141:0:141:5|Feedback mux created for signal SCL_NCLK -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
+@N: CG364 :"F:\project\wolf\Status\BLD\..\SRC\GPIO.v":10:7:10:10|Synthesizing module GPIO
+
+@N: CG179 :"F:\project\wolf\Status\BLD\..\SRC\GPIO.v":104:40:104:43|Removing redundant assignment
+@N: CG179 :"F:\project\wolf\Status\BLD\..\SRC\GPIO.v":132:57:132:61|Removing redundant assignment
+@N: CG179 :"F:\project\wolf\Status\BLD\..\SRC\GPIO.v":133:57:133:61|Removing redundant assignment
+@N: CG179 :"F:\project\wolf\Status\BLD\..\SRC\GPIO.v":134:57:134:61|Removing redundant assignment
+@N: CG179 :"F:\project\wolf\Status\BLD\..\SRC\GPIO.v":135:57:135:61|Removing redundant assignment
+@N: CG179 :"F:\project\wolf\Status\BLD\..\SRC\GPIO.v":136:57:136:61|Removing redundant assignment
+@N: CG179 :"F:\project\wolf\Status\BLD\..\SRC\GPIO.v":137:57:137:61|Removing redundant assignment
+@N: CG179 :"F:\project\wolf\Status\BLD\..\SRC\GPIO.v":138:57:138:61|Removing redundant assignment
+@N: CG179 :"F:\project\wolf\Status\BLD\..\SRC\GPIO.v":139:57:139:61|Removing redundant assignment
+@N: CG179 :"F:\project\wolf\Status\BLD\..\SRC\GPIO.v":140:57:140:61|Removing redundant assignment
+@N: CG179 :"F:\project\wolf\Status\BLD\..\SRC\GPIO.v":141:57:141:61|Removing redundant assignment
+@N: CG179 :"F:\project\wolf\Status\BLD\..\SRC\GPIO.v":142:57:142:61|Removing redundant assignment
+@N: CG179 :"F:\project\wolf\Status\BLD\..\SRC\GPIO.v":143:57:143:61|Removing redundant assignment
+@N: CG179 :"F:\project\wolf\Status\BLD\..\SRC\GPIO.v":144:57:144:61|Removing redundant assignment
+@N: CG179 :"F:\project\wolf\Status\BLD\..\SRC\GPIO.v":145:57:145:61|Removing redundant assignment
+@N: CG179 :"F:\project\wolf\Status\BLD\..\SRC\GPIO.v":146:57:146:61|Removing redundant assignment
+@N: CG179 :"F:\project\wolf\Status\BLD\..\SRC\GPIO.v":147:57:147:61|Removing redundant assignment
+@N: CG364 :"F:\project\wolf\Status\BLD\..\SRC\LED_CNT.v":10:7:10:13|Synthesizing module LED_CNT
+
+@N: CG179 :"F:\project\wolf\Status\BLD\..\SRC\LED_CNT.v":45:47:45:53|Removing redundant assignment
+@N: CG179 :"F:\project\wolf\Status\BLD\..\SRC\LED_CNT.v":46:115:46:121|Removing redundant assignment
+@N: CG179 :"F:\project\wolf\Status\BLD\..\SRC\LED_CNT.v":48:108:48:114|Removing redundant assignment
+@N: CG179 :"F:\project\wolf\Status\BLD\..\SRC\LED_CNT.v":65:52:65:64|Removing redundant assignment
+@N: CG179 :"F:\project\wolf\Status\BLD\..\SRC\LED_CNT.v":67:85:67:98|Removing redundant assignment
+@N: CG179 :"F:\project\wolf\Status\BLD\..\SRC\LED_CNT.v":83:55:83:61|Removing redundant assignment
+@N: CG364 :"F:\project\wolf\Status\BLD\..\SRC\LED.v":10:7:10:9|Synthesizing module LED
+
+@N: CG364 :"F:\project\wolf\Status\BLD\..\SRC\HEADER.v":10:7:10:12|Synthesizing module HEADER
+
+@N: CG179 :"F:\project\wolf\Status\BLD\..\SRC\HEADER.v":37:40:37:43|Removing redundant assignment
+@N: CG364 :"F:\project\wolf\Status\BLD\..\SRC\SGPIO.v":10:7:10:11|Synthesizing module SGPIO
+
+@N: CG179 :"F:\project\wolf\Status\BLD\..\SRC\SGPIO.v":78:19:78:25|Removing redundant assignment
+@N: CG179 :"F:\project\wolf\Status\BLD\..\SRC\SGPIO.v":79:19:79:25|Removing redundant assignment
+@N: CG179 :"F:\project\wolf\Status\BLD\..\SRC\SGPIO.v":82:47:82:51|Removing redundant assignment
+@N: CG179 :"F:\project\wolf\Status\BLD\..\SRC\SGPIO.v":85:68:85:78|Removing redundant assignment
+@N: CG179 :"F:\project\wolf\Status\BLD\..\SRC\SGPIO.v":86:71:86:75|Removing redundant assignment
+@N: CG179 :"F:\project\wolf\Status\BLD\..\SRC\SGPIO.v":89:70:89:74|Removing redundant assignment
+@N: CG179 :"F:\project\wolf\Status\BLD\..\SRC\SGPIO.v":92:68:92:78|Removing redundant assignment
+@N: CG179 :"F:\project\wolf\Status\BLD\..\SRC\SGPIO.v":94:107:94:111|Removing redundant assignment
+@N: CG179 :"F:\project\wolf\Status\BLD\..\SRC\SGPIO.v":119:64:119:66|Removing redundant assignment
+@N: CG364 :"F:\project\wolf\Status\BLD\..\SRC\TOP.v":11:7:11:9|Synthesizing module TOP
+
+@W: CG360 :"F:\project\wolf\Status\BLD\..\SRC\TOP.v":114:27:114:31|No assignment to wire DIN_2
+
+@W: CG360 :"F:\project\wolf\Status\BLD\..\SRC\TOP.v":114:34:114:38|No assignment to wire DIN_3
+
+@W: CG360 :"F:\project\wolf\Status\BLD\..\SRC\TOP.v":114:41:114:45|No assignment to wire DIN_4
+
+@W: CG360 :"F:\project\wolf\Status\BLD\..\SRC\TOP.v":114:49:114:53|No assignment to wire DIN_5
+
+@W: CG360 :"F:\project\wolf\Status\BLD\..\SRC\TOP.v":114:56:114:60|No assignment to wire DIN_6
+
+@W: CG360 :"F:\project\wolf\Status\BLD\..\SRC\TOP.v":114:63:114:67|No assignment to wire DIN_7
+
+@W: CG360 :"F:\project\wolf\Status\BLD\..\SRC\TOP.v":115:16:115:20|No assignment to wire DIN_8
+
+@W: CG360 :"F:\project\wolf\Status\BLD\..\SRC\TOP.v":115:23:115:27|No assignment to wire DIN_9
+
+@W: CG360 :"F:\project\wolf\Status\BLD\..\SRC\TOP.v":115:30:115:34|No assignment to wire DIN_A
+
+@W: CG360 :"F:\project\wolf\Status\BLD\..\SRC\TOP.v":115:37:115:41|No assignment to wire DIN_B
+
+@W: CG360 :"F:\project\wolf\Status\BLD\..\SRC\TOP.v":115:44:115:48|No assignment to wire DIN_C
+
+@W: CG360 :"F:\project\wolf\Status\BLD\..\SRC\TOP.v":115:51:115:55|No assignment to wire DIN_D
+
+@W: CG360 :"F:\project\wolf\Status\BLD\..\SRC\TOP.v":115:58:115:62|No assignment to wire DIN_E
+
+@W: CG360 :"F:\project\wolf\Status\BLD\..\SRC\TOP.v":115:65:115:69|No assignment to wire DIN_F
+
+@W: CG360 :"F:\project\wolf\Status\BLD\..\SRC\TOP.v":116:7:116:11|No assignment to wire WR_EN
+
+@W: CL156 :"F:\project\wolf\Status\BLD\..\SRC\TOP.v":114:27:114:31|*Input DIN_2[7:0] to expression [instance] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL156 :"F:\project\wolf\Status\BLD\..\SRC\TOP.v":114:34:114:38|*Input DIN_3[7:0] to expression [instance] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL156 :"F:\project\wolf\Status\BLD\..\SRC\TOP.v":114:41:114:45|*Input DIN_4[7:0] to expression [instance] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL156 :"F:\project\wolf\Status\BLD\..\SRC\TOP.v":114:49:114:53|*Input DIN_5[7:0] to expression [instance] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL156 :"F:\project\wolf\Status\BLD\..\SRC\TOP.v":114:56:114:60|*Input DIN_6[7:0] to expression [instance] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL156 :"F:\project\wolf\Status\BLD\..\SRC\TOP.v":114:63:114:67|*Input DIN_7[7:0] to expression [instance] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL156 :"F:\project\wolf\Status\BLD\..\SRC\TOP.v":115:16:115:20|*Input DIN_8[7:0] to expression [instance] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL156 :"F:\project\wolf\Status\BLD\..\SRC\TOP.v":115:23:115:27|*Input DIN_9[7:0] to expression [instance] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL156 :"F:\project\wolf\Status\BLD\..\SRC\TOP.v":115:30:115:34|*Input DIN_A[7:0] to expression [instance] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL156 :"F:\project\wolf\Status\BLD\..\SRC\TOP.v":115:37:115:41|*Input DIN_B[7:0] to expression [instance] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL156 :"F:\project\wolf\Status\BLD\..\SRC\TOP.v":115:44:115:48|*Input DIN_C[7:0] to expression [instance] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL156 :"F:\project\wolf\Status\BLD\..\SRC\TOP.v":115:51:115:55|*Input DIN_D[7:0] to expression [instance] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL156 :"F:\project\wolf\Status\BLD\..\SRC\TOP.v":115:58:115:62|*Input DIN_E[7:0] to expression [instance] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL156 :"F:\project\wolf\Status\BLD\..\SRC\TOP.v":115:65:115:69|*Input DIN_F[7:0] to expression [instance] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL190 :"F:\project\wolf\Status\BLD\..\SRC\SGPIO.v":110:0:110:5|Optimizing register bit CNT[25] to a constant 0
+@W: CL190 :"F:\project\wolf\Status\BLD\..\SRC\SGPIO.v":110:0:110:5|Optimizing register bit CNT[26] to a constant 0
+@W: CL190 :"F:\project\wolf\Status\BLD\..\SRC\SGPIO.v":110:0:110:5|Optimizing register bit CNT[27] to a constant 0
+@W: CL190 :"F:\project\wolf\Status\BLD\..\SRC\SGPIO.v":110:0:110:5|Optimizing register bit CNT[28] to a constant 0
+@W: CL190 :"F:\project\wolf\Status\BLD\..\SRC\SGPIO.v":110:0:110:5|Optimizing register bit CNT[29] to a constant 0
+@W: CL190 :"F:\project\wolf\Status\BLD\..\SRC\SGPIO.v":110:0:110:5|Optimizing register bit CNT[30] to a constant 0
+@W: CL190 :"F:\project\wolf\Status\BLD\..\SRC\SGPIO.v":110:0:110:5|Optimizing register bit CNT[31] to a constant 0
+@W: CL190 :"F:\project\wolf\Status\BLD\..\SRC\SGPIO.v":62:0:62:5|Optimizing register bit HDD_CNT[6] to a constant 0
+@W: CL190 :"F:\project\wolf\Status\BLD\..\SRC\SGPIO.v":62:0:62:5|Optimizing register bit HDD_CNT[7] to a constant 0
+@W: CL279 :"F:\project\wolf\Status\BLD\..\SRC\SGPIO.v":62:0:62:5|Pruning register bits 7 to 6 of HDD_CNT[7:0] 
+
+@W: CL279 :"F:\project\wolf\Status\BLD\..\SRC\SGPIO.v":110:0:110:5|Pruning register bits 31 to 25 of CNT[31:0] 
+
+@N: CL201 :"F:\project\wolf\Status\BLD\..\SRC\SGPIO.v":62:0:62:5|Trying to extract state machine for register STATE
+Extracted state machine for register STATE
+State machine has 5 reachable states with original encodings of:
+   00000001
+   00000010
+   00000100
+   00001000
+   00010000
+@W: CL279 :"F:\project\wolf\Status\BLD\..\SRC\HEADER.v":29:0:29:5|Pruning register bits 7 to 6 of DOUT[7:0] 
+
+@W: CL279 :"F:\project\wolf\Status\BLD\..\SRC\HEADER.v":29:0:29:5|Pruning register bits 4 to 3 of DOUT[7:0] 
+
+@W: CL246 :"F:\project\wolf\Status\BLD\..\SRC\HEADER.v":13:33:13:42|Input port bits 15 to 6 of OFFSET_SEL[15:0] are unused
+
+@W: CL247 :"F:\project\wolf\Status\BLD\..\SRC\HEADER.v":13:33:13:42|Input port bit 4 of OFFSET_SEL[15:0] is unused
+
+@W: CL159 :"F:\project\wolf\Status\BLD\..\SRC\HEADER.v":16:32:16:34|Input DIN is unused
+@W: CL159 :"F:\project\wolf\Status\BLD\..\SRC\LED.v":11:19:11:24|Input SYSCLK is unused
+@W: CL159 :"F:\project\wolf\Status\BLD\..\SRC\LED.v":12:19:12:25|Input RESET_N is unused
+@W: CL190 :"F:\project\wolf\Status\BLD\..\SRC\LED_CNT.v":33:0:33:5|Optimizing register bit CNT[24] to a constant 0
+@W: CL190 :"F:\project\wolf\Status\BLD\..\SRC\LED_CNT.v":53:0:53:5|Optimizing register bit CNT_500MS[24] to a constant 0
+@W: CL190 :"F:\project\wolf\Status\BLD\..\SRC\LED_CNT.v":53:0:53:5|Optimizing register bit CNT_3500MS[26] to a constant 0
+@W: CL190 :"F:\project\wolf\Status\BLD\..\SRC\LED_CNT.v":74:0:74:5|Optimizing register bit CNT_07S[23] to a constant 0
+@W: CL190 :"F:\project\wolf\Status\BLD\..\SRC\LED_CNT.v":74:0:74:5|Optimizing register bit CNT_07S[24] to a constant 0
+@W: CL190 :"F:\project\wolf\Status\BLD\..\SRC\LED_CNT.v":74:0:74:5|Optimizing register bit CNT_07S[25] to a constant 0
+@W: CL190 :"F:\project\wolf\Status\BLD\..\SRC\LED_CNT.v":74:0:74:5|Optimizing register bit CNT_07S[26] to a constant 0
+@W: CL279 :"F:\project\wolf\Status\BLD\..\SRC\LED_CNT.v":74:0:74:5|Pruning register bits 26 to 23 of CNT_07S[26:0] 
+
+@W: CL260 :"F:\project\wolf\Status\BLD\..\SRC\LED_CNT.v":53:0:53:5|Pruning register bit 26 of CNT_3500MS[26:0] 
+
+@W: CL260 :"F:\project\wolf\Status\BLD\..\SRC\LED_CNT.v":53:0:53:5|Pruning register bit 24 of CNT_500MS[24:0] 
+
+@W: CL260 :"F:\project\wolf\Status\BLD\..\SRC\LED_CNT.v":33:0:33:5|Pruning register bit 24 of CNT[24:0] 
+
+@N: CL135 :"F:\project\wolf\Status\BLD\..\SRC\I2C.v":178:0:178:5|Found seqShift NEXT_STATE_D2, depth=3, width=1
+@N: CL201 :"F:\project\wolf\Status\BLD\..\SRC\I2C.v":357:0:357:5|Trying to extract state machine for register STATE
+Extracted state machine for register STATE
+State machine has 5 reachable states with original encodings of:
+   00000001
+   00000010
+   00000100
+   00001000
+   00100000
+@END
+
+At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 75MB peak: 77MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Fri Nov 07 15:34:15 2014
+
+###########################################################]
+Pre-mapping Report
+
+Synopsys Lattice Technology Pre-mapping, Version maplat, Build 908R, Built Apr 16 2014 10:10:17
+Copyright (C) 1994-2013, Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use or distribution of the software is strictly prohibited.
+Product Version I-2013.09L-SP1-1 
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
+
+@L: F:\project\wolf\Status\BLD\Status\Status_Status_scck.rpt 
+Printing clock  summary report in "F:\project\wolf\Status\BLD\Status\Status_Status_scck.rpt" file 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled 
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 102MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 102MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 112MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 114MB)
+
+@N: BN362 :"f:\project\wolf\status\bld\..\src\sgpio.v":62:0:62:5|Removing sequential instance FLT_LED[35:0] of view:PrimLib.dffre(prim) in hierarchy view:work.SGPIO_SGPIO_INST1(verilog) because there are no references to its outputs 
+@N: BN362 :"f:\project\wolf\status\bld\..\src\sgpio.v":62:0:62:5|Removing sequential instance FLT_LED[35:0] of view:PrimLib.dffre(prim) in hierarchy view:work.SGPIO_SGPIO_INST2(verilog) because there are no references to its outputs 
+@N: BN362 :"f:\project\wolf\status\bld\..\src\sgpio.v":62:0:62:5|Removing sequential instance FLT_LED_TMP[35:0] of view:PrimLib.dffre(prim) in hierarchy view:work.SGPIO_SGPIO_INST1(verilog) because there are no references to its outputs 
+@N: BN362 :"f:\project\wolf\status\bld\..\src\sgpio.v":62:0:62:5|Removing sequential instance FLT_LED_TMP[35:0] of view:PrimLib.dffre(prim) in hierarchy view:work.SGPIO_SGPIO_INST2(verilog) because there are no references to its outputs 
+@W: MT462 :"f:\project\wolf\status\bld\..\src\i2c.v":122:43:122:48|Net I2C_INST.un1_CNT8 appears to be an unidentified clock source. Assuming default frequency. 
+syn_allowed_resources : blockrams=8  set on top level netlist TOP
+
+
+Clock Summary
+**************
+
+Start          Requested     Requested     Clock        Clock              
+Clock          Frequency     Period        Type         Group              
+---------------------------------------------------------------------------
+System         1.0 MHz       1000.000      system       system_clkgroup    
+TOP|SYSCLK     1.0 MHz       1000.000      inferred     Inferred_clkgroup_0
+===========================================================================
+
+@W: MT531 :"f:\project\wolf\status\bld\..\src\i2c.v":122:43:122:82|Found signal identified as System clock which controls 8 sequential elements including I2C_INST.CHECKSUM_OUT[7:0].  Using this clock, which has no specified timing constraint, can prevent conversion of gated or generated clocks and can adversely impact design performance. 
+@W: MT529 :"f:\project\wolf\status\bld\..\src\gpio.v":96:0:96:5|Found inferred clock TOP|SYSCLK which controls 568 sequential elements including GPIO_INST.DOUT[7:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 77MB peak: 140MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Fri Nov 07 15:34:17 2014
+
+###########################################################]
+Map & Optimize Report
+
+Synopsys Lattice Technology Mapper, Version maplat, Build 908R, Built Apr 16 2014 10:10:17
+Copyright (C) 1994-2013, Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use or distribution of the software is strictly prohibited.
+Product Version I-2013.09L-SP1-1 
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
+
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled 
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 100MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 100MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 110MB peak: 111MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 113MB)
+
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 138MB peak: 140MB)
+
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+@W: MT462 :"f:\project\wolf\status\bld\..\src\i2c.v":122:43:122:48|Net I2C_INST.un1_CNT8 appears to be an unidentified clock source. Assuming default frequency. 
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 138MB peak: 140MB)
+
+Encoding state machine STATE[4:0] (view:work.SGPIO(verilog))
+original code -> new code
+   00000001 -> 00001
+   00000010 -> 00010
+   00000100 -> 00100
+   00001000 -> 01000
+   00010000 -> 10000
+@N:"f:\project\wolf\status\bld\..\src\sgpio.v":110:0:110:5|Found counter in view:work.SGPIO(verilog) inst CNT[24:0]
+@N:"f:\project\wolf\status\bld\..\src\sgpio.v":62:0:62:5|Found counter in view:work.SGPIO(verilog) inst HDD_CNT[5:0]
+Encoding state machine STATE[4:0] (view:work.I2C(verilog))
+original code -> new code
+   00000001 -> 00001
+   00000010 -> 00010
+   00000100 -> 00100
+   00001000 -> 01000
+   00100000 -> 10000
+@N:"f:\project\wolf\status\bld\..\src\i2c.v":229:0:229:5|Found counter in view:work.I2C(verilog) inst LOC[7:0]
+@N: BN362 :"f:\project\wolf\status\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CSD1[15] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C(verilog) because there are no references to its outputs 
+@N: BN362 :"f:\project\wolf\status\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CSD1[14] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C(verilog) because there are no references to its outputs 
+@N: BN362 :"f:\project\wolf\status\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CSD1[13] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C(verilog) because there are no references to its outputs 
+@N: BN362 :"f:\project\wolf\status\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CSD1[12] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C(verilog) because there are no references to its outputs 
+@N: BN362 :"f:\project\wolf\status\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CSD1[11] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C(verilog) because there are no references to its outputs 
+@N: BN362 :"f:\project\wolf\status\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CSD1[10] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C(verilog) because there are no references to its outputs 
+@N: BN362 :"f:\project\wolf\status\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CSD1[9] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C(verilog) because there are no references to its outputs 
+@N: BN362 :"f:\project\wolf\status\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CSD1[8] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C(verilog) because there are no references to its outputs 
+@N: BN362 :"f:\project\wolf\status\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CSD1[7] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C(verilog) because there are no references to its outputs 
+@N: BN362 :"f:\project\wolf\status\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CSD1[6] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C(verilog) because there are no references to its outputs 
+@N: BN362 :"f:\project\wolf\status\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CSD1[5] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C(verilog) because there are no references to its outputs 
+@N: BN362 :"f:\project\wolf\status\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CSD1[4] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C(verilog) because there are no references to its outputs 
+@N: BN362 :"f:\project\wolf\status\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CSD1[3] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C(verilog) because there are no references to its outputs 
+@N: BN362 :"f:\project\wolf\status\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CSD1[2] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C(verilog) because there are no references to its outputs 
+@N: BN362 :"f:\project\wolf\status\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CS[15] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C(verilog) because there are no references to its outputs 
+@N: BN362 :"f:\project\wolf\status\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CS[14] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C(verilog) because there are no references to its outputs 
+@N: BN362 :"f:\project\wolf\status\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CS[13] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C(verilog) because there are no references to its outputs 
+@N: BN362 :"f:\project\wolf\status\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CS[12] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C(verilog) because there are no references to its outputs 
+@N: BN362 :"f:\project\wolf\status\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CS[11] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C(verilog) because there are no references to its outputs 
+@N: BN362 :"f:\project\wolf\status\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CS[10] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C(verilog) because there are no references to its outputs 
+@N: BN362 :"f:\project\wolf\status\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CS[9] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C(verilog) because there are no references to its outputs 
+@N: BN362 :"f:\project\wolf\status\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CS[8] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C(verilog) because there are no references to its outputs 
+@N: BN362 :"f:\project\wolf\status\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CS[7] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C(verilog) because there are no references to its outputs 
+@N: BN362 :"f:\project\wolf\status\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CS[6] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C(verilog) because there are no references to its outputs 
+@N: BN362 :"f:\project\wolf\status\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CS[5] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C(verilog) because there are no references to its outputs 
+@N: BN362 :"f:\project\wolf\status\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CS[4] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C(verilog) because there are no references to its outputs 
+@N: BN362 :"f:\project\wolf\status\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CS[3] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C(verilog) because there are no references to its outputs 
+@N: BN362 :"f:\project\wolf\status\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CS[2] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C(verilog) because there are no references to its outputs 
+
+Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 146MB peak: 147MB)
+
+
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 144MB peak: 147MB)
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 145MB peak: 149MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 145MB peak: 149MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 145MB peak: 149MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 144MB peak: 149MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 145MB peak: 149MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 168MB peak: 171MB)
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+------------------------------------------------------------
+
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 150MB peak: 171MB)
+
+@N: FX164 |The option to pack flops in the IOB has not been specified 
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 150MB peak: 171MB)
+
+
+
+#### START OF CLOCK OPTIMIZATION REPORT #####[
+
+1 non-gated/non-generated clock tree(s) driving 542 clock pin(s) of sequential element(s)
+1 gated/generated clock tree(s) driving 8 clock pin(s) of sequential element(s)
+0 instances converted, 8 sequential instances remain driven by gated/generated clocks
+
+================================ Non-Gated/Non-Generated Clocks =================================
+Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance          
+-------------------------------------------------------------------------------------------------
+@K:CKID0002       SYSCLK              port                   542        I2C_INST_MASTER_RD_NACKio
+=================================================================================================
+====================================================== Gated/Generated Clocks ======================================================
+Clock Tree ID     Driving Element           Drive Element Type     Fanout     Sample Instance              Explanation              
+------------------------------------------------------------------------------------------------------------------------------------
+@K:CKID0001       I2C_INST.CNT8_RNIR9LQ     ORCALUT4               8          I2C_INST.CHECKSUM_OUT[0]     No clocks found on inputs
+====================================================================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+
+Writing Analyst data base F:\project\wolf\Status\BLD\Status\Status_Status.srm
+@W: MT462 :"f:\project\wolf\status\bld\..\src\i2c.v":251:13:251:50|Net I2C_INST.N_14_i appears to be an unidentified clock source. Assuming default frequency. 
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 149MB peak: 171MB)
+
+Writing EDIF Netlist and constraint files
+@W: MT462 :"f:\project\wolf\status\bld\..\src\i2c.v":251:13:251:50|Net I2C_INST.N_14_i appears to be an unidentified clock source. Assuming default frequency. 
+I-2013.09L-SP1-1 
+@N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
+
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 153MB peak: 171MB)
+
+@W: MT420 |Found inferred clock TOP|SYSCLK with period 1000.00ns. Please declare a user-defined clock on object "p:SYSCLK"
+
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Fri Nov 07 15:34:23 2014
+#
+
+
+Top view:               TOP
+Requested Frequency:    1.0 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    
+@N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.
+
+@N: MT322 |Clock constraints cover only FF-to-FF paths associated with the clock.
+
+
+
+Performance Summary 
+*******************
+
+
+Worst slack in design: 498.252
+
+                   Requested     Estimated     Requested     Estimated                 Clock        Clock              
+Starting Clock     Frequency     Frequency     Period        Period        Slack       Type         Group              
+-----------------------------------------------------------------------------------------------------------------------
+TOP|SYSCLK         1.0 MHz       120.6 MHz     1000.000      8.295         498.252     inferred     Inferred_clkgroup_0
+System             1.0 MHz       397.4 MHz     1000.000      2.517         997.483     system       system_clkgroup    
+=======================================================================================================================
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks                  |    rise  to  rise     |    fall  to  fall   |    rise  to  fall     |    fall  to  rise   
+--------------------------------------------------------------------------------------------------------------------
+Starting    Ending      |  constraint  slack    |  constraint  slack  |  constraint  slack    |  constraint  slack  
+--------------------------------------------------------------------------------------------------------------------
+System      TOP|SYSCLK  |  1000.000    997.483  |  No paths    -      |  No paths    -        |  No paths    -      
+TOP|SYSCLK  System      |  No paths    -        |  No paths    -      |  No paths    -        |  1000.000    995.265
+TOP|SYSCLK  TOP|SYSCLK  |  1000.000    991.705  |  No paths    -      |  500.000     498.252  |  500.000     498.364
+====================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: TOP|SYSCLK
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                          Starting                                            Arrival            
+Instance                  Reference      Type        Pin     Net              Time        Slack  
+                          Clock                                                                  
+-------------------------------------------------------------------------------------------------
+I2C_INST.PORT_CSD1[0]     TOP|SYSCLK     FD1S3DX     Q       PORT_CSD1[0]     1.220       498.252
+I2C_INST.PORT_CSD1[1]     TOP|SYSCLK     FD1S3DX     Q       PORT_CSD1[1]     1.220       498.252
+I2C_INST.RD_END2          TOP|SYSCLK     FD1S3DX     Q       RD_END2          1.220       498.309
+HEADER_INST.DOUT_1[1]     TOP|SYSCLK     FD1P3DX     Q       DIN_0[3]         1.148       498.324
+I2C_INST.REG_DIN[0]       TOP|SYSCLK     FD1P3DX     Q       REG_DIN[0]       1.108       498.364
+HEADER_INST.DOUT_1[2]     TOP|SYSCLK     FD1P3DX     Q       DIN_0[4]         1.044       498.428
+I2C_INST.REG_DIN[1]       TOP|SYSCLK     FD1P3DX     Q       REG_DIN[1]       1.044       498.428
+I2C_INST.REG_DIN[2]       TOP|SYSCLK     FD1P3DX     Q       REG_DIN[2]       1.044       498.428
+I2C_INST.REG_DIN[3]       TOP|SYSCLK     FD1P3DX     Q       REG_DIN[3]       1.044       498.428
+I2C_INST.REG_DIN[4]       TOP|SYSCLK     FD1P3DX     Q       REG_DIN[4]       1.044       498.428
+=================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                        Starting                                              Required            
+Instance                Reference      Type        Pin     Net                Time         Slack  
+                        Clock                                                                     
+--------------------------------------------------------------------------------------------------
+I2C_INST.REG_DIN[0]     TOP|SYSCLK     FD1P3DX     D       un2_REG_DIN[0]     500.089      498.252
+I2C_INST.REG_DIN[1]     TOP|SYSCLK     FD1P3DX     D       un2_REG_DIN[1]     500.089      498.252
+I2C_INST.REG_DIN[2]     TOP|SYSCLK     FD1P3DX     D       un2_REG_DIN[2]     500.089      498.252
+I2C_INST.REG_DIN[3]     TOP|SYSCLK     FD1P3DX     D       un2_REG_DIN[3]     500.089      498.252
+I2C_INST.REG_DIN[4]     TOP|SYSCLK     FD1P3DX     D       un2_REG_DIN[4]     500.089      498.252
+I2C_INST.REG_DIN[5]     TOP|SYSCLK     FD1P3DX     D       un2_REG_DIN[5]     500.089      498.252
+I2C_INST.REG_DIN[6]     TOP|SYSCLK     FD1P3DX     D       un2_REG_DIN[6]     500.089      498.252
+I2C_INST.REG_DIN[7]     TOP|SYSCLK     FD1P3DX     D       un2_REG_DIN[7]     500.089      498.252
+I2C_INST.REG_DIN[0]     TOP|SYSCLK     FD1P3DX     SP      RD_END2            499.528      498.309
+I2C_INST.REG_DIN[1]     TOP|SYSCLK     FD1P3DX     SP      RD_END2            499.528      498.309
+==================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      500.000
+    - Setup time:                            -0.089
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         500.089
+
+    - Propagation time:                      1.837
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     498.252
+
+    Number of logic level(s):                1
+    Starting point:                          I2C_INST.PORT_CSD1[0] / Q
+    Ending point:                            I2C_INST.REG_DIN[0] / D
+    The start point is clocked by            TOP|SYSCLK [rising] on pin CK
+    The end   point is clocked by            TOP|SYSCLK [falling] on pin CK
+
+Instance / Net                           Pin      Pin               Arrival     No. of    
+Name                        Type         Name     Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------
+I2C_INST.PORT_CSD1[0]       FD1S3DX      Q        Out     1.220     1.220       -         
+PORT_CSD1[0]                Net          -        -       -         -           8         
+I2C_INST.un2_REG_DIN[0]     ORCALUT4     C        In      0.000     1.220       -         
+I2C_INST.un2_REG_DIN[0]     ORCALUT4     Z        Out     0.617     1.837       -         
+un2_REG_DIN[0]              Net          -        -       -         -           1         
+I2C_INST.REG_DIN[0]         FD1P3DX      D        In      0.000     1.837       -         
+==========================================================================================
+
+
+
+
+====================================
+Detailed Report for Clock: System
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                             Starting                                              Arrival            
+Instance                     Reference     Type        Pin     Net                 Time        Slack  
+                             Clock                                                                    
+------------------------------------------------------------------------------------------------------
+I2C_INST.CHECKSUM_OUT[1]     System        FD1S1AY     Q       CHECKSUM_OUT[1]     0.972       997.483
+I2C_INST.CHECKSUM_OUT[2]     System        FD1S1AY     Q       CHECKSUM_OUT[2]     0.972       997.483
+I2C_INST.CHECKSUM_OUT[3]     System        FD1S1AY     Q       CHECKSUM_OUT[3]     0.972       997.483
+I2C_INST.CHECKSUM_OUT[4]     System        FD1S1AY     Q       CHECKSUM_OUT[4]     0.972       997.483
+I2C_INST.CHECKSUM_OUT[5]     System        FD1S1AY     Q       CHECKSUM_OUT[5]     0.972       997.483
+I2C_INST.CHECKSUM_OUT[6]     System        FD1S1AY     Q       CHECKSUM_OUT[6]     0.972       997.483
+I2C_INST.CHECKSUM_OUT[7]     System        FD1S1AY     Q       CHECKSUM_OUT[7]     0.972       997.483
+I2C_INST.CHECKSUM_OUT[0]     System        FD1S1AY     Q       CHECKSUM_OUT[0]     0.972       998.500
+======================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                           Starting                                              Required            
+Instance                   Reference     Type        Pin     Net                 Time         Slack  
+                           Clock                                                                     
+-----------------------------------------------------------------------------------------------------
+I2C_INST.SHIFT_DOUT[1]     System        FD1P3DX     D       SHIFT_DOUT_2[1]     1000.089     997.483
+I2C_INST.SHIFT_DOUT[2]     System        FD1P3DX     D       SHIFT_DOUT_2[2]     1000.089     997.483
+I2C_INST.SHIFT_DOUT[3]     System        FD1P3DX     D       SHIFT_DOUT_2[3]     1000.089     997.483
+I2C_INST.SHIFT_DOUT[4]     System        FD1P3DX     D       SHIFT_DOUT_2[4]     1000.089     997.483
+I2C_INST.SHIFT_DOUT[5]     System        FD1P3DX     D       SHIFT_DOUT_2[5]     1000.089     997.483
+I2C_INST.SHIFT_DOUT[6]     System        FD1P3DX     D       SHIFT_DOUT_2[6]     1000.089     997.483
+I2C_INST.SHIFT_DOUT[7]     System        FD1P3DX     D       SHIFT_DOUT_2[7]     1000.089     997.483
+I2C_INST.SHIFT_DOUT[0]     System        FD1P3DX     D       SHIFT_DOUT_2[0]     1000.089     998.500
+=====================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      1000.000
+    - Setup time:                            -0.089
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         1000.089
+
+    - Propagation time:                      2.605
+    - Clock delay at starting point:         0.000 (ideal)
+    - Estimated clock delay at start point:  -0.000
+    = Slack (non-critical) :                 997.483
+
+    Number of logic level(s):                2
+    Starting point:                          I2C_INST.CHECKSUM_OUT[1] / Q
+    Ending point:                            I2C_INST.SHIFT_DOUT[1] / D
+    The start point is clocked by            System [rising] on pin CK
+    The end   point is clocked by            TOP|SYSCLK [rising] on pin CK
+
+Instance / Net                                Pin      Pin               Arrival     No. of    
+Name                             Type         Name     Dir     Delay     Time        Fan Out(s)
+-----------------------------------------------------------------------------------------------
+I2C_INST.CHECKSUM_OUT[1]         FD1S1AY      Q        Out     0.972     0.972       -         
+CHECKSUM_OUT[1]                  Net          -        -       -         -           1         
+I2C_INST.SHIFT_DOUT_2_1_0[1]     ORCALUT4     A        In      0.000     0.972       -         
+I2C_INST.SHIFT_DOUT_2_1_0[1]     ORCALUT4     Z        Out     1.017     1.989       -         
+SHIFT_DOUT_2_1_0[1]              Net          -        -       -         -           1         
+I2C_INST.SHIFT_DOUT_2_1[1]       ORCALUT4     A        In      0.000     1.989       -         
+I2C_INST.SHIFT_DOUT_2_1[1]       ORCALUT4     Z        Out     0.617     2.605       -         
+SHIFT_DOUT_2[1]                  Net          -        -       -         -           1         
+I2C_INST.SHIFT_DOUT[1]           FD1P3DX      D        In      0.000     2.605       -         
+===============================================================================================
+
+
+
+##### END OF TIMING REPORT #####]
+
+---------------------------------------
+Resource Usage Report
+Part: lcmxo2_2000hc-4
+
+Register bits: 542 of 2112 (26%)
+Latch bits:      8
+PIC Latch:       0
+I/O cells:       88
+
+
+Details:
+BB:             1
+CCU2D:          96
+FD1P3AX:        2
+FD1P3BX:        1
+FD1P3DX:        322
+FD1S1AY:        8
+FD1S3BX:        3
+FD1S3DX:        138
+GSR:            1
+IB:             9
+IFS1P3DX:       4
+INV:            5
+OB:             78
+OFS1P3DX:       72
+ORCALUT4:       536
+PFUMX:          10
+PUR:            1
+VHI:            7
+VLO:            8
+true:           1
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 54MB peak: 171MB)
+
+Process took 0h:00m:05s realtime, 0h:00m:05s cputime
+# Fri Nov 07 15:34:23 2014
+
+###########################################################]
+
+
+Synthesis exit by 0.
+
+edif2ngd  -l "MachXO2" -d LCMXO2-2000HC -path "F:/project/wolf/Status/BLD/Status" -path "F:/project/wolf/Status/BLD"   "F:/project/wolf/Status/BLD/Status/Status_Status.edi" "Status_Status.ngo"   
+edif2ngd:  version Diamond (64-bit) 3.2.0.134
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2014 Lattice Semiconductor Corporation,  All rights reserved.
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="CASE_I2C_END_NOCHK"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="CASE_I2C_END"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="CASE_I2C_DATA2"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="CASE_I2C_DATA1"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="CASE_I2C_LOC"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="CASE_I2C_ADD"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="CASE_I2C_IDLE"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="TIMER_5S"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="TIMER_1S"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="GPO_DFT_VAL"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="GPIOE_F"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="GPIOE_E"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="GPIOE_D"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="GPIOE_C"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="GPIOE_B"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="GPIOE_A"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="GPIOE_9"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="GPIOE_8"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="GPIOE_7"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="GPIOE_6"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="GPIOE_5"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="GPIOE_4"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="GPIOE_3"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="GPIOE_2"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="GPIOE_1"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="GPIOE_0"  />
+Writing the design to Status_Status.ngo...
+
+Total CPU Time: 0 secs  
+
+Total REAL Time: 0 secs  
+
+
+ngdbuild  -a "MachXO2" -d LCMXO2-2000HC  -p "c:/lscc/diamond/3.2_x64/ispfpga/xo2c00/data"  -p "F:/project/wolf/Status/BLD/Status" -p "F:/project/wolf/Status/BLD"  "Status_Status.ngo" "Status_Status.ngd"  	
+ngdbuild:  version Diamond (64-bit) 3.2.0.134
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2014 Lattice Semiconductor Corporation,  All rights reserved.
+Reading 'Status_Status.ngo' ...
+Loading NGL library 'c:/lscc/diamond/3.2_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'c:/lscc/diamond/3.2_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'c:/lscc/diamond/3.2_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'c:/lscc/diamond/3.2_x64/ispfpga/or5g00/data/orc5glib.ngl'...
+
+
+Running DRC...
+
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="0" arg0="logical" arg1="I2C_INST/un1_REG_DIN_1_s_7_0_COUT"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="0" arg0="logical" arg1="I2C_INST/un1_REG_DIN_1_s_7_0_S1"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="0" arg0="logical" arg1="I2C_INST/un1_REG_DIN_1_cry_0_0_S0"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="0" arg0="logical" arg1="I2C_INST/un1_REG_DIN_1_cry_0_0_S1"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="0" arg0="logical" arg1="I2C_INST/LOC_s_0_COUT[7]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="0" arg0="logical" arg1="I2C_INST/LOC_s_0_S1[7]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="0" arg0="logical" arg1="I2C_INST/LOC_cry_0_S0[0]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="0" arg0="logical" arg1="SGPIO_INST2/CNT_cry_0_COUT_0[23]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="0" arg0="logical" arg1="SGPIO_INST2/CNT_cry_0_S0_0[0]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="0" arg0="logical" arg1="SGPIO_INST2/HDD_CNT_s_0_COUT_0[5]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="0" arg0="logical" arg1="SGPIO_INST2/HDD_CNT_s_0_S1_0[5]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="0" arg0="logical" arg1="SGPIO_INST2/HDD_CNT_cry_0_S0_0[0]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="0" arg0="logical" arg1="SGPIO_INST1/CNT_cry_0_COUT[23]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="0" arg0="logical" arg1="SGPIO_INST1/CNT_cry_0_S0[0]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="0" arg0="logical" arg1="SGPIO_INST1/HDD_CNT_s_0_COUT[5]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="0" arg0="logical" arg1="SGPIO_INST1/HDD_CNT_s_0_S1[5]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="0" arg0="logical" arg1="SGPIO_INST1/HDD_CNT_cry_0_S0[0]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="0" arg0="logical" arg1="LED_CNT_INST/un5_CNT_07S_1_cry_21_0_COUT"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="0" arg0="logical" arg1="LED_CNT_INST/un5_CNT_07S_1_cry_0_0_S0"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="0" arg0="logical" arg1="LED_CNT_INST/un5_CNT_07S_1_cry_0_0_S1"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="0" arg0="logical" arg1="LED_CNT_INST/un6_CNT_3500MS_1_s_25_0_COUT"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="0" arg0="logical" arg1="LED_CNT_INST/un6_CNT_3500MS_1_s_25_0_S1"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="0" arg0="logical" arg1="LED_CNT_INST/un6_CNT_3500MS_1_cry_0_0_S0"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="0" arg0="logical" arg1="LED_CNT_INST/un6_CNT_3500MS_1_cry_0_0_S1"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="0" arg0="logical" arg1="LED_CNT_INST/un3_CNT_500MS_1_s_23_0_COUT"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="0" arg0="logical" arg1="LED_CNT_INST/un3_CNT_500MS_1_s_23_0_S1"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="0" arg0="logical" arg1="LED_CNT_INST/un3_CNT_500MS_1_cry_0_0_S0"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="0" arg0="logical" arg1="LED_CNT_INST/un3_CNT_500MS_1_cry_0_0_S1"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="0" arg0="logical" arg1="LED_CNT_INST/un5_CNT_1_s_23_0_COUT"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="0" arg0="logical" arg1="LED_CNT_INST/un5_CNT_1_s_23_0_S1"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="0" arg0="logical" arg1="LED_CNT_INST/un5_CNT_1_cry_0_0_S0"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="0" arg0="logical" arg1="LED_CNT_INST/un5_CNT_1_cry_0_0_S1"  />
+    <postMsg mid="1163101" type="Warning" dynamic="1" navigation="0" arg0="32"  />
+
+Design Results:
+   1301 blocks expanded
+complete the first expansion
+Writing 'Status_Status.ngd' ...
+Total CPU Time: 0 secs  
+
+Total REAL Time: 0 secs  
+
+
+map -a "MachXO2" -p LCMXO2-2000HC -t TQFP144 -s 4 -oc Commercial   "Status_Status.ngd" -o "Status_Status_map.ncd" -pr "Status_Status.prf" -mp "Status_Status.mrp" -lpf "F:/project/wolf/Status/BLD/Status/Status_Status_synplify.lpf" -lpf "F:/project/wolf/Status/BLD/../SRC/Status.lpf" -c 0            
+map:  version Diamond (64-bit) 3.2.0.134
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2014 Lattice Semiconductor Corporation,  All rights reserved.
+   Process the file: Status_Status.ngd
+   Picdevice="LCMXO2-2000HC"
+
+   Pictype="TQFP144"
+
+   Picspeed=4
+
+   Remove unused logic
+
+   Do not produce over sized NCDs.
+
+Part used: LCMXO2-2000HCTQFP144, Performance used: 4.
+
+Loading device for application map from file 'xo2c2000.nph' in environment: c:/lscc/diamond/3.2_x64/ispfpga.
+Package Status:                     Final          Version 1.41
+
+Running general design DRC...
+
+Removing unused logic...
+
+Optimizing...
+
+5 CCU2 constant inputs absorbed.
+
+    <postMsg mid="51001030" type="Warning" dynamic="1" navigation="0" arg0="RESET_N_c"  />
+
+
+
+Design Summary:
+   Number of registers:    550 out of  2448 (22%)
+      PFU registers:          474 out of  2112 (22%)
+      PIO registers:           76 out of   336 (23%)
+   Number of SLICEs:       368 out of  1056 (35%)
+      SLICEs as Logic/ROM:    368 out of  1056 (35%)
+      SLICEs as RAM:            0 out of   792 (0%)
+      SLICEs as Carry:         96 out of  1056 (9%)
+   Number of LUT4s:        732 out of  2112 (35%)
+      Number of logic LUTs:      540
+      Number of distributed RAM:   0 (0 LUT4s)
+      Number of ripple logic:     96 (192 LUT4s)
+      Number of shift registers:   0
+   Number of PIO sites used: 88 + 4(JTAG) out of 112 (82%)
+   Number of block RAMs:  0 out of 8 (0%)
+   Number of GSRs:  1 out of 1 (100%)
+   EFB used :       No
+   JTAG used :      No
+   Readback used :  No
+   Oscillator used :  No
+   Startup used :   No
+   POR :            On
+   Bandgap :        On
+   Number of Power Controller:  0 out of 1 (0%)
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 6 (0%)
+   Number of Dynamic Bank Controller (BCLVDSO):  0 out of 1 (0%)
+   Number of DCCA:  0 out of 8 (0%)
+   Number of DCMA:  0 out of 2 (0%)
+   Number of PLLs:  0 out of 1 (0%)
+   Number of DQSDLLs:  0 out of 2 (0%)
+   Number of CLKDIVC:  0 out of 4 (0%)
+   Number of ECLKSYNCA:  0 out of 4 (0%)
+   Number of ECLKBRIDGECS:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and ripple logic.
+   Number of clocks:  2
+     Net SYSCLK_c: 327 loads, 323 rising, 4 falling (Driver: PIO SYSCLK )
+     Net I2C_INST/N_14_i: 4 loads, 4 rising, 0 falling (Driver: I2C_INST/CNT8_RNIR9LQ )
+   Number of Clock Enables:  39
+     Net SGPIO_INST1.STATE[4]: 36 loads, 0 LSLICEs
+     Net I2C_INST/N_21: 1 loads, 1 LSLICEs
+     Net RESET_N_c: 2 loads, 2 LSLICEs
+     Net I2C_INST/SCL_NCLK: 1 loads, 1 LSLICEs
+     Net I2C_INST/N_19: 4 loads, 4 LSLICEs
+     Net I2C_INST/un9_LOC_i: 5 loads, 5 LSLICEs
+     Net I2C_INST/un7_SHIFT_DIN_i: 4 loads, 4 LSLICEs
+     Net I2C_INST/SCL_PCLKD2: 1 loads, 1 LSLICEs
+     Net I2C_INST/RD_END2: 4 loads, 4 LSLICEs
+     Net I2C_INST/N_27: 1 loads, 1 LSLICEs
+     Net I2C_INST/un1_DOUT_0_a2_0_a3: 4 loads, 4 LSLICEs
+     Net I2C_INST/N_29: 2 loads, 2 LSLICEs
+     Net I2C_INST/un2_RD_WR_0_a2_0_a3: 1 loads, 1 LSLICEs
+     Net N_67_i: 1 loads, 0 LSLICEs
+     Net SGPIO_INST2/N_30_i: 4 loads, 4 LSLICEs
+     Net SGPIO_INST2.STATE[4]: 36 loads, 0 LSLICEs
+     Net SGPIO_INST2/un7_CNT_i: 13 loads, 13 LSLICEs
+     Net SGPIO_INST2/N_153_i: 18 loads, 18 LSLICEs
+     Net SGPIO_INST1/N_61_i: 4 loads, 4 LSLICEs
+     Net SGPIO_INST1/un7_CNT_i: 13 loads, 13 LSLICEs
+     Net SGPIO_INST1/N_153_i: 18 loads, 18 LSLICEs
+     Net HEADER_INST/N_12_i: 2 loads, 2 LSLICEs
+     Net GPIO_INST/N_278_i: 4 loads, 4 LSLICEs
+     Net GPIO_INST/un1_GPO_F_0_a2: 4 loads, 4 LSLICEs
+     Net GPIO_INST/un1_GPO_E_0_a2: 4 loads, 4 LSLICEs
+     Net GPIO_INST/un1_GPO_D_0_a2: 4 loads, 4 LSLICEs
+     Net GPIO_INST/un1_GPO_C_0_a2: 4 loads, 4 LSLICEs
+     Net GPIO_INST/un1_GPO_B_0_a2: 4 loads, 4 LSLICEs
+     Net GPIO_INST/un1_GPO_A: 4 loads, 4 LSLICEs
+     Net GPIO_INST/un1_GPO_9_0_a2: 4 loads, 4 LSLICEs
+     Net GPIO_INST/un1_GPO_8_0_a2: 4 loads, 4 LSLICEs
+     Net GPIO_INST/un1_GPO_7_0_a2: 4 loads, 4 LSLICEs
+     Net GPIO_INST/un1_GPO_6_0_a2: 4 loads, 4 LSLICEs
+     Net GPIO_INST/un1_GPO_5: 4 loads, 4 LSLICEs
+     Net GPIO_INST/un1_GPO_4_0_a2: 4 loads, 4 LSLICEs
+     Net GPIO_INST/un1_GPO_3_0_a2: 4 loads, 4 LSLICEs
+     Net GPIO_INST/un1_GPO_2_0_a2: 4 loads, 4 LSLICEs
+     Net GPIO_INST/un1_GPO_1: 4 loads, 4 LSLICEs
+     Net GPIO_INST/un1_GPO_0_0_a2: 4 loads, 4 LSLICEs
+   Number of local set/reset loads for net RESET_N_c merged into GSR:  540
+   Number of LSRs:  0
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net SGPIO_INST1.STATE[4]: 75 loads
+     Net SGPIO_INST2.STATE[4]: 75 loads
+     Net SGPIO_INST1/STATE[0]: 38 loads
+     Net SGPIO_INST2/STATE[0]: 38 loads
+     Net RD_WR: 36 loads
+     Net SGPIO_INST1/STATE_i[0]: 26 loads
+     Net SGPIO_INST2/STATE_i[0]: 26 loads
+     Net PORT_CS[1]: 18 loads
+     Net SGPIO_INST1/N_153_i: 18 loads
+     Net SGPIO_INST2/N_153_i: 18 loads
+ 
+
+   Number of warnings:  1
+   Number of errors:    0
+
+
+
+Total CPU Time: 1 secs  
+Total REAL Time: 2 secs  
+Peak Memory Usage: 54 MB
+
+Dumping design to file Status_Status_map.ncd.
+
+mpartrce -p "Status_Status.p2t" -f "Status_Status.p3t" -tf "Status_Status.pt" "Status_Status_map.ncd" "Status_Status.ncd"
+
+---- MParTrce Tool ----
+Removing old design directory at request of -rem command line option to this program.
+Running par. Please wait . . .
+
+Lattice Place and Route Report for Design "Status_Status_map.ncd"
+Fri Nov 07 15:34:30 2014
+
+PAR: Place And Route Diamond (64-bit) 3.2.0.134.
+Command Line: par -w -l 5 -i 6 -t 1 -c 0 -e 0 -gui -exp parUseNBR=1:parCDP=0:parCDR=0:parPathBased=OFF Status_Status_map.ncd Status_Status.dir/5_1.ncd Status_Status.prf
+Preference file: Status_Status.prf.
+Placement level-cost: 5-1.
+Routing Iterations: 6
+
+Loading design for application par from file Status_Status_map.ncd.
+Design name: TOP
+NCD version: 3.2
+Vendor:      LATTICE
+Device:      LCMXO2-2000HC
+Package:     TQFP144
+Performance: 4
+Loading device for application par from file 'xo2c2000.nph' in environment: c:/lscc/diamond/3.2_x64/ispfpga.
+Package Status:                     Final          Version 1.41
+Performance Hardware Data Status:   Final          Version 25.4
+License checked out.
+
+
+Ignore Preference Error(s):  True
+Device utilization summary:
+
+   PIO (prelim)   88+4(JTAG)/216     43% used
+                  88+4(JTAG)/112     82% bonded
+   IOLOGIC           76/216          35% used
+
+   SLICE            368/1056         34% used
+
+   GSR                1/1           100% used
+
+
+Number of Signals: 1346
+Number of Connections: 3352
+
+Pin Constraint Summary:
+   88 out of 88 pins locked (100% locked).
+
+The following 1 signal is selected to use the primary clock routing resources:
+    SYSCLK_c (driver: SYSCLK, clk load #: 327)
+
+
+The following 6 signals are selected to use the secondary clock routing resources:
+    SGPIO_INST1.STATE[4] (driver: SGPIO_INST1/SLICE_252, clk load #: 0, sr load #: 0, ce load #: 36)
+    SGPIO_INST2.STATE[4] (driver: SGPIO_INST2/SLICE_275, clk load #: 0, sr load #: 0, ce load #: 36)
+    SGPIO_INST2/N_153_i (driver: SGPIO_INST2/SLICE_396, clk load #: 0, sr load #: 0, ce load #: 18)
+    SGPIO_INST1/N_153_i (driver: SGPIO_INST1/SLICE_400, clk load #: 0, sr load #: 0, ce load #: 18)
+    SGPIO_INST2/un7_CNT_i (driver: SGPIO_INST2/SLICE_323, clk load #: 0, sr load #: 0, ce load #: 13)
+    SGPIO_INST1/un7_CNT_i (driver: SGPIO_INST1/SLICE_327, clk load #: 0, sr load #: 0, ce load #: 13)
+
+Signal RESET_N_c is selected as Global Set/Reset.
+Starting Placer Phase 0.
+..........
+Finished Placer Phase 0.  REAL time: 3 secs 
+
+Starting Placer Phase 1.
+...................
+Placer score = 148265.
+Finished Placer Phase 1.  REAL time: 7 secs 
+
+Starting Placer Phase 2.
+.
+Placer score =  144255
+Finished Placer Phase 2.  REAL time: 7 secs 
+
+
+------------------ Clock Report ------------------
+
+Global Clock Resources:
+  CLK_PIN    : 1 out of 8 (12%)
+  PLL        : 0 out of 1 (0%)
+  DCM        : 0 out of 2 (0%)
+  DCC        : 0 out of 8 (0%)
+
+Quadrants All (TL, TR, BL, BR) - Global Clocks:
+  PRIMARY "SYSCLK_c" from comp "SYSCLK" on CLK_PIN site "128 (PT17A)", clk load = 327
+  SECONDARY "SGPIO_INST1.STATE[4]" from Q0 on comp "SGPIO_INST1/SLICE_252" on site "R13C8C", clk load = 0, ce load = 36, sr load = 0
+  SECONDARY "SGPIO_INST2.STATE[4]" from Q0 on comp "SGPIO_INST2/SLICE_275" on site "R9C13A", clk load = 0, ce load = 36, sr load = 0
+  SECONDARY "SGPIO_INST2/N_153_i" from F0 on comp "SGPIO_INST2/SLICE_396" on site "R9C13C", clk load = 0, ce load = 18, sr load = 0
+  SECONDARY "SGPIO_INST1/N_153_i" from F0 on comp "SGPIO_INST1/SLICE_400" on site "R13C8D", clk load = 0, ce load = 18, sr load = 0
+  SECONDARY "SGPIO_INST2/un7_CNT_i" from F0 on comp "SGPIO_INST2/SLICE_323" on site "R9C13D", clk load = 0, ce load = 13, sr load = 0
+  SECONDARY "SGPIO_INST1/un7_CNT_i" from F0 on comp "SGPIO_INST1/SLICE_327" on site "R9C13B", clk load = 0, ce load = 13, sr load = 0
+
+  PRIMARY  : 1 out of 8 (12%)
+  SECONDARY: 6 out of 8 (75%)
+
+Edge Clocks:
+  No edge clock selected.
+
+--------------- End of Clock Report ---------------
+
+
+I/O Usage Summary (final):
+   88 + 4(JTAG) out of 216 (42.6%) PIO sites used.
+   88 + 4(JTAG) out of 112 (82.1%) bonded PIO sites used.
+   Number of PIO comps: 88; differential: 0
+   Number of Vref pins used: 0
+
+I/O Bank Usage Summary:
++----------+----------------+------------+-----------+
+| I/O Bank | Usage          | Bank Vccio | Bank Vref |
++----------+----------------+------------+-----------+
+| 0        | 17 / 28 ( 60%) | 3.3V       | -         |
+| 1        | 27 / 28 ( 96%) | 3.3V       | -         |
+| 2        | 24 / 28 ( 85%) | 3.3V       | -         |
+| 3        | 6 / 8 ( 75%)   | 3.3V       | -         |
+| 4        | 5 / 10 ( 50%)  | 3.3V       | -         |
+| 5        | 9 / 10 ( 90%)  | 3.3V       | -         |
++----------+----------------+------------+-----------+
+
+Total placer CPU time: 6 secs 
+
+Dumping design to file Status_Status.dir/5_1.ncd.
+
+
+-----------------------------------------------------------------
+INFO - par: ASE feature is off due to non timing-driven settings.  
+-----------------------------------------------------------------
+
+0 connections routed; 3352 unrouted.
+Starting router resource preassignment
+
+    <postMsg mid="66011008" type="Warning" dynamic="1" navigation="0" arg0="&#xA;   Signal=I2C_INST/N_14_i loads=4 clock_loads=4"  />
+
+Completed router resource preassignment. Real time: 8 secs 
+
+Start NBR router at 15:34:38 11/07/14
+
+*****************************************************************
+Info: NBR allows conflicts(one node used by more than one signal)
+      in the earlier iterations. In each iteration, it tries to  
+      solve the conflicts while keeping the critical connections 
+      routed as short as possible. The routing process is said to
+      be completed when no conflicts exist and all connections   
+      are routed.                                                
+Note: NBR uses a different method to calculate timing slacks. The
+      worst slack and total negative slack may not be the same as
+      that in TRCE report. You should always run TRCE to verify  
+      your design. Thanks.                                       
+*****************************************************************
+
+Start NBR special constraint process at 15:34:38 11/07/14
+
+Start NBR section for initial routing at 15:34:38 11/07/14
+Level 4, iteration 1
+107(0.08%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 9 secs 
+
+Info: Initial congestion level at 75% usage is 0
+Info: Initial congestion area  at 75% usage is 0 (0.00%)
+
+Start NBR section for normal routing at 15:34:39 11/07/14
+Level 4, iteration 1
+68(0.05%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 9 secs 
+Level 4, iteration 2
+29(0.02%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 9 secs 
+Level 4, iteration 3
+7(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 9 secs 
+Level 4, iteration 4
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; real time: 9 secs 
+Level 4, iteration 5
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; real time: 9 secs 
+
+Start NBR section for re-routing at 15:34:39 11/07/14
+Level 4, iteration 1
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; real time: 9 secs 
+
+Start NBR section for post-routing at 15:34:39 11/07/14
+
+End NBR router with 0 unrouted connection
+
+NBR Summary
+-----------
+  Number of unrouted connections : 0 (0.00%)
+  Number of connections with timing violations : 0 (0.00%)
+  Estimated worst slack<setup> : <n/a>
+  Timing score<setup> : 0
+-----------
+Notes: The timing info is calculated for SETUP only and all PAR_ADJs are ignored.
+
+
+
+    <postMsg mid="66011008" type="Warning" dynamic="1" navigation="0" arg0="&#xA;   Signal=I2C_INST/N_14_i loads=4 clock_loads=4"  />
+
+Total CPU time 9 secs 
+Total REAL time: 9 secs 
+Completely routed.
+End of route.  3352 routed (100.00%); 0 unrouted.
+Checking DRC ... 
+No errors found.
+
+Hold time timing score: 0, hold timing errors: 0
+
+Timing score: 0 
+
+Dumping design to file Status_Status.dir/5_1.ncd.
+
+
+PAR_SUMMARY::Run status = completed
+PAR_SUMMARY::Number of unrouted conns = 0
+PAR_SUMMARY::Worst  slack<setup/<ns>> = <n/a>
+PAR_SUMMARY::Timing score<setup/<ns>> = <n/a>
+PAR_SUMMARY::Worst  slack<hold /<ns>> = <n/a>
+PAR_SUMMARY::Timing score<hold /<ns>> = <n/a>
+PAR_SUMMARY::Number of errors = 0
+
+Total CPU  time to completion: 10 secs 
+Total REAL time to completion: 10 secs 
+
+par done!
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2014 Lattice Semiconductor Corporation,  All rights reserved.
+Exiting par with exit code 0
+Exiting mpartrce with exit code 0
+
+trce -f "Status_Status.pt" -o "Status_Status.twr" "Status_Status.ncd" "Status_Status.prf"
+trce:  version Diamond (64-bit) 3.2.0.134
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2014 Lattice Semiconductor Corporation,  All rights reserved.
+
+Loading design for application trce from file status_status.ncd.
+Design name: TOP
+NCD version: 3.2
+Vendor:      LATTICE
+Device:      LCMXO2-2000HC
+Package:     TQFP144
+Performance: 4
+Loading device for application trce from file 'xo2c2000.nph' in environment: c:/lscc/diamond/3.2_x64/ispfpga.
+Package Status:                     Final          Version 1.41
+Performance Hardware Data Status:   Final          Version 25.4
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.2.0.134
+Fri Nov 07 15:34:42 2014
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2014 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 10 -gt -sethld -sp 4 -sphld m -o Status_Status.twr -gui Status_Status.ncd Status_Status.prf 
+Design file:     status_status.ncd
+Preference file: status_status.prf
+Device,speed:    LCMXO2-2000HC,4
+Report level:    verbose report, limited to 10 items per preference
+--------------------------------------------------------------------------------
+
+Report Type:     based on TRACE automatically generated preferences
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+Timing summary (Setup):
+---------------
+
+Timing errors: 4122  Score: 20819815
+Cumulative negative slack: 20787786
+
+Constraints cover 7328 paths, 2 nets, and 3165 connections (94.4% coverage)
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.2.0.134
+Fri Nov 07 15:34:43 2014
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2014 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 10 -gt -sethld -sp 4 -sphld m -o Status_Status.twr -gui Status_Status.ncd Status_Status.prf 
+Design file:     status_status.ncd
+Preference file: status_status.prf
+Device,speed:    LCMXO2-2000HC,m
+Report level:    verbose report, limited to 10 items per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+Timing summary (Hold):
+---------------
+
+Timing errors: 10  Score: 1691
+Cumulative negative slack: 1691
+
+Constraints cover 7328 paths, 2 nets, and 3164 connections (94.4% coverage)
+
+
+
+Timing summary (Setup and Hold):
+---------------
+
+Timing errors: 4122 (setup), 10 (hold)
+Score: 20819815 (setup), 1691 (hold)
+Cumulative negative slack: 20789477 (20787786+1691)
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+
+Total time: 2 secs 
+
+iotiming  "Status_Status.ncd" "Status_Status.prf"
+I/O Timing Report:
+:  version Diamond (64-bit) 3.2.0.134
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2014 Lattice Semiconductor Corporation,  All rights reserved.
+
+Loading design for application iotiming from file status_status.ncd.
+Design name: TOP
+NCD version: 3.2
+Vendor:      LATTICE
+Device:      LCMXO2-2000HC
+Package:     TQFP144
+Performance: 4
+Loading device for application iotiming from file 'xo2c2000.nph' in environment: c:/lscc/diamond/3.2_x64/ispfpga.
+Package Status:                     Final          Version 1.41
+Performance Hardware Data Status:   Final          Version 25.4
+Running Performance Grade: 4
+Computing Setup Time ...
+Computing Max Clock to Output Delay ...
+Computing Hold Time ...
+Computing Min Clock to Output Delay ...
+
+Loading design for application iotiming from file status_status.ncd.
+Design name: TOP
+NCD version: 3.2
+Vendor:      LATTICE
+Device:      LCMXO2-2000HC
+Package:     TQFP144
+Performance: 5
+Package Status:                     Final          Version 1.41
+Performance Hardware Data Status:   Final          Version 25.4
+Running Performance Grade: 5
+Computing Setup Time ...
+Computing Max Clock to Output Delay ...
+Computing Hold Time ...
+Computing Min Clock to Output Delay ...
+
+Loading design for application iotiming from file status_status.ncd.
+Design name: TOP
+NCD version: 3.2
+Vendor:      LATTICE
+Device:      LCMXO2-2000HC
+Package:     TQFP144
+Performance: 6
+Package Status:                     Final          Version 1.41
+Performance Hardware Data Status:   Final          Version 25.4
+Running Performance Grade: 6
+Computing Setup Time ...
+Computing Max Clock to Output Delay ...
+Computing Hold Time ...
+Computing Min Clock to Output Delay ...
+
+Loading design for application iotiming from file status_status.ncd.
+Design name: TOP
+NCD version: 3.2
+Vendor:      LATTICE
+Device:      LCMXO2-2000HC
+Package:     TQFP144
+Performance: M
+Package Status:                     Final          Version 1.41
+Performance Hardware Data Status:   Final          Version 25.4
+Running Performance Grade: M
+Computing Setup Time ...
+Computing Max Clock to Output Delay ...
+Computing Hold Time ...
+Computing Min Clock to Output Delay ...
+Done.
+
+bitgen -f "Status_Status.t2b" -w "Status_Status.ncd" -jedec "Status_Status.prf"
+
+
+BITGEN: Bitstream Generator Diamond (64-bit) 3.2.0.134
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2014 Lattice Semiconductor Corporation,  All rights reserved.
+
+
+Loading design for application Bitgen from file Status_Status.ncd.
+Design name: TOP
+NCD version: 3.2
+Vendor:      LATTICE
+Device:      LCMXO2-2000HC
+Package:     TQFP144
+Performance: 4
+Loading device for application Bitgen from file 'xo2c2000.nph' in environment: c:/lscc/diamond/3.2_x64/ispfpga.
+Package Status:                     Final          Version 1.41
+Performance Hardware Data Status:   Final          Version 25.4
+
+Running DRC.
+DRC detected 0 errors and 0 warnings.
+Reading Preference File from Status_Status.prf.
+
+Preference Summary:
++---------------------------------+---------------------------------+
+|  Preference                     |  Current Setting                |
++---------------------------------+---------------------------------+
+|                         RamCfg  |                        Reset**  |
++---------------------------------+---------------------------------+
+|                     MCCLK_FREQ  |                         2.08**  |
++---------------------------------+---------------------------------+
+|                  CONFIG_SECURE  |                          OFF**  |
++---------------------------------+---------------------------------+
+|                      JTAG_PORT  |                       ENABLE**  |
++---------------------------------+---------------------------------+
+|                       SDM_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                 SLAVE_SPI_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                MASTER_SPI_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                       I2C_PORT  |                         ENABLE  |
++---------------------------------+---------------------------------+
+|        MUX_CONFIGURATION_PORTS  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                  CONFIGURATION  |                          CFG**  |
++---------------------------------+---------------------------------+
+|                COMPRESS_CONFIG  |                           ON**  |
++---------------------------------+---------------------------------+
+|                        MY_ASSP  |                          OFF**  |
++---------------------------------+---------------------------------+
+|               ONE_TIME_PROGRAM  |                          OFF**  |
++---------------------------------+---------------------------------+
+|                 ENABLE_TRANSFR  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                  SHAREDEBRINIT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+ *  Default setting.
+ ** The specified setting matches the default setting.
+
+
+Creating bit map...
+ 
+Bitstream Status: Final           Version 1.83.
+ 
+Saving bit stream in "Status_Status.jed".
+ 
+===========
+UFM Summary.
+===========
+UFM Size:        639 Pages (128*639 Bits).
+UFM Utilization: General Purpose Flash Memory.
+ 
+Available General Purpose Flash Memory:  639 Pages (Page 0 to Page 638).
+Initialized UFM Pages:                     0 Page.
+ 
+
+bitgen -f "Status_Status.t2b" -w "Status_Status.ncd" "Status_Status.prf"
+
+
+BITGEN: Bitstream Generator Diamond (64-bit) 3.2.0.134
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2014 Lattice Semiconductor Corporation,  All rights reserved.
+
+
+Loading design for application Bitgen from file Status_Status.ncd.
+Design name: TOP
+NCD version: 3.2
+Vendor:      LATTICE
+Device:      LCMXO2-2000HC
+Package:     TQFP144
+Performance: 4
+Loading device for application Bitgen from file 'xo2c2000.nph' in environment: c:/lscc/diamond/3.2_x64/ispfpga.
+Package Status:                     Final          Version 1.41
+Performance Hardware Data Status:   Final          Version 25.4
+
+Running DRC.
+DRC detected 0 errors and 0 warnings.
+Reading Preference File from Status_Status.prf.
+
+Preference Summary:
++---------------------------------+---------------------------------+
+|  Preference                     |  Current Setting                |
++---------------------------------+---------------------------------+
+|                         RamCfg  |                        Reset**  |
++---------------------------------+---------------------------------+
+|                     MCCLK_FREQ  |                         2.08**  |
++---------------------------------+---------------------------------+
+|                  CONFIG_SECURE  |                          OFF**  |
++---------------------------------+---------------------------------+
+|                      JTAG_PORT  |                       ENABLE**  |
++---------------------------------+---------------------------------+
+|                       SDM_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                 SLAVE_SPI_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                MASTER_SPI_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                       I2C_PORT  |                         ENABLE  |
++---------------------------------+---------------------------------+
+|        MUX_CONFIGURATION_PORTS  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                  CONFIGURATION  |                          CFG**  |
++---------------------------------+---------------------------------+
+|                COMPRESS_CONFIG  |                           ON**  |
++---------------------------------+---------------------------------+
+|                        MY_ASSP  |                          OFF**  |
++---------------------------------+---------------------------------+
+|               ONE_TIME_PROGRAM  |                          OFF**  |
++---------------------------------+---------------------------------+
+|                 ENABLE_TRANSFR  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                  SHAREDEBRINIT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+ *  Default setting.
+ ** The specified setting matches the default setting.
+
+
+Creating bit map...
+ 
+Bitstream Status: Final           Version 1.83.
+ 
+Saving bit stream in "Status_Status.bit".

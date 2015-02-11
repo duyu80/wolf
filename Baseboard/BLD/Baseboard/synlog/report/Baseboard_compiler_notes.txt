@@ -1,0 +1,64 @@
+@N|Running in 64-bit mode
+@N:: Running Verilog Compiler in System Verilog mode
+@N:: Running Verilog Compiler in Multiple File Compilation Unit mode
+@N: CG364 :"F:\project\wolf\Baseboard\BLD\..\SRC\I2C.v":18:7:18:9|Synthesizing module I2C
+@N: CG179 :"F:\project\wolf\Baseboard\BLD\..\SRC\I2C.v":191:105:191:107|Removing redundant assignment
+@N: CG179 :"F:\project\wolf\Baseboard\BLD\..\SRC\I2C.v":209:82:209:90|Removing redundant assignment
+@N: CG179 :"F:\project\wolf\Baseboard\BLD\..\SRC\I2C.v":223:66:223:70|Removing redundant assignment
+@N: CG179 :"F:\project\wolf\Baseboard\BLD\..\SRC\I2C.v":224:83:224:88|Removing redundant assignment
+@N: CG179 :"F:\project\wolf\Baseboard\BLD\..\SRC\I2C.v":237:116:237:118|Removing redundant assignment
+@N: CG179 :"F:\project\wolf\Baseboard\BLD\..\SRC\I2C.v":251:65:251:68|Removing redundant assignment
+@N: CG179 :"F:\project\wolf\Baseboard\BLD\..\SRC\I2C.v":252:72:252:82|Removing redundant assignment
+@N: CG179 :"F:\project\wolf\Baseboard\BLD\..\SRC\I2C.v":292:208:292:213|Removing redundant assignment
+@N: CG179 :"F:\project\wolf\Baseboard\BLD\..\SRC\I2C.v":314:73:314:79|Removing redundant assignment
+@N: CG179 :"F:\project\wolf\Baseboard\BLD\..\SRC\I2C.v":333:127:333:136|Removing redundant assignment
+@N: CG179 :"F:\project\wolf\Baseboard\BLD\..\SRC\I2C.v":335:44:335:50|Removing redundant assignment
+@N: CG179 :"F:\project\wolf\Baseboard\BLD\..\SRC\I2C.v":350:80:350:87|Removing redundant assignment
+@N: CG179 :"F:\project\wolf\Baseboard\BLD\..\SRC\I2C.v":351:117:351:130|Removing redundant assignment
+@N: CG364 :"F:\project\wolf\Baseboard\BLD\..\SRC\GPI.v":10:7:10:9|Synthesizing module GPI
+@N: CG179 :"F:\project\wolf\Baseboard\BLD\..\SRC\GPI.v":75:44:75:48|Removing redundant assignment
+@N: CG179 :"F:\project\wolf\Baseboard\BLD\..\SRC\GPI.v":87:44:87:48|Removing redundant assignment
+@N: CG364 :"F:\project\wolf\Baseboard\BLD\..\SRC\GPO.v":10:7:10:9|Synthesizing module GPO
+@N: CG179 :"F:\project\wolf\Baseboard\BLD\..\SRC\GPO.v":94:44:94:48|Removing redundant assignment
+@N: CG179 :"F:\project\wolf\Baseboard\BLD\..\SRC\GPO.v":106:44:106:48|Removing redundant assignment
+@N: CG179 :"F:\project\wolf\Baseboard\BLD\..\SRC\GPO.v":134:107:134:109|Removing redundant assignment
+@N: CG179 :"F:\project\wolf\Baseboard\BLD\..\SRC\GPO.v":135:107:135:109|Removing redundant assignment
+@N: CG179 :"F:\project\wolf\Baseboard\BLD\..\SRC\GPO.v":136:107:136:109|Removing redundant assignment
+@N: CG179 :"F:\project\wolf\Baseboard\BLD\..\SRC\GPO.v":137:107:137:109|Removing redundant assignment
+@N: CG179 :"F:\project\wolf\Baseboard\BLD\..\SRC\GPO.v":138:107:138:109|Removing redundant assignment
+@N: CG179 :"F:\project\wolf\Baseboard\BLD\..\SRC\GPO.v":139:107:139:109|Removing redundant assignment
+@N: CG179 :"F:\project\wolf\Baseboard\BLD\..\SRC\GPO.v":140:107:140:109|Removing redundant assignment
+@N: CG179 :"F:\project\wolf\Baseboard\BLD\..\SRC\GPO.v":141:107:141:109|Removing redundant assignment
+@N: CG179 :"F:\project\wolf\Baseboard\BLD\..\SRC\GPO.v":142:107:142:109|Removing redundant assignment
+@N: CG179 :"F:\project\wolf\Baseboard\BLD\..\SRC\GPO.v":143:107:143:109|Removing redundant assignment
+@N: CG179 :"F:\project\wolf\Baseboard\BLD\..\SRC\GPO.v":144:107:144:110|Removing redundant assignment
+@N: CG179 :"F:\project\wolf\Baseboard\BLD\..\SRC\GPO.v":145:107:145:110|Removing redundant assignment
+@N: CG179 :"F:\project\wolf\Baseboard\BLD\..\SRC\GPO.v":146:107:146:110|Removing redundant assignment
+@N: CG179 :"F:\project\wolf\Baseboard\BLD\..\SRC\GPO.v":147:107:147:110|Removing redundant assignment
+@N: CG179 :"F:\project\wolf\Baseboard\BLD\..\SRC\GPO.v":148:107:148:110|Removing redundant assignment
+@N: CG179 :"F:\project\wolf\Baseboard\BLD\..\SRC\GPO.v":149:107:149:110|Removing redundant assignment
+@N: CG364 :"F:\project\wolf\Baseboard\BLD\..\SRC\LED_CNT.v":10:7:10:13|Synthesizing module LED_CNT
+@N: CG179 :"F:\project\wolf\Baseboard\BLD\..\SRC\LED_CNT.v":45:47:45:53|Removing redundant assignment
+@N: CG179 :"F:\project\wolf\Baseboard\BLD\..\SRC\LED_CNT.v":46:115:46:121|Removing redundant assignment
+@N: CG179 :"F:\project\wolf\Baseboard\BLD\..\SRC\LED_CNT.v":48:108:48:114|Removing redundant assignment
+@N: CG179 :"F:\project\wolf\Baseboard\BLD\..\SRC\LED_CNT.v":65:52:65:64|Removing redundant assignment
+@N: CG179 :"F:\project\wolf\Baseboard\BLD\..\SRC\LED_CNT.v":67:85:67:98|Removing redundant assignment
+@N: CG179 :"F:\project\wolf\Baseboard\BLD\..\SRC\LED_CNT.v":83:55:83:61|Removing redundant assignment
+@N: CG364 :"F:\project\wolf\Baseboard\BLD\..\SRC\LED.v":10:7:10:9|Synthesizing module LED
+@N: CG364 :"F:\project\wolf\Baseboard\BLD\..\SRC\PRSNT_LED_CTRL.v":10:7:10:20|Synthesizing module PRSNT_LED_CTRL
+@N: CG179 :"F:\project\wolf\Baseboard\BLD\..\SRC\PRSNT_LED_CTRL.v":84:20:84:24|Removing redundant assignment
+@N: CG179 :"F:\project\wolf\Baseboard\BLD\..\SRC\PRSNT_LED_CTRL.v":96:20:96:24|Removing redundant assignment
+@N: CL177 :"F:\project\wolf\Baseboard\BLD\..\SRC\PRSNT_LED_CTRL.v":48:0:48:5|Sharing sequential element DRV_IFDET_BLUE_LED_EN.
+@N: CG364 :"F:\project\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":10:7:10:19|Synthesizing module PCIE_RST_CTRL
+@N: CG364 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_SGPIO.v":10:7:10:14|Synthesizing module BB_SGPIO
+@N: CG179 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_SGPIO.v":55:48:55:55|Removing redundant assignment
+@N: CG179 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_SGPIO.v":101:60:101:67|Removing redundant assignment
+@N: CG179 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_SGPIO.v":102:74:102:84|Removing redundant assignment
+@N: CG179 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_SGPIO.v":103:58:103:67|Removing redundant assignment
+@N: CG179 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_SGPIO.v":107:60:107:69|Removing redundant assignment
+@N: CG179 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_SGPIO.v":113:45:113:54|Removing redundant assignment
+@N: CG364 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":11:7:11:12|Synthesizing module BB_TOP
+@N: CL201 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_SGPIO.v":81:0:81:5|Trying to extract state machine for register STATE
+@N: CL135 :"F:\project\wolf\Baseboard\BLD\..\SRC\I2C.v":178:0:178:5|Found seqShift NEXT_STATE_D2, depth=3, width=1
+@N: CL201 :"F:\project\wolf\Baseboard\BLD\..\SRC\I2C.v":357:0:357:5|Trying to extract state machine for register STATE
+

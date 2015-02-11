@@ -1,0 +1,460 @@
+PAD Specification File
+***************************
+
+PART TYPE:        LCMXO2-2000HC
+Performance Grade:      4
+PACKAGE:          TQFP144
+Package Status:                     Final          Version 1.41
+
+Fri Nov 07 15:34:37 2014
+
+Pinout by Port Name:
++------------------------+----------+---------------+-------+-----------+-----------+--------------------------------------------------------+
+| Port Name              | Pin/Bank | Buffer Type   | Site  | PG Enable | BC Enable | Properties                                             |
++------------------------+----------+---------------+-------+-----------+-----------+--------------------------------------------------------+
+| COM_FLT_AMBER_LED_L    | 4/5      | LVCMOS33_OUT  | PL2B  |           |           | DRIVE:8mA PULL:UP SLEW:SLOW                            |
+| COVER_OPEN_AMBER_LED_L | 3/5      | LVCMOS33_OUT  | PL2A  |           |           | DRIVE:8mA PULL:UP SLEW:SLOW                            |
+| DRV10_ACT_LED_CATH_L   | 117/0    | LVCMOS33_OUT  | PT21A |           |           | DRIVE:8mA PULL:UP SLEW:SLOW                            |
+| DRV11_ACT_LED_CATH_L   | 115/0    | LVCMOS33_OUT  | PT21B |           |           | DRIVE:8mA PULL:UP SLEW:SLOW                            |
+| DRV12_ACT_LED_CATH_L   | 114/0    | LVCMOS33_OUT  | PT22A |           |           | DRIVE:8mA PULL:UP SLEW:SLOW                            |
+| DRV13_ACT_LED_CATH_L   | 113/0    | LVCMOS33_OUT  | PT22B |           |           | DRIVE:8mA PULL:UP SLEW:SLOW                            |
+| DRV14_ACT_LED_CATH_L   | 112/0    | LVCMOS33_OUT  | PT23A |           |           | DRIVE:8mA PULL:UP SLEW:SLOW                            |
+| DRV15_ACT_LED_CATH_L   | 111/0    | LVCMOS33_OUT  | PT23B |           |           | DRIVE:8mA PULL:UP SLEW:SLOW                            |
+| DRV16_ACT_LED_CATH_L   | 107/1    | LVCMOS33_OUT  | PR1A  |           |           | DRIVE:8mA PULL:UP SLEW:SLOW                            |
+| DRV17_ACT_LED_CATH_L   | 106/1    | LVCMOS33_OUT  | PR1B  |           |           | DRIVE:8mA PULL:UP SLEW:SLOW                            |
+| DRV18_ACT_LED_CATH_L   | 105/1    | LVCMOS33_OUT  | PR2A  |           |           | DRIVE:8mA PULL:UP SLEW:SLOW                            |
+| DRV19_ACT_LED_CATH_L   | 104/1    | LVCMOS33_OUT  | PR2B  |           |           | DRIVE:8mA PULL:UP SLEW:SLOW                            |
+| DRV1_ACT_LED_CATH_L    | 142/0    | LVCMOS33_OUT  | PT9B  |           |           | DRIVE:8mA PULL:UP SLEW:SLOW                            |
+| DRV20_ACT_LED_CATH_L   | 100/1    | LVCMOS33_OUT  | PR3A  |           |           | DRIVE:8mA PULL:UP SLEW:SLOW                            |
+| DRV21_ACT_LED_CATH_L   | 99/1     | LVCMOS33_OUT  | PR3B  |           |           | DRIVE:8mA PULL:UP SLEW:SLOW                            |
+| DRV22_ACT_LED_CATH_L   | 98/1     | LVCMOS33_OUT  | PR4A  |           |           | DRIVE:8mA PULL:UP SLEW:SLOW                            |
+| DRV23_ACT_LED_CATH_L   | 97/1     | LVCMOS33_OUT  | PR4B  |           |           | DRIVE:8mA PULL:UP SLEW:SLOW                            |
+| DRV24_ACT_LED_CATH_L   | 96/1     | LVCMOS33_OUT  | PR5A  |           |           | DRIVE:8mA PULL:UP SLEW:SLOW                            |
+| DRV25_ACT_LED_CATH_L   | 95/1     | LVCMOS33_OUT  | PR5B  |           |           | DRIVE:8mA PULL:UP SLEW:SLOW                            |
+| DRV26_ACT_LED_CATH_L   | 94/1     | LVCMOS33_OUT  | PR6A  |           |           | DRIVE:8mA PULL:UP SLEW:SLOW                            |
+| DRV27_ACT_LED_CATH_L   | 93/1     | LVCMOS33_OUT  | PR6B  |           |           | DRIVE:8mA PULL:UP SLEW:SLOW                            |
+| DRV28_ACT_LED_CATH_L   | 86/1     | LVCMOS33_OUT  | PR9A  |           |           | DRIVE:8mA PULL:UP SLEW:SLOW                            |
+| DRV29_ACT_LED_CATH_L   | 85/1     | LVCMOS33_OUT  | PR9B  |           |           | DRIVE:8mA PULL:UP SLEW:SLOW                            |
+| DRV2_ACT_LED_CATH_L    | 141/0    | LVCMOS33_OUT  | PT10A |           |           | DRIVE:8mA PULL:UP SLEW:SLOW                            |
+| DRV30_ACT_LED_CATH_L   | 84/1     | LVCMOS33_OUT  | PR10A |           |           | DRIVE:8mA PULL:UP SLEW:SLOW                            |
+| DRV31_ACT_LED_CATH_L   | 83/1     | LVCMOS33_OUT  | PR10B |           |           | DRIVE:8mA PULL:UP SLEW:SLOW                            |
+| DRV32_ACT_LED_CATH_L   | 82/1     | LVCMOS33_OUT  | PR11A |           |           | DRIVE:8mA PULL:UP SLEW:SLOW                            |
+| DRV33_ACT_LED_CATH_L   | 81/1     | LVCMOS33_OUT  | PR11B |           |           | DRIVE:8mA PULL:UP SLEW:SLOW                            |
+| DRV34_ACT_LED_CATH_L   | 78/1     | LVCMOS33_OUT  | PR12A |           |           | DRIVE:8mA PULL:UP SLEW:SLOW                            |
+| DRV35_ACT_LED_CATH_L   | 77/1     | LVCMOS33_OUT  | PR12B |           |           | DRIVE:8mA PULL:UP SLEW:SLOW                            |
+| DRV36_ACT_LED_CATH_L   | 76/1     | LVCMOS33_OUT  | PR13A |           |           | DRIVE:8mA PULL:UP SLEW:SLOW                            |
+| DRV37_ACT_LED_CATH_L   | 75/1     | LVCMOS33_OUT  | PR13B |           |           | DRIVE:8mA PULL:UP SLEW:SLOW                            |
+| DRV38_ACT_LED_CATH_L   | 74/1     | LVCMOS33_OUT  | PR14A |           |           | DRIVE:8mA PULL:UP SLEW:SLOW                            |
+| DRV39_ACT_LED_CATH_L   | 73/1     | LVCMOS33_OUT  | PR14B |           |           | DRIVE:8mA PULL:UP SLEW:SLOW                            |
+| DRV3_ACT_LED_CATH_L    | 140/0    | LVCMOS33_OUT  | PT10B |           |           | DRIVE:8mA PULL:UP SLEW:SLOW                            |
+| DRV40_ACT_LED_CATH_L   | 89/1     | LVCMOS33_OUT  | PR7C  |           |           | DRIVE:8mA PULL:UP SLEW:SLOW                            |
+| DRV41_ACT_LED_CATH_L   | 87/1     | LVCMOS33_OUT  | PR7D  |           |           | DRIVE:8mA PULL:UP SLEW:SLOW                            |
+| DRV42_ACT_LED_CATH_L   | 38/2     | LVCMOS33_OUT  | PB3A  |           |           | DRIVE:8mA PULL:UP SLEW:SLOW                            |
+| DRV43_ACT_LED_CATH_L   | 39/2     | LVCMOS33_OUT  | PB3B  |           |           | DRIVE:8mA PULL:UP SLEW:SLOW                            |
+| DRV44_ACT_LED_CATH_L   | 40/2     | LVCMOS33_OUT  | PB5A  |           |           | DRIVE:8mA PULL:UP SLEW:SLOW                            |
+| DRV45_ACT_LED_CATH_L   | 41/2     | LVCMOS33_OUT  | PB5B  |           |           | DRIVE:8mA PULL:UP SLEW:SLOW                            |
+| DRV46_ACT_LED_CATH_L   | 42/2     | LVCMOS33_OUT  | PB6A  |           |           | DRIVE:8mA PULL:UP SLEW:SLOW                            |
+| DRV47_ACT_LED_CATH_L   | 43/2     | LVCMOS33_OUT  | PB6B  |           |           | DRIVE:8mA PULL:UP SLEW:SLOW                            |
+| DRV48_ACT_LED_CATH_L   | 47/2     | LVCMOS33_OUT  | PB9A  |           |           | DRIVE:8mA PULL:UP SLEW:SLOW                            |
+| DRV49_ACT_LED_CATH_L   | 48/2     | LVCMOS33_OUT  | PB9B  |           |           | DRIVE:8mA PULL:UP SLEW:SLOW                            |
+| DRV4_ACT_LED_CATH_L    | 139/0    | LVCMOS33_OUT  | PT11A |           |           | DRIVE:8mA PULL:UP SLEW:SLOW                            |
+| DRV50_ACT_LED_CATH_L   | 52/2     | LVCMOS33_OUT  | PB12A |           |           | DRIVE:8mA PULL:UP SLEW:SLOW                            |
+| DRV51_ACT_LED_CATH_L   | 54/2     | LVCMOS33_OUT  | PB12B |           |           | DRIVE:8mA PULL:UP SLEW:SLOW                            |
+| DRV52_ACT_LED_CATH_L   | 57/2     | LVCMOS33_OUT  | PB18A |           |           | DRIVE:8mA PULL:UP SLEW:SLOW                            |
+| DRV53_ACT_LED_CATH_L   | 58/2     | LVCMOS33_OUT  | PB18B |           |           | DRIVE:8mA PULL:UP SLEW:SLOW                            |
+| DRV54_ACT_LED_CATH_L   | 59/2     | LVCMOS33_OUT  | PB19A |           |           | DRIVE:8mA PULL:UP SLEW:SLOW                            |
+| DRV55_ACT_LED_CATH_L   | 60/2     | LVCMOS33_OUT  | PB19B |           |           | DRIVE:8mA PULL:UP SLEW:SLOW                            |
+| DRV56_ACT_LED_CATH_L   | 61/2     | LVCMOS33_OUT  | PB21A |           |           | DRIVE:8mA PULL:UP SLEW:SLOW                            |
+| DRV57_ACT_LED_CATH_L   | 62/2     | LVCMOS33_OUT  | PB21B |           |           | DRIVE:8mA PULL:UP SLEW:SLOW                            |
+| DRV58_ACT_LED_CATH_L   | 65/2     | LVCMOS33_OUT  | PB22A |           |           | DRIVE:8mA PULL:UP SLEW:SLOW                            |
+| DRV59_ACT_LED_CATH_L   | 67/2     | LVCMOS33_OUT  | PB22B |           |           | DRIVE:8mA PULL:UP SLEW:SLOW                            |
+| DRV5_ACT_LED_CATH_L    | 138/0    | LVCMOS33_OUT  | PT11B |           |           | DRIVE:8mA PULL:UP SLEW:SLOW                            |
+| DRV60_ACT_LED_CATH_L   | 68/2     | LVCMOS33_OUT  | PB24A |           |           | DRIVE:8mA PULL:UP SLEW:SLOW                            |
+| DRV61_ACT_LED_CATH_L   | 69/2     | LVCMOS33_OUT  | PB24B |           |           | DRIVE:8mA PULL:UP SLEW:SLOW                            |
+| DRV62_ACT_LED_CATH_L   | 70/2     | LVCMOS33_OUT  | PB25A |           |           | DRIVE:8mA PULL:UP SLEW:SLOW                            |
+| DRV63_ACT_LED_CATH_L   | 71/2     | LVCMOS33_OUT  | PB25B |           |           | DRIVE:8mA PULL:UP SLEW:SLOW                            |
+| DRV64_ACT_LED_CATH_L   | 25/3     | LVCMOS33_OUT  | PL11A |           |           | DRIVE:8mA PULL:UP SLEW:SLOW                            |
+| DRV65_ACT_LED_CATH_L   | 26/3     | LVCMOS33_OUT  | PL11B |           |           | DRIVE:8mA PULL:UP SLEW:SLOW                            |
+| DRV66_ACT_LED_CATH_L   | 32/3     | LVCMOS33_OUT  | PL13A |           |           | DRIVE:8mA PULL:UP SLEW:SLOW                            |
+| DRV67_ACT_LED_CATH_L   | 33/3     | LVCMOS33_OUT  | PL13B |           |           | DRIVE:8mA PULL:UP SLEW:SLOW                            |
+| DRV68_ACT_LED_CATH_L   | 34/3     | LVCMOS33_OUT  | PL14A |           |           | DRIVE:8mA PULL:UP SLEW:SLOW                            |
+| DRV69_ACT_LED_CATH_L   | 35/3     | LVCMOS33_OUT  | PL14B |           |           | DRIVE:8mA PULL:UP SLEW:SLOW                            |
+| DRV6_ACT_LED_CATH_L    | 133/0    | LVCMOS33_OUT  | PT13A |           |           | DRIVE:8mA PULL:UP SLEW:SLOW                            |
+| DRV70_ACT_LED_CATH_L   | 13/4     | LVCMOS33_OUT  | PL6A  |           |           | DRIVE:8mA PULL:UP SLEW:SLOW                            |
+| DRV71_ACT_LED_CATH_L   | 14/4     | LVCMOS33_OUT  | PL6B  |           |           | DRIVE:8mA PULL:UP SLEW:SLOW                            |
+| DRV72_ACT_LED_CATH_L   | 143/0    | LVCMOS33_OUT  | PT9A  |           |           | DRIVE:8mA PULL:UP SLEW:SLOW                            |
+| DRV7_ACT_LED_CATH_L    | 132/0    | LVCMOS33_OUT  | PT13B |           |           | DRIVE:8mA PULL:UP SLEW:SLOW                            |
+| DRV8_ACT_LED_CATH_L    | 122/0    | LVCMOS33_OUT  | PT19A |           |           | DRIVE:8mA PULL:UP SLEW:SLOW                            |
+| DRV9_ACT_LED_CATH_L    | 121/0    | LVCMOS33_OUT  | PT19B |           |           | DRIVE:8mA PULL:UP SLEW:SLOW                            |
+| DRV_ACT_LED_EN_L       | 9/5      | LVCMOS33_OUT  | PL4A  |           |           | DRIVE:8mA PULL:UP SLEW:SLOW                            |
+| DRV_FLT_AMBER_LED_L    | 5/5      | LVCMOS33_OUT  | PL3A  |           |           | DRIVE:8mA PULL:UP SLEW:SLOW                            |
+| RESET_N                | 92/1     | LVCMOS33_IN   | PR7A  |           |           | PULL:UP CLAMP:ON HYSTERESIS:SMALL                      |
+| SCL                    | 55/2     | LVCMOS33_IN   | PB16A |           |           | PULL:UP CLAMP:ON HYSTERESIS:SMALL                      |
+| SDA                    | 56/2     | LVCMOS33_BIDI | PB16B |           |           | DRIVE:8mA PULL:UP CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW  |
+| SES_FLT_AMBER_LED_L    | 2/5      | LVCMOS33_OUT  | PL1B  |           |           | DRIVE:8mA PULL:UP SLEW:SLOW                            |
+| SES_INENT_BLUE_LED_L   | 1/5      | LVCMOS33_OUT  | PL1A  |           |           | DRIVE:8mA PULL:UP SLEW:SLOW                            |
+| SGPIO_CK1              | 21/4     | LVCMOS33_IN   | PL9A  |           |           | PULL:UP CLAMP:ON HYSTERESIS:SMALL                      |
+| SGPIO_CK2              | 10/5     | LVCMOS33_IN   | PL4B  |           |           | PULL:UP CLAMP:ON HYSTERESIS:SMALL                      |
+| SGPIO_DATA1            | 23/4     | LVCMOS33_IN   | PL10A |           |           | PULL:UP CLAMP:ON HYSTERESIS:SMALL                      |
+| SGPIO_DATA2            | 12/5     | LVCMOS33_IN   | PL5B  |           |           | PULL:UP CLAMP:ON HYSTERESIS:SMALL                      |
+| SGPIO_LD1              | 22/4     | LVCMOS33_IN   | PL9B  |           |           | PULL:UP CLAMP:ON HYSTERESIS:SMALL                      |
+| SGPIO_LD2              | 11/5     | LVCMOS33_IN   | PL5A  |           |           | PULL:UP CLAMP:ON HYSTERESIS:SMALL                      |
+| SYSCLK                 | 128/0    | LVCMOS33_IN   | PT17A |           |           | PULL:UP CLAMP:ON HYSTERESIS:SMALL                      |
++------------------------+----------+---------------+-------+-----------+-----------+--------------------------------------------------------+
+
+Vccio by Bank:
++------+-------+
+| Bank | Vccio |
++------+-------+
+| 0    | 3.3V  |
+| 1    | 3.3V  |
+| 2    | 3.3V  |
+| 3    | 3.3V  |
+| 4    | 3.3V  |
+| 5    | 3.3V  |
++------+-------+
+
+Vref by Bank:
++------+-----+-----------------+---------+
+| Vref | Pin | Bank # / Vref # | Load(s) |
++------+-----+-----------------+---------+
++------+-----+-----------------+---------+
+
+Pinout by Pin Number:
++----------+------------------------+------------+---------------+--------------+---------------+-----------+-----------+
+| Pin/Bank | Pin Info               | Preference | Buffer Type   | Site         | Dual Function | PG Enable | BC Enable |
++----------+------------------------+------------+---------------+--------------+---------------+-----------+-----------+
+| 1/5      | SES_INENT_BLUE_LED_L   | LOCATED    | LVCMOS33_OUT  | PL1A         | L_GPLLT_FB    |           |           |
+| 2/5      | SES_FLT_AMBER_LED_L    | LOCATED    | LVCMOS33_OUT  | PL1B         | L_GPLLC_FB    |           |           |
+| 3/5      | COVER_OPEN_AMBER_LED_L | LOCATED    | LVCMOS33_OUT  | PL2A         | L_GPLLT_IN    |           |           |
+| 4/5      | COM_FLT_AMBER_LED_L    | LOCATED    | LVCMOS33_OUT  | PL2B         | L_GPLLC_IN    |           |           |
+| 5/5      | DRV_FLT_AMBER_LED_L    | LOCATED    | LVCMOS33_OUT  | PL3A         | PCLKT5_0      |           |           |
+| 6/5      |     unused, PULL:DOWN  |            |               | PL3B         | PCLKC5_0      |           |           |
+| 9/5      | DRV_ACT_LED_EN_L       | LOCATED    | LVCMOS33_OUT  | PL4A         |               |           |           |
+| 10/5     | SGPIO_CK2              | LOCATED    | LVCMOS33_IN   | PL4B         |               |           |           |
+| 11/5     | SGPIO_LD2              | LOCATED    | LVCMOS33_IN   | PL5A         |               |           |           |
+| 12/5     | SGPIO_DATA2            | LOCATED    | LVCMOS33_IN   | PL5B         |               |           |           |
+| 13/4     | DRV70_ACT_LED_CATH_L   | LOCATED    | LVCMOS33_OUT  | PL6A         |               |           |           |
+| 14/4     | DRV71_ACT_LED_CATH_L   | LOCATED    | LVCMOS33_OUT  | PL6B         |               |           |           |
+| 15/4     |     unused, PULL:DOWN  |            |               | PL7A         |               |           |           |
+| 17/4     |     unused, PULL:DOWN  |            |               | PL7B         |               |           |           |
+| 19/4     |     unused, PULL:DOWN  |            |               | PL7C         | PCLKT4_0      |           |           |
+| 20/4     |     unused, PULL:DOWN  |            |               | PL7D         | PCLKC4_0      |           |           |
+| 21/4     | SGPIO_CK1              | LOCATED    | LVCMOS33_IN   | PL9A         |               |           |           |
+| 22/4     | SGPIO_LD1              | LOCATED    | LVCMOS33_IN   | PL9B         |               |           |           |
+| 23/4     | SGPIO_DATA1            | LOCATED    | LVCMOS33_IN   | PL10A        |               |           |           |
+| 24/4     |     unused, PULL:DOWN  |            |               | PL10B        |               |           |           |
+| 25/3     | DRV64_ACT_LED_CATH_L   | LOCATED    | LVCMOS33_OUT  | PL11A        |               |           |           |
+| 26/3     | DRV65_ACT_LED_CATH_L   | LOCATED    | LVCMOS33_OUT  | PL11B        |               |           |           |
+| 27/3     |     unused, PULL:DOWN  |            |               | PL12A        | PCLKT3_0      |           |           |
+| 28/3     |     unused, PULL:DOWN  |            |               | PL12B        | PCLKC3_0      |           |           |
+| 32/3     | DRV66_ACT_LED_CATH_L   | LOCATED    | LVCMOS33_OUT  | PL13A        |               |           |           |
+| 33/3     | DRV67_ACT_LED_CATH_L   | LOCATED    | LVCMOS33_OUT  | PL13B        |               |           |           |
+| 34/3     | DRV68_ACT_LED_CATH_L   | LOCATED    | LVCMOS33_OUT  | PL14A        |               |           |           |
+| 35/3     | DRV69_ACT_LED_CATH_L   | LOCATED    | LVCMOS33_OUT  | PL14B        |               |           |           |
+| 38/2     | DRV42_ACT_LED_CATH_L   | LOCATED    | LVCMOS33_OUT  | PB3A         |               |           |           |
+| 39/2     | DRV43_ACT_LED_CATH_L   | LOCATED    | LVCMOS33_OUT  | PB3B         |               |           |           |
+| 40/2     | DRV44_ACT_LED_CATH_L   | LOCATED    | LVCMOS33_OUT  | PB5A         | CSSPIN        |           |           |
+| 41/2     | DRV45_ACT_LED_CATH_L   | LOCATED    | LVCMOS33_OUT  | PB5B         |               |           |           |
+| 42/2     | DRV46_ACT_LED_CATH_L   | LOCATED    | LVCMOS33_OUT  | PB6A         |               |           |           |
+| 43/2     | DRV47_ACT_LED_CATH_L   | LOCATED    | LVCMOS33_OUT  | PB6B         |               |           |           |
+| 44/2     |     unused, PULL:DOWN  |            |               | PB8A         | MCLK/CCLK     |           |           |
+| 45/2     |     unused, PULL:DOWN  |            |               | PB8B         | SO/SPISO      |           |           |
+| 47/2     | DRV48_ACT_LED_CATH_L   | LOCATED    | LVCMOS33_OUT  | PB9A         |               |           |           |
+| 48/2     | DRV49_ACT_LED_CATH_L   | LOCATED    | LVCMOS33_OUT  | PB9B         |               |           |           |
+| 49/2     |     unused, PULL:DOWN  |            |               | PB11A        | PCLKT2_0      |           |           |
+| 50/2     |     unused, PULL:DOWN  |            |               | PB11B        | PCLKC2_0      |           |           |
+| 52/2     | DRV50_ACT_LED_CATH_L   | LOCATED    | LVCMOS33_OUT  | PB12A        |               |           |           |
+| 54/2     | DRV51_ACT_LED_CATH_L   | LOCATED    | LVCMOS33_OUT  | PB12B        |               |           |           |
+| 55/2     | SCL                    | LOCATED    | LVCMOS33_IN   | PB16A        | PCLKT2_1      |           |           |
+| 56/2     | SDA                    | LOCATED    | LVCMOS33_BIDI | PB16B        | PCLKC2_1      |           |           |
+| 57/2     | DRV52_ACT_LED_CATH_L   | LOCATED    | LVCMOS33_OUT  | PB18A        |               |           |           |
+| 58/2     | DRV53_ACT_LED_CATH_L   | LOCATED    | LVCMOS33_OUT  | PB18B        |               |           |           |
+| 59/2     | DRV54_ACT_LED_CATH_L   | LOCATED    | LVCMOS33_OUT  | PB19A        |               |           |           |
+| 60/2     | DRV55_ACT_LED_CATH_L   | LOCATED    | LVCMOS33_OUT  | PB19B        |               |           |           |
+| 61/2     | DRV56_ACT_LED_CATH_L   | LOCATED    | LVCMOS33_OUT  | PB21A        |               |           |           |
+| 62/2     | DRV57_ACT_LED_CATH_L   | LOCATED    | LVCMOS33_OUT  | PB21B        |               |           |           |
+| 65/2     | DRV58_ACT_LED_CATH_L   | LOCATED    | LVCMOS33_OUT  | PB22A        |               |           |           |
+| 67/2     | DRV59_ACT_LED_CATH_L   | LOCATED    | LVCMOS33_OUT  | PB22B        |               |           |           |
+| 68/2     | DRV60_ACT_LED_CATH_L   | LOCATED    | LVCMOS33_OUT  | PB24A        |               |           |           |
+| 69/2     | DRV61_ACT_LED_CATH_L   | LOCATED    | LVCMOS33_OUT  | PB24B        |               |           |           |
+| 70/2     | DRV62_ACT_LED_CATH_L   | LOCATED    | LVCMOS33_OUT  | PB25A        | SN            |           |           |
+| 71/2     | DRV63_ACT_LED_CATH_L   | LOCATED    | LVCMOS33_OUT  | PB25B        | SI/SISPI      |           |           |
+| 73/1     | DRV39_ACT_LED_CATH_L   | LOCATED    | LVCMOS33_OUT  | PR14B        | DQ1           |           |           |
+| 74/1     | DRV38_ACT_LED_CATH_L   | LOCATED    | LVCMOS33_OUT  | PR14A        | DQ1           |           |           |
+| 75/1     | DRV37_ACT_LED_CATH_L   | LOCATED    | LVCMOS33_OUT  | PR13B        | DQ1           |           |           |
+| 76/1     | DRV36_ACT_LED_CATH_L   | LOCATED    | LVCMOS33_OUT  | PR13A        | DQ1           |           |           |
+| 77/1     | DRV35_ACT_LED_CATH_L   | LOCATED    | LVCMOS33_OUT  | PR12B        | DQ1           |           |           |
+| 78/1     | DRV34_ACT_LED_CATH_L   | LOCATED    | LVCMOS33_OUT  | PR12A        | DQ1           |           |           |
+| 81/1     | DRV33_ACT_LED_CATH_L   | LOCATED    | LVCMOS33_OUT  | PR11B        | DQ1           |           |           |
+| 82/1     | DRV32_ACT_LED_CATH_L   | LOCATED    | LVCMOS33_OUT  | PR11A        | DQ1           |           |           |
+| 83/1     | DRV31_ACT_LED_CATH_L   | LOCATED    | LVCMOS33_OUT  | PR10B        | DQ1           |           |           |
+| 84/1     | DRV30_ACT_LED_CATH_L   | LOCATED    | LVCMOS33_OUT  | PR10A        | DQ1           |           |           |
+| 85/1     | DRV29_ACT_LED_CATH_L   | LOCATED    | LVCMOS33_OUT  | PR9B         | DQS1N         |           |           |
+| 86/1     | DRV28_ACT_LED_CATH_L   | LOCATED    | LVCMOS33_OUT  | PR9A         | DQS1          |           |           |
+| 87/1     | DRV41_ACT_LED_CATH_L   | LOCATED    | LVCMOS33_OUT  | PR7D         |               |           |           |
+| 89/1     | DRV40_ACT_LED_CATH_L   | LOCATED    | LVCMOS33_OUT  | PR7C         |               |           |           |
+| 91/1     |     unused, PULL:DOWN  |            |               | PR7B         | PCLKC1_0/DQ0  |           |           |
+| 92/1     | RESET_N                | LOCATED    | LVCMOS33_IN   | PR7A         | PCLKT1_0/DQ0  |           |           |
+| 93/1     | DRV27_ACT_LED_CATH_L   | LOCATED    | LVCMOS33_OUT  | PR6B         | DQS0N         |           |           |
+| 94/1     | DRV26_ACT_LED_CATH_L   | LOCATED    | LVCMOS33_OUT  | PR6A         | DQS0          |           |           |
+| 95/1     | DRV25_ACT_LED_CATH_L   | LOCATED    | LVCMOS33_OUT  | PR5B         | DQ0           |           |           |
+| 96/1     | DRV24_ACT_LED_CATH_L   | LOCATED    | LVCMOS33_OUT  | PR5A         | DQ0           |           |           |
+| 97/1     | DRV23_ACT_LED_CATH_L   | LOCATED    | LVCMOS33_OUT  | PR4B         | DQ0           |           |           |
+| 98/1     | DRV22_ACT_LED_CATH_L   | LOCATED    | LVCMOS33_OUT  | PR4A         | DQ0           |           |           |
+| 99/1     | DRV21_ACT_LED_CATH_L   | LOCATED    | LVCMOS33_OUT  | PR3B         | DQ0           |           |           |
+| 100/1    | DRV20_ACT_LED_CATH_L   | LOCATED    | LVCMOS33_OUT  | PR3A         | DQ0           |           |           |
+| 104/1    | DRV19_ACT_LED_CATH_L   | LOCATED    | LVCMOS33_OUT  | PR2B         | DQ0           |           |           |
+| 105/1    | DRV18_ACT_LED_CATH_L   | LOCATED    | LVCMOS33_OUT  | PR2A         | DQ0           |           |           |
+| 106/1    | DRV17_ACT_LED_CATH_L   | LOCATED    | LVCMOS33_OUT  | PR1B         | DQ0           |           |           |
+| 107/1    | DRV16_ACT_LED_CATH_L   | LOCATED    | LVCMOS33_OUT  | PR1A         | DQ0           |           |           |
+| 109/0    |     unused, PULL:DOWN  |            |               | PT24D        | DONE          |           |           |
+| 110/0    |     unused, PULL:DOWN  |            |               | PT24C        | INITN         |           |           |
+| 111/0    | DRV15_ACT_LED_CATH_L   | LOCATED    | LVCMOS33_OUT  | PT23B        |               |           |           |
+| 112/0    | DRV14_ACT_LED_CATH_L   | LOCATED    | LVCMOS33_OUT  | PT23A        |               |           |           |
+| 113/0    | DRV13_ACT_LED_CATH_L   | LOCATED    | LVCMOS33_OUT  | PT22B        |               |           |           |
+| 114/0    | DRV12_ACT_LED_CATH_L   | LOCATED    | LVCMOS33_OUT  | PT22A        |               |           |           |
+| 115/0    | DRV11_ACT_LED_CATH_L   | LOCATED    | LVCMOS33_OUT  | PT21B        |               |           |           |
+| 117/0    | DRV10_ACT_LED_CATH_L   | LOCATED    | LVCMOS33_OUT  | PT21A        |               |           |           |
+| 119/0    |     unused, PULL:DOWN  |            |               | PT20D        | PROGRAMN      |           |           |
+| 120/0    |     unused, PULL:DOWN  |            |               | PT20C        | JTAGENB       |           |           |
+| 121/0    | DRV9_ACT_LED_CATH_L    | LOCATED    | LVCMOS33_OUT  | PT19B        |               |           |           |
+| 122/0    | DRV8_ACT_LED_CATH_L    | LOCATED    | LVCMOS33_OUT  | PT19A        |               |           |           |
+| 125/0    | Reserved: sysCONFIG    |            | LVCMOS33_BIDI | PT18D        | SDA/PCLKC0_0  |           |           |
+| 126/0    | Reserved: sysCONFIG    |            | LVCMOS33_BIDI | PT18C        | SCL/PCLKT0_0  |           |           |
+| 127/0    |     unused, PULL:DOWN  |            |               | PT17B        | PCLKC0_1      |           |           |
+| 128/0    | SYSCLK                 | LOCATED    | LVCMOS33_IN   | PT17A        | PCLKT0_1      |           |           |
+| 130/0    | Reserved: sysCONFIG    |            |               | TMS          | TMS           |           |           |
+| 131/0    | Reserved: sysCONFIG    |            |               | TCK/TEST_CLK | TCK           |           |           |
+| 132/0    | DRV7_ACT_LED_CATH_L    | LOCATED    | LVCMOS33_OUT  | PT13B        |               |           |           |
+| 133/0    | DRV6_ACT_LED_CATH_L    | LOCATED    | LVCMOS33_OUT  | PT13A        |               |           |           |
+| 136/0    | Reserved: sysCONFIG    |            |               | TDI          | TDI           |           |           |
+| 137/0    | Reserved: sysCONFIG    |            |               | TDO          | TDO           |           |           |
+| 138/0    | DRV5_ACT_LED_CATH_L    | LOCATED    | LVCMOS33_OUT  | PT11B        |               |           |           |
+| 139/0    | DRV4_ACT_LED_CATH_L    | LOCATED    | LVCMOS33_OUT  | PT11A        |               |           |           |
+| 140/0    | DRV3_ACT_LED_CATH_L    | LOCATED    | LVCMOS33_OUT  | PT10B        |               |           |           |
+| 141/0    | DRV2_ACT_LED_CATH_L    | LOCATED    | LVCMOS33_OUT  | PT10A        |               |           |           |
+| 142/0    | DRV1_ACT_LED_CATH_L    | LOCATED    | LVCMOS33_OUT  | PT9B         |               |           |           |
+| 143/0    | DRV72_ACT_LED_CATH_L   | LOCATED    | LVCMOS33_OUT  | PT9A         |               |           |           |
+| PB3C/2   |     unused, PULL:DOWN  |            |               | PB3C         |               |           |           |
+| PB3D/2   |     unused, PULL:DOWN  |            |               | PB3D         |               |           |           |
+| PB5C/2   |     unused, PULL:DOWN  |            |               | PB5C         |               |           |           |
+| PB5D/2   |     unused, PULL:DOWN  |            |               | PB5D         |               |           |           |
+| PB6C/2   |     unused, PULL:DOWN  |            |               | PB6C         |               |           |           |
+| PB6D/2   |     unused, PULL:DOWN  |            |               | PB6D         |               |           |           |
+| PB8C/2   |     unused, PULL:DOWN  |            |               | PB8C         |               |           |           |
+| PB8D/2   |     unused, PULL:DOWN  |            |               | PB8D         |               |           |           |
+| PB9C/2   |     unused, PULL:DOWN  |            |               | PB9C         |               |           |           |
+| PB9D/2   |     unused, PULL:DOWN  |            |               | PB9D         |               |           |           |
+| PB11C/2  |     unused, PULL:DOWN  |            |               | PB11C        |               |           |           |
+| PB11D/2  |     unused, PULL:DOWN  |            |               | PB11D        |               |           |           |
+| PB12C/2  |     unused, PULL:DOWN  |            |               | PB12C        |               |           |           |
+| PB12D/2  |     unused, PULL:DOWN  |            |               | PB12D        |               |           |           |
+| PB16C/2  |     unused, PULL:DOWN  |            |               | PB16C        |               |           |           |
+| PB16D/2  |     unused, PULL:DOWN  |            |               | PB16D        |               |           |           |
+| PB18C/2  |     unused, PULL:DOWN  |            |               | PB18C        |               |           |           |
+| PB18D/2  |     unused, PULL:DOWN  |            |               | PB18D        |               |           |           |
+| PB19C/2  |     unused, PULL:DOWN  |            |               | PB19C        |               |           |           |
+| PB19D/2  |     unused, PULL:DOWN  |            |               | PB19D        |               |           |           |
+| PB21C/2  |     unused, PULL:DOWN  |            |               | PB21C        |               |           |           |
+| PB21D/2  |     unused, PULL:DOWN  |            |               | PB21D        |               |           |           |
+| PB22C/2  |     unused, PULL:DOWN  |            |               | PB22C        |               |           |           |
+| PB22D/2  |     unused, PULL:DOWN  |            |               | PB22D        |               |           |           |
+| PB24C/2  |     unused, PULL:DOWN  |            |               | PB24C        |               |           |           |
+| PB24D/2  |     unused, PULL:DOWN  |            |               | PB24D        |               |           |           |
+| PB25C/2  |     unused, PULL:DOWN  |            |               | PB25C        |               |           |           |
+| PB25D/2  |     unused, PULL:DOWN  |            |               | PB25D        |               |           |           |
+| PL1C/5   |     unused, PULL:DOWN  |            |               | PL1C         |               |           |           |
+| PL1D/5   |     unused, PULL:DOWN  |            |               | PL1D         |               |           |           |
+| PL2C/5   |     unused, PULL:DOWN  |            |               | PL2C         |               |           |           |
+| PL2D/5   |     unused, PULL:DOWN  |            |               | PL2D         |               |           |           |
+| PL3C/5   |     unused, PULL:DOWN  |            |               | PL3C         |               |           |           |
+| PL3D/5   |     unused, PULL:DOWN  |            |               | PL3D         |               |           |           |
+| PL4C/5   |     unused, PULL:DOWN  |            |               | PL4C         |               |           |           |
+| PL4D/5   |     unused, PULL:DOWN  |            |               | PL4D         |               |           |           |
+| PL5C/5   |     unused, PULL:DOWN  |            |               | PL5C         |               |           |           |
+| PL5D/5   |     unused, PULL:DOWN  |            |               | PL5D         |               |           |           |
+| PL6C/4   |     unused, PULL:DOWN  |            |               | PL6C         |               |           |           |
+| PL6D/4   |     unused, PULL:DOWN  |            |               | PL6D         |               |           |           |
+| PL9C/4   |     unused, PULL:DOWN  |            |               | PL9C         |               |           |           |
+| PL9D/4   |     unused, PULL:DOWN  |            |               | PL9D         |               |           |           |
+| PL10C/4  |     unused, PULL:DOWN  |            |               | PL10C        |               |           |           |
+| PL10D/4  |     unused, PULL:DOWN  |            |               | PL10D        |               |           |           |
+| PL11C/3  |     unused, PULL:DOWN  |            |               | PL11C        |               |           |           |
+| PL11D/3  |     unused, PULL:DOWN  |            |               | PL11D        |               |           |           |
+| PL12C/3  |     unused, PULL:DOWN  |            |               | PL12C        |               |           |           |
+| PL12D/3  |     unused, PULL:DOWN  |            |               | PL12D        |               |           |           |
+| PL13C/3  |     unused, PULL:DOWN  |            |               | PL13C        |               |           |           |
+| PL13D/3  |     unused, PULL:DOWN  |            |               | PL13D        |               |           |           |
+| PL14C/3  |     unused, PULL:DOWN  |            |               | PL14C        |               |           |           |
+| PL14D/3  |     unused, PULL:DOWN  |            |               | PL14D        |               |           |           |
+| PR1C/1   |     unused, PULL:DOWN  |            |               | PR1C         |               |           |           |
+| PR1D/1   |     unused, PULL:DOWN  |            |               | PR1D         |               |           |           |
+| PR2C/1   |     unused, PULL:DOWN  |            |               | PR2C         |               |           |           |
+| PR2D/1   |     unused, PULL:DOWN  |            |               | PR2D         |               |           |           |
+| PR3C/1   |     unused, PULL:DOWN  |            |               | PR3C         |               |           |           |
+| PR3D/1   |     unused, PULL:DOWN  |            |               | PR3D         |               |           |           |
+| PR4C/1   |     unused, PULL:DOWN  |            |               | PR4C         |               |           |           |
+| PR4D/1   |     unused, PULL:DOWN  |            |               | PR4D         |               |           |           |
+| PR5C/1   |     unused, PULL:DOWN  |            |               | PR5C         |               |           |           |
+| PR5D/1   |     unused, PULL:DOWN  |            |               | PR5D         |               |           |           |
+| PR6C/1   |     unused, PULL:DOWN  |            |               | PR6C         |               |           |           |
+| PR6D/1   |     unused, PULL:DOWN  |            |               | PR6D         |               |           |           |
+| PR9C/1   |     unused, PULL:DOWN  |            |               | PR9C         |               |           |           |
+| PR9D/1   |     unused, PULL:DOWN  |            |               | PR9D         |               |           |           |
+| PR10C/1  |     unused, PULL:DOWN  |            |               | PR10C        |               |           |           |
+| PR10D/1  |     unused, PULL:DOWN  |            |               | PR10D        |               |           |           |
+| PR11C/1  |     unused, PULL:DOWN  |            |               | PR11C        | DQ1           |           |           |
+| PR11D/1  |     unused, PULL:DOWN  |            |               | PR11D        | DQ1           |           |           |
+| PR12C/1  |     unused, PULL:DOWN  |            |               | PR12C        |               |           |           |
+| PR12D/1  |     unused, PULL:DOWN  |            |               | PR12D        |               |           |           |
+| PR13C/1  |     unused, PULL:DOWN  |            |               | PR13C        |               |           |           |
+| PR13D/1  |     unused, PULL:DOWN  |            |               | PR13D        |               |           |           |
+| PR14C/1  |     unused, PULL:DOWN  |            |               | PR14C        |               |           |           |
+| PR14D/1  |     unused, PULL:DOWN  |            |               | PR14D        |               |           |           |
+| PT9C/0   |     unused, PULL:DOWN  |            |               | PT9C         |               |           |           |
+| PT9D/0   |     unused, PULL:DOWN  |            |               | PT9D         |               |           |           |
+| PT10C/0  |     unused, PULL:DOWN  |            |               | PT10C        |               |           |           |
+| PT10D/0  |     unused, PULL:DOWN  |            |               | PT10D        |               |           |           |
+| PT11C/0  |     unused, PULL:DOWN  |            |               | PT11C        |               |           |           |
+| PT11D/0  |     unused, PULL:DOWN  |            |               | PT11D        |               |           |           |
+| PT12A/0  |     unused, PULL:DOWN  |            |               | PT12A        |               |           |           |
+| PT12B/0  |     unused, PULL:DOWN  |            |               | PT12B        |               |           |           |
+| PT13C/0  |     unused, PULL:DOWN  |            |               | PT13C        |               |           |           |
+| PT13D/0  |     unused, PULL:DOWN  |            |               | PT13D        |               |           |           |
+| PT16A/0  |     unused, PULL:DOWN  |            |               | PT16A        |               |           |           |
+| PT16B/0  |     unused, PULL:DOWN  |            |               | PT16B        |               |           |           |
+| PT17C/0  |     unused, PULL:DOWN  |            |               | PT17C        |               |           |           |
+| PT17D/0  |     unused, PULL:DOWN  |            |               | PT17D        |               |           |           |
+| PT18A/0  |     unused, PULL:DOWN  |            |               | PT18A        |               |           |           |
+| PT18B/0  |     unused, PULL:DOWN  |            |               | PT18B        |               |           |           |
+| PT19C/0  |     unused, PULL:DOWN  |            |               | PT19C        |               |           |           |
+| PT19D/0  |     unused, PULL:DOWN  |            |               | PT19D        |               |           |           |
+| PT20A/0  |     unused, PULL:DOWN  |            |               | PT20A        |               |           |           |
+| PT20B/0  |     unused, PULL:DOWN  |            |               | PT20B        |               |           |           |
+| PT21C/0  |     unused, PULL:DOWN  |            |               | PT21C        |               |           |           |
+| PT21D/0  |     unused, PULL:DOWN  |            |               | PT21D        |               |           |           |
+| PT22C/0  |     unused, PULL:DOWN  |            |               | PT22C        |               |           |           |
+| PT22D/0  |     unused, PULL:DOWN  |            |               | PT22D        |               |           |           |
+| PT23C/0  |     unused, PULL:DOWN  |            |               | PT23C        |               |           |           |
+| PT23D/0  |     unused, PULL:DOWN  |            |               | PT23D        |               |           |           |
+| PT24A/0  |     unused, PULL:DOWN  |            |               | PT24A        |               |           |           |
+| PT24B/0  |     unused, PULL:DOWN  |            |               | PT24B        |               |           |           |
++----------+------------------------+------------+---------------+--------------+---------------+-----------+-----------+
+
+sysCONFIG Pins:
++----------+-------------------------------------+--------------------+----------+---------------+-------------------+
+| Pad Name | sysCONFIG Pin Name                  | sysCONFIG Settings | Pin/Bank | Buffer Type   | Config Pull Mode  |
++----------+-------------------------------------+--------------------+----------+---------------+-------------------+
+| PT18D    | SDA/IO3/MD3/ATB_FORCE/PCLKC0_0/TDOT | I2C_PORT=ENABLE    | 125/0    | LVCMOS33_BIDI | NO pull up/down   |
+| PT18C    | SCL/IO2/MD2/ATB_SENSE/PCLKT0_0      | I2C_PORT=ENABLE    | 126/0    | LVCMOS33_BIDI | NO pull up/down   |
+| PT16D    | TMS                                 | JTAG_PORT=ENABLE   | 130/0    |               | PULLUP            |
+| PT16C    | TCK/TEST_CLK                        | JTAG_PORT=ENABLE   | 131/0    |               | NO pull up/down   |
+| PT12D    | TDI/MD7                             | JTAG_PORT=ENABLE   | 136/0    |               | PULLUP            |
+| PT12C    | TDO                                 | JTAG_PORT=ENABLE   | 137/0    |               | PULLUP            |
++----------+-------------------------------------+--------------------+----------+---------------+-------------------+
+
+
+Locate Preferences for each Pin: 
+
+LOCATE  COMP  "COM_FLT_AMBER_LED_L"  SITE  "4";
+LOCATE  COMP  "COVER_OPEN_AMBER_LED_L"  SITE  "3";
+LOCATE  COMP  "DRV10_ACT_LED_CATH_L"  SITE  "117";
+LOCATE  COMP  "DRV11_ACT_LED_CATH_L"  SITE  "115";
+LOCATE  COMP  "DRV12_ACT_LED_CATH_L"  SITE  "114";
+LOCATE  COMP  "DRV13_ACT_LED_CATH_L"  SITE  "113";
+LOCATE  COMP  "DRV14_ACT_LED_CATH_L"  SITE  "112";
+LOCATE  COMP  "DRV15_ACT_LED_CATH_L"  SITE  "111";
+LOCATE  COMP  "DRV16_ACT_LED_CATH_L"  SITE  "107";
+LOCATE  COMP  "DRV17_ACT_LED_CATH_L"  SITE  "106";
+LOCATE  COMP  "DRV18_ACT_LED_CATH_L"  SITE  "105";
+LOCATE  COMP  "DRV19_ACT_LED_CATH_L"  SITE  "104";
+LOCATE  COMP  "DRV1_ACT_LED_CATH_L"  SITE  "142";
+LOCATE  COMP  "DRV20_ACT_LED_CATH_L"  SITE  "100";
+LOCATE  COMP  "DRV21_ACT_LED_CATH_L"  SITE  "99";
+LOCATE  COMP  "DRV22_ACT_LED_CATH_L"  SITE  "98";
+LOCATE  COMP  "DRV23_ACT_LED_CATH_L"  SITE  "97";
+LOCATE  COMP  "DRV24_ACT_LED_CATH_L"  SITE  "96";
+LOCATE  COMP  "DRV25_ACT_LED_CATH_L"  SITE  "95";
+LOCATE  COMP  "DRV26_ACT_LED_CATH_L"  SITE  "94";
+LOCATE  COMP  "DRV27_ACT_LED_CATH_L"  SITE  "93";
+LOCATE  COMP  "DRV28_ACT_LED_CATH_L"  SITE  "86";
+LOCATE  COMP  "DRV29_ACT_LED_CATH_L"  SITE  "85";
+LOCATE  COMP  "DRV2_ACT_LED_CATH_L"  SITE  "141";
+LOCATE  COMP  "DRV30_ACT_LED_CATH_L"  SITE  "84";
+LOCATE  COMP  "DRV31_ACT_LED_CATH_L"  SITE  "83";
+LOCATE  COMP  "DRV32_ACT_LED_CATH_L"  SITE  "82";
+LOCATE  COMP  "DRV33_ACT_LED_CATH_L"  SITE  "81";
+LOCATE  COMP  "DRV34_ACT_LED_CATH_L"  SITE  "78";
+LOCATE  COMP  "DRV35_ACT_LED_CATH_L"  SITE  "77";
+LOCATE  COMP  "DRV36_ACT_LED_CATH_L"  SITE  "76";
+LOCATE  COMP  "DRV37_ACT_LED_CATH_L"  SITE  "75";
+LOCATE  COMP  "DRV38_ACT_LED_CATH_L"  SITE  "74";
+LOCATE  COMP  "DRV39_ACT_LED_CATH_L"  SITE  "73";
+LOCATE  COMP  "DRV3_ACT_LED_CATH_L"  SITE  "140";
+LOCATE  COMP  "DRV40_ACT_LED_CATH_L"  SITE  "89";
+LOCATE  COMP  "DRV41_ACT_LED_CATH_L"  SITE  "87";
+LOCATE  COMP  "DRV42_ACT_LED_CATH_L"  SITE  "38";
+LOCATE  COMP  "DRV43_ACT_LED_CATH_L"  SITE  "39";
+LOCATE  COMP  "DRV44_ACT_LED_CATH_L"  SITE  "40";
+LOCATE  COMP  "DRV45_ACT_LED_CATH_L"  SITE  "41";
+LOCATE  COMP  "DRV46_ACT_LED_CATH_L"  SITE  "42";
+LOCATE  COMP  "DRV47_ACT_LED_CATH_L"  SITE  "43";
+LOCATE  COMP  "DRV48_ACT_LED_CATH_L"  SITE  "47";
+LOCATE  COMP  "DRV49_ACT_LED_CATH_L"  SITE  "48";
+LOCATE  COMP  "DRV4_ACT_LED_CATH_L"  SITE  "139";
+LOCATE  COMP  "DRV50_ACT_LED_CATH_L"  SITE  "52";
+LOCATE  COMP  "DRV51_ACT_LED_CATH_L"  SITE  "54";
+LOCATE  COMP  "DRV52_ACT_LED_CATH_L"  SITE  "57";
+LOCATE  COMP  "DRV53_ACT_LED_CATH_L"  SITE  "58";
+LOCATE  COMP  "DRV54_ACT_LED_CATH_L"  SITE  "59";
+LOCATE  COMP  "DRV55_ACT_LED_CATH_L"  SITE  "60";
+LOCATE  COMP  "DRV56_ACT_LED_CATH_L"  SITE  "61";
+LOCATE  COMP  "DRV57_ACT_LED_CATH_L"  SITE  "62";
+LOCATE  COMP  "DRV58_ACT_LED_CATH_L"  SITE  "65";
+LOCATE  COMP  "DRV59_ACT_LED_CATH_L"  SITE  "67";
+LOCATE  COMP  "DRV5_ACT_LED_CATH_L"  SITE  "138";
+LOCATE  COMP  "DRV60_ACT_LED_CATH_L"  SITE  "68";
+LOCATE  COMP  "DRV61_ACT_LED_CATH_L"  SITE  "69";
+LOCATE  COMP  "DRV62_ACT_LED_CATH_L"  SITE  "70";
+LOCATE  COMP  "DRV63_ACT_LED_CATH_L"  SITE  "71";
+LOCATE  COMP  "DRV64_ACT_LED_CATH_L"  SITE  "25";
+LOCATE  COMP  "DRV65_ACT_LED_CATH_L"  SITE  "26";
+LOCATE  COMP  "DRV66_ACT_LED_CATH_L"  SITE  "32";
+LOCATE  COMP  "DRV67_ACT_LED_CATH_L"  SITE  "33";
+LOCATE  COMP  "DRV68_ACT_LED_CATH_L"  SITE  "34";
+LOCATE  COMP  "DRV69_ACT_LED_CATH_L"  SITE  "35";
+LOCATE  COMP  "DRV6_ACT_LED_CATH_L"  SITE  "133";
+LOCATE  COMP  "DRV70_ACT_LED_CATH_L"  SITE  "13";
+LOCATE  COMP  "DRV71_ACT_LED_CATH_L"  SITE  "14";
+LOCATE  COMP  "DRV72_ACT_LED_CATH_L"  SITE  "143";
+LOCATE  COMP  "DRV7_ACT_LED_CATH_L"  SITE  "132";
+LOCATE  COMP  "DRV8_ACT_LED_CATH_L"  SITE  "122";
+LOCATE  COMP  "DRV9_ACT_LED_CATH_L"  SITE  "121";
+LOCATE  COMP  "DRV_ACT_LED_EN_L"  SITE  "9";
+LOCATE  COMP  "DRV_FLT_AMBER_LED_L"  SITE  "5";
+LOCATE  COMP  "RESET_N"  SITE  "92";
+LOCATE  COMP  "SCL"  SITE  "55";
+LOCATE  COMP  "SDA"  SITE  "56";
+LOCATE  COMP  "SES_FLT_AMBER_LED_L"  SITE  "2";
+LOCATE  COMP  "SES_INENT_BLUE_LED_L"  SITE  "1";
+LOCATE  COMP  "SGPIO_CK1"  SITE  "21";
+LOCATE  COMP  "SGPIO_CK2"  SITE  "10";
+LOCATE  COMP  "SGPIO_DATA1"  SITE  "23";
+LOCATE  COMP  "SGPIO_DATA2"  SITE  "12";
+LOCATE  COMP  "SGPIO_LD1"  SITE  "22";
+LOCATE  COMP  "SGPIO_LD2"  SITE  "11";
+LOCATE  COMP  "SYSCLK"  SITE  "128";
+
+
+
+
+
+PAR: Place And Route Diamond (64-bit) 3.2.0.134.
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2014 Lattice Semiconductor Corporation,  All rights reserved.
+Fri Nov 07 15:34:37 2014
+
