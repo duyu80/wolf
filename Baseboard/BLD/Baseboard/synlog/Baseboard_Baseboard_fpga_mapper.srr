@@ -20,60 +20,84 @@ Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h
 
 
 
-Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 142MB peak: 144MB)
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 143MB peak: 145MB)
 
 
 Available hyper_sources - for debug and ip models
 	None Found
 
-@W: MT462 :"f:\project\wolf\baseboard\bld\..\src\i2c.v":122:43:122:48|Net I2C_INS_2.un1_CNT8 appears to be an unidentified clock source. Assuming default frequency. 
-@W: MT462 :"f:\project\wolf\baseboard\bld\..\src\i2c.v":122:43:122:48|Net I2C_INS_1.un1_CNT8 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"e:\work\wolf\baseboard\bld\..\src\i2c.v":122:43:122:48|Net I2C_INS_2.un1_CNT8 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"e:\work\wolf\baseboard\bld\..\src\i2c.v":122:43:122:48|Net I2C_INS_1.un1_CNT8 appears to be an unidentified clock source. Assuming default frequency. 
 
-Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 145MB peak: 148MB)
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 146MB peak: 149MB)
 
-@W: BN132 :"f:\project\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI9_INST.DOUT1[7],  because it is equivalent to instance GPI9_INST.DOUT1[6]
-@W: BN132 :"f:\project\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI9_INST.DOUT1[6],  because it is equivalent to instance GPI9_INST.DOUT1[5]
-@W: BN132 :"f:\project\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI9_INST.DOUT1[5],  because it is equivalent to instance GPI9_INST.DOUT1[4]
-@W: BN132 :"f:\project\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI9_INST.DOUT1[4],  because it is equivalent to instance GPI9_INST.DOUT1[3]
-@W: BN132 :"f:\project\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI9_INST.DOUT1[3],  because it is equivalent to instance GPI9_INST.DOUT1[2]
-@W: BN132 :"f:\project\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI9_INST.DOUT1[2],  because it is equivalent to instance GPI9_INST.DOUT1[1]
-@W: BN132 :"f:\project\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing instance GPI9_INST.DOUT2[7],  because it is equivalent to instance GPI9_INST.DOUT2[6]
-@W: BN132 :"f:\project\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing instance GPI9_INST.DOUT2[6],  because it is equivalent to instance GPI9_INST.DOUT2[5]
-@W: BN132 :"f:\project\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing instance GPI9_INST.DOUT2[5],  because it is equivalent to instance GPI9_INST.DOUT2[4]
-@W: BN132 :"f:\project\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing instance GPI9_INST.DOUT2[4],  because it is equivalent to instance GPI9_INST.DOUT2[3]
-@W: BN132 :"f:\project\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing instance GPI9_INST.DOUT2[3],  because it is equivalent to instance GPI9_INST.DOUT2[2]
-@W: BN132 :"f:\project\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing instance GPI9_INST.DOUT2[2],  because it is equivalent to instance GPI9_INST.DOUT2[1]
-@W: BN132 :"f:\project\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing instance GPI0_INST.DOUT2[4],  because it is equivalent to instance GPI0_INST.DOUT2[2]
-@W: BN132 :"f:\project\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing instance GPI0_INST.DOUT2[7],  because it is equivalent to instance GPI0_INST.DOUT2[6]
-@W: BN132 :"f:\project\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing instance GPI0_INST.DOUT2[6],  because it is equivalent to instance GPI0_INST.DOUT2[3]
-@W: BN132 :"f:\project\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI8_INST.DOUT1[7],  because it is equivalent to instance GPI8_INST.DOUT1[6]
-@W: BN132 :"f:\project\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI8_INST.DOUT1[6],  because it is equivalent to instance GPI8_INST.DOUT1[5]
-@W: BN132 :"f:\project\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI8_INST.DOUT1[5],  because it is equivalent to instance GPI8_INST.DOUT1[4]
-@W: BN132 :"f:\project\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI8_INST.DOUT1[4],  because it is equivalent to instance GPI8_INST.DOUT1[3]
-@W: BN132 :"f:\project\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI8_INST.DOUT1[3],  because it is equivalent to instance GPI8_INST.DOUT1[2]
-@W: BN132 :"f:\project\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing instance GPI8_INST.DOUT2[7],  because it is equivalent to instance GPI8_INST.DOUT2[6]
-@W: BN132 :"f:\project\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing instance GPI8_INST.DOUT2[6],  because it is equivalent to instance GPI8_INST.DOUT2[5]
-@W: BN132 :"f:\project\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing instance GPI8_INST.DOUT2[5],  because it is equivalent to instance GPI8_INST.DOUT2[4]
-@W: BN132 :"f:\project\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing instance GPI8_INST.DOUT2[4],  because it is equivalent to instance GPI8_INST.DOUT2[3]
-@W: BN132 :"f:\project\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing instance GPI8_INST.DOUT2[3],  because it is equivalent to instance GPI8_INST.DOUT2[2]
-@W: BN132 :"f:\project\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI0_INST.DOUT1[4],  because it is equivalent to instance GPI0_INST.DOUT1[2]
-@W: BN132 :"f:\project\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI0_INST.DOUT1[7],  because it is equivalent to instance GPI0_INST.DOUT1[6]
-@W: BN132 :"f:\project\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI0_INST.DOUT1[6],  because it is equivalent to instance GPI0_INST.DOUT1[3]
-@N: BN362 :"f:\project\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing sequential instance GPI8_INST.DOUT1[2] in hierarchy view:work.BB_TOP(verilog) because there are no references to its outputs 
-@A: BN291 :"f:\project\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Boundary register GPI8_INST.DOUT1[2] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
-@N: BN362 :"f:\project\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing sequential instance GPI8_INST.DOUT2[2] in hierarchy view:work.BB_TOP(verilog) because there are no references to its outputs 
-@A: BN291 :"f:\project\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Boundary register GPI8_INST.DOUT2[2] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
-@N: BN362 :"f:\project\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing sequential instance GPI9_INST.DOUT1[1] in hierarchy view:work.BB_TOP(verilog) because there are no references to its outputs 
-@A: BN291 :"f:\project\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Boundary register GPI9_INST.DOUT1[1] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
-@N: BN362 :"f:\project\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing sequential instance GPI9_INST.DOUT2[1] in hierarchy view:work.BB_TOP(verilog) because there are no references to its outputs 
-@A: BN291 :"f:\project\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Boundary register GPI9_INST.DOUT2[1] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI8_INST.DOUT1[7],  because it is equivalent to instance GPI8_INST.DOUT1[6]
+@W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI8_INST.DOUT1[6],  because it is equivalent to instance GPI8_INST.DOUT1[5]
+@W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI8_INST.DOUT1[5],  because it is equivalent to instance GPI8_INST.DOUT1[4]
+@W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI8_INST.DOUT1[4],  because it is equivalent to instance GPI8_INST.DOUT1[3]
+@W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI8_INST.DOUT1[3],  because it is equivalent to instance GPI8_INST.DOUT1[2]
+@W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing instance GPI8_INST.DOUT2[7],  because it is equivalent to instance GPI8_INST.DOUT2[6]
+@W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing instance GPI8_INST.DOUT2[6],  because it is equivalent to instance GPI8_INST.DOUT2[5]
+@W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing instance GPI8_INST.DOUT2[5],  because it is equivalent to instance GPI8_INST.DOUT2[4]
+@W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing instance GPI8_INST.DOUT2[4],  because it is equivalent to instance GPI8_INST.DOUT2[3]
+@W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing instance GPI8_INST.DOUT2[3],  because it is equivalent to instance GPI8_INST.DOUT2[2]
+@W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI0_INST.DOUT1[4],  because it is equivalent to instance GPI0_INST.DOUT1[2]
+@W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI0_INST.DOUT1[7],  because it is equivalent to instance GPI0_INST.DOUT1[6]
+@W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI0_INST.DOUT1[6],  because it is equivalent to instance GPI0_INST.DOUT1[3]
+@W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI9_INST.DOUT1[7],  because it is equivalent to instance GPI9_INST.DOUT1[6]
+@W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI9_INST.DOUT1[6],  because it is equivalent to instance GPI9_INST.DOUT1[5]
+@W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI9_INST.DOUT1[5],  because it is equivalent to instance GPI9_INST.DOUT1[4]
+@W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI9_INST.DOUT1[4],  because it is equivalent to instance GPI9_INST.DOUT1[3]
+@W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI9_INST.DOUT1[3],  because it is equivalent to instance GPI9_INST.DOUT1[2]
+@W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI9_INST.DOUT1[2],  because it is equivalent to instance GPI9_INST.DOUT1[1]
+@W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing instance GPI9_INST.DOUT2[7],  because it is equivalent to instance GPI9_INST.DOUT2[6]
+@W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing instance GPI9_INST.DOUT2[6],  because it is equivalent to instance GPI9_INST.DOUT2[5]
+@W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing instance GPI9_INST.DOUT2[5],  because it is equivalent to instance GPI9_INST.DOUT2[4]
+@W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing instance GPI9_INST.DOUT2[4],  because it is equivalent to instance GPI9_INST.DOUT2[3]
+@W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing instance GPI9_INST.DOUT2[3],  because it is equivalent to instance GPI9_INST.DOUT2[2]
+@W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing instance GPI9_INST.DOUT2[2],  because it is equivalent to instance GPI9_INST.DOUT2[1]
+@W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing instance GPI0_INST.DOUT2[4],  because it is equivalent to instance GPI0_INST.DOUT2[2]
+@W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing instance GPI0_INST.DOUT2[7],  because it is equivalent to instance GPI0_INST.DOUT2[6]
+@W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing instance GPI0_INST.DOUT2[6],  because it is equivalent to instance GPI0_INST.DOUT2[3]
+@N: BN362 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing sequential instance GPI8_INST.DOUT1[2] in hierarchy view:work.BB_TOP(verilog) because there are no references to its outputs 
+@A: BN291 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Boundary register GPI8_INST.DOUT1[2] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@N: BN362 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing sequential instance GPI8_INST.DOUT2[2] in hierarchy view:work.BB_TOP(verilog) because there are no references to its outputs 
+@A: BN291 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Boundary register GPI8_INST.DOUT2[2] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@N: BN362 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing sequential instance GPI9_INST.DOUT1[1] in hierarchy view:work.BB_TOP(verilog) because there are no references to its outputs 
+@A: BN291 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Boundary register GPI9_INST.DOUT1[1] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@N: BN362 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing sequential instance GPI9_INST.DOUT2[1] in hierarchy view:work.BB_TOP(verilog) because there are no references to its outputs 
+@A: BN291 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Boundary register GPI9_INST.DOUT2[1] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@N:"e:\work\wolf\baseboard\bld\..\src\pcie_rst_ctrl.v":41:0:41:5|Found counter in view:work.PCIE_RST_CTRL(verilog) inst CNT0[21:0]
+@N:"e:\work\wolf\baseboard\bld\..\src\pcie_rst_ctrl.v":58:0:58:5|Found counter in view:work.PCIE_RST_CTRL(verilog) inst CNT1[21:0]
+@N:"e:\work\wolf\baseboard\bld\..\src\pcie_rst_ctrl.v":75:0:75:5|Found counter in view:work.PCIE_RST_CTRL(verilog) inst CNT2[21:0]
+@N:"e:\work\wolf\baseboard\bld\..\src\pcie_rst_ctrl.v":92:0:92:5|Found counter in view:work.PCIE_RST_CTRL(verilog) inst CNT3[21:0]
+@N:"e:\work\wolf\baseboard\bld\..\src\pcie_rst_ctrl.v":109:0:109:5|Found counter in view:work.PCIE_RST_CTRL(verilog) inst CNT4[21:0]
+@N:"e:\work\wolf\baseboard\bld\..\src\pcie_rst_ctrl.v":126:0:126:5|Found counter in view:work.PCIE_RST_CTRL(verilog) inst CNT5[21:0]
+@N:"e:\work\wolf\baseboard\bld\..\src\pcie_rst_ctrl.v":143:0:143:5|Found counter in view:work.PCIE_RST_CTRL(verilog) inst CNT6[21:0]
+@N:"e:\work\wolf\baseboard\bld\..\src\pcie_rst_ctrl.v":160:0:160:5|Found counter in view:work.PCIE_RST_CTRL(verilog) inst CNT7[21:0]
+@N:"e:\work\wolf\baseboard\bld\..\src\pcie_rst_ctrl.v":177:0:177:5|Found counter in view:work.PCIE_RST_CTRL(verilog) inst CNT8[21:0]
+@N:"e:\work\wolf\baseboard\bld\..\src\pcie_rst_ctrl.v":194:0:194:5|Found counter in view:work.PCIE_RST_CTRL(verilog) inst CNT9[21:0]
+@N:"e:\work\wolf\baseboard\bld\..\src\pcie_rst_ctrl.v":211:0:211:5|Found counter in view:work.PCIE_RST_CTRL(verilog) inst CNT10[21:0]
+@N:"e:\work\wolf\baseboard\bld\..\src\pcie_rst_ctrl.v":228:0:228:5|Found counter in view:work.PCIE_RST_CTRL(verilog) inst CNT11[21:0]
+@N:"e:\work\wolf\baseboard\bld\..\src\pcie_rst_ctrl.v":245:0:245:5|Found counter in view:work.PCIE_RST_CTRL(verilog) inst CNT12[21:0]
+@N:"e:\work\wolf\baseboard\bld\..\src\pcie_rst_ctrl.v":262:0:262:5|Found counter in view:work.PCIE_RST_CTRL(verilog) inst CNT13[21:0]
+@N:"e:\work\wolf\baseboard\bld\..\src\pcie_rst_ctrl.v":279:0:279:5|Found counter in view:work.PCIE_RST_CTRL(verilog) inst CNT14[21:0]
+@N:"e:\work\wolf\baseboard\bld\..\src\pcie_rst_ctrl.v":296:0:296:5|Found counter in view:work.PCIE_RST_CTRL(verilog) inst CNT15[21:0]
+@N:"e:\work\wolf\baseboard\bld\..\src\pcie_rst_ctrl.v":313:0:313:5|Found counter in view:work.PCIE_RST_CTRL(verilog) inst CNT16[21:0]
+@N:"e:\work\wolf\baseboard\bld\..\src\pcie_rst_ctrl.v":330:0:330:5|Found counter in view:work.PCIE_RST_CTRL(verilog) inst CNT17[21:0]
+@N:"e:\work\wolf\baseboard\bld\..\src\pcie_rst_ctrl.v":347:0:347:5|Found counter in view:work.PCIE_RST_CTRL(verilog) inst CNT18[21:0]
+@N:"e:\work\wolf\baseboard\bld\..\src\pcie_rst_ctrl.v":364:0:364:5|Found counter in view:work.PCIE_RST_CTRL(verilog) inst CNT19[21:0]
+@N:"e:\work\wolf\baseboard\bld\..\src\pcie_rst_ctrl.v":381:0:381:5|Found counter in view:work.PCIE_RST_CTRL(verilog) inst CNT20[21:0]
+@N:"e:\work\wolf\baseboard\bld\..\src\pcie_rst_ctrl.v":398:0:398:5|Found counter in view:work.PCIE_RST_CTRL(verilog) inst CNT21[21:0]
+@N:"e:\work\wolf\baseboard\bld\..\src\pcie_rst_ctrl.v":415:0:415:5|Found counter in view:work.PCIE_RST_CTRL(verilog) inst CNT22[21:0]
+@N:"e:\work\wolf\baseboard\bld\..\src\pcie_rst_ctrl.v":432:0:432:5|Found counter in view:work.PCIE_RST_CTRL(verilog) inst CNT23[21:0]
 Encoding state machine STATE[3:0] (view:work.BB_SGPIO(verilog))
 original code -> new code
    00000001 -> 00
    00000010 -> 01
    00000100 -> 10
    00001000 -> 11
-@N:"f:\project\wolf\baseboard\bld\..\src\bb_sgpio.v":81:0:81:5|Found counter in view:work.BB_SGPIO(verilog) inst HDD_CNT[5:0]
+@N:"e:\work\wolf\baseboard\bld\..\src\bb_sgpio.v":81:0:81:5|Found counter in view:work.BB_SGPIO(verilog) inst HDD_CNT[5:0]
 Encoding state machine STATE[4:0] (view:work.I2C(verilog))
 original code -> new code
    00000001 -> 00001
@@ -81,17 +105,17 @@ original code -> new code
    00000100 -> 00100
    00001000 -> 01000
    00100000 -> 10000
-@N:"f:\project\wolf\baseboard\bld\..\src\i2c.v":229:0:229:5|Found counter in view:work.I2C(verilog) inst LOC[7:0]
-@N: BN362 :"f:\project\wolf\baseboard\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CSD1[15] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C(verilog) because there are no references to its outputs 
-@N: BN362 :"f:\project\wolf\baseboard\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CSD1[14] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C(verilog) because there are no references to its outputs 
-@N: BN362 :"f:\project\wolf\baseboard\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CSD1[13] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C(verilog) because there are no references to its outputs 
-@N: BN362 :"f:\project\wolf\baseboard\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CSD1[12] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C(verilog) because there are no references to its outputs 
-@N: BN362 :"f:\project\wolf\baseboard\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CSD1[11] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C(verilog) because there are no references to its outputs 
-@N: BN362 :"f:\project\wolf\baseboard\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CS[15] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C(verilog) because there are no references to its outputs 
-@N: BN362 :"f:\project\wolf\baseboard\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CS[14] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C(verilog) because there are no references to its outputs 
-@N: BN362 :"f:\project\wolf\baseboard\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CS[13] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C(verilog) because there are no references to its outputs 
-@N: BN362 :"f:\project\wolf\baseboard\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CS[12] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C(verilog) because there are no references to its outputs 
-@N: BN362 :"f:\project\wolf\baseboard\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CS[11] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C(verilog) because there are no references to its outputs 
+@N:"e:\work\wolf\baseboard\bld\..\src\i2c.v":229:0:229:5|Found counter in view:work.I2C(verilog) inst LOC[7:0]
+@N: BN362 :"e:\work\wolf\baseboard\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CSD1[15] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C(verilog) because there are no references to its outputs 
+@N: BN362 :"e:\work\wolf\baseboard\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CSD1[14] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C(verilog) because there are no references to its outputs 
+@N: BN362 :"e:\work\wolf\baseboard\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CSD1[13] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C(verilog) because there are no references to its outputs 
+@N: BN362 :"e:\work\wolf\baseboard\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CSD1[12] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C(verilog) because there are no references to its outputs 
+@N: BN362 :"e:\work\wolf\baseboard\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CSD1[11] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C(verilog) because there are no references to its outputs 
+@N: BN362 :"e:\work\wolf\baseboard\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CS[15] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C(verilog) because there are no references to its outputs 
+@N: BN362 :"e:\work\wolf\baseboard\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CS[14] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C(verilog) because there are no references to its outputs 
+@N: BN362 :"e:\work\wolf\baseboard\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CS[13] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C(verilog) because there are no references to its outputs 
+@N: BN362 :"e:\work\wolf\baseboard\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CS[12] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C(verilog) because there are no references to its outputs 
+@N: BN362 :"e:\work\wolf\baseboard\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CS[11] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C(verilog) because there are no references to its outputs 
 Encoding state machine STATE[4:0] (view:work.I2C_I2C_INS_2(verilog))
 original code -> new code
    00000001 -> 00001
@@ -99,40 +123,40 @@ original code -> new code
    00000100 -> 00100
    00001000 -> 01000
    00100000 -> 10000
-@N:"f:\project\wolf\baseboard\bld\..\src\i2c.v":229:0:229:5|Found counter in view:work.I2C_I2C_INS_2(verilog) inst LOC[7:0]
-@N: BN362 :"f:\project\wolf\baseboard\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CSD1[15] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C_I2C_INS_2(verilog) because there are no references to its outputs 
-@N: BN362 :"f:\project\wolf\baseboard\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CSD1[14] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C_I2C_INS_2(verilog) because there are no references to its outputs 
-@N: BN362 :"f:\project\wolf\baseboard\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CSD1[13] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C_I2C_INS_2(verilog) because there are no references to its outputs 
-@N: BN362 :"f:\project\wolf\baseboard\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CSD1[12] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C_I2C_INS_2(verilog) because there are no references to its outputs 
-@N: BN362 :"f:\project\wolf\baseboard\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CSD1[11] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C_I2C_INS_2(verilog) because there are no references to its outputs 
-@N: BN362 :"f:\project\wolf\baseboard\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CS[15] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C_I2C_INS_2(verilog) because there are no references to its outputs 
-@N: BN362 :"f:\project\wolf\baseboard\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CS[14] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C_I2C_INS_2(verilog) because there are no references to its outputs 
-@N: BN362 :"f:\project\wolf\baseboard\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CS[13] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C_I2C_INS_2(verilog) because there are no references to its outputs 
-@N: BN362 :"f:\project\wolf\baseboard\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CS[12] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C_I2C_INS_2(verilog) because there are no references to its outputs 
-@N: BN362 :"f:\project\wolf\baseboard\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CS[11] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C_I2C_INS_2(verilog) because there are no references to its outputs 
+@N:"e:\work\wolf\baseboard\bld\..\src\i2c.v":229:0:229:5|Found counter in view:work.I2C_I2C_INS_2(verilog) inst LOC[7:0]
+@N: BN362 :"e:\work\wolf\baseboard\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CSD1[15] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C_I2C_INS_2(verilog) because there are no references to its outputs 
+@N: BN362 :"e:\work\wolf\baseboard\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CSD1[14] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C_I2C_INS_2(verilog) because there are no references to its outputs 
+@N: BN362 :"e:\work\wolf\baseboard\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CSD1[13] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C_I2C_INS_2(verilog) because there are no references to its outputs 
+@N: BN362 :"e:\work\wolf\baseboard\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CSD1[12] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C_I2C_INS_2(verilog) because there are no references to its outputs 
+@N: BN362 :"e:\work\wolf\baseboard\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CSD1[11] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C_I2C_INS_2(verilog) because there are no references to its outputs 
+@N: BN362 :"e:\work\wolf\baseboard\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CS[15] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C_I2C_INS_2(verilog) because there are no references to its outputs 
+@N: BN362 :"e:\work\wolf\baseboard\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CS[14] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C_I2C_INS_2(verilog) because there are no references to its outputs 
+@N: BN362 :"e:\work\wolf\baseboard\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CS[13] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C_I2C_INS_2(verilog) because there are no references to its outputs 
+@N: BN362 :"e:\work\wolf\baseboard\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CS[12] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C_I2C_INS_2(verilog) because there are no references to its outputs 
+@N: BN362 :"e:\work\wolf\baseboard\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CS[11] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C_I2C_INS_2(verilog) because there are no references to its outputs 
 
-Finished factoring (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 179MB peak: 179MB)
-
-
-Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 166MB peak: 179MB)
+Finished factoring (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 174MB peak: 175MB)
 
 
-Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:07s; Memory used current: 177MB peak: 205MB)
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 168MB peak: 175MB)
 
 
-Starting Early Timing Optimization (Real Time elapsed 0h:00m:08s; CPU Time elapsed 0h:00m:08s; Memory used current: 174MB peak: 205MB)
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 176MB peak: 207MB)
 
 
-Finished Early Timing Optimization (Real Time elapsed 0h:00m:09s; CPU Time elapsed 0h:00m:09s; Memory used current: 174MB peak: 205MB)
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:06s; Memory used current: 174MB peak: 207MB)
 
 
-Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:09s; CPU Time elapsed 0h:00m:09s; Memory used current: 173MB peak: 205MB)
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:07s; Memory used current: 175MB peak: 207MB)
 
 
-Finished preparing to map (Real Time elapsed 0h:00m:10s; CPU Time elapsed 0h:00m:10s; Memory used current: 174MB peak: 205MB)
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:07s; Memory used current: 174MB peak: 207MB)
 
 
-Finished technology mapping (Real Time elapsed 0h:00m:12s; CPU Time elapsed 0h:00m:12s; Memory used current: 197MB peak: 205MB)
+Finished preparing to map (Real Time elapsed 0h:00m:09s; CPU Time elapsed 0h:00m:09s; Memory used current: 175MB peak: 207MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:10s; CPU Time elapsed 0h:00m:10s; Memory used current: 194MB peak: 207MB)
 
 Pass		 CPU time		Worst Slack		Luts / Registers
 ------------------------------------------------------------
@@ -141,24 +165,24 @@ Pass		 CPU time		Worst Slack		Luts / Registers
 ------------------------------------------------------------
 
 
-Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:13s; CPU Time elapsed 0h:00m:13s; Memory used current: 178MB peak: 205MB)
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:12s; CPU Time elapsed 0h:00m:12s; Memory used current: 177MB peak: 207MB)
 
 @N: FX164 |The option to pack flops in the IOB has not been specified 
 
-Finished restoring hierarchy (Real Time elapsed 0h:00m:15s; CPU Time elapsed 0h:00m:15s; Memory used current: 177MB peak: 205MB)
+Finished restoring hierarchy (Real Time elapsed 0h:00m:14s; CPU Time elapsed 0h:00m:14s; Memory used current: 178MB peak: 207MB)
 
 
 
 #### START OF CLOCK OPTIMIZATION REPORT #####[
 
-1 non-gated/non-generated clock tree(s) driving 1420 clock pin(s) of sequential element(s)
+1 non-gated/non-generated clock tree(s) driving 1972 clock pin(s) of sequential element(s)
 2 gated/generated clock tree(s) driving 16 clock pin(s) of sequential element(s)
 0 instances converted, 16 sequential instances remain driven by gated/generated clocks
 
 ================================= Non-Gated/Non-Generated Clocks =================================
 Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance           
 --------------------------------------------------------------------------------------------------
-@K:CKID0003       SYSCLK              port                   1420       BB_SGPIO_INST_ACT_LEDio[0]
+@K:CKID0003       SYSCLK              port                   1972       BB_SGPIO_INST_ACT_LEDio[0]
 ==================================================================================================
 =========================================================== Gated/Generated Clocks ===========================================================
 Clock Tree ID     Driving Element                    Drive Element Type     Fanout     Sample Instance               Explanation              
@@ -170,26 +194,26 @@ Clock Tree ID     Driving Element                    Drive Element Type     Fano
 
 ##### END OF CLOCK OPTIMIZATION REPORT ######]
 
-Writing Analyst data base F:\project\wolf\Baseboard\BLD\Baseboard\Baseboard_Baseboard.srm
-@W: MT462 :"f:\project\wolf\baseboard\bld\..\src\i2c.v":251:13:251:50|Net I2C_INS_2.un1_DOUT_1 appears to be an unidentified clock source. Assuming default frequency. 
-@W: MT462 :"f:\project\wolf\baseboard\bld\..\src\i2c.v":251:13:251:50|Net I2C_INS_1.un1_DOUT_1 appears to be an unidentified clock source. Assuming default frequency. 
+Writing Analyst data base E:\work\wolf\Baseboard\BLD\Baseboard\Baseboard_Baseboard.srm
+@W: MT462 :"e:\work\wolf\baseboard\bld\..\src\i2c.v":251:13:251:50|Net I2C_INS_2.un1_DOUT_1 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"e:\work\wolf\baseboard\bld\..\src\i2c.v":251:13:251:50|Net I2C_INS_1.un1_DOUT_1 appears to be an unidentified clock source. Assuming default frequency. 
 
-Finished Writing Netlist Databases (Real Time elapsed 0h:00m:17s; CPU Time elapsed 0h:00m:17s; Memory used current: 173MB peak: 205MB)
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:16s; CPU Time elapsed 0h:00m:16s; Memory used current: 172MB peak: 207MB)
 
 Writing EDIF Netlist and constraint files
-@W: MT462 :"f:\project\wolf\baseboard\bld\..\src\i2c.v":251:13:251:50|Net I2C_INS_2.un1_DOUT_1 appears to be an unidentified clock source. Assuming default frequency. 
-@W: MT462 :"f:\project\wolf\baseboard\bld\..\src\i2c.v":251:13:251:50|Net I2C_INS_1.un1_DOUT_1 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"e:\work\wolf\baseboard\bld\..\src\i2c.v":251:13:251:50|Net I2C_INS_2.un1_DOUT_1 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"e:\work\wolf\baseboard\bld\..\src\i2c.v":251:13:251:50|Net I2C_INS_1.un1_DOUT_1 appears to be an unidentified clock source. Assuming default frequency. 
 I-2013.09L-SP1-1 
 @N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
 
-Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:18s; CPU Time elapsed 0h:00m:18s; Memory used current: 178MB peak: 205MB)
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:17s; CPU Time elapsed 0h:00m:17s; Memory used current: 177MB peak: 207MB)
 
 @W: MT420 |Found inferred clock BB_TOP|SYSCLK with period 1000.00ns. Please declare a user-defined clock on object "p:SYSCLK"
 
 
 
 ##### START OF TIMING REPORT #####[
-# Timing Report written on Sun Nov 09 21:27:45 2014
+# Timing Report written on Wed Feb 11 22:55:57 2015
 #
 
 
@@ -257,16 +281,16 @@ Starting Points with Worst Slack
 Instance                   Reference         Type        Pin     Net              Time        Slack  
                            Clock                                                                     
 -----------------------------------------------------------------------------------------------------
-I2C_INS_2.PORT_CSD1[0]     BB_TOP|SYSCLK     FD1S3DX     Q       PORT_CSD1[0]     1.220       496.219
 I2C_INS_1.PORT_CSD1[0]     BB_TOP|SYSCLK     FD1S3DX     Q       PORT_CSD1[0]     1.220       496.219
-I2C_INS_1.PORT_CSD1[1]     BB_TOP|SYSCLK     FD1S3DX     Q       PORT_CSD1[1]     1.220       496.219
+I2C_INS_2.PORT_CSD1[0]     BB_TOP|SYSCLK     FD1S3DX     Q       PORT_CSD1[0]     1.220       496.219
 I2C_INS_2.PORT_CSD1[1]     BB_TOP|SYSCLK     FD1S3DX     Q       PORT_CSD1[1]     1.220       496.219
-I2C_INS_2.PORT_CSD1[2]     BB_TOP|SYSCLK     FD1S3DX     Q       PORT_CSD1[2]     1.220       496.219
+I2C_INS_1.PORT_CSD1[1]     BB_TOP|SYSCLK     FD1S3DX     Q       PORT_CSD1[1]     1.220       496.219
 I2C_INS_1.PORT_CSD1[2]     BB_TOP|SYSCLK     FD1S3DX     Q       PORT_CSD1[2]     1.220       496.219
-I2C_INS_1.PORT_CSD1[3]     BB_TOP|SYSCLK     FD1S3DX     Q       PORT_CSD1[3]     1.220       496.219
+I2C_INS_2.PORT_CSD1[2]     BB_TOP|SYSCLK     FD1S3DX     Q       PORT_CSD1[2]     1.220       496.219
 I2C_INS_2.PORT_CSD1[3]     BB_TOP|SYSCLK     FD1S3DX     Q       PORT_CSD1[3]     1.220       496.219
-I2C_INS_2.PORT_CSD1[5]     BB_TOP|SYSCLK     FD1S3DX     Q       PORT_CSD1[5]     1.220       496.219
+I2C_INS_1.PORT_CSD1[3]     BB_TOP|SYSCLK     FD1S3DX     Q       PORT_CSD1[3]     1.220       496.219
 I2C_INS_1.PORT_CSD1[5]     BB_TOP|SYSCLK     FD1S3DX     Q       PORT_CSD1[5]     1.220       496.219
+I2C_INS_2.PORT_CSD1[5]     BB_TOP|SYSCLK     FD1S3DX     Q       PORT_CSD1[5]     1.220       496.219
 =====================================================================================================
 
 
@@ -306,26 +330,26 @@ Path information for path number 1:
     = Slack (critical) :                     496.219
 
     Number of logic level(s):                3
-    Starting point:                          I2C_INS_2.PORT_CSD1[0] / Q
-    Ending point:                            I2C_INS_2.REG_DIN[5] / D
+    Starting point:                          I2C_INS_1.PORT_CSD1[0] / Q
+    Ending point:                            I2C_INS_1.REG_DIN[5] / D
     The start point is clocked by            BB_TOP|SYSCLK [rising] on pin CK
     The end   point is clocked by            BB_TOP|SYSCLK [falling] on pin CK
 
 Instance / Net                              Pin      Pin               Arrival     No. of    
 Name                           Type         Name     Dir     Delay     Time        Fan Out(s)
 ---------------------------------------------------------------------------------------------
-I2C_INS_2.PORT_CSD1[0]         FD1S3DX      Q        Out     1.220     1.220       -         
+I2C_INS_1.PORT_CSD1[0]         FD1S3DX      Q        Out     1.220     1.220       -         
 PORT_CSD1[0]                   Net          -        -       -         -           8         
-I2C_INS_2.un2_REG_DIN_0[5]     ORCALUT4     C        In      0.000     1.220       -         
-I2C_INS_2.un2_REG_DIN_0[5]     ORCALUT4     Z        Out     1.017     2.237       -         
-un2_REG_DIN_0_0[5]             Net          -        -       -         -           1         
-I2C_INS_2.un2_REG_DIN_4[5]     ORCALUT4     C        In      0.000     2.237       -         
-I2C_INS_2.un2_REG_DIN_4[5]     ORCALUT4     Z        Out     1.017     3.253       -         
-un2_REG_DIN_4[5]               Net          -        -       -         -           1         
-I2C_INS_2.un2_REG_DIN[5]       ORCALUT4     D        In      0.000     3.253       -         
-I2C_INS_2.un2_REG_DIN[5]       ORCALUT4     Z        Out     0.617     3.870       -         
+I2C_INS_1.un2_REG_DIN_0[5]     ORCALUT4     C        In      0.000     1.220       -         
+I2C_INS_1.un2_REG_DIN_0[5]     ORCALUT4     Z        Out     1.017     2.237       -         
 un2_REG_DIN_0[5]               Net          -        -       -         -           1         
-I2C_INS_2.REG_DIN[5]           FD1P3DX      D        In      0.000     3.870       -         
+I2C_INS_1.un2_REG_DIN_4[5]     ORCALUT4     C        In      0.000     2.237       -         
+I2C_INS_1.un2_REG_DIN_4[5]     ORCALUT4     Z        Out     1.017     3.253       -         
+un2_REG_DIN_4[5]               Net          -        -       -         -           1         
+I2C_INS_1.un2_REG_DIN[5]       ORCALUT4     D        In      0.000     3.253       -         
+I2C_INS_1.un2_REG_DIN[5]       ORCALUT4     Z        Out     0.617     3.870       -         
+un2_REG_DIN[5]                 Net          -        -       -         -           1         
+I2C_INS_1.REG_DIN[5]           FD1P3DX      D        In      0.000     3.870       -         
 =============================================================================================
 
 
@@ -421,7 +445,7 @@ I2C_INS_2.SHIFT_DOUT[1]           FD1P3DX      D        In      0.000     2.605 
 Resource Usage Report
 Part: lcmxo2_7000hc-4
 
-Register bits: 1420 of 6864 (21%)
+Register bits: 1972 of 6864 (29%)
 Latch bits:      16
 PIC Latch:       0
 I/O cells:       278
@@ -429,30 +453,30 @@ I/O cells:       278
 
 Details:
 BB:             74
-CCU2D:          106
+CCU2D:          394
 FD1P3AX:        4
 FD1P3BX:        130
-FD1P3DX:        958
+FD1P3DX:        1486
 FD1S1AY:        16
 FD1S3BX:        2
-FD1S3DX:        248
+FD1S3DX:        272
 GSR:            1
 IB:             68
 IFS1P3DX:       76
 INV:            42
 OB:             136
 OFS1P3DX:       2
-ORCALUT4:       3009
+ORCALUT4:       3165
 PFUMX:          72
 PUR:            1
-VHI:            17
-VLO:            23
+VHI:            18
+VLO:            24
 true:           6
 Mapper successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:19s; CPU Time elapsed 0h:00m:19s; Memory used current: 60MB peak: 205MB)
+At Mapper Exit (Real Time elapsed 0h:00m:18s; CPU Time elapsed 0h:00m:18s; Memory used current: 61MB peak: 207MB)
 
-Process took 0h:00m:19s realtime, 0h:00m:19s cputime
-# Sun Nov 09 21:27:45 2014
+Process took 0h:00m:18s realtime, 0h:00m:18s cputime
+# Wed Feb 11 22:55:57 2015
 
 ###########################################################]

@@ -41,20 +41,20 @@ module PCIE_RST_CTRL (
 
 ; for ($i=0; $i<24; $i++) {
 //PCIE RESET ${i}
-reg       [17:0]  CNT${i};
+reg       [31:0]  CNT${i};
 always@(posedge SYSCLK or negedge RESET_N)
 	begin
 		if(RESET_N == 1'b0)
 			begin
 				CNT${i}                  <= 'b0;
-				PE_RST_DRV${i}_A_L       <= 'b1;
-				PE_RST_DRV${i}_B_L       <= 'b1;
+				PE_RST_DRV${i}_A_L       <= 'b0;
+				PE_RST_DRV${i}_B_L       <= 'b0;
 			end
 		else
 		    begin
-				CNT${i}                  <= ((CNT${i} < `TIME_100MS) && (DRV${i}_PWROK == 1'b1))? (CNT${i} + 18'b1) : ((DRV${i}_PWROK == 1'b1)? CNT${i} : 0);
-				PE_RST_DRV${i}_A_L       <= (CNT${i} == `TIME_100MS)? 1'b0 : 1'b1;
-				PE_RST_DRV${i}_B_L       <= (CNT${i} == `TIME_100MS)? 1'b0 : 1'b1;
+				CNT${i}                  <= ((CNT${i} < `TIME_100MS) && (DRV${i}_PWROK == 1'b1))? (CNT${i} + 32'h1) : ((DRV${i}_PWROK == 1'b1)? CNT${i} : 0);
+				PE_RST_DRV${i}_A_L       <= (CNT${i} < `TIME_100MS)? 1'b0 : 1'b1;
+				PE_RST_DRV${i}_B_L       <= (CNT${i} < `TIME_100MS)? 1'b0 : 1'b1;
 			end
 	end
 ; }	

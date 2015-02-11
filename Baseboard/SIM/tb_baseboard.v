@@ -38,6 +38,8 @@ wire	[7:0]	i2c_rddata2;
 
 // Driver active led input
 reg     [35:0]  DRV_ACT;
+// Driver power
+reg     [23:0]  DRV_POWER_OK;
 
 // SGPIO
 wire            SGPIO_CK;
@@ -136,6 +138,30 @@ BB_TOP		BB_TOP_INST (
                 .DRV33_ACT_LED                ( DRV_ACT[33] ),
                 .DRV34_ACT_LED                ( DRV_ACT[34] ),
                 .DRV35_ACT_LED                ( DRV_ACT[35] ),
+                .DRV0_PWROK                  ( DRV_POWER_OK[0] ),
+                .DRV1_PWROK                  ( DRV_POWER_OK[1] ),
+                .DRV2_PWROK                  ( DRV_POWER_OK[2] ),
+                .DRV3_PWROK                  ( DRV_POWER_OK[3] ),
+                .DRV4_PWROK                  ( DRV_POWER_OK[4] ),
+                .DRV5_PWROK                  ( DRV_POWER_OK[5] ),
+                .DRV6_PWROK                  ( DRV_POWER_OK[6] ),
+                .DRV7_PWROK                  ( DRV_POWER_OK[7] ),
+                .DRV8_PWROK                  ( DRV_POWER_OK[8] ),
+                .DRV9_PWROK                  ( DRV_POWER_OK[9] ),
+                .DRV10_PWROK                  ( DRV_POWER_OK[10] ),
+                .DRV11_PWROK                  ( DRV_POWER_OK[11] ),
+                .DRV12_PWROK                  ( DRV_POWER_OK[12] ),
+                .DRV13_PWROK                  ( DRV_POWER_OK[13] ),
+                .DRV14_PWROK                  ( DRV_POWER_OK[14] ),
+                .DRV15_PWROK                  ( DRV_POWER_OK[15] ),
+                .DRV16_PWROK                  ( DRV_POWER_OK[16] ),
+                .DRV17_PWROK                  ( DRV_POWER_OK[17] ),
+                .DRV18_PWROK                  ( DRV_POWER_OK[18] ),
+                .DRV19_PWROK                  ( DRV_POWER_OK[19] ),
+                .DRV20_PWROK                  ( DRV_POWER_OK[20] ),
+                .DRV21_PWROK                  ( DRV_POWER_OK[21] ),
+                .DRV22_PWROK                  ( DRV_POWER_OK[22] ),
+                .DRV23_PWROK                  ( DRV_POWER_OK[23] ),
 				
 				// SGPIO
 				.SGPIO_CK                       ( SGPIO_CK      ),
@@ -163,14 +189,16 @@ always	#20   clk       = ~clk;
 initial
 	begin
 
-        clk         = 0;
-        rstn        = 0;
-        i2c_wr      = 1;
+        clk          = 0;
+        rstn         = 0;
+        i2c_wr       = 1;
+		DRV_POWER_OK = 'h0;
 
         repeat (1000) @(posedge clk);
 		
         rstn = 1;
-		DRV_ACT     = 'b0;
+		DRV_ACT      = 'b0;
+		DRV_POWER_OK = 24'hff_ffff;
 		repeat (1000) @(posedge clk);
 		
 		//SGPIO TEST

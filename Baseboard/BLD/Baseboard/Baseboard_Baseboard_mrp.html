@@ -14,27 +14,27 @@
 Command line:   map -a MachXO2 -p LCMXO2-7000HC -t FPBGA484 -s 4 -oc Commercial
      Baseboard_Baseboard.ngd -o Baseboard_Baseboard_map.ncd -pr
      Baseboard_Baseboard.prf -mp Baseboard_Baseboard.mrp -lpf
-     F:/project/wolf/Baseboard/BLD/Baseboard/Baseboard_Baseboard_synplify.lpf
-     -lpf F:/project/wolf/Baseboard/BLD/../SRC/Baseboard.lpf -c 0 -gui
+     E:/work/wolf/Baseboard/BLD/Baseboard/Baseboard_Baseboard_synplify.lpf -lpf
+     E:/work/wolf/Baseboard/BLD/../SRC/Baseboard.lpf -c 0 -gui
 Target Vendor:  LATTICE
 Target Device:  LCMXO2-7000HCFPBGA484
 Target Performance:   4
 Mapper:  xo2c00,  version:  Diamond (64-bit) 3.2.0.134
-Mapped on:  11/09/14  21:27:53
+Mapped on:  02/11/15  22:56:05
 
 
 <A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
-   Number of registers:   1436 out of  7869 (18%)
-      PFU registers:         1358 out of  6864 (20%)
+   Number of registers:   1988 out of  7869 (25%)
+      PFU registers:         1910 out of  6864 (28%)
       PIO registers:           78 out of  1005 (8%)
-   Number of SLICEs:      1634 out of  3432 (48%)
-      SLICEs as Logic/ROM:   1634 out of  3432 (48%)
+   Number of SLICEs:      2001 out of  3432 (58%)
+      SLICEs as Logic/ROM:   2001 out of  3432 (58%)
       SLICEs as RAM:            0 out of  2574 (0%)
-      SLICEs as Carry:        106 out of  3432 (3%)
-   Number of LUT4s:        3261 out of  6864 (48%)
-      Number of logic LUTs:      3049
+      SLICEs as Carry:        394 out of  3432 (11%)
+   Number of LUT4s:        3992 out of  6864 (58%)
+      Number of logic LUTs:      3204
       Number of distributed RAM:   0 (0 LUT4s)
-      Number of ripple logic:    106 (212 LUT4s)
+      Number of ripple logic:    394 (788 LUT4s)
       Number of shift registers:   0
    Number of PIO sites used: 278 + 4(JTAG) out of 335 (84%)
    Number of block RAMs:  0 out of 26 (0%)
@@ -62,67 +62,91 @@ Mapped on:  11/09/14  21:27:53
       2. Number of logic LUT4s does not include count of distributed RAM and
      ripple logic.
    Number of clocks:  3
-     Net SYSCLK_c: 785 loads, 777 rising, 8 falling (Driver: PIO SYSCLK )
+     Net SYSCLK_c: 1098 loads, 1090 rising, 8 falling (Driver: PIO SYSCLK )
      Net I2C_INS_2/un1_DOUT_1: 4 loads, 4 rising, 0 falling (Driver:
      I2C_INS_2/un1_DOUT_0_a2_0_a3_1 )
 
      Net I2C_INS_1/un1_DOUT_1: 4 loads, 4 rising, 0 falling (Driver:
      I2C_INS_1/un1_DOUT_0_a2_0_a3_1 )
-   Number of Clock Enables:  148
-     Net N_170_i: 1 loads, 0 LSLICEs
+   Number of Clock Enables:  172
+     Net N_903_i: 1 loads, 0 LSLICEs
      Net PRSNT_LED_CTRL_INST.un3_CNT_i: 54 loads, 18 LSLICEs
-     Net I2C_INS_2/N_28: 4 loads, 4 LSLICEs
-     Net I2C_INS_2/SDA_OE_i_RNO: 1 loads, 1 LSLICEs
+     Net I2C_INS_2/SCL_D2_RNIHTAT: 4 loads, 4 LSLICEs
+     Net I2C_INS_2/SDA_OE_i_RNO_0: 1 loads, 1 LSLICEs
      Net I2C_INS_2/un9_LOC_i: 5 loads, 5 LSLICEs
      Net I2C_INS_2/un7_SHIFT_DIN_i: 4 loads, 4 LSLICEs
      Net I2C_INS_2/SCL_NCLK: 1 loads, 1 LSLICEs
      Net I2C_INS_2/SCL_PCLKD2: 1 loads, 1 LSLICEs
      Net RESET_N_c: 4 loads, 4 LSLICEs
      Net I2C_INS_2/RD_END2: 4 loads, 4 LSLICEs
-     Net I2C_INS_2/N_36: 1 loads, 1 LSLICEs
+     Net I2C_INS_2/N_40: 1 loads, 1 LSLICEs
      Net I2C_INS_2/un1_DOUT_0_a2_0_a3_0: 4 loads, 4 LSLICEs
-     Net I2C_INS_2/N_38: 2 loads, 2 LSLICEs
+     Net I2C_INS_2/N_42: 2 loads, 2 LSLICEs
      Net I2C_INS_2/un2_RD_WR_0_a2_0_a3_0: 1 loads, 1 LSLICEs
-     Net N_2145_i: 1 loads, 0 LSLICEs
+     Net N_2663_i: 1 loads, 0 LSLICEs
      Net I2C_INS_1/SCL_NCLK: 1 loads, 1 LSLICEs
+     Net I2C_INS_1/SDA_OE_i_RNO: 1 loads, 1 LSLICEs
      Net I2C_INS_1/SCL_D2_RNIE4DF: 4 loads, 4 LSLICEs
-     Net I2C_INS_1/N_25: 1 loads, 1 LSLICEs
      Net I2C_INS_1/un9_LOC_i: 5 loads, 5 LSLICEs
      Net I2C_INS_1/un7_SHIFT_DIN_i: 4 loads, 4 LSLICEs
      Net I2C_INS_1/SCL_PCLKD2: 1 loads, 1 LSLICEs
      Net I2C_INS_1/RD_END2: 4 loads, 4 LSLICEs
-     Net I2C_INS_1/un5_RD_WR_i_0_0: 1 loads, 1 LSLICEs
+     Net I2C_INS_1/N_27: 1 loads, 1 LSLICEs
      Net I2C_INS_1/un1_DOUT_0_a2_0_a3: 4 loads, 4 LSLICEs
-     Net I2C_INS_1/un7_CNT_i_0_0: 2 loads, 2 LSLICEs
+     Net I2C_INS_1/N_29: 2 loads, 2 LSLICEs
      Net I2C_INS_1/un2_RD_WR_0_a2_0_a3: 1 loads, 1 LSLICEs
-     Net N_1724_i: 1 loads, 0 LSLICEs
-     Net BB_SGPIO_INST/N_163_i: 4 loads, 4 LSLICEs
-     Net BB_SGPIO_INST/N_41_i: 18 loads, 18 LSLICEs
+     Net N_2026_i: 1 loads, 0 LSLICEs
+     Net BB_SGPIO_INST/N_900_i: 4 loads, 4 LSLICEs
+     Net BB_SGPIO_INST/N_861_i: 18 loads, 18 LSLICEs
      Net un1_STATE_9_i_i: 1 loads, 0 LSLICEs
-     Net GPOA_INST/N_21: 4 loads, 4 LSLICEs
-     Net GPOA_INST/N_267: 4 loads, 4 LSLICEs
-     Net GPOA_INST/un27_DO6_i_o2_RNIRT8I1: 4 loads, 4 LSLICEs
-     Net GPOA_INST/un27_DO5_i: 4 loads, 4 LSLICEs
-     Net GPOA_INST/un10_DOUT2_i_i_a2: 4 loads, 4 LSLICEs
-     Net GPOA_INST/N_16_i: 4 loads, 4 LSLICEs
-     Net GPOA_INST/N_269: 4 loads, 4 LSLICEs
-     Net GPOA_INST/un27_DO8_i_0_0: 4 loads, 4 LSLICEs
-     Net GPOA_INST/un27_DO7_i_0: 4 loads, 4 LSLICEs
-     Net GPOA_INST/un27_DO2_i_0: 4 loads, 4 LSLICEs
-     Net GPOA_INST/un27_DO1_i_0_1: 4 loads, 4 LSLICEs
-     Net GPOA_INST/N_11: 4 loads, 4 LSLICEs
-     Net GPOA_INST/N_9: 4 loads, 4 LSLICEs
-     Net GPOA_INST/un27_DO13_i_0_0: 4 loads, 4 LSLICEs
-     Net GPOA_INST/N_7: 4 loads, 4 LSLICEs
-     Net GPOA_INST/N_5: 4 loads, 4 LSLICEs
-     Net GPOA_INST/un27_DO10_i_0_0: 4 loads, 4 LSLICEs
-     Net GPOA_INST/un27_DO0_i_0: 4 loads, 4 LSLICEs
-     Net GPI9_INST/N_174: 1 loads, 1 LSLICEs
-     Net GPI9_INST/N_460: 1 loads, 1 LSLICEs
-     Net GPI8_INST/un1_DOUT2_i_i_a3: 1 loads, 1 LSLICEs
-     Net GPI8_INST/N_459: 1 loads, 1 LSLICEs
-     Net GPO7_INST/N_59_i: 4 loads, 4 LSLICEs
+     Net PCIE_RST_CTRL/un6_CNT9_i: 12 loads, 12 LSLICEs
+     Net PCIE_RST_CTRL/un6_CNT8_i: 12 loads, 12 LSLICEs
+     Net PCIE_RST_CTRL/un6_CNT7_i: 12 loads, 12 LSLICEs
+     Net PCIE_RST_CTRL/un6_CNT6_i: 12 loads, 12 LSLICEs
+     Net PCIE_RST_CTRL/un6_CNT5_i: 12 loads, 12 LSLICEs
+     Net PCIE_RST_CTRL/un6_CNT4_i: 12 loads, 12 LSLICEs
+     Net PCIE_RST_CTRL/un6_CNT3_i: 12 loads, 12 LSLICEs
+     Net PCIE_RST_CTRL/un6_CNT2_i: 12 loads, 12 LSLICEs
+     Net PCIE_RST_CTRL/un6_CNT23_i: 12 loads, 12 LSLICEs
+     Net PCIE_RST_CTRL/un6_CNT22_i: 12 loads, 12 LSLICEs
+     Net PCIE_RST_CTRL/un6_CNT21_i_0: 12 loads, 12 LSLICEs
+     Net PCIE_RST_CTRL/un6_CNT20_i: 12 loads, 12 LSLICEs
+     Net PCIE_RST_CTRL/un6_CNT19_i: 12 loads, 12 LSLICEs
+     Net PCIE_RST_CTRL/un6_CNT1_i: 12 loads, 12 LSLICEs
+     Net PCIE_RST_CTRL/un6_CNT18_i: 12 loads, 12 LSLICEs
+     Net PCIE_RST_CTRL/N_563_i: 12 loads, 12 LSLICEs
+     Net PCIE_RST_CTRL/un6_CNT16_i: 12 loads, 12 LSLICEs
+     Net PCIE_RST_CTRL/un6_CNT15_i_0: 12 loads, 12 LSLICEs
+     Net PCIE_RST_CTRL/un6_CNT14_i: 12 loads, 12 LSLICEs
+     Net PCIE_RST_CTRL/un6_CNT13_i: 12 loads, 12 LSLICEs
+     Net PCIE_RST_CTRL/un6_CNT12_i: 12 loads, 12 LSLICEs
+     Net PCIE_RST_CTRL/un6_CNT11_i: 12 loads, 12 LSLICEs
+     Net PCIE_RST_CTRL/un6_CNT10_i: 12 loads, 12 LSLICEs
 
+     Net PCIE_RST_CTRL/un7_CNT0_i: 12 loads, 12 LSLICEs
+     Net GPOA_INST/un19_DO13_0_a3_RNIIH6C1: 4 loads, 4 LSLICEs
+     Net GPOA_INST/N_2108_i: 4 loads, 4 LSLICEs
+     Net GPOA_INST/un14_DOUT1: 4 loads, 4 LSLICEs
+     Net GPOA_INST/N_21: 4 loads, 4 LSLICEs
+     Net GPOA_INST/un27_DO8_i_0_0: 4 loads, 4 LSLICEs
+     Net GPOA_INST/N_19: 4 loads, 4 LSLICEs
+     Net GPOA_INST/N_17: 4 loads, 4 LSLICEs
+     Net GPOA_INST/un27_DO5_i_0_0: 4 loads, 4 LSLICEs
+     Net GPOA_INST/un27_DO4_i_0_0: 4 loads, 4 LSLICEs
+     Net GPOA_INST/un27_DO3_i_0: 4 loads, 4 LSLICEs
+     Net GPOA_INST/un27_DO2_i_0_0: 4 loads, 4 LSLICEs
+     Net GPOA_INST/N_15: 4 loads, 4 LSLICEs
+     Net GPOA_INST/un27_DO15_i_0_0: 4 loads, 4 LSLICEs
+     Net GPOA_INST/un27_DO14_i_0_0: 4 loads, 4 LSLICEs
+     Net GPOA_INST/N_11: 4 loads, 4 LSLICEs
+     Net GPOA_INST/N_23: 4 loads, 4 LSLICEs
+     Net GPOA_INST/N_9: 4 loads, 4 LSLICEs
+     Net GPOA_INST/N_13: 4 loads, 4 LSLICEs
+     Net GPI9_INST/N_633: 1 loads, 1 LSLICEs
+     Net GPI9_INST/un2_DOUT1_i_i_a3: 1 loads, 1 LSLICEs
+     Net GPI8_INST/N_2621_i: 1 loads, 1 LSLICEs
+     Net GPI8_INST/un2_DOUT1_i_i_a3_0: 1 loads, 1 LSLICEs
+     Net GPO7_INST/N_59_i: 4 loads, 4 LSLICEs
      Net GPO7_INST/N_620: 4 loads, 4 LSLICEs
      Net GPO7_INST/un27_DO9_i_0_0: 4 loads, 4 LSLICEs
      Net GPO7_INST/N_22: 4 loads, 4 LSLICEs
@@ -132,13 +156,13 @@ Mapped on:  11/09/14  21:27:53
      Net GPO7_INST/N_10: 4 loads, 4 LSLICEs
      Net GPO7_INST/N_7: 4 loads, 4 LSLICEs
      Net GPO7_INST/N_4: 4 loads, 4 LSLICEs
-     Net GPO7_INST/un27_DO1_i_0_0: 4 loads, 4 LSLICEs
      Net GPO7_INST/N_36: 4 loads, 4 LSLICEs
+     Net GPO7_INST/un27_DO1_i_0_0: 4 loads, 4 LSLICEs
      Net GPO7_INST/N_34: 4 loads, 4 LSLICEs
      Net GPO7_INST/N_31: 4 loads, 4 LSLICEs
      Net GPO7_INST/N_28: 4 loads, 4 LSLICEs
-     Net GPO7_INST/N_63: 4 loads, 4 LSLICEs
      Net GPO7_INST/N_25: 4 loads, 4 LSLICEs
+     Net GPO7_INST/N_63: 4 loads, 4 LSLICEs
      Net GPO7_INST/N_61: 4 loads, 4 LSLICEs
      Net GPO6_INST/N_817_i: 4 loads, 4 LSLICEs
      Net GPO6_INST/N_8_i: 4 loads, 4 LSLICEs
@@ -155,8 +179,9 @@ Mapped on:  11/09/14  21:27:53
      Net GPO6_INST/N_26: 4 loads, 4 LSLICEs
      Net GPO6_INST/N_23: 4 loads, 4 LSLICEs
      Net GPO6_INST/N_20: 4 loads, 4 LSLICEs
-     Net GPO6_INST/N_57: 4 loads, 4 LSLICEs
+
      Net GPO6_INST/N_14: 4 loads, 4 LSLICEs
+     Net GPO6_INST/N_57: 4 loads, 4 LSLICEs
      Net GPO6_INST/N_7: 4 loads, 4 LSLICEs
      Net GPO5_INST/N_59_i: 4 loads, 4 LSLICEs
      Net GPO5_INST/N_620: 4 loads, 4 LSLICEs
@@ -168,10 +193,10 @@ Mapped on:  11/09/14  21:27:53
      Net GPO5_INST/N_10: 4 loads, 4 LSLICEs
      Net GPO5_INST/N_7: 4 loads, 4 LSLICEs
      Net GPO5_INST/N_4: 4 loads, 4 LSLICEs
-     Net GPO5_INST/N_34: 4 loads, 4 LSLICEs
-     Net GPO5_INST/un27_DO1_i_0: 4 loads, 4 LSLICEs
      Net GPO5_INST/N_36: 4 loads, 4 LSLICEs
+     Net GPO5_INST/N_34: 4 loads, 4 LSLICEs
      Net GPO5_INST/N_31: 4 loads, 4 LSLICEs
+     Net GPO5_INST/un27_DO1_i_0: 4 loads, 4 LSLICEs
      Net GPO5_INST/N_28: 4 loads, 4 LSLICEs
      Net GPO5_INST/N_25: 4 loads, 4 LSLICEs
      Net GPO5_INST/N_63: 4 loads, 4 LSLICEs
@@ -179,7 +204,6 @@ Mapped on:  11/09/14  21:27:53
      Net GPO4_INST/N_817_i: 4 loads, 4 LSLICEs
      Net GPO4_INST/N_8_i: 4 loads, 4 LSLICEs
      Net GPO4_INST/N_11: 4 loads, 4 LSLICEs
-
      Net GPO4_INST/N_17: 4 loads, 4 LSLICEs
      Net GPO4_INST/N_15: 4 loads, 4 LSLICEs
      Net GPO4_INST/N_301: 4 loads, 4 LSLICEs
@@ -187,55 +211,53 @@ Mapped on:  11/09/14  21:27:53
      Net GPO4_INST/N_55: 4 loads, 4 LSLICEs
      Net GPO4_INST/N_9: 4 loads, 4 LSLICEs
      Net GPO4_INST/N_10: 4 loads, 4 LSLICEs
-     Net GPO4_INST/un27_DO15_i_0_0_0: 4 loads, 4 LSLICEs
-     Net GPO4_INST/N_26: 4 loads, 4 LSLICEs
-     Net GPO4_INST/N_23: 4 loads, 4 LSLICEs
-     Net GPO4_INST/N_20: 4 loads, 4 LSLICEs
-     Net GPO4_INST/N_14: 4 loads, 4 LSLICEs
      Net GPO4_INST/N_6: 4 loads, 4 LSLICEs
+     Net GPO4_INST/un27_DO15_i_0_0_0: 4 loads, 4 LSLICEs
+     Net GPO4_INST/N_23: 4 loads, 4 LSLICEs
+     Net GPO4_INST/N_26: 4 loads, 4 LSLICEs
+     Net GPO4_INST/N_20: 4 loads, 4 LSLICEs
      Net GPO4_INST/N_57: 4 loads, 4 LSLICEs
+     Net GPO4_INST/N_14: 4 loads, 4 LSLICEs
      Net GPO4_INST/N_7: 4 loads, 4 LSLICEs
-     Net GPI3_INST/N_172: 4 loads, 4 LSLICEs
-     Net GPI3_INST/un2_DOUT1_i_i_a2: 4 loads, 4 LSLICEs
+     Net GPI3_INST/N_580: 4 loads, 4 LSLICEs
+     Net GPI3_INST/un2_DOUT1_i_i_a3_1: 4 loads, 4 LSLICEs
      Net GPO2_INST/un9_DO0_i_0_0: 4 loads, 4 LSLICEs
-     Net GPO2_INST/un9_DO6_i_0_0: 4 loads, 4 LSLICEs
-     Net GPO2_INST/un1_DO15_0_o4_0_RNIUAEB1: 4 loads, 4 LSLICEs
-     Net GPO2_INST/un1_DOUT2_i_i_a2: 4 loads, 4 LSLICEs
-     Net GPO2_INST/N_453_i: 4 loads, 4 LSLICEs
-     Net GPO2_INST/un9_DO9_i_0: 4 loads, 4 LSLICEs
+     Net GPO2_INST/N_6_i: 4 loads, 4 LSLICEs
+     Net GPO2_INST/N_1964_i: 4 loads, 4 LSLICEs
+     Net GPO2_INST/N_5: 4 loads, 4 LSLICEs
      Net GPO2_INST/un9_DO8_i_0_0: 4 loads, 4 LSLICEs
-     Net GPO2_INST/un9_DO7_i_0: 4 loads, 4 LSLICEs
-     Net GPO2_INST/un9_DO5_i_0_0: 4 loads, 4 LSLICEs
-     Net GPO2_INST/un9_DO4_i_0_0: 4 loads, 4 LSLICEs
-     Net GPO2_INST/un9_DO3_i_0: 4 loads, 4 LSLICEs
-     Net GPO2_INST/N_257: 4 loads, 4 LSLICEs
-     Net GPO2_INST/N_259: 4 loads, 4 LSLICEs
      Net GPO2_INST/N_10: 4 loads, 4 LSLICEs
+     Net GPO2_INST/un9_DO6_i_0_0: 4 loads, 4 LSLICEs
+     Net GPO2_INST/N_8: 4 loads, 4 LSLICEs
+     Net GPO2_INST/un9_DO4_i_0_0: 4 loads, 4 LSLICEs
+     Net GPO2_INST/un9_DO3_i_0_0: 4 loads, 4 LSLICEs
+     Net GPO2_INST/un9_DO2_i_0: 4 loads, 4 LSLICEs
+     Net GPO2_INST/un9_DO15_i_0_0: 4 loads, 4 LSLICEs
      Net GPO2_INST/un9_DO14_i_0_0: 4 loads, 4 LSLICEs
-     Net GPO2_INST/un9_DO12_i_0_0: 4 loads, 4 LSLICEs
-     Net GPO2_INST/N_263: 4 loads, 4 LSLICEs
-     Net GPO2_INST/N_265: 4 loads, 4 LSLICEs
-     Net GPI1_INST/un1_DOUT2_i_i_a3_0: 4 loads, 4 LSLICEs
-     Net GPI1_INST/un2_DOUT1_i_i_a2_0: 4 loads, 4 LSLICEs
-     Net GPI0_INST/un2_DOUT1_i_i_a2_1: 3 loads, 3 LSLICEs
-     Net GPI0_INST/un1_DOUT2_i_i_a3_1: 3 loads, 3 LSLICEs
-   Number of local set/reset loads for net RESET_N_c merged into GSR:  1416
+     Net GPO2_INST/un9_DO1_i_0_0: 4 loads, 4 LSLICEs
+     Net GPO2_INST/un9_DO13_i_0_0: 4 loads, 4 LSLICEs
+
+     Net GPO2_INST/un9_DO12_i_0: 4 loads, 4 LSLICEs
+     Net GPO2_INST/N_7: 4 loads, 4 LSLICEs
+     Net GPO2_INST/un9_DO10_i_0_0: 4 loads, 4 LSLICEs
+     Net GPI1_INST/N_554: 4 loads, 4 LSLICEs
+     Net GPI1_INST/un2_DOUT1_i_i_a3_2: 4 loads, 4 LSLICEs
+     Net GPI0_INST/N_805_i: 3 loads, 3 LSLICEs
+     Net GPI0_INST/N_629: 3 loads, 3 LSLICEs
+   Number of local set/reset loads for net RESET_N_c merged into GSR:  1968
    Number of LSRs:  0
    Number of nets driven by tri-state buffers:  0
    Top 10 highest fanout non-clock nets:
+     Net GPO2_INST/N_2636: 144 loads
      Net GPO4_INST/N_602: 144 loads
      Net GPO5_INST/N_380: 144 loads
      Net GPO6_INST/N_602: 144 loads
      Net GPO7_INST/N_380: 144 loads
-     Net GPO2_INST/N_1728: 127 loads
-     Net OFFSET_SEL_1[0]: 122 loads
+     Net GPOA_INST/N_2635: 135 loads
+     Net OFFSET_SEL_1[0]: 121 loads
      Net OFFSET_SEL_1[1]: 119 loads
-     Net N_1995: 109 loads
-     Net OFFSET_SEL_1[7]: 109 loads
-     Net OFFSET_SEL_1[8]: 109 loads
-
-
-
+     Net OFFSET_SEL_1[2]: 117 loads
+     Net OFFSET_SEL_1[3]: 110 loads
 
 
 
@@ -248,120 +270,120 @@ Mapped on:  11/09/14  21:27:53
 
 <A name="mrp_dwe"></A><B><U><big>Design Errors/Warnings</big></U></B>
 
-WARNING - map: F:/project/wolf/Baseboard/BLD/../SRC/Baseboard.lpf(431): Semantic
+WARNING - map: E:/work/wolf/Baseboard/BLD/../SRC/Baseboard.lpf(431): Semantic
      error in "LOCATE COMP "DRV24_PCIE_CLK_A_OE_L" SITE "W6" ;": COMP
      "DRV24_PCIE_CLK_A_OE_L" not found in design. Disable this preference.
-WARNING - map: F:/project/wolf/Baseboard/BLD/../SRC/Baseboard.lpf(432): Semantic
+WARNING - map: E:/work/wolf/Baseboard/BLD/../SRC/Baseboard.lpf(432): Semantic
      error in "LOCATE COMP "DRV24_PCIE_CLK_B_OE_L" SITE "R17" ;": COMP
      "DRV24_PCIE_CLK_B_OE_L" not found in design. Disable this preference.
-WARNING - map: F:/project/wolf/Baseboard/BLD/../SRC/Baseboard.lpf(435): Semantic
+WARNING - map: E:/work/wolf/Baseboard/BLD/../SRC/Baseboard.lpf(435): Semantic
      error in "LOCATE COMP "DRV24_PWROK" SITE "M4" ;": COMP "DRV24_PWROK" not
      found in design. Disable this preference.
-WARNING - map: F:/project/wolf/Baseboard/BLD/../SRC/Baseboard.lpf(438): Semantic
+WARNING - map: E:/work/wolf/Baseboard/BLD/../SRC/Baseboard.lpf(438): Semantic
      error in "LOCATE COMP "DRV25_PCIE_CLK_A_OE_L" SITE "V9" ;": COMP
      "DRV25_PCIE_CLK_A_OE_L" not found in design. Disable this preference.
-WARNING - map: F:/project/wolf/Baseboard/BLD/../SRC/Baseboard.lpf(439): Semantic
+WARNING - map: E:/work/wolf/Baseboard/BLD/../SRC/Baseboard.lpf(439): Semantic
      error in "LOCATE COMP "DRV25_PCIE_CLK_B_OE_L" SITE "R21" ;": COMP
      "DRV25_PCIE_CLK_B_OE_L" not found in design. Disable this preference.
-WARNING - map: F:/project/wolf/Baseboard/BLD/../SRC/Baseboard.lpf(442): Semantic
+WARNING - map: E:/work/wolf/Baseboard/BLD/../SRC/Baseboard.lpf(442): Semantic
      error in "LOCATE COMP "DRV25_PWROK" SITE "E7" ;": COMP "DRV25_PWROK" not
      found in design. Disable this preference.
-WARNING - map: F:/project/wolf/Baseboard/BLD/../SRC/Baseboard.lpf(445): Semantic
+WARNING - map: E:/work/wolf/Baseboard/BLD/../SRC/Baseboard.lpf(445): Semantic
      error in "LOCATE COMP "DRV26_PCIE_CLK_A_OE_L" SITE "J17" ;": COMP
      "DRV26_PCIE_CLK_A_OE_L" not found in design. Disable this preference.
-WARNING - map: F:/project/wolf/Baseboard/BLD/../SRC/Baseboard.lpf(446): Semantic
+WARNING - map: E:/work/wolf/Baseboard/BLD/../SRC/Baseboard.lpf(446): Semantic
      error in "LOCATE COMP "DRV26_PCIE_CLK_B_OE_L" SITE "L2" ;": COMP
      "DRV26_PCIE_CLK_B_OE_L" not found in design. Disable this preference.
-WARNING - map: F:/project/wolf/Baseboard/BLD/../SRC/Baseboard.lpf(449): Semantic
+WARNING - map: E:/work/wolf/Baseboard/BLD/../SRC/Baseboard.lpf(449): Semantic
+
      error in "LOCATE COMP "DRV26_PWROK" SITE "B14" ;": COMP "DRV26_PWROK" not
      found in design. Disable this preference.
-WARNING - map: F:/project/wolf/Baseboard/BLD/../SRC/Baseboard.lpf(452): Semantic
+WARNING - map: E:/work/wolf/Baseboard/BLD/../SRC/Baseboard.lpf(452): Semantic
      error in "LOCATE COMP "DRV27_PCIE_CLK_A_OE_L" SITE "C13" ;": COMP
      "DRV27_PCIE_CLK_A_OE_L" not found in design. Disable this preference.
-WARNING - map: F:/project/wolf/Baseboard/BLD/../SRC/Baseboard.lpf(453): Semantic
+WARNING - map: E:/work/wolf/Baseboard/BLD/../SRC/Baseboard.lpf(453): Semantic
      error in "LOCATE COMP "DRV27_PCIE_CLK_B_OE_L" SITE "K3" ;": COMP
      "DRV27_PCIE_CLK_B_OE_L" not found in design. Disable this preference.
-WARNING - map: F:/project/wolf/Baseboard/BLD/../SRC/Baseboard.lpf(456): Semantic
+WARNING - map: E:/work/wolf/Baseboard/BLD/../SRC/Baseboard.lpf(456): Semantic
      error in "LOCATE COMP "DRV27_PWROK" SITE "L21" ;": COMP "DRV27_PWROK" not
      found in design. Disable this preference.
-WARNING - map: F:/project/wolf/Baseboard/BLD/../SRC/Baseboard.lpf(459): Semantic
+WARNING - map: E:/work/wolf/Baseboard/BLD/../SRC/Baseboard.lpf(459): Semantic
      error in "LOCATE COMP "DRV28_PCIE_CLK_A_OE_L" SITE "AB3" ;": COMP
      "DRV28_PCIE_CLK_A_OE_L" not found in design. Disable this preference.
-WARNING - map: F:/project/wolf/Baseboard/BLD/../SRC/Baseboard.lpf(460): Semantic
+WARNING - map: E:/work/wolf/Baseboard/BLD/../SRC/Baseboard.lpf(460): Semantic
      error in "LOCATE COMP "DRV28_PCIE_CLK_B_OE_L" SITE "L4" ;": COMP
      "DRV28_PCIE_CLK_B_OE_L" not found in design. Disable this preference.
-WARNING - map: F:/project/wolf/Baseboard/BLD/../SRC/Baseboard.lpf(463): Semantic
+WARNING - map: E:/work/wolf/Baseboard/BLD/../SRC/Baseboard.lpf(463): Semantic
      error in "LOCATE COMP "DRV28_PWROK" SITE "N16" ;": COMP "DRV28_PWROK" not
      found in design. Disable this preference.
-WARNING - map: F:/project/wolf/Baseboard/BLD/../SRC/Baseboard.lpf(466): Semantic
+WARNING - map: E:/work/wolf/Baseboard/BLD/../SRC/Baseboard.lpf(466): Semantic
      error in "LOCATE COMP "DRV29_PCIE_CLK_A_OE_L" SITE "K20" ;": COMP
      "DRV29_PCIE_CLK_A_OE_L" not found in design. Disable this preference.
-WARNING - map: F:/project/wolf/Baseboard/BLD/../SRC/Baseboard.lpf(467): Semantic
-
+WARNING - map: E:/work/wolf/Baseboard/BLD/../SRC/Baseboard.lpf(467): Semantic
      error in "LOCATE COMP "DRV29_PCIE_CLK_B_OE_L" SITE "L5" ;": COMP
      "DRV29_PCIE_CLK_B_OE_L" not found in design. Disable this preference.
-WARNING - map: F:/project/wolf/Baseboard/BLD/../SRC/Baseboard.lpf(470): Semantic
+WARNING - map: E:/work/wolf/Baseboard/BLD/../SRC/Baseboard.lpf(470): Semantic
      error in "LOCATE COMP "DRV29_PWROK" SITE "D12" ;": COMP "DRV29_PWROK" not
      found in design. Disable this preference.
-WARNING - map: F:/project/wolf/Baseboard/BLD/../SRC/Baseboard.lpf(473): Semantic
+WARNING - map: E:/work/wolf/Baseboard/BLD/../SRC/Baseboard.lpf(473): Semantic
      error in "LOCATE COMP "DRV30_PCIE_CLK_A_OE_L" SITE "B22" ;": COMP
      "DRV30_PCIE_CLK_A_OE_L" not found in design. Disable this preference.
-WARNING - map: F:/project/wolf/Baseboard/BLD/../SRC/Baseboard.lpf(474): Semantic
+WARNING - map: E:/work/wolf/Baseboard/BLD/../SRC/Baseboard.lpf(474): Semantic
      error in "LOCATE COMP "DRV30_PCIE_CLK_B_OE_L" SITE "L7" ;": COMP
      "DRV30_PCIE_CLK_B_OE_L" not found in design. Disable this preference.
-WARNING - map: F:/project/wolf/Baseboard/BLD/../SRC/Baseboard.lpf(477): Semantic
+WARNING - map: E:/work/wolf/Baseboard/BLD/../SRC/Baseboard.lpf(477): Semantic
      error in "LOCATE COMP "DRV30_PWROK" SITE "F15" ;": COMP "DRV30_PWROK" not
      found in design. Disable this preference.
-WARNING - map: F:/project/wolf/Baseboard/BLD/../SRC/Baseboard.lpf(480): Semantic
+WARNING - map: E:/work/wolf/Baseboard/BLD/../SRC/Baseboard.lpf(480): Semantic
      error in "LOCATE COMP "DRV31_PCIE_CLK_A_OE_L" SITE "G17" ;": COMP
      "DRV31_PCIE_CLK_A_OE_L" not found in design. Disable this preference.
-WARNING - map: F:/project/wolf/Baseboard/BLD/../SRC/Baseboard.lpf(481): Semantic
+WARNING - map: E:/work/wolf/Baseboard/BLD/../SRC/Baseboard.lpf(481): Semantic
      error in "LOCATE COMP "DRV31_PCIE_CLK_B_OE_L" SITE "H1" ;": COMP
      "DRV31_PCIE_CLK_B_OE_L" not found in design. Disable this preference.
-WARNING - map: F:/project/wolf/Baseboard/BLD/../SRC/Baseboard.lpf(484): Semantic
+WARNING - map: E:/work/wolf/Baseboard/BLD/../SRC/Baseboard.lpf(484): Semantic
      error in "LOCATE COMP "DRV31_PWROK" SITE "F11" ;": COMP "DRV31_PWROK" not
      found in design. Disable this preference.
-WARNING - map: F:/project/wolf/Baseboard/BLD/../SRC/Baseboard.lpf(487): Semantic
+WARNING - map: E:/work/wolf/Baseboard/BLD/../SRC/Baseboard.lpf(487): Semantic
      error in "LOCATE COMP "DRV32_PCIE_CLK_A_OE_L" SITE "G13" ;": COMP
      "DRV32_PCIE_CLK_A_OE_L" not found in design. Disable this preference.
-WARNING - map: F:/project/wolf/Baseboard/BLD/../SRC/Baseboard.lpf(488): Semantic
+WARNING - map: E:/work/wolf/Baseboard/BLD/../SRC/Baseboard.lpf(488): Semantic
      error in "LOCATE COMP "DRV32_PCIE_CLK_B_OE_L" SITE "P3" ;": COMP
      "DRV32_PCIE_CLK_B_OE_L" not found in design. Disable this preference.
-WARNING - map: F:/project/wolf/Baseboard/BLD/../SRC/Baseboard.lpf(491): Semantic
+WARNING - map: E:/work/wolf/Baseboard/BLD/../SRC/Baseboard.lpf(491): Semantic
      error in "LOCATE COMP "DRV32_PWROK" SITE "E11" ;": COMP "DRV32_PWROK" not
      found in design. Disable this preference.
-WARNING - map: F:/project/wolf/Baseboard/BLD/../SRC/Baseboard.lpf(494): Semantic
+
+WARNING - map: E:/work/wolf/Baseboard/BLD/../SRC/Baseboard.lpf(494): Semantic
      error in "LOCATE COMP "DRV33_PCIE_CLK_A_OE_L" SITE "C22" ;": COMP
      "DRV33_PCIE_CLK_A_OE_L" not found in design. Disable this preference.
-WARNING - map: F:/project/wolf/Baseboard/BLD/../SRC/Baseboard.lpf(495): Semantic
+WARNING - map: E:/work/wolf/Baseboard/BLD/../SRC/Baseboard.lpf(495): Semantic
      error in "LOCATE COMP "DRV33_PCIE_CLK_B_OE_L" SITE "L1" ;": COMP
      "DRV33_PCIE_CLK_B_OE_L" not found in design. Disable this preference.
-WARNING - map: F:/project/wolf/Baseboard/BLD/../SRC/Baseboard.lpf(498): Semantic
+WARNING - map: E:/work/wolf/Baseboard/BLD/../SRC/Baseboard.lpf(498): Semantic
      error in "LOCATE COMP "DRV33_PWROK" SITE "B8" ;": COMP "DRV33_PWROK" not
      found in design. Disable this preference.
-WARNING - map: F:/project/wolf/Baseboard/BLD/../SRC/Baseboard.lpf(501): Semantic
+WARNING - map: E:/work/wolf/Baseboard/BLD/../SRC/Baseboard.lpf(501): Semantic
      error in "LOCATE COMP "DRV34_PCIE_CLK_A_OE_L" SITE "F18" ;": COMP
      "DRV34_PCIE_CLK_A_OE_L" not found in design. Disable this preference.
-WARNING - map: F:/project/wolf/Baseboard/BLD/../SRC/Baseboard.lpf(502): Semantic
+WARNING - map: E:/work/wolf/Baseboard/BLD/../SRC/Baseboard.lpf(502): Semantic
      error in "LOCATE COMP "DRV34_PCIE_CLK_B_OE_L" SITE "H21" ;": COMP
      "DRV34_PCIE_CLK_B_OE_L" not found in design. Disable this preference.
-WARNING - map: F:/project/wolf/Baseboard/BLD/../SRC/Baseboard.lpf(505): Semantic
+WARNING - map: E:/work/wolf/Baseboard/BLD/../SRC/Baseboard.lpf(505): Semantic
      error in "LOCATE COMP "DRV34_PWROK" SITE "G8" ;": COMP "DRV34_PWROK" not
      found in design. Disable this preference.
-WARNING - map: F:/project/wolf/Baseboard/BLD/../SRC/Baseboard.lpf(508): Semantic
+WARNING - map: E:/work/wolf/Baseboard/BLD/../SRC/Baseboard.lpf(508): Semantic
      error in "LOCATE COMP "DRV35_PCIE_CLK_A_OE_L" SITE "F13" ;": COMP
      "DRV35_PCIE_CLK_A_OE_L" not found in design. Disable this preference.
-WARNING - map: F:/project/wolf/Baseboard/BLD/../SRC/Baseboard.lpf(509): Semantic
+WARNING - map: E:/work/wolf/Baseboard/BLD/../SRC/Baseboard.lpf(509): Semantic
      error in "LOCATE COMP "DRV35_PCIE_CLK_B_OE_L" SITE "U13" ;": COMP
      "DRV35_PCIE_CLK_B_OE_L" not found in design. Disable this preference.
-
-WARNING - map: F:/project/wolf/Baseboard/BLD/../SRC/Baseboard.lpf(512): Semantic
+WARNING - map: E:/work/wolf/Baseboard/BLD/../SRC/Baseboard.lpf(512): Semantic
      error in "LOCATE COMP "DRV35_PWROK" SITE "Y1" ;": COMP "DRV35_PWROK" not
      found in design. Disable this preference.
 WARNING - map: Preference parsing results:  36 semantic errors detected
 WARNING - map: Using local reset signal 'RESET_N_c' to infer global GSR net.
 WARNING - map: There are semantic errors in the preference file
-     F:/project/wolf/Baseboard/BLD/../SRC/Baseboard.lpf.
+     E:/work/wolf/Baseboard/BLD/../SRC/Baseboard.lpf.
 
 
 
@@ -388,6 +410,7 @@ WARNING - map: There are semantic errors in the preference file
 | CPLD_SLOT_ID        | INPUT     | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
 | CANISTER_B_PCIE_CLK_ACT_L| INPUT     | LVCMOS33  |            |
+
 +---------------------+-----------+-----------+------------+
 | CANISTER_A_PCIE_CLK_ACT_L| INPUT     | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
@@ -412,7 +435,6 @@ WARNING - map: There are semantic errors in the preference file
 | DRV12_PCIE_CLK_B_OE_L| OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
 | DRV13_PCIE_CLK_B_OE_L| OUTPUT    | LVCMOS33  |            |
-
 +---------------------+-----------+-----------+------------+
 | DRV14_PCIE_CLK_B_OE_L| OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
@@ -445,6 +467,7 @@ WARNING - map: There are semantic errors in the preference file
 | DRV20_PCIE_CLK_A_OE_L| OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
 | DRV21_PCIE_CLK_A_OE_L| OUTPUT    | LVCMOS33  |            |
+
 +---------------------+-----------+-----------+------------+
 | DRV22_PCIE_CLK_A_OE_L| OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
@@ -469,7 +492,6 @@ WARNING - map: There are semantic errors in the preference file
 | DRV8_PCIE_CLK_A_OE_L| OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
 | DRV9_PCIE_CLK_A_OE_L| OUTPUT    | LVCMOS33  |            |
-
 +---------------------+-----------+-----------+------------+
 | DRV10_PCIE_CLK_A_OE_L| OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
@@ -502,6 +524,7 @@ WARNING - map: There are semantic errors in the preference file
 | PE_RST_DRV16_B_L    | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
 | PE_RST_DRV17_B_L    | OUTPUT    | LVCMOS33  |            |
+
 +---------------------+-----------+-----------+------------+
 | PE_RST_DRV18_B_L    | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
@@ -526,7 +549,6 @@ WARNING - map: There are semantic errors in the preference file
 | PE_RST_DRV4_B_L     | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
 | PE_RST_DRV5_B_L     | OUTPUT    | LVCMOS33  |            |
-
 +---------------------+-----------+-----------+------------+
 | PE_RST_DRV6_B_L     | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
@@ -559,6 +581,7 @@ WARNING - map: There are semantic errors in the preference file
 | PE_RST_DRV12_A_L    | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
 | PE_RST_DRV13_A_L    | OUTPUT    | LVCMOS33  |            |
+
 +---------------------+-----------+-----------+------------+
 | PE_RST_DRV14_A_L    | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
@@ -583,7 +606,6 @@ WARNING - map: There are semantic errors in the preference file
 | PE_RST_DRV0_A_L     | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
 | PE_RST_DRV1_A_L     | OUTPUT    | LVCMOS33  |            |
-
 +---------------------+-----------+-----------+------------+
 | PE_RST_DRV2_A_L     | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
@@ -616,6 +638,7 @@ WARNING - map: There are semantic errors in the preference file
 | DRV20_IFDET_BLUE_LED| BIDIR     | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
 | DRV21_IFDET_BLUE_LED| BIDIR     | LVCMOS33  |            |
+
 +---------------------+-----------+-----------+------------+
 | DRV22_IFDET_BLUE_LED| BIDIR     | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
@@ -640,7 +663,6 @@ WARNING - map: There are semantic errors in the preference file
 | DRV8_IFDET_BLUE_LED | BIDIR     | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
 | DRV9_IFDET_BLUE_LED | BIDIR     | LVCMOS33  |            |
-
 +---------------------+-----------+-----------+------------+
 | DRV10_IFDET_BLUE_LED| BIDIR     | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
@@ -673,6 +695,7 @@ WARNING - map: There are semantic errors in the preference file
 | DRV28_PRSNT_AMBER_LED| BIDIR     | LVCMOS33  | IN         |
 +---------------------+-----------+-----------+------------+
 | DRV29_PRSNT_AMBER_LED| BIDIR     | LVCMOS33  | IN         |
+
 +---------------------+-----------+-----------+------------+
 | DRV30_PRSNT_AMBER_LED| BIDIR     | LVCMOS33  | IN         |
 +---------------------+-----------+-----------+------------+
@@ -697,7 +720,6 @@ WARNING - map: There are semantic errors in the preference file
 | DRV16_PRSNT_AMBER_LED| BIDIR     | LVCMOS33  | IN         |
 +---------------------+-----------+-----------+------------+
 | DRV17_PRSNT_AMBER_LED| BIDIR     | LVCMOS33  | IN         |
-
 +---------------------+-----------+-----------+------------+
 | DRV18_PRSNT_AMBER_LED| BIDIR     | LVCMOS33  | IN         |
 +---------------------+-----------+-----------+------------+
@@ -730,6 +752,7 @@ WARNING - map: There are semantic errors in the preference file
 | DRV0_PRSNT_AMBER_LED| BIDIR     | LVCMOS33  | IN         |
 +---------------------+-----------+-----------+------------+
 | DRV1_PRSNT_AMBER_LED| BIDIR     | LVCMOS33  | IN         |
+
 +---------------------+-----------+-----------+------------+
 | DRV2_PRSNT_AMBER_LED| BIDIR     | LVCMOS33  | IN         |
 +---------------------+-----------+-----------+------------+
@@ -754,7 +777,6 @@ WARNING - map: There are semantic errors in the preference file
 | DRV12_PWROK         | INPUT     | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
 | DRV13_PWROK         | INPUT     | LVCMOS33  |            |
-
 +---------------------+-----------+-----------+------------+
 | DRV14_PWROK         | INPUT     | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
@@ -787,6 +809,7 @@ WARNING - map: There are semantic errors in the preference file
 | DRV32_PWR_EN_L      | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
 | DRV33_PWR_EN_L      | OUTPUT    | LVCMOS33  |            |
+
 +---------------------+-----------+-----------+------------+
 | DRV34_PWR_EN_L      | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
@@ -811,7 +834,6 @@ WARNING - map: There are semantic errors in the preference file
 | DRV20_PWR_EN_L      | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
 | DRV21_PWR_EN_L      | OUTPUT    | LVCMOS33  |            |
-
 +---------------------+-----------+-----------+------------+
 | DRV22_PWR_EN_L      | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
@@ -844,6 +866,7 @@ WARNING - map: There are semantic errors in the preference file
 | DRV4_PWR_EN_L       | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
 | DRV5_PWR_EN_L       | OUTPUT    | LVCMOS33  |            |
+
 +---------------------+-----------+-----------+------------+
 | DRV6_PWR_EN_L       | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
@@ -868,7 +891,6 @@ WARNING - map: There are semantic errors in the preference file
 | DRV29_ACT_LED       | INPUT     | LVCMOS33  | IN         |
 +---------------------+-----------+-----------+------------+
 | DRV30_ACT_LED       | INPUT     | LVCMOS33  | IN         |
-
 +---------------------+-----------+-----------+------------+
 | DRV31_ACT_LED       | INPUT     | LVCMOS33  | IN         |
 +---------------------+-----------+-----------+------------+
@@ -901,6 +923,7 @@ WARNING - map: There are semantic errors in the preference file
 | DRV13_ACT_LED       | INPUT     | LVCMOS33  | IN         |
 +---------------------+-----------+-----------+------------+
 | DRV14_ACT_LED       | INPUT     | LVCMOS33  | IN         |
+
 +---------------------+-----------+-----------+------------+
 | DRV15_ACT_LED       | INPUT     | LVCMOS33  | IN         |
 +---------------------+-----------+-----------+------------+
@@ -925,7 +948,6 @@ WARNING - map: There are semantic errors in the preference file
 | DRV1_ACT_LED        | INPUT     | LVCMOS33  | IN         |
 +---------------------+-----------+-----------+------------+
 | DRV2_ACT_LED        | INPUT     | LVCMOS33  | IN         |
-
 +---------------------+-----------+-----------+------------+
 | DRV3_ACT_LED        | INPUT     | LVCMOS33  | IN         |
 +---------------------+-----------+-----------+------------+
@@ -942,8 +964,8 @@ WARNING - map: There are semantic errors in the preference file
 
 <A name="mrp_rm"></A><B><U><big>Removed logic</big></U></B>
 
-Block GPI0_INST/VCC undriven or does not drive anything - clipped.
 Block GPI0_INST/GND undriven or does not drive anything - clipped.
+Block GPI0_INST/VCC undriven or does not drive anything - clipped.
 Block GPI1_INST/GND undriven or does not drive anything - clipped.
 Block GPI1_INST/VCC undriven or does not drive anything - clipped.
 Block GPO2_INST/GND undriven or does not drive anything - clipped.
@@ -959,23 +981,26 @@ Block GPO6_INST/VCC undriven or does not drive anything - clipped.
 Block GPO7_INST/GND undriven or does not drive anything - clipped.
 Block GPO7_INST/VCC undriven or does not drive anything - clipped.
 Block GPI8_INST/GND undriven or does not drive anything - clipped.
+
 Block GPI8_INST/VCC undriven or does not drive anything - clipped.
 Block GPI9_INST/GND undriven or does not drive anything - clipped.
 Block GPI9_INST/VCC undriven or does not drive anything - clipped.
-Block GPOA_INST/VCC undriven or does not drive anything - clipped.
 Block GPOA_INST/GND undriven or does not drive anything - clipped.
+Block GPOA_INST/VCC undriven or does not drive anything - clipped.
 Block FLT_AMB_LED_INST0/GND undriven or does not drive anything - clipped.
 Block FLT_AMB_LED_INST1/GND undriven or does not drive anything - clipped.
 Block FLT_AMB_LED_INST2/GND undriven or does not drive anything - clipped.
 Block IFDET_BLUE_LED_INST0/GND undriven or does not drive anything - clipped.
 Block IFDET_BLUE_LED_INST1/GND undriven or does not drive anything - clipped.
 Block IFDET_BLUE_LED_INST2/GND undriven or does not drive anything - clipped.
+Block PCIE_RST_CTRL/VCC undriven or does not drive anything - clipped.
 Signal RESET_N_c_i was merged into signal RESET_N_c
 Signal I2C_INS_2.REG_DIN_0_.CN was merged into signal SYSCLK_c
 Signal DRV_PRSNT_AMBER_LED_EN_i[0] was merged into signal
      PRSNT_LED_CTRL_INST/DRV_PRSNT_AMBER_LED_EN[0]
 Signal GND undriven or does not drive anything - clipped.
 Signal LED_CNT_INST/GND undriven or does not drive anything - clipped.
+Signal PCIE_RST_CTRL/GND undriven or does not drive anything - clipped.
 Signal BB_SGPIO_INST/GND undriven or does not drive anything - clipped.
 Signal I2C_INS_1/GND undriven or does not drive anything - clipped.
 Signal I2C_INS_2/GND undriven or does not drive anything - clipped.
@@ -983,7 +1008,6 @@ Signal PRSNT_LED_CTRL_INST/GND undriven or does not drive anything - clipped.
 Signal un5_CNT_1_cry_23_0_COUT undriven or does not drive anything - clipped.
 Signal LED_CNT_INST/un7_CNT_1_cry_0_0_S1 undriven or does not drive anything -
      clipped.
-
 Signal LED_CNT_INST/un7_CNT_1_cry_0_0_S0 undriven or does not drive anything -
      clipped.
 Signal LED_CNT_INST/N_1 undriven or does not drive anything - clipped.
@@ -1010,10 +1034,182 @@ Signal LED_CNT_INST/un5_CNT_07S_1_cry_0_0_S0 undriven or does not drive anything
 Signal LED_CNT_INST/N_4 undriven or does not drive anything - clipped.
 Signal LED_CNT_INST/un5_CNT_07S_1_cry_23_0_COUT undriven or does not drive
      anything - clipped.
+Signal PCIE_RST_CTRL/CNT23_cry_0_S0[0] undriven or does not drive anything -
+     clipped.
+Signal PCIE_RST_CTRL/N_1 undriven or does not drive anything - clipped.
+Signal PCIE_RST_CTRL/CNT23_s_0_S1[21] undriven or does not drive anything -
+
+     clipped.
+Signal PCIE_RST_CTRL/CNT23_s_0_COUT[21] undriven or does not drive anything -
+     clipped.
+Signal PCIE_RST_CTRL/CNT22_cry_0_S0[0] undriven or does not drive anything -
+     clipped.
+Signal PCIE_RST_CTRL/N_2 undriven or does not drive anything - clipped.
+Signal PCIE_RST_CTRL/CNT22_s_0_S1[21] undriven or does not drive anything -
+     clipped.
+Signal PCIE_RST_CTRL/CNT22_s_0_COUT[21] undriven or does not drive anything -
+     clipped.
+Signal PCIE_RST_CTRL/CNT21_cry_0_S0[0] undriven or does not drive anything -
+     clipped.
+Signal PCIE_RST_CTRL/N_3 undriven or does not drive anything - clipped.
+Signal PCIE_RST_CTRL/CNT21_s_0_S1[21] undriven or does not drive anything -
+     clipped.
+Signal PCIE_RST_CTRL/CNT21_s_0_COUT[21] undriven or does not drive anything -
+     clipped.
+Signal PCIE_RST_CTRL/CNT20_cry_0_S0[0] undriven or does not drive anything -
+     clipped.
+Signal PCIE_RST_CTRL/N_4 undriven or does not drive anything - clipped.
+Signal PCIE_RST_CTRL/CNT20_s_0_S1[21] undriven or does not drive anything -
+     clipped.
+Signal PCIE_RST_CTRL/CNT20_s_0_COUT[21] undriven or does not drive anything -
+     clipped.
+Signal PCIE_RST_CTRL/CNT19_cry_0_S0[0] undriven or does not drive anything -
+     clipped.
+Signal PCIE_RST_CTRL/N_5 undriven or does not drive anything - clipped.
+Signal PCIE_RST_CTRL/CNT19_s_0_S1[21] undriven or does not drive anything -
+     clipped.
+Signal PCIE_RST_CTRL/CNT19_s_0_COUT[21] undriven or does not drive anything -
+     clipped.
+Signal PCIE_RST_CTRL/CNT18_cry_0_S0[0] undriven or does not drive anything -
+     clipped.
+Signal PCIE_RST_CTRL/N_6 undriven or does not drive anything - clipped.
+Signal PCIE_RST_CTRL/CNT18_s_0_S1[21] undriven or does not drive anything -
+     clipped.
+Signal PCIE_RST_CTRL/CNT18_s_0_COUT[21] undriven or does not drive anything -
+     clipped.
+Signal PCIE_RST_CTRL/CNT17_cry_0_S0[0] undriven or does not drive anything -
+     clipped.
+Signal PCIE_RST_CTRL/N_7 undriven or does not drive anything - clipped.
+Signal PCIE_RST_CTRL/CNT17_s_0_S1[21] undriven or does not drive anything -
+     clipped.
+Signal PCIE_RST_CTRL/CNT17_s_0_COUT[21] undriven or does not drive anything -
+     clipped.
+Signal PCIE_RST_CTRL/CNT16_cry_0_S0[0] undriven or does not drive anything -
+     clipped.
+Signal PCIE_RST_CTRL/N_8 undriven or does not drive anything - clipped.
+Signal PCIE_RST_CTRL/CNT16_s_0_S1[21] undriven or does not drive anything -
+     clipped.
+Signal PCIE_RST_CTRL/CNT16_s_0_COUT[21] undriven or does not drive anything -
+     clipped.
+Signal PCIE_RST_CTRL/CNT15_cry_0_S0[0] undriven or does not drive anything -
+     clipped.
+Signal PCIE_RST_CTRL/N_9 undriven or does not drive anything - clipped.
+Signal PCIE_RST_CTRL/CNT15_s_0_S1[21] undriven or does not drive anything -
+
+     clipped.
+Signal PCIE_RST_CTRL/CNT15_s_0_COUT[21] undriven or does not drive anything -
+     clipped.
+Signal PCIE_RST_CTRL/CNT14_cry_0_S0[0] undriven or does not drive anything -
+     clipped.
+Signal PCIE_RST_CTRL/N_10 undriven or does not drive anything - clipped.
+Signal PCIE_RST_CTRL/CNT14_s_0_S1[21] undriven or does not drive anything -
+     clipped.
+Signal PCIE_RST_CTRL/CNT14_s_0_COUT[21] undriven or does not drive anything -
+     clipped.
+Signal PCIE_RST_CTRL/CNT13_cry_0_S0[0] undriven or does not drive anything -
+     clipped.
+Signal PCIE_RST_CTRL/N_11 undriven or does not drive anything - clipped.
+Signal PCIE_RST_CTRL/CNT13_s_0_S1[21] undriven or does not drive anything -
+     clipped.
+Signal PCIE_RST_CTRL/CNT13_s_0_COUT[21] undriven or does not drive anything -
+     clipped.
+Signal PCIE_RST_CTRL/CNT12_cry_0_S0[0] undriven or does not drive anything -
+     clipped.
+Signal PCIE_RST_CTRL/N_12 undriven or does not drive anything - clipped.
+Signal PCIE_RST_CTRL/CNT12_s_0_S1[21] undriven or does not drive anything -
+     clipped.
+Signal PCIE_RST_CTRL/CNT12_s_0_COUT[21] undriven or does not drive anything -
+     clipped.
+Signal PCIE_RST_CTRL/CNT11_cry_0_S0[0] undriven or does not drive anything -
+     clipped.
+Signal PCIE_RST_CTRL/N_13 undriven or does not drive anything - clipped.
+Signal PCIE_RST_CTRL/CNT11_s_0_S1[21] undriven or does not drive anything -
+     clipped.
+Signal PCIE_RST_CTRL/CNT11_s_0_COUT[21] undriven or does not drive anything -
+     clipped.
+Signal PCIE_RST_CTRL/CNT10_cry_0_S0[0] undriven or does not drive anything -
+     clipped.
+Signal PCIE_RST_CTRL/N_14 undriven or does not drive anything - clipped.
+Signal PCIE_RST_CTRL/CNT10_s_0_S1[21] undriven or does not drive anything -
+     clipped.
+Signal PCIE_RST_CTRL/CNT10_s_0_COUT[21] undriven or does not drive anything -
+     clipped.
+Signal PCIE_RST_CTRL/CNT9_cry_0_S0[0] undriven or does not drive anything -
+     clipped.
+Signal PCIE_RST_CTRL/N_15 undriven or does not drive anything - clipped.
+Signal PCIE_RST_CTRL/CNT9_s_0_S1[21] undriven or does not drive anything -
+     clipped.
+Signal PCIE_RST_CTRL/CNT9_s_0_COUT[21] undriven or does not drive anything -
+     clipped.
+Signal PCIE_RST_CTRL/CNT8_cry_0_S0[0] undriven or does not drive anything -
+     clipped.
+Signal PCIE_RST_CTRL/N_16 undriven or does not drive anything - clipped.
+Signal PCIE_RST_CTRL/CNT8_s_0_S1[21] undriven or does not drive anything -
+     clipped.
+Signal PCIE_RST_CTRL/CNT8_s_0_COUT[21] undriven or does not drive anything -
+     clipped.
+Signal PCIE_RST_CTRL/CNT7_cry_0_S0[0] undriven or does not drive anything -
+     clipped.
+Signal PCIE_RST_CTRL/N_17 undriven or does not drive anything - clipped.
+Signal PCIE_RST_CTRL/CNT7_s_0_S1[21] undriven or does not drive anything -
+
+     clipped.
+Signal PCIE_RST_CTRL/CNT7_s_0_COUT[21] undriven or does not drive anything -
+     clipped.
+Signal PCIE_RST_CTRL/CNT6_cry_0_S0[0] undriven or does not drive anything -
+     clipped.
+Signal PCIE_RST_CTRL/N_18 undriven or does not drive anything - clipped.
+Signal PCIE_RST_CTRL/CNT6_s_0_S1[21] undriven or does not drive anything -
+     clipped.
+Signal PCIE_RST_CTRL/CNT6_s_0_COUT[21] undriven or does not drive anything -
+     clipped.
+Signal PCIE_RST_CTRL/CNT5_cry_0_S0[0] undriven or does not drive anything -
+     clipped.
+Signal PCIE_RST_CTRL/N_19 undriven or does not drive anything - clipped.
+Signal PCIE_RST_CTRL/CNT5_s_0_S1[21] undriven or does not drive anything -
+     clipped.
+Signal PCIE_RST_CTRL/CNT5_s_0_COUT[21] undriven or does not drive anything -
+     clipped.
+Signal PCIE_RST_CTRL/CNT4_cry_0_S0[0] undriven or does not drive anything -
+     clipped.
+Signal PCIE_RST_CTRL/N_20 undriven or does not drive anything - clipped.
+Signal PCIE_RST_CTRL/CNT4_s_0_S1[21] undriven or does not drive anything -
+     clipped.
+Signal PCIE_RST_CTRL/CNT4_s_0_COUT[21] undriven or does not drive anything -
+     clipped.
+Signal PCIE_RST_CTRL/CNT3_cry_0_S0[0] undriven or does not drive anything -
+     clipped.
+Signal PCIE_RST_CTRL/N_21 undriven or does not drive anything - clipped.
+Signal PCIE_RST_CTRL/CNT3_s_0_S1[21] undriven or does not drive anything -
+     clipped.
+Signal PCIE_RST_CTRL/CNT3_s_0_COUT[21] undriven or does not drive anything -
+     clipped.
+Signal PCIE_RST_CTRL/CNT2_cry_0_S0[0] undriven or does not drive anything -
+     clipped.
+Signal PCIE_RST_CTRL/N_22 undriven or does not drive anything - clipped.
+Signal PCIE_RST_CTRL/CNT2_s_0_S1[21] undriven or does not drive anything -
+     clipped.
+Signal PCIE_RST_CTRL/CNT2_s_0_COUT[21] undriven or does not drive anything -
+     clipped.
+Signal PCIE_RST_CTRL/CNT1_cry_0_S0[0] undriven or does not drive anything -
+     clipped.
+Signal PCIE_RST_CTRL/N_23 undriven or does not drive anything - clipped.
+Signal PCIE_RST_CTRL/CNT1_s_0_S1[21] undriven or does not drive anything -
+     clipped.
+Signal PCIE_RST_CTRL/CNT1_s_0_COUT[21] undriven or does not drive anything -
+     clipped.
+Signal PCIE_RST_CTRL/CNT0_cry_0_S0[0] undriven or does not drive anything -
+     clipped.
+Signal PCIE_RST_CTRL/N_24 undriven or does not drive anything - clipped.
+Signal PCIE_RST_CTRL/CNT0_s_0_S1[21] undriven or does not drive anything -
+     clipped.
+Signal PCIE_RST_CTRL/CNT0_s_0_COUT[21] undriven or does not drive anything -
+     clipped.
 Signal BB_SGPIO_INST/HDD_CNT_cry_0_S0[0] undriven or does not drive anything -
      clipped.
 Signal BB_SGPIO_INST/N_1 undriven or does not drive anything - clipped.
 Signal BB_SGPIO_INST/HDD_CNT_s_0_S1[5] undriven or does not drive anything -
+
      clipped.
 Signal BB_SGPIO_INST/HDD_CNT_s_0_COUT[5] undriven or does not drive anything -
      clipped.
@@ -1040,7 +1236,6 @@ Signal I2C_INS_1/un1_REG_DIN_1_s_7_0_COUT_0 undriven or does not drive anything
 Signal I2C_INS_2/LOC_cry_0_S0_0[0] undriven or does not drive anything -
      clipped.
 Signal I2C_INS_2/N_1 undriven or does not drive anything - clipped.
-
 Signal I2C_INS_2/LOC_s_0_S1_0[7] undriven or does not drive anything - clipped.
 Signal I2C_INS_2/LOC_s_0_COUT_0[7] undriven or does not drive anything -
      clipped.
@@ -1070,6 +1265,8 @@ Block I2C_INS_1/REG_DIN_7_.CN was optimized away.
 Block PRSNT_LED_CTRL_INST/DRV_PRSNT_AMBER_LED_EN_RNI0V0F[0] was optimized away.
 Block GND was optimized away.
 Block LED_CNT_INST/GND was optimized away.
+Block PCIE_RST_CTRL/GND was optimized away.
+
 Block BB_SGPIO_INST/GND was optimized away.
 Block I2C_INS_1/GND was optimized away.
 Block I2C_INS_2/GND was optimized away.
@@ -1104,7 +1301,6 @@ These components have the GSR property set to DISABLED and are on the inferred
 Type and number of components of the type:
    Register = 4
 
-
 Type and instance name of component:
    Register : I2C_INS_1/SCL_PCLK
    Register : I2C_INS_1/SCL_NCLK
@@ -1116,36 +1312,9 @@ Type and instance name of component:
 <A name="mrp_runtime"></A><B><U><big>Run Time and Memory Usage</big></U></B>
 -------------------------
 
-   Total CPU Time: 7 secs
+   Total CPU Time: 6 secs
    Total REAL Time: 7 secs
-   Peak Memory Usage: 90 MB
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+   Peak Memory Usage: 95 MB
 
 
 

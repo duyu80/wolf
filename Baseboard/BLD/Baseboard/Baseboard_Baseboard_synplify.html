@@ -8,460 +8,665 @@
 </HEAD>
 <PRE><A name="Syn"></A><B><U><big>Synthesis Report</big></U></B>
 #Build: Synplify Pro I-2013.09L-SP1-1 , Build 098R, Apr 15 2014
-#install: c:\lscc\diamond\3.2_x64\synpbase
+#install: D:\lscc\diamond\3.2_x64\synpbase
 #OS: Windows 7 6.1
-#Hostname: HOME-LAPTOP
+#Hostname: PC1
 
 #Implementation: Baseboard
 
 $ Start of Compile
-#Sun Nov 09 21:27:21 2014
+#Wed Feb 11 22:55:33 2015
 
 Synopsys Verilog Compiler, version comp201309rcp1, Build 147R, built Apr 16 2014
 @N|Running in 64-bit mode
 Copyright (C) 1994-2013 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use or distribution of the software is strictly prohibited.
 
-@I::"c:\lscc\diamond\3.2_x64\synpbase\lib\lucent\machxo2.v"
-@I::"c:\lscc\diamond\3.2_x64\synpbase\lib\lucent\pmi_def.v"
-@I::"c:\lscc\diamond\3.2_x64\synpbase\lib\vlog\umr_capim.v"
-@I::"c:\lscc\diamond\3.2_x64\synpbase\lib\vlog\scemi_objects.v"
-@I::"c:\lscc\diamond\3.2_x64\synpbase\lib\vlog\scemi_pipes.svh"
-@I::"c:\lscc\diamond\3.2_x64\synpbase\lib\vlog\hypermods.v"
-@I::"F:\project\wolf\Baseboard\BLD\..\SRC\baseboard_define.v"
-@I::"F:\project\wolf\Baseboard\BLD\..\SRC\BB_SGPIO.v"
-@I:"F:\project\wolf\Baseboard\BLD\..\SRC\BB_SGPIO.v":"F:\project\wolf\Baseboard\BLD\..\SRC\../SRC\baseboard_define.v"
-@I::"F:\project\wolf\Baseboard\BLD\..\SRC\BB_TOP.v"
-@I::"F:\project\wolf\Baseboard\BLD\..\SRC\GPI.v"
-@I::"F:\project\wolf\Baseboard\BLD\..\SRC\GPO.v"
-@I::"F:\project\wolf\Baseboard\BLD\..\SRC\I2C.v"
-@I::"F:\project\wolf\Baseboard\BLD\..\SRC\LED.v"
-@I::"F:\project\wolf\Baseboard\BLD\..\SRC\LED_CNT.v"
-@I::"F:\project\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v"
-@I::"F:\project\wolf\Baseboard\BLD\..\SRC\PRSNT_LED_CTRL.v"
+@I::"D:\lscc\diamond\3.2_x64\synpbase\lib\lucent\machxo2.v"
+@I::"D:\lscc\diamond\3.2_x64\synpbase\lib\lucent\pmi_def.v"
+@I::"D:\lscc\diamond\3.2_x64\synpbase\lib\vlog\umr_capim.v"
+@I::"D:\lscc\diamond\3.2_x64\synpbase\lib\vlog\scemi_objects.v"
+@I::"D:\lscc\diamond\3.2_x64\synpbase\lib\vlog\scemi_pipes.svh"
+@I::"D:\lscc\diamond\3.2_x64\synpbase\lib\vlog\hypermods.v"
+@I::"E:\work\wolf\Baseboard\BLD\..\SRC\baseboard_define.v"
+@I::"E:\work\wolf\Baseboard\BLD\..\SRC\BB_SGPIO.v"
+@I:"E:\work\wolf\Baseboard\BLD\..\SRC\BB_SGPIO.v":"E:\work\wolf\Baseboard\BLD\..\SRC\../SRC\baseboard_define.v"
+@I::"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v"
+@I::"E:\work\wolf\Baseboard\BLD\..\SRC\GPI.v"
+@I::"E:\work\wolf\Baseboard\BLD\..\SRC\GPO.v"
+@I::"E:\work\wolf\Baseboard\BLD\..\SRC\I2C.v"
+@I::"E:\work\wolf\Baseboard\BLD\..\SRC\LED.v"
+@I::"E:\work\wolf\Baseboard\BLD\..\SRC\LED_CNT.v"
+@I::"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v"
+@I::"E:\work\wolf\Baseboard\BLD\..\SRC\PRSNT_LED_CTRL.v"
 Verilog syntax check successful!
-File F:\project\wolf\Baseboard\BLD\..\SRC\baseboard_define.v changed - recompiling
-File F:\project\wolf\Baseboard\BLD\..\SRC\../SRC/baseboard_define.v changed - recompiling
-File F:\project\wolf\Baseboard\BLD\..\SRC\../SRC/baseboard_define.v changed - recompiling
-File F:\project\wolf\Baseboard\BLD\..\SRC\../SRC/baseboard_define.v changed - recompiling
-File F:\project\wolf\Baseboard\BLD\..\SRC\../SRC/baseboard_define.v changed - recompiling
-File F:\project\wolf\Baseboard\BLD\..\SRC\../SRC/baseboard_define.v changed - recompiling
-File F:\project\wolf\Baseboard\BLD\..\SRC\../SRC/baseboard_define.v changed - recompiling
-File F:\project\wolf\Baseboard\BLD\..\SRC\../SRC/baseboard_define.v changed - recompiling
-File F:\project\wolf\Baseboard\BLD\..\SRC\../SRC/baseboard_define.v changed - recompiling
-File F:\project\wolf\Baseboard\BLD\..\SRC\../SRC/baseboard_define.v changed - recompiling
+Options changed - recompiling
 Selecting top level module BB_TOP
-@N: CG364 :"F:\project\wolf\Baseboard\BLD\..\SRC\I2C.v":18:7:18:9|Synthesizing module I2C
+@N: CG364 :"E:\work\wolf\Baseboard\BLD\..\SRC\I2C.v":18:7:18:9|Synthesizing module I2C
 
-@N: CG179 :"F:\project\wolf\Baseboard\BLD\..\SRC\I2C.v":191:105:191:107|Removing redundant assignment
-@N: CG179 :"F:\project\wolf\Baseboard\BLD\..\SRC\I2C.v":209:82:209:90|Removing redundant assignment
-@N: CG179 :"F:\project\wolf\Baseboard\BLD\..\SRC\I2C.v":223:66:223:70|Removing redundant assignment
-@N: CG179 :"F:\project\wolf\Baseboard\BLD\..\SRC\I2C.v":224:83:224:88|Removing redundant assignment
-@N: CG179 :"F:\project\wolf\Baseboard\BLD\..\SRC\I2C.v":237:116:237:118|Removing redundant assignment
-@N: CG179 :"F:\project\wolf\Baseboard\BLD\..\SRC\I2C.v":251:65:251:68|Removing redundant assignment
-@N: CG179 :"F:\project\wolf\Baseboard\BLD\..\SRC\I2C.v":252:72:252:82|Removing redundant assignment
-@N: CG179 :"F:\project\wolf\Baseboard\BLD\..\SRC\I2C.v":292:208:292:213|Removing redundant assignment
-@N: CG179 :"F:\project\wolf\Baseboard\BLD\..\SRC\I2C.v":314:73:314:79|Removing redundant assignment
-@N: CG179 :"F:\project\wolf\Baseboard\BLD\..\SRC\I2C.v":333:127:333:136|Removing redundant assignment
-@N: CG179 :"F:\project\wolf\Baseboard\BLD\..\SRC\I2C.v":335:44:335:50|Removing redundant assignment
-@N: CG179 :"F:\project\wolf\Baseboard\BLD\..\SRC\I2C.v":350:80:350:87|Removing redundant assignment
-@N: CG179 :"F:\project\wolf\Baseboard\BLD\..\SRC\I2C.v":351:117:351:130|Removing redundant assignment
-@W: CG360 :"F:\project\wolf\Baseboard\BLD\..\SRC\I2C.v":53:8:53:19|No assignment to wire TIMER_OVFLOW
+@N: CG179 :"E:\work\wolf\Baseboard\BLD\..\SRC\I2C.v":191:105:191:107|Removing redundant assignment
+@N: CG179 :"E:\work\wolf\Baseboard\BLD\..\SRC\I2C.v":209:82:209:90|Removing redundant assignment
+@N: CG179 :"E:\work\wolf\Baseboard\BLD\..\SRC\I2C.v":223:66:223:70|Removing redundant assignment
+@N: CG179 :"E:\work\wolf\Baseboard\BLD\..\SRC\I2C.v":224:83:224:88|Removing redundant assignment
+@N: CG179 :"E:\work\wolf\Baseboard\BLD\..\SRC\I2C.v":237:116:237:118|Removing redundant assignment
+@N: CG179 :"E:\work\wolf\Baseboard\BLD\..\SRC\I2C.v":251:65:251:68|Removing redundant assignment
+@N: CG179 :"E:\work\wolf\Baseboard\BLD\..\SRC\I2C.v":252:72:252:82|Removing redundant assignment
+@N: CG179 :"E:\work\wolf\Baseboard\BLD\..\SRC\I2C.v":292:208:292:213|Removing redundant assignment
+@N: CG179 :"E:\work\wolf\Baseboard\BLD\..\SRC\I2C.v":314:73:314:79|Removing redundant assignment
+@N: CG179 :"E:\work\wolf\Baseboard\BLD\..\SRC\I2C.v":333:127:333:136|Removing redundant assignment
+@N: CG179 :"E:\work\wolf\Baseboard\BLD\..\SRC\I2C.v":335:44:335:50|Removing redundant assignment
+@N: CG179 :"E:\work\wolf\Baseboard\BLD\..\SRC\I2C.v":350:80:350:87|Removing redundant assignment
+@N: CG179 :"E:\work\wolf\Baseboard\BLD\..\SRC\I2C.v":351:117:351:130|Removing redundant assignment
+@W: CG360 :"E:\work\wolf\Baseboard\BLD\..\SRC\I2C.v":53:8:53:19|No assignment to wire TIMER_OVFLOW
 
-@W: CG133 :"F:\project\wolf\Baseboard\BLD\..\SRC\I2C.v":54:7:54:17|No assignment to TIMER_CLR_N
-@W: CL169 :"F:\project\wolf\Baseboard\BLD\..\SRC\I2C.v":257:0:257:5|Pruning register RD_END3 
+@W: CG133 :"E:\work\wolf\Baseboard\BLD\..\SRC\I2C.v":54:7:54:17|No assignment to TIMER_CLR_N
+@W: CL169 :"E:\work\wolf\Baseboard\BLD\..\SRC\I2C.v":257:0:257:5|Pruning register RD_END3 
 
-@W: CL169 :"F:\project\wolf\Baseboard\BLD\..\SRC\I2C.v":257:0:257:5|Pruning register WR_END1 
+@W: CL169 :"E:\work\wolf\Baseboard\BLD\..\SRC\I2C.v":257:0:257:5|Pruning register WR_END1 
 
-@W: CL169 :"F:\project\wolf\Baseboard\BLD\..\SRC\I2C.v":257:0:257:5|Pruning register WR_END2 
+@W: CL169 :"E:\work\wolf\Baseboard\BLD\..\SRC\I2C.v":257:0:257:5|Pruning register WR_END2 
 
-@W: CL169 :"F:\project\wolf\Baseboard\BLD\..\SRC\I2C.v":257:0:257:5|Pruning register PORT_CSD2[15:0] 
+@W: CL169 :"E:\work\wolf\Baseboard\BLD\..\SRC\I2C.v":257:0:257:5|Pruning register PORT_CSD2[15:0] 
 
-@W: CL169 :"F:\project\wolf\Baseboard\BLD\..\SRC\I2C.v":242:0:242:5|Pruning register CHECKSUM_IN[7:0] 
+@W: CL169 :"E:\work\wolf\Baseboard\BLD\..\SRC\I2C.v":242:0:242:5|Pruning register CHECKSUM_IN[7:0] 
 
-@W: CL169 :"F:\project\wolf\Baseboard\BLD\..\SRC\I2C.v":178:0:178:5|Pruning register CNT9 
+@W: CL169 :"E:\work\wolf\Baseboard\BLD\..\SRC\I2C.v":178:0:178:5|Pruning register CNT9 
 
-@W: CL169 :"F:\project\wolf\Baseboard\BLD\..\SRC\I2C.v":162:0:162:5|Pruning register START 
+@W: CL169 :"E:\work\wolf\Baseboard\BLD\..\SRC\I2C.v":162:0:162:5|Pruning register START 
 
-@W: CL169 :"F:\project\wolf\Baseboard\BLD\..\SRC\I2C.v":162:0:162:5|Pruning register STOP 
+@W: CL169 :"E:\work\wolf\Baseboard\BLD\..\SRC\I2C.v":162:0:162:5|Pruning register STOP 
 
-@W: CL169 :"F:\project\wolf\Baseboard\BLD\..\SRC\I2C.v":141:0:141:5|Pruning register SCL_PCLKD3 
+@W: CL169 :"E:\work\wolf\Baseboard\BLD\..\SRC\I2C.v":141:0:141:5|Pruning register SCL_PCLKD3 
 
-@W: CL169 :"F:\project\wolf\Baseboard\BLD\..\SRC\I2C.v":141:0:141:5|Pruning register SDA_NCLK 
+@W: CL169 :"E:\work\wolf\Baseboard\BLD\..\SRC\I2C.v":141:0:141:5|Pruning register SDA_NCLK 
 
-@W: CL169 :"F:\project\wolf\Baseboard\BLD\..\SRC\I2C.v":141:0:141:5|Pruning register SDA_PCLK 
+@W: CL169 :"E:\work\wolf\Baseboard\BLD\..\SRC\I2C.v":141:0:141:5|Pruning register SDA_PCLK 
 
-@A: CL282 :"F:\project\wolf\Baseboard\BLD\..\SRC\I2C.v":141:0:141:5|Feedback mux created for signal SCL_PCLK -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
-@A: CL282 :"F:\project\wolf\Baseboard\BLD\..\SRC\I2C.v":141:0:141:5|Feedback mux created for signal SCL_NCLK -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
-@N: CG364 :"F:\project\wolf\Baseboard\BLD\..\SRC\GPI.v":10:7:10:9|Synthesizing module GPI
+@A: CL282 :"E:\work\wolf\Baseboard\BLD\..\SRC\I2C.v":141:0:141:5|Feedback mux created for signal SCL_PCLK -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
+@A: CL282 :"E:\work\wolf\Baseboard\BLD\..\SRC\I2C.v":141:0:141:5|Feedback mux created for signal SCL_NCLK -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
+@N: CG364 :"E:\work\wolf\Baseboard\BLD\..\SRC\GPI.v":10:7:10:9|Synthesizing module GPI
 
-@N: CG179 :"F:\project\wolf\Baseboard\BLD\..\SRC\GPI.v":75:44:75:48|Removing redundant assignment
-@N: CG179 :"F:\project\wolf\Baseboard\BLD\..\SRC\GPI.v":87:44:87:48|Removing redundant assignment
-@N: CG364 :"F:\project\wolf\Baseboard\BLD\..\SRC\GPO.v":10:7:10:9|Synthesizing module GPO
+@N: CG179 :"E:\work\wolf\Baseboard\BLD\..\SRC\GPI.v":75:44:75:48|Removing redundant assignment
+@N: CG179 :"E:\work\wolf\Baseboard\BLD\..\SRC\GPI.v":87:44:87:48|Removing redundant assignment
+@N: CG364 :"E:\work\wolf\Baseboard\BLD\..\SRC\GPO.v":10:7:10:9|Synthesizing module GPO
 
 	GPO_DFT=8'b11111111
    Generated name = GPO_255
 
-@N: CG179 :"F:\project\wolf\Baseboard\BLD\..\SRC\GPO.v":94:44:94:48|Removing redundant assignment
-@N: CG179 :"F:\project\wolf\Baseboard\BLD\..\SRC\GPO.v":106:44:106:48|Removing redundant assignment
-@N: CG179 :"F:\project\wolf\Baseboard\BLD\..\SRC\GPO.v":134:107:134:109|Removing redundant assignment
-@N: CG179 :"F:\project\wolf\Baseboard\BLD\..\SRC\GPO.v":135:107:135:109|Removing redundant assignment
-@N: CG179 :"F:\project\wolf\Baseboard\BLD\..\SRC\GPO.v":136:107:136:109|Removing redundant assignment
-@N: CG179 :"F:\project\wolf\Baseboard\BLD\..\SRC\GPO.v":137:107:137:109|Removing redundant assignment
-@N: CG179 :"F:\project\wolf\Baseboard\BLD\..\SRC\GPO.v":138:107:138:109|Removing redundant assignment
-@N: CG179 :"F:\project\wolf\Baseboard\BLD\..\SRC\GPO.v":139:107:139:109|Removing redundant assignment
-@N: CG179 :"F:\project\wolf\Baseboard\BLD\..\SRC\GPO.v":140:107:140:109|Removing redundant assignment
-@N: CG179 :"F:\project\wolf\Baseboard\BLD\..\SRC\GPO.v":141:107:141:109|Removing redundant assignment
-@N: CG179 :"F:\project\wolf\Baseboard\BLD\..\SRC\GPO.v":142:107:142:109|Removing redundant assignment
-@N: CG179 :"F:\project\wolf\Baseboard\BLD\..\SRC\GPO.v":143:107:143:109|Removing redundant assignment
-@N: CG179 :"F:\project\wolf\Baseboard\BLD\..\SRC\GPO.v":144:107:144:110|Removing redundant assignment
-@N: CG179 :"F:\project\wolf\Baseboard\BLD\..\SRC\GPO.v":145:107:145:110|Removing redundant assignment
-@N: CG179 :"F:\project\wolf\Baseboard\BLD\..\SRC\GPO.v":146:107:146:110|Removing redundant assignment
-@N: CG179 :"F:\project\wolf\Baseboard\BLD\..\SRC\GPO.v":147:107:147:110|Removing redundant assignment
-@N: CG179 :"F:\project\wolf\Baseboard\BLD\..\SRC\GPO.v":148:107:148:110|Removing redundant assignment
-@N: CG179 :"F:\project\wolf\Baseboard\BLD\..\SRC\GPO.v":149:107:149:110|Removing redundant assignment
-@N: CG364 :"F:\project\wolf\Baseboard\BLD\..\SRC\GPO.v":10:7:10:9|Synthesizing module GPO
+@N: CG179 :"E:\work\wolf\Baseboard\BLD\..\SRC\GPO.v":94:44:94:48|Removing redundant assignment
+@N: CG179 :"E:\work\wolf\Baseboard\BLD\..\SRC\GPO.v":106:44:106:48|Removing redundant assignment
+@N: CG179 :"E:\work\wolf\Baseboard\BLD\..\SRC\GPO.v":134:107:134:109|Removing redundant assignment
+@N: CG179 :"E:\work\wolf\Baseboard\BLD\..\SRC\GPO.v":135:107:135:109|Removing redundant assignment
+@N: CG179 :"E:\work\wolf\Baseboard\BLD\..\SRC\GPO.v":136:107:136:109|Removing redundant assignment
+@N: CG179 :"E:\work\wolf\Baseboard\BLD\..\SRC\GPO.v":137:107:137:109|Removing redundant assignment
+@N: CG179 :"E:\work\wolf\Baseboard\BLD\..\SRC\GPO.v":138:107:138:109|Removing redundant assignment
+@N: CG179 :"E:\work\wolf\Baseboard\BLD\..\SRC\GPO.v":139:107:139:109|Removing redundant assignment
+@N: CG179 :"E:\work\wolf\Baseboard\BLD\..\SRC\GPO.v":140:107:140:109|Removing redundant assignment
+@N: CG179 :"E:\work\wolf\Baseboard\BLD\..\SRC\GPO.v":141:107:141:109|Removing redundant assignment
+@N: CG179 :"E:\work\wolf\Baseboard\BLD\..\SRC\GPO.v":142:107:142:109|Removing redundant assignment
+@N: CG179 :"E:\work\wolf\Baseboard\BLD\..\SRC\GPO.v":143:107:143:109|Removing redundant assignment
+@N: CG179 :"E:\work\wolf\Baseboard\BLD\..\SRC\GPO.v":144:107:144:110|Removing redundant assignment
+@N: CG179 :"E:\work\wolf\Baseboard\BLD\..\SRC\GPO.v":145:107:145:110|Removing redundant assignment
+@N: CG179 :"E:\work\wolf\Baseboard\BLD\..\SRC\GPO.v":146:107:146:110|Removing redundant assignment
+@N: CG179 :"E:\work\wolf\Baseboard\BLD\..\SRC\GPO.v":147:107:147:110|Removing redundant assignment
+@N: CG179 :"E:\work\wolf\Baseboard\BLD\..\SRC\GPO.v":148:107:148:110|Removing redundant assignment
+@N: CG179 :"E:\work\wolf\Baseboard\BLD\..\SRC\GPO.v":149:107:149:110|Removing redundant assignment
+@N: CG364 :"E:\work\wolf\Baseboard\BLD\..\SRC\GPO.v":10:7:10:9|Synthesizing module GPO
 
-@N: CG364 :"F:\project\wolf\Baseboard\BLD\..\SRC\LED_CNT.v":10:7:10:13|Synthesizing module LED_CNT
+@N: CG364 :"E:\work\wolf\Baseboard\BLD\..\SRC\LED_CNT.v":10:7:10:13|Synthesizing module LED_CNT
 
-@N: CG179 :"F:\project\wolf\Baseboard\BLD\..\SRC\LED_CNT.v":45:47:45:53|Removing redundant assignment
-@N: CG179 :"F:\project\wolf\Baseboard\BLD\..\SRC\LED_CNT.v":46:115:46:121|Removing redundant assignment
-@N: CG179 :"F:\project\wolf\Baseboard\BLD\..\SRC\LED_CNT.v":48:108:48:114|Removing redundant assignment
-@N: CG179 :"F:\project\wolf\Baseboard\BLD\..\SRC\LED_CNT.v":65:52:65:64|Removing redundant assignment
-@N: CG179 :"F:\project\wolf\Baseboard\BLD\..\SRC\LED_CNT.v":67:85:67:98|Removing redundant assignment
-@N: CG179 :"F:\project\wolf\Baseboard\BLD\..\SRC\LED_CNT.v":83:55:83:61|Removing redundant assignment
-@N: CG364 :"F:\project\wolf\Baseboard\BLD\..\SRC\LED.v":10:7:10:9|Synthesizing module LED
+@N: CG179 :"E:\work\wolf\Baseboard\BLD\..\SRC\LED_CNT.v":45:47:45:53|Removing redundant assignment
+@N: CG179 :"E:\work\wolf\Baseboard\BLD\..\SRC\LED_CNT.v":46:115:46:121|Removing redundant assignment
+@N: CG179 :"E:\work\wolf\Baseboard\BLD\..\SRC\LED_CNT.v":48:108:48:114|Removing redundant assignment
+@N: CG179 :"E:\work\wolf\Baseboard\BLD\..\SRC\LED_CNT.v":65:52:65:64|Removing redundant assignment
+@N: CG179 :"E:\work\wolf\Baseboard\BLD\..\SRC\LED_CNT.v":67:85:67:98|Removing redundant assignment
+@N: CG179 :"E:\work\wolf\Baseboard\BLD\..\SRC\LED_CNT.v":83:55:83:61|Removing redundant assignment
+@N: CG364 :"E:\work\wolf\Baseboard\BLD\..\SRC\LED.v":10:7:10:9|Synthesizing module LED
 
-@N: CG364 :"F:\project\wolf\Baseboard\BLD\..\SRC\PRSNT_LED_CTRL.v":10:7:10:20|Synthesizing module PRSNT_LED_CTRL
+@N: CG364 :"E:\work\wolf\Baseboard\BLD\..\SRC\PRSNT_LED_CTRL.v":10:7:10:20|Synthesizing module PRSNT_LED_CTRL
 
-@N: CG179 :"F:\project\wolf\Baseboard\BLD\..\SRC\PRSNT_LED_CTRL.v":84:20:84:24|Removing redundant assignment
-@N: CG179 :"F:\project\wolf\Baseboard\BLD\..\SRC\PRSNT_LED_CTRL.v":96:20:96:24|Removing redundant assignment
-@N: CL177 :"F:\project\wolf\Baseboard\BLD\..\SRC\PRSNT_LED_CTRL.v":48:0:48:5|Sharing sequential element DRV_IFDET_BLUE_LED_EN.
-@W: CL279 :"F:\project\wolf\Baseboard\BLD\..\SRC\PRSNT_LED_CTRL.v":48:0:48:5|Pruning register bits 35 to 1 of DRV_PRSNT_AMBER_LED_EN[35:0] 
+@N: CG179 :"E:\work\wolf\Baseboard\BLD\..\SRC\PRSNT_LED_CTRL.v":84:20:84:24|Removing redundant assignment
+@N: CG179 :"E:\work\wolf\Baseboard\BLD\..\SRC\PRSNT_LED_CTRL.v":96:20:96:24|Removing redundant assignment
+@N: CL177 :"E:\work\wolf\Baseboard\BLD\..\SRC\PRSNT_LED_CTRL.v":48:0:48:5|Sharing sequential element DRV_IFDET_BLUE_LED_EN.
+@W: CL279 :"E:\work\wolf\Baseboard\BLD\..\SRC\PRSNT_LED_CTRL.v":48:0:48:5|Pruning register bits 35 to 1 of DRV_PRSNT_AMBER_LED_EN[35:0] 
 
-@N: CG364 :"F:\project\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":10:7:10:19|Synthesizing module PCIE_RST_CTRL
+@N: CG364 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":10:7:10:19|Synthesizing module PCIE_RST_CTRL
 
-@W: CL169 :"F:\project\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":432:0:432:5|Pruning register CNT23[17:0] 
+@N: CG179 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":51:117:51:120|Removing redundant assignment
+@N: CG179 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":68:117:68:120|Removing redundant assignment
+@N: CG179 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":85:117:85:120|Removing redundant assignment
+@N: CG179 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":102:117:102:120|Removing redundant assignment
+@N: CG179 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":119:117:119:120|Removing redundant assignment
+@N: CG179 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":136:117:136:120|Removing redundant assignment
+@N: CG179 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":153:117:153:120|Removing redundant assignment
+@N: CG179 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":170:117:170:120|Removing redundant assignment
+@N: CG179 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":187:117:187:120|Removing redundant assignment
+@N: CG179 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":204:117:204:120|Removing redundant assignment
+@N: CG179 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":221:122:221:126|Removing redundant assignment
+@N: CG179 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":238:122:238:126|Removing redundant assignment
+@N: CG179 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":255:122:255:126|Removing redundant assignment
+@N: CG179 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":272:122:272:126|Removing redundant assignment
+@N: CG179 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":289:122:289:126|Removing redundant assignment
+@N: CG179 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":306:122:306:126|Removing redundant assignment
+@N: CG179 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":323:122:323:126|Removing redundant assignment
+@N: CG179 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":340:122:340:126|Removing redundant assignment
+@N: CG179 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":357:122:357:126|Removing redundant assignment
+@N: CG179 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":374:122:374:126|Removing redundant assignment
+@N: CG179 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":391:122:391:126|Removing redundant assignment
+@N: CG179 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":408:122:408:126|Removing redundant assignment
+@N: CG179 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":425:122:425:126|Removing redundant assignment
+@N: CG179 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":442:122:442:126|Removing redundant assignment
+@N: CL177 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":432:0:432:5|Sharing sequential element PE_RST_DRV23_A_L.
+@N: CL177 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":415:0:415:5|Sharing sequential element PE_RST_DRV22_A_L.
+@N: CL177 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":398:0:398:5|Sharing sequential element PE_RST_DRV21_A_L.
+@N: CL177 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":381:0:381:5|Sharing sequential element PE_RST_DRV20_A_L.
+@N: CL177 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":364:0:364:5|Sharing sequential element PE_RST_DRV19_A_L.
+@N: CL177 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":347:0:347:5|Sharing sequential element PE_RST_DRV18_A_L.
+@N: CL177 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":330:0:330:5|Sharing sequential element PE_RST_DRV17_A_L.
+@N: CL177 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":313:0:313:5|Sharing sequential element PE_RST_DRV16_A_L.
+@N: CL177 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":296:0:296:5|Sharing sequential element PE_RST_DRV15_A_L.
+@N: CL177 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":279:0:279:5|Sharing sequential element PE_RST_DRV14_A_L.
+@N: CL177 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":262:0:262:5|Sharing sequential element PE_RST_DRV13_A_L.
+@N: CL177 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":245:0:245:5|Sharing sequential element PE_RST_DRV12_A_L.
+@N: CL177 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":228:0:228:5|Sharing sequential element PE_RST_DRV11_A_L.
+@N: CL177 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":211:0:211:5|Sharing sequential element PE_RST_DRV10_A_L.
+@N: CL177 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":194:0:194:5|Sharing sequential element PE_RST_DRV9_A_L.
+@N: CL177 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":177:0:177:5|Sharing sequential element PE_RST_DRV8_A_L.
+@N: CL177 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":160:0:160:5|Sharing sequential element PE_RST_DRV7_A_L.
+@N: CL177 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":143:0:143:5|Sharing sequential element PE_RST_DRV6_A_L.
+@N: CL177 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":126:0:126:5|Sharing sequential element PE_RST_DRV5_A_L.
+@N: CL177 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":109:0:109:5|Sharing sequential element PE_RST_DRV4_A_L.
+@N: CL177 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":92:0:92:5|Sharing sequential element PE_RST_DRV3_A_L.
+@N: CL177 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":75:0:75:5|Sharing sequential element PE_RST_DRV2_A_L.
+@N: CL177 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":58:0:58:5|Sharing sequential element PE_RST_DRV1_A_L.
+@N: CL177 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":41:0:41:5|Sharing sequential element PE_RST_DRV0_A_L.
+@N: CG364 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_SGPIO.v":10:7:10:14|Synthesizing module BB_SGPIO
 
-@W: CL169 :"F:\project\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":415:0:415:5|Pruning register CNT22[17:0] 
+@N: CG179 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_SGPIO.v":55:48:55:55|Removing redundant assignment
+@N: CG179 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_SGPIO.v":101:60:101:67|Removing redundant assignment
+@N: CG179 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_SGPIO.v":102:74:102:84|Removing redundant assignment
+@N: CG179 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_SGPIO.v":103:58:103:67|Removing redundant assignment
+@N: CG179 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_SGPIO.v":107:60:107:69|Removing redundant assignment
+@N: CG179 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_SGPIO.v":113:45:113:54|Removing redundant assignment
+@W: CG133 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_SGPIO.v":39:7:39:14|No assignment to TIME_OUT
+@N: CG364 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":11:7:11:12|Synthesizing module BB_TOP
 
-@W: CL169 :"F:\project\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":398:0:398:5|Pruning register CNT21[17:0] 
+@N: CG179 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":1189:58:1189:62|Removing redundant assignment
+@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":276:20:276:20|Port-width mismatch for port DIN7. Formal has width 8, Actual 32
+@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":277:20:277:20|Port-width mismatch for port DIN8. Formal has width 8, Actual 32
+@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":278:20:278:20|Port-width mismatch for port DIN9. Formal has width 8, Actual 32
+@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":279:20:279:20|Port-width mismatch for port DIN10. Formal has width 8, Actual 32
+@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":280:20:280:20|Port-width mismatch for port DIN11. Formal has width 8, Actual 32
+@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":281:20:281:20|Port-width mismatch for port DIN12. Formal has width 8, Actual 32
+@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":282:20:282:20|Port-width mismatch for port DIN13. Formal has width 8, Actual 32
+@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":283:20:283:20|Port-width mismatch for port DIN14. Formal has width 8, Actual 32
+@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":284:20:284:20|Port-width mismatch for port DIN15. Formal has width 8, Actual 32
+@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":307:22:307:41|Port-width mismatch for port DIN5. Formal has width 8, Actual 32
+@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":313:22:313:41|Port-width mismatch for port DIN11. Formal has width 8, Actual 32
+@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":314:22:314:41|Port-width mismatch for port DIN12. Formal has width 8, Actual 32
+@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":315:22:315:41|Port-width mismatch for port DIN13. Formal has width 8, Actual 32
+@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":316:22:316:41|Port-width mismatch for port DIN14. Formal has width 8, Actual 32
+@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":317:22:317:41|Port-width mismatch for port DIN15. Formal has width 8, Actual 32
+@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":436:28:436:28|Undriven input DIN3 on instance GPI3_INST, tying to 0
+@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":437:28:437:28|Undriven input DIN4 on instance GPI3_INST, tying to 0
+@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":438:19:438:19|Undriven input DIN5 on instance GPI3_INST, tying to 0
+@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":439:19:439:19|Undriven input DIN6 on instance GPI3_INST, tying to 0
+@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":440:19:440:19|Undriven input DIN7 on instance GPI3_INST, tying to 0
+@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":441:19:441:19|Undriven input DIN8 on instance GPI3_INST, tying to 0
+@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":442:19:442:19|Undriven input DIN9 on instance GPI3_INST, tying to 0
+@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":443:19:443:19|Undriven input DIN10 on instance GPI3_INST, tying to 0
+@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":444:19:444:19|Undriven input DIN11 on instance GPI3_INST, tying to 0
+@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":445:19:445:19|Undriven input DIN12 on instance GPI3_INST, tying to 0
+@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":446:19:446:19|Undriven input DIN13 on instance GPI3_INST, tying to 0
+@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":447:19:447:19|Undriven input DIN14 on instance GPI3_INST, tying to 0
+@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":448:19:448:19|Undriven input DIN15 on instance GPI3_INST, tying to 0
+@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":642:24:642:76|Port-width mismatch for port DIN0. Formal has width 8, Actual 2
+@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":644:22:644:48|Port-width mismatch for port DIN2. Formal has width 8, Actual 32
+@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":645:22:645:48|Port-width mismatch for port DIN3. Formal has width 8, Actual 32
+@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":646:22:646:48|Port-width mismatch for port DIN4. Formal has width 8, Actual 32
+@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":647:22:647:48|Port-width mismatch for port DIN5. Formal has width 8, Actual 32
+@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":648:22:648:48|Port-width mismatch for port DIN6. Formal has width 8, Actual 32
+@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":649:22:649:48|Port-width mismatch for port DIN7. Formal has width 8, Actual 32
+@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":650:22:650:48|Port-width mismatch for port DIN8. Formal has width 8, Actual 32
+@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":651:22:651:48|Port-width mismatch for port DIN9. Formal has width 8, Actual 32
+@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":652:22:652:48|Port-width mismatch for port DIN10. Formal has width 8, Actual 32
+@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":653:22:653:48|Port-width mismatch for port DIN11. Formal has width 8, Actual 32
+@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":654:22:654:48|Port-width mismatch for port DIN12. Formal has width 8, Actual 32
+@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":655:22:655:48|Port-width mismatch for port DIN13. Formal has width 8, Actual 32
+@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":656:22:656:48|Port-width mismatch for port DIN14. Formal has width 8, Actual 32
+@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":657:22:657:48|Port-width mismatch for port DIN15. Formal has width 8, Actual 32
+@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":676:22:676:41|Port-width mismatch for port DIN1. Formal has width 8, Actual 32
+@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":677:22:677:41|Port-width mismatch for port DIN2. Formal has width 8, Actual 32
+@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":678:22:678:41|Port-width mismatch for port DIN3. Formal has width 8, Actual 32
+@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":679:22:679:41|Port-width mismatch for port DIN4. Formal has width 8, Actual 32
+@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":680:22:680:41|Port-width mismatch for port DIN5. Formal has width 8, Actual 32
+@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":681:22:681:41|Port-width mismatch for port DIN6. Formal has width 8, Actual 32
+@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":682:22:682:41|Port-width mismatch for port DIN7. Formal has width 8, Actual 32
+@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":683:22:683:41|Port-width mismatch for port DIN8. Formal has width 8, Actual 32
+@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":684:22:684:41|Port-width mismatch for port DIN9. Formal has width 8, Actual 32
+@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":685:22:685:41|Port-width mismatch for port DIN10. Formal has width 8, Actual 32
+@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":686:22:686:41|Port-width mismatch for port DIN11. Formal has width 8, Actual 32
+@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":687:22:687:41|Port-width mismatch for port DIN12. Formal has width 8, Actual 32
+@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":688:22:688:41|Port-width mismatch for port DIN13. Formal has width 8, Actual 32
+@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":689:22:689:41|Port-width mismatch for port DIN14. Formal has width 8, Actual 32
+@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":690:22:690:41|Port-width mismatch for port DIN15. Formal has width 8, Actual 32
+@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":710:15:710:33|Port-width mismatch for port DO0. Formal has width 8, Actual 1
+@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":827:36:827:36|Undriven input LED_REG2 on instance FLT_AMB_LED_INST2, tying to 0
+@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":828:36:828:36|Undriven input LED_REG3 on instance FLT_AMB_LED_INST2, tying to 0
+@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":829:36:829:36|Undriven input LED_REG4 on instance FLT_AMB_LED_INST2, tying to 0
+@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":830:36:830:36|Undriven input LED_REG5 on instance FLT_AMB_LED_INST2, tying to 0
+@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":831:36:831:36|Undriven input LED_REG6 on instance FLT_AMB_LED_INST2, tying to 0
+@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":832:36:832:36|Undriven input LED_REG7 on instance FLT_AMB_LED_INST2, tying to 0
+@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":939:36:939:36|Undriven input LED_REG2 on instance IFDET_BLUE_LED_INST2, tying to 0
+@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":940:36:940:36|Undriven input LED_REG3 on instance IFDET_BLUE_LED_INST2, tying to 0
+@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":941:36:941:36|Undriven input LED_REG4 on instance IFDET_BLUE_LED_INST2, tying to 0
+@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":942:36:942:36|Undriven input LED_REG5 on instance IFDET_BLUE_LED_INST2, tying to 0
+@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":943:36:943:36|Undriven input LED_REG6 on instance IFDET_BLUE_LED_INST2, tying to 0
+@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":944:36:944:36|Undriven input LED_REG7 on instance IFDET_BLUE_LED_INST2, tying to 0
+@W: CG360 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":111:113:111:119|No assignment to wire DIN_B_1
 
-@W: CL169 :"F:\project\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":381:0:381:5|Pruning register CNT20[17:0] 
+@W: CG360 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":111:122:111:128|No assignment to wire DIN_C_1
 
-@W: CL169 :"F:\project\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":364:0:364:5|Pruning register CNT19[17:0] 
+@W: CG360 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":111:131:111:137|No assignment to wire DIN_D_1
 
-@W: CL169 :"F:\project\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":347:0:347:5|Pruning register CNT18[17:0] 
+@W: CG360 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":111:140:111:146|No assignment to wire DIN_E_1
 
-@W: CL169 :"F:\project\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":330:0:330:5|Pruning register CNT17[17:0] 
+@W: CG360 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":111:149:111:155|No assignment to wire DIN_F_1
 
-@W: CL169 :"F:\project\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":313:0:313:5|Pruning register CNT16[17:0] 
+@W: CG360 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":112:7:112:13|No assignment to wire WR_EN_1
 
-@W: CL169 :"F:\project\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":296:0:296:5|Pruning register CNT15[17:0] 
+@W: CG360 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":119:113:119:119|No assignment to wire DIN_B_2
 
-@W: CL169 :"F:\project\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":279:0:279:5|Pruning register CNT14[17:0] 
+@W: CG360 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":119:122:119:128|No assignment to wire DIN_C_2
 
-@W: CL169 :"F:\project\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":262:0:262:5|Pruning register CNT13[17:0] 
+@W: CG360 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":119:131:119:137|No assignment to wire DIN_D_2
 
-@W: CL169 :"F:\project\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":245:0:245:5|Pruning register CNT12[17:0] 
+@W: CG360 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":119:140:119:146|No assignment to wire DIN_E_2
 
-@W: CL169 :"F:\project\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":228:0:228:5|Pruning register CNT11[17:0] 
+@W: CG360 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":119:149:119:155|No assignment to wire DIN_F_2
 
-@W: CL169 :"F:\project\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":211:0:211:5|Pruning register CNT10[17:0] 
+@W: CG360 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":120:7:120:13|No assignment to wire WR_EN_2
 
-@W: CL169 :"F:\project\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":194:0:194:5|Pruning register CNT9[17:0] 
+@W: CG360 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":123:14:123:21|No assignment to wire LED_REG0
 
-@W: CL169 :"F:\project\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":177:0:177:5|Pruning register CNT8[17:0] 
+@W: CG360 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":124:14:124:21|No assignment to wire LED_REG1
 
-@W: CL169 :"F:\project\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":160:0:160:5|Pruning register CNT7[17:0] 
+@W: CG360 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":125:14:125:21|No assignment to wire LED_REG2
 
-@W: CL169 :"F:\project\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":143:0:143:5|Pruning register CNT6[17:0] 
+@W: CG360 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":126:14:126:21|No assignment to wire LED_REG3
 
-@W: CL169 :"F:\project\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":126:0:126:5|Pruning register CNT5[17:0] 
+@W: CG360 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":127:14:127:21|No assignment to wire LED_REG4
 
-@W: CL169 :"F:\project\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":109:0:109:5|Pruning register CNT4[17:0] 
+@W: CG360 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":128:14:128:21|No assignment to wire LED_REG5
 
-@W: CL169 :"F:\project\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":92:0:92:5|Pruning register CNT3[17:0] 
+@W: CG360 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":129:14:129:21|No assignment to wire LED_REG6
 
-@W: CL169 :"F:\project\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":75:0:75:5|Pruning register CNT2[17:0] 
+@W: CG360 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":130:14:130:21|No assignment to wire LED_REG7
 
-@W: CL169 :"F:\project\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":58:0:58:5|Pruning register CNT1[17:0] 
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":1179:0:1179:5|Optimizing register bit CNT[25] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":1179:0:1179:5|Optimizing register bit CNT[26] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":1179:0:1179:5|Optimizing register bit CNT[27] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":1179:0:1179:5|Optimizing register bit CNT[28] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":1179:0:1179:5|Optimizing register bit CNT[29] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":1179:0:1179:5|Optimizing register bit CNT[30] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":1179:0:1179:5|Optimizing register bit CNT[31] to a constant 0
+@W: CL279 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":1179:0:1179:5|Pruning register bits 31 to 25 of CNT[31:0] 
 
-@W: CL169 :"F:\project\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":41:0:41:5|Pruning register CNT0[17:0] 
+@W: CL156 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":111:113:111:119|*Input DIN_B_1[7:0] to expression [instance] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL156 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":111:122:111:128|*Input DIN_C_1[7:0] to expression [instance] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL156 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":111:131:111:137|*Input DIN_D_1[7:0] to expression [instance] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL156 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":111:140:111:146|*Input DIN_E_1[7:0] to expression [instance] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL156 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":111:149:111:155|*Input DIN_F_1[7:0] to expression [instance] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL156 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":119:113:119:119|*Input DIN_B_2[7:0] to expression [instance] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL156 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":119:122:119:128|*Input DIN_C_2[7:0] to expression [instance] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL156 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":119:131:119:137|*Input DIN_D_2[7:0] to expression [instance] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL156 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":119:140:119:146|*Input DIN_E_2[7:0] to expression [instance] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL156 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":119:149:119:155|*Input DIN_F_2[7:0] to expression [instance] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_SGPIO.v":44:0:44:5|Optimizing register bit CNT[7] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_SGPIO.v":44:0:44:5|Optimizing register bit CNT[8] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_SGPIO.v":44:0:44:5|Optimizing register bit CNT[9] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_SGPIO.v":44:0:44:5|Optimizing register bit CNT[10] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_SGPIO.v":44:0:44:5|Optimizing register bit CNT[11] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_SGPIO.v":44:0:44:5|Optimizing register bit CNT[12] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_SGPIO.v":44:0:44:5|Optimizing register bit CNT[13] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_SGPIO.v":44:0:44:5|Optimizing register bit CNT[14] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_SGPIO.v":44:0:44:5|Optimizing register bit CNT[15] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_SGPIO.v":44:0:44:5|Optimizing register bit CNT[16] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_SGPIO.v":44:0:44:5|Optimizing register bit CNT[17] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_SGPIO.v":44:0:44:5|Optimizing register bit CNT[18] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_SGPIO.v":44:0:44:5|Optimizing register bit CNT[19] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_SGPIO.v":44:0:44:5|Optimizing register bit CNT[20] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_SGPIO.v":44:0:44:5|Optimizing register bit CNT[21] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_SGPIO.v":44:0:44:5|Optimizing register bit CNT[22] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_SGPIO.v":44:0:44:5|Optimizing register bit CNT[23] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_SGPIO.v":44:0:44:5|Optimizing register bit CNT[24] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_SGPIO.v":44:0:44:5|Optimizing register bit CNT[25] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_SGPIO.v":44:0:44:5|Optimizing register bit CNT[26] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_SGPIO.v":44:0:44:5|Optimizing register bit CNT[27] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_SGPIO.v":44:0:44:5|Optimizing register bit CNT[28] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_SGPIO.v":44:0:44:5|Optimizing register bit CNT[29] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_SGPIO.v":44:0:44:5|Optimizing register bit CNT[30] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_SGPIO.v":44:0:44:5|Optimizing register bit CNT[31] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_SGPIO.v":81:0:81:5|Optimizing register bit HDD_CNT[6] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_SGPIO.v":81:0:81:5|Optimizing register bit HDD_CNT[7] to a constant 0
+@W: CL279 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_SGPIO.v":81:0:81:5|Pruning register bits 7 to 6 of HDD_CNT[7:0] 
 
-@W: CL207 :"F:\project\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":432:0:432:5|All reachable assignments to PE_RST_DRV23_B_L assign 1, register removed by optimization.
-@W: CL207 :"F:\project\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":432:0:432:5|All reachable assignments to PE_RST_DRV23_A_L assign 1, register removed by optimization.
-@W: CL207 :"F:\project\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":415:0:415:5|All reachable assignments to PE_RST_DRV22_B_L assign 1, register removed by optimization.
-@W: CL207 :"F:\project\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":415:0:415:5|All reachable assignments to PE_RST_DRV22_A_L assign 1, register removed by optimization.
-@W: CL207 :"F:\project\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":398:0:398:5|All reachable assignments to PE_RST_DRV21_B_L assign 1, register removed by optimization.
-@W: CL207 :"F:\project\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":398:0:398:5|All reachable assignments to PE_RST_DRV21_A_L assign 1, register removed by optimization.
-@W: CL207 :"F:\project\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":381:0:381:5|All reachable assignments to PE_RST_DRV20_B_L assign 1, register removed by optimization.
-@W: CL207 :"F:\project\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":381:0:381:5|All reachable assignments to PE_RST_DRV20_A_L assign 1, register removed by optimization.
-@W: CL207 :"F:\project\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":364:0:364:5|All reachable assignments to PE_RST_DRV19_B_L assign 1, register removed by optimization.
-@W: CL207 :"F:\project\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":364:0:364:5|All reachable assignments to PE_RST_DRV19_A_L assign 1, register removed by optimization.
-@W: CL207 :"F:\project\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":347:0:347:5|All reachable assignments to PE_RST_DRV18_B_L assign 1, register removed by optimization.
-@W: CL207 :"F:\project\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":347:0:347:5|All reachable assignments to PE_RST_DRV18_A_L assign 1, register removed by optimization.
-@W: CL207 :"F:\project\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":330:0:330:5|All reachable assignments to PE_RST_DRV17_B_L assign 1, register removed by optimization.
-@W: CL207 :"F:\project\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":330:0:330:5|All reachable assignments to PE_RST_DRV17_A_L assign 1, register removed by optimization.
-@W: CL207 :"F:\project\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":313:0:313:5|All reachable assignments to PE_RST_DRV16_B_L assign 1, register removed by optimization.
-@W: CL207 :"F:\project\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":313:0:313:5|All reachable assignments to PE_RST_DRV16_A_L assign 1, register removed by optimization.
-@W: CL207 :"F:\project\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":296:0:296:5|All reachable assignments to PE_RST_DRV15_B_L assign 1, register removed by optimization.
-@W: CL207 :"F:\project\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":296:0:296:5|All reachable assignments to PE_RST_DRV15_A_L assign 1, register removed by optimization.
-@W: CL207 :"F:\project\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":279:0:279:5|All reachable assignments to PE_RST_DRV14_B_L assign 1, register removed by optimization.
-@W: CL207 :"F:\project\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":279:0:279:5|All reachable assignments to PE_RST_DRV14_A_L assign 1, register removed by optimization.
-@W: CL207 :"F:\project\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":262:0:262:5|All reachable assignments to PE_RST_DRV13_B_L assign 1, register removed by optimization.
-@W: CL207 :"F:\project\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":262:0:262:5|All reachable assignments to PE_RST_DRV13_A_L assign 1, register removed by optimization.
-@W: CL207 :"F:\project\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":245:0:245:5|All reachable assignments to PE_RST_DRV12_B_L assign 1, register removed by optimization.
-@W: CL207 :"F:\project\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":245:0:245:5|All reachable assignments to PE_RST_DRV12_A_L assign 1, register removed by optimization.
-@W: CL207 :"F:\project\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":228:0:228:5|All reachable assignments to PE_RST_DRV11_B_L assign 1, register removed by optimization.
-@W: CL207 :"F:\project\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":228:0:228:5|All reachable assignments to PE_RST_DRV11_A_L assign 1, register removed by optimization.
-@W: CL207 :"F:\project\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":211:0:211:5|All reachable assignments to PE_RST_DRV10_B_L assign 1, register removed by optimization.
-@W: CL207 :"F:\project\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":211:0:211:5|All reachable assignments to PE_RST_DRV10_A_L assign 1, register removed by optimization.
-@W: CL207 :"F:\project\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":194:0:194:5|All reachable assignments to PE_RST_DRV9_B_L assign 1, register removed by optimization.
-@W: CL207 :"F:\project\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":194:0:194:5|All reachable assignments to PE_RST_DRV9_A_L assign 1, register removed by optimization.
-@W: CL207 :"F:\project\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":177:0:177:5|All reachable assignments to PE_RST_DRV8_B_L assign 1, register removed by optimization.
-@W: CL207 :"F:\project\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":177:0:177:5|All reachable assignments to PE_RST_DRV8_A_L assign 1, register removed by optimization.
-@W: CL207 :"F:\project\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":160:0:160:5|All reachable assignments to PE_RST_DRV7_B_L assign 1, register removed by optimization.
-@W: CL207 :"F:\project\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":160:0:160:5|All reachable assignments to PE_RST_DRV7_A_L assign 1, register removed by optimization.
-@W: CL207 :"F:\project\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":143:0:143:5|All reachable assignments to PE_RST_DRV6_B_L assign 1, register removed by optimization.
-@W: CL207 :"F:\project\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":143:0:143:5|All reachable assignments to PE_RST_DRV6_A_L assign 1, register removed by optimization.
-@W: CL207 :"F:\project\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":126:0:126:5|All reachable assignments to PE_RST_DRV5_B_L assign 1, register removed by optimization.
-@W: CL207 :"F:\project\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":126:0:126:5|All reachable assignments to PE_RST_DRV5_A_L assign 1, register removed by optimization.
-@W: CL207 :"F:\project\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":109:0:109:5|All reachable assignments to PE_RST_DRV4_B_L assign 1, register removed by optimization.
-@W: CL207 :"F:\project\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":109:0:109:5|All reachable assignments to PE_RST_DRV4_A_L assign 1, register removed by optimization.
-@W: CL207 :"F:\project\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":92:0:92:5|All reachable assignments to PE_RST_DRV3_B_L assign 1, register removed by optimization.
-@W: CL207 :"F:\project\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":92:0:92:5|All reachable assignments to PE_RST_DRV3_A_L assign 1, register removed by optimization.
-@W: CL207 :"F:\project\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":75:0:75:5|All reachable assignments to PE_RST_DRV2_B_L assign 1, register removed by optimization.
-@W: CL207 :"F:\project\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":75:0:75:5|All reachable assignments to PE_RST_DRV2_A_L assign 1, register removed by optimization.
-@W: CL207 :"F:\project\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":58:0:58:5|All reachable assignments to PE_RST_DRV1_B_L assign 1, register removed by optimization.
-@W: CL207 :"F:\project\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":58:0:58:5|All reachable assignments to PE_RST_DRV1_A_L assign 1, register removed by optimization.
-@W: CL207 :"F:\project\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":41:0:41:5|All reachable assignments to PE_RST_DRV0_B_L assign 1, register removed by optimization.
-@W: CL207 :"F:\project\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":41:0:41:5|All reachable assignments to PE_RST_DRV0_A_L assign 1, register removed by optimization.
-@N: CG364 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_SGPIO.v":10:7:10:14|Synthesizing module BB_SGPIO
+@W: CL279 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_SGPIO.v":44:0:44:5|Pruning register bits 31 to 7 of CNT[31:0] 
 
-@N: CG179 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_SGPIO.v":55:48:55:55|Removing redundant assignment
-@N: CG179 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_SGPIO.v":101:60:101:67|Removing redundant assignment
-@N: CG179 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_SGPIO.v":102:74:102:84|Removing redundant assignment
-@N: CG179 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_SGPIO.v":103:58:103:67|Removing redundant assignment
-@N: CG179 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_SGPIO.v":107:60:107:69|Removing redundant assignment
-@N: CG179 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_SGPIO.v":113:45:113:54|Removing redundant assignment
-@W: CG133 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_SGPIO.v":39:7:39:14|No assignment to TIME_OUT
-@N: CG364 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":11:7:11:12|Synthesizing module BB_TOP
-
-@N: CG179 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":1189:58:1189:62|Removing redundant assignment
-@W: CS263 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":276:20:276:20|Port-width mismatch for port DIN7. Formal has width 8, Actual 32
-@W: CS263 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":277:20:277:20|Port-width mismatch for port DIN8. Formal has width 8, Actual 32
-@W: CS263 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":278:20:278:20|Port-width mismatch for port DIN9. Formal has width 8, Actual 32
-@W: CS263 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":279:20:279:20|Port-width mismatch for port DIN10. Formal has width 8, Actual 32
-@W: CS263 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":280:20:280:20|Port-width mismatch for port DIN11. Formal has width 8, Actual 32
-@W: CS263 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":281:20:281:20|Port-width mismatch for port DIN12. Formal has width 8, Actual 32
-@W: CS263 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":282:20:282:20|Port-width mismatch for port DIN13. Formal has width 8, Actual 32
-@W: CS263 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":283:20:283:20|Port-width mismatch for port DIN14. Formal has width 8, Actual 32
-@W: CS263 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":284:20:284:20|Port-width mismatch for port DIN15. Formal has width 8, Actual 32
-@W: CS263 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":307:22:307:41|Port-width mismatch for port DIN5. Formal has width 8, Actual 32
-@W: CS263 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":313:22:313:41|Port-width mismatch for port DIN11. Formal has width 8, Actual 32
-@W: CS263 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":314:22:314:41|Port-width mismatch for port DIN12. Formal has width 8, Actual 32
-@W: CS263 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":315:22:315:41|Port-width mismatch for port DIN13. Formal has width 8, Actual 32
-@W: CS263 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":316:22:316:41|Port-width mismatch for port DIN14. Formal has width 8, Actual 32
-@W: CS263 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":317:22:317:41|Port-width mismatch for port DIN15. Formal has width 8, Actual 32
-@W: CG781 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":436:28:436:28|Undriven input DIN3 on instance GPI3_INST, tying to 0
-@W: CG781 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":437:28:437:28|Undriven input DIN4 on instance GPI3_INST, tying to 0
-@W: CG781 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":438:19:438:19|Undriven input DIN5 on instance GPI3_INST, tying to 0
-@W: CG781 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":439:19:439:19|Undriven input DIN6 on instance GPI3_INST, tying to 0
-@W: CG781 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":440:19:440:19|Undriven input DIN7 on instance GPI3_INST, tying to 0
-@W: CG781 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":441:19:441:19|Undriven input DIN8 on instance GPI3_INST, tying to 0
-@W: CG781 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":442:19:442:19|Undriven input DIN9 on instance GPI3_INST, tying to 0
-@W: CG781 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":443:19:443:19|Undriven input DIN10 on instance GPI3_INST, tying to 0
-@W: CG781 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":444:19:444:19|Undriven input DIN11 on instance GPI3_INST, tying to 0
-@W: CG781 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":445:19:445:19|Undriven input DIN12 on instance GPI3_INST, tying to 0
-@W: CG781 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":446:19:446:19|Undriven input DIN13 on instance GPI3_INST, tying to 0
-@W: CG781 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":447:19:447:19|Undriven input DIN14 on instance GPI3_INST, tying to 0
-@W: CG781 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":448:19:448:19|Undriven input DIN15 on instance GPI3_INST, tying to 0
-@W: CS263 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":642:24:642:76|Port-width mismatch for port DIN0. Formal has width 8, Actual 2
-@W: CS263 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":644:22:644:48|Port-width mismatch for port DIN2. Formal has width 8, Actual 32
-@W: CS263 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":645:22:645:48|Port-width mismatch for port DIN3. Formal has width 8, Actual 32
-@W: CS263 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":646:22:646:48|Port-width mismatch for port DIN4. Formal has width 8, Actual 32
-@W: CS263 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":647:22:647:48|Port-width mismatch for port DIN5. Formal has width 8, Actual 32
-@W: CS263 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":648:22:648:48|Port-width mismatch for port DIN6. Formal has width 8, Actual 32
-@W: CS263 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":649:22:649:48|Port-width mismatch for port DIN7. Formal has width 8, Actual 32
-@W: CS263 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":650:22:650:48|Port-width mismatch for port DIN8. Formal has width 8, Actual 32
-@W: CS263 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":651:22:651:48|Port-width mismatch for port DIN9. Formal has width 8, Actual 32
-@W: CS263 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":652:22:652:48|Port-width mismatch for port DIN10. Formal has width 8, Actual 32
-@W: CS263 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":653:22:653:48|Port-width mismatch for port DIN11. Formal has width 8, Actual 32
-@W: CS263 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":654:22:654:48|Port-width mismatch for port DIN12. Formal has width 8, Actual 32
-@W: CS263 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":655:22:655:48|Port-width mismatch for port DIN13. Formal has width 8, Actual 32
-@W: CS263 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":656:22:656:48|Port-width mismatch for port DIN14. Formal has width 8, Actual 32
-@W: CS263 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":657:22:657:48|Port-width mismatch for port DIN15. Formal has width 8, Actual 32
-@W: CS263 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":676:22:676:41|Port-width mismatch for port DIN1. Formal has width 8, Actual 32
-@W: CS263 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":677:22:677:41|Port-width mismatch for port DIN2. Formal has width 8, Actual 32
-@W: CS263 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":678:22:678:41|Port-width mismatch for port DIN3. Formal has width 8, Actual 32
-@W: CS263 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":679:22:679:41|Port-width mismatch for port DIN4. Formal has width 8, Actual 32
-@W: CS263 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":680:22:680:41|Port-width mismatch for port DIN5. Formal has width 8, Actual 32
-@W: CS263 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":681:22:681:41|Port-width mismatch for port DIN6. Formal has width 8, Actual 32
-@W: CS263 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":682:22:682:41|Port-width mismatch for port DIN7. Formal has width 8, Actual 32
-@W: CS263 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":683:22:683:41|Port-width mismatch for port DIN8. Formal has width 8, Actual 32
-@W: CS263 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":684:22:684:41|Port-width mismatch for port DIN9. Formal has width 8, Actual 32
-@W: CS263 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":685:22:685:41|Port-width mismatch for port DIN10. Formal has width 8, Actual 32
-@W: CS263 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":686:22:686:41|Port-width mismatch for port DIN11. Formal has width 8, Actual 32
-@W: CS263 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":687:22:687:41|Port-width mismatch for port DIN12. Formal has width 8, Actual 32
-@W: CS263 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":688:22:688:41|Port-width mismatch for port DIN13. Formal has width 8, Actual 32
-@W: CS263 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":689:22:689:41|Port-width mismatch for port DIN14. Formal has width 8, Actual 32
-@W: CS263 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":690:22:690:41|Port-width mismatch for port DIN15. Formal has width 8, Actual 32
-@W: CS263 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":710:15:710:33|Port-width mismatch for port DO0. Formal has width 8, Actual 1
-@W: CG781 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":827:36:827:36|Undriven input LED_REG2 on instance FLT_AMB_LED_INST2, tying to 0
-@W: CG781 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":828:36:828:36|Undriven input LED_REG3 on instance FLT_AMB_LED_INST2, tying to 0
-@W: CG781 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":829:36:829:36|Undriven input LED_REG4 on instance FLT_AMB_LED_INST2, tying to 0
-@W: CG781 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":830:36:830:36|Undriven input LED_REG5 on instance FLT_AMB_LED_INST2, tying to 0
-@W: CG781 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":831:36:831:36|Undriven input LED_REG6 on instance FLT_AMB_LED_INST2, tying to 0
-@W: CG781 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":832:36:832:36|Undriven input LED_REG7 on instance FLT_AMB_LED_INST2, tying to 0
-@W: CG781 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":939:36:939:36|Undriven input LED_REG2 on instance IFDET_BLUE_LED_INST2, tying to 0
-@W: CG781 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":940:36:940:36|Undriven input LED_REG3 on instance IFDET_BLUE_LED_INST2, tying to 0
-@W: CG781 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":941:36:941:36|Undriven input LED_REG4 on instance IFDET_BLUE_LED_INST2, tying to 0
-@W: CG781 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":942:36:942:36|Undriven input LED_REG5 on instance IFDET_BLUE_LED_INST2, tying to 0
-@W: CG781 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":943:36:943:36|Undriven input LED_REG6 on instance IFDET_BLUE_LED_INST2, tying to 0
-@W: CG781 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":944:36:944:36|Undriven input LED_REG7 on instance IFDET_BLUE_LED_INST2, tying to 0
-@W: CG360 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":111:113:111:119|No assignment to wire DIN_B_1
-
-@W: CG360 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":111:122:111:128|No assignment to wire DIN_C_1
-
-@W: CG360 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":111:131:111:137|No assignment to wire DIN_D_1
-
-@W: CG360 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":111:140:111:146|No assignment to wire DIN_E_1
-
-@W: CG360 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":111:149:111:155|No assignment to wire DIN_F_1
-
-@W: CG360 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":112:7:112:13|No assignment to wire WR_EN_1
-
-@W: CG360 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":119:113:119:119|No assignment to wire DIN_B_2
-
-@W: CG360 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":119:122:119:128|No assignment to wire DIN_C_2
-
-@W: CG360 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":119:131:119:137|No assignment to wire DIN_D_2
-
-@W: CG360 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":119:140:119:146|No assignment to wire DIN_E_2
-
-@W: CG360 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":119:149:119:155|No assignment to wire DIN_F_2
-
-@W: CG360 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":120:7:120:13|No assignment to wire WR_EN_2
-
-@W: CG360 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":123:14:123:21|No assignment to wire LED_REG0
-
-@W: CG360 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":124:14:124:21|No assignment to wire LED_REG1
-
-@W: CG360 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":125:14:125:21|No assignment to wire LED_REG2
-
-@W: CG360 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":126:14:126:21|No assignment to wire LED_REG3
-
-@W: CG360 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":127:14:127:21|No assignment to wire LED_REG4
-
-@W: CG360 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":128:14:128:21|No assignment to wire LED_REG5
-
-@W: CG360 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":129:14:129:21|No assignment to wire LED_REG6
-
-@W: CG360 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":130:14:130:21|No assignment to wire LED_REG7
-
-@W: CL190 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":1179:0:1179:5|Optimizing register bit CNT[25] to a constant 0
-@W: CL190 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":1179:0:1179:5|Optimizing register bit CNT[26] to a constant 0
-@W: CL190 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":1179:0:1179:5|Optimizing register bit CNT[27] to a constant 0
-@W: CL190 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":1179:0:1179:5|Optimizing register bit CNT[28] to a constant 0
-@W: CL190 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":1179:0:1179:5|Optimizing register bit CNT[29] to a constant 0
-@W: CL190 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":1179:0:1179:5|Optimizing register bit CNT[30] to a constant 0
-@W: CL190 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":1179:0:1179:5|Optimizing register bit CNT[31] to a constant 0
-@W: CL279 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":1179:0:1179:5|Pruning register bits 31 to 25 of CNT[31:0] 
-
-@W: CL156 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":111:113:111:119|*Input DIN_B_1[7:0] to expression [instance] has undriven bits that are tied to 0 -- simulation mismatch possible.
-@W: CL156 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":111:122:111:128|*Input DIN_C_1[7:0] to expression [instance] has undriven bits that are tied to 0 -- simulation mismatch possible.
-@W: CL156 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":111:131:111:137|*Input DIN_D_1[7:0] to expression [instance] has undriven bits that are tied to 0 -- simulation mismatch possible.
-@W: CL156 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":111:140:111:146|*Input DIN_E_1[7:0] to expression [instance] has undriven bits that are tied to 0 -- simulation mismatch possible.
-@W: CL156 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":111:149:111:155|*Input DIN_F_1[7:0] to expression [instance] has undriven bits that are tied to 0 -- simulation mismatch possible.
-@W: CL156 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":119:113:119:119|*Input DIN_B_2[7:0] to expression [instance] has undriven bits that are tied to 0 -- simulation mismatch possible.
-@W: CL156 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":119:122:119:128|*Input DIN_C_2[7:0] to expression [instance] has undriven bits that are tied to 0 -- simulation mismatch possible.
-@W: CL156 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":119:131:119:137|*Input DIN_D_2[7:0] to expression [instance] has undriven bits that are tied to 0 -- simulation mismatch possible.
-@W: CL156 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":119:140:119:146|*Input DIN_E_2[7:0] to expression [instance] has undriven bits that are tied to 0 -- simulation mismatch possible.
-@W: CL156 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":119:149:119:155|*Input DIN_F_2[7:0] to expression [instance] has undriven bits that are tied to 0 -- simulation mismatch possible.
-@W: CL190 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_SGPIO.v":44:0:44:5|Optimizing register bit CNT[7] to a constant 0
-@W: CL190 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_SGPIO.v":44:0:44:5|Optimizing register bit CNT[8] to a constant 0
-@W: CL190 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_SGPIO.v":44:0:44:5|Optimizing register bit CNT[9] to a constant 0
-@W: CL190 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_SGPIO.v":44:0:44:5|Optimizing register bit CNT[10] to a constant 0
-@W: CL190 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_SGPIO.v":44:0:44:5|Optimizing register bit CNT[11] to a constant 0
-@W: CL190 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_SGPIO.v":44:0:44:5|Optimizing register bit CNT[12] to a constant 0
-@W: CL190 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_SGPIO.v":44:0:44:5|Optimizing register bit CNT[13] to a constant 0
-@W: CL190 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_SGPIO.v":44:0:44:5|Optimizing register bit CNT[14] to a constant 0
-@W: CL190 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_SGPIO.v":44:0:44:5|Optimizing register bit CNT[15] to a constant 0
-@W: CL190 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_SGPIO.v":44:0:44:5|Optimizing register bit CNT[16] to a constant 0
-@W: CL190 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_SGPIO.v":44:0:44:5|Optimizing register bit CNT[17] to a constant 0
-@W: CL190 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_SGPIO.v":44:0:44:5|Optimizing register bit CNT[18] to a constant 0
-@W: CL190 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_SGPIO.v":44:0:44:5|Optimizing register bit CNT[19] to a constant 0
-@W: CL190 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_SGPIO.v":44:0:44:5|Optimizing register bit CNT[20] to a constant 0
-@W: CL190 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_SGPIO.v":44:0:44:5|Optimizing register bit CNT[21] to a constant 0
-@W: CL190 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_SGPIO.v":44:0:44:5|Optimizing register bit CNT[22] to a constant 0
-@W: CL190 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_SGPIO.v":44:0:44:5|Optimizing register bit CNT[23] to a constant 0
-@W: CL190 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_SGPIO.v":44:0:44:5|Optimizing register bit CNT[24] to a constant 0
-@W: CL190 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_SGPIO.v":44:0:44:5|Optimizing register bit CNT[25] to a constant 0
-@W: CL190 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_SGPIO.v":44:0:44:5|Optimizing register bit CNT[26] to a constant 0
-@W: CL190 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_SGPIO.v":44:0:44:5|Optimizing register bit CNT[27] to a constant 0
-@W: CL190 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_SGPIO.v":44:0:44:5|Optimizing register bit CNT[28] to a constant 0
-@W: CL190 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_SGPIO.v":44:0:44:5|Optimizing register bit CNT[29] to a constant 0
-@W: CL190 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_SGPIO.v":44:0:44:5|Optimizing register bit CNT[30] to a constant 0
-@W: CL190 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_SGPIO.v":44:0:44:5|Optimizing register bit CNT[31] to a constant 0
-@W: CL190 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_SGPIO.v":81:0:81:5|Optimizing register bit HDD_CNT[6] to a constant 0
-@W: CL190 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_SGPIO.v":81:0:81:5|Optimizing register bit HDD_CNT[7] to a constant 0
-@W: CL279 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_SGPIO.v":81:0:81:5|Pruning register bits 7 to 6 of HDD_CNT[7:0] 
-
-@W: CL279 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_SGPIO.v":44:0:44:5|Pruning register bits 31 to 7 of CNT[31:0] 
-
-@N: CL201 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_SGPIO.v":81:0:81:5|Trying to extract state machine for register STATE
+@N: CL201 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_SGPIO.v":81:0:81:5|Trying to extract state machine for register STATE
 Extracted state machine for register STATE
 State machine has 4 reachable states with original encodings of:
    00000001
    00000010
    00000100
    00001000
-@W: CL159 :"F:\project\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":13:24:13:33|Input DRV3_PWROK is unused
-@W: CL159 :"F:\project\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":13:35:13:44|Input DRV2_PWROK is unused
-@W: CL159 :"F:\project\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":13:46:13:55|Input DRV1_PWROK is unused
-@W: CL159 :"F:\project\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":13:57:13:66|Input DRV0_PWROK is unused
-@W: CL159 :"F:\project\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":14:24:14:33|Input DRV7_PWROK is unused
-@W: CL159 :"F:\project\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":14:35:14:44|Input DRV6_PWROK is unused
-@W: CL159 :"F:\project\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":14:46:14:55|Input DRV5_PWROK is unused
-@W: CL159 :"F:\project\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":14:57:14:66|Input DRV4_PWROK is unused
-@W: CL159 :"F:\project\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":15:24:15:34|Input DRV11_PWROK is unused
-@W: CL159 :"F:\project\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":15:36:15:46|Input DRV10_PWROK is unused
-@W: CL159 :"F:\project\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":15:48:15:57|Input DRV9_PWROK is unused
-@W: CL159 :"F:\project\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":15:59:15:68|Input DRV8_PWROK is unused
-@W: CL159 :"F:\project\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":16:24:16:34|Input DRV15_PWROK is unused
-@W: CL159 :"F:\project\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":16:36:16:46|Input DRV14_PWROK is unused
-@W: CL159 :"F:\project\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":16:48:16:58|Input DRV13_PWROK is unused
-@W: CL159 :"F:\project\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":16:60:16:70|Input DRV12_PWROK is unused
-@W: CL159 :"F:\project\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":17:24:17:34|Input DRV19_PWROK is unused
-@W: CL159 :"F:\project\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":17:36:17:46|Input DRV18_PWROK is unused
-@W: CL159 :"F:\project\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":17:48:17:58|Input DRV17_PWROK is unused
-@W: CL159 :"F:\project\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":17:60:17:70|Input DRV16_PWROK is unused
-@W: CL159 :"F:\project\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":18:24:18:34|Input DRV23_PWROK is unused
-@W: CL159 :"F:\project\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":18:36:18:46|Input DRV22_PWROK is unused
-@W: CL159 :"F:\project\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":18:48:18:58|Input DRV21_PWROK is unused
-@W: CL159 :"F:\project\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":18:60:18:70|Input DRV20_PWROK is unused
-@W: CL159 :"F:\project\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":34:13:34:18|Input SYSCLK is unused
-@W: CL159 :"F:\project\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":35:13:35:19|Input RESET_N is unused
-@W: CL190 :"F:\project\wolf\Baseboard\BLD\..\SRC\PRSNT_LED_CTRL.v":48:0:48:5|Optimizing register bit CNT[22] to a constant 0
-@W: CL190 :"F:\project\wolf\Baseboard\BLD\..\SRC\PRSNT_LED_CTRL.v":48:0:48:5|Optimizing register bit CNT[23] to a constant 0
-@W: CL190 :"F:\project\wolf\Baseboard\BLD\..\SRC\PRSNT_LED_CTRL.v":48:0:48:5|Optimizing register bit CNT[24] to a constant 0
-@W: CL190 :"F:\project\wolf\Baseboard\BLD\..\SRC\PRSNT_LED_CTRL.v":48:0:48:5|Optimizing register bit CNT[25] to a constant 0
-@W: CL190 :"F:\project\wolf\Baseboard\BLD\..\SRC\PRSNT_LED_CTRL.v":48:0:48:5|Optimizing register bit CNT[26] to a constant 0
-@W: CL190 :"F:\project\wolf\Baseboard\BLD\..\SRC\PRSNT_LED_CTRL.v":48:0:48:5|Optimizing register bit CNT[27] to a constant 0
-@W: CL190 :"F:\project\wolf\Baseboard\BLD\..\SRC\PRSNT_LED_CTRL.v":48:0:48:5|Optimizing register bit CNT[28] to a constant 0
-@W: CL190 :"F:\project\wolf\Baseboard\BLD\..\SRC\PRSNT_LED_CTRL.v":48:0:48:5|Optimizing register bit CNT[29] to a constant 0
-@W: CL190 :"F:\project\wolf\Baseboard\BLD\..\SRC\PRSNT_LED_CTRL.v":48:0:48:5|Optimizing register bit CNT[30] to a constant 0
-@W: CL190 :"F:\project\wolf\Baseboard\BLD\..\SRC\PRSNT_LED_CTRL.v":48:0:48:5|Optimizing register bit CNT[31] to a constant 0
-@W: CL279 :"F:\project\wolf\Baseboard\BLD\..\SRC\PRSNT_LED_CTRL.v":48:0:48:5|Pruning register bits 31 to 22 of CNT[31:0] 
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":41:0:41:5|Optimizing register bit CNT0[22] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":41:0:41:5|Optimizing register bit CNT0[23] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":41:0:41:5|Optimizing register bit CNT0[24] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":41:0:41:5|Optimizing register bit CNT0[25] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":41:0:41:5|Optimizing register bit CNT0[26] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":41:0:41:5|Optimizing register bit CNT0[27] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":41:0:41:5|Optimizing register bit CNT0[28] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":41:0:41:5|Optimizing register bit CNT0[29] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":41:0:41:5|Optimizing register bit CNT0[30] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":41:0:41:5|Optimizing register bit CNT0[31] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":58:0:58:5|Optimizing register bit CNT1[22] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":58:0:58:5|Optimizing register bit CNT1[23] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":58:0:58:5|Optimizing register bit CNT1[24] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":58:0:58:5|Optimizing register bit CNT1[25] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":58:0:58:5|Optimizing register bit CNT1[26] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":58:0:58:5|Optimizing register bit CNT1[27] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":58:0:58:5|Optimizing register bit CNT1[28] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":58:0:58:5|Optimizing register bit CNT1[29] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":58:0:58:5|Optimizing register bit CNT1[30] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":58:0:58:5|Optimizing register bit CNT1[31] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":75:0:75:5|Optimizing register bit CNT2[22] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":75:0:75:5|Optimizing register bit CNT2[23] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":75:0:75:5|Optimizing register bit CNT2[24] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":75:0:75:5|Optimizing register bit CNT2[25] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":75:0:75:5|Optimizing register bit CNT2[26] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":75:0:75:5|Optimizing register bit CNT2[27] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":75:0:75:5|Optimizing register bit CNT2[28] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":75:0:75:5|Optimizing register bit CNT2[29] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":75:0:75:5|Optimizing register bit CNT2[30] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":75:0:75:5|Optimizing register bit CNT2[31] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":92:0:92:5|Optimizing register bit CNT3[22] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":92:0:92:5|Optimizing register bit CNT3[23] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":92:0:92:5|Optimizing register bit CNT3[24] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":92:0:92:5|Optimizing register bit CNT3[25] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":92:0:92:5|Optimizing register bit CNT3[26] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":92:0:92:5|Optimizing register bit CNT3[27] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":92:0:92:5|Optimizing register bit CNT3[28] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":92:0:92:5|Optimizing register bit CNT3[29] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":92:0:92:5|Optimizing register bit CNT3[30] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":92:0:92:5|Optimizing register bit CNT3[31] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":109:0:109:5|Optimizing register bit CNT4[22] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":109:0:109:5|Optimizing register bit CNT4[23] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":109:0:109:5|Optimizing register bit CNT4[24] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":109:0:109:5|Optimizing register bit CNT4[25] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":109:0:109:5|Optimizing register bit CNT4[26] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":109:0:109:5|Optimizing register bit CNT4[27] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":109:0:109:5|Optimizing register bit CNT4[28] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":109:0:109:5|Optimizing register bit CNT4[29] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":109:0:109:5|Optimizing register bit CNT4[30] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":109:0:109:5|Optimizing register bit CNT4[31] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":126:0:126:5|Optimizing register bit CNT5[22] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":126:0:126:5|Optimizing register bit CNT5[23] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":126:0:126:5|Optimizing register bit CNT5[24] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":126:0:126:5|Optimizing register bit CNT5[25] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":126:0:126:5|Optimizing register bit CNT5[26] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":126:0:126:5|Optimizing register bit CNT5[27] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":126:0:126:5|Optimizing register bit CNT5[28] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":126:0:126:5|Optimizing register bit CNT5[29] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":126:0:126:5|Optimizing register bit CNT5[30] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":126:0:126:5|Optimizing register bit CNT5[31] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":143:0:143:5|Optimizing register bit CNT6[22] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":143:0:143:5|Optimizing register bit CNT6[23] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":143:0:143:5|Optimizing register bit CNT6[24] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":143:0:143:5|Optimizing register bit CNT6[25] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":143:0:143:5|Optimizing register bit CNT6[26] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":143:0:143:5|Optimizing register bit CNT6[27] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":143:0:143:5|Optimizing register bit CNT6[28] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":143:0:143:5|Optimizing register bit CNT6[29] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":143:0:143:5|Optimizing register bit CNT6[30] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":143:0:143:5|Optimizing register bit CNT6[31] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":160:0:160:5|Optimizing register bit CNT7[22] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":160:0:160:5|Optimizing register bit CNT7[23] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":160:0:160:5|Optimizing register bit CNT7[24] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":160:0:160:5|Optimizing register bit CNT7[25] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":160:0:160:5|Optimizing register bit CNT7[26] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":160:0:160:5|Optimizing register bit CNT7[27] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":160:0:160:5|Optimizing register bit CNT7[28] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":160:0:160:5|Optimizing register bit CNT7[29] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":160:0:160:5|Optimizing register bit CNT7[30] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":160:0:160:5|Optimizing register bit CNT7[31] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":177:0:177:5|Optimizing register bit CNT8[22] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":177:0:177:5|Optimizing register bit CNT8[23] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":177:0:177:5|Optimizing register bit CNT8[24] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":177:0:177:5|Optimizing register bit CNT8[25] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":177:0:177:5|Optimizing register bit CNT8[26] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":177:0:177:5|Optimizing register bit CNT8[27] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":177:0:177:5|Optimizing register bit CNT8[28] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":177:0:177:5|Optimizing register bit CNT8[29] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":177:0:177:5|Optimizing register bit CNT8[30] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":177:0:177:5|Optimizing register bit CNT8[31] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":194:0:194:5|Optimizing register bit CNT9[22] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":194:0:194:5|Optimizing register bit CNT9[23] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":194:0:194:5|Optimizing register bit CNT9[24] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":194:0:194:5|Optimizing register bit CNT9[25] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":194:0:194:5|Optimizing register bit CNT9[26] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":194:0:194:5|Optimizing register bit CNT9[27] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":194:0:194:5|Optimizing register bit CNT9[28] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":194:0:194:5|Optimizing register bit CNT9[29] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":194:0:194:5|Optimizing register bit CNT9[30] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":194:0:194:5|Optimizing register bit CNT9[31] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":211:0:211:5|Optimizing register bit CNT10[22] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":211:0:211:5|Optimizing register bit CNT10[23] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":211:0:211:5|Optimizing register bit CNT10[24] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":211:0:211:5|Optimizing register bit CNT10[25] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":211:0:211:5|Optimizing register bit CNT10[26] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":211:0:211:5|Optimizing register bit CNT10[27] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":211:0:211:5|Optimizing register bit CNT10[28] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":211:0:211:5|Optimizing register bit CNT10[29] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":211:0:211:5|Optimizing register bit CNT10[30] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":211:0:211:5|Optimizing register bit CNT10[31] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":228:0:228:5|Optimizing register bit CNT11[22] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":228:0:228:5|Optimizing register bit CNT11[23] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":228:0:228:5|Optimizing register bit CNT11[24] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":228:0:228:5|Optimizing register bit CNT11[25] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":228:0:228:5|Optimizing register bit CNT11[26] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":228:0:228:5|Optimizing register bit CNT11[27] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":228:0:228:5|Optimizing register bit CNT11[28] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":228:0:228:5|Optimizing register bit CNT11[29] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":228:0:228:5|Optimizing register bit CNT11[30] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":228:0:228:5|Optimizing register bit CNT11[31] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":245:0:245:5|Optimizing register bit CNT12[22] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":245:0:245:5|Optimizing register bit CNT12[23] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":245:0:245:5|Optimizing register bit CNT12[24] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":245:0:245:5|Optimizing register bit CNT12[25] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":245:0:245:5|Optimizing register bit CNT12[26] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":245:0:245:5|Optimizing register bit CNT12[27] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":245:0:245:5|Optimizing register bit CNT12[28] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":245:0:245:5|Optimizing register bit CNT12[29] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":245:0:245:5|Optimizing register bit CNT12[30] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":245:0:245:5|Optimizing register bit CNT12[31] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":262:0:262:5|Optimizing register bit CNT13[22] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":262:0:262:5|Optimizing register bit CNT13[23] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":262:0:262:5|Optimizing register bit CNT13[24] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":262:0:262:5|Optimizing register bit CNT13[25] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":262:0:262:5|Optimizing register bit CNT13[26] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":262:0:262:5|Optimizing register bit CNT13[27] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":262:0:262:5|Optimizing register bit CNT13[28] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":262:0:262:5|Optimizing register bit CNT13[29] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":262:0:262:5|Optimizing register bit CNT13[30] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":262:0:262:5|Optimizing register bit CNT13[31] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":279:0:279:5|Optimizing register bit CNT14[22] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":279:0:279:5|Optimizing register bit CNT14[23] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":279:0:279:5|Optimizing register bit CNT14[24] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":279:0:279:5|Optimizing register bit CNT14[25] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":279:0:279:5|Optimizing register bit CNT14[26] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":279:0:279:5|Optimizing register bit CNT14[27] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":279:0:279:5|Optimizing register bit CNT14[28] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":279:0:279:5|Optimizing register bit CNT14[29] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":279:0:279:5|Optimizing register bit CNT14[30] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":279:0:279:5|Optimizing register bit CNT14[31] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":296:0:296:5|Optimizing register bit CNT15[22] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":296:0:296:5|Optimizing register bit CNT15[23] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":296:0:296:5|Optimizing register bit CNT15[24] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":296:0:296:5|Optimizing register bit CNT15[25] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":296:0:296:5|Optimizing register bit CNT15[26] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":296:0:296:5|Optimizing register bit CNT15[27] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":296:0:296:5|Optimizing register bit CNT15[28] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":296:0:296:5|Optimizing register bit CNT15[29] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":296:0:296:5|Optimizing register bit CNT15[30] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":296:0:296:5|Optimizing register bit CNT15[31] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":313:0:313:5|Optimizing register bit CNT16[22] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":313:0:313:5|Optimizing register bit CNT16[23] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":313:0:313:5|Optimizing register bit CNT16[24] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":313:0:313:5|Optimizing register bit CNT16[25] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":313:0:313:5|Optimizing register bit CNT16[26] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":313:0:313:5|Optimizing register bit CNT16[27] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":313:0:313:5|Optimizing register bit CNT16[28] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":313:0:313:5|Optimizing register bit CNT16[29] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":313:0:313:5|Optimizing register bit CNT16[30] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":313:0:313:5|Optimizing register bit CNT16[31] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":330:0:330:5|Optimizing register bit CNT17[22] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":330:0:330:5|Optimizing register bit CNT17[23] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":330:0:330:5|Optimizing register bit CNT17[24] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":330:0:330:5|Optimizing register bit CNT17[25] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":330:0:330:5|Optimizing register bit CNT17[26] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":330:0:330:5|Optimizing register bit CNT17[27] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":330:0:330:5|Optimizing register bit CNT17[28] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":330:0:330:5|Optimizing register bit CNT17[29] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":330:0:330:5|Optimizing register bit CNT17[30] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":330:0:330:5|Optimizing register bit CNT17[31] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":347:0:347:5|Optimizing register bit CNT18[22] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":347:0:347:5|Optimizing register bit CNT18[23] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":347:0:347:5|Optimizing register bit CNT18[24] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":347:0:347:5|Optimizing register bit CNT18[25] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":347:0:347:5|Optimizing register bit CNT18[26] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":347:0:347:5|Optimizing register bit CNT18[27] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":347:0:347:5|Optimizing register bit CNT18[28] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":347:0:347:5|Optimizing register bit CNT18[29] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":347:0:347:5|Optimizing register bit CNT18[30] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":347:0:347:5|Optimizing register bit CNT18[31] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":364:0:364:5|Optimizing register bit CNT19[22] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":364:0:364:5|Optimizing register bit CNT19[23] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":364:0:364:5|Optimizing register bit CNT19[24] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":364:0:364:5|Optimizing register bit CNT19[25] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":364:0:364:5|Optimizing register bit CNT19[26] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":364:0:364:5|Optimizing register bit CNT19[27] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":364:0:364:5|Optimizing register bit CNT19[28] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":364:0:364:5|Optimizing register bit CNT19[29] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":364:0:364:5|Optimizing register bit CNT19[30] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":364:0:364:5|Optimizing register bit CNT19[31] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":381:0:381:5|Optimizing register bit CNT20[22] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":381:0:381:5|Optimizing register bit CNT20[23] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":381:0:381:5|Optimizing register bit CNT20[24] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":381:0:381:5|Optimizing register bit CNT20[25] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":381:0:381:5|Optimizing register bit CNT20[26] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":381:0:381:5|Optimizing register bit CNT20[27] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":381:0:381:5|Optimizing register bit CNT20[28] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":381:0:381:5|Optimizing register bit CNT20[29] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":381:0:381:5|Optimizing register bit CNT20[30] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":381:0:381:5|Optimizing register bit CNT20[31] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":398:0:398:5|Optimizing register bit CNT21[22] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":398:0:398:5|Optimizing register bit CNT21[23] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":398:0:398:5|Optimizing register bit CNT21[24] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":398:0:398:5|Optimizing register bit CNT21[25] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":398:0:398:5|Optimizing register bit CNT21[26] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":398:0:398:5|Optimizing register bit CNT21[27] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":398:0:398:5|Optimizing register bit CNT21[28] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":398:0:398:5|Optimizing register bit CNT21[29] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":398:0:398:5|Optimizing register bit CNT21[30] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":398:0:398:5|Optimizing register bit CNT21[31] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":415:0:415:5|Optimizing register bit CNT22[22] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":415:0:415:5|Optimizing register bit CNT22[23] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":415:0:415:5|Optimizing register bit CNT22[24] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":415:0:415:5|Optimizing register bit CNT22[25] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":415:0:415:5|Optimizing register bit CNT22[26] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":415:0:415:5|Optimizing register bit CNT22[27] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":415:0:415:5|Optimizing register bit CNT22[28] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":415:0:415:5|Optimizing register bit CNT22[29] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":415:0:415:5|Optimizing register bit CNT22[30] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":415:0:415:5|Optimizing register bit CNT22[31] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":432:0:432:5|Optimizing register bit CNT23[22] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":432:0:432:5|Optimizing register bit CNT23[23] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":432:0:432:5|Optimizing register bit CNT23[24] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":432:0:432:5|Optimizing register bit CNT23[25] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":432:0:432:5|Optimizing register bit CNT23[26] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":432:0:432:5|Optimizing register bit CNT23[27] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":432:0:432:5|Optimizing register bit CNT23[28] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":432:0:432:5|Optimizing register bit CNT23[29] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":432:0:432:5|Optimizing register bit CNT23[30] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":432:0:432:5|Optimizing register bit CNT23[31] to a constant 0
+@W: CL279 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":432:0:432:5|Pruning register bits 31 to 22 of CNT23[31:0] 
 
-@W: CL159 :"F:\project\wolf\Baseboard\BLD\..\SRC\LED.v":11:19:11:24|Input SYSCLK is unused
-@W: CL159 :"F:\project\wolf\Baseboard\BLD\..\SRC\LED.v":12:19:12:25|Input RESET_N is unused
-@W: CL190 :"F:\project\wolf\Baseboard\BLD\..\SRC\LED_CNT.v":74:0:74:5|Optimizing register bit CNT_07S[25] to a constant 0
-@W: CL190 :"F:\project\wolf\Baseboard\BLD\..\SRC\LED_CNT.v":74:0:74:5|Optimizing register bit CNT_07S[26] to a constant 0
-@W: CL279 :"F:\project\wolf\Baseboard\BLD\..\SRC\LED_CNT.v":74:0:74:5|Pruning register bits 26 to 25 of CNT_07S[26:0] 
+@W: CL279 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":415:0:415:5|Pruning register bits 31 to 22 of CNT22[31:0] 
 
-@N: CL135 :"F:\project\wolf\Baseboard\BLD\..\SRC\I2C.v":178:0:178:5|Found seqShift NEXT_STATE_D2, depth=3, width=1
-@N: CL201 :"F:\project\wolf\Baseboard\BLD\..\SRC\I2C.v":357:0:357:5|Trying to extract state machine for register STATE
+@W: CL279 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":398:0:398:5|Pruning register bits 31 to 22 of CNT21[31:0] 
+
+@W: CL279 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":381:0:381:5|Pruning register bits 31 to 22 of CNT20[31:0] 
+
+@W: CL279 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":364:0:364:5|Pruning register bits 31 to 22 of CNT19[31:0] 
+
+@W: CL279 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":347:0:347:5|Pruning register bits 31 to 22 of CNT18[31:0] 
+
+@W: CL279 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":330:0:330:5|Pruning register bits 31 to 22 of CNT17[31:0] 
+
+@W: CL279 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":313:0:313:5|Pruning register bits 31 to 22 of CNT16[31:0] 
+
+@W: CL279 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":296:0:296:5|Pruning register bits 31 to 22 of CNT15[31:0] 
+
+@W: CL279 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":279:0:279:5|Pruning register bits 31 to 22 of CNT14[31:0] 
+
+@W: CL279 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":262:0:262:5|Pruning register bits 31 to 22 of CNT13[31:0] 
+
+@W: CL279 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":245:0:245:5|Pruning register bits 31 to 22 of CNT12[31:0] 
+
+@W: CL279 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":228:0:228:5|Pruning register bits 31 to 22 of CNT11[31:0] 
+
+@W: CL279 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":211:0:211:5|Pruning register bits 31 to 22 of CNT10[31:0] 
+
+@W: CL279 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":194:0:194:5|Pruning register bits 31 to 22 of CNT9[31:0] 
+
+@W: CL279 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":177:0:177:5|Pruning register bits 31 to 22 of CNT8[31:0] 
+
+@W: CL279 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":160:0:160:5|Pruning register bits 31 to 22 of CNT7[31:0] 
+
+@W: CL279 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":143:0:143:5|Pruning register bits 31 to 22 of CNT6[31:0] 
+
+@W: CL279 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":126:0:126:5|Pruning register bits 31 to 22 of CNT5[31:0] 
+
+@W: CL279 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":109:0:109:5|Pruning register bits 31 to 22 of CNT4[31:0] 
+
+@W: CL279 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":92:0:92:5|Pruning register bits 31 to 22 of CNT3[31:0] 
+
+@W: CL279 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":75:0:75:5|Pruning register bits 31 to 22 of CNT2[31:0] 
+
+@W: CL279 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":58:0:58:5|Pruning register bits 31 to 22 of CNT1[31:0] 
+
+@W: CL279 :"E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v":41:0:41:5|Pruning register bits 31 to 22 of CNT0[31:0] 
+
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PRSNT_LED_CTRL.v":48:0:48:5|Optimizing register bit CNT[22] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PRSNT_LED_CTRL.v":48:0:48:5|Optimizing register bit CNT[23] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PRSNT_LED_CTRL.v":48:0:48:5|Optimizing register bit CNT[24] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PRSNT_LED_CTRL.v":48:0:48:5|Optimizing register bit CNT[25] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PRSNT_LED_CTRL.v":48:0:48:5|Optimizing register bit CNT[26] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PRSNT_LED_CTRL.v":48:0:48:5|Optimizing register bit CNT[27] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PRSNT_LED_CTRL.v":48:0:48:5|Optimizing register bit CNT[28] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PRSNT_LED_CTRL.v":48:0:48:5|Optimizing register bit CNT[29] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PRSNT_LED_CTRL.v":48:0:48:5|Optimizing register bit CNT[30] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\PRSNT_LED_CTRL.v":48:0:48:5|Optimizing register bit CNT[31] to a constant 0
+@W: CL279 :"E:\work\wolf\Baseboard\BLD\..\SRC\PRSNT_LED_CTRL.v":48:0:48:5|Pruning register bits 31 to 22 of CNT[31:0] 
+
+@W: CL159 :"E:\work\wolf\Baseboard\BLD\..\SRC\LED.v":11:19:11:24|Input SYSCLK is unused
+@W: CL159 :"E:\work\wolf\Baseboard\BLD\..\SRC\LED.v":12:19:12:25|Input RESET_N is unused
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\LED_CNT.v":74:0:74:5|Optimizing register bit CNT_07S[25] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\LED_CNT.v":74:0:74:5|Optimizing register bit CNT_07S[26] to a constant 0
+@W: CL279 :"E:\work\wolf\Baseboard\BLD\..\SRC\LED_CNT.v":74:0:74:5|Pruning register bits 26 to 25 of CNT_07S[26:0] 
+
+@N: CL135 :"E:\work\wolf\Baseboard\BLD\..\SRC\I2C.v":178:0:178:5|Found seqShift NEXT_STATE_D2, depth=3, width=1
+@N: CL201 :"E:\work\wolf\Baseboard\BLD\..\SRC\I2C.v":357:0:357:5|Trying to extract state machine for register STATE
 Extracted state machine for register STATE
 State machine has 5 reachable states with original encodings of:
    00000001
@@ -471,10 +676,10 @@ State machine has 5 reachable states with original encodings of:
    00100000
 @END
 
-At c_ver Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 78MB peak: 80MB)
+At c_ver Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 79MB peak: 83MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Sun Nov 09 21:27:22 2014
+# Wed Feb 11 22:55:35 2015
 
 ###########################################################]
 Pre-mapping Report
@@ -485,24 +690,24 @@ Product Version I-2013.09L-SP1-1
 
 Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
 
-@L: F:\project\wolf\Baseboard\BLD\Baseboard\Baseboard_Baseboard_scck.rpt 
-Printing clock  summary report in "F:\project\wolf\Baseboard\BLD\Baseboard\Baseboard_Baseboard_scck.rpt" file 
+@L: E:\work\wolf\Baseboard\BLD\Baseboard\Baseboard_Baseboard_scck.rpt 
+Printing clock  summary report in "E:\work\wolf\Baseboard\BLD\Baseboard\Baseboard_Baseboard_scck.rpt" file 
 @N: MF248 |Running in 64-bit mode.
 @N: MF666 |Clock conversion enabled 
 
-Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 103MB peak: 104MB)
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 103MB peak: 105MB)
 
 
-Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 103MB peak: 104MB)
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 103MB peak: 105MB)
 
 
-Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 113MB peak: 114MB)
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 114MB peak: 115MB)
 
 
-Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 114MB peak: 116MB)
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 115MB peak: 117MB)
 
-@W: MT462 :"f:\project\wolf\baseboard\bld\..\src\i2c.v":122:43:122:48|Net I2C_INS_2.un1_CNT8 appears to be an unidentified clock source. Assuming default frequency. 
-@W: MT462 :"f:\project\wolf\baseboard\bld\..\src\i2c.v":122:43:122:48|Net I2C_INS_1.un1_CNT8 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"e:\work\wolf\baseboard\bld\..\src\i2c.v":122:43:122:48|Net I2C_INS_2.un1_CNT8 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"e:\work\wolf\baseboard\bld\..\src\i2c.v":122:43:122:48|Net I2C_INS_1.un1_CNT8 appears to be an unidentified clock source. Assuming default frequency. 
 syn_allowed_resources : blockrams=26  set on top level netlist BB_TOP
 
 
@@ -516,15 +721,15 @@ BB_TOP|SYSCLK     1.0 MHz       1000.000      inferred     Inferred_clkgroup_0
 System            1.0 MHz       1000.000      system       system_clkgroup    
 ==============================================================================
 
-@W: MT531 :"f:\project\wolf\baseboard\bld\..\src\i2c.v":122:43:122:82|Found signal identified as System clock which controls 16 sequential elements including I2C_INS_1.CHECKSUM_OUT[7:0].  Using this clock, which has no specified timing constraint, can prevent conversion of gated or generated clocks and can adversely impact design performance. 
-@W: MT529 :"f:\project\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Found inferred clock BB_TOP|SYSCLK which controls 1470 sequential elements including GPI0_INST.DOUT2[7:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+@W: MT531 :"e:\work\wolf\baseboard\bld\..\src\i2c.v":122:43:122:82|Found signal identified as System clock which controls 16 sequential elements including I2C_INS_1.CHECKSUM_OUT[7:0].  Using this clock, which has no specified timing constraint, can prevent conversion of gated or generated clocks and can adversely impact design performance. 
+@W: MT529 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Found inferred clock BB_TOP|SYSCLK which controls 2022 sequential elements including GPI0_INST.DOUT2[7:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
 
 Pre-mapping successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 82MB peak: 149MB)
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 83MB peak: 150MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Sun Nov 09 21:27:25 2014
+# Wed Feb 11 22:55:38 2015
 
 ###########################################################]
 Map & Optimize Report
@@ -551,60 +756,84 @@ Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h
 
 
 
-Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 142MB peak: 144MB)
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 143MB peak: 145MB)
 
 
 Available hyper_sources - for debug and ip models
 	None Found
 
-@W: MT462 :"f:\project\wolf\baseboard\bld\..\src\i2c.v":122:43:122:48|Net I2C_INS_2.un1_CNT8 appears to be an unidentified clock source. Assuming default frequency. 
-@W: MT462 :"f:\project\wolf\baseboard\bld\..\src\i2c.v":122:43:122:48|Net I2C_INS_1.un1_CNT8 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"e:\work\wolf\baseboard\bld\..\src\i2c.v":122:43:122:48|Net I2C_INS_2.un1_CNT8 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"e:\work\wolf\baseboard\bld\..\src\i2c.v":122:43:122:48|Net I2C_INS_1.un1_CNT8 appears to be an unidentified clock source. Assuming default frequency. 
 
-Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 145MB peak: 148MB)
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 146MB peak: 149MB)
 
-@W: BN132 :"f:\project\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI9_INST.DOUT1[7],  because it is equivalent to instance GPI9_INST.DOUT1[6]
-@W: BN132 :"f:\project\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI9_INST.DOUT1[6],  because it is equivalent to instance GPI9_INST.DOUT1[5]
-@W: BN132 :"f:\project\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI9_INST.DOUT1[5],  because it is equivalent to instance GPI9_INST.DOUT1[4]
-@W: BN132 :"f:\project\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI9_INST.DOUT1[4],  because it is equivalent to instance GPI9_INST.DOUT1[3]
-@W: BN132 :"f:\project\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI9_INST.DOUT1[3],  because it is equivalent to instance GPI9_INST.DOUT1[2]
-@W: BN132 :"f:\project\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI9_INST.DOUT1[2],  because it is equivalent to instance GPI9_INST.DOUT1[1]
-@W: BN132 :"f:\project\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing instance GPI9_INST.DOUT2[7],  because it is equivalent to instance GPI9_INST.DOUT2[6]
-@W: BN132 :"f:\project\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing instance GPI9_INST.DOUT2[6],  because it is equivalent to instance GPI9_INST.DOUT2[5]
-@W: BN132 :"f:\project\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing instance GPI9_INST.DOUT2[5],  because it is equivalent to instance GPI9_INST.DOUT2[4]
-@W: BN132 :"f:\project\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing instance GPI9_INST.DOUT2[4],  because it is equivalent to instance GPI9_INST.DOUT2[3]
-@W: BN132 :"f:\project\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing instance GPI9_INST.DOUT2[3],  because it is equivalent to instance GPI9_INST.DOUT2[2]
-@W: BN132 :"f:\project\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing instance GPI9_INST.DOUT2[2],  because it is equivalent to instance GPI9_INST.DOUT2[1]
-@W: BN132 :"f:\project\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing instance GPI0_INST.DOUT2[4],  because it is equivalent to instance GPI0_INST.DOUT2[2]
-@W: BN132 :"f:\project\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing instance GPI0_INST.DOUT2[7],  because it is equivalent to instance GPI0_INST.DOUT2[6]
-@W: BN132 :"f:\project\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing instance GPI0_INST.DOUT2[6],  because it is equivalent to instance GPI0_INST.DOUT2[3]
-@W: BN132 :"f:\project\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI8_INST.DOUT1[7],  because it is equivalent to instance GPI8_INST.DOUT1[6]
-@W: BN132 :"f:\project\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI8_INST.DOUT1[6],  because it is equivalent to instance GPI8_INST.DOUT1[5]
-@W: BN132 :"f:\project\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI8_INST.DOUT1[5],  because it is equivalent to instance GPI8_INST.DOUT1[4]
-@W: BN132 :"f:\project\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI8_INST.DOUT1[4],  because it is equivalent to instance GPI8_INST.DOUT1[3]
-@W: BN132 :"f:\project\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI8_INST.DOUT1[3],  because it is equivalent to instance GPI8_INST.DOUT1[2]
-@W: BN132 :"f:\project\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing instance GPI8_INST.DOUT2[7],  because it is equivalent to instance GPI8_INST.DOUT2[6]
-@W: BN132 :"f:\project\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing instance GPI8_INST.DOUT2[6],  because it is equivalent to instance GPI8_INST.DOUT2[5]
-@W: BN132 :"f:\project\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing instance GPI8_INST.DOUT2[5],  because it is equivalent to instance GPI8_INST.DOUT2[4]
-@W: BN132 :"f:\project\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing instance GPI8_INST.DOUT2[4],  because it is equivalent to instance GPI8_INST.DOUT2[3]
-@W: BN132 :"f:\project\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing instance GPI8_INST.DOUT2[3],  because it is equivalent to instance GPI8_INST.DOUT2[2]
-@W: BN132 :"f:\project\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI0_INST.DOUT1[4],  because it is equivalent to instance GPI0_INST.DOUT1[2]
-@W: BN132 :"f:\project\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI0_INST.DOUT1[7],  because it is equivalent to instance GPI0_INST.DOUT1[6]
-@W: BN132 :"f:\project\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI0_INST.DOUT1[6],  because it is equivalent to instance GPI0_INST.DOUT1[3]
-@N: BN362 :"f:\project\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing sequential instance GPI8_INST.DOUT1[2] in hierarchy view:work.BB_TOP(verilog) because there are no references to its outputs 
-@A: BN291 :"f:\project\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Boundary register GPI8_INST.DOUT1[2] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
-@N: BN362 :"f:\project\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing sequential instance GPI8_INST.DOUT2[2] in hierarchy view:work.BB_TOP(verilog) because there are no references to its outputs 
-@A: BN291 :"f:\project\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Boundary register GPI8_INST.DOUT2[2] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
-@N: BN362 :"f:\project\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing sequential instance GPI9_INST.DOUT1[1] in hierarchy view:work.BB_TOP(verilog) because there are no references to its outputs 
-@A: BN291 :"f:\project\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Boundary register GPI9_INST.DOUT1[1] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
-@N: BN362 :"f:\project\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing sequential instance GPI9_INST.DOUT2[1] in hierarchy view:work.BB_TOP(verilog) because there are no references to its outputs 
-@A: BN291 :"f:\project\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Boundary register GPI9_INST.DOUT2[1] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI8_INST.DOUT1[7],  because it is equivalent to instance GPI8_INST.DOUT1[6]
+@W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI8_INST.DOUT1[6],  because it is equivalent to instance GPI8_INST.DOUT1[5]
+@W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI8_INST.DOUT1[5],  because it is equivalent to instance GPI8_INST.DOUT1[4]
+@W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI8_INST.DOUT1[4],  because it is equivalent to instance GPI8_INST.DOUT1[3]
+@W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI8_INST.DOUT1[3],  because it is equivalent to instance GPI8_INST.DOUT1[2]
+@W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing instance GPI8_INST.DOUT2[7],  because it is equivalent to instance GPI8_INST.DOUT2[6]
+@W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing instance GPI8_INST.DOUT2[6],  because it is equivalent to instance GPI8_INST.DOUT2[5]
+@W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing instance GPI8_INST.DOUT2[5],  because it is equivalent to instance GPI8_INST.DOUT2[4]
+@W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing instance GPI8_INST.DOUT2[4],  because it is equivalent to instance GPI8_INST.DOUT2[3]
+@W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing instance GPI8_INST.DOUT2[3],  because it is equivalent to instance GPI8_INST.DOUT2[2]
+@W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI0_INST.DOUT1[4],  because it is equivalent to instance GPI0_INST.DOUT1[2]
+@W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI0_INST.DOUT1[7],  because it is equivalent to instance GPI0_INST.DOUT1[6]
+@W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI0_INST.DOUT1[6],  because it is equivalent to instance GPI0_INST.DOUT1[3]
+@W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI9_INST.DOUT1[7],  because it is equivalent to instance GPI9_INST.DOUT1[6]
+@W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI9_INST.DOUT1[6],  because it is equivalent to instance GPI9_INST.DOUT1[5]
+@W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI9_INST.DOUT1[5],  because it is equivalent to instance GPI9_INST.DOUT1[4]
+@W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI9_INST.DOUT1[4],  because it is equivalent to instance GPI9_INST.DOUT1[3]
+@W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI9_INST.DOUT1[3],  because it is equivalent to instance GPI9_INST.DOUT1[2]
+@W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI9_INST.DOUT1[2],  because it is equivalent to instance GPI9_INST.DOUT1[1]
+@W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing instance GPI9_INST.DOUT2[7],  because it is equivalent to instance GPI9_INST.DOUT2[6]
+@W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing instance GPI9_INST.DOUT2[6],  because it is equivalent to instance GPI9_INST.DOUT2[5]
+@W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing instance GPI9_INST.DOUT2[5],  because it is equivalent to instance GPI9_INST.DOUT2[4]
+@W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing instance GPI9_INST.DOUT2[4],  because it is equivalent to instance GPI9_INST.DOUT2[3]
+@W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing instance GPI9_INST.DOUT2[3],  because it is equivalent to instance GPI9_INST.DOUT2[2]
+@W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing instance GPI9_INST.DOUT2[2],  because it is equivalent to instance GPI9_INST.DOUT2[1]
+@W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing instance GPI0_INST.DOUT2[4],  because it is equivalent to instance GPI0_INST.DOUT2[2]
+@W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing instance GPI0_INST.DOUT2[7],  because it is equivalent to instance GPI0_INST.DOUT2[6]
+@W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing instance GPI0_INST.DOUT2[6],  because it is equivalent to instance GPI0_INST.DOUT2[3]
+@N: BN362 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing sequential instance GPI8_INST.DOUT1[2] in hierarchy view:work.BB_TOP(verilog) because there are no references to its outputs 
+@A: BN291 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Boundary register GPI8_INST.DOUT1[2] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@N: BN362 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing sequential instance GPI8_INST.DOUT2[2] in hierarchy view:work.BB_TOP(verilog) because there are no references to its outputs 
+@A: BN291 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Boundary register GPI8_INST.DOUT2[2] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@N: BN362 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing sequential instance GPI9_INST.DOUT1[1] in hierarchy view:work.BB_TOP(verilog) because there are no references to its outputs 
+@A: BN291 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Boundary register GPI9_INST.DOUT1[1] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@N: BN362 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing sequential instance GPI9_INST.DOUT2[1] in hierarchy view:work.BB_TOP(verilog) because there are no references to its outputs 
+@A: BN291 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Boundary register GPI9_INST.DOUT2[1] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@N:"e:\work\wolf\baseboard\bld\..\src\pcie_rst_ctrl.v":41:0:41:5|Found counter in view:work.PCIE_RST_CTRL(verilog) inst CNT0[21:0]
+@N:"e:\work\wolf\baseboard\bld\..\src\pcie_rst_ctrl.v":58:0:58:5|Found counter in view:work.PCIE_RST_CTRL(verilog) inst CNT1[21:0]
+@N:"e:\work\wolf\baseboard\bld\..\src\pcie_rst_ctrl.v":75:0:75:5|Found counter in view:work.PCIE_RST_CTRL(verilog) inst CNT2[21:0]
+@N:"e:\work\wolf\baseboard\bld\..\src\pcie_rst_ctrl.v":92:0:92:5|Found counter in view:work.PCIE_RST_CTRL(verilog) inst CNT3[21:0]
+@N:"e:\work\wolf\baseboard\bld\..\src\pcie_rst_ctrl.v":109:0:109:5|Found counter in view:work.PCIE_RST_CTRL(verilog) inst CNT4[21:0]
+@N:"e:\work\wolf\baseboard\bld\..\src\pcie_rst_ctrl.v":126:0:126:5|Found counter in view:work.PCIE_RST_CTRL(verilog) inst CNT5[21:0]
+@N:"e:\work\wolf\baseboard\bld\..\src\pcie_rst_ctrl.v":143:0:143:5|Found counter in view:work.PCIE_RST_CTRL(verilog) inst CNT6[21:0]
+@N:"e:\work\wolf\baseboard\bld\..\src\pcie_rst_ctrl.v":160:0:160:5|Found counter in view:work.PCIE_RST_CTRL(verilog) inst CNT7[21:0]
+@N:"e:\work\wolf\baseboard\bld\..\src\pcie_rst_ctrl.v":177:0:177:5|Found counter in view:work.PCIE_RST_CTRL(verilog) inst CNT8[21:0]
+@N:"e:\work\wolf\baseboard\bld\..\src\pcie_rst_ctrl.v":194:0:194:5|Found counter in view:work.PCIE_RST_CTRL(verilog) inst CNT9[21:0]
+@N:"e:\work\wolf\baseboard\bld\..\src\pcie_rst_ctrl.v":211:0:211:5|Found counter in view:work.PCIE_RST_CTRL(verilog) inst CNT10[21:0]
+@N:"e:\work\wolf\baseboard\bld\..\src\pcie_rst_ctrl.v":228:0:228:5|Found counter in view:work.PCIE_RST_CTRL(verilog) inst CNT11[21:0]
+@N:"e:\work\wolf\baseboard\bld\..\src\pcie_rst_ctrl.v":245:0:245:5|Found counter in view:work.PCIE_RST_CTRL(verilog) inst CNT12[21:0]
+@N:"e:\work\wolf\baseboard\bld\..\src\pcie_rst_ctrl.v":262:0:262:5|Found counter in view:work.PCIE_RST_CTRL(verilog) inst CNT13[21:0]
+@N:"e:\work\wolf\baseboard\bld\..\src\pcie_rst_ctrl.v":279:0:279:5|Found counter in view:work.PCIE_RST_CTRL(verilog) inst CNT14[21:0]
+@N:"e:\work\wolf\baseboard\bld\..\src\pcie_rst_ctrl.v":296:0:296:5|Found counter in view:work.PCIE_RST_CTRL(verilog) inst CNT15[21:0]
+@N:"e:\work\wolf\baseboard\bld\..\src\pcie_rst_ctrl.v":313:0:313:5|Found counter in view:work.PCIE_RST_CTRL(verilog) inst CNT16[21:0]
+@N:"e:\work\wolf\baseboard\bld\..\src\pcie_rst_ctrl.v":330:0:330:5|Found counter in view:work.PCIE_RST_CTRL(verilog) inst CNT17[21:0]
+@N:"e:\work\wolf\baseboard\bld\..\src\pcie_rst_ctrl.v":347:0:347:5|Found counter in view:work.PCIE_RST_CTRL(verilog) inst CNT18[21:0]
+@N:"e:\work\wolf\baseboard\bld\..\src\pcie_rst_ctrl.v":364:0:364:5|Found counter in view:work.PCIE_RST_CTRL(verilog) inst CNT19[21:0]
+@N:"e:\work\wolf\baseboard\bld\..\src\pcie_rst_ctrl.v":381:0:381:5|Found counter in view:work.PCIE_RST_CTRL(verilog) inst CNT20[21:0]
+@N:"e:\work\wolf\baseboard\bld\..\src\pcie_rst_ctrl.v":398:0:398:5|Found counter in view:work.PCIE_RST_CTRL(verilog) inst CNT21[21:0]
+@N:"e:\work\wolf\baseboard\bld\..\src\pcie_rst_ctrl.v":415:0:415:5|Found counter in view:work.PCIE_RST_CTRL(verilog) inst CNT22[21:0]
+@N:"e:\work\wolf\baseboard\bld\..\src\pcie_rst_ctrl.v":432:0:432:5|Found counter in view:work.PCIE_RST_CTRL(verilog) inst CNT23[21:0]
 Encoding state machine STATE[3:0] (view:work.BB_SGPIO(verilog))
 original code -> new code
    00000001 -> 00
    00000010 -> 01
    00000100 -> 10
    00001000 -> 11
-@N:"f:\project\wolf\baseboard\bld\..\src\bb_sgpio.v":81:0:81:5|Found counter in view:work.BB_SGPIO(verilog) inst HDD_CNT[5:0]
+@N:"e:\work\wolf\baseboard\bld\..\src\bb_sgpio.v":81:0:81:5|Found counter in view:work.BB_SGPIO(verilog) inst HDD_CNT[5:0]
 Encoding state machine STATE[4:0] (view:work.I2C(verilog))
 original code -> new code
    00000001 -> 00001
@@ -612,17 +841,17 @@ original code -> new code
    00000100 -> 00100
    00001000 -> 01000
    00100000 -> 10000
-@N:"f:\project\wolf\baseboard\bld\..\src\i2c.v":229:0:229:5|Found counter in view:work.I2C(verilog) inst LOC[7:0]
-@N: BN362 :"f:\project\wolf\baseboard\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CSD1[15] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C(verilog) because there are no references to its outputs 
-@N: BN362 :"f:\project\wolf\baseboard\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CSD1[14] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C(verilog) because there are no references to its outputs 
-@N: BN362 :"f:\project\wolf\baseboard\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CSD1[13] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C(verilog) because there are no references to its outputs 
-@N: BN362 :"f:\project\wolf\baseboard\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CSD1[12] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C(verilog) because there are no references to its outputs 
-@N: BN362 :"f:\project\wolf\baseboard\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CSD1[11] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C(verilog) because there are no references to its outputs 
-@N: BN362 :"f:\project\wolf\baseboard\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CS[15] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C(verilog) because there are no references to its outputs 
-@N: BN362 :"f:\project\wolf\baseboard\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CS[14] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C(verilog) because there are no references to its outputs 
-@N: BN362 :"f:\project\wolf\baseboard\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CS[13] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C(verilog) because there are no references to its outputs 
-@N: BN362 :"f:\project\wolf\baseboard\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CS[12] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C(verilog) because there are no references to its outputs 
-@N: BN362 :"f:\project\wolf\baseboard\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CS[11] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C(verilog) because there are no references to its outputs 
+@N:"e:\work\wolf\baseboard\bld\..\src\i2c.v":229:0:229:5|Found counter in view:work.I2C(verilog) inst LOC[7:0]
+@N: BN362 :"e:\work\wolf\baseboard\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CSD1[15] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C(verilog) because there are no references to its outputs 
+@N: BN362 :"e:\work\wolf\baseboard\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CSD1[14] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C(verilog) because there are no references to its outputs 
+@N: BN362 :"e:\work\wolf\baseboard\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CSD1[13] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C(verilog) because there are no references to its outputs 
+@N: BN362 :"e:\work\wolf\baseboard\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CSD1[12] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C(verilog) because there are no references to its outputs 
+@N: BN362 :"e:\work\wolf\baseboard\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CSD1[11] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C(verilog) because there are no references to its outputs 
+@N: BN362 :"e:\work\wolf\baseboard\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CS[15] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C(verilog) because there are no references to its outputs 
+@N: BN362 :"e:\work\wolf\baseboard\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CS[14] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C(verilog) because there are no references to its outputs 
+@N: BN362 :"e:\work\wolf\baseboard\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CS[13] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C(verilog) because there are no references to its outputs 
+@N: BN362 :"e:\work\wolf\baseboard\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CS[12] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C(verilog) because there are no references to its outputs 
+@N: BN362 :"e:\work\wolf\baseboard\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CS[11] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C(verilog) because there are no references to its outputs 
 Encoding state machine STATE[4:0] (view:work.I2C_I2C_INS_2(verilog))
 original code -> new code
    00000001 -> 00001
@@ -630,40 +859,40 @@ original code -> new code
    00000100 -> 00100
    00001000 -> 01000
    00100000 -> 10000
-@N:"f:\project\wolf\baseboard\bld\..\src\i2c.v":229:0:229:5|Found counter in view:work.I2C_I2C_INS_2(verilog) inst LOC[7:0]
-@N: BN362 :"f:\project\wolf\baseboard\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CSD1[15] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C_I2C_INS_2(verilog) because there are no references to its outputs 
-@N: BN362 :"f:\project\wolf\baseboard\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CSD1[14] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C_I2C_INS_2(verilog) because there are no references to its outputs 
-@N: BN362 :"f:\project\wolf\baseboard\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CSD1[13] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C_I2C_INS_2(verilog) because there are no references to its outputs 
-@N: BN362 :"f:\project\wolf\baseboard\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CSD1[12] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C_I2C_INS_2(verilog) because there are no references to its outputs 
-@N: BN362 :"f:\project\wolf\baseboard\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CSD1[11] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C_I2C_INS_2(verilog) because there are no references to its outputs 
-@N: BN362 :"f:\project\wolf\baseboard\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CS[15] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C_I2C_INS_2(verilog) because there are no references to its outputs 
-@N: BN362 :"f:\project\wolf\baseboard\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CS[14] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C_I2C_INS_2(verilog) because there are no references to its outputs 
-@N: BN362 :"f:\project\wolf\baseboard\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CS[13] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C_I2C_INS_2(verilog) because there are no references to its outputs 
-@N: BN362 :"f:\project\wolf\baseboard\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CS[12] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C_I2C_INS_2(verilog) because there are no references to its outputs 
-@N: BN362 :"f:\project\wolf\baseboard\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CS[11] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C_I2C_INS_2(verilog) because there are no references to its outputs 
+@N:"e:\work\wolf\baseboard\bld\..\src\i2c.v":229:0:229:5|Found counter in view:work.I2C_I2C_INS_2(verilog) inst LOC[7:0]
+@N: BN362 :"e:\work\wolf\baseboard\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CSD1[15] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C_I2C_INS_2(verilog) because there are no references to its outputs 
+@N: BN362 :"e:\work\wolf\baseboard\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CSD1[14] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C_I2C_INS_2(verilog) because there are no references to its outputs 
+@N: BN362 :"e:\work\wolf\baseboard\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CSD1[13] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C_I2C_INS_2(verilog) because there are no references to its outputs 
+@N: BN362 :"e:\work\wolf\baseboard\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CSD1[12] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C_I2C_INS_2(verilog) because there are no references to its outputs 
+@N: BN362 :"e:\work\wolf\baseboard\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CSD1[11] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C_I2C_INS_2(verilog) because there are no references to its outputs 
+@N: BN362 :"e:\work\wolf\baseboard\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CS[15] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C_I2C_INS_2(verilog) because there are no references to its outputs 
+@N: BN362 :"e:\work\wolf\baseboard\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CS[14] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C_I2C_INS_2(verilog) because there are no references to its outputs 
+@N: BN362 :"e:\work\wolf\baseboard\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CS[13] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C_I2C_INS_2(verilog) because there are no references to its outputs 
+@N: BN362 :"e:\work\wolf\baseboard\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CS[12] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C_I2C_INS_2(verilog) because there are no references to its outputs 
+@N: BN362 :"e:\work\wolf\baseboard\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CS[11] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C_I2C_INS_2(verilog) because there are no references to its outputs 
 
-Finished factoring (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 179MB peak: 179MB)
-
-
-Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 166MB peak: 179MB)
+Finished factoring (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 174MB peak: 175MB)
 
 
-Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:07s; Memory used current: 177MB peak: 205MB)
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 168MB peak: 175MB)
 
 
-Starting Early Timing Optimization (Real Time elapsed 0h:00m:08s; CPU Time elapsed 0h:00m:08s; Memory used current: 174MB peak: 205MB)
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 176MB peak: 207MB)
 
 
-Finished Early Timing Optimization (Real Time elapsed 0h:00m:09s; CPU Time elapsed 0h:00m:09s; Memory used current: 174MB peak: 205MB)
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:06s; Memory used current: 174MB peak: 207MB)
 
 
-Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:09s; CPU Time elapsed 0h:00m:09s; Memory used current: 173MB peak: 205MB)
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:07s; Memory used current: 175MB peak: 207MB)
 
 
-Finished preparing to map (Real Time elapsed 0h:00m:10s; CPU Time elapsed 0h:00m:10s; Memory used current: 174MB peak: 205MB)
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:07s; Memory used current: 174MB peak: 207MB)
 
 
-Finished technology mapping (Real Time elapsed 0h:00m:12s; CPU Time elapsed 0h:00m:12s; Memory used current: 197MB peak: 205MB)
+Finished preparing to map (Real Time elapsed 0h:00m:09s; CPU Time elapsed 0h:00m:09s; Memory used current: 175MB peak: 207MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:10s; CPU Time elapsed 0h:00m:10s; Memory used current: 194MB peak: 207MB)
 
 Pass		 CPU time		Worst Slack		Luts / Registers
 ------------------------------------------------------------
@@ -672,24 +901,24 @@ Pass		 CPU time		Worst Slack		Luts / Registers
 ------------------------------------------------------------
 
 
-Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:13s; CPU Time elapsed 0h:00m:13s; Memory used current: 178MB peak: 205MB)
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:12s; CPU Time elapsed 0h:00m:12s; Memory used current: 177MB peak: 207MB)
 
 @N: FX164 |The option to pack flops in the IOB has not been specified 
 
-Finished restoring hierarchy (Real Time elapsed 0h:00m:15s; CPU Time elapsed 0h:00m:15s; Memory used current: 177MB peak: 205MB)
+Finished restoring hierarchy (Real Time elapsed 0h:00m:14s; CPU Time elapsed 0h:00m:14s; Memory used current: 178MB peak: 207MB)
 
 
 
 #### START OF CLOCK OPTIMIZATION REPORT #####[
 
-1 non-gated/non-generated clock tree(s) driving 1420 clock pin(s) of sequential element(s)
+1 non-gated/non-generated clock tree(s) driving 1972 clock pin(s) of sequential element(s)
 2 gated/generated clock tree(s) driving 16 clock pin(s) of sequential element(s)
 0 instances converted, 16 sequential instances remain driven by gated/generated clocks
 
 ================================= Non-Gated/Non-Generated Clocks =================================
 Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance           
 --------------------------------------------------------------------------------------------------
-@K:CKID0003       SYSCLK              port                   1420       BB_SGPIO_INST_ACT_LEDio[0]
+@K:CKID0003       SYSCLK              port                   1972       BB_SGPIO_INST_ACT_LEDio[0]
 ==================================================================================================
 =========================================================== Gated/Generated Clocks ===========================================================
 Clock Tree ID     Driving Element                    Drive Element Type     Fanout     Sample Instance               Explanation              
@@ -701,26 +930,26 @@ Clock Tree ID     Driving Element                    Drive Element Type     Fano
 
 ##### END OF CLOCK OPTIMIZATION REPORT ######]
 
-Writing Analyst data base F:\project\wolf\Baseboard\BLD\Baseboard\Baseboard_Baseboard.srm
-@W: MT462 :"f:\project\wolf\baseboard\bld\..\src\i2c.v":251:13:251:50|Net I2C_INS_2.un1_DOUT_1 appears to be an unidentified clock source. Assuming default frequency. 
-@W: MT462 :"f:\project\wolf\baseboard\bld\..\src\i2c.v":251:13:251:50|Net I2C_INS_1.un1_DOUT_1 appears to be an unidentified clock source. Assuming default frequency. 
+Writing Analyst data base E:\work\wolf\Baseboard\BLD\Baseboard\Baseboard_Baseboard.srm
+@W: MT462 :"e:\work\wolf\baseboard\bld\..\src\i2c.v":251:13:251:50|Net I2C_INS_2.un1_DOUT_1 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"e:\work\wolf\baseboard\bld\..\src\i2c.v":251:13:251:50|Net I2C_INS_1.un1_DOUT_1 appears to be an unidentified clock source. Assuming default frequency. 
 
-Finished Writing Netlist Databases (Real Time elapsed 0h:00m:17s; CPU Time elapsed 0h:00m:17s; Memory used current: 173MB peak: 205MB)
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:16s; CPU Time elapsed 0h:00m:16s; Memory used current: 172MB peak: 207MB)
 
 Writing EDIF Netlist and constraint files
-@W: MT462 :"f:\project\wolf\baseboard\bld\..\src\i2c.v":251:13:251:50|Net I2C_INS_2.un1_DOUT_1 appears to be an unidentified clock source. Assuming default frequency. 
-@W: MT462 :"f:\project\wolf\baseboard\bld\..\src\i2c.v":251:13:251:50|Net I2C_INS_1.un1_DOUT_1 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"e:\work\wolf\baseboard\bld\..\src\i2c.v":251:13:251:50|Net I2C_INS_2.un1_DOUT_1 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"e:\work\wolf\baseboard\bld\..\src\i2c.v":251:13:251:50|Net I2C_INS_1.un1_DOUT_1 appears to be an unidentified clock source. Assuming default frequency. 
 I-2013.09L-SP1-1 
 @N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
 
-Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:18s; CPU Time elapsed 0h:00m:18s; Memory used current: 178MB peak: 205MB)
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:17s; CPU Time elapsed 0h:00m:17s; Memory used current: 177MB peak: 207MB)
 
 @W: MT420 |Found inferred clock BB_TOP|SYSCLK with period 1000.00ns. Please declare a user-defined clock on object "p:SYSCLK"
 
 
 
 ##### START OF TIMING REPORT #####[
-# Timing Report written on Sun Nov 09 21:27:45 2014
+# Timing Report written on Wed Feb 11 22:55:57 2015
 #
 
 
@@ -788,16 +1017,16 @@ Starting Points with Worst Slack
 Instance                   Reference         Type        Pin     Net              Time        Slack  
                            Clock                                                                     
 -----------------------------------------------------------------------------------------------------
-I2C_INS_2.PORT_CSD1[0]     BB_TOP|SYSCLK     FD1S3DX     Q       PORT_CSD1[0]     1.220       496.219
 I2C_INS_1.PORT_CSD1[0]     BB_TOP|SYSCLK     FD1S3DX     Q       PORT_CSD1[0]     1.220       496.219
-I2C_INS_1.PORT_CSD1[1]     BB_TOP|SYSCLK     FD1S3DX     Q       PORT_CSD1[1]     1.220       496.219
+I2C_INS_2.PORT_CSD1[0]     BB_TOP|SYSCLK     FD1S3DX     Q       PORT_CSD1[0]     1.220       496.219
 I2C_INS_2.PORT_CSD1[1]     BB_TOP|SYSCLK     FD1S3DX     Q       PORT_CSD1[1]     1.220       496.219
-I2C_INS_2.PORT_CSD1[2]     BB_TOP|SYSCLK     FD1S3DX     Q       PORT_CSD1[2]     1.220       496.219
+I2C_INS_1.PORT_CSD1[1]     BB_TOP|SYSCLK     FD1S3DX     Q       PORT_CSD1[1]     1.220       496.219
 I2C_INS_1.PORT_CSD1[2]     BB_TOP|SYSCLK     FD1S3DX     Q       PORT_CSD1[2]     1.220       496.219
-I2C_INS_1.PORT_CSD1[3]     BB_TOP|SYSCLK     FD1S3DX     Q       PORT_CSD1[3]     1.220       496.219
+I2C_INS_2.PORT_CSD1[2]     BB_TOP|SYSCLK     FD1S3DX     Q       PORT_CSD1[2]     1.220       496.219
 I2C_INS_2.PORT_CSD1[3]     BB_TOP|SYSCLK     FD1S3DX     Q       PORT_CSD1[3]     1.220       496.219
-I2C_INS_2.PORT_CSD1[5]     BB_TOP|SYSCLK     FD1S3DX     Q       PORT_CSD1[5]     1.220       496.219
+I2C_INS_1.PORT_CSD1[3]     BB_TOP|SYSCLK     FD1S3DX     Q       PORT_CSD1[3]     1.220       496.219
 I2C_INS_1.PORT_CSD1[5]     BB_TOP|SYSCLK     FD1S3DX     Q       PORT_CSD1[5]     1.220       496.219
+I2C_INS_2.PORT_CSD1[5]     BB_TOP|SYSCLK     FD1S3DX     Q       PORT_CSD1[5]     1.220       496.219
 =====================================================================================================
 
 
@@ -837,26 +1066,26 @@ Path information for path number 1:
     = Slack (critical) :                     496.219
 
     Number of logic level(s):                3
-    Starting point:                          I2C_INS_2.PORT_CSD1[0] / Q
-    Ending point:                            I2C_INS_2.REG_DIN[5] / D
+    Starting point:                          I2C_INS_1.PORT_CSD1[0] / Q
+    Ending point:                            I2C_INS_1.REG_DIN[5] / D
     The start point is clocked by            BB_TOP|SYSCLK [rising] on pin CK
     The end   point is clocked by            BB_TOP|SYSCLK [falling] on pin CK
 
 Instance / Net                              Pin      Pin               Arrival     No. of    
 Name                           Type         Name     Dir     Delay     Time        Fan Out(s)
 ---------------------------------------------------------------------------------------------
-I2C_INS_2.PORT_CSD1[0]         FD1S3DX      Q        Out     1.220     1.220       -         
+I2C_INS_1.PORT_CSD1[0]         FD1S3DX      Q        Out     1.220     1.220       -         
 PORT_CSD1[0]                   Net          -        -       -         -           8         
-I2C_INS_2.un2_REG_DIN_0[5]     ORCALUT4     C        In      0.000     1.220       -         
-I2C_INS_2.un2_REG_DIN_0[5]     ORCALUT4     Z        Out     1.017     2.237       -         
-un2_REG_DIN_0_0[5]             Net          -        -       -         -           1         
-I2C_INS_2.un2_REG_DIN_4[5]     ORCALUT4     C        In      0.000     2.237       -         
-I2C_INS_2.un2_REG_DIN_4[5]     ORCALUT4     Z        Out     1.017     3.253       -         
-un2_REG_DIN_4[5]               Net          -        -       -         -           1         
-I2C_INS_2.un2_REG_DIN[5]       ORCALUT4     D        In      0.000     3.253       -         
-I2C_INS_2.un2_REG_DIN[5]       ORCALUT4     Z        Out     0.617     3.870       -         
+I2C_INS_1.un2_REG_DIN_0[5]     ORCALUT4     C        In      0.000     1.220       -         
+I2C_INS_1.un2_REG_DIN_0[5]     ORCALUT4     Z        Out     1.017     2.237       -         
 un2_REG_DIN_0[5]               Net          -        -       -         -           1         
-I2C_INS_2.REG_DIN[5]           FD1P3DX      D        In      0.000     3.870       -         
+I2C_INS_1.un2_REG_DIN_4[5]     ORCALUT4     C        In      0.000     2.237       -         
+I2C_INS_1.un2_REG_DIN_4[5]     ORCALUT4     Z        Out     1.017     3.253       -         
+un2_REG_DIN_4[5]               Net          -        -       -         -           1         
+I2C_INS_1.un2_REG_DIN[5]       ORCALUT4     D        In      0.000     3.253       -         
+I2C_INS_1.un2_REG_DIN[5]       ORCALUT4     Z        Out     0.617     3.870       -         
+un2_REG_DIN[5]                 Net          -        -       -         -           1         
+I2C_INS_1.REG_DIN[5]           FD1P3DX      D        In      0.000     3.870       -         
 =============================================================================================
 
 
@@ -952,7 +1181,7 @@ I2C_INS_2.SHIFT_DOUT[1]           FD1P3DX      D        In      0.000     2.605 
 Resource Usage Report
 Part: lcmxo2_7000hc-4
 
-Register bits: 1420 of 6864 (21%)
+Register bits: 1972 of 6864 (29%)
 Latch bits:      16
 PIC Latch:       0
 I/O cells:       278
@@ -960,31 +1189,31 @@ I/O cells:       278
 
 Details:
 BB:             74
-CCU2D:          106
+CCU2D:          394
 FD1P3AX:        4
 FD1P3BX:        130
-FD1P3DX:        958
+FD1P3DX:        1486
 FD1S1AY:        16
 FD1S3BX:        2
-FD1S3DX:        248
+FD1S3DX:        272
 GSR:            1
 IB:             68
 IFS1P3DX:       76
 INV:            42
 OB:             136
 OFS1P3DX:       2
-ORCALUT4:       3009
+ORCALUT4:       3165
 PFUMX:          72
 PUR:            1
-VHI:            17
-VLO:            23
+VHI:            18
+VLO:            24
 true:           6
 Mapper successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:19s; CPU Time elapsed 0h:00m:19s; Memory used current: 60MB peak: 205MB)
+At Mapper Exit (Real Time elapsed 0h:00m:18s; CPU Time elapsed 0h:00m:18s; Memory used current: 61MB peak: 207MB)
 
-Process took 0h:00m:19s realtime, 0h:00m:19s cputime
-# Sun Nov 09 21:27:45 2014
+Process took 0h:00m:18s realtime, 0h:00m:18s cputime
+# Wed Feb 11 22:55:57 2015
 
 ###########################################################]
 

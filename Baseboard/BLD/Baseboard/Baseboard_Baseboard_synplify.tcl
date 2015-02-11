@@ -43,23 +43,23 @@ set_option -resolve_multiple_driver 0
 
 
 #-- add_file options
-set_option -include_path {F:/project/wolf/Baseboard/BLD}
-add_file -verilog {F:/project/wolf/Baseboard/BLD/../SRC/baseboard_define.v}
-add_file -verilog {F:/project/wolf/Baseboard/BLD/../SRC/BB_SGPIO.v}
-add_file -verilog {F:/project/wolf/Baseboard/BLD/../SRC/BB_TOP.v}
-add_file -verilog {F:/project/wolf/Baseboard/BLD/../SRC/GPI.v}
-add_file -verilog {F:/project/wolf/Baseboard/BLD/../SRC/GPO.v}
-add_file -verilog {F:/project/wolf/Baseboard/BLD/../SRC/I2C.v}
-add_file -verilog {F:/project/wolf/Baseboard/BLD/../SRC/LED.v}
-add_file -verilog {F:/project/wolf/Baseboard/BLD/../SRC/LED_CNT.v}
-add_file -verilog {F:/project/wolf/Baseboard/BLD/../SRC/PCIE_RST_CTRL.v}
-add_file -verilog {F:/project/wolf/Baseboard/BLD/../SRC/PRSNT_LED_CTRL.v}
+set_option -include_path {E:/work/wolf/Baseboard/BLD}
+add_file -verilog {E:/work/wolf/Baseboard/BLD/../SRC/baseboard_define.v}
+add_file -verilog {E:/work/wolf/Baseboard/BLD/../SRC/BB_SGPIO.v}
+add_file -verilog {E:/work/wolf/Baseboard/BLD/../SRC/BB_TOP.v}
+add_file -verilog {E:/work/wolf/Baseboard/BLD/../SRC/GPI.v}
+add_file -verilog {E:/work/wolf/Baseboard/BLD/../SRC/GPO.v}
+add_file -verilog {E:/work/wolf/Baseboard/BLD/../SRC/I2C.v}
+add_file -verilog {E:/work/wolf/Baseboard/BLD/../SRC/LED.v}
+add_file -verilog {E:/work/wolf/Baseboard/BLD/../SRC/LED_CNT.v}
+add_file -verilog {E:/work/wolf/Baseboard/BLD/../SRC/PCIE_RST_CTRL.v}
+add_file -verilog {E:/work/wolf/Baseboard/BLD/../SRC/PRSNT_LED_CTRL.v}
 
 #-- top module name
 set_option -top_module BB_TOP
 
 #-- set result format/file last
-project -result_file {F:/project/wolf/Baseboard/BLD/Baseboard/Baseboard_Baseboard.edi}
+project -result_file {E:/work/wolf/Baseboard/BLD/Baseboard/Baseboard_Baseboard.edi}
 
 #-- error message log file
 project -log_file {Baseboard_Baseboard.srf}

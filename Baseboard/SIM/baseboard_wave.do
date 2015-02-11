@@ -10,6 +10,7 @@ add wave -noupdate -group GPO5_INST /tb_baseboard/BB_TOP_INST/GPO5_INST/*
 add wave -noupdate -group FLT_AMB_LED_INST2 /tb_baseboard/BB_TOP_INST/FLT_AMB_LED_INST2/*
 add wave -noupdate -group PRSNT_LED_CTRL_INST /tb_baseboard/BB_TOP_INST/PRSNT_LED_CTRL_INST/*
 add wave -noupdate -group BB_SGPIO_INST /tb_baseboard/BB_TOP_INST/BB_SGPIO_INST/*
+add wave -noupdate -group PCIE_RST_CTRL /tb_baseboard/BB_TOP_INST/PCIE_RST_CTRL/*
 #Status CPLD
 add wave -noupdate -group STATUS_SGPIO_INST1 /tb_baseboard/STATUS_INST/SGPIO_INST1/*
 add wave -noupdate -group STATUS_SGPIO_INST2 /tb_baseboard/STATUS_INST/SGPIO_INST2/*

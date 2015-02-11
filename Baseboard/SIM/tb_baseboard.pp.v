@@ -38,6 +38,8 @@ wire	[7:0]	i2c_rddata2;
 
 // Driver active led input
 reg     [35:0]  DRV_ACT;
+// Driver power
+reg     [23:0]  DRV_POWER_OK;
 
 // SGPIO
 wire            SGPIO_CK;
@@ -102,7 +104,10 @@ BB_TOP		BB_TOP_INST (
 
 ; for ($i=0; $i<36; $i++) {
                 .DRV${i}_ACT_LED                ( DRV_ACT[${i}] ),
-; }				
+; }
+; for ($i=0; $i<24; $i++) {
+                .DRV${i}_PWROK                  ( DRV_POWER_OK[${i}] ),
+; }	
 				
 				// SGPIO
 				.SGPIO_CK                       ( SGPIO_CK      ),
@@ -130,14 +135,16 @@ always	#20   clk       = ~clk;
 initial
 	begin
 
-        clk         = 0;
-        rstn        = 0;
-        i2c_wr      = 1;
+        clk          = 0;
+        rstn         = 0;
+        i2c_wr       = 1;
+		DRV_POWER_OK = 'h0;
 
         repeat (1000) @(posedge clk);
 		
         rstn = 1;
-		DRV_ACT     = 'b0;
+		DRV_ACT      = 'b0;
+		DRV_POWER_OK = 24'hff_ffff;
 		repeat (1000) @(posedge clk);
 		
 		//SGPIO TEST

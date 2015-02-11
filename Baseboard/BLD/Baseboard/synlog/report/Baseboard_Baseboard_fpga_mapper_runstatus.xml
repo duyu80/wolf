@@ -5,7 +5,7 @@ The file contains the job information from mapper to be displayed as part of the
 *******************************************************************************************-->
 <job_run_status name="Mapper">
 <report_link name="Detailed report">
-<data>F:\project\wolf\Baseboard\BLD\Baseboard\synlog\Baseboard_Baseboard_fpga_mapper.srr</data>
+<data>E:\work\wolf\Baseboard\BLD\Baseboard\synlog\Baseboard_Baseboard_fpga_mapper.srr</data>
 <title>Synopsys Lattice Technology Mapper</title>
 </report_link>
 <job_status>
@@ -15,32 +15,32 @@ The file contains the job information from mapper to be displayed as part of the
 <info name="Notes">
 <data>32</data>
 <report_link name="more">
-<data>F:\project\wolf\Baseboard\BLD\Baseboard\synlog\report\Baseboard_Baseboard_fpga_mapper_notes.txt</data>
+<data>E:\work\wolf\Baseboard\BLD\Baseboard\synlog\report\Baseboard_Baseboard_fpga_mapper_notes.txt</data>
 </report_link>
 </info>
 <info name="Warnings">
 <data>35</data>
 <report_link name="more">
-<data>F:\project\wolf\Baseboard\BLD\Baseboard\synlog\report\Baseboard_Baseboard_fpga_mapper_warnings.txt</data>
+<data>E:\work\wolf\Baseboard\BLD\Baseboard\synlog\report\Baseboard_Baseboard_fpga_mapper_warnings.txt</data>
 </report_link>
 </info>
 <info name="Errors">
 <data>0</data>
 <report_link name="more">
-<data>F:\project\wolf\Baseboard\BLD\Baseboard\synlog\report\Baseboard_Baseboard_fpga_mapper_errors.txt</data>
+<data>E:\work\wolf\Baseboard\BLD\Baseboard\synlog\report\Baseboard_Baseboard_fpga_mapper_errors.txt</data>
 </report_link>
 </info>
 <info name="CPU Time">
-<data>0h:00m:19s</data>
+<data>0h:00m:18s</data>
 </info>
 <info name="Real Time">
-<data>0h:00m:19s</data>
+<data>0h:00m:18s</data>
 </info>
 <info name="Peak Memory">
-<data>205MB</data>
+<data>207MB</data>
 </info>
 <info name="Date &amp; Time">
-<data type="timestamp">1415539665</data>
+<data type="timestamp">1423666557</data>
 </info>
 </job_info>
 </job_run_status>

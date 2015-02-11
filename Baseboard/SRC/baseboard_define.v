@@ -45,13 +45,14 @@
 
 `define FRQ_100K        32'd125
 `define TIME_1S         32'd25000000
-`define TIME_100MS      32'd2500000
+`define TIME_100MS      32'd3000000
+//`define TIME_100MS      32'd2500
 `define TIME_99MS       32'd2475000
 
 `define DEVICE_ID_MSB   8'h20
 `define DEVICE_ID_LSB   8'h14
 `define CPLD_MAJ_VER    8'h01
-`define CPLD_MIN_VER    8'h02
+`define CPLD_MIN_VER    8'h03
 `define CPLD_TEST_VER   8'h00
 `define CHECKSUM        8'h0 - `DEVICE_ID_MSB - `DEVICE_ID_LSB - `CPLD_MAJ_VER - `CPLD_MIN_VER - `CPLD_TEST_VER
 

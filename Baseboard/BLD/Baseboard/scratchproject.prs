@@ -1,31 +1,31 @@
 #--  Synopsys, Inc.
 #--  Version I-2013.09L-SP1-1 
-#--  Project file F:\project\wolf\Baseboard\BLD\Baseboard\scratchproject.prs
+#--  Project file E:\work\wolf\Baseboard\BLD\Baseboard\scratchproject.prs
 
 #project files
-add_file -verilog "F:/project/wolf/Baseboard/BLD/../SRC/baseboard_define.v"
-add_file -verilog "F:/project/wolf/Baseboard/BLD/../SRC/BB_SGPIO.v"
-add_file -verilog "F:/project/wolf/Baseboard/BLD/../SRC/BB_TOP.v"
-add_file -verilog "F:/project/wolf/Baseboard/BLD/../SRC/GPI.v"
-add_file -verilog "F:/project/wolf/Baseboard/BLD/../SRC/GPO.v"
-add_file -verilog "F:/project/wolf/Baseboard/BLD/../SRC/I2C.v"
-add_file -verilog "F:/project/wolf/Baseboard/BLD/../SRC/LED.v"
-add_file -verilog "F:/project/wolf/Baseboard/BLD/../SRC/LED_CNT.v"
-add_file -verilog "F:/project/wolf/Baseboard/BLD/../SRC/PCIE_RST_CTRL.v"
-add_file -verilog "F:/project/wolf/Baseboard/BLD/../SRC/PRSNT_LED_CTRL.v"
+add_file -verilog "E:/work/wolf/Baseboard/BLD/../SRC/baseboard_define.v"
+add_file -verilog "E:/work/wolf/Baseboard/BLD/../SRC/BB_SGPIO.v"
+add_file -verilog "E:/work/wolf/Baseboard/BLD/../SRC/BB_TOP.v"
+add_file -verilog "E:/work/wolf/Baseboard/BLD/../SRC/GPI.v"
+add_file -verilog "E:/work/wolf/Baseboard/BLD/../SRC/GPO.v"
+add_file -verilog "E:/work/wolf/Baseboard/BLD/../SRC/I2C.v"
+add_file -verilog "E:/work/wolf/Baseboard/BLD/../SRC/LED.v"
+add_file -verilog "E:/work/wolf/Baseboard/BLD/../SRC/LED_CNT.v"
+add_file -verilog "E:/work/wolf/Baseboard/BLD/../SRC/PCIE_RST_CTRL.v"
+add_file -verilog "E:/work/wolf/Baseboard/BLD/../SRC/PRSNT_LED_CTRL.v"
 
 
 
 #implementation: "Baseboard"
-impl -add F:\project\wolf\Baseboard\BLD\Baseboard -type fpga
+impl -add E:\work\wolf\Baseboard\BLD\Baseboard -type fpga
 
 #
 #implementation attributes
 
 set_option -vlog_std v2001
 set_option -project_relative_includes 1
-set_option -include_path {F:/project/wolf/Baseboard/BLD/Baseboard/}
-set_option -include_path {F:/project/wolf/Baseboard/BLD}
+set_option -include_path {E:/work/wolf/Baseboard/BLD/Baseboard/}
+set_option -include_path {E:/work/wolf/Baseboard/BLD}
 
 #device options
 set_option -technology MACHXO2
@@ -70,8 +70,8 @@ set_option -auto_infer_blackbox 0
 set_option -write_apr_constraint 1
 
 #set result format/file last
-project -result_file "F:/project/wolf/Baseboard/BLD/Baseboard/Baseboard_Baseboard.edi"
+project -result_file "E:/work/wolf/Baseboard/BLD/Baseboard/Baseboard_Baseboard.edi"
 
 #set log file 
-set_option log_file "F:/project/wolf/Baseboard/BLD/Baseboard/Baseboard_Baseboard.srf" 
+set_option log_file "E:/work/wolf/Baseboard/BLD/Baseboard/Baseboard_Baseboard.srf" 
 impl -active "Baseboard"

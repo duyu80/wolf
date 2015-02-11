@@ -5,9 +5,9 @@ line 5803, col 44: Option set not found: vcs_ECP45M_lib.
 Running in Lattice mode
 
 
-Starting:    c:\lscc\diamond\3.2_x64\synpbase\win64\mbin\synbatch.exe
-Install:     c:\lscc\diamond\3.2_x64\synpbase
-Date:        Sun Nov 09 21:27:21 2014
+Starting:    D:\lscc\diamond\3.2_x64\synpbase\win64\mbin\synbatch.exe
+Install:     D:\lscc\diamond\3.2_x64\synpbase
+Date:        Wed Feb 11 22:55:33 2015
 Version:     I-2013.09L-SP1-1 
 
 Arguments:   -product synplify_pro  -batch Baseboard_Baseboard_synplify.tcl
@@ -18,7 +18,7 @@ ProductType: synplify_pro
 
 
 
-log file: "F:\project\wolf\Baseboard\BLD\Baseboard\Baseboard_Baseboard.srr"
+log file: "E:\work\wolf\Baseboard\BLD\Baseboard\Baseboard_Baseboard.srr"
 
 
 
@@ -35,14 +35,14 @@ Running: Compile Process on proj_1|Baseboard
 
 Running: Compile Input on proj_1|Baseboard
 
-Copied F:\project\wolf\Baseboard\BLD\Baseboard\synwork\Baseboard_Baseboard_comp.srs to F:\project\wolf\Baseboard\BLD\Baseboard\Baseboard_Baseboard.srs
+Copied E:\work\wolf\Baseboard\BLD\Baseboard\synwork\Baseboard_Baseboard_comp.srs to E:\work\wolf\Baseboard\BLD\Baseboard\Baseboard_Baseboard.srs
 
 compiler Completed with warnings
 Return Code: 1
-Run Time:0h:00m:03s
+Run Time:0h:00m:04s
 
 
-Copied F:\project\wolf\Baseboard\BLD\Baseboard\Baseboard_Baseboard.srr to F:\project\wolf\Baseboard\BLD\Baseboard\Baseboard_Baseboard.srf
+Copied E:\work\wolf\Baseboard\BLD\Baseboard\Baseboard_Baseboard.srr to E:\work\wolf\Baseboard\BLD\Baseboard\Baseboard_Baseboard.srf
 
 Complete: Compile Process on proj_1|Baseboard
 
@@ -51,7 +51,7 @@ Running: Pre-mapping on proj_1|Baseboard
 
 premap Completed with warnings
 Return Code: 1
-Run Time:0h:00m:01s
+Run Time:0h:00m:02s
 
 
 Complete: Compile on proj_1|Baseboard
@@ -64,12 +64,12 @@ Running: Map & Optimize on proj_1|Baseboard
 
 fpga_mapper Completed with warnings
 Return Code: 1
-Run Time:0h:00m:20s
+Run Time:0h:00m:19s
 
 
 Complete: Map on proj_1|Baseboard
 
-Copied F:\project\wolf\Baseboard\BLD\Baseboard\Baseboard_Baseboard.srr to F:\project\wolf\Baseboard\BLD\Baseboard\Baseboard_Baseboard.srf
+Copied E:\work\wolf\Baseboard\BLD\Baseboard\Baseboard_Baseboard.srr to E:\work\wolf\Baseboard\BLD\Baseboard\Baseboard_Baseboard.srf
 
 Complete: Logic Synthesis on proj_1|Baseboard
 
@@ -82,7 +82,7 @@ exit status=0
 
 
 Save changes for project:
-F:\project\wolf\Baseboard\BLD\Baseboard\proj_1.prj
+E:\work\wolf\Baseboard\BLD\Baseboard\proj_1.prj
 
 batch mode default:no
 
