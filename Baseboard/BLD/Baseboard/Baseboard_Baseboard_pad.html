@@ -14,291 +14,291 @@ Performance Grade:      4
 PACKAGE:          FPBGA484
 Package Status:                     Final          Version 1.36
 
-Wed Feb 11 22:56:29 2015
+Thu Feb 12 23:53:59 2015
 
 Pinout by Port Name:
-+---------------------------+----------+---------------+-------+-----------+-----------+----------------------------------------------------------+
-| Port Name                 | Pin/Bank | Buffer Type   | Site  | PG Enable | BC Enable | Properties                                               |
-+---------------------------+----------+---------------+-------+-----------+-----------+----------------------------------------------------------+
-| BB_CPLD_ALT_L             | C2/5     | LVCMOS33_IN   | PL2B  |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
-| CANISTER_A_PCIE_CLK_ACT_L | H6/5     | LVCMOS33_IN   | PL4C  |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
-| CANISTER_B_PCIE_CLK_ACT_L | G5/5     | LVCMOS33_IN   | PL4D  |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
-| CPLD_SLOT_ID              | F3/5     | LVCMOS33_IN   | PL6B  |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
-| DRV0_ACT_LED              | Y15/2    | LVCMOS33_IN   | PB28D |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
-| DRV0_IFDET_BLUE_LED       | Y4/2     | LVCMOS33_BIDI | PB6B  |           |           | DRIVE:8mA PULL:DOWN CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW  |
-| DRV0_PCIE_CLK_A_OE_L      | L2/4     | LVCMOS33_OUT  | PL12C |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| DRV0_PCIE_CLK_B_OE_L      | L1/4     | LVCMOS33_OUT  | PL12D |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| DRV0_PRSNT_AMBER_LED      | U12/2    | LVCMOS33_BIDI | PB23D |           |           | DRIVE:8mA CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW            |
-| DRV0_PWROK                | H1/4     | LVCMOS33_IN   | PL10A |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
-| DRV0_PWR_EN_L             | Y3/2     | LVCMOS33_OUT  | PB4A  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| DRV10_ACT_LED             | Y14/2    | LVCMOS33_IN   | PB26A |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
-| DRV10_IFDET_BLUE_LED      | Y16/2    | LVCMOS33_BIDI | PB31A |           |           | DRIVE:8mA PULL:DOWN CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW  |
-| DRV10_PCIE_CLK_A_OE_L     | AA14/2   | LVCMOS33_OUT  | PB23B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| DRV10_PCIE_CLK_B_OE_L     | Y13/2    | LVCMOS33_OUT  | PB23A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| DRV10_PRSNT_AMBER_LED     | Y12/2    | LVCMOS33_BIDI | PB28A |           |           | DRIVE:8mA CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW            |
-| DRV10_PWROK               | L4/4     | LVCMOS33_IN   | PL10D |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
-| DRV10_PWR_EN_L            | AB16/2   | LVCMOS33_OUT  | PB29A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| DRV11_ACT_LED             | AB21/2   | LVCMOS33_IN   | PB35B |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
-| DRV11_IFDET_BLUE_LED      | AA16/2   | LVCMOS33_BIDI | PB29B |           |           | DRIVE:8mA PULL:DOWN CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW  |
-| DRV11_PCIE_CLK_A_OE_L     | B14/0    | LVCMOS33_OUT  | PT25B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| DRV11_PCIE_CLK_B_OE_L     | G13/0    | LVCMOS33_OUT  | PT27A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| DRV11_PRSNT_AMBER_LED     | AB18/2   | LVCMOS33_BIDI | PB32B |           |           | DRIVE:8mA CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW            |
-| DRV11_PWROK               | R17/1    | LVCMOS33_IN   | PR23D |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
-| DRV11_PWR_EN_L            | AB17/2   | LVCMOS33_OUT  | PB31B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| DRV12_ACT_LED             | M20/1    | LVCMOS33_IN   | PR17C |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
-| DRV12_IFDET_BLUE_LED      | M16/1    | LVCMOS33_BIDI | PR15C |           |           | DRIVE:8mA PULL:DOWN CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW  |
-| DRV12_PCIE_CLK_A_OE_L     | W7/2     | LVCMOS33_OUT  | PB9D  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| DRV12_PCIE_CLK_B_OE_L     | V14/2    | LVCMOS33_OUT  | PB31D |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| DRV12_PRSNT_AMBER_LED     | M21/1    | LVCMOS33_BIDI | PR12D |           |           | DRIVE:8mA CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW            |
-| DRV12_PWROK               | V21/1    | LVCMOS33_IN   | PR22B |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
-| DRV12_PWR_EN_L            | L17/1    | LVCMOS33_OUT  | PR10C |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| DRV13_ACT_LED             | P18/1    | LVCMOS33_IN   | PR19D |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
-| DRV13_IFDET_BLUE_LED      | T18/1    | LVCMOS33_BIDI | PR23C |           |           | DRIVE:8mA PULL:DOWN CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW  |
-| DRV13_PCIE_CLK_A_OE_L     | AB5/2    | LVCMOS33_OUT  | PB10C |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| DRV13_PCIE_CLK_B_OE_L     | Y22/1    | LVCMOS33_OUT  | PR23A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| DRV13_PRSNT_AMBER_LED     | P20/1    | LVCMOS33_BIDI | PR16A |           |           | DRIVE:8mA CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW            |
-| DRV13_PWROK               | U17/1    | LVCMOS33_IN   | PR25D |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
-| DRV13_PWR_EN_L            | W22/1    | LVCMOS33_OUT  | PR22A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| DRV14_ACT_LED             | N6/3     | LVCMOS33_IN   | PL19D |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
-| DRV14_IFDET_BLUE_LED      | V2/3     | LVCMOS33_BIDI | PL21B |           |           | DRIVE:8mA PULL:DOWN CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW  |
-| DRV14_PCIE_CLK_A_OE_L     | J19/1    | LVCMOS33_OUT  | PR7D  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| DRV14_PCIE_CLK_B_OE_L     | J2/4     | LVCMOS33_OUT  | PL11A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| DRV14_PRSNT_AMBER_LED     | W1/3     | LVCMOS33_BIDI | PL21A |           |           | DRIVE:8mA CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW            |
-| DRV14_PWROK               | T4/3     | LVCMOS33_IN   | PL22C |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
-| DRV14_PWR_EN_L            | V4/3     | LVCMOS33_OUT  | PL24B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| DRV15_ACT_LED             | J16/1    | LVCMOS33_IN   | PR6D  |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
-| DRV15_IFDET_BLUE_LED      | K17/1    | LVCMOS33_BIDI | PR8C  |           |           | DRIVE:8mA PULL:DOWN CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW  |
-| DRV15_PCIE_CLK_A_OE_L     | H16/1    | LVCMOS33_OUT  | PR3D  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| DRV15_PCIE_CLK_B_OE_L     | J3/4     | LVCMOS33_OUT  | PL10B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| DRV15_PRSNT_AMBER_LED     | G22/1    | LVCMOS33_BIDI | PR8B  |           |           | DRIVE:8mA CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW            |
-| DRV15_PWROK               | E16/0    | LVCMOS33_IN   | PT34A |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
-| DRV15_PWR_EN_L            | G21/1    | LVCMOS33_OUT  | PR8A  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| DRV16_ACT_LED             | R16/1    | LVCMOS33_IN   | PR24C |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
-| DRV16_IFDET_BLUE_LED      | T17/1    | LVCMOS33_BIDI | PR24D |           |           | DRIVE:8mA PULL:DOWN CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW  |
-| DRV16_PCIE_CLK_A_OE_L     | T6/3     | LVCMOS33_OUT  | PL24D |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| DRV16_PCIE_CLK_B_OE_L     | M3/3     | LVCMOS33_OUT  | PL18C |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| DRV16_PRSNT_AMBER_LED     | W15/2    | LVCMOS33_BIDI | PB32C |           |           | DRIVE:8mA CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW            |
-| DRV16_PWROK               | M19/1    | LVCMOS33_IN   | PR16C |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
-| DRV16_PWR_EN_L            | U18/1    | LVCMOS33_OUT  | PR25C |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| DRV17_ACT_LED             | T20/1    | LVCMOS33_IN   | PR19A |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
-| DRV17_IFDET_BLUE_LED      | R20/1    | LVCMOS33_BIDI | PR17B |           |           | DRIVE:8mA PULL:DOWN CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW  |
-| DRV17_PCIE_CLK_A_OE_L     | U4/3     | LVCMOS33_OUT  | PL22D |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| DRV17_PCIE_CLK_B_OE_L     | R1/4     | LVCMOS33_OUT  | PL17B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| DRV17_PRSNT_AMBER_LED     | U19/1    | LVCMOS33_BIDI | PR22D |           |           | DRIVE:8mA CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW            |
-| DRV17_PWROK               | W9/2     | LVCMOS33_IN   | PB12D |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
-| DRV17_PWR_EN_L            | R22/1    | LVCMOS33_OUT  | PR16B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| DRV18_ACT_LED             | V22/1    | LVCMOS33_IN   | PR21B |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
-| DRV18_IFDET_BLUE_LED      | E19/1    | LVCMOS33_BIDI | PR3A  |           |           | DRIVE:8mA PULL:DOWN CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW  |
-| DRV18_PCIE_CLK_A_OE_L     | AB2/2    | LVCMOS33_OUT  | PB7C  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| DRV18_PCIE_CLK_B_OE_L     | AA22/1   | LVCMOS33_OUT  | PR23B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| DRV18_PRSNT_AMBER_LED     | V19/1    | LVCMOS33_BIDI | PR24B |           |           | DRIVE:8mA CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW            |
-| DRV18_PWROK               | D21/1    | LVCMOS33_IN   | PR5A  |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
-| DRV18_PWR_EN_L            | F20/1    | LVCMOS33_OUT  | PR7B  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| DRV19_ACT_LED             | L22/1    | LVCMOS33_IN   | PR11D |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
-| DRV19_IFDET_BLUE_LED      | N17/1    | LVCMOS33_BIDI | PR18D |           |           | DRIVE:8mA PULL:DOWN CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW  |
-| DRV19_PCIE_CLK_A_OE_L     | K18/1    | LVCMOS33_OUT  | PR9C  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| DRV19_PCIE_CLK_B_OE_L     | V16/2    | LVCMOS33_OUT  | PB35C |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| DRV19_PRSNT_AMBER_LED     | P21/1    | LVCMOS33_BIDI | PR15B |           |           | DRIVE:8mA CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW            |
-| DRV19_PWROK               | W20/1    | LVCMOS33_IN   | PR24A |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
-| DRV19_PWR_EN_L            | N18/1    | LVCMOS33_OUT  | PR17D |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| DRV1_ACT_LED              | Y5/2     | LVCMOS33_IN   | PB9B  |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
-| DRV1_IFDET_BLUE_LED       | AB7/2    | LVCMOS33_BIDI | PB13B |           |           | DRIVE:8mA PULL:DOWN CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW  |
-| DRV1_PCIE_CLK_A_OE_L      | P3/4     | LVCMOS33_OUT  | PL17A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| DRV1_PCIE_CLK_B_OE_L      | Y1/3     | LVCMOS33_OUT  | PL23A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| DRV1_PRSNT_AMBER_LED      | V7/2     | LVCMOS33_BIDI | PB7B  |           |           | DRIVE:8mA CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW            |
-| DRV1_PWROK                | H3/5     | LVCMOS33_IN   | PL9A  |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
-| DRV1_PWR_EN_L             | W8/2     | LVCMOS33_OUT  | PB10B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| DRV20_ACT_LED             | U5/3     | LVCMOS33_IN   | PL25C |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
-| DRV20_IFDET_BLUE_LED      | W4/3     | LVCMOS33_BIDI | PL25B |           |           | DRIVE:8mA PULL:DOWN CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW  |
-| DRV20_PCIE_CLK_A_OE_L     | T8/2     | LVCMOS33_OUT  | PB6D  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| DRV20_PCIE_CLK_B_OE_L     | K21/1    | LVCMOS33_OUT  | PR11A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| DRV20_PRSNT_AMBER_LED     | V6/2     | LVCMOS33_BIDI | PB4D  |           |           | DRIVE:8mA CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW            |
-| DRV20_PWROK               | AA8/2    | LVCMOS33_IN   | PB15D |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
-| DRV20_PWR_EN_L            | U7/2     | LVCMOS33_OUT  | PB6C  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| DRV21_ACT_LED             | D20/1    | LVCMOS33_IN   | PR3B  |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
-| DRV21_IFDET_BLUE_LED      | U20/1    | LVCMOS33_BIDI | PR21A |           |           | DRIVE:8mA PULL:DOWN CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW  |
-| DRV21_PCIE_CLK_A_OE_L     | U6/2     | LVCMOS33_OUT  | PB4C  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| DRV21_PCIE_CLK_B_OE_L     | V15/2    | LVCMOS33_OUT  | PB32D |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| DRV21_PRSNT_AMBER_LED     | E22/1    | LVCMOS33_BIDI | PR7A  |           |           | DRIVE:8mA CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW            |
-| DRV21_PWROK               | AA13/2   | LVCMOS33_IN   | PB21D |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
-| DRV21_PWR_EN_L            | K22/1    | LVCMOS33_OUT  | PR11B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| DRV22_ACT_LED             | D18/0    | LVCMOS33_IN   | PT35B |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
-| DRV22_IFDET_BLUE_LED      | B7/0     | LVCMOS33_BIDI | PT15A |           |           | DRIVE:8mA PULL:DOWN CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW  |
-| DRV22_PCIE_CLK_A_OE_L     | R7/3     | LVCMOS33_OUT  | PL24C |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| DRV22_PCIE_CLK_B_OE_L     | T13/2    | LVCMOS33_OUT  | PB29C |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| DRV22_PRSNT_AMBER_LED     | G15/0    | LVCMOS33_BIDI | PT35C |           |           | DRIVE:8mA CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW            |
-| DRV22_PWROK               | A17/0    | LVCMOS33_IN   | PT28B |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
-| DRV22_PWR_EN_L            | E10/0    | LVCMOS33_OUT  | PT16A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| DRV23_ACT_LED             | P2/4     | LVCMOS33_IN   | PL16B |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
-| DRV23_IFDET_BLUE_LED      | R3/3     | LVCMOS33_BIDI | PL18B |           |           | DRIVE:8mA PULL:DOWN CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW  |
-| DRV23_PCIE_CLK_A_OE_L     | W3/3     | LVCMOS33_OUT  | PL24A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| DRV23_PCIE_CLK_B_OE_L     | T12/2    | LVCMOS33_OUT  | PB23C |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| DRV23_PRSNT_AMBER_LED     | N3/4     | LVCMOS33_BIDI | PL16A |           |           | DRIVE:8mA CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW            |
-| DRV23_PWROK               | G7/0     | LVCMOS33_IN   | PT9C  |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
-| DRV23_PWR_EN_L            | M6/4     | LVCMOS33_OUT  | PL16D |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| DRV24_ACT_LED             | N7/3     | LVCMOS33_IN   | PL19C |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
-| DRV24_IFDET_BLUE_LED      | Y2/3     | LVCMOS33_BIDI | PL25A |           |           | DRIVE:8mA PULL:DOWN CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW  |
-| DRV24_PRSNT_AMBER_LED     | P6/3     | LVCMOS33_BIDI | PL21D |           |           | DRIVE:8mA CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW            |
-| DRV24_PWR_EN_L            | M2/4     | LVCMOS33_OUT  | PL15D |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| DRV25_ACT_LED             | G16/1    | LVCMOS33_IN   | PR2C  |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
-| DRV25_IFDET_BLUE_LED      | G18/1    | LVCMOS33_BIDI | PR4D  |           |           | DRIVE:8mA PULL:DOWN CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW  |
-| DRV25_PRSNT_AMBER_LED     | D15/0    | LVCMOS33_BIDI | PT32A |           |           | DRIVE:8mA CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW            |
-| DRV25_PWR_EN_L            | E15/0    | LVCMOS33_OUT  | PT32B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| DRV26_ACT_LED             | E9/0     | LVCMOS33_IN   | PT14A |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
-| DRV26_IFDET_BLUE_LED      | A2/0     | LVCMOS33_BIDI | PT11A |           |           | DRIVE:8mA PULL:DOWN CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW  |
-| DRV26_PRSNT_AMBER_LED     | A5/0     | LVCMOS33_BIDI | PT13A |           |           | DRIVE:8mA CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW            |
-| DRV26_PWR_EN_L            | D6/0     | LVCMOS33_OUT  | PT12A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| DRV27_ACT_LED             | M22/1    | LVCMOS33_IN   | PR12C |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
-| DRV27_IFDET_BLUE_LED      | M17/1    | LVCMOS33_BIDI | PR15D |           |           | DRIVE:8mA PULL:DOWN CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW  |
-| DRV27_PRSNT_AMBER_LED     | L16/1    | LVCMOS33_BIDI | PR10D |           |           | DRIVE:8mA CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW            |
-| DRV27_PWR_EN_L            | N20/1    | LVCMOS33_OUT  | PR15A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| DRV28_ACT_LED             | G19/1    | LVCMOS33_IN   | PR5D  |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
-| DRV28_IFDET_BLUE_LED      | L20/1    | LVCMOS33_BIDI | PR9D  |           |           | DRIVE:8mA PULL:DOWN CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW  |
-| DRV28_PRSNT_AMBER_LED     | J18/1    | LVCMOS33_BIDI | PR7C  |           |           | DRIVE:8mA CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW            |
-| DRV28_PWR_EN_L            | K16/1    | LVCMOS33_OUT  | PR8D  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| DRV29_ACT_LED             | A20/0    | LVCMOS33_IN   | PT34C |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
-| DRV29_IFDET_BLUE_LED      | A18/0    | LVCMOS33_BIDI | PT32D |           |           | DRIVE:8mA PULL:DOWN CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW  |
-| DRV29_PRSNT_AMBER_LED     | C15/0    | LVCMOS33_BIDI | PT26D |           |           | DRIVE:8mA CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW            |
-| DRV29_PWR_EN_L            | E12/0    | LVCMOS33_OUT  | PT26B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| DRV2_ACT_LED              | U8/2     | LVCMOS33_IN   | PB7A  |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
-| DRV2_IFDET_BLUE_LED       | V8/2     | LVCMOS33_BIDI | PB10A |           |           | DRIVE:8mA PULL:DOWN CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW  |
-| DRV2_PCIE_CLK_A_OE_L      | K5/5     | LVCMOS33_OUT  | PL9C  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| DRV2_PCIE_CLK_B_OE_L      | J5/5     | LVCMOS33_OUT  | PL7C  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| DRV2_PRSNT_AMBER_LED      | AA3/2    | LVCMOS33_BIDI | PB4B  |           |           | DRIVE:8mA CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW            |
-| DRV2_PWROK                | W19/2    | LVCMOS33_IN   | PB38B |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
-| DRV2_PWR_EN_L             | AA4/2    | LVCMOS33_OUT  | PB9A  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| DRV30_ACT_LED             | F19/1    | LVCMOS33_IN   | PR5C  |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
-| DRV30_IFDET_BLUE_LED      | A21/0    | LVCMOS33_BIDI | PT34D |           |           | DRIVE:8mA PULL:DOWN CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW  |
-| DRV30_PRSNT_AMBER_LED     | B19/0    | LVCMOS33_BIDI | PT33B |           |           | DRIVE:8mA CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW            |
-| DRV30_PWR_EN_L            | C18/0    | LVCMOS33_OUT  | PT33A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| DRV31_ACT_LED             | F17/0    | LVCMOS33_IN   | PT36B |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
-| DRV31_IFDET_BLUE_LED      | A7/0     | LVCMOS33_BIDI | PT15B |           |           | DRIVE:8mA PULL:DOWN CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW  |
-| DRV31_PRSNT_AMBER_LED     | D11/0    | LVCMOS33_BIDI | PT17B |           |           | DRIVE:8mA CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW            |
-| DRV31_PWR_EN_L            | C11/0    | LVCMOS33_OUT  | PT16B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| DRV32_ACT_LED             | D9/0     | LVCMOS33_IN   | PT14B |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
-| DRV32_IFDET_BLUE_LED      | A3/0     | LVCMOS33_BIDI | PT11B |           |           | DRIVE:8mA PULL:DOWN CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW  |
-| DRV32_PRSNT_AMBER_LED     | C6/0     | LVCMOS33_BIDI | PT13B |           |           | DRIVE:8mA CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW            |
-| DRV32_PWR_EN_L            | D7/0     | LVCMOS33_OUT  | PT12B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| DRV33_ACT_LED             | C4/0     | LVCMOS33_IN   | PT10B |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
-| DRV33_IFDET_BLUE_LED      | B3/0     | LVCMOS33_BIDI | PT9B  |           |           | DRIVE:8mA PULL:DOWN CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW  |
-| DRV33_PRSNT_AMBER_LED     | D5/0     | LVCMOS33_BIDI | PT10A |           |           | DRIVE:8mA CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW            |
-| DRV33_PWR_EN_L            | D4/0     | LVCMOS33_OUT  | PT9A  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| DRV34_ACT_LED             | N1/4     | LVCMOS33_IN   | PL15A |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
-| DRV34_IFDET_BLUE_LED      | N2/4     | LVCMOS33_BIDI | PL15B |           |           | DRIVE:8mA PULL:DOWN CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW  |
-| DRV34_PRSNT_AMBER_LED     | M7/4     | LVCMOS33_BIDI | PL16C |           |           | DRIVE:8mA CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW            |
-| DRV34_PWR_EN_L            | M1/4     | LVCMOS33_OUT  | PL15C |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| DRV35_ACT_LED             | T7/3     | LVCMOS33_IN   | PL25D |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
-| DRV35_IFDET_BLUE_LED      | P7/3     | LVCMOS33_BIDI | PL21C |           |           | DRIVE:8mA PULL:DOWN CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW  |
-| DRV35_PRSNT_AMBER_LED     | AA1/3    | LVCMOS33_BIDI | PL23B |           |           | DRIVE:8mA CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW            |
-| DRV35_PWR_EN_L            | V1/3     | LVCMOS33_OUT  | PL19B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| DRV3_ACT_LED              | V11/2    | LVCMOS33_IN   | PB15A |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
-| DRV3_IFDET_BLUE_LED       | AA10/2   | LVCMOS33_BIDI | PB18A |           |           | DRIVE:8mA PULL:DOWN CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW  |
-| DRV3_PCIE_CLK_A_OE_L      | AB3/2    | LVCMOS33_OUT  | PB7D  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| DRV3_PCIE_CLK_B_OE_L      | W5/2     | LVCMOS33_OUT  | PB6A  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| DRV3_PRSNT_AMBER_LED      | AA7/2    | LVCMOS33_BIDI | PB13A |           |           | DRIVE:8mA CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW            |
-| DRV3_PWROK                | Y7/2     | LVCMOS33_IN   | PB12B |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
-| DRV3_PWR_EN_L             | Y8/2     | LVCMOS33_OUT  | PB15C |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| DRV4_ACT_LED              | AB10/2   | LVCMOS33_IN   | PB18B |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
-| DRV4_IFDET_BLUE_LED       | AA12/2   | LVCMOS33_BIDI | PB21B |           |           | DRIVE:8mA PULL:DOWN CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW  |
-| DRV4_PCIE_CLK_A_OE_L      | A11/0    | LVCMOS33_OUT  | PT21B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| DRV4_PCIE_CLK_B_OE_L      | B11/0    | LVCMOS33_OUT  | PT21A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| DRV4_PRSNT_AMBER_LED      | W11/2    | LVCMOS33_BIDI | PB15B |           |           | DRIVE:8mA CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW            |
-| DRV4_PWROK                | V9/2     | LVCMOS33_IN   | PB12C |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
-| DRV4_PWR_EN_L             | AB11/2   | LVCMOS33_OUT  | PB18D |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| DRV5_ACT_LED              | W14/2    | LVCMOS33_IN   | PB31C |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
-| DRV5_IFDET_BLUE_LED       | V12/2    | LVCMOS33_BIDI | PB26D |           |           | DRIVE:8mA PULL:DOWN CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW  |
-| DRV5_PCIE_CLK_A_OE_L      | D12/0    | LVCMOS33_OUT  | PT26A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| DRV5_PCIE_CLK_B_OE_L      | A10/0    | LVCMOS33_OUT  | PT21D |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| DRV5_PRSNT_AMBER_LED      | AB13/2   | LVCMOS33_BIDI | PB21C |           |           | DRIVE:8mA CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW            |
-| DRV5_PWROK                | N16/1    | LVCMOS33_IN   | PR18C |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
-| DRV5_PWR_EN_L             | AA15/2   | LVCMOS33_OUT  | PB28C |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| DRV6_ACT_LED              | W12/2    | LVCMOS33_IN   | PB26C |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
-| DRV6_IFDET_BLUE_LED       | V13/2    | LVCMOS33_BIDI | PB28B |           |           | DRIVE:8mA PULL:DOWN CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW  |
-| DRV6_PCIE_CLK_A_OE_L      | B12/0    | LVCMOS33_OUT  | PT22B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| DRV6_PCIE_CLK_B_OE_L      | E11/0    | LVCMOS33_OUT  | PT17A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| DRV6_PRSNT_AMBER_LED      | AB12/2   | LVCMOS33_BIDI | PB21A |           |           | DRIVE:8mA CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW            |
-| DRV6_PWROK                | AB6/2    | LVCMOS33_IN   | PB12A |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
-| DRV6_PWR_EN_L             | AB15/2   | LVCMOS33_OUT  | PB26B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| DRV7_ACT_LED              | U15/2    | LVCMOS33_IN   | PB35D |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
-| DRV7_IFDET_BLUE_LED       | Y20/1    | LVCMOS33_BIDI | PR25B |           |           | DRIVE:8mA PULL:DOWN CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW  |
-| DRV7_PCIE_CLK_A_OE_L      | L21/1    | LVCMOS33_OUT  | PR11C |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| DRV7_PCIE_CLK_B_OE_L      | H21/1    | LVCMOS33_OUT  | PR9B  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| DRV7_PRSNT_AMBER_LED      | W17/2    | LVCMOS33_BIDI | PB34B |           |           | DRIVE:8mA CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW            |
-| DRV7_PWROK                | W6/2     | LVCMOS33_IN   | PB9C  |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
-| DRV7_PWR_EN_L             | R19/1    | LVCMOS33_OUT  | PR21C |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| DRV8_ACT_LED              | Y18/2    | LVCMOS33_IN   | PB34C |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
-| DRV8_IFDET_BLUE_LED       | R18/1    | LVCMOS33_BIDI | PR21D |           |           | DRIVE:8mA PULL:DOWN CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW  |
-| DRV8_PCIE_CLK_A_OE_L      | U16/2    | LVCMOS33_OUT  | PB37D |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| DRV8_PCIE_CLK_B_OE_L      | T15/2    | LVCMOS33_OUT  | PB37C |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| DRV8_PRSNT_AMBER_LED      | W16/2    | LVCMOS33_BIDI | PB34A |           |           | DRIVE:8mA CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW            |
-| DRV8_PWROK                | M4/4     | LVCMOS33_IN   | PL17C |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
-| DRV8_PWR_EN_L             | AA19/2   | LVCMOS33_OUT  | PB34D |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| DRV9_ACT_LED              | Y17/2    | LVCMOS33_IN   | PB32A |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
-| DRV9_IFDET_BLUE_LED       | W18/2    | LVCMOS33_BIDI | PB37B |           |           | DRIVE:8mA PULL:DOWN CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW  |
-| DRV9_PCIE_CLK_A_OE_L      | U13/2    | LVCMOS33_OUT  | PB29D |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| DRV9_PCIE_CLK_B_OE_L      | T16/2    | LVCMOS33_OUT  | PB38D |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| DRV9_PRSNT_AMBER_LED      | AB20/2   | LVCMOS33_BIDI | PB35A |           |           | DRIVE:8mA CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW            |
-| DRV9_PWROK                | R21/1    | LVCMOS33_IN   | PR17A |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
-| DRV9_PWR_EN_L             | Y19/2    | LVCMOS33_OUT  | PB37A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| HEART                     | W2/3     | LVCMOS33_OUT  | PL22B |           |           | DRIVE:8mA SLEW:SLOW                                      |
-| PE_RST_DRV0_A_L           | M5/4     | LVCMOS33_OUT  | PL17D |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| PE_RST_DRV0_B_L           | N5/3     | LVCMOS33_OUT  | PL18D |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| PE_RST_DRV10_A_L          | F8/0     | LVCMOS33_OUT  | PT11C |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| PE_RST_DRV10_B_L          | B4/0     | LVCMOS33_OUT  | PT12C |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| PE_RST_DRV11_A_L          | U3/3     | LVCMOS33_OUT  | PL19A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| PE_RST_DRV11_B_L          | R2/3     | LVCMOS33_OUT  | PL18A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| PE_RST_DRV12_A_L          | P19/1    | LVCMOS33_OUT  | PR19C |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| PE_RST_DRV12_B_L          | Y21/1    | LVCMOS33_OUT  | PR25A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| PE_RST_DRV13_A_L          | T19/1    | LVCMOS33_OUT  | PR22C |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| PE_RST_DRV13_B_L          | U22/1    | LVCMOS33_OUT  | PR19B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| PE_RST_DRV14_A_L          | R6/3     | LVCMOS33_OUT  | PL23D |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| PE_RST_DRV14_B_L          | T5/3     | LVCMOS33_OUT  | PL23C |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| PE_RST_DRV15_A_L          | D16/0    | LVCMOS33_OUT  | PT33C |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| PE_RST_DRV15_B_L          | D14/0    | LVCMOS33_OUT  | PT28C |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| PE_RST_DRV16_A_L          | J21/1    | LVCMOS33_OUT  | PR10A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| PE_RST_DRV16_B_L          | M18/1    | LVCMOS33_OUT  | PR16D |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| PE_RST_DRV17_A_L          | U11/2    | LVCMOS33_OUT  | PB16C |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| PE_RST_DRV17_B_L          | T11/2    | LVCMOS33_OUT  | PB16D |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| PE_RST_DRV18_A_L          | H20/1    | LVCMOS33_OUT  | PR9A  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| PE_RST_DRV18_B_L          | E20/1    | LVCMOS33_OUT  | PR5B  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| PE_RST_DRV19_A_L          | T22/1    | LVCMOS33_OUT  | PR18A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| PE_RST_DRV19_B_L          | T21/1    | LVCMOS33_OUT  | PR18B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| PE_RST_DRV1_A_L           | E6/0     | LVCMOS33_OUT  | PT9D  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| PE_RST_DRV1_B_L           | D8/0     | LVCMOS33_OUT  | PT13D |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| PE_RST_DRV20_A_L          | U10/2    | LVCMOS33_OUT  | PB13C |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| PE_RST_DRV20_B_L          | Y6/2     | LVCMOS33_OUT  | PB10D |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| PE_RST_DRV21_A_L          | AA11/2   | LVCMOS33_OUT  | PB18C |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| PE_RST_DRV21_B_L          | T10/2    | LVCMOS33_OUT  | PB13D |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| PE_RST_DRV22_A_L          | C17/0    | LVCMOS33_OUT  | PT32C |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| PE_RST_DRV22_B_L          | C16/0    | LVCMOS33_OUT  | PT28A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| PE_RST_DRV23_A_L          | E8/0     | LVCMOS33_OUT  | PT13C |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| PE_RST_DRV23_B_L          | L6/4     | LVCMOS33_OUT  | PL11C |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| PE_RST_DRV2_A_L           | E14/0    | LVCMOS33_OUT  | PT28D |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| PE_RST_DRV2_B_L           | D17/0    | LVCMOS33_OUT  | PT33D |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| PE_RST_DRV3_A_L           | D22/1    | LVCMOS33_OUT  | PR6B  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| PE_RST_DRV3_B_L           | E21/1    | LVCMOS33_OUT  | PR6A  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| PE_RST_DRV4_A_L           | D19/1    | LVCMOS33_OUT  | PR2A  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| PE_RST_DRV4_B_L           | C21/1    | LVCMOS33_OUT  | PR2B  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| PE_RST_DRV5_A_L           | B15/0    | LVCMOS33_OUT  | PT26C |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| PE_RST_DRV5_B_L           | H17/1    | LVCMOS33_OUT  | PR4C  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| PE_RST_DRV6_A_L           | F16/0    | LVCMOS33_OUT  | PT35D |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| PE_RST_DRV6_B_L           | E17/0    | LVCMOS33_OUT  | PT36A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| PE_RST_DRV7_A_L           | G11/0    | LVCMOS33_OUT  | PT18D |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| PE_RST_DRV7_B_L           | C19/0    | LVCMOS33_OUT  | PT35A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| PE_RST_DRV8_A_L           | G10/0    | LVCMOS33_OUT  | PT15D |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| PE_RST_DRV8_B_L           | F10/0    | LVCMOS33_OUT  | PT15C |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| PE_RST_DRV9_A_L           | C8/0     | LVCMOS33_OUT  | PT16C |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| PE_RST_DRV9_B_L           | C5/0     | LVCMOS33_OUT  | PT12D |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| RESET_N                   | V3/3     | LVCMOS33_IN   | PL22A |           |           | PULL:UP CLAMP:ON HYSTERESIS:SMALL                        |
-| SCL_1                     | N22/1    | LVCMOS33_IN   | PR12A |           |           | CLAMP:ON HYSTERESIS:SMALL                                |
-| SCL_2                     | AA9/2    | LVCMOS33_IN   | PB16A |           |           | CLAMP:ON HYSTERESIS:SMALL                                |
-| SDA_1                     | N21/1    | LVCMOS33_BIDI | PR12B |           |           | DRIVE:8mA HYSTERESIS:SMALL OPENDRAIN:ON SLEW:SLOW        |
-| SDA_2                     | Y10/2    | LVCMOS33_BIDI | PB16B |           |           | DRIVE:8mA HYSTERESIS:SMALL OPENDRAIN:ON SLEW:SLOW        |
-| SGPIO_CK                  | F6/5     | LVCMOS33_OUT  | PL2C  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| SGPIO_DATA                | G6/5     | LVCMOS33_OUT  | PL3C  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| SGPIO_LD                  | F5/5     | LVCMOS33_OUT  | PL2D  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| SYSCLK                    | B9/0     | LVCMOS33_IN   | PT18A |           |           | CLAMP:ON HYSTERESIS:SMALL                                |
-+---------------------------+----------+---------------+-------+-----------+-----------+----------------------------------------------------------+
++---------------------------+----------+---------------+-------+-----------+-----------+----------------------------------------------------+
+| Port Name                 | Pin/Bank | Buffer Type   | Site  | PG Enable | BC Enable | Properties                                         |
++---------------------------+----------+---------------+-------+-----------+-----------+----------------------------------------------------+
+| BB_CPLD_ALT_L             | C2/5     | LVCMOS33_IN   | PL2B  |           |           | CLAMP:ON HYSTERESIS:SMALL                          |
+| CANISTER_A_PCIE_CLK_ACT_L | H6/5     | LVCMOS33_IN   | PL4C  |           |           | CLAMP:ON HYSTERESIS:SMALL                          |
+| CANISTER_B_PCIE_CLK_ACT_L | G5/5     | LVCMOS33_IN   | PL4D  |           |           | CLAMP:ON HYSTERESIS:SMALL                          |
+| CPLD_SLOT_ID              | F3/5     | LVCMOS33_IN   | PL6B  |           |           | CLAMP:ON HYSTERESIS:SMALL                          |
+| DRV0_ACT_LED              | Y15/2    | LVCMOS33_IN   | PB28D |           |           | CLAMP:ON HYSTERESIS:SMALL                          |
+| DRV0_IFDET_BLUE_LED       | Y4/2     | LVCMOS33_BIDI | PB6B  |           |           | DRIVE:8mA CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW      |
+| DRV0_PCIE_CLK_A_OE_L      | W6/2     | LVCMOS33_OUT  | PB9C  |           |           | DRIVE:8mA SLEW:SLOW                                |
+| DRV0_PCIE_CLK_B_OE_L      | R17/1    | LVCMOS33_OUT  | PR23D |           |           | DRIVE:8mA SLEW:SLOW                                |
+| DRV0_PRSNT_AMBER_LED      | U12/2    | LVCMOS33_BIDI | PB23D |           |           | DRIVE:8mA CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW      |
+| DRV0_PWROK                | M4/4     | LVCMOS33_IN   | PL17C |           |           | CLAMP:ON HYSTERESIS:SMALL                          |
+| DRV0_PWR_EN_L             | Y3/2     | LVCMOS33_OUT  | PB4A  |           |           | DRIVE:8mA SLEW:SLOW                                |
+| DRV10_ACT_LED             | Y14/2    | LVCMOS33_IN   | PB26A |           |           | CLAMP:ON HYSTERESIS:SMALL                          |
+| DRV10_IFDET_BLUE_LED      | Y16/2    | LVCMOS33_BIDI | PB31A |           |           | DRIVE:8mA CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW      |
+| DRV10_PCIE_CLK_A_OE_L     | F18/1    | LVCMOS33_OUT  | PR2D  |           |           | DRIVE:8mA SLEW:SLOW                                |
+| DRV10_PCIE_CLK_B_OE_L     | H21/1    | LVCMOS33_OUT  | PR9B  |           |           | DRIVE:8mA SLEW:SLOW                                |
+| DRV10_PRSNT_AMBER_LED     | Y12/2    | LVCMOS33_BIDI | PB28A |           |           | DRIVE:8mA CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW      |
+| DRV10_PWROK               | G8/0     | LVCMOS33_IN   | PT10D |           |           | CLAMP:ON HYSTERESIS:SMALL                          |
+| DRV10_PWR_EN_L            | AB16/2   | LVCMOS33_OUT  | PB29A |           |           | DRIVE:8mA SLEW:SLOW                                |
+| DRV11_ACT_LED             | AB21/2   | LVCMOS33_IN   | PB35B |           |           | CLAMP:ON HYSTERESIS:SMALL                          |
+| DRV11_IFDET_BLUE_LED      | AA16/2   | LVCMOS33_BIDI | PB29B |           |           | DRIVE:8mA CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW      |
+| DRV11_PCIE_CLK_A_OE_L     | F13/0    | LVCMOS33_OUT  | PT27B |           |           | DRIVE:8mA SLEW:SLOW                                |
+| DRV11_PCIE_CLK_B_OE_L     | U13/2    | LVCMOS33_OUT  | PB29D |           |           | DRIVE:8mA SLEW:SLOW                                |
+| DRV11_PRSNT_AMBER_LED     | AB18/2   | LVCMOS33_BIDI | PB32B |           |           | DRIVE:8mA CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW      |
+| DRV11_PWROK               | Y1/3     | LVCMOS33_IN   | PL23A |           |           | CLAMP:ON HYSTERESIS:SMALL                          |
+| DRV11_PWR_EN_L            | AB17/2   | LVCMOS33_OUT  | PB31B |           |           | DRIVE:8mA SLEW:SLOW                                |
+| DRV12_ACT_LED             | M20/1    | LVCMOS33_IN   | PR17C |           |           | CLAMP:ON HYSTERESIS:SMALL                          |
+| DRV12_IFDET_BLUE_LED      | M16/1    | LVCMOS33_BIDI | PR15C |           |           | DRIVE:8mA CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW      |
+| DRV12_PCIE_CLK_A_OE_L     | W7/2     | LVCMOS33_OUT  | PB9D  |           |           | DRIVE:8mA SLEW:SLOW                                |
+| DRV12_PCIE_CLK_B_OE_L     | V14/2    | LVCMOS33_OUT  | PB31D |           |           | DRIVE:8mA SLEW:SLOW                                |
+| DRV12_PRSNT_AMBER_LED     | M21/1    | LVCMOS33_BIDI | PR12D |           |           | DRIVE:8mA CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW      |
+| DRV12_PWROK               | V21/1    | LVCMOS33_IN   | PR22B |           |           | CLAMP:ON HYSTERESIS:SMALL                          |
+| DRV12_PWR_EN_L            | L17/1    | LVCMOS33_OUT  | PR10C |           |           | DRIVE:8mA SLEW:SLOW                                |
+| DRV13_ACT_LED             | P18/1    | LVCMOS33_IN   | PR19D |           |           | CLAMP:ON HYSTERESIS:SMALL                          |
+| DRV13_IFDET_BLUE_LED      | T18/1    | LVCMOS33_BIDI | PR23C |           |           | DRIVE:8mA CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW      |
+| DRV13_PCIE_CLK_A_OE_L     | AB5/2    | LVCMOS33_OUT  | PB10C |           |           | DRIVE:8mA SLEW:SLOW                                |
+| DRV13_PCIE_CLK_B_OE_L     | Y22/1    | LVCMOS33_OUT  | PR23A |           |           | DRIVE:8mA SLEW:SLOW                                |
+| DRV13_PRSNT_AMBER_LED     | P20/1    | LVCMOS33_BIDI | PR16A |           |           | DRIVE:8mA CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW      |
+| DRV13_PWROK               | U17/1    | LVCMOS33_IN   | PR25D |           |           | CLAMP:ON HYSTERESIS:SMALL                          |
+| DRV13_PWR_EN_L            | W22/1    | LVCMOS33_OUT  | PR22A |           |           | DRIVE:8mA SLEW:SLOW                                |
+| DRV14_ACT_LED             | N6/3     | LVCMOS33_IN   | PL19D |           |           | CLAMP:ON HYSTERESIS:SMALL                          |
+| DRV14_IFDET_BLUE_LED      | V2/3     | LVCMOS33_BIDI | PL21B |           |           | DRIVE:8mA CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW      |
+| DRV14_PCIE_CLK_A_OE_L     | J19/1    | LVCMOS33_OUT  | PR7D  |           |           | DRIVE:8mA SLEW:SLOW                                |
+| DRV14_PCIE_CLK_B_OE_L     | J2/4     | LVCMOS33_OUT  | PL11A |           |           | DRIVE:8mA SLEW:SLOW                                |
+| DRV14_PRSNT_AMBER_LED     | W1/3     | LVCMOS33_BIDI | PL21A |           |           | DRIVE:8mA CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW      |
+| DRV14_PWROK               | T4/3     | LVCMOS33_IN   | PL22C |           |           | CLAMP:ON HYSTERESIS:SMALL                          |
+| DRV14_PWR_EN_L            | V4/3     | LVCMOS33_OUT  | PL24B |           |           | DRIVE:8mA SLEW:SLOW                                |
+| DRV15_ACT_LED             | J16/1    | LVCMOS33_IN   | PR6D  |           |           | CLAMP:ON HYSTERESIS:SMALL                          |
+| DRV15_IFDET_BLUE_LED      | K17/1    | LVCMOS33_BIDI | PR8C  |           |           | DRIVE:8mA CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW      |
+| DRV15_PCIE_CLK_A_OE_L     | H16/1    | LVCMOS33_OUT  | PR3D  |           |           | DRIVE:8mA SLEW:SLOW                                |
+| DRV15_PCIE_CLK_B_OE_L     | J3/4     | LVCMOS33_OUT  | PL10B |           |           | DRIVE:8mA SLEW:SLOW                                |
+| DRV15_PRSNT_AMBER_LED     | G22/1    | LVCMOS33_BIDI | PR8B  |           |           | DRIVE:8mA CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW      |
+| DRV15_PWROK               | E16/0    | LVCMOS33_IN   | PT34A |           |           | CLAMP:ON HYSTERESIS:SMALL                          |
+| DRV15_PWR_EN_L            | G21/1    | LVCMOS33_OUT  | PR8A  |           |           | DRIVE:8mA SLEW:SLOW                                |
+| DRV16_ACT_LED             | R16/1    | LVCMOS33_IN   | PR24C |           |           | CLAMP:ON HYSTERESIS:SMALL                          |
+| DRV16_IFDET_BLUE_LED      | T17/1    | LVCMOS33_BIDI | PR24D |           |           | DRIVE:8mA CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW      |
+| DRV16_PCIE_CLK_A_OE_L     | T6/3     | LVCMOS33_OUT  | PL24D |           |           | DRIVE:8mA SLEW:SLOW                                |
+| DRV16_PCIE_CLK_B_OE_L     | M3/3     | LVCMOS33_OUT  | PL18C |           |           | DRIVE:8mA SLEW:SLOW                                |
+| DRV16_PRSNT_AMBER_LED     | W15/2    | LVCMOS33_BIDI | PB32C |           |           | DRIVE:8mA CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW      |
+| DRV16_PWROK               | M19/1    | LVCMOS33_IN   | PR16C |           |           | CLAMP:ON HYSTERESIS:SMALL                          |
+| DRV16_PWR_EN_L            | U18/1    | LVCMOS33_OUT  | PR25C |           |           | DRIVE:8mA SLEW:SLOW                                |
+| DRV17_ACT_LED             | T20/1    | LVCMOS33_IN   | PR19A |           |           | CLAMP:ON HYSTERESIS:SMALL                          |
+| DRV17_IFDET_BLUE_LED      | R20/1    | LVCMOS33_BIDI | PR17B |           |           | DRIVE:8mA CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW      |
+| DRV17_PCIE_CLK_A_OE_L     | U4/3     | LVCMOS33_OUT  | PL22D |           |           | DRIVE:8mA SLEW:SLOW                                |
+| DRV17_PCIE_CLK_B_OE_L     | R1/4     | LVCMOS33_OUT  | PL17B |           |           | DRIVE:8mA SLEW:SLOW                                |
+| DRV17_PRSNT_AMBER_LED     | U19/1    | LVCMOS33_BIDI | PR22D |           |           | DRIVE:8mA CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW      |
+| DRV17_PWROK               | W9/2     | LVCMOS33_IN   | PB12D |           |           | CLAMP:ON HYSTERESIS:SMALL                          |
+| DRV17_PWR_EN_L            | R22/1    | LVCMOS33_OUT  | PR16B |           |           | DRIVE:8mA SLEW:SLOW                                |
+| DRV18_ACT_LED             | V22/1    | LVCMOS33_IN   | PR21B |           |           | CLAMP:ON HYSTERESIS:SMALL                          |
+| DRV18_IFDET_BLUE_LED      | E19/1    | LVCMOS33_BIDI | PR3A  |           |           | DRIVE:8mA CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW      |
+| DRV18_PCIE_CLK_A_OE_L     | AB2/2    | LVCMOS33_OUT  | PB7C  |           |           | DRIVE:8mA SLEW:SLOW                                |
+| DRV18_PCIE_CLK_B_OE_L     | AA22/1   | LVCMOS33_OUT  | PR23B |           |           | DRIVE:8mA SLEW:SLOW                                |
+| DRV18_PRSNT_AMBER_LED     | V19/1    | LVCMOS33_BIDI | PR24B |           |           | DRIVE:8mA CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW      |
+| DRV18_PWROK               | D21/1    | LVCMOS33_IN   | PR5A  |           |           | CLAMP:ON HYSTERESIS:SMALL                          |
+| DRV18_PWR_EN_L            | F20/1    | LVCMOS33_OUT  | PR7B  |           |           | DRIVE:8mA SLEW:SLOW                                |
+| DRV19_ACT_LED             | L22/1    | LVCMOS33_IN   | PR11D |           |           | CLAMP:ON HYSTERESIS:SMALL                          |
+| DRV19_IFDET_BLUE_LED      | N17/1    | LVCMOS33_BIDI | PR18D |           |           | DRIVE:8mA CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW      |
+| DRV19_PCIE_CLK_A_OE_L     | K18/1    | LVCMOS33_OUT  | PR9C  |           |           | DRIVE:8mA SLEW:SLOW                                |
+| DRV19_PCIE_CLK_B_OE_L     | V16/2    | LVCMOS33_OUT  | PB35C |           |           | DRIVE:8mA SLEW:SLOW                                |
+| DRV19_PRSNT_AMBER_LED     | P21/1    | LVCMOS33_BIDI | PR15B |           |           | DRIVE:8mA CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW      |
+| DRV19_PWROK               | W20/1    | LVCMOS33_IN   | PR24A |           |           | CLAMP:ON HYSTERESIS:SMALL                          |
+| DRV19_PWR_EN_L            | N18/1    | LVCMOS33_OUT  | PR17D |           |           | DRIVE:8mA SLEW:SLOW                                |
+| DRV1_ACT_LED              | Y5/2     | LVCMOS33_IN   | PB9B  |           |           | CLAMP:ON HYSTERESIS:SMALL                          |
+| DRV1_IFDET_BLUE_LED       | AB7/2    | LVCMOS33_BIDI | PB13B |           |           | DRIVE:8mA CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW      |
+| DRV1_PCIE_CLK_A_OE_L      | V9/2     | LVCMOS33_OUT  | PB12C |           |           | DRIVE:8mA SLEW:SLOW                                |
+| DRV1_PCIE_CLK_B_OE_L      | R21/1    | LVCMOS33_OUT  | PR17A |           |           | DRIVE:8mA SLEW:SLOW                                |
+| DRV1_PRSNT_AMBER_LED      | V7/2     | LVCMOS33_BIDI | PB7B  |           |           | DRIVE:8mA CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW      |
+| DRV1_PWROK                | E7/0     | LVCMOS33_IN   | PT11D |           |           | CLAMP:ON HYSTERESIS:SMALL                          |
+| DRV1_PWR_EN_L             | W8/2     | LVCMOS33_OUT  | PB10B |           |           | DRIVE:8mA SLEW:SLOW                                |
+| DRV20_ACT_LED             | U5/3     | LVCMOS33_IN   | PL25C |           |           | CLAMP:ON HYSTERESIS:SMALL                          |
+| DRV20_IFDET_BLUE_LED      | W4/3     | LVCMOS33_BIDI | PL25B |           |           | DRIVE:8mA CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW      |
+| DRV20_PCIE_CLK_A_OE_L     | T8/2     | LVCMOS33_OUT  | PB6D  |           |           | DRIVE:8mA SLEW:SLOW                                |
+| DRV20_PCIE_CLK_B_OE_L     | K21/1    | LVCMOS33_OUT  | PR11A |           |           | DRIVE:8mA SLEW:SLOW                                |
+| DRV20_PRSNT_AMBER_LED     | V6/2     | LVCMOS33_BIDI | PB4D  |           |           | DRIVE:8mA CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW      |
+| DRV20_PWROK               | AA8/2    | LVCMOS33_IN   | PB15D |           |           | CLAMP:ON HYSTERESIS:SMALL                          |
+| DRV20_PWR_EN_L            | U7/2     | LVCMOS33_OUT  | PB6C  |           |           | DRIVE:8mA SLEW:SLOW                                |
+| DRV21_ACT_LED             | D20/1    | LVCMOS33_IN   | PR3B  |           |           | CLAMP:ON HYSTERESIS:SMALL                          |
+| DRV21_IFDET_BLUE_LED      | U20/1    | LVCMOS33_BIDI | PR21A |           |           | DRIVE:8mA CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW      |
+| DRV21_PCIE_CLK_A_OE_L     | U6/2     | LVCMOS33_OUT  | PB4C  |           |           | DRIVE:8mA SLEW:SLOW                                |
+| DRV21_PCIE_CLK_B_OE_L     | V15/2    | LVCMOS33_OUT  | PB32D |           |           | DRIVE:8mA SLEW:SLOW                                |
+| DRV21_PRSNT_AMBER_LED     | E22/1    | LVCMOS33_BIDI | PR7A  |           |           | DRIVE:8mA CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW      |
+| DRV21_PWROK               | AA13/2   | LVCMOS33_IN   | PB21D |           |           | CLAMP:ON HYSTERESIS:SMALL                          |
+| DRV21_PWR_EN_L            | K22/1    | LVCMOS33_OUT  | PR11B |           |           | DRIVE:8mA SLEW:SLOW                                |
+| DRV22_ACT_LED             | D18/0    | LVCMOS33_IN   | PT35B |           |           | CLAMP:ON HYSTERESIS:SMALL                          |
+| DRV22_IFDET_BLUE_LED      | B7/0     | LVCMOS33_BIDI | PT15A |           |           | DRIVE:8mA CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW      |
+| DRV22_PCIE_CLK_A_OE_L     | R7/3     | LVCMOS33_OUT  | PL24C |           |           | DRIVE:8mA SLEW:SLOW                                |
+| DRV22_PCIE_CLK_B_OE_L     | T13/2    | LVCMOS33_OUT  | PB29C |           |           | DRIVE:8mA SLEW:SLOW                                |
+| DRV22_PRSNT_AMBER_LED     | G15/0    | LVCMOS33_BIDI | PT35C |           |           | DRIVE:8mA CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW      |
+| DRV22_PWROK               | A17/0    | LVCMOS33_IN   | PT28B |           |           | CLAMP:ON HYSTERESIS:SMALL                          |
+| DRV22_PWR_EN_L            | E10/0    | LVCMOS33_OUT  | PT16A |           |           | DRIVE:8mA SLEW:SLOW                                |
+| DRV23_ACT_LED             | P2/4     | LVCMOS33_IN   | PL16B |           |           | CLAMP:ON HYSTERESIS:SMALL                          |
+| DRV23_IFDET_BLUE_LED      | R3/3     | LVCMOS33_BIDI | PL18B |           |           | DRIVE:8mA CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW      |
+| DRV23_PCIE_CLK_A_OE_L     | W3/3     | LVCMOS33_OUT  | PL24A |           |           | DRIVE:8mA SLEW:SLOW                                |
+| DRV23_PCIE_CLK_B_OE_L     | T12/2    | LVCMOS33_OUT  | PB23C |           |           | DRIVE:8mA SLEW:SLOW                                |
+| DRV23_PRSNT_AMBER_LED     | N3/4     | LVCMOS33_BIDI | PL16A |           |           | DRIVE:8mA CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW      |
+| DRV23_PWROK               | G7/0     | LVCMOS33_IN   | PT9C  |           |           | CLAMP:ON HYSTERESIS:SMALL                          |
+| DRV23_PWR_EN_L            | M6/4     | LVCMOS33_OUT  | PL16D |           |           | DRIVE:8mA SLEW:SLOW                                |
+| DRV24_ACT_LED             | N7/3     | LVCMOS33_IN   | PL19C |           |           | CLAMP:ON HYSTERESIS:SMALL                          |
+| DRV24_IFDET_BLUE_LED      | Y2/3     | LVCMOS33_BIDI | PL25A |           |           | DRIVE:8mA CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW      |
+| DRV24_PRSNT_AMBER_LED     | P6/3     | LVCMOS33_BIDI | PL21D |           |           | DRIVE:8mA CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW      |
+| DRV24_PWR_EN_L            | M2/4     | LVCMOS33_OUT  | PL15D |           |           | DRIVE:8mA SLEW:SLOW                                |
+| DRV25_ACT_LED             | G16/1    | LVCMOS33_IN   | PR2C  |           |           | CLAMP:ON HYSTERESIS:SMALL                          |
+| DRV25_IFDET_BLUE_LED      | G18/1    | LVCMOS33_BIDI | PR4D  |           |           | DRIVE:8mA CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW      |
+| DRV25_PRSNT_AMBER_LED     | D15/0    | LVCMOS33_BIDI | PT32A |           |           | DRIVE:8mA CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW      |
+| DRV25_PWR_EN_L            | E15/0    | LVCMOS33_OUT  | PT32B |           |           | DRIVE:8mA SLEW:SLOW                                |
+| DRV26_ACT_LED             | E9/0     | LVCMOS33_IN   | PT14A |           |           | CLAMP:ON HYSTERESIS:SMALL                          |
+| DRV26_IFDET_BLUE_LED      | A2/0     | LVCMOS33_BIDI | PT11A |           |           | DRIVE:8mA CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW      |
+| DRV26_PRSNT_AMBER_LED     | A5/0     | LVCMOS33_BIDI | PT13A |           |           | DRIVE:8mA CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW      |
+| DRV26_PWR_EN_L            | D6/0     | LVCMOS33_OUT  | PT12A |           |           | DRIVE:8mA SLEW:SLOW                                |
+| DRV27_ACT_LED             | M22/1    | LVCMOS33_IN   | PR12C |           |           | CLAMP:ON HYSTERESIS:SMALL                          |
+| DRV27_IFDET_BLUE_LED      | M17/1    | LVCMOS33_BIDI | PR15D |           |           | DRIVE:8mA CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW      |
+| DRV27_PRSNT_AMBER_LED     | L16/1    | LVCMOS33_BIDI | PR10D |           |           | DRIVE:8mA CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW      |
+| DRV27_PWR_EN_L            | N20/1    | LVCMOS33_OUT  | PR15A |           |           | DRIVE:8mA SLEW:SLOW                                |
+| DRV28_ACT_LED             | G19/1    | LVCMOS33_IN   | PR5D  |           |           | CLAMP:ON HYSTERESIS:SMALL                          |
+| DRV28_IFDET_BLUE_LED      | L20/1    | LVCMOS33_BIDI | PR9D  |           |           | DRIVE:8mA CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW      |
+| DRV28_PRSNT_AMBER_LED     | J18/1    | LVCMOS33_BIDI | PR7C  |           |           | DRIVE:8mA CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW      |
+| DRV28_PWR_EN_L            | K16/1    | LVCMOS33_OUT  | PR8D  |           |           | DRIVE:8mA SLEW:SLOW                                |
+| DRV29_ACT_LED             | A20/0    | LVCMOS33_IN   | PT34C |           |           | CLAMP:ON HYSTERESIS:SMALL                          |
+| DRV29_IFDET_BLUE_LED      | A18/0    | LVCMOS33_BIDI | PT32D |           |           | DRIVE:8mA CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW      |
+| DRV29_PRSNT_AMBER_LED     | C15/0    | LVCMOS33_BIDI | PT26D |           |           | DRIVE:8mA CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW      |
+| DRV29_PWR_EN_L            | E12/0    | LVCMOS33_OUT  | PT26B |           |           | DRIVE:8mA SLEW:SLOW                                |
+| DRV2_ACT_LED              | U8/2     | LVCMOS33_IN   | PB7A  |           |           | CLAMP:ON HYSTERESIS:SMALL                          |
+| DRV2_IFDET_BLUE_LED       | V8/2     | LVCMOS33_BIDI | PB10A |           |           | DRIVE:8mA CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW      |
+| DRV2_PCIE_CLK_A_OE_L      | J17/1    | LVCMOS33_OUT  | PR6C  |           |           | DRIVE:8mA SLEW:SLOW                                |
+| DRV2_PCIE_CLK_B_OE_L      | L2/4     | LVCMOS33_OUT  | PL12C |           |           | DRIVE:8mA SLEW:SLOW                                |
+| DRV2_PRSNT_AMBER_LED      | AA3/2    | LVCMOS33_BIDI | PB4B  |           |           | DRIVE:8mA CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW      |
+| DRV2_PWROK                | B14/0    | LVCMOS33_IN   | PT25B |           |           | CLAMP:ON HYSTERESIS:SMALL                          |
+| DRV2_PWR_EN_L             | AA4/2    | LVCMOS33_OUT  | PB9A  |           |           | DRIVE:8mA SLEW:SLOW                                |
+| DRV30_ACT_LED             | F19/1    | LVCMOS33_IN   | PR5C  |           |           | CLAMP:ON HYSTERESIS:SMALL                          |
+| DRV30_IFDET_BLUE_LED      | A21/0    | LVCMOS33_BIDI | PT34D |           |           | DRIVE:8mA CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW      |
+| DRV30_PRSNT_AMBER_LED     | B19/0    | LVCMOS33_BIDI | PT33B |           |           | DRIVE:8mA CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW      |
+| DRV30_PWR_EN_L            | C18/0    | LVCMOS33_OUT  | PT33A |           |           | DRIVE:8mA SLEW:SLOW                                |
+| DRV31_ACT_LED             | F17/0    | LVCMOS33_IN   | PT36B |           |           | CLAMP:ON HYSTERESIS:SMALL                          |
+| DRV31_IFDET_BLUE_LED      | A7/0     | LVCMOS33_BIDI | PT15B |           |           | DRIVE:8mA CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW      |
+| DRV31_PRSNT_AMBER_LED     | D11/0    | LVCMOS33_BIDI | PT17B |           |           | DRIVE:8mA CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW      |
+| DRV31_PWR_EN_L            | C11/0    | LVCMOS33_OUT  | PT16B |           |           | DRIVE:8mA SLEW:SLOW                                |
+| DRV32_ACT_LED             | D9/0     | LVCMOS33_IN   | PT14B |           |           | CLAMP:ON HYSTERESIS:SMALL                          |
+| DRV32_IFDET_BLUE_LED      | A3/0     | LVCMOS33_BIDI | PT11B |           |           | DRIVE:8mA CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW      |
+| DRV32_PRSNT_AMBER_LED     | C6/0     | LVCMOS33_BIDI | PT13B |           |           | DRIVE:8mA CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW      |
+| DRV32_PWR_EN_L            | D7/0     | LVCMOS33_OUT  | PT12B |           |           | DRIVE:8mA SLEW:SLOW                                |
+| DRV33_ACT_LED             | C4/0     | LVCMOS33_IN   | PT10B |           |           | CLAMP:ON HYSTERESIS:SMALL                          |
+| DRV33_IFDET_BLUE_LED      | B3/0     | LVCMOS33_BIDI | PT9B  |           |           | DRIVE:8mA CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW      |
+| DRV33_PRSNT_AMBER_LED     | D5/0     | LVCMOS33_BIDI | PT10A |           |           | DRIVE:8mA CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW      |
+| DRV33_PWR_EN_L            | D4/0     | LVCMOS33_OUT  | PT9A  |           |           | DRIVE:8mA SLEW:SLOW                                |
+| DRV34_ACT_LED             | N1/4     | LVCMOS33_IN   | PL15A |           |           | CLAMP:ON HYSTERESIS:SMALL                          |
+| DRV34_IFDET_BLUE_LED      | N2/4     | LVCMOS33_BIDI | PL15B |           |           | DRIVE:8mA CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW      |
+| DRV34_PRSNT_AMBER_LED     | M7/4     | LVCMOS33_BIDI | PL16C |           |           | DRIVE:8mA CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW      |
+| DRV34_PWR_EN_L            | M1/4     | LVCMOS33_OUT  | PL15C |           |           | DRIVE:8mA SLEW:SLOW                                |
+| DRV35_ACT_LED             | T7/3     | LVCMOS33_IN   | PL25D |           |           | CLAMP:ON HYSTERESIS:SMALL                          |
+| DRV35_IFDET_BLUE_LED      | P7/3     | LVCMOS33_BIDI | PL21C |           |           | DRIVE:8mA CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW      |
+| DRV35_PRSNT_AMBER_LED     | AA1/3    | LVCMOS33_BIDI | PL23B |           |           | DRIVE:8mA CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW      |
+| DRV35_PWR_EN_L            | V1/3     | LVCMOS33_OUT  | PL19B |           |           | DRIVE:8mA SLEW:SLOW                                |
+| DRV3_ACT_LED              | V11/2    | LVCMOS33_IN   | PB15A |           |           | CLAMP:ON HYSTERESIS:SMALL                          |
+| DRV3_IFDET_BLUE_LED       | AA10/2   | LVCMOS33_BIDI | PB18A |           |           | DRIVE:8mA CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW      |
+| DRV3_PCIE_CLK_A_OE_L      | C13/0    | LVCMOS33_OUT  | PT25A |           |           | DRIVE:8mA SLEW:SLOW                                |
+| DRV3_PCIE_CLK_B_OE_L      | K3/4     | LVCMOS33_OUT  | PL11B |           |           | DRIVE:8mA SLEW:SLOW                                |
+| DRV3_PRSNT_AMBER_LED      | AA7/2    | LVCMOS33_BIDI | PB13A |           |           | DRIVE:8mA CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW      |
+| DRV3_PWROK                | L21/1    | LVCMOS33_IN   | PR11C |           |           | CLAMP:ON HYSTERESIS:SMALL                          |
+| DRV3_PWR_EN_L             | Y8/2     | LVCMOS33_OUT  | PB15C |           |           | DRIVE:8mA SLEW:SLOW                                |
+| DRV4_ACT_LED              | AB10/2   | LVCMOS33_IN   | PB18B |           |           | CLAMP:ON HYSTERESIS:SMALL                          |
+| DRV4_IFDET_BLUE_LED       | AA12/2   | LVCMOS33_BIDI | PB21B |           |           | DRIVE:8mA CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW      |
+| DRV4_PCIE_CLK_A_OE_L      | AB3/2    | LVCMOS33_OUT  | PB7D  |           |           | DRIVE:8mA SLEW:SLOW                                |
+| DRV4_PCIE_CLK_B_OE_L      | L4/4     | LVCMOS33_OUT  | PL10D |           |           | DRIVE:8mA SLEW:SLOW                                |
+| DRV4_PRSNT_AMBER_LED      | W11/2    | LVCMOS33_BIDI | PB15B |           |           | DRIVE:8mA CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW      |
+| DRV4_PWROK                | N16/1    | LVCMOS33_IN   | PR18C |           |           | CLAMP:ON HYSTERESIS:SMALL                          |
+| DRV4_PWR_EN_L             | AB11/2   | LVCMOS33_OUT  | PB18D |           |           | DRIVE:8mA SLEW:SLOW                                |
+| DRV5_ACT_LED              | W14/2    | LVCMOS33_IN   | PB31C |           |           | CLAMP:ON HYSTERESIS:SMALL                          |
+| DRV5_IFDET_BLUE_LED       | V12/2    | LVCMOS33_BIDI | PB26D |           |           | DRIVE:8mA CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW      |
+| DRV5_PCIE_CLK_A_OE_L      | K20/1    | LVCMOS33_OUT  | PR10B |           |           | DRIVE:8mA SLEW:SLOW                                |
+| DRV5_PCIE_CLK_B_OE_L      | L5/4     | LVCMOS33_OUT  | PL10C |           |           | DRIVE:8mA SLEW:SLOW                                |
+| DRV5_PRSNT_AMBER_LED      | AB13/2   | LVCMOS33_BIDI | PB21C |           |           | DRIVE:8mA CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW      |
+| DRV5_PWROK                | D12/0    | LVCMOS33_IN   | PT26A |           |           | CLAMP:ON HYSTERESIS:SMALL                          |
+| DRV5_PWR_EN_L             | AA15/2   | LVCMOS33_OUT  | PB28C |           |           | DRIVE:8mA SLEW:SLOW                                |
+| DRV6_ACT_LED              | W12/2    | LVCMOS33_IN   | PB26C |           |           | CLAMP:ON HYSTERESIS:SMALL                          |
+| DRV6_IFDET_BLUE_LED       | V13/2    | LVCMOS33_BIDI | PB28B |           |           | DRIVE:8mA CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW      |
+| DRV6_PCIE_CLK_A_OE_L      | B22/1    | LVCMOS33_OUT  | PR4A  |           |           | DRIVE:8mA SLEW:SLOW                                |
+| DRV6_PCIE_CLK_B_OE_L      | L7/4     | LVCMOS33_OUT  | PL11D |           |           | DRIVE:8mA SLEW:SLOW                                |
+| DRV6_PRSNT_AMBER_LED      | AB12/2   | LVCMOS33_BIDI | PB21A |           |           | DRIVE:8mA CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW      |
+| DRV6_PWROK                | F15/0    | LVCMOS33_IN   | PT34B |           |           | CLAMP:ON HYSTERESIS:SMALL                          |
+| DRV6_PWR_EN_L             | AB15/2   | LVCMOS33_OUT  | PB26B |           |           | DRIVE:8mA SLEW:SLOW                                |
+| DRV7_ACT_LED              | U15/2    | LVCMOS33_IN   | PB35D |           |           | CLAMP:ON HYSTERESIS:SMALL                          |
+| DRV7_IFDET_BLUE_LED       | Y20/1    | LVCMOS33_BIDI | PR25B |           |           | DRIVE:8mA CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW      |
+| DRV7_PCIE_CLK_A_OE_L      | G17/1    | LVCMOS33_OUT  | PR3C  |           |           | DRIVE:8mA SLEW:SLOW                                |
+| DRV7_PCIE_CLK_B_OE_L      | H1/4     | LVCMOS33_OUT  | PL10A |           |           | DRIVE:8mA SLEW:SLOW                                |
+| DRV7_PRSNT_AMBER_LED      | W17/2    | LVCMOS33_BIDI | PB34B |           |           | DRIVE:8mA CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW      |
+| DRV7_PWROK                | F11/0    | LVCMOS33_IN   | PT18C |           |           | CLAMP:ON HYSTERESIS:SMALL                          |
+| DRV7_PWR_EN_L             | R19/1    | LVCMOS33_OUT  | PR21C |           |           | DRIVE:8mA SLEW:SLOW                                |
+| DRV8_ACT_LED              | Y18/2    | LVCMOS33_IN   | PB34C |           |           | CLAMP:ON HYSTERESIS:SMALL                          |
+| DRV8_IFDET_BLUE_LED       | R18/1    | LVCMOS33_BIDI | PR21D |           |           | DRIVE:8mA CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW      |
+| DRV8_PCIE_CLK_A_OE_L      | G13/0    | LVCMOS33_OUT  | PT27A |           |           | DRIVE:8mA SLEW:SLOW                                |
+| DRV8_PCIE_CLK_B_OE_L      | P3/4     | LVCMOS33_OUT  | PL17A |           |           | DRIVE:8mA SLEW:SLOW                                |
+| DRV8_PRSNT_AMBER_LED      | W16/2    | LVCMOS33_BIDI | PB34A |           |           | DRIVE:8mA CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW      |
+| DRV8_PWROK                | E11/0    | LVCMOS33_IN   | PT17A |           |           | CLAMP:ON HYSTERESIS:SMALL                          |
+| DRV8_PWR_EN_L             | AA19/2   | LVCMOS33_OUT  | PB34D |           |           | DRIVE:8mA SLEW:SLOW                                |
+| DRV9_ACT_LED              | Y17/2    | LVCMOS33_IN   | PB32A |           |           | CLAMP:ON HYSTERESIS:SMALL                          |
+| DRV9_IFDET_BLUE_LED       | W18/2    | LVCMOS33_BIDI | PB37B |           |           | DRIVE:8mA CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW      |
+| DRV9_PCIE_CLK_A_OE_L      | C22/1    | LVCMOS33_OUT  | PR4B  |           |           | DRIVE:8mA SLEW:SLOW                                |
+| DRV9_PCIE_CLK_B_OE_L      | L1/4     | LVCMOS33_OUT  | PL12D |           |           | DRIVE:8mA SLEW:SLOW                                |
+| DRV9_PRSNT_AMBER_LED      | AB20/2   | LVCMOS33_BIDI | PB35A |           |           | DRIVE:8mA CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW      |
+| DRV9_PWROK                | B8/0     | LVCMOS33_IN   | PT16D |           |           | CLAMP:ON HYSTERESIS:SMALL                          |
+| DRV9_PWR_EN_L             | Y19/2    | LVCMOS33_OUT  | PB37A |           |           | DRIVE:8mA SLEW:SLOW                                |
+| HEART                     | W2/3     | LVCMOS33_OUT  | PL22B |           |           | DRIVE:8mA SLEW:SLOW                                |
+| PE_RST_DRV0_A_L           | M5/4     | LVCMOS33_OUT  | PL17D |           |           | DRIVE:8mA SLEW:SLOW                                |
+| PE_RST_DRV0_B_L           | N5/3     | LVCMOS33_OUT  | PL18D |           |           | DRIVE:8mA SLEW:SLOW                                |
+| PE_RST_DRV10_A_L          | F8/0     | LVCMOS33_OUT  | PT11C |           |           | DRIVE:8mA SLEW:SLOW                                |
+| PE_RST_DRV10_B_L          | B4/0     | LVCMOS33_OUT  | PT12C |           |           | DRIVE:8mA SLEW:SLOW                                |
+| PE_RST_DRV11_A_L          | U3/3     | LVCMOS33_OUT  | PL19A |           |           | DRIVE:8mA SLEW:SLOW                                |
+| PE_RST_DRV11_B_L          | R2/3     | LVCMOS33_OUT  | PL18A |           |           | DRIVE:8mA SLEW:SLOW                                |
+| PE_RST_DRV12_A_L          | P19/1    | LVCMOS33_OUT  | PR19C |           |           | DRIVE:8mA SLEW:SLOW                                |
+| PE_RST_DRV12_B_L          | Y21/1    | LVCMOS33_OUT  | PR25A |           |           | DRIVE:8mA SLEW:SLOW                                |
+| PE_RST_DRV13_A_L          | T19/1    | LVCMOS33_OUT  | PR22C |           |           | DRIVE:8mA SLEW:SLOW                                |
+| PE_RST_DRV13_B_L          | U22/1    | LVCMOS33_OUT  | PR19B |           |           | DRIVE:8mA SLEW:SLOW                                |
+| PE_RST_DRV14_A_L          | R6/3     | LVCMOS33_OUT  | PL23D |           |           | DRIVE:8mA SLEW:SLOW                                |
+| PE_RST_DRV14_B_L          | T5/3     | LVCMOS33_OUT  | PL23C |           |           | DRIVE:8mA SLEW:SLOW                                |
+| PE_RST_DRV15_A_L          | D16/0    | LVCMOS33_OUT  | PT33C |           |           | DRIVE:8mA SLEW:SLOW                                |
+| PE_RST_DRV15_B_L          | D14/0    | LVCMOS33_OUT  | PT28C |           |           | DRIVE:8mA SLEW:SLOW                                |
+| PE_RST_DRV16_A_L          | J21/1    | LVCMOS33_OUT  | PR10A |           |           | DRIVE:8mA SLEW:SLOW                                |
+| PE_RST_DRV16_B_L          | M18/1    | LVCMOS33_OUT  | PR16D |           |           | DRIVE:8mA SLEW:SLOW                                |
+| PE_RST_DRV17_A_L          | U11/2    | LVCMOS33_OUT  | PB16C |           |           | DRIVE:8mA SLEW:SLOW                                |
+| PE_RST_DRV17_B_L          | T11/2    | LVCMOS33_OUT  | PB16D |           |           | DRIVE:8mA SLEW:SLOW                                |
+| PE_RST_DRV18_A_L          | H20/1    | LVCMOS33_OUT  | PR9A  |           |           | DRIVE:8mA SLEW:SLOW                                |
+| PE_RST_DRV18_B_L          | E20/1    | LVCMOS33_OUT  | PR5B  |           |           | DRIVE:8mA SLEW:SLOW                                |
+| PE_RST_DRV19_A_L          | T22/1    | LVCMOS33_OUT  | PR18A |           |           | DRIVE:8mA SLEW:SLOW                                |
+| PE_RST_DRV19_B_L          | T21/1    | LVCMOS33_OUT  | PR18B |           |           | DRIVE:8mA SLEW:SLOW                                |
+| PE_RST_DRV1_A_L           | E6/0     | LVCMOS33_OUT  | PT9D  |           |           | DRIVE:8mA SLEW:SLOW                                |
+| PE_RST_DRV1_B_L           | D8/0     | LVCMOS33_OUT  | PT13D |           |           | DRIVE:8mA SLEW:SLOW                                |
+| PE_RST_DRV20_A_L          | U10/2    | LVCMOS33_OUT  | PB13C |           |           | DRIVE:8mA SLEW:SLOW                                |
+| PE_RST_DRV20_B_L          | Y6/2     | LVCMOS33_OUT  | PB10D |           |           | DRIVE:8mA SLEW:SLOW                                |
+| PE_RST_DRV21_A_L          | AA11/2   | LVCMOS33_OUT  | PB18C |           |           | DRIVE:8mA SLEW:SLOW                                |
+| PE_RST_DRV21_B_L          | T10/2    | LVCMOS33_OUT  | PB13D |           |           | DRIVE:8mA SLEW:SLOW                                |
+| PE_RST_DRV22_A_L          | C17/0    | LVCMOS33_OUT  | PT32C |           |           | DRIVE:8mA SLEW:SLOW                                |
+| PE_RST_DRV22_B_L          | C16/0    | LVCMOS33_OUT  | PT28A |           |           | DRIVE:8mA SLEW:SLOW                                |
+| PE_RST_DRV23_A_L          | E8/0     | LVCMOS33_OUT  | PT13C |           |           | DRIVE:8mA SLEW:SLOW                                |
+| PE_RST_DRV23_B_L          | L6/4     | LVCMOS33_OUT  | PL11C |           |           | DRIVE:8mA SLEW:SLOW                                |
+| PE_RST_DRV2_A_L           | E14/0    | LVCMOS33_OUT  | PT28D |           |           | DRIVE:8mA SLEW:SLOW                                |
+| PE_RST_DRV2_B_L           | D17/0    | LVCMOS33_OUT  | PT33D |           |           | DRIVE:8mA SLEW:SLOW                                |
+| PE_RST_DRV3_A_L           | D22/1    | LVCMOS33_OUT  | PR6B  |           |           | DRIVE:8mA SLEW:SLOW                                |
+| PE_RST_DRV3_B_L           | E21/1    | LVCMOS33_OUT  | PR6A  |           |           | DRIVE:8mA SLEW:SLOW                                |
+| PE_RST_DRV4_A_L           | D19/1    | LVCMOS33_OUT  | PR2A  |           |           | DRIVE:8mA SLEW:SLOW                                |
+| PE_RST_DRV4_B_L           | C21/1    | LVCMOS33_OUT  | PR2B  |           |           | DRIVE:8mA SLEW:SLOW                                |
+| PE_RST_DRV5_A_L           | B15/0    | LVCMOS33_OUT  | PT26C |           |           | DRIVE:8mA SLEW:SLOW                                |
+| PE_RST_DRV5_B_L           | H17/1    | LVCMOS33_OUT  | PR4C  |           |           | DRIVE:8mA SLEW:SLOW                                |
+| PE_RST_DRV6_A_L           | F16/0    | LVCMOS33_OUT  | PT35D |           |           | DRIVE:8mA SLEW:SLOW                                |
+| PE_RST_DRV6_B_L           | E17/0    | LVCMOS33_OUT  | PT36A |           |           | DRIVE:8mA SLEW:SLOW                                |
+| PE_RST_DRV7_A_L           | G11/0    | LVCMOS33_OUT  | PT18D |           |           | DRIVE:8mA SLEW:SLOW                                |
+| PE_RST_DRV7_B_L           | C19/0    | LVCMOS33_OUT  | PT35A |           |           | DRIVE:8mA SLEW:SLOW                                |
+| PE_RST_DRV8_A_L           | G10/0    | LVCMOS33_OUT  | PT15D |           |           | DRIVE:8mA SLEW:SLOW                                |
+| PE_RST_DRV8_B_L           | F10/0    | LVCMOS33_OUT  | PT15C |           |           | DRIVE:8mA SLEW:SLOW                                |
+| PE_RST_DRV9_A_L           | C8/0     | LVCMOS33_OUT  | PT16C |           |           | DRIVE:8mA SLEW:SLOW                                |
+| PE_RST_DRV9_B_L           | C5/0     | LVCMOS33_OUT  | PT12D |           |           | DRIVE:8mA SLEW:SLOW                                |
+| RESET_N                   | V3/3     | LVCMOS33_IN   | PL22A |           |           | PULL:UP CLAMP:ON HYSTERESIS:SMALL                  |
+| SCL_1                     | N22/1    | LVCMOS33_IN   | PR12A |           |           | CLAMP:ON HYSTERESIS:SMALL                          |
+| SCL_2                     | AA9/2    | LVCMOS33_IN   | PB16A |           |           | CLAMP:ON HYSTERESIS:SMALL                          |
+| SDA_1                     | N21/1    | LVCMOS33_BIDI | PR12B |           |           | DRIVE:8mA HYSTERESIS:SMALL OPENDRAIN:ON SLEW:SLOW  |
+| SDA_2                     | Y10/2    | LVCMOS33_BIDI | PB16B |           |           | DRIVE:8mA HYSTERESIS:SMALL OPENDRAIN:ON SLEW:SLOW  |
+| SGPIO_CK                  | F6/5     | LVCMOS33_OUT  | PL2C  |           |           | DRIVE:8mA SLEW:SLOW                                |
+| SGPIO_DATA                | G6/5     | LVCMOS33_OUT  | PL3C  |           |           | DRIVE:8mA SLEW:SLOW                                |
+| SGPIO_LD                  | F5/5     | LVCMOS33_OUT  | PL2D  |           |           | DRIVE:8mA SLEW:SLOW                                |
+| SYSCLK                    | B9/0     | LVCMOS33_IN   | PT18A |           |           | CLAMP:ON HYSTERESIS:SMALL                          |
++---------------------------+----------+---------------+-------+-----------+-----------+----------------------------------------------------+
 
 Vccio by Bank:
 +------+-------+
@@ -329,8 +329,8 @@ Vccio by Bank:
 | A6/0     | Reserved: sysCONFIG       |            |               | TDO          | TDO            |           |           |
 | A7/0     | DRV31_IFDET_BLUE_LED      | LOCATED    | LVCMOS33_BIDI | PT15B        |                |           |           |
 | A8/0     | Reserved: sysCONFIG       |            |               | TCK/TEST_CLK | TCK            |           |           |
-| A10/0    | DRV5_PCIE_CLK_B_OE_L      |            | LVCMOS33_OUT  | PT21D        |                |           |           |
-| A11/0    | DRV4_PCIE_CLK_A_OE_L      |            | LVCMOS33_OUT  | PT21B        |                |           |           |
+| A10/0    |     unused, PULL:DOWN     |            |               | PT21D        |                |           |           |
+| A11/0    |     unused, PULL:DOWN     |            |               | PT21B        |                |           |           |
 | A12/0    |     unused, PULL:DOWN     |            |               | PT22A        |                |           |           |
 | A13/0    | Reserved: sysCONFIG       |            | LVCMOS33_BIDI | PT22C        | SCL/PCLKT0_0   |           |           |
 | A16/0    |     unused, PULL:DOWN     |            |               | PT27C        | JTAGENB        |           |           |
@@ -348,16 +348,16 @@ Vccio by Bank:
 | AA11/2   | PE_RST_DRV21_A_L          | LOCATED    | LVCMOS33_OUT  | PB18C        |                |           |           |
 | AA12/2   | DRV4_IFDET_BLUE_LED       | LOCATED    | LVCMOS33_BIDI | PB21B        |                |           |           |
 | AA13/2   | DRV21_PWROK               | LOCATED    | LVCMOS33_IN   | PB21D        |                |           |           |
-| AA14/2   | DRV10_PCIE_CLK_A_OE_L     |            | LVCMOS33_OUT  | PB23B        | PCLKC2_1       |           |           |
+| AA14/2   |     unused, PULL:DOWN     |            |               | PB23B        | PCLKC2_1       |           |           |
 | AA15/2   | DRV5_PWR_EN_L             | LOCATED    | LVCMOS33_OUT  | PB28C        |                |           |           |
 | AA16/2   | DRV11_IFDET_BLUE_LED      | LOCATED    | LVCMOS33_BIDI | PB29B        |                |           |           |
 | AA19/2   | DRV8_PWR_EN_L             | LOCATED    | LVCMOS33_OUT  | PB34D        |                |           |           |
 | AA20/2   |     unused, PULL:DOWN     |            |               | PB38A        | SN             |           |           |
 | AA22/1   | DRV18_PCIE_CLK_B_OE_L     | LOCATED    | LVCMOS33_OUT  | PR23B        | DQ1            |           |           |
 | AB2/2    | DRV18_PCIE_CLK_A_OE_L     | LOCATED    | LVCMOS33_OUT  | PB7C         |                |           |           |
-| AB3/2    | DRV3_PCIE_CLK_A_OE_L      |            | LVCMOS33_OUT  | PB7D         |                |           |           |
+| AB3/2    | DRV4_PCIE_CLK_A_OE_L      | LOCATED    | LVCMOS33_OUT  | PB7D         |                |           |           |
 | AB5/2    | DRV13_PCIE_CLK_A_OE_L     | LOCATED    | LVCMOS33_OUT  | PB10C        |                |           |           |
-| AB6/2    | DRV6_PWROK                |            | LVCMOS33_IN   | PB12A        | MCLK/CCLK      |           |           |
+| AB6/2    |     unused, PULL:DOWN     |            |               | PB12A        | MCLK/CCLK      |           |           |
 | AB7/2    | DRV1_IFDET_BLUE_LED       | LOCATED    | LVCMOS33_BIDI | PB13B        |                |           |           |
 | AB10/2   | DRV4_ACT_LED              | LOCATED    | LVCMOS33_IN   | PB18B        |                |           |           |
 | AB11/2   | DRV4_PWR_EN_L             | LOCATED    | LVCMOS33_OUT  | PB18D        |                |           |           |
@@ -373,18 +373,18 @@ Vccio by Bank:
 | B3/0     | DRV33_IFDET_BLUE_LED      | LOCATED    | LVCMOS33_BIDI | PT9B         |                |           |           |
 | B4/0     | PE_RST_DRV10_B_L          | LOCATED    | LVCMOS33_OUT  | PT12C        |                |           |           |
 | B7/0     | DRV22_IFDET_BLUE_LED      | LOCATED    | LVCMOS33_BIDI | PT15A        |                |           |           |
-| B8/0     |     unused, PULL:DOWN     |            |               | PT16D        |                |           |           |
+| B8/0     | DRV9_PWROK                | LOCATED    | LVCMOS33_IN   | PT16D        |                |           |           |
 | B9/0     | SYSCLK                    | LOCATED    | LVCMOS33_IN   | PT18A        | PCLKT0_1       |           |           |
 | B10/0    |     unused, PULL:DOWN     |            |               | PT21C        |                |           |           |
-| B11/0    | DRV4_PCIE_CLK_B_OE_L      |            | LVCMOS33_OUT  | PT21A        |                |           |           |
-| B12/0    | DRV6_PCIE_CLK_A_OE_L      |            | LVCMOS33_OUT  | PT22B        |                |           |           |
+| B11/0    |     unused, PULL:DOWN     |            |               | PT21A        |                |           |           |
+| B12/0    |     unused, PULL:DOWN     |            |               | PT22B        |                |           |           |
 | B13/0    | Reserved: sysCONFIG       |            | LVCMOS33_BIDI | PT22D        | SDA/PCLKC0_0   |           |           |
-| B14/0    | DRV11_PCIE_CLK_A_OE_L     |            | LVCMOS33_OUT  | PT25B        |                |           |           |
+| B14/0    | DRV2_PWROK                | LOCATED    | LVCMOS33_IN   | PT25B        |                |           |           |
 | B15/0    | PE_RST_DRV5_A_L           | LOCATED    | LVCMOS33_OUT  | PT26C        |                |           |           |
 | B16/0    |     unused, PULL:DOWN     |            |               | PT27D        | PROGRAMN       |           |           |
 | B19/0    | DRV30_PRSNT_AMBER_LED     | LOCATED    | LVCMOS33_BIDI | PT33B        |                |           |           |
 | B20/0    |     unused, PULL:DOWN     |            |               | PT36C        | INITN          |           |           |
-| B22/1    |     unused, PULL:DOWN     |            |               | PR4A         |                |           |           |
+| B22/1    | DRV6_PCIE_CLK_A_OE_L      | LOCATED    | LVCMOS33_OUT  | PR4A         |                |           |           |
 | C1/5     |     unused, PULL:DOWN     |            |               | PL4B         | L_GPLLC_IN     |           |           |
 | C2/5     | BB_CPLD_ALT_L             | LOCATED    | LVCMOS33_IN   | PL2B         |                |           |           |
 | C3/5     |     unused, PULL:DOWN     |            |               | PL2A         |                |           |           |
@@ -396,7 +396,7 @@ Vccio by Bank:
 | C9/0     | Reserved: sysCONFIG       |            |               | TMS          | TMS            |           |           |
 | C10/0    |     unused, PULL:DOWN     |            |               | PT18B        | PCLKC0_1       |           |           |
 | C11/0    | DRV31_PWR_EN_L            | LOCATED    | LVCMOS33_OUT  | PT16B        |                |           |           |
-| C13/0    |     unused, PULL:DOWN     |            |               | PT25A        |                |           |           |
+| C13/0    | DRV3_PCIE_CLK_A_OE_L      | LOCATED    | LVCMOS33_OUT  | PT25A        |                |           |           |
 | C15/0    | DRV29_PRSNT_AMBER_LED     | LOCATED    | LVCMOS33_BIDI | PT26D        |                |           |           |
 | C16/0    | PE_RST_DRV22_B_L          | LOCATED    | LVCMOS33_OUT  | PT28A        |                |           |           |
 | C17/0    | PE_RST_DRV22_A_L          | LOCATED    | LVCMOS33_OUT  | PT32C        |                |           |           |
@@ -404,7 +404,7 @@ Vccio by Bank:
 | C19/0    | PE_RST_DRV7_B_L           | LOCATED    | LVCMOS33_OUT  | PT35A        |                |           |           |
 | C20/0    |     unused, PULL:DOWN     |            |               | PT36D        | DONE           |           |           |
 | C21/1    | PE_RST_DRV4_B_L           | LOCATED    | LVCMOS33_OUT  | PR2B         | R_GPLLC_FB/DQ0 |           |           |
-| C22/1    |     unused, PULL:DOWN     |            |               | PR4B         |                |           |           |
+| C22/1    | DRV9_PCIE_CLK_A_OE_L      | LOCATED    | LVCMOS33_OUT  | PR4B         |                |           |           |
 | D1/5     |     unused, PULL:DOWN     |            |               | PL5B         |                |           |           |
 | D3/5     |     unused, PULL:DOWN     |            |               | PL3B         | L_GPLLC_FB     |           |           |
 | D4/0     | DRV33_PWR_EN_L            | LOCATED    | LVCMOS33_OUT  | PT9A         |                |           |           |
@@ -414,7 +414,7 @@ Vccio by Bank:
 | D8/0     | PE_RST_DRV1_B_L           | LOCATED    | LVCMOS33_OUT  | PT13D        |                |           |           |
 | D9/0     | DRV32_ACT_LED             | LOCATED    | LVCMOS33_IN   | PT14B        |                |           |           |
 | D11/0    | DRV31_PRSNT_AMBER_LED     | LOCATED    | LVCMOS33_BIDI | PT17B        |                |           |           |
-| D12/0    | DRV5_PCIE_CLK_A_OE_L      |            | LVCMOS33_OUT  | PT26A        |                |           |           |
+| D12/0    | DRV5_PWROK                | LOCATED    | LVCMOS33_IN   | PT26A        |                |           |           |
 | D14/0    | PE_RST_DRV15_B_L          | LOCATED    | LVCMOS33_OUT  | PT28C        |                |           |           |
 | D15/0    | DRV25_PRSNT_AMBER_LED     | LOCATED    | LVCMOS33_BIDI | PT32A        |                |           |           |
 | D16/0    | PE_RST_DRV15_A_L          | LOCATED    | LVCMOS33_OUT  | PT33C        |                |           |           |
@@ -428,11 +428,11 @@ Vccio by Bank:
 | E2/5     |     unused, PULL:DOWN     |            |               | PL5A         |                |           |           |
 | E4/5     |     unused, PULL:DOWN     |            |               | PL3A         | L_GPLLT_FB     |           |           |
 | E6/0     | PE_RST_DRV1_A_L           | LOCATED    | LVCMOS33_OUT  | PT9D         |                |           |           |
-| E7/0     |     unused, PULL:DOWN     |            |               | PT11D        |                |           |           |
+| E7/0     | DRV1_PWROK                | LOCATED    | LVCMOS33_IN   | PT11D        |                |           |           |
 | E8/0     | PE_RST_DRV23_A_L          | LOCATED    | LVCMOS33_OUT  | PT13C        |                |           |           |
 | E9/0     | DRV26_ACT_LED             | LOCATED    | LVCMOS33_IN   | PT14A        |                |           |           |
 | E10/0    | DRV22_PWR_EN_L            | LOCATED    | LVCMOS33_OUT  | PT16A        |                |           |           |
-| E11/0    | DRV6_PCIE_CLK_B_OE_L      |            | LVCMOS33_OUT  | PT17A        |                |           |           |
+| E11/0    | DRV8_PWROK                | LOCATED    | LVCMOS33_IN   | PT17A        |                |           |           |
 | E12/0    | DRV29_PWR_EN_L            | LOCATED    | LVCMOS33_OUT  | PT26B        |                |           |           |
 | E14/0    | PE_RST_DRV2_A_L           | LOCATED    | LVCMOS33_OUT  | PT28D        |                |           |           |
 | E15/0    | DRV25_PWR_EN_L            | LOCATED    | LVCMOS33_OUT  | PT32B        |                |           |           |
@@ -449,13 +449,13 @@ Vccio by Bank:
 | F6/5     | SGPIO_CK                  | LOCATED    | LVCMOS33_OUT  | PL2C         |                |           |           |
 | F8/0     | PE_RST_DRV10_A_L          | LOCATED    | LVCMOS33_OUT  | PT11C        |                |           |           |
 | F10/0    | PE_RST_DRV8_B_L           | LOCATED    | LVCMOS33_OUT  | PT15C        |                |           |           |
-| F11/0    |     unused, PULL:DOWN     |            |               | PT18C        |                |           |           |
+| F11/0    | DRV7_PWROK                | LOCATED    | LVCMOS33_IN   | PT18C        |                |           |           |
 | F12/0    |     unused, PULL:DOWN     |            |               | PT25D        |                |           |           |
-| F13/0    |     unused, PULL:DOWN     |            |               | PT27B        |                |           |           |
-| F15/0    |     unused, PULL:DOWN     |            |               | PT34B        |                |           |           |
+| F13/0    | DRV11_PCIE_CLK_A_OE_L     | LOCATED    | LVCMOS33_OUT  | PT27B        |                |           |           |
+| F15/0    | DRV6_PWROK                | LOCATED    | LVCMOS33_IN   | PT34B        |                |           |           |
 | F16/0    | PE_RST_DRV6_A_L           | LOCATED    | LVCMOS33_OUT  | PT35D        |                |           |           |
 | F17/0    | DRV31_ACT_LED             | LOCATED    | LVCMOS33_IN   | PT36B        |                |           |           |
-| F18/1    |     unused, PULL:DOWN     |            |               | PR2D         |                |           |           |
+| F18/1    | DRV10_PCIE_CLK_A_OE_L     | LOCATED    | LVCMOS33_OUT  | PR2D         |                |           |           |
 | F19/1    | DRV30_ACT_LED             | LOCATED    | LVCMOS33_IN   | PR5C         |                |           |           |
 | F20/1    | DRV18_PWR_EN_L            | LOCATED    | LVCMOS33_OUT  | PR7B         | DQ0            |           |           |
 | G1/5     |     unused, PULL:DOWN     |            |               | PL8B         |                |           |           |
@@ -465,21 +465,21 @@ Vccio by Bank:
 | G5/5     | CANISTER_B_PCIE_CLK_ACT_L | LOCATED    | LVCMOS33_IN   | PL4D         |                |           |           |
 | G6/5     | SGPIO_DATA                | LOCATED    | LVCMOS33_OUT  | PL3C         |                |           |           |
 | G7/0     | DRV23_PWROK               | LOCATED    | LVCMOS33_IN   | PT9C         |                |           |           |
-| G8/0     |     unused, PULL:DOWN     |            |               | PT10D        |                |           |           |
+| G8/0     | DRV10_PWROK               | LOCATED    | LVCMOS33_IN   | PT10D        |                |           |           |
 | G10/0    | PE_RST_DRV8_A_L           | LOCATED    | LVCMOS33_OUT  | PT15D        |                |           |           |
 | G11/0    | PE_RST_DRV7_A_L           | LOCATED    | LVCMOS33_OUT  | PT18D        |                |           |           |
 | G12/0    |     unused, PULL:DOWN     |            |               | PT25C        |                |           |           |
-| G13/0    | DRV11_PCIE_CLK_B_OE_L     |            | LVCMOS33_OUT  | PT27A        |                |           |           |
+| G13/0    | DRV8_PCIE_CLK_A_OE_L      | LOCATED    | LVCMOS33_OUT  | PT27A        |                |           |           |
 | G15/0    | DRV22_PRSNT_AMBER_LED     | LOCATED    | LVCMOS33_BIDI | PT35C        |                |           |           |
 | G16/1    | DRV25_ACT_LED             | LOCATED    | LVCMOS33_IN   | PR2C         |                |           |           |
-| G17/1    |     unused, PULL:DOWN     |            |               | PR3C         |                |           |           |
+| G17/1    | DRV7_PCIE_CLK_A_OE_L      | LOCATED    | LVCMOS33_OUT  | PR3C         |                |           |           |
 | G18/1    | DRV25_IFDET_BLUE_LED      | LOCATED    | LVCMOS33_BIDI | PR4D         |                |           |           |
 | G19/1    | DRV28_ACT_LED             | LOCATED    | LVCMOS33_IN   | PR5D         |                |           |           |
 | G21/1    | DRV15_PWR_EN_L            | LOCATED    | LVCMOS33_OUT  | PR8A         |                |           |           |
 | G22/1    | DRV15_PRSNT_AMBER_LED     | LOCATED    | LVCMOS33_BIDI | PR8B         |                |           |           |
-| H1/4     | DRV0_PWROK                |            | LVCMOS33_IN   | PL10A        |                |           |           |
+| H1/4     | DRV7_PCIE_CLK_B_OE_L      | LOCATED    | LVCMOS33_OUT  | PL10A        |                |           |           |
 | H2/5     |     unused, PULL:DOWN     |            |               | PL9B         |                |           |           |
-| H3/5     | DRV1_PWROK                |            | LVCMOS33_IN   | PL9A         |                |           |           |
+| H3/5     |     unused, PULL:DOWN     |            |               | PL9A         |                |           |           |
 | H4/5     |     unused, PULL:DOWN     |            |               | PL6D         |                |           |           |
 | H5/5     |     unused, PULL:DOWN     |            |               | PL6C         |                |           |           |
 | H6/5     | CANISTER_A_PCIE_CLK_ACT_L | LOCATED    | LVCMOS33_IN   | PL4C         |                |           |           |
@@ -487,44 +487,44 @@ Vccio by Bank:
 | H16/1    | DRV15_PCIE_CLK_A_OE_L     | LOCATED    | LVCMOS33_OUT  | PR3D         |                |           |           |
 | H17/1    | PE_RST_DRV5_B_L           | LOCATED    | LVCMOS33_OUT  | PR4C         |                |           |           |
 | H20/1    | PE_RST_DRV18_A_L          | LOCATED    | LVCMOS33_OUT  | PR9A         | DQ0            |           |           |
-| H21/1    | DRV7_PCIE_CLK_B_OE_L      |            | LVCMOS33_OUT  | PR9B         | DQ0            |           |           |
+| H21/1    | DRV10_PCIE_CLK_B_OE_L     | LOCATED    | LVCMOS33_OUT  | PR9B         | DQ0            |           |           |
 | J2/4     | DRV14_PCIE_CLK_B_OE_L     | LOCATED    | LVCMOS33_OUT  | PL11A        |                |           |           |
 | J3/4     | DRV15_PCIE_CLK_B_OE_L     | LOCATED    | LVCMOS33_OUT  | PL10B        |                |           |           |
 | J4/5     |     unused, PULL:DOWN     |            |               | PL7D         |                |           |           |
-| J5/5     | DRV2_PCIE_CLK_B_OE_L      |            | LVCMOS33_OUT  | PL7C         |                |           |           |
+| J5/5     |     unused, PULL:DOWN     |            |               | PL7C         |                |           |           |
 | J16/1    | DRV15_ACT_LED             | LOCATED    | LVCMOS33_IN   | PR6D         |                |           |           |
-| J17/1    |     unused, PULL:DOWN     |            |               | PR6C         |                |           |           |
+| J17/1    | DRV2_PCIE_CLK_A_OE_L      | LOCATED    | LVCMOS33_OUT  | PR6C         |                |           |           |
 | J18/1    | DRV28_PRSNT_AMBER_LED     | LOCATED    | LVCMOS33_BIDI | PR7C         |                |           |           |
 | J19/1    | DRV14_PCIE_CLK_A_OE_L     | LOCATED    | LVCMOS33_OUT  | PR7D         |                |           |           |
 | J21/1    | PE_RST_DRV16_A_L          | LOCATED    | LVCMOS33_OUT  | PR10A        |                |           |           |
 | K1/4     |     unused, PULL:DOWN     |            |               | PL12B        | PCLKC4_0       |           |           |
 | K2/4     |     unused, PULL:DOWN     |            |               | PL12A        | PCLKT4_0       |           |           |
-| K3/4     |     unused, PULL:DOWN     |            |               | PL11B        |                |           |           |
-| K5/5     | DRV2_PCIE_CLK_A_OE_L      |            | LVCMOS33_OUT  | PL9C         |                |           |           |
+| K3/4     | DRV3_PCIE_CLK_B_OE_L      | LOCATED    | LVCMOS33_OUT  | PL11B        |                |           |           |
+| K5/5     |     unused, PULL:DOWN     |            |               | PL9C         |                |           |           |
 | K6/5     |     unused, PULL:DOWN     |            |               | PL8C         |                |           |           |
 | K7/5     |     unused, PULL:DOWN     |            |               | PL8D         |                |           |           |
 | K16/1    | DRV28_PWR_EN_L            | LOCATED    | LVCMOS33_OUT  | PR8D         |                |           |           |
 | K17/1    | DRV15_IFDET_BLUE_LED      | LOCATED    | LVCMOS33_BIDI | PR8C         |                |           |           |
 | K18/1    | DRV19_PCIE_CLK_A_OE_L     | LOCATED    | LVCMOS33_OUT  | PR9C         |                |           |           |
-| K20/1    |     unused, PULL:DOWN     |            |               | PR10B        |                |           |           |
+| K20/1    | DRV5_PCIE_CLK_A_OE_L      | LOCATED    | LVCMOS33_OUT  | PR10B        |                |           |           |
 | K21/1    | DRV20_PCIE_CLK_B_OE_L     | LOCATED    | LVCMOS33_OUT  | PR11A        | DQS0           |           |           |
 | K22/1    | DRV21_PWR_EN_L            | LOCATED    | LVCMOS33_OUT  | PR11B        | DQS0N          |           |           |
-| L1/4     | DRV0_PCIE_CLK_B_OE_L      |            | LVCMOS33_OUT  | PL12D        |                |           |           |
-| L2/4     | DRV0_PCIE_CLK_A_OE_L      |            | LVCMOS33_OUT  | PL12C        |                |           |           |
+| L1/4     | DRV9_PCIE_CLK_B_OE_L      | LOCATED    | LVCMOS33_OUT  | PL12D        |                |           |           |
+| L2/4     | DRV2_PCIE_CLK_B_OE_L      | LOCATED    | LVCMOS33_OUT  | PL12C        |                |           |           |
 | L3/5     |     unused, PULL:DOWN     |            |               | PL9D         |                |           |           |
-| L4/4     | DRV10_PWROK               |            | LVCMOS33_IN   | PL10D        |                |           |           |
-| L5/4     |     unused, PULL:DOWN     |            |               | PL10C        |                |           |           |
+| L4/4     | DRV4_PCIE_CLK_B_OE_L      | LOCATED    | LVCMOS33_OUT  | PL10D        |                |           |           |
+| L5/4     | DRV5_PCIE_CLK_B_OE_L      | LOCATED    | LVCMOS33_OUT  | PL10C        |                |           |           |
 | L6/4     | PE_RST_DRV23_B_L          | LOCATED    | LVCMOS33_OUT  | PL11C        |                |           |           |
-| L7/4     |     unused, PULL:DOWN     |            |               | PL11D        |                |           |           |
+| L7/4     | DRV6_PCIE_CLK_B_OE_L      | LOCATED    | LVCMOS33_OUT  | PL11D        |                |           |           |
 | L16/1    | DRV27_PRSNT_AMBER_LED     | LOCATED    | LVCMOS33_BIDI | PR10D        |                |           |           |
 | L17/1    | DRV12_PWR_EN_L            | LOCATED    | LVCMOS33_OUT  | PR10C        |                |           |           |
 | L20/1    | DRV28_IFDET_BLUE_LED      | LOCATED    | LVCMOS33_BIDI | PR9D         |                |           |           |
-| L21/1    | DRV7_PCIE_CLK_A_OE_L      |            | LVCMOS33_OUT  | PR11C        |                |           |           |
+| L21/1    | DRV3_PWROK                | LOCATED    | LVCMOS33_IN   | PR11C        |                |           |           |
 | L22/1    | DRV19_ACT_LED             | LOCATED    | LVCMOS33_IN   | PR11D        |                |           |           |
 | M1/4     | DRV34_PWR_EN_L            | LOCATED    | LVCMOS33_OUT  | PL15C        |                |           |           |
 | M2/4     | DRV24_PWR_EN_L            | LOCATED    | LVCMOS33_OUT  | PL15D        |                |           |           |
 | M3/3     | DRV16_PCIE_CLK_B_OE_L     | LOCATED    | LVCMOS33_OUT  | PL18C        |                |           |           |
-| M4/4     | DRV8_PWROK                |            | LVCMOS33_IN   | PL17C        |                |           |           |
+| M4/4     | DRV0_PWROK                | LOCATED    | LVCMOS33_IN   | PL17C        |                |           |           |
 | M5/4     | PE_RST_DRV0_A_L           | LOCATED    | LVCMOS33_OUT  | PL17D        |                |           |           |
 | M6/4     | DRV23_PWR_EN_L            | LOCATED    | LVCMOS33_OUT  | PL16D        |                |           |           |
 | M7/4     | DRV34_PRSNT_AMBER_LED     | LOCATED    | LVCMOS33_BIDI | PL16C        |                |           |           |
@@ -541,14 +541,14 @@ Vccio by Bank:
 | N5/3     | PE_RST_DRV0_B_L           | LOCATED    | LVCMOS33_OUT  | PL18D        |                |           |           |
 | N6/3     | DRV14_ACT_LED             | LOCATED    | LVCMOS33_IN   | PL19D        |                |           |           |
 | N7/3     | DRV24_ACT_LED             | LOCATED    | LVCMOS33_IN   | PL19C        |                |           |           |
-| N16/1    | DRV5_PWROK                |            | LVCMOS33_IN   | PR18C        |                |           |           |
+| N16/1    | DRV4_PWROK                | LOCATED    | LVCMOS33_IN   | PR18C        |                |           |           |
 | N17/1    | DRV19_IFDET_BLUE_LED      | LOCATED    | LVCMOS33_BIDI | PR18D        |                |           |           |
 | N18/1    | DRV19_PWR_EN_L            | LOCATED    | LVCMOS33_OUT  | PR17D        |                |           |           |
 | N20/1    | DRV27_PWR_EN_L            | LOCATED    | LVCMOS33_OUT  | PR15A        |                |           |           |
 | N21/1    | SDA_1                     | LOCATED    | LVCMOS33_BIDI | PR12B        | PCLKC1_0/DQ0   |           |           |
 | N22/1    | SCL_1                     | LOCATED    | LVCMOS33_IN   | PR12A        | PCLKT1_0/DQ0   |           |           |
 | P2/4     | DRV23_ACT_LED             | LOCATED    | LVCMOS33_IN   | PL16B        |                |           |           |
-| P3/4     | DRV1_PCIE_CLK_A_OE_L      |            | LVCMOS33_OUT  | PL17A        |                |           |           |
+| P3/4     | DRV8_PCIE_CLK_B_OE_L      | LOCATED    | LVCMOS33_OUT  | PL17A        |                |           |           |
 | P6/3     | DRV24_PRSNT_AMBER_LED     | LOCATED    | LVCMOS33_BIDI | PL21D        |                |           |           |
 | P7/3     | DRV35_IFDET_BLUE_LED      | LOCATED    | LVCMOS33_BIDI | PL21C        |                |           |           |
 | P18/1    | DRV13_ACT_LED             | LOCATED    | LVCMOS33_IN   | PR19D        | DQ1            |           |           |
@@ -562,11 +562,11 @@ Vccio by Bank:
 | R6/3     | PE_RST_DRV14_A_L          | LOCATED    | LVCMOS33_OUT  | PL23D        |                |           |           |
 | R7/3     | DRV22_PCIE_CLK_A_OE_L     | LOCATED    | LVCMOS33_OUT  | PL24C        |                |           |           |
 | R16/1    | DRV16_ACT_LED             | LOCATED    | LVCMOS33_IN   | PR24C        |                |           |           |
-| R17/1    | DRV11_PWROK               |            | LVCMOS33_IN   | PR23D        |                |           |           |
+| R17/1    | DRV0_PCIE_CLK_B_OE_L      | LOCATED    | LVCMOS33_OUT  | PR23D        |                |           |           |
 | R18/1    | DRV8_IFDET_BLUE_LED       | LOCATED    | LVCMOS33_BIDI | PR21D        |                |           |           |
 | R19/1    | DRV7_PWR_EN_L             | LOCATED    | LVCMOS33_OUT  | PR21C        |                |           |           |
 | R20/1    | DRV17_IFDET_BLUE_LED      | LOCATED    | LVCMOS33_BIDI | PR17B        | DQ1            |           |           |
-| R21/1    | DRV9_PWROK                |            | LVCMOS33_IN   | PR17A        | DQ1            |           |           |
+| R21/1    | DRV1_PCIE_CLK_B_OE_L      | LOCATED    | LVCMOS33_OUT  | PR17A        | DQ1            |           |           |
 | R22/1    | DRV17_PWR_EN_L            | LOCATED    | LVCMOS33_OUT  | PR16B        | DQS1N          |           |           |
 | T4/3     | DRV14_PWROK               | LOCATED    | LVCMOS33_IN   | PL22C        |                |           |           |
 | T5/3     | PE_RST_DRV14_B_L          | LOCATED    | LVCMOS33_OUT  | PL23C        |                |           |           |
@@ -577,8 +577,8 @@ Vccio by Bank:
 | T11/2    | PE_RST_DRV17_B_L          | LOCATED    | LVCMOS33_OUT  | PB16D        |                |           |           |
 | T12/2    | DRV23_PCIE_CLK_B_OE_L     | LOCATED    | LVCMOS33_OUT  | PB23C        |                |           |           |
 | T13/2    | DRV22_PCIE_CLK_B_OE_L     | LOCATED    | LVCMOS33_OUT  | PB29C        |                |           |           |
-| T15/2    | DRV8_PCIE_CLK_B_OE_L      |            | LVCMOS33_OUT  | PB37C        |                |           |           |
-| T16/2    | DRV9_PCIE_CLK_B_OE_L      |            | LVCMOS33_OUT  | PB38D        |                |           |           |
+| T15/2    |     unused, PULL:DOWN     |            |               | PB37C        |                |           |           |
+| T16/2    |     unused, PULL:DOWN     |            |               | PB38D        |                |           |           |
 | T17/1    | DRV16_IFDET_BLUE_LED      | LOCATED    | LVCMOS33_BIDI | PR24D        |                |           |           |
 | T18/1    | DRV13_IFDET_BLUE_LED      | LOCATED    | LVCMOS33_BIDI | PR23C        |                |           |           |
 | T19/1    | PE_RST_DRV13_A_L          | LOCATED    | LVCMOS33_OUT  | PR22C        |                |           |           |
@@ -594,9 +594,9 @@ Vccio by Bank:
 | U10/2    | PE_RST_DRV20_A_L          | LOCATED    | LVCMOS33_OUT  | PB13C        |                |           |           |
 | U11/2    | PE_RST_DRV17_A_L          | LOCATED    | LVCMOS33_OUT  | PB16C        |                |           |           |
 | U12/2    | DRV0_PRSNT_AMBER_LED      | LOCATED    | LVCMOS33_BIDI | PB23D        |                |           |           |
-| U13/2    | DRV9_PCIE_CLK_A_OE_L      |            | LVCMOS33_OUT  | PB29D        |                |           |           |
+| U13/2    | DRV11_PCIE_CLK_B_OE_L     | LOCATED    | LVCMOS33_OUT  | PB29D        |                |           |           |
 | U15/2    | DRV7_ACT_LED              | LOCATED    | LVCMOS33_IN   | PB35D        |                |           |           |
-| U16/2    | DRV8_PCIE_CLK_A_OE_L      |            | LVCMOS33_OUT  | PB37D        |                |           |           |
+| U16/2    |     unused, PULL:DOWN     |            |               | PB37D        |                |           |           |
 | U17/1    | DRV13_PWROK               | LOCATED    | LVCMOS33_IN   | PR25D        |                |           |           |
 | U18/1    | DRV16_PWR_EN_L            | LOCATED    | LVCMOS33_OUT  | PR25C        |                |           |           |
 | U19/1    | DRV17_PRSNT_AMBER_LED     | LOCATED    | LVCMOS33_BIDI | PR22D        |                |           |           |
@@ -609,7 +609,7 @@ Vccio by Bank:
 | V6/2     | DRV20_PRSNT_AMBER_LED     | LOCATED    | LVCMOS33_BIDI | PB4D         |                |           |           |
 | V7/2     | DRV1_PRSNT_AMBER_LED      | LOCATED    | LVCMOS33_BIDI | PB7B         |                |           |           |
 | V8/2     | DRV2_IFDET_BLUE_LED       | LOCATED    | LVCMOS33_BIDI | PB10A        |                |           |           |
-| V9/2     | DRV4_PWROK                |            | LVCMOS33_IN   | PB12C        |                |           |           |
+| V9/2     | DRV1_PCIE_CLK_A_OE_L      | LOCATED    | LVCMOS33_OUT  | PB12C        |                |           |           |
 | V11/2    | DRV3_ACT_LED              | LOCATED    | LVCMOS33_IN   | PB15A        |                |           |           |
 | V12/2    | DRV5_IFDET_BLUE_LED       | LOCATED    | LVCMOS33_BIDI | PB26D        |                |           |           |
 | V13/2    | DRV6_IFDET_BLUE_LED       | LOCATED    | LVCMOS33_BIDI | PB28B        |                |           |           |
@@ -624,8 +624,8 @@ Vccio by Bank:
 | W2/3     | HEART                     | LOCATED    | LVCMOS33_OUT  | PL22B        | PCLKC3_0       |           |           |
 | W3/3     | DRV23_PCIE_CLK_A_OE_L     | LOCATED    | LVCMOS33_OUT  | PL24A        |                |           |           |
 | W4/3     | DRV20_IFDET_BLUE_LED      | LOCATED    | LVCMOS33_BIDI | PL25B        |                |           |           |
-| W5/2     | DRV3_PCIE_CLK_B_OE_L      |            | LVCMOS33_OUT  | PB6A         | CSSPIN         |           |           |
-| W6/2     | DRV7_PWROK                |            | LVCMOS33_IN   | PB9C         |                |           |           |
+| W5/2     |     unused, PULL:DOWN     |            |               | PB6A         | CSSPIN         |           |           |
+| W6/2     | DRV0_PCIE_CLK_A_OE_L      | LOCATED    | LVCMOS33_OUT  | PB9C         |                |           |           |
 | W7/2     | DRV12_PCIE_CLK_A_OE_L     | LOCATED    | LVCMOS33_OUT  | PB9D         |                |           |           |
 | W8/2     | DRV1_PWR_EN_L             | LOCATED    | LVCMOS33_OUT  | PB10B        |                |           |           |
 | W9/2     | DRV17_PWROK               | LOCATED    | LVCMOS33_IN   | PB12D        |                |           |           |
@@ -636,20 +636,20 @@ Vccio by Bank:
 | W16/2    | DRV8_PRSNT_AMBER_LED      | LOCATED    | LVCMOS33_BIDI | PB34A        |                |           |           |
 | W17/2    | DRV7_PRSNT_AMBER_LED      | LOCATED    | LVCMOS33_BIDI | PB34B        |                |           |           |
 | W18/2    | DRV9_IFDET_BLUE_LED       | LOCATED    | LVCMOS33_BIDI | PB37B        |                |           |           |
-| W19/2    | DRV2_PWROK                |            | LVCMOS33_IN   | PB38B        | SI/SISPI       |           |           |
+| W19/2    |     unused, PULL:DOWN     |            |               | PB38B        | SI/SISPI       |           |           |
 | W20/1    | DRV19_PWROK               | LOCATED    | LVCMOS33_IN   | PR24A        | DQ1            |           |           |
 | W22/1    | DRV13_PWR_EN_L            | LOCATED    | LVCMOS33_OUT  | PR22A        |                |           |           |
-| Y1/3     | DRV1_PCIE_CLK_B_OE_L      |            | LVCMOS33_OUT  | PL23A        |                |           |           |
+| Y1/3     | DRV11_PWROK               | LOCATED    | LVCMOS33_IN   | PL23A        |                |           |           |
 | Y2/3     | DRV24_IFDET_BLUE_LED      | LOCATED    | LVCMOS33_BIDI | PL25A        |                |           |           |
 | Y3/2     | DRV0_PWR_EN_L             | LOCATED    | LVCMOS33_OUT  | PB4A         |                |           |           |
 | Y4/2     | DRV0_IFDET_BLUE_LED       | LOCATED    | LVCMOS33_BIDI | PB6B         |                |           |           |
 | Y5/2     | DRV1_ACT_LED              | LOCATED    | LVCMOS33_IN   | PB9B         |                |           |           |
 | Y6/2     | PE_RST_DRV20_B_L          | LOCATED    | LVCMOS33_OUT  | PB10D        |                |           |           |
-| Y7/2     | DRV3_PWROK                |            | LVCMOS33_IN   | PB12B        | SO/SPISO       |           |           |
+| Y7/2     |     unused, PULL:DOWN     |            |               | PB12B        | SO/SPISO       |           |           |
 | Y8/2     | DRV3_PWR_EN_L             | LOCATED    | LVCMOS33_OUT  | PB15C        |                |           |           |
 | Y10/2    | SDA_2                     | LOCATED    | LVCMOS33_BIDI | PB16B        | PCLKC2_0       |           |           |
 | Y12/2    | DRV10_PRSNT_AMBER_LED     | LOCATED    | LVCMOS33_BIDI | PB28A        |                |           |           |
-| Y13/2    | DRV10_PCIE_CLK_B_OE_L     |            | LVCMOS33_OUT  | PB23A        | PCLKT2_1       |           |           |
+| Y13/2    |     unused, PULL:DOWN     |            |               | PB23A        | PCLKT2_1       |           |           |
 | Y14/2    | DRV10_ACT_LED             | LOCATED    | LVCMOS33_IN   | PB26A        |                |           |           |
 | Y15/2    | DRV0_ACT_LED              | LOCATED    | LVCMOS33_IN   | PB28D        |                |           |           |
 | Y16/2    | DRV10_IFDET_BLUE_LED      | LOCATED    | LVCMOS33_BIDI | PB31A        |                |           |           |
@@ -682,24 +682,24 @@ LOCATE  COMP  "CANISTER_B_PCIE_CLK_ACT_L"  SITE  "G5";
 LOCATE  COMP  "CPLD_SLOT_ID"  SITE  "F3";
 LOCATE  COMP  "DRV0_ACT_LED"  SITE  "Y15";
 LOCATE  COMP  "DRV0_IFDET_BLUE_LED"  SITE  "Y4";
-LOCATE  COMP  "DRV0_PCIE_CLK_A_OE_L"  SITE  "L2";
-LOCATE  COMP  "DRV0_PCIE_CLK_B_OE_L"  SITE  "L1";
+LOCATE  COMP  "DRV0_PCIE_CLK_A_OE_L"  SITE  "W6";
+LOCATE  COMP  "DRV0_PCIE_CLK_B_OE_L"  SITE  "R17";
 LOCATE  COMP  "DRV0_PRSNT_AMBER_LED"  SITE  "U12";
-LOCATE  COMP  "DRV0_PWROK"  SITE  "H1";
+LOCATE  COMP  "DRV0_PWROK"  SITE  "M4";
 LOCATE  COMP  "DRV0_PWR_EN_L"  SITE  "Y3";
 LOCATE  COMP  "DRV10_ACT_LED"  SITE  "Y14";
 LOCATE  COMP  "DRV10_IFDET_BLUE_LED"  SITE  "Y16";
-LOCATE  COMP  "DRV10_PCIE_CLK_A_OE_L"  SITE  "AA14";
-LOCATE  COMP  "DRV10_PCIE_CLK_B_OE_L"  SITE  "Y13";
+LOCATE  COMP  "DRV10_PCIE_CLK_A_OE_L"  SITE  "F18";
+LOCATE  COMP  "DRV10_PCIE_CLK_B_OE_L"  SITE  "H21";
 LOCATE  COMP  "DRV10_PRSNT_AMBER_LED"  SITE  "Y12";
-LOCATE  COMP  "DRV10_PWROK"  SITE  "L4";
+LOCATE  COMP  "DRV10_PWROK"  SITE  "G8";
 LOCATE  COMP  "DRV10_PWR_EN_L"  SITE  "AB16";
 LOCATE  COMP  "DRV11_ACT_LED"  SITE  "AB21";
 LOCATE  COMP  "DRV11_IFDET_BLUE_LED"  SITE  "AA16";
-LOCATE  COMP  "DRV11_PCIE_CLK_A_OE_L"  SITE  "B14";
-LOCATE  COMP  "DRV11_PCIE_CLK_B_OE_L"  SITE  "G13";
+LOCATE  COMP  "DRV11_PCIE_CLK_A_OE_L"  SITE  "F13";
+LOCATE  COMP  "DRV11_PCIE_CLK_B_OE_L"  SITE  "U13";
 LOCATE  COMP  "DRV11_PRSNT_AMBER_LED"  SITE  "AB18";
-LOCATE  COMP  "DRV11_PWROK"  SITE  "R17";
+LOCATE  COMP  "DRV11_PWROK"  SITE  "Y1";
 LOCATE  COMP  "DRV11_PWR_EN_L"  SITE  "AB17";
 LOCATE  COMP  "DRV12_ACT_LED"  SITE  "M20";
 LOCATE  COMP  "DRV12_IFDET_BLUE_LED"  SITE  "M16";
@@ -759,10 +759,10 @@ LOCATE  COMP  "DRV19_PWROK"  SITE  "W20";
 LOCATE  COMP  "DRV19_PWR_EN_L"  SITE  "N18";
 LOCATE  COMP  "DRV1_ACT_LED"  SITE  "Y5";
 LOCATE  COMP  "DRV1_IFDET_BLUE_LED"  SITE  "AB7";
-LOCATE  COMP  "DRV1_PCIE_CLK_A_OE_L"  SITE  "P3";
-LOCATE  COMP  "DRV1_PCIE_CLK_B_OE_L"  SITE  "Y1";
+LOCATE  COMP  "DRV1_PCIE_CLK_A_OE_L"  SITE  "V9";
+LOCATE  COMP  "DRV1_PCIE_CLK_B_OE_L"  SITE  "R21";
 LOCATE  COMP  "DRV1_PRSNT_AMBER_LED"  SITE  "V7";
-LOCATE  COMP  "DRV1_PWROK"  SITE  "H3";
+LOCATE  COMP  "DRV1_PWROK"  SITE  "E7";
 LOCATE  COMP  "DRV1_PWR_EN_L"  SITE  "W8";
 LOCATE  COMP  "DRV20_ACT_LED"  SITE  "U5";
 LOCATE  COMP  "DRV20_IFDET_BLUE_LED"  SITE  "W4";
@@ -818,10 +818,10 @@ LOCATE  COMP  "DRV29_PRSNT_AMBER_LED"  SITE  "C15";
 LOCATE  COMP  "DRV29_PWR_EN_L"  SITE  "E12";
 LOCATE  COMP  "DRV2_ACT_LED"  SITE  "U8";
 LOCATE  COMP  "DRV2_IFDET_BLUE_LED"  SITE  "V8";
-LOCATE  COMP  "DRV2_PCIE_CLK_A_OE_L"  SITE  "K5";
-LOCATE  COMP  "DRV2_PCIE_CLK_B_OE_L"  SITE  "J5";
+LOCATE  COMP  "DRV2_PCIE_CLK_A_OE_L"  SITE  "J17";
+LOCATE  COMP  "DRV2_PCIE_CLK_B_OE_L"  SITE  "L2";
 LOCATE  COMP  "DRV2_PRSNT_AMBER_LED"  SITE  "AA3";
-LOCATE  COMP  "DRV2_PWROK"  SITE  "W19";
+LOCATE  COMP  "DRV2_PWROK"  SITE  "B14";
 LOCATE  COMP  "DRV2_PWR_EN_L"  SITE  "AA4";
 LOCATE  COMP  "DRV30_ACT_LED"  SITE  "F19";
 LOCATE  COMP  "DRV30_IFDET_BLUE_LED"  SITE  "A21";
@@ -849,52 +849,52 @@ LOCATE  COMP  "DRV35_PRSNT_AMBER_LED"  SITE  "AA1";
 LOCATE  COMP  "DRV35_PWR_EN_L"  SITE  "V1";
 LOCATE  COMP  "DRV3_ACT_LED"  SITE  "V11";
 LOCATE  COMP  "DRV3_IFDET_BLUE_LED"  SITE  "AA10";
-LOCATE  COMP  "DRV3_PCIE_CLK_A_OE_L"  SITE  "AB3";
-LOCATE  COMP  "DRV3_PCIE_CLK_B_OE_L"  SITE  "W5";
+LOCATE  COMP  "DRV3_PCIE_CLK_A_OE_L"  SITE  "C13";
+LOCATE  COMP  "DRV3_PCIE_CLK_B_OE_L"  SITE  "K3";
 LOCATE  COMP  "DRV3_PRSNT_AMBER_LED"  SITE  "AA7";
-LOCATE  COMP  "DRV3_PWROK"  SITE  "Y7";
+LOCATE  COMP  "DRV3_PWROK"  SITE  "L21";
 LOCATE  COMP  "DRV3_PWR_EN_L"  SITE  "Y8";
 LOCATE  COMP  "DRV4_ACT_LED"  SITE  "AB10";
 LOCATE  COMP  "DRV4_IFDET_BLUE_LED"  SITE  "AA12";
-LOCATE  COMP  "DRV4_PCIE_CLK_A_OE_L"  SITE  "A11";
-LOCATE  COMP  "DRV4_PCIE_CLK_B_OE_L"  SITE  "B11";
+LOCATE  COMP  "DRV4_PCIE_CLK_A_OE_L"  SITE  "AB3";
+LOCATE  COMP  "DRV4_PCIE_CLK_B_OE_L"  SITE  "L4";
 LOCATE  COMP  "DRV4_PRSNT_AMBER_LED"  SITE  "W11";
-LOCATE  COMP  "DRV4_PWROK"  SITE  "V9";
+LOCATE  COMP  "DRV4_PWROK"  SITE  "N16";
 LOCATE  COMP  "DRV4_PWR_EN_L"  SITE  "AB11";
 LOCATE  COMP  "DRV5_ACT_LED"  SITE  "W14";
 LOCATE  COMP  "DRV5_IFDET_BLUE_LED"  SITE  "V12";
-LOCATE  COMP  "DRV5_PCIE_CLK_A_OE_L"  SITE  "D12";
-LOCATE  COMP  "DRV5_PCIE_CLK_B_OE_L"  SITE  "A10";
+LOCATE  COMP  "DRV5_PCIE_CLK_A_OE_L"  SITE  "K20";
+LOCATE  COMP  "DRV5_PCIE_CLK_B_OE_L"  SITE  "L5";
 LOCATE  COMP  "DRV5_PRSNT_AMBER_LED"  SITE  "AB13";
-LOCATE  COMP  "DRV5_PWROK"  SITE  "N16";
+LOCATE  COMP  "DRV5_PWROK"  SITE  "D12";
 LOCATE  COMP  "DRV5_PWR_EN_L"  SITE  "AA15";
 LOCATE  COMP  "DRV6_ACT_LED"  SITE  "W12";
 LOCATE  COMP  "DRV6_IFDET_BLUE_LED"  SITE  "V13";
-LOCATE  COMP  "DRV6_PCIE_CLK_A_OE_L"  SITE  "B12";
-LOCATE  COMP  "DRV6_PCIE_CLK_B_OE_L"  SITE  "E11";
+LOCATE  COMP  "DRV6_PCIE_CLK_A_OE_L"  SITE  "B22";
+LOCATE  COMP  "DRV6_PCIE_CLK_B_OE_L"  SITE  "L7";
 LOCATE  COMP  "DRV6_PRSNT_AMBER_LED"  SITE  "AB12";
-LOCATE  COMP  "DRV6_PWROK"  SITE  "AB6";
+LOCATE  COMP  "DRV6_PWROK"  SITE  "F15";
 LOCATE  COMP  "DRV6_PWR_EN_L"  SITE  "AB15";
 LOCATE  COMP  "DRV7_ACT_LED"  SITE  "U15";
 LOCATE  COMP  "DRV7_IFDET_BLUE_LED"  SITE  "Y20";
-LOCATE  COMP  "DRV7_PCIE_CLK_A_OE_L"  SITE  "L21";
-LOCATE  COMP  "DRV7_PCIE_CLK_B_OE_L"  SITE  "H21";
+LOCATE  COMP  "DRV7_PCIE_CLK_A_OE_L"  SITE  "G17";
+LOCATE  COMP  "DRV7_PCIE_CLK_B_OE_L"  SITE  "H1";
 LOCATE  COMP  "DRV7_PRSNT_AMBER_LED"  SITE  "W17";
-LOCATE  COMP  "DRV7_PWROK"  SITE  "W6";
+LOCATE  COMP  "DRV7_PWROK"  SITE  "F11";
 LOCATE  COMP  "DRV7_PWR_EN_L"  SITE  "R19";
 LOCATE  COMP  "DRV8_ACT_LED"  SITE  "Y18";
 LOCATE  COMP  "DRV8_IFDET_BLUE_LED"  SITE  "R18";
-LOCATE  COMP  "DRV8_PCIE_CLK_A_OE_L"  SITE  "U16";
-LOCATE  COMP  "DRV8_PCIE_CLK_B_OE_L"  SITE  "T15";
+LOCATE  COMP  "DRV8_PCIE_CLK_A_OE_L"  SITE  "G13";
+LOCATE  COMP  "DRV8_PCIE_CLK_B_OE_L"  SITE  "P3";
 LOCATE  COMP  "DRV8_PRSNT_AMBER_LED"  SITE  "W16";
-LOCATE  COMP  "DRV8_PWROK"  SITE  "M4";
+LOCATE  COMP  "DRV8_PWROK"  SITE  "E11";
 LOCATE  COMP  "DRV8_PWR_EN_L"  SITE  "AA19";
 LOCATE  COMP  "DRV9_ACT_LED"  SITE  "Y17";
 LOCATE  COMP  "DRV9_IFDET_BLUE_LED"  SITE  "W18";
-LOCATE  COMP  "DRV9_PCIE_CLK_A_OE_L"  SITE  "U13";
-LOCATE  COMP  "DRV9_PCIE_CLK_B_OE_L"  SITE  "T16";
+LOCATE  COMP  "DRV9_PCIE_CLK_A_OE_L"  SITE  "C22";
+LOCATE  COMP  "DRV9_PCIE_CLK_B_OE_L"  SITE  "L1";
 LOCATE  COMP  "DRV9_PRSNT_AMBER_LED"  SITE  "AB20";
-LOCATE  COMP  "DRV9_PWROK"  SITE  "R21";
+LOCATE  COMP  "DRV9_PWROK"  SITE  "B8";
 LOCATE  COMP  "DRV9_PWR_EN_L"  SITE  "Y19";
 LOCATE  COMP  "HEART"  SITE  "W2";
 LOCATE  COMP  "PE_RST_DRV0_A_L"  SITE  "M5";
@@ -965,7 +965,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2014 Lattice Semiconductor Corporation,  All rights reserved.
-Wed Feb 11 22:56:29 2015
+Thu Feb 12 23:53:59 2015
 
 
 

@@ -2,14 +2,14 @@
 
 #### START OF CLOCK OPTIMIZATION REPORT #####[
 
-1 non-gated/non-generated clock tree(s) driving 1972 clock pin(s) of sequential element(s)
+1 non-gated/non-generated clock tree(s) driving 1974 clock pin(s) of sequential element(s)
 2 gated/generated clock tree(s) driving 16 clock pin(s) of sequential element(s)
 0 instances converted, 16 sequential instances remain driven by gated/generated clocks
 
 ================================= Non-Gated/Non-Generated Clocks =================================
 Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance           
 --------------------------------------------------------------------------------------------------
-@K:CKID0003       SYSCLK              port                   1972       BB_SGPIO_INST_ACT_LEDio[0]
+@K:CKID0003       SYSCLK              port                   1974       BB_SGPIO_INST_ACT_LEDio[0]
 ==================================================================================================
 =========================================================== Gated/Generated Clocks ===========================================================
 Clock Tree ID     Driving Element                    Drive Element Type     Fanout     Sample Instance               Explanation              

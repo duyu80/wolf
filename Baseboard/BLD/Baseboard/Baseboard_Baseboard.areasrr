@@ -1,7 +1,7 @@
 ----------------------------------------------------------------------
 Report for cell BB_TOP.verilog
 
-Register bits: 1972 of 6864 (29%)
+Register bits: 1974 of 6864 (29%)
 Latch bits:      16
 PIC Latch:       0
 I/O cells:       278
@@ -11,7 +11,7 @@ I/O cells:       278
                               CCU2D      394       100.0
                             FD1P3AX        4       100.0
                             FD1P3BX      130       100.0
-                            FD1P3DX     1486       100.0
+                            FD1P3DX     1488       100.0
                             FD1S1AY       16       100.0
                             FD1S3BX        2       100.0
                             FD1S3DX      272       100.0
@@ -21,7 +21,7 @@ I/O cells:       278
                                 INV       42       100.0
                                  OB      136       100.0
                            OFS1P3DX        2       100.0
-                           ORCALUT4     3165       100.0
+                           ORCALUT4     3177       100.0
                               PFUMX       72       100.0
                                 PUR        1       100.0
                                 VHI       18       100.0
@@ -51,7 +51,7 @@ SUB MODULES
                       PCIE_RST_CTRL        1       100.0
                      PRSNT_LED_CTRL        1       100.0
                             
-                         TOTAL          6006           
+                         TOTAL          6020           
 ----------------------------------------------------------------------
 Report for cell PRSNT_LED_CTRL.netlist
      Instance path:  PRSNT_LED_CTRL_INST
@@ -80,11 +80,11 @@ Report for cell I2C_0.netlist
                             FD1S3BX        1        50.0
                             FD1S3DX       39        14.3
                                 INV        1         2.4
-                           ORCALUT4      155         4.9
+                           ORCALUT4      154         4.8
                                 VHI        1         5.6
                                 VLO        1         4.2
                             
-                         TOTAL           267           
+                         TOTAL           266           
 ----------------------------------------------------------------------
 Report for cell I2C.netlist
   Original Cell name I2C
@@ -99,11 +99,11 @@ Report for cell I2C.netlist
                             FD1S3BX        1        50.0
                             FD1S3DX       39        14.3
                                 INV        2         4.8
-                           ORCALUT4      155         4.9
+                           ORCALUT4      156         4.9
                                 VHI        1         5.6
                                 VLO        1         4.2
                             
-                         TOTAL           268           
+                         TOTAL           269           
 ----------------------------------------------------------------------
 Report for cell BB_SGPIO.netlist
      Instance path:  BB_SGPIO_INST
@@ -216,11 +216,11 @@ Report for cell GPO_GPOA_INST.netlist
                                           Cell usage:
                                cell       count    Res Usage(%)
                             FD1P3DX      144         9.7
-                           ORCALUT4      325        10.3
+                           ORCALUT4      329        10.4
                                 VHI        1         5.6
                                 VLO        1         4.2
                             
-                         TOTAL           471           
+                         TOTAL           475           
 ----------------------------------------------------------------------
 Report for cell GPI_3.netlist
   Original Cell name GPI
@@ -300,11 +300,11 @@ Report for cell GPI_1.netlist
                                           Cell usage:
                                cell       count    Res Usage(%)
                             FD1P3DX       16         1.1
-                           ORCALUT4       37         1.2
+                           ORCALUT4       35         1.1
                                 VHI        1         5.6
                                 VLO        1         4.2
                             
-                         TOTAL            55           
+                         TOTAL            53           
 ----------------------------------------------------------------------
 Report for cell GPO_255.netlist
      Instance path:  GPO2_INST
@@ -312,11 +312,11 @@ Report for cell GPO_255.netlist
                                cell       count    Res Usage(%)
                             FD1P3BX      128        98.5
                             FD1P3DX       16         1.1
-                           ORCALUT4      324        10.2
+                           ORCALUT4      329        10.4
                                 VHI        1         5.6
                                 VLO        1         4.2
                             
-                         TOTAL           470           
+                         TOTAL           475           
 ----------------------------------------------------------------------
 Report for cell GPI_0.netlist
   Original Cell name GPI
@@ -324,20 +324,20 @@ Report for cell GPI_0.netlist
                                           Cell usage:
                                cell       count    Res Usage(%)
                             FD1P3DX       16         1.1
-                           ORCALUT4      130         4.1
+                           ORCALUT4      125         3.9
                                 VHI        1         5.6
                                 VLO        1         4.2
                             
-                         TOTAL           148           
+                         TOTAL           143           
 ----------------------------------------------------------------------
 Report for cell GPI.netlist
   Original Cell name GPI
      Instance path:  GPI0_INST
                                           Cell usage:
                                cell       count    Res Usage(%)
-                            FD1P3DX       10         0.7
-                           ORCALUT4       10         0.3
+                            FD1P3DX       12         0.8
+                           ORCALUT4       20         0.6
                                 VHI        1         5.6
                                 VLO        1         4.2
                             
-                         TOTAL            22           
+                         TOTAL            34           

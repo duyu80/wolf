@@ -3,37 +3,37 @@ Report for cell BB_TOP
    Instance path: BB_TOP
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	    2001.00        100.0
+                                  SLIC	    2008.00        100.0
                                  IOLGC	      78.00        100.0
-                                  LUT4	    3204.00        100.0
+                                  LUT4	    3216.00        100.0
                                  IOREG	         78        100.0
                                  IOBUF	        278        100.0
-                                PFUREG	       1910        100.0
+                                PFUREG	       1912        100.0
                                 RIPPLE	        394        100.0
 SUB MODULES
                                   cell	      count    SLC Usage(%)
                         PRSNT_LED_CTRL	          1         2.1
                          PCIE_RST_CTRL	          1        18.8
-                                 LED_1	          1         1.6
                                LED_CNT	          1         6.8
+                                 LED_1	          1         1.6
                                  LED_2	          1         1.6
                                  LED_3	          1         1.6
                                  LED_0	          1         0.4
                                LED_0_0	          1         0.4
                                    LED	          1         1.6
                                    I2C	          1         4.5
-                                 I2C_0	          1         4.5
+                                 I2C_0	          1         4.4
                        GPO_0_GPO5_INST	          1         8.1
-                         GPO_GPO4_INST	          1         8.1
+                               GPO_255	          1         8.1
                        GPO_GPO4_INST_0	          1         8.1
-                         GPO_GPOA_INST	          1         8.1
+                         GPO_GPOA_INST	          1         8.2
+                         GPO_GPO4_INST	          1         8.1
                      GPO_0_GPO5_INST_0	          1         8.1
-                               GPO_255	          1         8.0
-                                 GPI_0	          1         3.1
                                  GPI_2	          1         0.2
                                  GPI_3	          1         0.1
+                                 GPI_0	          1         3.0
                                  GPI_1	          1         0.9
-                                   GPI	          1         0.3
+                                   GPI	          1         0.5
                               BB_SGPIO	          1         1.9
 ---------------------------------------------------
 Report for cell PRSNT_LED_CTRL
@@ -49,8 +49,8 @@ Report for cell I2C_0
    Instance path: BB_TOP/I2C_INS_2
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      90.17         4.5
-                                  LUT4	     156.00         4.9
+                                  SLIC	      88.25         4.4
+                                  LUT4	     155.00         4.8
                                 PFUREG	         99         5.2
                                 RIPPLE	         10         2.5
 ---------------------------------------------------
@@ -58,8 +58,8 @@ Report for cell I2C
    Instance path: BB_TOP/I2C_INS_1
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      89.25         4.5
-                                  LUT4	     156.00         4.9
+                                  SLIC	      90.65         4.5
+                                  LUT4	     157.50         4.9
                                 PFUREG	         99         5.2
                                 RIPPLE	         10         2.5
 ---------------------------------------------------
@@ -76,7 +76,7 @@ Report for cell PCIE_RST_CTRL
    Instance path: BB_TOP/PCIE_RST_CTRL
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     376.00        18.8
+                                  SLIC	     377.33        18.8
                                   LUT4	     168.00         5.2
                                 PFUREG	        552        28.9
                                 RIPPLE	        288        73.1
@@ -129,15 +129,15 @@ Report for cell LED_CNT
                                   cell	      count    Res Usage(%)
                                   SLIC	     136.00         6.8
                                   LUT4	     165.00         5.1
-                                PFUREG	        108         5.7
+                                PFUREG	        108         5.6
                                 RIPPLE	         53        13.5
 ---------------------------------------------------
 Report for cell GPO_GPOA_INST
    Instance path: BB_TOP/GPOA_INST
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     162.50         8.1
-                                  LUT4	     325.00        10.1
+                                  SLIC	     164.33         8.2
+                                  LUT4	     329.00        10.2
                                 PFUREG	        144         7.5
 ---------------------------------------------------
 Report for cell GPI_3
@@ -176,7 +176,7 @@ Report for cell GPO_0_GPO5_INST
    Instance path: BB_TOP/GPO5_INST
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     161.58         8.1
+                                  SLIC	     161.75         8.1
                                   LUT4	     324.00        10.1
                                 PFUREG	        144         7.5
 ---------------------------------------------------
@@ -192,30 +192,30 @@ Report for cell GPI_1
    Instance path: BB_TOP/GPI3_INST
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      18.50         0.9
-                                  LUT4	      37.00         1.2
+                                  SLIC	      17.50         0.9
+                                  LUT4	      35.00         1.1
                                 PFUREG	         16         0.8
 ---------------------------------------------------
 Report for cell GPO_255
    Instance path: BB_TOP/GPO2_INST
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     161.00         8.0
-                                  LUT4	     324.00        10.1
+                                  SLIC	     163.25         8.1
+                                  LUT4	     329.00        10.2
                                 PFUREG	        144         7.5
 ---------------------------------------------------
 Report for cell GPI_0
    Instance path: BB_TOP/GPI1_INST
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      61.17         3.1
-                                  LUT4	     130.00         4.1
+                                  SLIC	      59.83         3.0
+                                  LUT4	     125.00         3.9
                                 PFUREG	         16         0.8
 ---------------------------------------------------
 Report for cell GPI
    Instance path: BB_TOP/GPI0_INST
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	       6.33         0.3
-                                  LUT4	      10.00         0.3
-                                PFUREG	         10         0.5
+                                  SLIC	      10.60         0.5
+                                  LUT4	      19.50         0.6
+                                PFUREG	         12         0.6

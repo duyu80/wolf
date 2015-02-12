@@ -1,7 +1,7 @@
 
 
 ##### START OF TIMING REPORT #####[
-# Timing Report written on Wed Feb 11 22:55:57 2015
+# Timing Report written on Thu Feb 12 23:53:39 2015
 #
 
 
@@ -73,8 +73,8 @@ I2C_INS_2.SCL_NCLK             BB_TOP|SYSCLK     FD1P3AX     Q       SCL_NCLK   
 I2C_INS_1.SCL_NCLK             BB_TOP|SYSCLK     FD1P3AX     Q       SCL_NCLK                 0.775       0.445
 I2C_INS_2.NEXT_STATE[0]        BB_TOP|SYSCLK     FD1S3DX     Q       NEXT_STATE_Q_0[0]        0.680       0.606
 I2C_INS_1.NEXT_STATE[0]        BB_TOP|SYSCLK     FD1S3DX     Q       NEXT_STATE_Q[0]          0.680       0.606
-I2C_INS_2.NEXT_STATE_D1[0]     BB_TOP|SYSCLK     FD1S3DX     Q       NEXT_STATE_D1_Q_0[0]     0.680       0.606
 I2C_INS_1.NEXT_STATE_D1[0]     BB_TOP|SYSCLK     FD1S3DX     Q       NEXT_STATE_D1_Q[0]       0.680       0.606
+I2C_INS_2.NEXT_STATE_D1[0]     BB_TOP|SYSCLK     FD1S3DX     Q       NEXT_STATE_D1_Q_0[0]     0.680       0.606
 I2C_INS_2.RD_END1              BB_TOP|SYSCLK     FD1S3DX     Q       RD_END1                  0.680       0.606
 I2C_INS_1.RD_END1              BB_TOP|SYSCLK     FD1S3DX     Q       RD_END1                  0.680       0.606
 ===============================================================================================================
@@ -93,8 +93,8 @@ I2C_INS_2.SDA_OUT              BB_TOP|SYSCLK     FD1P3DX     SP      SCL_NCLK   
 I2C_INS_1.SDA_OUT              BB_TOP|SYSCLK     FD1P3DX     SP      SCL_NCLK                 0.330        0.445
 I2C_INS_2.NEXT_STATE_D1[0]     BB_TOP|SYSCLK     FD1S3DX     D       NEXT_STATE_Q_0[0]        0.074        0.606
 I2C_INS_1.NEXT_STATE_D1[0]     BB_TOP|SYSCLK     FD1S3DX     D       NEXT_STATE_Q[0]          0.074        0.606
-I2C_INS_1.NEXT_STATE_D2[0]     BB_TOP|SYSCLK     FD1S3DX     D       NEXT_STATE_D1_Q[0]       0.074        0.606
 I2C_INS_2.NEXT_STATE_D2[0]     BB_TOP|SYSCLK     FD1S3DX     D       NEXT_STATE_D1_Q_0[0]     0.074        0.606
+I2C_INS_1.NEXT_STATE_D2[0]     BB_TOP|SYSCLK     FD1S3DX     D       NEXT_STATE_D1_Q[0]       0.074        0.606
 I2C_INS_2.RD_END2              BB_TOP|SYSCLK     FD1S3DX     D       RD_END1                  0.074        0.606
 I2C_INS_1.RD_END2              BB_TOP|SYSCLK     FD1S3DX     D       RD_END1                  0.074        0.606
 ================================================================================================================
