@@ -1,5 +1,0 @@
-#Start recording tcl command: 11/6/2014 21:34:55
-#Project Location: F:/project/wolf/Baseboard/BLD; Project name: Baseboard
-prj_project open "F:/project/wolf/Baseboard/BLD/Baseboard.ldf"
-prj_run Export -impl Baseboard
-#Stop recording: 11/6/2014 21:41:46
