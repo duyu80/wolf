@@ -105,7 +105,7 @@
 @N: CG179 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_SGPIO.v":107:60:107:69|Removing redundant assignment
 @N: CG179 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_SGPIO.v":113:45:113:54|Removing redundant assignment
 @N: CG364 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":11:7:11:12|Synthesizing module BB_TOP
-@N: CG179 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":1189:58:1189:62|Removing redundant assignment
+@N: CG179 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":1195:58:1195:62|Removing redundant assignment
 @N: CL201 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_SGPIO.v":81:0:81:5|Trying to extract state machine for register STATE
 @N: CL135 :"E:\work\wolf\Baseboard\BLD\..\SRC\I2C.v":178:0:178:5|Found seqShift NEXT_STATE_D2, depth=3, width=1
 @N: CL201 :"E:\work\wolf\Baseboard\BLD\..\SRC\I2C.v":357:0:357:5|Trying to extract state machine for register STATE

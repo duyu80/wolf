@@ -12,7 +12,7 @@ Target Vendor:  LATTICE
 Target Device:  LCMXO2-7000HCFPBGA484
 Target Performance:   4
 Mapper:  xo2c00,  version:  Diamond (64-bit) 3.2.0.134
-Mapped on:  02/12/15  23:53:44
+Mapped on:  02/14/15  11:11:44
 
 Design Summary
 --------------
@@ -24,8 +24,8 @@ Design Summary
       SLICEs as Logic/ROM:   2008 out of  3432 (59%)
       SLICEs as RAM:            0 out of  2574 (0%)
       SLICEs as Carry:        394 out of  3432 (11%)
-   Number of LUT4s:        4004 out of  6864 (58%)
-      Number of logic LUTs:      3216
+   Number of LUT4s:        4005 out of  6864 (58%)
+      Number of logic LUTs:      3217
       Number of distributed RAM:   0 (0 LUT4s)
       Number of ripple logic:    394 (788 LUT4s)
       Number of shift registers:   0
@@ -64,7 +64,7 @@ Design Summary
 
 
 
-Design:  BB_TOP                                        Date:  02/12/15  23:53:44
+Design:  BB_TOP                                        Date:  02/14/15  11:11:44
 
 Design Summary (cont)
 ---------------------
@@ -85,7 +85,7 @@ Design Summary (cont)
      Net I2C_INS_2/un1_DOUT_0_a2_0_a3_0: 4 loads, 4 LSLICEs
      Net I2C_INS_2/N_42: 2 loads, 2 LSLICEs
      Net I2C_INS_2/un2_RD_WR_0_a2_0_a3_0: 1 loads, 1 LSLICEs
-     Net N_2750_i: 1 loads, 0 LSLICEs
+     Net N_2754_i: 1 loads, 0 LSLICEs
      Net I2C_INS_1/SCL_NCLK: 1 loads, 1 LSLICEs
      Net I2C_INS_1/SDA_OE_i_RNO: 1 loads, 1 LSLICEs
      Net I2C_INS_1/SCL_D2_RNIE4DF: 4 loads, 4 LSLICEs
@@ -97,66 +97,66 @@ Design Summary (cont)
      Net I2C_INS_1/un1_DOUT_0_a2_0_a3: 4 loads, 4 LSLICEs
      Net I2C_INS_1/N_29: 2 loads, 2 LSLICEs
      Net I2C_INS_1/un2_RD_WR_0_a2_0_a3: 1 loads, 1 LSLICEs
-     Net N_2609_i: 1 loads, 0 LSLICEs
+     Net N_2489_i: 1 loads, 0 LSLICEs
      Net BB_SGPIO_INST/N_909_i: 4 loads, 4 LSLICEs
      Net BB_SGPIO_INST/N_872_i: 18 loads, 18 LSLICEs
      Net un1_STATE_9_i_i: 1 loads, 0 LSLICEs
-     Net PCIE_RST_CTRL/N_127: 12 loads, 12 LSLICEs
-     Net PCIE_RST_CTRL/un6_CNT8_i: 12 loads, 12 LSLICEs
-     Net PCIE_RST_CTRL/un6_CNT7_i: 12 loads, 12 LSLICEs
-     Net PCIE_RST_CTRL/un6_CNT6_i: 12 loads, 12 LSLICEs
-     Net PCIE_RST_CTRL/un6_CNT5_i: 12 loads, 12 LSLICEs
-     Net PCIE_RST_CTRL/un6_CNT4_i: 12 loads, 12 LSLICEs
+     Net PCIE_RST_CTRL/un6_CNT9_i_0: 12 loads, 12 LSLICEs
+     Net PCIE_RST_CTRL/un6_CNT8_i_0: 12 loads, 12 LSLICEs
+     Net PCIE_RST_CTRL/un6_CNT7_i_0: 12 loads, 12 LSLICEs
+     Net PCIE_RST_CTRL/un6_CNT6_i_0: 12 loads, 12 LSLICEs
+     Net PCIE_RST_CTRL/un6_CNT5_i_0: 12 loads, 12 LSLICEs
+     Net PCIE_RST_CTRL/N_450: 12 loads, 12 LSLICEs
      Net PCIE_RST_CTRL/un6_CNT3_i_0: 12 loads, 12 LSLICEs
      Net PCIE_RST_CTRL/un6_CNT23_i_0: 12 loads, 12 LSLICEs
-     Net PCIE_RST_CTRL/un6_CNT2_i_0: 12 loads, 12 LSLICEs
-     Net PCIE_RST_CTRL/un6_CNT21_i: 12 loads, 12 LSLICEs
-     Net PCIE_RST_CTRL/N_133: 12 loads, 12 LSLICEs
-     Net PCIE_RST_CTRL/un6_CNT20_i: 12 loads, 12 LSLICEs
-     Net PCIE_RST_CTRL/un6_CNT19_i_0: 12 loads, 12 LSLICEs
-     Net PCIE_RST_CTRL/un6_CNT1_i_0: 12 loads, 12 LSLICEs
+     Net PCIE_RST_CTRL/N_80: 12 loads, 12 LSLICEs
+     Net PCIE_RST_CTRL/un6_CNT21_i_0: 12 loads, 12 LSLICEs
+     Net PCIE_RST_CTRL/un6_CNT22_i_0: 12 loads, 12 LSLICEs
+     Net PCIE_RST_CTRL/un6_CNT20_i_0: 12 loads, 12 LSLICEs
+     Net PCIE_RST_CTRL/N_444: 12 loads, 12 LSLICEs
+     Net PCIE_RST_CTRL/N_78: 12 loads, 12 LSLICEs
      Net PCIE_RST_CTRL/un6_CNT18_i_0: 12 loads, 12 LSLICEs
-     Net PCIE_RST_CTRL/un6_CNT16_i: 12 loads, 12 LSLICEs
-     Net PCIE_RST_CTRL/N_131: 12 loads, 12 LSLICEs
-     Net PCIE_RST_CTRL/un6_CNT15_i: 12 loads, 12 LSLICEs
-     Net PCIE_RST_CTRL/un6_CNT14_i: 12 loads, 12 LSLICEs
-     Net PCIE_RST_CTRL/un6_CNT13_i: 12 loads, 12 LSLICEs
-     Net PCIE_RST_CTRL/un6_CNT12_i: 12 loads, 12 LSLICEs
+     Net PCIE_RST_CTRL/N_438: 12 loads, 12 LSLICEs
+     Net PCIE_RST_CTRL/N_440: 12 loads, 12 LSLICEs
+     Net PCIE_RST_CTRL/un6_CNT15_i_0: 12 loads, 12 LSLICEs
+     Net PCIE_RST_CTRL/un6_CNT14_i_0: 12 loads, 12 LSLICEs
+     Net PCIE_RST_CTRL/un6_CNT13_i_0: 12 loads, 12 LSLICEs
+     Net PCIE_RST_CTRL/N_452: 12 loads, 12 LSLICEs
      Net PCIE_RST_CTRL/un6_CNT11_i_0: 12 loads, 12 LSLICEs
-     Net PCIE_RST_CTRL/N_129: 12 loads, 12 LSLICEs
+     Net PCIE_RST_CTRL/un6_CNT10_i_0: 12 loads, 12 LSLICEs
 
                                     Page 2
 
 
 
 
-Design:  BB_TOP                                        Date:  02/12/15  23:53:44
+Design:  BB_TOP                                        Date:  02/14/15  11:11:44
 
 Design Summary (cont)
 ---------------------
-     Net PCIE_RST_CTRL/un7_CNT0_i: 12 loads, 12 LSLICEs
-     Net GPOA_INST/un19_DO12_i_o2_RNIF9M32: 4 loads, 4 LSLICEs
-     Net GPOA_INST/un19_DO10_0_a2_0_a3_0_o2_RNIUH4A1: 4 loads, 4 LSLICEs
-     Net GPOA_INST/un27_DO11_i_0_0_o2_RNIHURC1: 4 loads, 4 LSLICEs
-     Net GPOA_INST/N_2149_i: 4 loads, 4 LSLICEs
-     Net GPOA_INST/N_2068_i: 4 loads, 4 LSLICEs
-     Net GPOA_INST/un27_DO9_i_0_1: 4 loads, 4 LSLICEs
-     Net GPOA_INST/un27_DO8_i_0: 4 loads, 4 LSLICEs
-     Net GPOA_INST/un27_DO7_i_0: 4 loads, 4 LSLICEs
+     Net PCIE_RST_CTRL/N_82: 12 loads, 12 LSLICEs
      Net GPOA_INST/N_19: 4 loads, 4 LSLICEs
-     Net GPOA_INST/un27_DO5_i_0: 4 loads, 4 LSLICEs
-     Net GPOA_INST/un27_DO4_i_0: 4 loads, 4 LSLICEs
-     Net GPOA_INST/N_17: 4 loads, 4 LSLICEs
-     Net GPOA_INST/un27_DO2_i_0: 4 loads, 4 LSLICEs
-     Net GPOA_INST/N_23: 4 loads, 4 LSLICEs
-     Net GPOA_INST/un27_DO1_i_0_1: 4 loads, 4 LSLICEs
+     Net GPOA_INST/N_429: 4 loads, 4 LSLICEs
+     Net GPOA_INST/un27_DO7_i_0_0_a2_RNIDG7G1: 4 loads, 4 LSLICEs
+     Net GPOA_INST/un27_DO2_i_0_0_o2_RNIHCIM1: 4 loads, 4 LSLICEs
+     Net GPOA_INST/un27_DO10_i_0_0_o2_RNIFKN71: 4 loads, 4 LSLICEs
      Net GPOA_INST/N_21: 4 loads, 4 LSLICEs
-     Net GPOA_INST/un27_DO13_i_0: 4 loads, 4 LSLICEs
+     Net GPOA_INST/N_17: 4 loads, 4 LSLICEs
      Net GPOA_INST/N_15: 4 loads, 4 LSLICEs
-     Net GPI9_INST/N_167: 1 loads, 1 LSLICEs
-     Net GPI9_INST/N_578: 1 loads, 1 LSLICEs
-     Net GPI8_INST/N_166: 1 loads, 1 LSLICEs
-     Net GPI8_INST/N_577: 1 loads, 1 LSLICEs
+     Net GPOA_INST/N_472: 4 loads, 4 LSLICEs
+     Net GPOA_INST/N_1949_i: 4 loads, 4 LSLICEs
+     Net GPOA_INST/un27_DO5_i_0_0: 4 loads, 4 LSLICEs
+     Net GPOA_INST/un27_DO4_i_0_0: 4 loads, 4 LSLICEs
+     Net GPOA_INST/N_23: 4 loads, 4 LSLICEs
+     Net GPOA_INST/un27_DO1_i_0_0_0: 4 loads, 4 LSLICEs
+     Net GPOA_INST/un27_DO14_i_0_0: 4 loads, 4 LSLICEs
+     Net GPOA_INST/N_431: 4 loads, 4 LSLICEs
+     Net GPOA_INST/un27_DO11_i_0: 4 loads, 4 LSLICEs
+     Net GPOA_INST/N_241: 4 loads, 4 LSLICEs
+     Net GPI9_INST/un1_DOUT2_i_i_a3: 1 loads, 1 LSLICEs
+     Net GPI9_INST/un2_DOUT1_i_i_a3: 1 loads, 1 LSLICEs
+     Net GPI8_INST/un1_DOUT2_i_i_a3_0: 1 loads, 1 LSLICEs
+     Net GPI8_INST/un2_DOUT1_i_i_a3_0: 1 loads, 1 LSLICEs
      Net GPO7_INST/N_59_i: 4 loads, 4 LSLICEs
      Net GPO7_INST/N_620: 4 loads, 4 LSLICEs
      Net GPO7_INST/un27_DO9_i_0_0: 4 loads, 4 LSLICEs
@@ -196,7 +196,7 @@ Design Summary (cont)
 
 
 
-Design:  BB_TOP                                        Date:  02/12/15  23:53:44
+Design:  BB_TOP                                        Date:  02/14/15  11:11:44
 
 Design Summary (cont)
 ---------------------
@@ -239,40 +239,40 @@ Design Summary (cont)
      Net GPO4_INST/N_57: 4 loads, 4 LSLICEs
      Net GPO4_INST/N_14: 4 loads, 4 LSLICEs
      Net GPO4_INST/N_7: 4 loads, 4 LSLICEs
-     Net GPI3_INST/un1_DOUT2_i_i_a3: 4 loads, 4 LSLICEs
-     Net GPI3_INST/N_576: 4 loads, 4 LSLICEs
+     Net GPI3_INST/N_748: 4 loads, 4 LSLICEs
+     Net GPI3_INST/un2_DOUT1_i_i_a3_1: 4 loads, 4 LSLICEs
      Net GPO2_INST/un9_DO0_i_0: 4 loads, 4 LSLICEs
-     Net GPO2_INST/un9_DO2_i_0_0_o2_RNI3D4B1: 4 loads, 4 LSLICEs
-     Net GPO2_INST/N_8: 4 loads, 4 LSLICEs
-     Net GPO2_INST/N_6: 4 loads, 4 LSLICEs
-     Net GPO2_INST/N_2145_i: 4 loads, 4 LSLICEs
-     Net GPO2_INST/N_2062_i: 4 loads, 4 LSLICEs
-     Net GPO2_INST/N_9: 4 loads, 4 LSLICEs
-     Net GPO2_INST/un9_DO8_i_0: 4 loads, 4 LSLICEs
-     Net GPO2_INST/un9_DO7_i_0: 4 loads, 4 LSLICEs
-     Net GPO2_INST/un9_DO6_i_0: 4 loads, 4 LSLICEs
-     Net GPO2_INST/un9_DO5_i_0: 4 loads, 4 LSLICEs
-     Net GPO2_INST/un9_DO4_i_0: 4 loads, 4 LSLICEs
-     Net GPO2_INST/un9_DO3_i_0: 4 loads, 4 LSLICEs
-     Net GPO2_INST/un9_DO15_i_0: 4 loads, 4 LSLICEs
+     Net GPO2_INST/N_747: 4 loads, 4 LSLICEs
+     Net GPO2_INST/N_1945_i: 4 loads, 4 LSLICEs
+     Net GPO2_INST/un9_DO9_i_0: 4 loads, 4 LSLICEs
+     Net GPO2_INST/N_425: 4 loads, 4 LSLICEs
+     Net GPO2_INST/un9_DO7_i_0_0: 4 loads, 4 LSLICEs
+     Net GPO2_INST/un9_DO6_i_0_0: 4 loads, 4 LSLICEs
+     Net GPO2_INST/un9_DO5_i_0_0: 4 loads, 4 LSLICEs
+     Net GPO2_INST/un9_DO4_i_0_0: 4 loads, 4 LSLICEs
+     Net GPO2_INST/un9_DO3_i_0_0: 4 loads, 4 LSLICEs
+     Net GPO2_INST/N_246: 4 loads, 4 LSLICEs
+     Net GPO2_INST/un9_DO15_i_0_0: 4 loads, 4 LSLICEs
      Net GPO2_INST/un9_DO14_i_0: 4 loads, 4 LSLICEs
+     Net GPO2_INST/N_9: 4 loads, 4 LSLICEs
+     Net GPO2_INST/N_248: 4 loads, 4 LSLICEs
 
                                     Page 4
 
 
 
 
-Design:  BB_TOP                                        Date:  02/12/15  23:53:44
+Design:  BB_TOP                                        Date:  02/14/15  11:11:44
 
 Design Summary (cont)
 ---------------------
-     Net GPO2_INST/un9_DO1_i_0: 4 loads, 4 LSLICEs
-     Net GPO2_INST/un9_DO13_i_0: 4 loads, 4 LSLICEs
      Net GPO2_INST/un9_DO12_i_0: 4 loads, 4 LSLICEs
-     Net GPI1_INST/N_165: 4 loads, 4 LSLICEs
-     Net GPI1_INST/N_575: 4 loads, 4 LSLICEs
-     Net GPI0_INST/N_574: 3 loads, 3 LSLICEs
-     Net GPI0_INST/un1_DOUT2_i_i_a3_0: 3 loads, 3 LSLICEs
+     Net GPO2_INST/N_8: 4 loads, 4 LSLICEs
+     Net GPO2_INST/N_6: 4 loads, 4 LSLICEs
+     Net GPI1_INST/un1_DOUT2_i_i_a3_1: 4 loads, 4 LSLICEs
+     Net GPI1_INST/un2_DOUT1_i_i_a3_2: 4 loads, 4 LSLICEs
+     Net GPI0_INST/un2_DOUT1_i_i_a3_3: 3 loads, 3 LSLICEs
+     Net GPI0_INST/N_746: 3 loads, 3 LSLICEs
    Number of local set/reset loads for net RESET_N_c merged into GSR:  1970
    Number of LSRs:  0
    Number of nets driven by tri-state buffers:  0
@@ -281,12 +281,12 @@ Design Summary (cont)
      Net GPO5_INST/N_380: 144 loads
      Net GPO6_INST/N_602: 144 loads
      Net GPO7_INST/N_380: 144 loads
-     Net N_445: 121 loads
-     Net N_1917_i: 120 loads
-     Net OFFSET_SEL_1[6]: 111 loads
-     Net N_405: 110 loads
-     Net N_407: 110 loads
-     Net OFFSET_SEL_1[3]: 110 loads
+     Net GPO2_INST/N_2709: 126 loads
+     Net OFFSET_SEL_1[1]: 121 loads
+     Net OFFSET_SEL_1[0]: 113 loads
+     Net OFFSET_SEL_1[2]: 110 loads
+     Net OFFSET_SEL_1[3]: 103 loads
+     Net OFFSET_SEL_1[11]: 102 loads
 
 
 
@@ -328,7 +328,7 @@ IO (PIO) Attributes
 
 
 
-Design:  BB_TOP                                        Date:  02/12/15  23:53:44
+Design:  BB_TOP                                        Date:  02/14/15  11:11:44
 
 IO (PIO) Attributes (cont)
 --------------------------
@@ -337,6 +337,30 @@ IO (PIO) Attributes (cont)
 | CANISTER_A_PCIE_CLK_ACT_L| INPUT     | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
 | BB_CPLD_ALT_L       | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV32_PCIE_CLK_B_OE_L| OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV33_PCIE_CLK_B_OE_L| OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV34_PCIE_CLK_B_OE_L| OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV35_PCIE_CLK_B_OE_L| OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV28_PCIE_CLK_B_OE_L| OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV29_PCIE_CLK_B_OE_L| OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV30_PCIE_CLK_B_OE_L| OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV31_PCIE_CLK_B_OE_L| OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV24_PCIE_CLK_B_OE_L| OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV25_PCIE_CLK_B_OE_L| OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV26_PCIE_CLK_B_OE_L| OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV27_PCIE_CLK_B_OE_L| OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
 | DRV20_PCIE_CLK_B_OE_L| OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
@@ -362,31 +386,7 @@ IO (PIO) Attributes (cont)
 +---------------------+-----------+-----------+------------+
 | DRV15_PCIE_CLK_B_OE_L| OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
-| DRV8_PCIE_CLK_B_OE_L| OUTPUT    | LVCMOS33  |            |
-+---------------------+-----------+-----------+------------+
-| DRV9_PCIE_CLK_B_OE_L| OUTPUT    | LVCMOS33  |            |
-+---------------------+-----------+-----------+------------+
-| DRV10_PCIE_CLK_B_OE_L| OUTPUT    | LVCMOS33  |            |
-+---------------------+-----------+-----------+------------+
-| DRV11_PCIE_CLK_B_OE_L| OUTPUT    | LVCMOS33  |            |
-+---------------------+-----------+-----------+------------+
-| DRV4_PCIE_CLK_B_OE_L| OUTPUT    | LVCMOS33  |            |
-+---------------------+-----------+-----------+------------+
-| DRV5_PCIE_CLK_B_OE_L| OUTPUT    | LVCMOS33  |            |
-+---------------------+-----------+-----------+------------+
-| DRV6_PCIE_CLK_B_OE_L| OUTPUT    | LVCMOS33  |            |
-+---------------------+-----------+-----------+------------+
-| DRV7_PCIE_CLK_B_OE_L| OUTPUT    | LVCMOS33  |            |
-+---------------------+-----------+-----------+------------+
-| DRV0_PCIE_CLK_B_OE_L| OUTPUT    | LVCMOS33  |            |
-+---------------------+-----------+-----------+------------+
-| DRV1_PCIE_CLK_B_OE_L| OUTPUT    | LVCMOS33  |            |
-+---------------------+-----------+-----------+------------+
-| DRV2_PCIE_CLK_B_OE_L| OUTPUT    | LVCMOS33  |            |
-+---------------------+-----------+-----------+------------+
-| DRV3_PCIE_CLK_B_OE_L| OUTPUT    | LVCMOS33  |            |
-+---------------------+-----------+-----------+------------+
-| DRV20_PCIE_CLK_A_OE_L| OUTPUT    | LVCMOS33  |            |
+| DRV32_PCIE_CLK_A_OE_L| OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
 
                                     Page 6
@@ -394,10 +394,34 @@ IO (PIO) Attributes (cont)
 
 
 
-Design:  BB_TOP                                        Date:  02/12/15  23:53:44
+Design:  BB_TOP                                        Date:  02/14/15  11:11:44
 
 IO (PIO) Attributes (cont)
 --------------------------
+| DRV33_PCIE_CLK_A_OE_L| OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV34_PCIE_CLK_A_OE_L| OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV35_PCIE_CLK_A_OE_L| OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV28_PCIE_CLK_A_OE_L| OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV29_PCIE_CLK_A_OE_L| OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV30_PCIE_CLK_A_OE_L| OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV31_PCIE_CLK_A_OE_L| OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV24_PCIE_CLK_A_OE_L| OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV25_PCIE_CLK_A_OE_L| OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV26_PCIE_CLK_A_OE_L| OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV27_PCIE_CLK_A_OE_L| OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV20_PCIE_CLK_A_OE_L| OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
 | DRV21_PCIE_CLK_A_OE_L| OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
 | DRV22_PCIE_CLK_A_OE_L| OUTPUT    | LVCMOS33  |            |
@@ -420,30 +444,6 @@ IO (PIO) Attributes (cont)
 +---------------------+-----------+-----------+------------+
 | DRV15_PCIE_CLK_A_OE_L| OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
-| DRV8_PCIE_CLK_A_OE_L| OUTPUT    | LVCMOS33  |            |
-+---------------------+-----------+-----------+------------+
-| DRV9_PCIE_CLK_A_OE_L| OUTPUT    | LVCMOS33  |            |
-+---------------------+-----------+-----------+------------+
-| DRV10_PCIE_CLK_A_OE_L| OUTPUT    | LVCMOS33  |            |
-+---------------------+-----------+-----------+------------+
-| DRV11_PCIE_CLK_A_OE_L| OUTPUT    | LVCMOS33  |            |
-+---------------------+-----------+-----------+------------+
-| DRV4_PCIE_CLK_A_OE_L| OUTPUT    | LVCMOS33  |            |
-+---------------------+-----------+-----------+------------+
-| DRV5_PCIE_CLK_A_OE_L| OUTPUT    | LVCMOS33  |            |
-+---------------------+-----------+-----------+------------+
-| DRV6_PCIE_CLK_A_OE_L| OUTPUT    | LVCMOS33  |            |
-+---------------------+-----------+-----------+------------+
-| DRV7_PCIE_CLK_A_OE_L| OUTPUT    | LVCMOS33  |            |
-+---------------------+-----------+-----------+------------+
-| DRV0_PCIE_CLK_A_OE_L| OUTPUT    | LVCMOS33  |            |
-+---------------------+-----------+-----------+------------+
-| DRV1_PCIE_CLK_A_OE_L| OUTPUT    | LVCMOS33  |            |
-+---------------------+-----------+-----------+------------+
-| DRV2_PCIE_CLK_A_OE_L| OUTPUT    | LVCMOS33  |            |
-+---------------------+-----------+-----------+------------+
-| DRV3_PCIE_CLK_A_OE_L| OUTPUT    | LVCMOS33  |            |
-+---------------------+-----------+-----------+------------+
 | PE_RST_DRV20_B_L    | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
 | PE_RST_DRV21_B_L    | OUTPUT    | LVCMOS33  |            |
@@ -460,7 +460,7 @@ IO (PIO) Attributes (cont)
 
 
 
-Design:  BB_TOP                                        Date:  02/12/15  23:53:44
+Design:  BB_TOP                                        Date:  02/14/15  11:11:44
 
 IO (PIO) Attributes (cont)
 --------------------------
@@ -526,7 +526,7 @@ IO (PIO) Attributes (cont)
 
 
 
-Design:  BB_TOP                                        Date:  02/12/15  23:53:44
+Design:  BB_TOP                                        Date:  02/14/15  11:11:44
 
 IO (PIO) Attributes (cont)
 --------------------------
@@ -592,7 +592,7 @@ IO (PIO) Attributes (cont)
 
 
 
-Design:  BB_TOP                                        Date:  02/12/15  23:53:44
+Design:  BB_TOP                                        Date:  02/14/15  11:11:44
 
 IO (PIO) Attributes (cont)
 --------------------------
@@ -658,7 +658,7 @@ IO (PIO) Attributes (cont)
 
 
 
-Design:  BB_TOP                                        Date:  02/12/15  23:53:44
+Design:  BB_TOP                                        Date:  02/14/15  11:11:44
 
 IO (PIO) Attributes (cont)
 --------------------------
@@ -724,7 +724,7 @@ IO (PIO) Attributes (cont)
 
 
 
-Design:  BB_TOP                                        Date:  02/12/15  23:53:44
+Design:  BB_TOP                                        Date:  02/14/15  11:11:44
 
 IO (PIO) Attributes (cont)
 --------------------------
@@ -733,6 +733,30 @@ IO (PIO) Attributes (cont)
 | DRV2_PRSNT_AMBER_LED| BIDIR     | LVCMOS33  | IN         |
 +---------------------+-----------+-----------+------------+
 | DRV3_PRSNT_AMBER_LED| BIDIR     | LVCMOS33  | IN         |
++---------------------+-----------+-----------+------------+
+| DRV32_PWROK         | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV33_PWROK         | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV34_PWROK         | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV35_PWROK         | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV28_PWROK         | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV29_PWROK         | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV30_PWROK         | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV31_PWROK         | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV24_PWROK         | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV25_PWROK         | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV26_PWROK         | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| DRV27_PWROK         | INPUT     | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
 | DRV20_PWROK         | INPUT     | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
@@ -758,30 +782,6 @@ IO (PIO) Attributes (cont)
 +---------------------+-----------+-----------+------------+
 | DRV15_PWROK         | INPUT     | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
-| DRV8_PWROK          | INPUT     | LVCMOS33  |            |
-+---------------------+-----------+-----------+------------+
-| DRV9_PWROK          | INPUT     | LVCMOS33  |            |
-+---------------------+-----------+-----------+------------+
-| DRV10_PWROK         | INPUT     | LVCMOS33  |            |
-+---------------------+-----------+-----------+------------+
-| DRV11_PWROK         | INPUT     | LVCMOS33  |            |
-+---------------------+-----------+-----------+------------+
-| DRV4_PWROK          | INPUT     | LVCMOS33  |            |
-+---------------------+-----------+-----------+------------+
-| DRV5_PWROK          | INPUT     | LVCMOS33  |            |
-+---------------------+-----------+-----------+------------+
-| DRV6_PWROK          | INPUT     | LVCMOS33  |            |
-+---------------------+-----------+-----------+------------+
-| DRV7_PWROK          | INPUT     | LVCMOS33  |            |
-+---------------------+-----------+-----------+------------+
-| DRV0_PWROK          | INPUT     | LVCMOS33  |            |
-+---------------------+-----------+-----------+------------+
-| DRV1_PWROK          | INPUT     | LVCMOS33  |            |
-+---------------------+-----------+-----------+------------+
-| DRV2_PWROK          | INPUT     | LVCMOS33  |            |
-+---------------------+-----------+-----------+------------+
-| DRV3_PWROK          | INPUT     | LVCMOS33  |            |
-+---------------------+-----------+-----------+------------+
 | DRV32_PWR_EN_L      | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
 
@@ -790,7 +790,7 @@ IO (PIO) Attributes (cont)
 
 
 
-Design:  BB_TOP                                        Date:  02/12/15  23:53:44
+Design:  BB_TOP                                        Date:  02/14/15  11:11:44
 
 IO (PIO) Attributes (cont)
 --------------------------
@@ -856,7 +856,7 @@ IO (PIO) Attributes (cont)
 
 
 
-Design:  BB_TOP                                        Date:  02/12/15  23:53:44
+Design:  BB_TOP                                        Date:  02/14/15  11:11:44
 
 IO (PIO) Attributes (cont)
 --------------------------
@@ -922,7 +922,7 @@ IO (PIO) Attributes (cont)
 
 
 
-Design:  BB_TOP                                        Date:  02/12/15  23:53:44
+Design:  BB_TOP                                        Date:  02/14/15  11:11:44
 
 IO (PIO) Attributes (cont)
 --------------------------
@@ -970,25 +970,25 @@ Block GPI0_INST/GND undriven or does not drive anything - clipped.
 Block GPI0_INST/VCC undriven or does not drive anything - clipped.
 Block GPI1_INST/GND undriven or does not drive anything - clipped.
 Block GPI1_INST/VCC undriven or does not drive anything - clipped.
-Block GPO2_INST/GND undriven or does not drive anything - clipped.
 Block GPO2_INST/VCC undriven or does not drive anything - clipped.
+Block GPO2_INST/GND undriven or does not drive anything - clipped.
 Block GPI3_INST/GND undriven or does not drive anything - clipped.
 Block GPI3_INST/VCC undriven or does not drive anything - clipped.
-Block GPO4_INST/GND undriven or does not drive anything - clipped.
 Block GPO4_INST/VCC undriven or does not drive anything - clipped.
-Block GPO5_INST/GND undriven or does not drive anything - clipped.
+Block GPO4_INST/GND undriven or does not drive anything - clipped.
 Block GPO5_INST/VCC undriven or does not drive anything - clipped.
-Block GPO6_INST/GND undriven or does not drive anything - clipped.
+Block GPO5_INST/GND undriven or does not drive anything - clipped.
 Block GPO6_INST/VCC undriven or does not drive anything - clipped.
-Block GPO7_INST/GND undriven or does not drive anything - clipped.
+Block GPO6_INST/GND undriven or does not drive anything - clipped.
 Block GPO7_INST/VCC undriven or does not drive anything - clipped.
+Block GPO7_INST/GND undriven or does not drive anything - clipped.
 
                                    Page 15
 
 
 
 
-Design:  BB_TOP                                        Date:  02/12/15  23:53:44
+Design:  BB_TOP                                        Date:  02/14/15  11:11:44
 
 Removed logic (cont)
 --------------------
@@ -996,8 +996,8 @@ Block GPI8_INST/GND undriven or does not drive anything - clipped.
 Block GPI8_INST/VCC undriven or does not drive anything - clipped.
 Block GPI9_INST/GND undriven or does not drive anything - clipped.
 Block GPI9_INST/VCC undriven or does not drive anything - clipped.
-Block GPOA_INST/GND undriven or does not drive anything - clipped.
 Block GPOA_INST/VCC undriven or does not drive anything - clipped.
+Block GPOA_INST/GND undriven or does not drive anything - clipped.
 Block FLT_AMB_LED_INST0/GND undriven or does not drive anything - clipped.
 Block FLT_AMB_LED_INST1/GND undriven or does not drive anything - clipped.
 Block FLT_AMB_LED_INST2/GND undriven or does not drive anything - clipped.
@@ -1054,7 +1054,7 @@ Signal PCIE_RST_CTRL/N_1 undriven or does not drive anything - clipped.
 
 
 
-Design:  BB_TOP                                        Date:  02/12/15  23:53:44
+Design:  BB_TOP                                        Date:  02/14/15  11:11:44
 
 Removed logic (cont)
 --------------------
@@ -1120,7 +1120,7 @@ Signal PCIE_RST_CTRL/N_9 undriven or does not drive anything - clipped.
 
 
 
-Design:  BB_TOP                                        Date:  02/12/15  23:53:44
+Design:  BB_TOP                                        Date:  02/14/15  11:11:44
 
 Removed logic (cont)
 --------------------
@@ -1186,7 +1186,7 @@ Signal PCIE_RST_CTRL/N_17 undriven or does not drive anything - clipped.
 
 
 
-Design:  BB_TOP                                        Date:  02/12/15  23:53:44
+Design:  BB_TOP                                        Date:  02/14/15  11:11:44
 
 Removed logic (cont)
 --------------------
@@ -1252,7 +1252,7 @@ Signal BB_SGPIO_INST/N_1 undriven or does not drive anything - clipped.
 
 
 
-Design:  BB_TOP                                        Date:  02/12/15  23:53:44
+Design:  BB_TOP                                        Date:  02/14/15  11:11:44
 
 Removed logic (cont)
 --------------------
@@ -1318,7 +1318,7 @@ Block LED_CNT_INST/GND was optimized away.
 
 
 
-Design:  BB_TOP                                        Date:  02/12/15  23:53:44
+Design:  BB_TOP                                        Date:  02/14/15  11:11:44
 
 Removed logic (cont)
 --------------------
@@ -1364,7 +1364,7 @@ Run Time and Memory Usage
 -------------------------
 
    Total CPU Time: 4 secs
-   Total REAL Time: 4 secs
+   Total REAL Time: 5 secs
    Peak Memory Usage: 94 MB
 
 

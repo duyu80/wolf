@@ -34,7 +34,7 @@ module BB_TOP (
             output    DRV${j3}_PWR_EN_L,DRV${j2}_PWR_EN_L,DRV${j1}_PWR_EN_L,DRV${j0}_PWR_EN_L,
 ; }
             // Driver power ok input
-; for ($i=0; $i<24; $i=$i+4) {
+; for ($i=12; $i<36; $i=$i+4) {
 ; $j0=$i;
 ; $j1=$i+1;
 ; $j2=$i+2;
@@ -74,7 +74,7 @@ module BB_TOP (
             output    PE_RST_DRV${j3}_B_L,PE_RST_DRV${j2}_B_L,PE_RST_DRV${j1}_B_L,PE_RST_DRV${j0}_B_L,
 ; }
             // PCIE clock OE portA output
-; for ($i=0; $i<24; $i=$i+4) {
+; for ($i=12; $i<36; $i=$i+4) {
 ; $j0=$i;
 ; $j1=$i+1;
 ; $j2=$i+2;
@@ -82,7 +82,7 @@ module BB_TOP (
             output    DRV${j3}_PCIE_CLK_A_OE_L,DRV${j2}_PCIE_CLK_A_OE_L,DRV${j1}_PCIE_CLK_A_OE_L,DRV${j0}_PCIE_CLK_A_OE_L,
 ; }
             // PCIE clock OE portB output
-; for ($i=0; $i<24; $i=$i+4) {
+; for ($i=12; $i<36; $i=$i+4) {
 ; $j0=$i;
 ; $j1=$i+1;
 ; $j2=$i+2;
@@ -135,11 +135,11 @@ wire    [35:0]  BLUE_DAT;
 
 //CLOCK OE
 // PCIE clock OE portA output
-; for ($i=0; $i<24; $i++) {
+; for ($i=12; $i<36; $i++) {
 assign    DRV${i}_PCIE_CLK_A_OE_L = DRV${i}_PWR_EN_L;
 ; }
 // PCIE clock OE portB output
-; for ($i=0; $i<24; $i++) {
+; for ($i=12; $i<36; $i++) {
 assign    DRV${i}_PCIE_CLK_B_OE_L = DRV${i}_PWR_EN_L;
 ; }
 
@@ -358,15 +358,21 @@ GPI    	GPI3_INST (
 			.DOUT2			(DIN_3_2),						
 			.RD_WR2		    (RD_WR_2),
 			
-			.DIN0           (  { DRV7_PWROK,DRV6_PWROK,DRV5_PWROK,DRV4_PWROK,
-			                     DRV3_PWROK,DRV2_PWROK,DRV1_PWROK,DRV0_PWROK           }  ),
-			.DIN1           (  { DRV15_PWROK,DRV14_PWROK,DRV13_PWROK,DRV12_PWROK,      
-			                     DRV11_PWROK,DRV10_PWROK,DRV9_PWROK,DRV8_PWROK         }  ),
-			.DIN2           (  { DRV23_PWROK,DRV22_PWROK,DRV21_PWROK,DRV20_PWROK,      
-			                     DRV19_PWROK,DRV18_PWROK,DRV17_PWROK,DRV16_PWROK       }  ),
+			// .DIN0           (  { DRV7_PWROK,DRV6_PWROK,DRV5_PWROK,DRV4_PWROK,
+			                     // DRV3_PWROK,DRV2_PWROK,DRV1_PWROK,DRV0_PWROK           }  ),
+			// .DIN1           (  { DRV15_PWROK,DRV14_PWROK,DRV13_PWROK,DRV12_PWROK,      
+			                     // DRV11_PWROK,DRV10_PWROK,DRV9_PWROK,DRV8_PWROK         }  ),
+			// .DIN2           (  { DRV23_PWROK,DRV22_PWROK,DRV21_PWROK,DRV20_PWROK,      
+			                     // DRV19_PWROK,DRV18_PWROK,DRV17_PWROK,DRV16_PWROK       }  ),
 			//.DIN3           (  { DRV31_PWROK,DRV30_PWROK,DRV29_PWROK,DRV28_PWROK,      
 			//                     DRV27_PWROK,DRV26_PWROK,DRV25_PWROK,DRV24_PWROK       }  ),
 			//.DIN4           (  { 4'h0,DRV35_PWROK,DRV34_PWROK,DRV33_PWROK,DRV32_PWROK  }  ),
+			.DIN0           (  { DRV19_PWROK,DRV18_PWROK,DRV17_PWROK,DRV16_PWROK,
+			                     DRV15_PWROK,DRV14_PWROK,DRV13_PWROK,DRV12_PWROK  }  ),
+			.DIN1           (  { DRV27_PWROK,DRV26_PWROK,DRV25_PWROK,DRV24_PWROK,      
+			                     DRV23_PWROK,DRV22_PWROK,DRV21_PWROK,DRV20_PWROK  }  ),
+			.DIN2           (  { DRV35_PWROK,DRV34_PWROK,DRV33_PWROK,DRV32_PWROK,      
+			                     DRV31_PWROK,DRV30_PWROK,DRV29_PWROK,DRV28_PWROK  }  ),
             .DIN3           (  ),
             .DIN4           (  ),			
 			.DIN5           (  ),
@@ -821,7 +827,8 @@ PRSNT_LED_CTRL PRSNT_LED_CTRL_INST(
 PCIE_RST_CTRL  PCIE_RST_CTRL (
             //POWER OK
 ; for ($i=0; $i<24; $i++) {
-            .DRV${i}_PWROK                  (DRV${i}_PWROK ),
+; $j=$i+12;
+            .DRV${i}_PWROK                  (DRV${j}_PWROK ),
 ; }
             //RESET A
 ; for ($i=0; $i<24; $i++) {

@@ -38,12 +38,12 @@ module BB_TOP (
             output    DRV31_PWR_EN_L,DRV30_PWR_EN_L,DRV29_PWR_EN_L,DRV28_PWR_EN_L,
             output    DRV35_PWR_EN_L,DRV34_PWR_EN_L,DRV33_PWR_EN_L,DRV32_PWR_EN_L,
             // Driver power ok input
-            input     DRV3_PWROK,DRV2_PWROK,DRV1_PWROK,DRV0_PWROK,
-            input     DRV7_PWROK,DRV6_PWROK,DRV5_PWROK,DRV4_PWROK,
-            input     DRV11_PWROK,DRV10_PWROK,DRV9_PWROK,DRV8_PWROK,
             input     DRV15_PWROK,DRV14_PWROK,DRV13_PWROK,DRV12_PWROK,
             input     DRV19_PWROK,DRV18_PWROK,DRV17_PWROK,DRV16_PWROK,
             input     DRV23_PWROK,DRV22_PWROK,DRV21_PWROK,DRV20_PWROK,
+            input     DRV27_PWROK,DRV26_PWROK,DRV25_PWROK,DRV24_PWROK,
+            input     DRV31_PWROK,DRV30_PWROK,DRV29_PWROK,DRV28_PWROK,
+            input     DRV35_PWROK,DRV34_PWROK,DRV33_PWROK,DRV32_PWROK,
             // Driver present and amber LED inout
 			inout     DRV3_PRSNT_AMBER_LED,DRV2_PRSNT_AMBER_LED,DRV1_PRSNT_AMBER_LED,DRV0_PRSNT_AMBER_LED,
 			inout     DRV7_PRSNT_AMBER_LED,DRV6_PRSNT_AMBER_LED,DRV5_PRSNT_AMBER_LED,DRV4_PRSNT_AMBER_LED,
@@ -79,19 +79,19 @@ module BB_TOP (
             output    PE_RST_DRV19_B_L,PE_RST_DRV18_B_L,PE_RST_DRV17_B_L,PE_RST_DRV16_B_L,
             output    PE_RST_DRV23_B_L,PE_RST_DRV22_B_L,PE_RST_DRV21_B_L,PE_RST_DRV20_B_L,
             // PCIE clock OE portA output
-            output    DRV3_PCIE_CLK_A_OE_L,DRV2_PCIE_CLK_A_OE_L,DRV1_PCIE_CLK_A_OE_L,DRV0_PCIE_CLK_A_OE_L,
-            output    DRV7_PCIE_CLK_A_OE_L,DRV6_PCIE_CLK_A_OE_L,DRV5_PCIE_CLK_A_OE_L,DRV4_PCIE_CLK_A_OE_L,
-            output    DRV11_PCIE_CLK_A_OE_L,DRV10_PCIE_CLK_A_OE_L,DRV9_PCIE_CLK_A_OE_L,DRV8_PCIE_CLK_A_OE_L,
             output    DRV15_PCIE_CLK_A_OE_L,DRV14_PCIE_CLK_A_OE_L,DRV13_PCIE_CLK_A_OE_L,DRV12_PCIE_CLK_A_OE_L,
             output    DRV19_PCIE_CLK_A_OE_L,DRV18_PCIE_CLK_A_OE_L,DRV17_PCIE_CLK_A_OE_L,DRV16_PCIE_CLK_A_OE_L,
             output    DRV23_PCIE_CLK_A_OE_L,DRV22_PCIE_CLK_A_OE_L,DRV21_PCIE_CLK_A_OE_L,DRV20_PCIE_CLK_A_OE_L,
+            output    DRV27_PCIE_CLK_A_OE_L,DRV26_PCIE_CLK_A_OE_L,DRV25_PCIE_CLK_A_OE_L,DRV24_PCIE_CLK_A_OE_L,
+            output    DRV31_PCIE_CLK_A_OE_L,DRV30_PCIE_CLK_A_OE_L,DRV29_PCIE_CLK_A_OE_L,DRV28_PCIE_CLK_A_OE_L,
+            output    DRV35_PCIE_CLK_A_OE_L,DRV34_PCIE_CLK_A_OE_L,DRV33_PCIE_CLK_A_OE_L,DRV32_PCIE_CLK_A_OE_L,
             // PCIE clock OE portB output
-            output    DRV3_PCIE_CLK_B_OE_L,DRV2_PCIE_CLK_B_OE_L,DRV1_PCIE_CLK_B_OE_L,DRV0_PCIE_CLK_B_OE_L,
-            output    DRV7_PCIE_CLK_B_OE_L,DRV6_PCIE_CLK_B_OE_L,DRV5_PCIE_CLK_B_OE_L,DRV4_PCIE_CLK_B_OE_L,
-            output    DRV11_PCIE_CLK_B_OE_L,DRV10_PCIE_CLK_B_OE_L,DRV9_PCIE_CLK_B_OE_L,DRV8_PCIE_CLK_B_OE_L,
             output    DRV15_PCIE_CLK_B_OE_L,DRV14_PCIE_CLK_B_OE_L,DRV13_PCIE_CLK_B_OE_L,DRV12_PCIE_CLK_B_OE_L,
             output    DRV19_PCIE_CLK_B_OE_L,DRV18_PCIE_CLK_B_OE_L,DRV17_PCIE_CLK_B_OE_L,DRV16_PCIE_CLK_B_OE_L,
             output    DRV23_PCIE_CLK_B_OE_L,DRV22_PCIE_CLK_B_OE_L,DRV21_PCIE_CLK_B_OE_L,DRV20_PCIE_CLK_B_OE_L,
+            output    DRV27_PCIE_CLK_B_OE_L,DRV26_PCIE_CLK_B_OE_L,DRV25_PCIE_CLK_B_OE_L,DRV24_PCIE_CLK_B_OE_L,
+            output    DRV31_PCIE_CLK_B_OE_L,DRV30_PCIE_CLK_B_OE_L,DRV29_PCIE_CLK_B_OE_L,DRV28_PCIE_CLK_B_OE_L,
+            output    DRV35_PCIE_CLK_B_OE_L,DRV34_PCIE_CLK_B_OE_L,DRV33_PCIE_CLK_B_OE_L,DRV32_PCIE_CLK_B_OE_L,
             // Enclosure Signals
             input     BB_CPLD_ALT_L,
 			input     CANISTER_A_PCIE_CLK_ACT_L,CANISTER_B_PCIE_CLK_ACT_L,
@@ -138,18 +138,6 @@ wire    [35:0]  BLUE_DAT;
 
 //CLOCK OE
 // PCIE clock OE portA output
-assign    DRV0_PCIE_CLK_A_OE_L = DRV0_PWR_EN_L;
-assign    DRV1_PCIE_CLK_A_OE_L = DRV1_PWR_EN_L;
-assign    DRV2_PCIE_CLK_A_OE_L = DRV2_PWR_EN_L;
-assign    DRV3_PCIE_CLK_A_OE_L = DRV3_PWR_EN_L;
-assign    DRV4_PCIE_CLK_A_OE_L = DRV4_PWR_EN_L;
-assign    DRV5_PCIE_CLK_A_OE_L = DRV5_PWR_EN_L;
-assign    DRV6_PCIE_CLK_A_OE_L = DRV6_PWR_EN_L;
-assign    DRV7_PCIE_CLK_A_OE_L = DRV7_PWR_EN_L;
-assign    DRV8_PCIE_CLK_A_OE_L = DRV8_PWR_EN_L;
-assign    DRV9_PCIE_CLK_A_OE_L = DRV9_PWR_EN_L;
-assign    DRV10_PCIE_CLK_A_OE_L = DRV10_PWR_EN_L;
-assign    DRV11_PCIE_CLK_A_OE_L = DRV11_PWR_EN_L;
 assign    DRV12_PCIE_CLK_A_OE_L = DRV12_PWR_EN_L;
 assign    DRV13_PCIE_CLK_A_OE_L = DRV13_PWR_EN_L;
 assign    DRV14_PCIE_CLK_A_OE_L = DRV14_PWR_EN_L;
@@ -162,19 +150,19 @@ assign    DRV20_PCIE_CLK_A_OE_L = DRV20_PWR_EN_L;
 assign    DRV21_PCIE_CLK_A_OE_L = DRV21_PWR_EN_L;
 assign    DRV22_PCIE_CLK_A_OE_L = DRV22_PWR_EN_L;
 assign    DRV23_PCIE_CLK_A_OE_L = DRV23_PWR_EN_L;
+assign    DRV24_PCIE_CLK_A_OE_L = DRV24_PWR_EN_L;
+assign    DRV25_PCIE_CLK_A_OE_L = DRV25_PWR_EN_L;
+assign    DRV26_PCIE_CLK_A_OE_L = DRV26_PWR_EN_L;
+assign    DRV27_PCIE_CLK_A_OE_L = DRV27_PWR_EN_L;
+assign    DRV28_PCIE_CLK_A_OE_L = DRV28_PWR_EN_L;
+assign    DRV29_PCIE_CLK_A_OE_L = DRV29_PWR_EN_L;
+assign    DRV30_PCIE_CLK_A_OE_L = DRV30_PWR_EN_L;
+assign    DRV31_PCIE_CLK_A_OE_L = DRV31_PWR_EN_L;
+assign    DRV32_PCIE_CLK_A_OE_L = DRV32_PWR_EN_L;
+assign    DRV33_PCIE_CLK_A_OE_L = DRV33_PWR_EN_L;
+assign    DRV34_PCIE_CLK_A_OE_L = DRV34_PWR_EN_L;
+assign    DRV35_PCIE_CLK_A_OE_L = DRV35_PWR_EN_L;
 // PCIE clock OE portB output
-assign    DRV0_PCIE_CLK_B_OE_L = DRV0_PWR_EN_L;
-assign    DRV1_PCIE_CLK_B_OE_L = DRV1_PWR_EN_L;
-assign    DRV2_PCIE_CLK_B_OE_L = DRV2_PWR_EN_L;
-assign    DRV3_PCIE_CLK_B_OE_L = DRV3_PWR_EN_L;
-assign    DRV4_PCIE_CLK_B_OE_L = DRV4_PWR_EN_L;
-assign    DRV5_PCIE_CLK_B_OE_L = DRV5_PWR_EN_L;
-assign    DRV6_PCIE_CLK_B_OE_L = DRV6_PWR_EN_L;
-assign    DRV7_PCIE_CLK_B_OE_L = DRV7_PWR_EN_L;
-assign    DRV8_PCIE_CLK_B_OE_L = DRV8_PWR_EN_L;
-assign    DRV9_PCIE_CLK_B_OE_L = DRV9_PWR_EN_L;
-assign    DRV10_PCIE_CLK_B_OE_L = DRV10_PWR_EN_L;
-assign    DRV11_PCIE_CLK_B_OE_L = DRV11_PWR_EN_L;
 assign    DRV12_PCIE_CLK_B_OE_L = DRV12_PWR_EN_L;
 assign    DRV13_PCIE_CLK_B_OE_L = DRV13_PWR_EN_L;
 assign    DRV14_PCIE_CLK_B_OE_L = DRV14_PWR_EN_L;
@@ -187,6 +175,18 @@ assign    DRV20_PCIE_CLK_B_OE_L = DRV20_PWR_EN_L;
 assign    DRV21_PCIE_CLK_B_OE_L = DRV21_PWR_EN_L;
 assign    DRV22_PCIE_CLK_B_OE_L = DRV22_PWR_EN_L;
 assign    DRV23_PCIE_CLK_B_OE_L = DRV23_PWR_EN_L;
+assign    DRV24_PCIE_CLK_B_OE_L = DRV24_PWR_EN_L;
+assign    DRV25_PCIE_CLK_B_OE_L = DRV25_PWR_EN_L;
+assign    DRV26_PCIE_CLK_B_OE_L = DRV26_PWR_EN_L;
+assign    DRV27_PCIE_CLK_B_OE_L = DRV27_PWR_EN_L;
+assign    DRV28_PCIE_CLK_B_OE_L = DRV28_PWR_EN_L;
+assign    DRV29_PCIE_CLK_B_OE_L = DRV29_PWR_EN_L;
+assign    DRV30_PCIE_CLK_B_OE_L = DRV30_PWR_EN_L;
+assign    DRV31_PCIE_CLK_B_OE_L = DRV31_PWR_EN_L;
+assign    DRV32_PCIE_CLK_B_OE_L = DRV32_PWR_EN_L;
+assign    DRV33_PCIE_CLK_B_OE_L = DRV33_PWR_EN_L;
+assign    DRV34_PCIE_CLK_B_OE_L = DRV34_PWR_EN_L;
+assign    DRV35_PCIE_CLK_B_OE_L = DRV35_PWR_EN_L;
 
 //**************************************************************************
 //**                          
@@ -424,15 +424,21 @@ GPI    	GPI3_INST (
 			.DOUT2			(DIN_3_2),						
 			.RD_WR2		    (RD_WR_2),
 			
-			.DIN0           (  { DRV7_PWROK,DRV6_PWROK,DRV5_PWROK,DRV4_PWROK,
-			                     DRV3_PWROK,DRV2_PWROK,DRV1_PWROK,DRV0_PWROK           }  ),
-			.DIN1           (  { DRV15_PWROK,DRV14_PWROK,DRV13_PWROK,DRV12_PWROK,      
-			                     DRV11_PWROK,DRV10_PWROK,DRV9_PWROK,DRV8_PWROK         }  ),
-			.DIN2           (  { DRV23_PWROK,DRV22_PWROK,DRV21_PWROK,DRV20_PWROK,      
-			                     DRV19_PWROK,DRV18_PWROK,DRV17_PWROK,DRV16_PWROK       }  ),
+			// .DIN0           (  { DRV7_PWROK,DRV6_PWROK,DRV5_PWROK,DRV4_PWROK,
+			                     // DRV3_PWROK,DRV2_PWROK,DRV1_PWROK,DRV0_PWROK           }  ),
+			// .DIN1           (  { DRV15_PWROK,DRV14_PWROK,DRV13_PWROK,DRV12_PWROK,      
+			                     // DRV11_PWROK,DRV10_PWROK,DRV9_PWROK,DRV8_PWROK         }  ),
+			// .DIN2           (  { DRV23_PWROK,DRV22_PWROK,DRV21_PWROK,DRV20_PWROK,      
+			                     // DRV19_PWROK,DRV18_PWROK,DRV17_PWROK,DRV16_PWROK       }  ),
 			//.DIN3           (  { DRV31_PWROK,DRV30_PWROK,DRV29_PWROK,DRV28_PWROK,      
 			//                     DRV27_PWROK,DRV26_PWROK,DRV25_PWROK,DRV24_PWROK       }  ),
 			//.DIN4           (  { 4'h0,DRV35_PWROK,DRV34_PWROK,DRV33_PWROK,DRV32_PWROK  }  ),
+			.DIN0           (  { DRV19_PWROK,DRV18_PWROK,DRV17_PWROK,DRV16_PWROK,
+			                     DRV15_PWROK,DRV14_PWROK,DRV13_PWROK,DRV12_PWROK  }  ),
+			.DIN1           (  { DRV27_PWROK,DRV26_PWROK,DRV25_PWROK,DRV24_PWROK,      
+			                     DRV23_PWROK,DRV22_PWROK,DRV21_PWROK,DRV20_PWROK  }  ),
+			.DIN2           (  { DRV35_PWROK,DRV34_PWROK,DRV33_PWROK,DRV32_PWROK,      
+			                     DRV31_PWROK,DRV30_PWROK,DRV29_PWROK,DRV28_PWROK  }  ),
             .DIN3           (  ),
             .DIN4           (  ),			
 			.DIN5           (  ),
@@ -1050,30 +1056,30 @@ PRSNT_LED_CTRL PRSNT_LED_CTRL_INST(
 //PCIE RESET CONTROL
 PCIE_RST_CTRL  PCIE_RST_CTRL (
             //POWER OK
-            .DRV0_PWROK                  (DRV0_PWROK ),
-            .DRV1_PWROK                  (DRV1_PWROK ),
-            .DRV2_PWROK                  (DRV2_PWROK ),
-            .DRV3_PWROK                  (DRV3_PWROK ),
-            .DRV4_PWROK                  (DRV4_PWROK ),
-            .DRV5_PWROK                  (DRV5_PWROK ),
-            .DRV6_PWROK                  (DRV6_PWROK ),
-            .DRV7_PWROK                  (DRV7_PWROK ),
-            .DRV8_PWROK                  (DRV8_PWROK ),
-            .DRV9_PWROK                  (DRV9_PWROK ),
-            .DRV10_PWROK                  (DRV10_PWROK ),
-            .DRV11_PWROK                  (DRV11_PWROK ),
-            .DRV12_PWROK                  (DRV12_PWROK ),
-            .DRV13_PWROK                  (DRV13_PWROK ),
-            .DRV14_PWROK                  (DRV14_PWROK ),
-            .DRV15_PWROK                  (DRV15_PWROK ),
-            .DRV16_PWROK                  (DRV16_PWROK ),
-            .DRV17_PWROK                  (DRV17_PWROK ),
-            .DRV18_PWROK                  (DRV18_PWROK ),
-            .DRV19_PWROK                  (DRV19_PWROK ),
-            .DRV20_PWROK                  (DRV20_PWROK ),
-            .DRV21_PWROK                  (DRV21_PWROK ),
-            .DRV22_PWROK                  (DRV22_PWROK ),
-            .DRV23_PWROK                  (DRV23_PWROK ),
+            .DRV0_PWROK                  (DRV12_PWROK ),
+            .DRV1_PWROK                  (DRV13_PWROK ),
+            .DRV2_PWROK                  (DRV14_PWROK ),
+            .DRV3_PWROK                  (DRV15_PWROK ),
+            .DRV4_PWROK                  (DRV16_PWROK ),
+            .DRV5_PWROK                  (DRV17_PWROK ),
+            .DRV6_PWROK                  (DRV18_PWROK ),
+            .DRV7_PWROK                  (DRV19_PWROK ),
+            .DRV8_PWROK                  (DRV20_PWROK ),
+            .DRV9_PWROK                  (DRV21_PWROK ),
+            .DRV10_PWROK                  (DRV22_PWROK ),
+            .DRV11_PWROK                  (DRV23_PWROK ),
+            .DRV12_PWROK                  (DRV24_PWROK ),
+            .DRV13_PWROK                  (DRV25_PWROK ),
+            .DRV14_PWROK                  (DRV26_PWROK ),
+            .DRV15_PWROK                  (DRV27_PWROK ),
+            .DRV16_PWROK                  (DRV28_PWROK ),
+            .DRV17_PWROK                  (DRV29_PWROK ),
+            .DRV18_PWROK                  (DRV30_PWROK ),
+            .DRV19_PWROK                  (DRV31_PWROK ),
+            .DRV20_PWROK                  (DRV32_PWROK ),
+            .DRV21_PWROK                  (DRV33_PWROK ),
+            .DRV22_PWROK                  (DRV34_PWROK ),
+            .DRV23_PWROK                  (DRV35_PWROK ),
             //RESET A
             .PE_RST_DRV0_A_L          ( PE_RST_DRV0_A_L ),
             .PE_RST_DRV1_A_L          ( PE_RST_DRV1_A_L ),
