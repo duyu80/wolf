@@ -177,7 +177,7 @@ Selecting top level module BB_TOP
 @W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":452:19:452:19|Undriven input DIN13 on instance GPI3_INST, tying to 0
 @W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":453:19:453:19|Undriven input DIN14 on instance GPI3_INST, tying to 0
 @W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":454:19:454:19|Undriven input DIN15 on instance GPI3_INST, tying to 0
-@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":648:24:648:76|Port-width mismatch for port DIN0. Formal has width 8, Actual 2
+@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":648:25:648:78|Port-width mismatch for port DIN0. Formal has width 8, Actual 2
 @W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":650:22:650:48|Port-width mismatch for port DIN2. Formal has width 8, Actual 32
 @W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":651:22:651:48|Port-width mismatch for port DIN3. Formal has width 8, Actual 32
 @W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":652:22:652:48|Port-width mismatch for port DIN4. Formal has width 8, Actual 32

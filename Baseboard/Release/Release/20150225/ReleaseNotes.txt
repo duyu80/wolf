@@ -1,0 +1,3 @@
+Baseboard_v0106
+1)Fix D-0020567 --- <EVT FW BB CPLD> Register 80h 0b/1b is reversed to reflect the low active signal.
+2)Fix D-0020797 --- <EVT FW BB CPLD> BB CPLD1/2 couldn't be reset by BB_CPLD1/2_RST_L signal.

@@ -6,7 +6,7 @@ Performance Grade:      4
 PACKAGE:          FPBGA484
 Package Status:                     Final          Version 1.36
 
-Sat Feb 14 11:11:59 2015
+Wed Feb 25 22:41:36 2015
 
 Pinout by Port Name:
 +---------------------------+----------+---------------+-------+-----------+-----------+----------------------------------------------------+
@@ -281,7 +281,7 @@ Pinout by Port Name:
 | PE_RST_DRV8_B_L           | Y6/2     | LVCMOS33_OUT  | PB10D |           |           | DRIVE:8mA SLEW:SLOW                                |
 | PE_RST_DRV9_A_L           | AA11/2   | LVCMOS33_OUT  | PB18C |           |           | DRIVE:8mA SLEW:SLOW                                |
 | PE_RST_DRV9_B_L           | T10/2    | LVCMOS33_OUT  | PB13D |           |           | DRIVE:8mA SLEW:SLOW                                |
-| RESET_N                   | V3/3     | LVCMOS33_IN   | PL22A |           |           | PULL:UP CLAMP:ON HYSTERESIS:SMALL                  |
+| RESET_N                   | C3/5     | LVCMOS33_IN   | PL2A  |           |           | PULL:UP CLAMP:ON HYSTERESIS:SMALL                  |
 | SCL_1                     | N22/1    | LVCMOS33_IN   | PR12A |           |           | CLAMP:ON HYSTERESIS:SMALL                          |
 | SCL_2                     | AA9/2    | LVCMOS33_IN   | PB16A |           |           | CLAMP:ON HYSTERESIS:SMALL                          |
 | SDA_1                     | N21/1    | LVCMOS33_BIDI | PR12B |           |           | DRIVE:8mA HYSTERESIS:SMALL OPENDRAIN:ON SLEW:SLOW  |
@@ -378,7 +378,7 @@ Pinout by Pin Number:
 | B22/1    | DRV30_PCIE_CLK_A_OE_L     | LOCATED    | LVCMOS33_OUT  | PR4A         |                |           |           |
 | C1/5     |     unused, PULL:DOWN     |            |               | PL4B         | L_GPLLC_IN     |           |           |
 | C2/5     | BB_CPLD_ALT_L             | LOCATED    | LVCMOS33_IN   | PL2B         |                |           |           |
-| C3/5     |     unused, PULL:DOWN     |            |               | PL2A         |                |           |           |
+| C3/5     | RESET_N                   | LOCATED    | LVCMOS33_IN   | PL2A         |                |           |           |
 | C4/0     | DRV33_ACT_LED             | LOCATED    | LVCMOS33_IN   | PT10B        |                |           |           |
 | C5/0     | PE_RST_DRV21_B_L          | LOCATED    | LVCMOS33_OUT  | PT12D        |                |           |           |
 | C6/0     | DRV32_PRSNT_AMBER_LED     | LOCATED    | LVCMOS33_BIDI | PT13B        |                |           |           |
@@ -595,7 +595,7 @@ Pinout by Pin Number:
 | U22/1    | PE_RST_DRV1_B_L           | LOCATED    | LVCMOS33_OUT  | PR19B        |                |           |           |
 | V1/3     | DRV35_PWR_EN_L            | LOCATED    | LVCMOS33_OUT  | PL19B        |                |           |           |
 | V2/3     | DRV14_IFDET_BLUE_LED      | LOCATED    | LVCMOS33_BIDI | PL21B        |                |           |           |
-| V3/3     | RESET_N                   | LOCATED    | LVCMOS33_IN   | PL22A        | PCLKT3_0       |           |           |
+| V3/3     |     unused, PULL:DOWN     |            |               | PL22A        | PCLKT3_0       |           |           |
 | V4/3     | DRV14_PWR_EN_L            | LOCATED    | LVCMOS33_OUT  | PL24B        |                |           |           |
 | V6/2     | DRV20_PRSNT_AMBER_LED     | LOCATED    | LVCMOS33_BIDI | PB4D         |                |           |           |
 | V7/2     | DRV1_PRSNT_AMBER_LED      | LOCATED    | LVCMOS33_BIDI | PB7B         |                |           |           |
@@ -936,7 +936,7 @@ LOCATE  COMP  "PE_RST_DRV8_A_L"  SITE  "U10";
 LOCATE  COMP  "PE_RST_DRV8_B_L"  SITE  "Y6";
 LOCATE  COMP  "PE_RST_DRV9_A_L"  SITE  "AA11";
 LOCATE  COMP  "PE_RST_DRV9_B_L"  SITE  "T10";
-LOCATE  COMP  "RESET_N"  SITE  "V3";
+LOCATE  COMP  "RESET_N"  SITE  "C3";
 LOCATE  COMP  "SCL_1"  SITE  "N22";
 LOCATE  COMP  "SCL_2"  SITE  "AA9";
 LOCATE  COMP  "SDA_1"  SITE  "N21";
@@ -956,5 +956,5 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2014 Lattice Semiconductor Corporation,  All rights reserved.
-Sat Feb 14 11:11:59 2015
+Wed Feb 25 22:41:36 2015
 

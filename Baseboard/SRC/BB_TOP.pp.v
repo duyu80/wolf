@@ -549,7 +549,7 @@ GPI    	GPI8_INST (
 			.DOUT2			(DIN_8_2),						
 			.RD_WR2		    (RD_WR_2),
 			
-			.DIN0           (  { CANISTER_B_PCIE_CLK_ACT_L,CANISTER_A_PCIE_CLK_ACT_L }  ),
+			.DIN0           (  { ~CANISTER_B_PCIE_CLK_ACT_L,~CANISTER_A_PCIE_CLK_ACT_L }  ),
 			.DIN1           (  { 7'b0,CPLD_SLOT_ID                                   }  ),
 			.DIN2           (  0                          ),
 			.DIN3           (  0                          ),

@@ -40,9 +40,9 @@ System            1.0 MHz       1000.000      system       system_clkgroup
 
 Pre-mapping successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 83MB peak: 150MB)
+At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 83MB peak: 150MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Sat Feb 14 11:11:18 2015
+# Wed Feb 25 22:40:52 2015
 
 ###########################################################]
