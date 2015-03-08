@@ -6,7 +6,7 @@
 #Implementation: Baseboard
 
 $ Start of Compile
-#Wed Feb 25 22:40:48 2015
+#Sun Mar 08 22:54:53 2015
 
 Synopsys Verilog Compiler, version comp201309rcp1, Build 147R, built Apr 16 2014
 @N|Running in 64-bit mode
@@ -38,6 +38,7 @@ File E:\work\wolf\Baseboard\BLD\..\SRC\../SRC/baseboard_define.v changed - recom
 File E:\work\wolf\Baseboard\BLD\..\SRC\../SRC/baseboard_define.v changed - recompiling
 File E:\work\wolf\Baseboard\BLD\..\SRC\../SRC/baseboard_define.v changed - recompiling
 File E:\work\wolf\Baseboard\BLD\..\SRC\../SRC/baseboard_define.v changed - recompiling
+File E:\work\wolf\Baseboard\BLD\..\SRC\LED_CNT.v changed - recompiling
 File E:\work\wolf\Baseboard\BLD\..\SRC\../SRC/baseboard_define.v changed - recompiling
 File E:\work\wolf\Baseboard\BLD\..\SRC\../SRC/baseboard_define.v changed - recompiling
 File E:\work\wolf\Baseboard\BLD\..\SRC\../SRC/baseboard_define.v changed - recompiling
@@ -90,8 +91,8 @@ Selecting top level module BB_TOP
 @N: CG179 :"E:\work\wolf\Baseboard\BLD\..\SRC\GPI.v":87:44:87:48|Removing redundant assignment
 @N: CG364 :"E:\work\wolf\Baseboard\BLD\..\SRC\GPO.v":10:7:10:9|Synthesizing module GPO
 
-	GPO_DFT=8'b11111111
-   Generated name = GPO_255
+	GPO_DFT=8'b00000000
+   Generated name = GPO_0
 
 @N: CG179 :"E:\work\wolf\Baseboard\BLD\..\SRC\GPO.v":94:44:94:48|Removing redundant assignment
 @N: CG179 :"E:\work\wolf\Baseboard\BLD\..\SRC\GPO.v":106:44:106:48|Removing redundant assignment
@@ -111,15 +112,13 @@ Selecting top level module BB_TOP
 @N: CG179 :"E:\work\wolf\Baseboard\BLD\..\SRC\GPO.v":147:107:147:110|Removing redundant assignment
 @N: CG179 :"E:\work\wolf\Baseboard\BLD\..\SRC\GPO.v":148:107:148:110|Removing redundant assignment
 @N: CG179 :"E:\work\wolf\Baseboard\BLD\..\SRC\GPO.v":149:107:149:110|Removing redundant assignment
-@N: CG364 :"E:\work\wolf\Baseboard\BLD\..\SRC\GPO.v":10:7:10:9|Synthesizing module GPO
-
 @N: CG364 :"E:\work\wolf\Baseboard\BLD\..\SRC\LED_CNT.v":10:7:10:13|Synthesizing module LED_CNT
 
-@N: CG179 :"E:\work\wolf\Baseboard\BLD\..\SRC\LED_CNT.v":45:47:45:53|Removing redundant assignment
+@N: CG179 :"E:\work\wolf\Baseboard\BLD\..\SRC\LED_CNT.v":45:62:45:68|Removing redundant assignment
 @N: CG179 :"E:\work\wolf\Baseboard\BLD\..\SRC\LED_CNT.v":46:115:46:121|Removing redundant assignment
 @N: CG179 :"E:\work\wolf\Baseboard\BLD\..\SRC\LED_CNT.v":48:108:48:114|Removing redundant assignment
-@N: CG179 :"E:\work\wolf\Baseboard\BLD\..\SRC\LED_CNT.v":65:52:65:64|Removing redundant assignment
-@N: CG179 :"E:\work\wolf\Baseboard\BLD\..\SRC\LED_CNT.v":67:85:67:98|Removing redundant assignment
+@N: CG179 :"E:\work\wolf\Baseboard\BLD\..\SRC\LED_CNT.v":65:82:65:94|Removing redundant assignment
+@N: CG179 :"E:\work\wolf\Baseboard\BLD\..\SRC\LED_CNT.v":67:116:67:129|Removing redundant assignment
 @N: CG179 :"E:\work\wolf\Baseboard\BLD\..\SRC\LED_CNT.v":83:55:83:61|Removing redundant assignment
 @N: CG364 :"E:\work\wolf\Baseboard\BLD\..\SRC\LED.v":10:7:10:9|Synthesizing module LED
 
@@ -207,8 +206,6 @@ Selecting top level module BB_TOP
 @W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":315:22:315:41|Port-width mismatch for port DIN13. Formal has width 8, Actual 32
 @W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":316:22:316:41|Port-width mismatch for port DIN14. Formal has width 8, Actual 32
 @W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":317:22:317:41|Port-width mismatch for port DIN15. Formal has width 8, Actual 32
-@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":442:28:442:28|Undriven input DIN3 on instance GPI3_INST, tying to 0
-@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":443:28:443:28|Undriven input DIN4 on instance GPI3_INST, tying to 0
 @W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":444:19:444:19|Undriven input DIN5 on instance GPI3_INST, tying to 0
 @W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":445:19:445:19|Undriven input DIN6 on instance GPI3_INST, tying to 0
 @W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":446:19:446:19|Undriven input DIN7 on instance GPI3_INST, tying to 0
@@ -677,10 +674,10 @@ State machine has 5 reachable states with original encodings of:
    00100000
 @END
 
-At c_ver Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 79MB peak: 83MB)
+At c_ver Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 78MB peak: 83MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Wed Feb 25 22:40:50 2015
+# Sun Mar 08 22:54:55 2015
 
 ###########################################################]
 Pre-mapping Report
@@ -705,7 +702,7 @@ Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0
 Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 114MB peak: 115MB)
 
 
-Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 115MB peak: 117MB)
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 114MB peak: 117MB)
 
 @W: MT462 :"e:\work\wolf\baseboard\bld\..\src\i2c.v":122:43:122:48|Net I2C_INS_2.un1_CNT8 appears to be an unidentified clock source. Assuming default frequency. 
 @W: MT462 :"e:\work\wolf\baseboard\bld\..\src\i2c.v":122:43:122:48|Net I2C_INS_1.un1_CNT8 appears to be an unidentified clock source. Assuming default frequency. 
@@ -730,7 +727,7 @@ Pre-mapping successful!
 At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 83MB peak: 150MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Wed Feb 25 22:40:52 2015
+# Sun Mar 08 22:54:58 2015
 
 ###########################################################]
 Map & Optimize Report
@@ -768,13 +765,19 @@ Available hyper_sources - for debug and ip models
 
 Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 146MB peak: 149MB)
 
+@W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI9_INST.DOUT1[7],  because it is equivalent to instance GPI9_INST.DOUT1[6]
+@W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI9_INST.DOUT1[6],  because it is equivalent to instance GPI9_INST.DOUT1[5]
+@W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI9_INST.DOUT1[5],  because it is equivalent to instance GPI9_INST.DOUT1[4]
+@W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI9_INST.DOUT1[4],  because it is equivalent to instance GPI9_INST.DOUT1[3]
+@W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI9_INST.DOUT1[3],  because it is equivalent to instance GPI9_INST.DOUT1[2]
+@W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI9_INST.DOUT1[2],  because it is equivalent to instance GPI9_INST.DOUT1[1]
 @W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing instance GPI9_INST.DOUT2[7],  because it is equivalent to instance GPI9_INST.DOUT2[6]
 @W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing instance GPI9_INST.DOUT2[6],  because it is equivalent to instance GPI9_INST.DOUT2[5]
 @W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing instance GPI9_INST.DOUT2[5],  because it is equivalent to instance GPI9_INST.DOUT2[4]
 @W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing instance GPI9_INST.DOUT2[4],  because it is equivalent to instance GPI9_INST.DOUT2[3]
 @W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing instance GPI9_INST.DOUT2[3],  because it is equivalent to instance GPI9_INST.DOUT2[2]
 @W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing instance GPI9_INST.DOUT2[2],  because it is equivalent to instance GPI9_INST.DOUT2[1]
-@W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing instance GPI0_INST.DOUT2[7],  because it is equivalent to instance GPI0_INST.DOUT2[6]
+@W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI0_INST.DOUT1[7],  because it is equivalent to instance GPI0_INST.DOUT1[6]
 @W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI8_INST.DOUT1[7],  because it is equivalent to instance GPI8_INST.DOUT1[6]
 @W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI8_INST.DOUT1[6],  because it is equivalent to instance GPI8_INST.DOUT1[5]
 @W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI8_INST.DOUT1[5],  because it is equivalent to instance GPI8_INST.DOUT1[4]
@@ -785,13 +788,7 @@ Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00
 @W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing instance GPI8_INST.DOUT2[5],  because it is equivalent to instance GPI8_INST.DOUT2[4]
 @W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing instance GPI8_INST.DOUT2[4],  because it is equivalent to instance GPI8_INST.DOUT2[3]
 @W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing instance GPI8_INST.DOUT2[3],  because it is equivalent to instance GPI8_INST.DOUT2[2]
-@W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI0_INST.DOUT1[7],  because it is equivalent to instance GPI0_INST.DOUT1[6]
-@W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI9_INST.DOUT1[7],  because it is equivalent to instance GPI9_INST.DOUT1[6]
-@W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI9_INST.DOUT1[6],  because it is equivalent to instance GPI9_INST.DOUT1[5]
-@W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI9_INST.DOUT1[5],  because it is equivalent to instance GPI9_INST.DOUT1[4]
-@W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI9_INST.DOUT1[4],  because it is equivalent to instance GPI9_INST.DOUT1[3]
-@W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI9_INST.DOUT1[3],  because it is equivalent to instance GPI9_INST.DOUT1[2]
-@W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI9_INST.DOUT1[2],  because it is equivalent to instance GPI9_INST.DOUT1[1]
+@W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing instance GPI0_INST.DOUT2[7],  because it is equivalent to instance GPI0_INST.DOUT2[6]
 @N: BN362 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing sequential instance GPI0_INST.DOUT1[3] in hierarchy view:work.BB_TOP(verilog) because there are no references to its outputs 
 @N: BN362 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing sequential instance GPI0_INST.DOUT2[3] in hierarchy view:work.BB_TOP(verilog) because there are no references to its outputs 
 @N: BN362 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing sequential instance GPI8_INST.DOUT1[2] in hierarchy view:work.BB_TOP(verilog) because there are no references to its outputs 
@@ -870,28 +867,28 @@ original code -> new code
 @N: BN362 :"e:\work\wolf\baseboard\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CS[12] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C_I2C_INS_2(verilog) because there are no references to its outputs 
 @N: BN362 :"e:\work\wolf\baseboard\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CS[11] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C_I2C_INS_2(verilog) because there are no references to its outputs 
 
-Finished factoring (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 173MB peak: 173MB)
+Finished factoring (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 171MB peak: 171MB)
 
 
-Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 166MB peak: 174MB)
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 164MB peak: 172MB)
 
 
-Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 176MB peak: 206MB)
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:06s; Memory used current: 176MB peak: 205MB)
 
 
-Starting Early Timing Optimization (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:07s; Memory used current: 174MB peak: 206MB)
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:07s; Memory used current: 174MB peak: 205MB)
 
 
-Finished Early Timing Optimization (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:07s; Memory used current: 174MB peak: 206MB)
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:08s; CPU Time elapsed 0h:00m:07s; Memory used current: 174MB peak: 205MB)
 
 
-Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:08s; CPU Time elapsed 0h:00m:08s; Memory used current: 173MB peak: 206MB)
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:08s; CPU Time elapsed 0h:00m:08s; Memory used current: 173MB peak: 205MB)
 
 
-Finished preparing to map (Real Time elapsed 0h:00m:10s; CPU Time elapsed 0h:00m:09s; Memory used current: 175MB peak: 206MB)
+Finished preparing to map (Real Time elapsed 0h:00m:10s; CPU Time elapsed 0h:00m:10s; Memory used current: 174MB peak: 205MB)
 
 
-Finished technology mapping (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 194MB peak: 206MB)
+Finished technology mapping (Real Time elapsed 0h:00m:12s; CPU Time elapsed 0h:00m:12s; Memory used current: 199MB peak: 205MB)
 
 Pass		 CPU time		Worst Slack		Luts / Registers
 ------------------------------------------------------------
@@ -900,11 +897,11 @@ Pass		 CPU time		Worst Slack		Luts / Registers
 ------------------------------------------------------------
 
 
-Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:12s; CPU Time elapsed 0h:00m:12s; Memory used current: 178MB peak: 206MB)
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:13s; CPU Time elapsed 0h:00m:13s; Memory used current: 180MB peak: 205MB)
 
 @N: FX164 |The option to pack flops in the IOB has not been specified 
 
-Finished restoring hierarchy (Real Time elapsed 0h:00m:14s; CPU Time elapsed 0h:00m:14s; Memory used current: 178MB peak: 206MB)
+Finished restoring hierarchy (Real Time elapsed 0h:00m:16s; CPU Time elapsed 0h:00m:16s; Memory used current: 180MB peak: 205MB)
 
 
 
@@ -933,7 +930,7 @@ Writing Analyst data base E:\work\wolf\Baseboard\BLD\Baseboard\Baseboard_Baseboa
 @W: MT462 :"e:\work\wolf\baseboard\bld\..\src\i2c.v":251:13:251:50|Net I2C_INS_2.un1_DOUT_1 appears to be an unidentified clock source. Assuming default frequency. 
 @W: MT462 :"e:\work\wolf\baseboard\bld\..\src\i2c.v":251:13:251:50|Net I2C_INS_1.un1_DOUT_1 appears to be an unidentified clock source. Assuming default frequency. 
 
-Finished Writing Netlist Databases (Real Time elapsed 0h:00m:16s; CPU Time elapsed 0h:00m:16s; Memory used current: 173MB peak: 206MB)
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:18s; CPU Time elapsed 0h:00m:17s; Memory used current: 175MB peak: 205MB)
 
 Writing EDIF Netlist and constraint files
 @W: MT462 :"e:\work\wolf\baseboard\bld\..\src\i2c.v":251:13:251:50|Net I2C_INS_2.un1_DOUT_1 appears to be an unidentified clock source. Assuming default frequency. 
@@ -941,14 +938,14 @@ Writing EDIF Netlist and constraint files
 I-2013.09L-SP1-1 
 @N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
 
-Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:17s; CPU Time elapsed 0h:00m:17s; Memory used current: 178MB peak: 206MB)
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:19s; CPU Time elapsed 0h:00m:19s; Memory used current: 180MB peak: 205MB)
 
 @W: MT420 |Found inferred clock BB_TOP|SYSCLK with period 1000.00ns. Please declare a user-defined clock on object "p:SYSCLK"
 
 
 
 ##### START OF TIMING REPORT #####[
-# Timing Report written on Wed Feb 25 22:41:11 2015
+# Timing Report written on Sun Mar 08 22:55:18 2015
 #
 
 
@@ -972,7 +969,7 @@ Worst slack in design: 496.219
                    Requested     Estimated     Requested     Estimated                 Clock        Clock              
 Starting Clock     Frequency     Frequency     Period        Period        Slack       Type         Group              
 -----------------------------------------------------------------------------------------------------------------------
-BB_TOP|SYSCLK      1.0 MHz       123.0 MHz     1000.000      8.129         496.219     inferred     Inferred_clkgroup_0
+BB_TOP|SYSCLK      1.0 MHz       121.4 MHz     1000.000      8.237         496.219     inferred     Inferred_clkgroup_0
 System             1.0 MHz       397.4 MHz     1000.000      2.517         997.483     system       system_clkgroup    
 =======================================================================================================================
 
@@ -989,7 +986,7 @@ Starting       Ending         |  constraint  slack    |  constraint  slack  |  c
 --------------------------------------------------------------------------------------------------------------------------
 System         BB_TOP|SYSCLK  |  1000.000    997.483  |  No paths    -      |  No paths    -        |  No paths    -      
 BB_TOP|SYSCLK  System         |  No paths    -        |  No paths    -      |  No paths    -        |  1000.000    995.265
-BB_TOP|SYSCLK  BB_TOP|SYSCLK  |  1000.000    991.871  |  No paths    -      |  500.000     496.219  |  500.000     498.364
+BB_TOP|SYSCLK  BB_TOP|SYSCLK  |  1000.000    991.763  |  No paths    -      |  500.000     496.219  |  500.000     498.364
 ==========================================================================================================================
  Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
        'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
@@ -1190,8 +1187,8 @@ Details:
 BB:             74
 CCU2D:          394
 FD1P3AX:        4
-FD1P3BX:        130
-FD1P3DX:        1488
+FD1P3BX:        2
+FD1P3DX:        1616
 FD1S1AY:        16
 FD1S3BX:        2
 FD1S3DX:        272
@@ -1201,17 +1198,17 @@ IFS1P3DX:       76
 INV:            42
 OB:             136
 OFS1P3DX:       2
-ORCALUT4:       3163
-PFUMX:          72
+ORCALUT4:       3199
+PFUMX:          73
 PUR:            1
 VHI:            18
 VLO:            24
 true:           6
 Mapper successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:18s; CPU Time elapsed 0h:00m:18s; Memory used current: 61MB peak: 206MB)
+At Mapper Exit (Real Time elapsed 0h:00m:20s; CPU Time elapsed 0h:00m:19s; Memory used current: 61MB peak: 205MB)
 
-Process took 0h:00m:18s realtime, 0h:00m:18s cputime
-# Wed Feb 25 22:41:11 2015
+Process took 0h:00m:20s realtime, 0h:00m:19s cputime
+# Sun Mar 08 22:55:19 2015
 
 ###########################################################]

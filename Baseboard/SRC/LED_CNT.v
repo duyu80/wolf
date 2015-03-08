@@ -42,7 +42,7 @@ always@(posedge SYSCLK or negedge RESET_N)
 		else
 			begin
 				CNT <= (CNT<`CLK_FRQ)? (CNT+1'b1) : 0;
-				CLK_1HZ <= (CNT == `CLK_FRQ/2)? ~CLK_1HZ : CLK_1HZ;
+				CLK_1HZ <= ((CNT == 0) | (CNT == `CLK_FRQ/2))? ~CLK_1HZ : CLK_1HZ;
 				CLK_2HZ <= ((CNT == `CLK_FRQ/4) | (CNT == `CLK_FRQ/2) | (CNT == `CLK_FRQ*3/4) | (CNT == `CLK_FRQ))? ~CLK_2HZ : CLK_2HZ;
 				CLK_4HZ <= ((CNT == `CLK_FRQ/8) | (CNT == `CLK_FRQ/4) | (CNT == `CLK_FRQ*3/8) | (CNT == `CLK_FRQ/2) | 
 					(CNT == `CLK_FRQ*5/8) | (CNT == `CLK_FRQ*3/4) | (CNT == `CLK_FRQ*7/8) | (CNT == `CLK_FRQ))? ~CLK_4HZ : CLK_4HZ;
@@ -62,9 +62,9 @@ always@(posedge SYSCLK or negedge RESET_N)
 		else
 			begin
 				CLK_4HZ_500MS <= ((CNT_500MS == `CLK_FRQ/8) | (CNT_500MS == `CLK_FRQ/4) | (CNT_500MS == `CLK_FRQ*3/8)
-					| (CNT_500MS == `CLK_FRQ/2))? ~CLK_4HZ_500MS : CLK_4HZ_500MS;
+					| (CNT_500MS == `CLK_FRQ/2) | (CNT_500MS == `CLK_FRQ*5/8))? ~CLK_4HZ_500MS : CLK_4HZ_500MS;
 				CLK_4HZ_3500MS <= ((CNT_3500MS == `CLK_FRQ/8) | (CNT_3500MS == `CLK_FRQ/4) 
-					| (CNT_3500MS == `CLK_FRQ*3/8) | (CNT_3500MS == `CLK_FRQ/2))? ~CLK_4HZ_3500MS : CLK_4HZ_3500MS;
+					| (CNT_3500MS == `CLK_FRQ*3/8) | (CNT_3500MS == `CLK_FRQ/2) | (CNT_3500MS == `CLK_FRQ*5/8))? ~CLK_4HZ_3500MS : CLK_4HZ_3500MS;
 				CNT_500MS <=  (CNT_500MS <`CLK_FRQ)? (CNT_500MS+1'b1) : 0;
 				CNT_3500MS <= (CNT_3500MS < `CLK_FRQ*4)? (CNT_3500MS+1'b1) : 0;
 			end

@@ -7,7 +7,7 @@ Running in Lattice mode
 
 Starting:    D:\lscc\diamond\3.2_x64\synpbase\win64\mbin\synbatch.exe
 Install:     D:\lscc\diamond\3.2_x64\synpbase
-Date:        Wed Feb 25 22:40:48 2015
+Date:        Sun Mar 08 22:54:53 2015
 Version:     I-2013.09L-SP1-1 
 
 Arguments:   -product synplify_pro  -batch Baseboard_Baseboard_synplify.tcl
@@ -64,7 +64,7 @@ Running: Map & Optimize on proj_1|Baseboard
 
 fpga_mapper Completed with warnings
 Return Code: 1
-Run Time:0h:00m:19s
+Run Time:0h:00m:21s
 
 
 Complete: Map on proj_1|Baseboard

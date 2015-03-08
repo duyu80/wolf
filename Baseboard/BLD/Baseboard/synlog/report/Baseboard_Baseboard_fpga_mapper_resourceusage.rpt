@@ -10,8 +10,8 @@ Details:
 BB:             74
 CCU2D:          394
 FD1P3AX:        4
-FD1P3BX:        130
-FD1P3DX:        1488
+FD1P3BX:        2
+FD1P3DX:        1616
 FD1S1AY:        16
 FD1S3BX:        2
 FD1S3DX:        272
@@ -21,8 +21,8 @@ IFS1P3DX:       76
 INV:            42
 OB:             136
 OFS1P3DX:       2
-ORCALUT4:       3163
-PFUMX:          72
+ORCALUT4:       3199
+PFUMX:          73
 PUR:            1
 VHI:            18
 VLO:            24

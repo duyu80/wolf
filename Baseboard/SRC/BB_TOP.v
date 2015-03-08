@@ -373,7 +373,7 @@ assign    DRV35_PWR_EN_L = !(DRV_PWR_EN4[3] && PRSNT[35]);
 // ; }
 
 GPO #     (
-            .GPO_DFT        (8'hff)
+            .GPO_DFT        (8'h00)
           )   
 GPO2_INST (
 			.RESET_N		(RESET_N),
@@ -424,23 +424,23 @@ GPI    	GPI3_INST (
 			.DOUT2			(DIN_3_2),						
 			.RD_WR2		    (RD_WR_2),
 			
-			// .DIN0           (  { DRV7_PWROK,DRV6_PWROK,DRV5_PWROK,DRV4_PWROK,
-			                     // DRV3_PWROK,DRV2_PWROK,DRV1_PWROK,DRV0_PWROK           }  ),
-			// .DIN1           (  { DRV15_PWROK,DRV14_PWROK,DRV13_PWROK,DRV12_PWROK,      
-			                     // DRV11_PWROK,DRV10_PWROK,DRV9_PWROK,DRV8_PWROK         }  ),
-			// .DIN2           (  { DRV23_PWROK,DRV22_PWROK,DRV21_PWROK,DRV20_PWROK,      
-			                     // DRV19_PWROK,DRV18_PWROK,DRV17_PWROK,DRV16_PWROK       }  ),
-			//.DIN3           (  { DRV31_PWROK,DRV30_PWROK,DRV29_PWROK,DRV28_PWROK,      
-			//                     DRV27_PWROK,DRV26_PWROK,DRV25_PWROK,DRV24_PWROK       }  ),
-			//.DIN4           (  { 4'h0,DRV35_PWROK,DRV34_PWROK,DRV33_PWROK,DRV32_PWROK  }  ),
-			.DIN0           (  { DRV19_PWROK,DRV18_PWROK,DRV17_PWROK,DRV16_PWROK,
-			                     DRV15_PWROK,DRV14_PWROK,DRV13_PWROK,DRV12_PWROK  }  ),
-			.DIN1           (  { DRV27_PWROK,DRV26_PWROK,DRV25_PWROK,DRV24_PWROK,      
-			                     DRV23_PWROK,DRV22_PWROK,DRV21_PWROK,DRV20_PWROK  }  ),
-			.DIN2           (  { DRV35_PWROK,DRV34_PWROK,DRV33_PWROK,DRV32_PWROK,      
-			                     DRV31_PWROK,DRV30_PWROK,DRV29_PWROK,DRV28_PWROK  }  ),
-            .DIN3           (  ),
-            .DIN4           (  ),			
+			.DIN0           (  { DRV7_PWR_EN_L,DRV6_PWR_EN_L,DRV5_PWR_EN_L,DRV4_PWR_EN_L,
+			                     DRV3_PWR_EN_L,DRV2_PWR_EN_L,DRV1_PWR_EN_L,DRV0_PWR_EN_L           }  ),
+			.DIN1           (  { DRV15_PWROK,DRV14_PWROK,DRV13_PWROK,DRV12_PWROK,      
+			                     DRV11_PWR_EN_L,DRV10_PWR_EN_L,DRV9_PWR_EN_L,DRV8_PWR_EN_L         }  ),
+			.DIN2           (  { DRV23_PWROK,DRV22_PWROK,DRV21_PWROK,DRV20_PWROK,      
+			                     DRV19_PWROK,DRV18_PWROK,DRV17_PWROK,DRV16_PWROK       }  ),
+			.DIN3           (  { DRV31_PWROK,DRV30_PWROK,DRV29_PWROK,DRV28_PWROK,      
+			                     DRV27_PWROK,DRV26_PWROK,DRV25_PWROK,DRV24_PWROK       }  ),
+			.DIN4           (  { 4'h0,DRV35_PWROK,DRV34_PWROK,DRV33_PWROK,DRV32_PWROK  }  ),
+			//.DIN0           (  { DRV19_PWROK,DRV18_PWROK,DRV17_PWROK,DRV16_PWROK,
+			//                     DRV15_PWROK,DRV14_PWROK,DRV13_PWROK,DRV12_PWROK  }  ),
+			//.DIN1           (  { DRV27_PWROK,DRV26_PWROK,DRV25_PWROK,DRV24_PWROK,      
+			//                     DRV23_PWROK,DRV22_PWROK,DRV21_PWROK,DRV20_PWROK  }  ),
+			//.DIN2           (  { DRV35_PWROK,DRV34_PWROK,DRV33_PWROK,DRV32_PWROK,      
+			//                     DRV31_PWROK,DRV30_PWROK,DRV29_PWROK,DRV28_PWROK  }  ),
+            //.DIN3           (  ),
+            //.DIN4           (  ),			
 			.DIN5           (  ),
 			.DIN6           (  ),
 			.DIN7           (  ),
@@ -1173,11 +1173,11 @@ BB_SGPIO  BB_SGPIO_INST (
             .DRV33_ACT_LED                  ( DRV33_ACT_LED ),
             .DRV34_ACT_LED                  ( DRV34_ACT_LED ),
             .DRV35_ACT_LED                  ( DRV35_ACT_LED ),
-            .SGPIO_CK                         ( SGPIO_CK        ),
-            .SGPIO_LD                         ( SGPIO_LD        ),
-            .SGPIO_DATA                       ( SGPIO_DATA      ),
-            .SYSCLK					          ( SYSCLK          ),
-            .RESET_N				          ( RESET_N         )
+            .SGPIO_CK                         ( SGPIO_CK                      ),
+            .SGPIO_LD                         ( SGPIO_LD                      ),
+            .SGPIO_DATA                       ( SGPIO_DATA                    ),
+            .SYSCLK					          ( SYSCLK                        ),
+            .RESET_N				          ( RESET_N & STATUS_BOARD_PRSENT )
             );
 
 //Heart Beat

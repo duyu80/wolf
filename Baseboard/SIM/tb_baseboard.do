@@ -9,6 +9,7 @@ vlog  -work work i2c_master_byte_ctrl.v
 vlog  -work work i2c_master_defines.v
 vlog  -work work i2c_master_registers.v
 vlog  -work work DELAY.v
+vlog  -work work ../SRC/baseboard_define.v
 vlog  -work work ../SRC/BB_TOP.v
 vlog  -work work ../SRC/I2C.v
 vlog  -work work ../SRC/GPI.v
@@ -20,11 +21,11 @@ vlog  -work work ../SRC/PRSNT_LED_CTRL.v
 vlog  -work work ../SRC/BB_SGPIO.v
 #Status CPLD
 vlog  -work work ../../status/SRC/TOP.v
-vlog  -work work ../../status/SRC/I2C.v
+#vlog  -work work ../../status/SRC/I2C.v
 vlog  -work work ../../status/SRC/HEADER.v
 vlog  -work work ../../status/SRC/GPIO.v
-vlog  -work work ../../status/SRC/LED.v
-vlog  -work work ../../status/SRC/LED_CNT.v
+#vlog  -work work ../../status/SRC/LED.v
+#vlog  -work work ../../status/SRC/LED_CNT.v
 vlog  -work work ../../status/SRC/SGPIO.v
 
 

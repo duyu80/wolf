@@ -1,7 +1,7 @@
 @P:  Worst Slack : 496.219
-@P:  BB_TOP|SYSCLK - Estimated Frequency : 123.0 MHz
+@P:  BB_TOP|SYSCLK - Estimated Frequency : 121.4 MHz
 @P:  BB_TOP|SYSCLK - Requested Frequency : 1.0 MHz
-@P:  BB_TOP|SYSCLK - Estimated Period : 8.129
+@P:  BB_TOP|SYSCLK - Estimated Period : 8.237
 @P:  BB_TOP|SYSCLK - Requested Period : 1000.000
 @P:  BB_TOP|SYSCLK - Slack : 496.219
 @P:  System - Estimated Frequency : 397.4 MHz
@@ -10,9 +10,9 @@
 @P:  System - Requested Period : 1000.000
 @P:  System - Slack : 997.483
 @P:  Worst Slack(min analysis) : 0.401
-@P:  BB_TOP|SYSCLK - Estimated Frequency(min analysis) : 123.0 MHz
+@P:  BB_TOP|SYSCLK - Estimated Frequency(min analysis) : 121.4 MHz
 @P:  BB_TOP|SYSCLK - Requested Frequency(min analysis) : 1.0 MHz
-@P:  BB_TOP|SYSCLK - Estimated Period(min analysis) : 8.129
+@P:  BB_TOP|SYSCLK - Estimated Period(min analysis) : 8.237
 @P:  BB_TOP|SYSCLK - Requested Period(min analysis) : 1000.000
 @P:  BB_TOP|SYSCLK - Slack(min analysis) : 496.219
 @P:  System - Estimated Frequency(min analysis) : 1.0 MHz
@@ -20,7 +20,7 @@
 @P:  System - Estimated Period(min analysis) : 998.826
 @P:  System - Requested Period(min analysis) : 1000.000
 @P:  System - Slack(min analysis) : 1.174
-@P:  Total Area : 3205.0
+@P:  Total Area : 3241.0
 @P:  Total Area : 0.0
 @P:  Total Area : 0.0
 @P:  Total Area : 0.0
@@ -44,4 +44,4 @@
 @P:  Total Area : 0.0
 @P:  Total Area : 0.0
 @P:  Total Area : 0.0
-@P:  CPU Time : 0h:00m:18s
+@P:  CPU Time : 0h:00m:19s

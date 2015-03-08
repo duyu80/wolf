@@ -1,0 +1,6 @@
+Baseboard_v0107
+Fix below issue
+1) D-0020586	0-None	Assigned	<EVT FW BB CPLD> Register A0h hasn't control SGPIO outputs enbale or disable.
+2) D-0020539	0-None	Assigned	<EVT FW BB CPLD> DRIVE_xx_PWROK register couldn't reflect Drv[x]_PWR_EN_L signal state.
+3) D-0020541	0-None	Assigned	<EVT FW BB CPLD> LED blink doesn't following the corresponding toggle rate.
+4) D-0020538	0-None	Assigned	<EVT FW BB CPLD> Defalut value of some regsiters are not compliant with desgin spec

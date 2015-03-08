@@ -105,8 +105,8 @@ BB_TOP		BB_TOP_INST (
 ; for ($i=0; $i<36; $i++) {
                 .DRV${i}_ACT_LED                ( DRV_ACT[${i}] ),
 ; }
-; for ($i=0; $i<24; $i++) {
-                .DRV${i}_PWROK                  ( DRV_POWER_OK[${i}] ),
+; for ($i=12,$j=0; $i<36,$j<24; $i++,$j++) {
+                .DRV${i}_PWROK                  ( DRV_POWER_OK[${j}] ),
 ; }	
 				
 				// SGPIO
@@ -148,7 +148,7 @@ initial
 		repeat (1000) @(posedge clk);
 		
 		//SGPIO TEST
-		SGPIO_TEST();
+		//SGPIO_TEST();
         
 		//CPLD INFO TEST
         HEADER_TEST();

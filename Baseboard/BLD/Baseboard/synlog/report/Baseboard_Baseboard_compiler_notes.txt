@@ -35,13 +35,12 @@
 @N: CG179 :"E:\work\wolf\Baseboard\BLD\..\SRC\GPO.v":147:107:147:110|Removing redundant assignment
 @N: CG179 :"E:\work\wolf\Baseboard\BLD\..\SRC\GPO.v":148:107:148:110|Removing redundant assignment
 @N: CG179 :"E:\work\wolf\Baseboard\BLD\..\SRC\GPO.v":149:107:149:110|Removing redundant assignment
-@N: CG364 :"E:\work\wolf\Baseboard\BLD\..\SRC\GPO.v":10:7:10:9|Synthesizing module GPO
 @N: CG364 :"E:\work\wolf\Baseboard\BLD\..\SRC\LED_CNT.v":10:7:10:13|Synthesizing module LED_CNT
-@N: CG179 :"E:\work\wolf\Baseboard\BLD\..\SRC\LED_CNT.v":45:47:45:53|Removing redundant assignment
+@N: CG179 :"E:\work\wolf\Baseboard\BLD\..\SRC\LED_CNT.v":45:62:45:68|Removing redundant assignment
 @N: CG179 :"E:\work\wolf\Baseboard\BLD\..\SRC\LED_CNT.v":46:115:46:121|Removing redundant assignment
 @N: CG179 :"E:\work\wolf\Baseboard\BLD\..\SRC\LED_CNT.v":48:108:48:114|Removing redundant assignment
-@N: CG179 :"E:\work\wolf\Baseboard\BLD\..\SRC\LED_CNT.v":65:52:65:64|Removing redundant assignment
-@N: CG179 :"E:\work\wolf\Baseboard\BLD\..\SRC\LED_CNT.v":67:85:67:98|Removing redundant assignment
+@N: CG179 :"E:\work\wolf\Baseboard\BLD\..\SRC\LED_CNT.v":65:82:65:94|Removing redundant assignment
+@N: CG179 :"E:\work\wolf\Baseboard\BLD\..\SRC\LED_CNT.v":67:116:67:129|Removing redundant assignment
 @N: CG179 :"E:\work\wolf\Baseboard\BLD\..\SRC\LED_CNT.v":83:55:83:61|Removing redundant assignment
 @N: CG364 :"E:\work\wolf\Baseboard\BLD\..\SRC\LED.v":10:7:10:9|Synthesizing module LED
 @N: CG364 :"E:\work\wolf\Baseboard\BLD\..\SRC\PRSNT_LED_CTRL.v":10:7:10:20|Synthesizing module PRSNT_LED_CTRL

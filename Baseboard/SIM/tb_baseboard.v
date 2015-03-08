@@ -138,30 +138,30 @@ BB_TOP		BB_TOP_INST (
                 .DRV33_ACT_LED                ( DRV_ACT[33] ),
                 .DRV34_ACT_LED                ( DRV_ACT[34] ),
                 .DRV35_ACT_LED                ( DRV_ACT[35] ),
-                .DRV0_PWROK                  ( DRV_POWER_OK[0] ),
-                .DRV1_PWROK                  ( DRV_POWER_OK[1] ),
-                .DRV2_PWROK                  ( DRV_POWER_OK[2] ),
-                .DRV3_PWROK                  ( DRV_POWER_OK[3] ),
-                .DRV4_PWROK                  ( DRV_POWER_OK[4] ),
-                .DRV5_PWROK                  ( DRV_POWER_OK[5] ),
-                .DRV6_PWROK                  ( DRV_POWER_OK[6] ),
-                .DRV7_PWROK                  ( DRV_POWER_OK[7] ),
-                .DRV8_PWROK                  ( DRV_POWER_OK[8] ),
-                .DRV9_PWROK                  ( DRV_POWER_OK[9] ),
-                .DRV10_PWROK                  ( DRV_POWER_OK[10] ),
-                .DRV11_PWROK                  ( DRV_POWER_OK[11] ),
-                .DRV12_PWROK                  ( DRV_POWER_OK[12] ),
-                .DRV13_PWROK                  ( DRV_POWER_OK[13] ),
-                .DRV14_PWROK                  ( DRV_POWER_OK[14] ),
-                .DRV15_PWROK                  ( DRV_POWER_OK[15] ),
-                .DRV16_PWROK                  ( DRV_POWER_OK[16] ),
-                .DRV17_PWROK                  ( DRV_POWER_OK[17] ),
-                .DRV18_PWROK                  ( DRV_POWER_OK[18] ),
-                .DRV19_PWROK                  ( DRV_POWER_OK[19] ),
-                .DRV20_PWROK                  ( DRV_POWER_OK[20] ),
-                .DRV21_PWROK                  ( DRV_POWER_OK[21] ),
-                .DRV22_PWROK                  ( DRV_POWER_OK[22] ),
-                .DRV23_PWROK                  ( DRV_POWER_OK[23] ),
+                .DRV12_PWROK                  ( DRV_POWER_OK[0] ),
+                .DRV13_PWROK                  ( DRV_POWER_OK[1] ),
+                .DRV14_PWROK                  ( DRV_POWER_OK[2] ),
+                .DRV15_PWROK                  ( DRV_POWER_OK[3] ),
+                .DRV16_PWROK                  ( DRV_POWER_OK[4] ),
+                .DRV17_PWROK                  ( DRV_POWER_OK[5] ),
+                .DRV18_PWROK                  ( DRV_POWER_OK[6] ),
+                .DRV19_PWROK                  ( DRV_POWER_OK[7] ),
+                .DRV20_PWROK                  ( DRV_POWER_OK[8] ),
+                .DRV21_PWROK                  ( DRV_POWER_OK[9] ),
+                .DRV22_PWROK                  ( DRV_POWER_OK[10] ),
+                .DRV23_PWROK                  ( DRV_POWER_OK[11] ),
+                .DRV24_PWROK                  ( DRV_POWER_OK[12] ),
+                .DRV25_PWROK                  ( DRV_POWER_OK[13] ),
+                .DRV26_PWROK                  ( DRV_POWER_OK[14] ),
+                .DRV27_PWROK                  ( DRV_POWER_OK[15] ),
+                .DRV28_PWROK                  ( DRV_POWER_OK[16] ),
+                .DRV29_PWROK                  ( DRV_POWER_OK[17] ),
+                .DRV30_PWROK                  ( DRV_POWER_OK[18] ),
+                .DRV31_PWROK                  ( DRV_POWER_OK[19] ),
+                .DRV32_PWROK                  ( DRV_POWER_OK[20] ),
+                .DRV33_PWROK                  ( DRV_POWER_OK[21] ),
+                .DRV34_PWROK                  ( DRV_POWER_OK[22] ),
+                .DRV35_PWROK                  ( DRV_POWER_OK[23] ),
 				
 				// SGPIO
 				.SGPIO_CK                       ( SGPIO_CK      ),
@@ -202,7 +202,7 @@ initial
 		repeat (1000) @(posedge clk);
 		
 		//SGPIO TEST
-		SGPIO_TEST();
+		//SGPIO_TEST();
         
 		//CPLD INFO TEST
         HEADER_TEST();

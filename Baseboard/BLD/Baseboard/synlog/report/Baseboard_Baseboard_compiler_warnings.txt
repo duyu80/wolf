@@ -28,8 +28,6 @@
 @W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":315:22:315:41|Port-width mismatch for port DIN13. Formal has width 8, Actual 32
 @W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":316:22:316:41|Port-width mismatch for port DIN14. Formal has width 8, Actual 32
 @W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":317:22:317:41|Port-width mismatch for port DIN15. Formal has width 8, Actual 32
-@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":442:28:442:28|Undriven input DIN3 on instance GPI3_INST, tying to 0
-@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":443:28:443:28|Undriven input DIN4 on instance GPI3_INST, tying to 0
 @W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":444:19:444:19|Undriven input DIN5 on instance GPI3_INST, tying to 0
 @W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":445:19:445:19|Undriven input DIN6 on instance GPI3_INST, tying to 0
 @W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":446:19:446:19|Undriven input DIN7 on instance GPI3_INST, tying to 0
