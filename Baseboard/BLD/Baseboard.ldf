@@ -33,6 +33,9 @@
         <Source name="../SRC/PRSNT_LED_CTRL.v" type="Verilog" type_short="Verilog">
             <Options/>
         </Source>
+        <Source name="../SRC/GPO_PROTECT.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
         <Source name="../SRC/Baseboard.lpf" type="Logic Preference" type_short="LPF">
             <Options/>
         </Source>
