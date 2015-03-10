@@ -14,6 +14,7 @@ vlog  -work work ../SRC/BB_TOP.v
 vlog  -work work ../SRC/I2C.v
 vlog  -work work ../SRC/GPI.v
 vlog  -work work ../SRC/GPO.v
+vlog  -work work ../SRC/GPO_PROTECT.v
 vlog  -work work ../SRC/LED.v
 vlog  -work work ../SRC/LED_CNT.v
 vlog  -work work ../SRC/PCIE_RST_CTRL.v

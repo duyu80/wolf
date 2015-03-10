@@ -1,7 +1,7 @@
 
 
 ##### START OF TIMING REPORT #####[
-# Timing Report written on Sun Mar 08 22:55:19 2015
+# Timing Report written on Tue Mar 10 23:35:57 2015
 #
 
 
@@ -25,7 +25,7 @@ Worst slack in design: 0.401
                    Requested     Estimated     Requested     Estimated                 Clock        Clock              
 Starting Clock     Frequency     Frequency     Period        Period        Slack       Type         Group              
 -----------------------------------------------------------------------------------------------------------------------
-BB_TOP|SYSCLK      1.0 MHz       121.4 MHz     1000.000      8.237         496.219     inferred     Inferred_clkgroup_0
+BB_TOP|SYSCLK      1.0 MHz       121.0 MHz     1000.000      8.265         496.219     inferred     Inferred_clkgroup_0
 System             1.0 MHz       1.0 MHz       1000.000      998.826       1.174       system       system_clkgroup    
 =======================================================================================================================
 
@@ -67,14 +67,14 @@ Starting Points with Worst Slack
 Instance                       Reference         Type        Pin     Net                      Time        Slack
                                Clock                                                                           
 ---------------------------------------------------------------------------------------------------------------
-I2C_INS_1.SCL_PCLKD2           BB_TOP|SYSCLK     FD1S3DX     Q       SCL_PCLKD2               0.731       0.401
 I2C_INS_2.SCL_PCLKD2           BB_TOP|SYSCLK     FD1S3DX     Q       SCL_PCLKD2               0.731       0.401
+I2C_INS_1.SCL_PCLKD2           BB_TOP|SYSCLK     FD1S3DX     Q       SCL_PCLKD2               0.731       0.401
 I2C_INS_2.SCL_NCLK             BB_TOP|SYSCLK     FD1P3AX     Q       SCL_NCLK                 0.775       0.445
 I2C_INS_1.SCL_NCLK             BB_TOP|SYSCLK     FD1P3AX     Q       SCL_NCLK                 0.775       0.445
 I2C_INS_2.NEXT_STATE[0]        BB_TOP|SYSCLK     FD1S3DX     Q       NEXT_STATE_Q_0[0]        0.680       0.606
 I2C_INS_1.NEXT_STATE[0]        BB_TOP|SYSCLK     FD1S3DX     Q       NEXT_STATE_Q[0]          0.680       0.606
-I2C_INS_1.NEXT_STATE_D1[0]     BB_TOP|SYSCLK     FD1S3DX     Q       NEXT_STATE_D1_Q[0]       0.680       0.606
 I2C_INS_2.NEXT_STATE_D1[0]     BB_TOP|SYSCLK     FD1S3DX     Q       NEXT_STATE_D1_Q_0[0]     0.680       0.606
+I2C_INS_1.NEXT_STATE_D1[0]     BB_TOP|SYSCLK     FD1S3DX     Q       NEXT_STATE_D1_Q[0]       0.680       0.606
 I2C_INS_2.RD_END1              BB_TOP|SYSCLK     FD1S3DX     Q       RD_END1                  0.680       0.606
 I2C_INS_1.RD_END1              BB_TOP|SYSCLK     FD1S3DX     Q       RD_END1                  0.680       0.606
 ===============================================================================================================
@@ -87,16 +87,16 @@ Ending Points with Worst Slack
 Instance                       Reference         Type        Pin     Net                      Time         Slack
                                Clock                                                                            
 ----------------------------------------------------------------------------------------------------------------
-I2C_INS_1.I2C_NACK             BB_TOP|SYSCLK     FD1P3DX     SP      SCL_PCLKD2               0.330        0.401
 I2C_INS_2.I2C_NACK             BB_TOP|SYSCLK     FD1P3DX     SP      SCL_PCLKD2               0.330        0.401
-I2C_INS_2.SDA_OUT              BB_TOP|SYSCLK     FD1P3DX     SP      SCL_NCLK                 0.330        0.445
+I2C_INS_1.I2C_NACK             BB_TOP|SYSCLK     FD1P3DX     SP      SCL_PCLKD2               0.330        0.401
 I2C_INS_1.SDA_OUT              BB_TOP|SYSCLK     FD1P3DX     SP      SCL_NCLK                 0.330        0.445
-I2C_INS_2.NEXT_STATE_D1[0]     BB_TOP|SYSCLK     FD1S3DX     D       NEXT_STATE_Q_0[0]        0.074        0.606
+I2C_INS_2.SDA_OUT              BB_TOP|SYSCLK     FD1P3DX     SP      SCL_NCLK                 0.330        0.445
 I2C_INS_1.NEXT_STATE_D1[0]     BB_TOP|SYSCLK     FD1S3DX     D       NEXT_STATE_Q[0]          0.074        0.606
-I2C_INS_2.NEXT_STATE_D2[0]     BB_TOP|SYSCLK     FD1S3DX     D       NEXT_STATE_D1_Q_0[0]     0.074        0.606
+I2C_INS_2.NEXT_STATE_D1[0]     BB_TOP|SYSCLK     FD1S3DX     D       NEXT_STATE_Q_0[0]        0.074        0.606
 I2C_INS_1.NEXT_STATE_D2[0]     BB_TOP|SYSCLK     FD1S3DX     D       NEXT_STATE_D1_Q[0]       0.074        0.606
-I2C_INS_2.RD_END2              BB_TOP|SYSCLK     FD1S3DX     D       RD_END1                  0.074        0.606
+I2C_INS_2.NEXT_STATE_D2[0]     BB_TOP|SYSCLK     FD1S3DX     D       NEXT_STATE_D1_Q_0[0]     0.074        0.606
 I2C_INS_1.RD_END2              BB_TOP|SYSCLK     FD1S3DX     D       RD_END1                  0.074        0.606
+I2C_INS_2.RD_END2              BB_TOP|SYSCLK     FD1S3DX     D       RD_END1                  0.074        0.606
 ================================================================================================================
 
 
@@ -114,17 +114,17 @@ Path information for path number 1:
     = Slack (critical) :                     0.401
 
     Number of logic level(s):                0
-    Starting point:                          I2C_INS_1.SCL_PCLKD2 / Q
-    Ending point:                            I2C_INS_1.I2C_NACK / SP
+    Starting point:                          I2C_INS_2.SCL_PCLKD2 / Q
+    Ending point:                            I2C_INS_2.I2C_NACK / SP
     The start point is clocked by            BB_TOP|SYSCLK [rising] on pin CK
     The end   point is clocked by            BB_TOP|SYSCLK [rising] on pin CK
 
 Instance / Net                       Pin      Pin               Arrival     No. of    
 Name                     Type        Name     Dir     Delay     Time        Fan Out(s)
 --------------------------------------------------------------------------------------
-I2C_INS_1.SCL_PCLKD2     FD1S3DX     Q        Out     0.731     0.731       -         
+I2C_INS_2.SCL_PCLKD2     FD1S3DX     Q        Out     0.731     0.731       -         
 SCL_PCLKD2               Net         -        -       -         -           2         
-I2C_INS_1.I2C_NACK       FD1P3DX     SP       In      0.000     0.731       -         
+I2C_INS_2.I2C_NACK       FD1P3DX     SP       In      0.000     0.731       -         
 ======================================================================================
 
 

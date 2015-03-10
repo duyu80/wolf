@@ -6,6 +6,7 @@
 @W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI9_INST.DOUT1[4],  because it is equivalent to instance GPI9_INST.DOUT1[3]
 @W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI9_INST.DOUT1[3],  because it is equivalent to instance GPI9_INST.DOUT1[2]
 @W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI9_INST.DOUT1[2],  because it is equivalent to instance GPI9_INST.DOUT1[1]
+@W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI0_INST.DOUT1[4],  because it is equivalent to instance GPI0_INST.DOUT1[2]
 @W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing instance GPI9_INST.DOUT2[7],  because it is equivalent to instance GPI9_INST.DOUT2[6]
 @W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing instance GPI9_INST.DOUT2[6],  because it is equivalent to instance GPI9_INST.DOUT2[5]
 @W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing instance GPI9_INST.DOUT2[5],  because it is equivalent to instance GPI9_INST.DOUT2[4]
@@ -23,9 +24,10 @@
 @W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing instance GPI8_INST.DOUT2[5],  because it is equivalent to instance GPI8_INST.DOUT2[4]
 @W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing instance GPI8_INST.DOUT2[4],  because it is equivalent to instance GPI8_INST.DOUT2[3]
 @W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing instance GPI8_INST.DOUT2[3],  because it is equivalent to instance GPI8_INST.DOUT2[2]
+@W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing instance GPI0_INST.DOUT2[4],  because it is equivalent to instance GPI0_INST.DOUT2[2]
 @W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing instance GPI0_INST.DOUT2[7],  because it is equivalent to instance GPI0_INST.DOUT2[6]
-@W: MT462 :"e:\work\wolf\baseboard\bld\..\src\i2c.v":251:13:251:50|Net I2C_INS_2.un1_DOUT_1 appears to be an unidentified clock source. Assuming default frequency. 
-@W: MT462 :"e:\work\wolf\baseboard\bld\..\src\i2c.v":251:13:251:50|Net I2C_INS_1.un1_DOUT_1 appears to be an unidentified clock source. Assuming default frequency. 
-@W: MT462 :"e:\work\wolf\baseboard\bld\..\src\i2c.v":251:13:251:50|Net I2C_INS_2.un1_DOUT_1 appears to be an unidentified clock source. Assuming default frequency. 
-@W: MT462 :"e:\work\wolf\baseboard\bld\..\src\i2c.v":251:13:251:50|Net I2C_INS_1.un1_DOUT_1 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"e:\work\wolf\baseboard\bld\..\src\i2c.v":251:13:251:50|Net I2C_INS_2.N_43_i_0 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"e:\work\wolf\baseboard\bld\..\src\i2c.v":251:13:251:50|Net I2C_INS_1.N_2512_i_0 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"e:\work\wolf\baseboard\bld\..\src\i2c.v":251:13:251:50|Net I2C_INS_2.N_43_i_0 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"e:\work\wolf\baseboard\bld\..\src\i2c.v":251:13:251:50|Net I2C_INS_1.N_2512_i_0 appears to be an unidentified clock source. Assuming default frequency. 
 @W: MT420 |Found inferred clock BB_TOP|SYSCLK with period 1000.00ns. Please declare a user-defined clock on object "p:SYSCLK"

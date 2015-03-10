@@ -54,6 +54,7 @@ add_file -verilog {E:/work/wolf/Baseboard/BLD/../SRC/LED.v}
 add_file -verilog {E:/work/wolf/Baseboard/BLD/../SRC/LED_CNT.v}
 add_file -verilog {E:/work/wolf/Baseboard/BLD/../SRC/PCIE_RST_CTRL.v}
 add_file -verilog {E:/work/wolf/Baseboard/BLD/../SRC/PRSNT_LED_CTRL.v}
+add_file -verilog {E:/work/wolf/Baseboard/SRC/GPO_PROTECT.v}
 
 #-- top module name
 set_option -top_module BB_TOP

@@ -212,6 +212,10 @@ initial
 		LED_TEST();
 		repeat (1000) @(posedge clk);
 		
+		//PROTECT TEST
+		PROTECT_TEST();
+		repeat (1000) @(posedge clk);
+		
 		repeat (10000) @(posedge clk);
 		
 		
@@ -309,15 +313,48 @@ task LED_TEST;
 		
 		if((tb_baseboard.BB_TOP_INST.FLT_AMB_LED_INST2.LED0 == `OFF) && (tb_baseboard.BB_TOP_INST.FLT_AMB_LED_INST2.LED1 == `ON))
 			begin
-				$display("LED TEST Pass, the HDD FLT LED data is 0\n", i2c_rddata1);
+				$display("LED TEST Pass, the HDD FLT LED data is %x\n", i2c_rddata1);
 			end
 		else
 			begin
-				$display("LED TEST Fail, the HDD FLT LED data is 0\n", i2c_rddata1);
+				$display("LED TEST Fail, the HDD FLT LED data is %x\n", i2c_rddata1);
 				$stop;
 			end
 		
 		$display("*************************** I2C LED test pass ***************************\n");
+	end
+endtask
+
+//***************************	PROTECT TEST TASK	**************************
+task PROTECT_TEST;
+	begin
+		$display("*************************** protect test begin ***************************\n");
+		wb_write(`I2C_ADDR1,8'h20,8'h55,8'h00,8'h2);
+		wb_read(`I2C_ADDR1,8'h1);		
+		if(tb_baseboard.BB_TOP_INST.DRV_PWR_EN0 == 8'h00)
+			begin
+				$display("PROTECT TEST Pass, the DRV_PWR_EN0 data is %x\n", i2c_rddata1);
+			end
+		else
+			begin
+				$display("PROTECT TEST Fail, the DRV_PWR_EN0 should be 8'h00 but the actual data is %x\n", i2c_rddata1);
+				$stop;
+			end
+		
+		wb_write(`I2C_ADDR1,8'hf5,8'h57,8'h00,8'h2);
+		wb_write(`I2C_ADDR1,8'hfa,8'h6c,8'h00,8'h2);
+		wb_write(`I2C_ADDR1,8'h20,8'h55,8'h00,8'h2);
+		wb_read(`I2C_ADDR1,8'h1);
+		if(tb_baseboard.BB_TOP_INST.DRV_PWR_EN0 == 8'h55)
+			begin
+				$display("PROTECT TEST Pass, the DRV_PWR_EN0 data is %x\n", i2c_rddata1);
+			end
+		else
+			begin
+				$display("PROTECT TEST Fail, the DRV_PWR_EN0 should be 8'h55 but the actual data is %x\n", i2c_rddata1);
+				$stop;
+			end		
+		$display("*************************** protect test pass ***************************\n");
 	end
 endtask
 
@@ -331,7 +368,7 @@ task SGPIO_TEST;
 		    $display("SGPIO TEST Pass!\n");
 		else
 		    begin
-		        $display("SGPIO TEST Fail, the SGPIO received data is 0\n", tb_baseboard.STATUS_INST.SGPIO_INST1.ACT_LED);
+		        $display("SGPIO TEST Fail, the SGPIO received data is %x\n", tb_baseboard.STATUS_INST.SGPIO_INST1.ACT_LED);
 				$stop;
 			end
 
@@ -341,7 +378,7 @@ task SGPIO_TEST;
 		    $display("SGPIO TEST Pass!\n");
 		else
 		    begin
-		        $display("SGPIO TEST Fail, the SGPIO received data is 0\n", tb_baseboard.STATUS_INST.SGPIO_INST1.ACT_LED);
+		        $display("SGPIO TEST Fail, the SGPIO received data is %x\n", tb_baseboard.STATUS_INST.SGPIO_INST1.ACT_LED);
 				$stop;
 			end
 
@@ -351,7 +388,7 @@ task SGPIO_TEST;
 		    $display("SGPIO TEST Pass!\n");
 		else
 		    begin
-		        $display("SGPIO TEST Fail, the SGPIO received data is 0\n", tb_baseboard.STATUS_INST.SGPIO_INST1.ACT_LED);
+		        $display("SGPIO TEST Fail, the SGPIO received data is %x\n", tb_baseboard.STATUS_INST.SGPIO_INST1.ACT_LED);
 				$stop;
 			end
 
@@ -361,7 +398,7 @@ task SGPIO_TEST;
 		    $display("SGPIO TEST Pass!\n");
 		else
 		    begin
-		        $display("SGPIO TEST Fail, the SGPIO received data is 0\n", tb_baseboard.STATUS_INST.SGPIO_INST1.ACT_LED);
+		        $display("SGPIO TEST Fail, the SGPIO received data is %x\n", tb_baseboard.STATUS_INST.SGPIO_INST1.ACT_LED);
 				$stop;
 			end
 
@@ -371,7 +408,7 @@ task SGPIO_TEST;
 		    $display("SGPIO TEST Pass!\n");
 		else
 		    begin
-		        $display("SGPIO TEST Fail, the SGPIO received data is 0\n", tb_baseboard.STATUS_INST.SGPIO_INST1.ACT_LED);
+		        $display("SGPIO TEST Fail, the SGPIO received data is %x\n", tb_baseboard.STATUS_INST.SGPIO_INST1.ACT_LED);
 				$stop;
 			end
 		
@@ -401,11 +438,11 @@ task wb_write;
 		@(negedge i2c_busy);
 		
 		if(data_num == 8'h1)
-			$display("The I2C write 0", i2c_wrdata1);
+			$display("The I2C write %x", i2c_wrdata1);
 		else if(data_num == 8'h2)
-			$display("The I2C write 0 and 0", i2c_wrdata1, i2c_wrdata2);
+			$display("The I2C write %x and %x", i2c_wrdata1, i2c_wrdata2);
 		else
-			$display("The I2C write 0 and 0 and 0", i2c_wrdata1, i2c_wrdata2, i2c_wrdata3);
+			$display("The I2C write %x and %x and %x", i2c_wrdata1, i2c_wrdata2, i2c_wrdata3);
 	end
 endtask
 
@@ -426,9 +463,9 @@ task wb_read;
 		@(negedge i2c_busy);
 		
 		if(data_num == 8'h1)
-			$display("The I2C received 0", i2c_rddata1);
+			$display("The I2C received %x", i2c_rddata1);
 		else
-			$display("The I2C received 0 and 0", i2c_rddata1, i2c_rddata2);
+			$display("The I2C received %x and %x", i2c_rddata1, i2c_rddata2);
 		//data1 = i2c_rddata1;
 		//data2 = i2c_rddata2;
 	end

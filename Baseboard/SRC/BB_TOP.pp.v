@@ -306,7 +306,7 @@ assign    DRV${j}_PWR_EN_L = !(DRV_PWR_EN4[${i}] && PRSNT[${j}]);
 // assign    DRV${j}_PWR_EN_L = 0;
 // ; }
 
-GPO #     (
+GPO_PROTECT #     (
             .GPO_DFT        (8'h00)
           )   
 GPO2_INST (
@@ -314,12 +314,14 @@ GPO2_INST (
 			.SYSCLK			(SYSCLK),
 			
 			.PORT_CS1		(PORT_CS_1[2]),
+			.PORT_CS1_ALL	(PORT_CS_1),
 			.OFFSET_SEL1	(OFFSET_SEL_1),
 			.DOUT1			(DIN_2_1),						
 			.RD_WR1		    (RD_WR_1),
 			.DIN1			(I2C_DOUT_1),
 			
 			.PORT_CS2		(PORT_CS_2[2]),
+			.PORT_CS2_ALL	(PORT_CS_2),
 			.OFFSET_SEL2	(OFFSET_SEL_2),
 			.DOUT2			(DIN_2_2),						
 			.RD_WR2		    (RD_WR_2),

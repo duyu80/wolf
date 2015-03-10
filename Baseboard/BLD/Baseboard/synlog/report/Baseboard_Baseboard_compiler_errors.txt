@@ -1,2 +1,2 @@
-@E: CG906 :"F:\project\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":322:46:322:51|Reference to unknown variable PRSNT0.
+@E: CG389 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":378:0:378:8|Reference to undefined module GPO_PROTECT
 

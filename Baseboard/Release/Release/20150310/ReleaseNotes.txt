@@ -1,0 +1,4 @@
+Baseboard_v0108
+Fix below issue
+D-0020540	0-None	Assigned	<EVT FW BB CPLD> Protected Access Register couldn't be protected by protected key.
+
