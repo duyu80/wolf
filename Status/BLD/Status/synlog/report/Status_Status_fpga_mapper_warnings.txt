@@ -1,4 +1,4 @@
-@W: MT462 :"f:\project\wolf\status\bld\..\src\i2c.v":122:43:122:48|Net I2C_INST.un1_CNT8 appears to be an unidentified clock source. Assuming default frequency. 
-@W: MT462 :"f:\project\wolf\status\bld\..\src\i2c.v":251:13:251:50|Net I2C_INST.N_14_i appears to be an unidentified clock source. Assuming default frequency. 
-@W: MT462 :"f:\project\wolf\status\bld\..\src\i2c.v":251:13:251:50|Net I2C_INST.N_14_i appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"e:\work\wolf\status\bld\..\src\i2c.v":122:43:122:48|Net I2C_INST.un1_CNT8 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"e:\work\wolf\status\bld\..\src\i2c.v":122:43:122:82|Net I2C_INST.N_4_i appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"e:\work\wolf\status\bld\..\src\i2c.v":122:43:122:82|Net I2C_INST.N_4_i appears to be an unidentified clock source. Assuming default frequency. 
 @W: MT420 |Found inferred clock TOP|SYSCLK with period 1000.00ns. Please declare a user-defined clock on object "p:SYSCLK"

@@ -29,7 +29,7 @@ Performance Hardware Data Status:   Final          Version 25.4
 // Package: TQFP144
 // ncd File: status_status.ncd
 // Version: Diamond (64-bit) 3.2.0.134
-// Written on Fri Nov 07 15:34:47 2014
+// Written on Wed Mar 11 19:57:26 2015
 // M: Minimum Performance Grade
 // iotiming Status_Status.ncd Status_Status.prf -gui
 
@@ -41,23 +41,23 @@ Worst Case Results across Performance Grades (M, 6, 5, 4):
 
 Port        Clock  Edge  Setup Performance_Grade  Hold Performance_Grade
 ----------------------------------------------------------------------
-RESET_N     SYSCLK R     0.434      4       0.533     6
-SCL         SYSCLK R     3.944      4       2.529     4
-SDA         SYSCLK R     1.322      4       2.529     4
-SGPIO_CK1   SYSCLK R     6.452      4       2.517     4
-SGPIO_CK2   SYSCLK R     6.158      4       2.475     4
+RESET_N     SYSCLK R     1.515      4       0.088     M
+SCL         SYSCLK R     5.399      4       2.529     4
+SDA         SYSCLK R     1.682      4       2.529     4
+SGPIO_CK1   SYSCLK R     5.809      4       2.517     4
+SGPIO_CK2   SYSCLK R     5.766      4       2.475     4
 SGPIO_DATA1 SYSCLK R     2.279      4      -0.214     M
 SGPIO_DATA2 SYSCLK R     0.273      4       0.751     4
-SGPIO_LD1   SYSCLK R     2.495      4      -0.075     M
-SGPIO_LD2   SYSCLK R     3.451      4      -0.369     M
+SGPIO_LD1   SYSCLK R     2.877      4      -0.075     M
+SGPIO_LD2   SYSCLK R     3.880      4      -0.384     M
 
 
 // Clock to Output Delay
 
 Port                   Clock  Edge  Max_Delay Performance_Grade  Min_Delay Performance_Grade
 ------------------------------------------------------------------------
-COM_FLT_AMBER_LED_L    SYSCLK R    13.495         4        2.992          M
-COVER_OPEN_AMBER_LED_L SYSCLK R    15.408         4        3.146          M
+COM_FLT_AMBER_LED_L    SYSCLK R    14.075         4        3.103          M
+COVER_OPEN_AMBER_LED_L SYSCLK R    13.821         4        2.946          M
 DRV10_ACT_LED_CATH_L   SYSCLK R     7.272         4        2.258          M
 DRV11_ACT_LED_CATH_L   SYSCLK R     7.272         4        2.258          M
 DRV12_ACT_LED_CATH_L   SYSCLK R     7.272         4        2.258          M
@@ -130,9 +130,8 @@ DRV72_ACT_LED_CATH_L   SYSCLK R     7.272         4        2.258          M
 DRV7_ACT_LED_CATH_L    SYSCLK R     7.272         4        2.258          M
 DRV8_ACT_LED_CATH_L    SYSCLK R     7.272         4        2.258          M
 DRV9_ACT_LED_CATH_L    SYSCLK R     7.272         4        2.258          M
-DRV_FLT_AMBER_LED_L    SYSCLK R    13.339         4        2.791          M
-SDA                    SYSCLK R     9.879         4        2.569          M
-SES_FLT_AMBER_LED_L    SYSCLK R    14.341         4        2.931          M
-SES_INENT_BLUE_LED_L   SYSCLK R    14.412         4        3.038          M
+DRV_FLT_AMBER_LED_L    SYSCLK R    14.777         4        3.274          M
+SDA                    SYSCLK R    10.212         4        2.504          M
+SES_FLT_AMBER_LED_L    SYSCLK R    13.736         4        3.021          M
+SES_INENT_BLUE_LED_L   SYSCLK R    14.493         4        3.184          M
 WARNING: you must also run trce with hold speed: 4
-WARNING: you must also run trce with hold speed: 6

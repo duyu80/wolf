@@ -159,9 +159,9 @@ LED LED_INST(
             .LED0                   (SES_FLT_AMBER_LED_L),
             .LED1                   (SES_INENT_BLUE_LED_L),
             .LED2                   (COVER_OPEN_AMBER_LED_L),
-            .LED3                   (COM_FLT_AMBER_LED_L),
-            .LED4                   (DRV_FLT_AMBER_LED_L),
-            .LED5                   (),
+            .LED3                   (),
+            .LED4                   (COM_FLT_AMBER_LED_L),
+            .LED5                   (DRV_FLT_AMBER_LED_L),
             .LED6                   (),
             .LED7                   (),
                                             

@@ -1,0 +1,5 @@
+Status_v0102
+Fix below issue
+D-0020587	0-None	Assigned	<EVT FW SSM CPLD> Most pattern of LED blinking don't match the corresponding toggle rate.
+D-0020588	0-None	Proposed Fix	<EVT FW SSM CPLD> Mapping of Register 11h,13h and LEDs are incorrect.
+
