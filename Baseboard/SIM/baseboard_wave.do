@@ -1,6 +1,7 @@
 onerror {resume}
 quietly WaveActivateNextPane {} 0
 #add wave -noupdate -expand -group tb_baseboard /tb_baseboard/*
+add wave -noupdate -radix ascii /tb_baseboard/test
 add wave -noupdate -group tb_baseboard /tb_baseboard/*
 add wave -noupdate -group BB_TOP_INST /tb_baseboard/BB_TOP_INST/*
 add wave -noupdate -group I2C_INS_1 /tb_baseboard/BB_TOP_INST/I2C_INS_1/*

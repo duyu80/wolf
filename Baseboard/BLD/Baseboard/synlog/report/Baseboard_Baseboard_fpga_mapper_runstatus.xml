@@ -19,7 +19,7 @@ The file contains the job information from mapper to be displayed as part of the
 </report_link>
 </info>
 <info name="Warnings">
-<data>33</data>
+<data>27</data>
 <report_link name="more">
 <data>E:\work\wolf\Baseboard\BLD\Baseboard\synlog\report\Baseboard_Baseboard_fpga_mapper_warnings.txt</data>
 </report_link>
@@ -31,16 +31,16 @@ The file contains the job information from mapper to be displayed as part of the
 </report_link>
 </info>
 <info name="CPU Time">
-<data>0h:00m:19s</data>
+<data>0h:00m:31s</data>
 </info>
 <info name="Real Time">
-<data>0h:00m:19s</data>
+<data>0h:00m:34s</data>
 </info>
 <info name="Peak Memory">
-<data>206MB</data>
+<data>209MB</data>
 </info>
 <info name="Date &amp; Time">
-<data type="timestamp">1426001758</data>
+<data type="timestamp">1426347242</data>
 </info>
 </job_info>
 </job_run_status>

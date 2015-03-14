@@ -1,7 +1,7 @@
 
 `timescale 1ns/1ns
 module wb_master (clk, rst, adr, din, dout, cyc, stb, we, sel, ack, err, rty,
-				  i2c_wr,i2c_addr,i2c_wrdata1,i2c_wrdata2,i2c_wrdata3,i2c_data_num,i2c_busy,i2c_rddata1,i2c_rddata2
+				  i2c_wr,i2c_addr,i2c_wrdata1,i2c_wrdata2,i2c_wrdata3,i2c_data_num,i2c_busy,i2c_rddata1,i2c_rddata2,i2c_rddata3
 				  );
 
 parameter dwidth = 32;
@@ -25,6 +25,7 @@ input  [7:0]				i2c_data_num;
 output						i2c_busy;
 output [7:0]				i2c_rddata1;
 output [7:0]				i2c_rddata2;
+output [7:0]				i2c_rddata3;
 
 ////////////////////////////////////////////////////////////////////
 //
@@ -45,6 +46,7 @@ reg					delay_en;
 reg					i2c_busy;
 reg	[7:0]			i2c_rddata1;
 reg [7:0]			i2c_rddata2;
+reg [7:0]			i2c_rddata3;
 
 //State machine parameter
 parameter    	CASE_IDLE	           =	8'b0000_0001,
@@ -68,7 +70,10 @@ parameter    	CASE_IDLE	           =	8'b0000_0001,
 				CASE_READ_DATA1        =    8'b1100_1000,
 				CASE_READ_DATA2_CR     =    8'b1101_0000,
 				CASE_READ_RDDATA2_SR   =    8'b1110_0000,
-				CASE_READ_DATA2        =    8'b1110_0001;
+				CASE_READ_DATA2        =    8'b1110_0001,
+				CASE_READ_DATA3_CR     =    8'b1101_0010,
+				CASE_READ_RDDATA3_SR   =    8'b1110_0011,
+				CASE_READ_DATA3        =    8'b1110_0100;
 				
 
 parameter PRER_LO = 3'b000;
@@ -137,6 +142,7 @@ always@(posedge clk)
 			i2c_busy <= 0;
 			i2c_rddata1[7:0] <= 0;
 			i2c_rddata2[7:0] <= 0;
+			i2c_rddata3[7:0] <= 0;
 		end
 	else
 		begin
@@ -152,6 +158,7 @@ always@(posedge clk)
 								i2c_busy <= 0;
 								i2c_rddata1[7:0] <= i2c_rddata1[7:0];
 								i2c_rddata2[7:0] <= i2c_rddata2[7:0];
+								i2c_rddata3[7:0] <= i2c_rddata3[7:0];
 							end
 				CASE_SET_PRER_LO:	begin
 										delay_en <= (delay_out & ack)? 0 : 1'b1;
@@ -343,9 +350,37 @@ always@(posedge clk)
 										stb  <= (delay_out & ack)? 1'b0 : 1'b1;
 										we   <= (delay_out & ack)? 1'b0 : 1'b0;										
 										i2c_rddata2[7:0] <= (delay_out & ack)? din[7:0] : i2c_rddata2[7:0];    // read data2
-										state <= (delay_out & ack)? ((i2c_data_num==8'h2)? CASE_IDLE : CASE_IDLE) : state;
+										state <= (delay_out & ack)? ((i2c_data_num==8'h2)? CASE_IDLE : CASE_READ_DATA3_CR) : state;
 									end
-				
+
+				//read data3
+				CASE_READ_DATA3_CR:		begin
+										delay_en <= (delay_out & ack)? 0 : 1'b1;
+										adr  <= (delay_out & ack)? {awidth{1'bx}} : CR;
+										dout <= (delay_out & ack)? {dwidth{1'bx}} : ((i2c_data_num==8'h3)? 8'h68 : 8'h20);    // set command (read, nack_read) and (read, ack_read)
+										cyc  <= (delay_out & ack)? 1'b0 : 1'b1;
+										stb  <= (delay_out & ack)? 1'b0 : 1'b1;
+										we   <= (delay_out & ack)? 1'b0 : 1'b1;
+										state <= (delay_out & ack)? CASE_READ_RDDATA3_SR : state;
+									    end
+				CASE_READ_RDDATA3_SR:		begin
+										delay_en <= (delay_out & ack & ~din[1])? 0 : 1'b1;
+										adr  <= (delay_out & ack & ~din[1])? {awidth{1'bx}} : SR;
+										cyc  <= (delay_out & ack & ~din[1])? 1'b0 : 1'b1;
+										stb  <= (delay_out & ack & ~din[1])? 1'b0 : 1'b1;
+										we   <= (delay_out & ack & ~din[1])? 1'b0 : 1'b0;
+										state <= (delay_out & ack & ~din[1])? CASE_READ_DATA3 : state;
+									end
+				CASE_READ_DATA3:		begin
+										delay_en <= (delay_out & ack)? 0 : 1'b1;
+										adr  <= (delay_out & ack)? {awidth{1'bx}} : RXR;
+										cyc  <= (delay_out & ack)? 1'b0 : 1'b1;
+										stb  <= (delay_out & ack)? 1'b0 : 1'b1;
+										we   <= (delay_out & ack)? 1'b0 : 1'b0;										
+										i2c_rddata3[7:0] <= (delay_out & ack)? din[7:0] : i2c_rddata3[7:0];    // read data2
+										state <= (delay_out & ack)? ((i2c_data_num==8'h3)? CASE_IDLE : CASE_IDLE) : state;
+									end
+									
 				default:			state <= CASE_IDLE;
 				
 			endcase

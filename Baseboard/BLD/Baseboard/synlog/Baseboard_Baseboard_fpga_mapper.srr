@@ -26,10 +26,8 @@ Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapse
 Available hyper_sources - for debug and ip models
 	None Found
 
-@W: MT462 :"e:\work\wolf\baseboard\bld\..\src\i2c.v":122:43:122:48|Net I2C_INS_2.un1_CNT8 appears to be an unidentified clock source. Assuming default frequency. 
-@W: MT462 :"e:\work\wolf\baseboard\bld\..\src\i2c.v":122:43:122:48|Net I2C_INS_1.un1_CNT8 appears to be an unidentified clock source. Assuming default frequency. 
 
-Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 146MB peak: 149MB)
+Finished RTL optimizations (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 146MB peak: 149MB)
 
 @W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI9_INST.DOUT1[7],  because it is equivalent to instance GPI9_INST.DOUT1[6]
 @W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI9_INST.DOUT1[6],  because it is equivalent to instance GPI9_INST.DOUT1[5]
@@ -62,9 +60,7 @@ Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00
 @N: BN362 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing sequential instance GPI8_INST.DOUT2[2] in hierarchy view:work.BB_TOP(verilog) because there are no references to its outputs 
 @A: BN291 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Boundary register GPI8_INST.DOUT2[2] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
 @N: BN362 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing sequential instance GPI9_INST.DOUT1[1] in hierarchy view:work.BB_TOP(verilog) because there are no references to its outputs 
-@A: BN291 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Boundary register GPI9_INST.DOUT1[1] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
 @N: BN362 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing sequential instance GPI9_INST.DOUT2[1] in hierarchy view:work.BB_TOP(verilog) because there are no references to its outputs 
-@A: BN291 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Boundary register GPI9_INST.DOUT2[1] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
 @N:"e:\work\wolf\baseboard\bld\..\src\pcie_rst_ctrl.v":41:0:41:5|Found counter in view:work.PCIE_RST_CTRL(verilog) inst CNT0[21:0]
 @N:"e:\work\wolf\baseboard\bld\..\src\pcie_rst_ctrl.v":58:0:58:5|Found counter in view:work.PCIE_RST_CTRL(verilog) inst CNT1[21:0]
 @N:"e:\work\wolf\baseboard\bld\..\src\pcie_rst_ctrl.v":75:0:75:5|Found counter in view:work.PCIE_RST_CTRL(verilog) inst CNT2[21:0]
@@ -123,28 +119,28 @@ original code -> new code
 @N: BN362 :"e:\work\wolf\baseboard\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CSD1[12] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C_I2C_INS_2(verilog) because there are no references to its outputs 
 @N: BN362 :"e:\work\wolf\baseboard\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CSD1[11] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C_I2C_INS_2(verilog) because there are no references to its outputs 
 
-Finished factoring (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 172MB peak: 173MB)
+Finished factoring (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:06s; Memory used current: 183MB peak: 185MB)
 
 
-Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 168MB peak: 174MB)
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:06s; Memory used current: 170MB peak: 185MB)
 
 
-Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:06s; Memory used current: 175MB peak: 206MB)
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:10s; Memory used current: 178MB peak: 209MB)
 
 
-Starting Early Timing Optimization (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:07s; Memory used current: 174MB peak: 206MB)
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:13s; CPU Time elapsed 0h:00m:12s; Memory used current: 177MB peak: 209MB)
 
 
-Finished Early Timing Optimization (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:07s; Memory used current: 174MB peak: 206MB)
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:15s; CPU Time elapsed 0h:00m:13s; Memory used current: 177MB peak: 209MB)
 
 
-Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:08s; CPU Time elapsed 0h:00m:08s; Memory used current: 173MB peak: 206MB)
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:15s; CPU Time elapsed 0h:00m:14s; Memory used current: 176MB peak: 209MB)
 
 
-Finished preparing to map (Real Time elapsed 0h:00m:09s; CPU Time elapsed 0h:00m:09s; Memory used current: 175MB peak: 206MB)
+Finished preparing to map (Real Time elapsed 0h:00m:19s; CPU Time elapsed 0h:00m:17s; Memory used current: 178MB peak: 209MB)
 
 
-Finished technology mapping (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 199MB peak: 206MB)
+Finished technology mapping (Real Time elapsed 0h:00m:22s; CPU Time elapsed 0h:00m:19s; Memory used current: 203MB peak: 209MB)
 
 Pass		 CPU time		Worst Slack		Luts / Registers
 ------------------------------------------------------------
@@ -153,55 +149,45 @@ Pass		 CPU time		Worst Slack		Luts / Registers
 ------------------------------------------------------------
 
 
-Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:12s; CPU Time elapsed 0h:00m:12s; Memory used current: 179MB peak: 206MB)
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:24s; CPU Time elapsed 0h:00m:22s; Memory used current: 183MB peak: 209MB)
 
 @N: FX164 |The option to pack flops in the IOB has not been specified 
 
-Finished restoring hierarchy (Real Time elapsed 0h:00m:15s; CPU Time elapsed 0h:00m:15s; Memory used current: 180MB peak: 206MB)
+Finished restoring hierarchy (Real Time elapsed 0h:00m:29s; CPU Time elapsed 0h:00m:26s; Memory used current: 183MB peak: 209MB)
 
 
 
 #### START OF CLOCK OPTIMIZATION REPORT #####[
 
-1 non-gated/non-generated clock tree(s) driving 1987 clock pin(s) of sequential element(s)
-2 gated/generated clock tree(s) driving 16 clock pin(s) of sequential element(s)
-0 instances converted, 16 sequential instances remain driven by gated/generated clocks
+1 non-gated/non-generated clock tree(s) driving 2024 clock pin(s) of sequential element(s)
+0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+0 instances converted, 0 sequential instances remain driven by gated/generated clocks
 
-================================= Non-Gated/Non-Generated Clocks =================================
-Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance           
---------------------------------------------------------------------------------------------------
-@K:CKID0003       SYSCLK              port                   1987       BB_SGPIO_INST_ACT_LEDio[0]
-==================================================================================================
-=========================================================== Gated/Generated Clocks ===========================================================
-Clock Tree ID     Driving Element                    Drive Element Type     Fanout     Sample Instance               Explanation              
-----------------------------------------------------------------------------------------------------------------------------------------------
-@K:CKID0001       I2C_INS_1.un1_DOUT_0_a2_0_a2_1     ORCALUT4               8          I2C_INS_1.CHECKSUM_OUT[0]     No clocks found on inputs
-@K:CKID0002       I2C_INS_2.un1_DOUT_0_a2_0_a2_1     ORCALUT4               8          I2C_INS_2.CHECKSUM_OUT[0]     No clocks found on inputs
-==============================================================================================================================================
+=========================== Non-Gated/Non-Generated Clocks ============================
+Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance
+---------------------------------------------------------------------------------------
+@K:CKID0001       SYSCLK              port                   2024       BB_CPLD_ALT_L  
+=======================================================================================
 
 
 ##### END OF CLOCK OPTIMIZATION REPORT ######]
 
 Writing Analyst data base E:\work\wolf\Baseboard\BLD\Baseboard\Baseboard_Baseboard.srm
-@W: MT462 :"e:\work\wolf\baseboard\bld\..\src\i2c.v":251:13:251:50|Net I2C_INS_2.N_43_i_0 appears to be an unidentified clock source. Assuming default frequency. 
-@W: MT462 :"e:\work\wolf\baseboard\bld\..\src\i2c.v":251:13:251:50|Net I2C_INS_1.N_2512_i_0 appears to be an unidentified clock source. Assuming default frequency. 
 
-Finished Writing Netlist Databases (Real Time elapsed 0h:00m:17s; CPU Time elapsed 0h:00m:17s; Memory used current: 175MB peak: 206MB)
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:31s; CPU Time elapsed 0h:00m:28s; Memory used current: 177MB peak: 209MB)
 
 Writing EDIF Netlist and constraint files
-@W: MT462 :"e:\work\wolf\baseboard\bld\..\src\i2c.v":251:13:251:50|Net I2C_INS_2.N_43_i_0 appears to be an unidentified clock source. Assuming default frequency. 
-@W: MT462 :"e:\work\wolf\baseboard\bld\..\src\i2c.v":251:13:251:50|Net I2C_INS_1.N_2512_i_0 appears to be an unidentified clock source. Assuming default frequency. 
 I-2013.09L-SP1-1 
 @N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
 
-Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:18s; CPU Time elapsed 0h:00m:18s; Memory used current: 180MB peak: 206MB)
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:33s; CPU Time elapsed 0h:00m:29s; Memory used current: 182MB peak: 209MB)
 
 @W: MT420 |Found inferred clock BB_TOP|SYSCLK with period 1000.00ns. Please declare a user-defined clock on object "p:SYSCLK"
 
 
 
 ##### START OF TIMING REPORT #####[
-# Timing Report written on Tue Mar 10 23:35:57 2015
+# Timing Report written on Sat Mar 14 23:34:01 2015
 #
 
 
@@ -226,7 +212,6 @@ Worst slack in design: 496.219
 Starting Clock     Frequency     Frequency     Period        Period        Slack       Type         Group              
 -----------------------------------------------------------------------------------------------------------------------
 BB_TOP|SYSCLK      1.0 MHz       121.0 MHz     1000.000      8.265         496.219     inferred     Inferred_clkgroup_0
-System             1.0 MHz       397.4 MHz     1000.000      2.517         997.483     system       system_clkgroup    
 =======================================================================================================================
 
 
@@ -240,9 +225,7 @@ Clocks                        |    rise  to  rise     |    fall  to  fall   |   
 --------------------------------------------------------------------------------------------------------------------------
 Starting       Ending         |  constraint  slack    |  constraint  slack  |  constraint  slack    |  constraint  slack  
 --------------------------------------------------------------------------------------------------------------------------
-System         BB_TOP|SYSCLK  |  1000.000    997.483  |  No paths    -      |  No paths    -        |  No paths    -      
-BB_TOP|SYSCLK  System         |  No paths    -        |  No paths    -      |  No paths    -        |  1000.000    995.265
-BB_TOP|SYSCLK  BB_TOP|SYSCLK  |  1000.000    991.735  |  No paths    -      |  500.000     496.219  |  500.000     498.364
+BB_TOP|SYSCLK  BB_TOP|SYSCLK  |  1000.000    991.735  |  No paths    -      |  500.000     496.219  |  500.000     498.500
 ==========================================================================================================================
  Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
        'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
@@ -273,8 +256,8 @@ I2C_INS_2.PORT_CSD1[0]     BB_TOP|SYSCLK     FD1S3DX     Q       PORT_CSD1[0]   
 I2C_INS_1.PORT_CSD1[0]     BB_TOP|SYSCLK     FD1S3DX     Q       PORT_CSD1[0]     1.220       496.219
 I2C_INS_2.PORT_CSD1[1]     BB_TOP|SYSCLK     FD1S3DX     Q       PORT_CSD1[1]     1.220       496.219
 I2C_INS_1.PORT_CSD1[1]     BB_TOP|SYSCLK     FD1S3DX     Q       PORT_CSD1[1]     1.220       496.219
-I2C_INS_1.PORT_CSD1[2]     BB_TOP|SYSCLK     FD1S3DX     Q       PORT_CSD1[2]     1.220       496.219
 I2C_INS_2.PORT_CSD1[2]     BB_TOP|SYSCLK     FD1S3DX     Q       PORT_CSD1[2]     1.220       496.219
+I2C_INS_1.PORT_CSD1[2]     BB_TOP|SYSCLK     FD1S3DX     Q       PORT_CSD1[2]     1.220       496.219
 I2C_INS_2.PORT_CSD1[3]     BB_TOP|SYSCLK     FD1S3DX     Q       PORT_CSD1[3]     1.220       496.219
 I2C_INS_1.PORT_CSD1[3]     BB_TOP|SYSCLK     FD1S3DX     Q       PORT_CSD1[3]     1.220       496.219
 I2C_INS_2.PORT_CSD1[5]     BB_TOP|SYSCLK     FD1S3DX     Q       PORT_CSD1[5]     1.220       496.219
@@ -291,10 +274,10 @@ Instance                 Reference         Type        Pin     Net              
 --------------------------------------------------------------------------------------------------------
 I2C_INS_2.REG_DIN[0]     BB_TOP|SYSCLK     FD1P3DX     D       un2_REG_DIN_0[0]     500.089      496.219
 I2C_INS_1.REG_DIN[0]     BB_TOP|SYSCLK     FD1P3DX     D       un2_REG_DIN[0]       500.089      496.219
-I2C_INS_2.REG_DIN[1]     BB_TOP|SYSCLK     FD1P3DX     D       un2_REG_DIN_0[1]     500.089      496.219
 I2C_INS_1.REG_DIN[1]     BB_TOP|SYSCLK     FD1P3DX     D       un2_REG_DIN[1]       500.089      496.219
-I2C_INS_2.REG_DIN[2]     BB_TOP|SYSCLK     FD1P3DX     D       un2_REG_DIN_0[2]     500.089      496.219
+I2C_INS_2.REG_DIN[1]     BB_TOP|SYSCLK     FD1P3DX     D       un2_REG_DIN_0[1]     500.089      496.219
 I2C_INS_1.REG_DIN[2]     BB_TOP|SYSCLK     FD1P3DX     D       un2_REG_DIN[2]       500.089      496.219
+I2C_INS_2.REG_DIN[2]     BB_TOP|SYSCLK     FD1P3DX     D       un2_REG_DIN_0[2]     500.089      496.219
 I2C_INS_2.REG_DIN[3]     BB_TOP|SYSCLK     FD1P3DX     D       un2_REG_DIN_0[3]     500.089      496.219
 I2C_INS_1.REG_DIN[3]     BB_TOP|SYSCLK     FD1P3DX     D       un2_REG_DIN[3]       500.089      496.219
 I2C_INS_1.REG_DIN[4]     BB_TOP|SYSCLK     FD1P3DX     D       un2_REG_DIN[4]       500.089      496.219
@@ -342,120 +325,33 @@ I2C_INS_2.REG_DIN[3]           FD1P3DX      D        In      0.000     3.870    
 
 
 
-
-====================================
-Detailed Report for Clock: System
-====================================
-
-
-
-Starting Points with Worst Slack
-********************************
-
-                              Starting                                              Arrival            
-Instance                      Reference     Type        Pin     Net                 Time        Slack  
-                              Clock                                                                    
--------------------------------------------------------------------------------------------------------
-I2C_INS_2.CHECKSUM_OUT[1]     System        FD1S1AY     Q       CHECKSUM_OUT[1]     0.972       997.483
-I2C_INS_1.CHECKSUM_OUT[1]     System        FD1S1AY     Q       CHECKSUM_OUT[1]     0.972       997.483
-I2C_INS_2.CHECKSUM_OUT[2]     System        FD1S1AY     Q       CHECKSUM_OUT[2]     0.972       997.483
-I2C_INS_1.CHECKSUM_OUT[2]     System        FD1S1AY     Q       CHECKSUM_OUT[2]     0.972       997.483
-I2C_INS_2.CHECKSUM_OUT[3]     System        FD1S1AY     Q       CHECKSUM_OUT[3]     0.972       997.483
-I2C_INS_1.CHECKSUM_OUT[3]     System        FD1S1AY     Q       CHECKSUM_OUT[3]     0.972       997.483
-I2C_INS_2.CHECKSUM_OUT[4]     System        FD1S1AY     Q       CHECKSUM_OUT[4]     0.972       997.483
-I2C_INS_1.CHECKSUM_OUT[4]     System        FD1S1AY     Q       CHECKSUM_OUT[4]     0.972       997.483
-I2C_INS_2.CHECKSUM_OUT[5]     System        FD1S1AY     Q       CHECKSUM_OUT[5]     0.972       997.483
-I2C_INS_1.CHECKSUM_OUT[5]     System        FD1S1AY     Q       CHECKSUM_OUT[5]     0.972       997.483
-=======================================================================================================
-
-
-Ending Points with Worst Slack
-******************************
-
-                            Starting                                              Required            
-Instance                    Reference     Type        Pin     Net                 Time         Slack  
-                            Clock                                                                     
-------------------------------------------------------------------------------------------------------
-I2C_INS_2.SHIFT_DOUT[1]     System        FD1P3DX     D       SHIFT_DOUT_2[1]     1000.089     997.483
-I2C_INS_1.SHIFT_DOUT[1]     System        FD1P3DX     D       SHIFT_DOUT_2[1]     1000.089     997.483
-I2C_INS_2.SHIFT_DOUT[2]     System        FD1P3DX     D       SHIFT_DOUT_2[2]     1000.089     997.483
-I2C_INS_1.SHIFT_DOUT[2]     System        FD1P3DX     D       SHIFT_DOUT_2[2]     1000.089     997.483
-I2C_INS_2.SHIFT_DOUT[3]     System        FD1P3DX     D       SHIFT_DOUT_2[3]     1000.089     997.483
-I2C_INS_1.SHIFT_DOUT[3]     System        FD1P3DX     D       SHIFT_DOUT_2[3]     1000.089     997.483
-I2C_INS_2.SHIFT_DOUT[4]     System        FD1P3DX     D       SHIFT_DOUT_2[4]     1000.089     997.483
-I2C_INS_1.SHIFT_DOUT[4]     System        FD1P3DX     D       SHIFT_DOUT_2[4]     1000.089     997.483
-I2C_INS_2.SHIFT_DOUT[5]     System        FD1P3DX     D       SHIFT_DOUT_2[5]     1000.089     997.483
-I2C_INS_1.SHIFT_DOUT[5]     System        FD1P3DX     D       SHIFT_DOUT_2[5]     1000.089     997.483
-======================================================================================================
-
-
-
-Worst Path Information
-***********************
-
-
-Path information for path number 1: 
-      Requested Period:                      1000.000
-    - Setup time:                            -0.089
-    + Clock delay at ending point:           0.000 (ideal)
-    = Required time:                         1000.089
-
-    - Propagation time:                      2.605
-    - Clock delay at starting point:         0.000 (ideal)
-    - Estimated clock delay at start point:  -0.000
-    = Slack (non-critical) :                 997.483
-
-    Number of logic level(s):                2
-    Starting point:                          I2C_INS_2.CHECKSUM_OUT[1] / Q
-    Ending point:                            I2C_INS_2.SHIFT_DOUT[1] / D
-    The start point is clocked by            System [rising] on pin CK
-    The end   point is clocked by            BB_TOP|SYSCLK [rising] on pin CK
-
-Instance / Net                                   Pin      Pin               Arrival     No. of    
-Name                                Type         Name     Dir     Delay     Time        Fan Out(s)
---------------------------------------------------------------------------------------------------
-I2C_INS_2.CHECKSUM_OUT[1]           FD1S1AY      Q        Out     0.972     0.972       -         
-CHECKSUM_OUT[1]                     Net          -        -       -         -           1         
-I2C_INS_2.SHIFT_DOUT_2_1_0_0[1]     ORCALUT4     A        In      0.000     0.972       -         
-I2C_INS_2.SHIFT_DOUT_2_1_0_0[1]     ORCALUT4     Z        Out     1.017     1.989       -         
-SHIFT_DOUT_2_1_0_0[1]               Net          -        -       -         -           1         
-I2C_INS_2.SHIFT_DOUT_2_1_0[1]       ORCALUT4     A        In      0.000     1.989       -         
-I2C_INS_2.SHIFT_DOUT_2_1_0[1]       ORCALUT4     Z        Out     0.617     2.605       -         
-SHIFT_DOUT_2[1]                     Net          -        -       -         -           1         
-I2C_INS_2.SHIFT_DOUT[1]             FD1P3DX      D        In      0.000     2.605       -         
-==================================================================================================
-
-
-
 ##### END OF TIMING REPORT #####]
 
 ---------------------------------------
 Resource Usage Report
 Part: lcmxo2_7000hc-4
 
-Register bits: 1987 of 6864 (29%)
-Latch bits:      16
+Register bits: 2024 of 6864 (29%)
 PIC Latch:       0
 I/O cells:       278
 
 
 Details:
 BB:             74
-CCU2D:          394
+CCU2D:          384
 FD1P3AX:        4
 FD1P3BX:        2
-FD1P3DX:        1618
-FD1S1AY:        16
+FD1P3DX:        1619
 FD1S3BX:        2
-FD1S3DX:        282
+FD1S3DX:        318
 FD1S3JX:        1
 GSR:            1
-IB:             68
+IB:             67
 IFS1P3DX:       76
-INV:            42
-OB:             136
+INV:            40
+OB:             137
 OFS1P3DX:       2
-ORCALUT4:       3263
+ORCALUT4:       3281
 PFUMX:          73
 PUR:            1
 VHI:            18
@@ -463,9 +359,9 @@ VLO:            24
 true:           6
 Mapper successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:19s; CPU Time elapsed 0h:00m:19s; Memory used current: 61MB peak: 206MB)
+At Mapper Exit (Real Time elapsed 0h:00m:34s; CPU Time elapsed 0h:00m:31s; Memory used current: 62MB peak: 209MB)
 
-Process took 0h:00m:19s realtime, 0h:00m:19s cputime
-# Tue Mar 10 23:35:58 2015
+Process took 0h:00m:34s realtime, 0h:00m:31s cputime
+# Sat Mar 14 23:34:02 2015
 
 ###########################################################]

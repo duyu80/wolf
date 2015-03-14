@@ -90,7 +90,7 @@ module BB_TOP (
             output    DRV${j3}_PCIE_CLK_B_OE_L,DRV${j2}_PCIE_CLK_B_OE_L,DRV${j1}_PCIE_CLK_B_OE_L,DRV${j0}_PCIE_CLK_B_OE_L,
 ; }
             // Enclosure Signals
-            input     BB_CPLD_ALT_L,
+            output reg   BB_CPLD_ALT_L,
 			input     CANISTER_A_PCIE_CLK_ACT_L,CANISTER_B_PCIE_CLK_ACT_L,
 			input     CPLD_SLOT_ID,
             // SGPIO
@@ -128,11 +128,11 @@ wire    [7:0]	LED_REG7;
 
 //Present$Identify output signal from PRSNT_LED_CTRL.v
 wire    [35:0]  PRSNT;
+reg     [35:0]  PRSNT_D;
 wire    [35:0]  IDENT;
 //LED input signal to PRSNT_LED_CTRL.v
 wire    [35:0]  AMBER_DAT;
 wire    [35:0]  BLUE_DAT;
-
 //CLOCK OE
 // PCIE clock OE portA output
 ; for ($i=12; $i<36; $i++) {
@@ -272,6 +272,20 @@ GPI    	GPI1_INST (
 			.DIN15          (  0                   )
 			);
 
+always@(posedge SYSCLK or negedge RESET_N)
+	begin
+		if(RESET_N == 1'b0)
+			begin
+			    PRSNT_D       <= 'b0;
+				BB_CPLD_ALT_L <= 'b0;
+			end
+		else
+		    begin
+			    PRSNT_D       <= PRSNT;
+				BB_CPLD_ALT_L <= (PORT_CS_1[9] || PORT_CS_2[9])? 'b0 : ((PRSNT ^ PRSNT_D)? 1'b1 : BB_CPLD_ALT_L);
+			end
+	end
+	
 //POWER ENABLE 20H
 wire  [7:0]  DRV_PWR_EN0,DRV_PWR_EN1,DRV_PWR_EN2,DRV_PWR_EN3,DRV_PWR_EN4;
 ; for ($i=0,$j=0; $i<8,$j<8; $i++,$j++) {

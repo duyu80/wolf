@@ -20,8 +20,6 @@ Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00
 
 Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 115MB peak: 117MB)
 
-@W: MT462 :"e:\work\wolf\baseboard\bld\..\src\i2c.v":122:43:122:48|Net I2C_INS_2.un1_CNT8 appears to be an unidentified clock source. Assuming default frequency. 
-@W: MT462 :"e:\work\wolf\baseboard\bld\..\src\i2c.v":122:43:122:48|Net I2C_INS_1.un1_CNT8 appears to be an unidentified clock source. Assuming default frequency. 
 syn_allowed_resources : blockrams=26  set on top level netlist BB_TOP
 
 
@@ -32,17 +30,15 @@ Start             Requested     Requested     Clock        Clock
 Clock             Frequency     Period        Type         Group              
 ------------------------------------------------------------------------------
 BB_TOP|SYSCLK     1.0 MHz       1000.000      inferred     Inferred_clkgroup_0
-System            1.0 MHz       1000.000      system       system_clkgroup    
 ==============================================================================
 
-@W: MT531 :"e:\work\wolf\baseboard\bld\..\src\i2c.v":122:43:122:82|Found signal identified as System clock which controls 16 sequential elements including I2C_INS_1.CHECKSUM_OUT[7:0].  Using this clock, which has no specified timing constraint, can prevent conversion of gated or generated clocks and can adversely impact design performance. 
-@W: MT529 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Found inferred clock BB_TOP|SYSCLK which controls 2025 sequential elements including GPI0_INST.DOUT2[7:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+@W: MT529 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Found inferred clock BB_TOP|SYSCLK which controls 2062 sequential elements including GPI0_INST.DOUT2[7:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
 
 Pre-mapping successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 83MB peak: 150MB)
+At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 83MB peak: 150MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Tue Mar 10 23:35:38 2015
+# Sat Mar 14 23:33:26 2015
 
 ###########################################################]

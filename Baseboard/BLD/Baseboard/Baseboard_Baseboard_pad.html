@@ -14,13 +14,13 @@ Performance Grade:      4
 PACKAGE:          FPBGA484
 Package Status:                     Final          Version 1.36
 
-Tue Mar 10 23:36:35 2015
+Sat Mar 14 23:34:46 2015
 
 Pinout by Port Name:
 +---------------------------+----------+---------------+-------+-----------+-----------+----------------------------------------------------+
 | Port Name                 | Pin/Bank | Buffer Type   | Site  | PG Enable | BC Enable | Properties                                         |
 +---------------------------+----------+---------------+-------+-----------+-----------+----------------------------------------------------+
-| BB_CPLD_ALT_L             | C2/5     | LVCMOS33_IN   | PL2B  |           |           | CLAMP:ON HYSTERESIS:SMALL                          |
+| BB_CPLD_ALT_L             | C2/5     | LVCMOS33_OUT  | PL2B  |           |           | DRIVE:8mA SLEW:SLOW                                |
 | CANISTER_A_PCIE_CLK_ACT_L | H6/5     | LVCMOS33_IN   | PL4C  |           |           | CLAMP:ON HYSTERESIS:SMALL                          |
 | CANISTER_B_PCIE_CLK_ACT_L | G5/5     | LVCMOS33_IN   | PL4D  |           |           | CLAMP:ON HYSTERESIS:SMALL                          |
 | CPLD_SLOT_ID              | F3/5     | LVCMOS33_IN   | PL6B  |           |           | CLAMP:ON HYSTERESIS:SMALL                          |
@@ -386,7 +386,7 @@ Vccio by Bank:
 | B20/0    |     unused, PULL:DOWN     |            |               | PT36C        | INITN          |           |           |
 | B22/1    | DRV30_PCIE_CLK_A_OE_L     | LOCATED    | LVCMOS33_OUT  | PR4A         |                |           |           |
 | C1/5     |     unused, PULL:DOWN     |            |               | PL4B         | L_GPLLC_IN     |           |           |
-| C2/5     | BB_CPLD_ALT_L             | LOCATED    | LVCMOS33_IN   | PL2B         |                |           |           |
+| C2/5     | BB_CPLD_ALT_L             | LOCATED    | LVCMOS33_OUT  | PL2B         |                |           |           |
 | C3/5     | RESET_N                   | LOCATED    | LVCMOS33_IN   | PL2A         |                |           |           |
 | C4/0     | DRV33_ACT_LED             | LOCATED    | LVCMOS33_IN   | PT10B        |                |           |           |
 | C5/0     | PE_RST_DRV21_B_L          | LOCATED    | LVCMOS33_OUT  | PT12D        |                |           |           |
@@ -965,7 +965,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2014 Lattice Semiconductor Corporation,  All rights reserved.
-Tue Mar 10 23:36:35 2015
+Sat Mar 14 23:34:46 2015
 
 
 

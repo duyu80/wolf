@@ -13,6 +13,8 @@ reg	[7:0]	    i2c_wrdata2;
 reg	[7:0]	    i2c_wrdata3;
 reg	[7:0]	    i2c_data_num;
 
+reg [16*8-1:0]  test;
+
 wire	[2:0]	adr;
 wire	[7:0]	dat_o;
 wire	[7:0]	dat0_i;
@@ -35,6 +37,7 @@ wire	[7:0]	DIN_0;
 wire			i2c_busy;
 wire	[7:0]	i2c_rddata1;
 wire	[7:0]	i2c_rddata2;
+wire	[7:0]	i2c_rddata3;
 
 // Driver active led input
 reg     [35:0]  DRV_ACT;
@@ -71,7 +74,8 @@ wb_master #(8, 8) u0 (
 		.i2c_data_num(i2c_data_num),
 		.i2c_busy(i2c_busy),
 		.i2c_rddata1(i2c_rddata1),
-		.i2c_rddata2(i2c_rddata2)
+		.i2c_rddata2(i2c_rddata2),
+		.i2c_rddata3(i2c_rddata3)
 	);
 
 i2c_master_wb_top u1 (
@@ -107,7 +111,7 @@ BB_TOP		BB_TOP_INST (
 ; }
 ; for ($i=12,$j=0; $i<36,$j<24; $i++,$j++) {
                 .DRV${i}_PWROK                  ( DRV_POWER_OK[${j}] ),
-; }	
+; }
 				
 				// SGPIO
 				.SGPIO_CK                       ( SGPIO_CK      ),
@@ -139,6 +143,7 @@ initial
         rstn         = 0;
         i2c_wr       = 1;
 		DRV_POWER_OK = 'h0;
+		test         = "Begin Test";
 
         repeat (1000) @(posedge clk);
 		
@@ -151,15 +156,24 @@ initial
 		//SGPIO_TEST();
         
 		//CPLD INFO TEST
-        HEADER_TEST();
+		
+        test = "HEADER_TEST";
+		HEADER_TEST();
 		repeat (1000) @(posedge clk);
 		
 		//LED_TEST
+		test = "LED_TEST";
 		LED_TEST();
 		repeat (1000) @(posedge clk);
 		
 		//PROTECT TEST
+		test = "PROTECT TEST";
 		PROTECT_TEST();
+		repeat (1000) @(posedge clk);
+		
+		//PRESENT TEST
+		test = "PRESENT TEST";
+		PRESENT_TEST();
 		repeat (1000) @(posedge clk);
 		
 		repeat (10000) @(posedge clk);
@@ -182,8 +196,9 @@ task HEADER_TEST;
 		
         \$display("*********** Read DEVICE_ID_MSB ***********");
 		wb_write(`I2C_ADDR1,8'h0,0,0,8'h1);
-        wb_read(`I2C_ADDR1,8'h1);
-		if(i2c_rddata1 == `DEVICE_ID_MSB)
+        wb_read(`I2C_ADDR1,8'h3);
+		\$display("i2c_rddata1 is %%x and i2c_rddata2 is %%x and i2c_rddata3 is %%x", i2c_rddata1,i2c_rddata2,i2c_rddata3);
+		if((i2c_rddata1 == `DEVICE_ID_MSB) && (i2c_rddata2 == `DEVICE_ID_LSB) && (i2c_rddata3 == `CPLD_MAJ_VER))
 		  \$display("DEVICE_ID_MSB test pass\\n");
 		else
 		  begin
@@ -301,6 +316,45 @@ task PROTECT_TEST;
 				\$stop;
 			end		
 		\$display("*************************** protect test pass ***************************\\n");
+	end
+endtask
+
+//***************************	PRESENT TEST TASK	**************************
+task PRESENT_TEST;
+	begin
+		\$display("*************************** Present test begin ***************************\\n");
+		force tb_baseboard.BB_TOP_INST.PRSNT = 36'h0;
+		repeat (1000) @(posedge clk);
+		force tb_baseboard.BB_TOP_INST.PRSNT = 36'h1;
+		repeat (1000) @(posedge clk);
+		if(tb_baseboard.BB_TOP_INST.BB_CPLD_ALT_L)
+		    \$display("Pass! BB_CPLD_ALT_L already be asserted");
+		else
+		    begin
+		        \$display("Fail! BB_CPLD_ALT_L did not be asserted");
+				\$stop;
+			end
+			
+		wb_write(`I2C_ADDR1,8'h90,8'h0,8'h0,8'h1);
+		wb_read(`I2C_ADDR1,8'h1);		
+		if(i2c_rddata1 == 8'h01)
+			begin
+				\$display("PRESENT TEST Pass, the BB_CPLD_ALT_L data is %%x\\n", i2c_rddata1);
+			end
+		else
+			begin
+				\$display("PRESENT TEST Fail, the BB_CPLD_ALT_L should be 8'h01 but the actual data is %%x\\n", i2c_rddata1);
+				\$stop;
+			end
+			
+		if(tb_baseboard.BB_TOP_INST.BB_CPLD_ALT_L == 0)
+		    \$display("Pass! BB_CPLD_ALT_L already be deasserted");
+		else
+		    begin
+		        \$display("Fail! BB_CPLD_ALT_L did not be deasserted");
+				\$stop;
+			end	
+		\$display("*************************** Present test pass ***************************\\n");
 	end
 endtask
 

@@ -1,0 +1,5 @@
+Baseboard_v0109
+Fix below issue
+D-0020537	0-None	Assigned	<EVT FW BB/SSM CPLD> Sequential read doesn't take effect in BB CPLD and SSM CPLD
+D-0020566	0-None	Assigned	<EVT FW BB CPLD> HDD present status change hasn't trigger Alert
+
