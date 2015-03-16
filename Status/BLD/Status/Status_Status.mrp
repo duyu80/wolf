@@ -12,7 +12,7 @@ Target Vendor:  LATTICE
 Target Device:  LCMXO2-2000HCTQFP144
 Target Performance:   4
 Mapper:  xo2c00,  version:  Diamond (64-bit) 3.2.0.134
-Mapped on:  03/11/15  19:57:10
+Mapped on:  03/16/15  19:42:52
 
 Design Summary
 --------------
@@ -20,12 +20,12 @@ Design Summary
    Number of registers:    551 out of  2448 (23%)
       PFU registers:          475 out of  2112 (22%)
       PIO registers:           76 out of   336 (23%)
-   Number of SLICEs:       389 out of  1056 (37%)
-      SLICEs as Logic/ROM:    389 out of  1056 (37%)
+   Number of SLICEs:       381 out of  1056 (36%)
+      SLICEs as Logic/ROM:    381 out of  1056 (36%)
       SLICEs as RAM:            0 out of   792 (0%)
       SLICEs as Carry:         96 out of  1056 (9%)
-   Number of LUT4s:        775 out of  2112 (37%)
-      Number of logic LUTs:      583
+   Number of LUT4s:        759 out of  2112 (36%)
+      Number of logic LUTs:      567
       Number of distributed RAM:   0 (0 LUT4s)
       Number of ripple logic:     96 (192 LUT4s)
       Number of shift registers:   0
@@ -55,73 +55,73 @@ Design Summary
       2. Number of logic LUT4s does not include count of distributed RAM and
      ripple logic.
    Number of clocks:  2
-     Net SYSCLK_c: 328 loads, 324 rising, 4 falling (Driver: PIO SYSCLK )
-     Net I2C_INST/N_4_i: 4 loads, 4 rising, 0 falling (Driver:
-     I2C_INST/CNT8_RNIR9LQ )
+     Net SYSCLK_c: 330 loads, 326 rising, 4 falling (Driver: PIO SYSCLK )
+     Net I2C_INST/un1_DOUT_1: 4 loads, 4 rising, 0 falling (Driver:
+     I2C_INST/un1_DOUT_0_a2_1 )
 
                                     Page 1
 
 
 
 
-Design:  TOP                                           Date:  03/11/15  19:57:10
+Design:  TOP                                           Date:  03/16/15  19:42:52
 
 Design Summary (cont)
 ---------------------
    Number of Clock Enables:  39
      Net SGPIO_INST1.STATE[4]: 36 loads, 0 LSLICEs
-     Net I2C_INST/N_11: 1 loads, 1 LSLICEs
+     Net I2C_INST/N_13: 1 loads, 1 LSLICEs
      Net RESET_N_c: 2 loads, 2 LSLICEs
      Net I2C_INST/SCL_NCLK: 1 loads, 1 LSLICEs
-     Net I2C_INST/SCL_D2_RNIQG2U: 4 loads, 4 LSLICEs
+     Net I2C_INST/N_11: 4 loads, 4 LSLICEs
+     Net I2C_INST/un9_LOC_i: 5 loads, 5 LSLICEs
      Net I2C_INST/un7_SHIFT_DIN_i: 4 loads, 4 LSLICEs
      Net I2C_INST/SCL_PCLKD2: 1 loads, 1 LSLICEs
      Net I2C_INST/RD_END2: 4 loads, 4 LSLICEs
-     Net I2C_INST/N_16: 1 loads, 1 LSLICEs
-     Net I2C_INST/un9_LOC_i: 5 loads, 5 LSLICEs
+     Net I2C_INST/N_19: 1 loads, 1 LSLICEs
      Net I2C_INST/un1_DOUT_0_a2: 4 loads, 4 LSLICEs
-     Net I2C_INST/N_18: 2 loads, 2 LSLICEs
+     Net I2C_INST/un7_CNT_i_0: 2 loads, 2 LSLICEs
      Net I2C_INST/un2_RD_WR_0_a2: 1 loads, 1 LSLICEs
-     Net N_59_i: 1 loads, 0 LSLICEs
-     Net SGPIO_INST2/N_35_i: 4 loads, 4 LSLICEs
+     Net N_62_i: 1 loads, 0 LSLICEs
+     Net SGPIO_INST2/N_33_i: 4 loads, 4 LSLICEs
      Net SGPIO_INST2.STATE[4]: 36 loads, 0 LSLICEs
      Net SGPIO_INST2/un7_CNT_i: 13 loads, 13 LSLICEs
      Net SGPIO_INST2/N_153_i: 18 loads, 18 LSLICEs
-     Net SGPIO_INST1/N_64_i: 4 loads, 4 LSLICEs
+     Net SGPIO_INST1/N_61_i: 4 loads, 4 LSLICEs
      Net SGPIO_INST1/un7_CNT_i: 13 loads, 13 LSLICEs
      Net SGPIO_INST1/N_153_i: 18 loads, 18 LSLICEs
-     Net HEADER_INST/un1_DOUT_i_i_a7: 3 loads, 3 LSLICEs
-     Net GPIO_INST/un1_DOUT_i_i_a7_0: 4 loads, 4 LSLICEs
-     Net GPIO_INST/un1_GPO_B_0_a2_0_a7: 4 loads, 4 LSLICEs
-     Net GPIO_INST/un1_GPO_2_0_a2_0_a7: 4 loads, 4 LSLICEs
-     Net GPIO_INST/un1_GPO_5_0_a2_0_a7: 4 loads, 4 LSLICEs
-     Net GPIO_INST/un1_GPO_E_0_a3_RNIRJR11: 4 loads, 4 LSLICEs
-     Net GPIO_INST/un1_GPO_3_0_a3_0_a7: 4 loads, 4 LSLICEs
-     Net GPIO_INST/un1_GPO_0_0_a7: 4 loads, 4 LSLICEs
-     Net GPIO_INST/un1_GPO_1_0_a7: 4 loads, 4 LSLICEs
-     Net GPIO_INST/un1_GPO_F_0_a2_0_a7: 4 loads, 4 LSLICEs
-     Net GPIO_INST/un1_GPO_E_0_a7: 4 loads, 4 LSLICEs
-     Net GPIO_INST/un1_GPO_D_0_a3_0_a7: 4 loads, 4 LSLICEs
-     Net GPIO_INST/un1_GPO_C_0_a2_0_a7: 4 loads, 4 LSLICEs
-     Net GPIO_INST/un1_GPO_A_0_a7: 4 loads, 4 LSLICEs
-     Net GPIO_INST/un1_GPO_9_0_a2_0_a7: 4 loads, 4 LSLICEs
-     Net GPIO_INST/un1_GPO_8_0_a3_0_a7: 4 loads, 4 LSLICEs
-     Net GPIO_INST/un1_GPO_6_0_a7: 4 loads, 4 LSLICEs
-     Net GPIO_INST/un1_GPO_4_0_a7: 4 loads, 4 LSLICEs
+     Net HEADER_INST/N_4_i: 3 loads, 3 LSLICEs
+     Net GPIO_INST/N_267_i: 4 loads, 4 LSLICEs
+     Net GPIO_INST/un1_GPO_B_0_a2: 4 loads, 4 LSLICEs
+     Net GPIO_INST/un1_GPO_0: 4 loads, 4 LSLICEs
+     Net GPIO_INST/un1_GPO_0_0_RNIKDU41: 4 loads, 4 LSLICEs
+     Net GPIO_INST/un1_GPO_5_0_a2: 4 loads, 4 LSLICEs
+     Net GPIO_INST/DOUT_W_i_a2_2_1_RNI640I1[7]: 4 loads, 4 LSLICEs
+     Net GPIO_INST/un1_GPO_0_0_RNIIRS21_0: 4 loads, 4 LSLICEs
+     Net GPIO_INST/un1_GPO_0_0_RNIKDU41_0: 4 loads, 4 LSLICEs
+     Net GPIO_INST/un1_GPO_9_0_a2: 4 loads, 4 LSLICEs
+     Net GPIO_INST/un1_GPO_7_0_a2: 4 loads, 4 LSLICEs
+     Net GPIO_INST/un1_GPO_4_0_a2: 4 loads, 4 LSLICEs
+     Net GPIO_INST/un1_GPO_F_0_a2: 4 loads, 4 LSLICEs
+     Net GPIO_INST/un1_GPO_0_0_RNIIRS21: 4 loads, 4 LSLICEs
+     Net GPIO_INST/un1_GPO_C_0_a2: 4 loads, 4 LSLICEs
+     Net GPIO_INST/un1_GPO_3_0_a2: 4 loads, 4 LSLICEs
+     Net GPIO_INST/un1_GPO_6_0_a2: 4 loads, 4 LSLICEs
+     Net GPIO_INST/un1_GPO_2_0_a2: 4 loads, 4 LSLICEs
    Number of local set/reset loads for net RESET_N_c merged into GSR:  541
    Number of LSRs:  0
    Number of nets driven by tri-state buffers:  0
    Top 10 highest fanout non-clock nets:
      Net SGPIO_INST1.STATE[4]: 75 loads
      Net SGPIO_INST2.STATE[4]: 75 loads
-     Net I2C_INST.LOC[0]: 69 loads
-     Net I2C_INST.LOC[1]: 69 loads
+     Net I2C_INST.LOC[2]: 38 loads
      Net SGPIO_INST1/STATE[0]: 38 loads
      Net SGPIO_INST2/STATE[0]: 38 loads
-     Net RD_WR: 27 loads
+     Net RD_WR: 32 loads
+     Net I2C_INST.LOC[3]: 29 loads
+     Net I2C_INST.LOC[1]: 27 loads
      Net SGPIO_INST1/STATE_i[0]: 26 loads
      Net SGPIO_INST2/STATE_i[0]: 26 loads
-     Net GPIO_INST/N_374: 21 loads
 
 
 
@@ -130,7 +130,7 @@ Design Summary (cont)
 
 
 
-Design:  TOP                                           Date:  03/11/15  19:57:10
+Design:  TOP                                           Date:  03/16/15  19:42:52
 
 
 
@@ -196,7 +196,7 @@ IO (PIO) Attributes
 
 
 
-Design:  TOP                                           Date:  03/11/15  19:57:10
+Design:  TOP                                           Date:  03/16/15  19:42:52
 
 IO (PIO) Attributes (cont)
 --------------------------
@@ -262,7 +262,7 @@ IO (PIO) Attributes (cont)
 
 
 
-Design:  TOP                                           Date:  03/11/15  19:57:10
+Design:  TOP                                           Date:  03/16/15  19:42:52
 
 IO (PIO) Attributes (cont)
 --------------------------
@@ -328,7 +328,7 @@ IO (PIO) Attributes (cont)
 
 
 
-Design:  TOP                                           Date:  03/11/15  19:57:10
+Design:  TOP                                           Date:  03/16/15  19:42:52
 
 IO (PIO) Attributes (cont)
 --------------------------
@@ -394,7 +394,7 @@ Signal LED_CNT_INST/un3_CNT_500MS_1_s_23_0_COUT undriven or does not drive
 
 
 
-Design:  TOP                                           Date:  03/11/15  19:57:10
+Design:  TOP                                           Date:  03/16/15  19:42:52
 
 Removed logic (cont)
 --------------------
@@ -460,7 +460,7 @@ Signal I2C_INST/un1_REG_DIN_1_s_7_0_S1 undriven or does not drive anything -
 
 
 
-Design:  TOP                                           Date:  03/11/15  19:57:10
+Design:  TOP                                           Date:  03/16/15  19:42:52
 
 Removed logic (cont)
 --------------------

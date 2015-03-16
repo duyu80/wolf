@@ -7,7 +7,7 @@ Running in Lattice mode
 
 Starting:    D:\lscc\diamond\3.2_x64\synpbase\win64\mbin\synbatch.exe
 Install:     D:\lscc\diamond\3.2_x64\synpbase
-Date:        Wed Mar 11 19:56:56 2015
+Date:        Mon Mar 16 19:42:40 2015
 Version:     I-2013.09L-SP1-1 
 
 Arguments:   -product synplify_pro  -batch Status_Status_synplify.tcl
@@ -39,7 +39,7 @@ Copied E:\work\wolf\Status\BLD\Status\synwork\Status_Status_comp.srs to E:\work\
 
 compiler Completed with warnings
 Return Code: 1
-Run Time:0h:00m:03s
+Run Time:0h:00m:02s
 
 
 Copied E:\work\wolf\Status\BLD\Status\Status_Status.srr to E:\work\wolf\Status\BLD\Status\Status_Status.srf
@@ -64,7 +64,7 @@ Running: Map & Optimize on proj_1|Status
 
 fpga_mapper Completed with warnings
 Return Code: 1
-Run Time:0h:00m:05s
+Run Time:0h:00m:06s
 
 
 Complete: Map on proj_1|Status

@@ -12,7 +12,7 @@ Lattice Diamond Version 3.2.0.134
 #Implementation: Status
 
 $ Start of Compile
-#Wed Mar 11 19:56:56 2015
+#Mon Mar 16 19:42:40 2015
 
 Synopsys Verilog Compiler, version comp201309rcp1, Build 147R, built Apr 16 2014
 @N|Running in 64-bit mode
@@ -34,7 +34,15 @@ Copyright (C) 1994-2013 Synopsys, Inc. This software and the associated document
 @I::"E:\work\wolf\Status\BLD\..\SRC\status_define.v"
 @I::"E:\work\wolf\Status\BLD\..\SRC\TOP.v"
 Verilog syntax check successful!
-Options changed - recompiling
+File E:\work\wolf\Status\BLD\..\SRC\../SRC/status_define.v changed - recompiling
+File E:\work\wolf\Status\BLD\..\SRC\../SRC/status_define.v changed - recompiling
+File E:\work\wolf\Status\BLD\..\SRC\../SRC/status_define.v changed - recompiling
+File E:\work\wolf\Status\BLD\..\SRC\../SRC/status_define.v changed - recompiling
+File E:\work\wolf\Status\BLD\..\SRC\../SRC/status_define.v changed - recompiling
+File E:\work\wolf\Status\BLD\..\SRC\../SRC/status_define.v changed - recompiling
+File E:\work\wolf\Status\BLD\..\SRC\status_define.v changed - recompiling
+File E:\work\wolf\Status\BLD\..\SRC\TOP.v changed - recompiling
+File E:\work\wolf\Status\BLD\..\SRC\../SRC/status_define.v changed - recompiling
 Selecting top level module TOP
 @N: CG364 :"E:\work\wolf\Status\BLD\..\SRC\I2C.v":18:7:18:9|Synthesizing module I2C
 
@@ -228,7 +236,7 @@ State machine has 5 reachable states with original encodings of:
 At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 76MB peak: 78MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Wed Mar 11 19:56:57 2015
+# Mon Mar 16 19:42:41 2015
 
 ###########################################################]
 Pre-mapping Report
@@ -281,7 +289,7 @@ Pre-mapping successful!
 At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 77MB peak: 141MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Wed Mar 11 19:57:00 2015
+# Mon Mar 16 19:42:43 2015
 
 ###########################################################]
 Map & Optimize Report
@@ -367,25 +375,25 @@ original code -> new code
 Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 147MB peak: 147MB)
 
 
-Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 145MB peak: 147MB)
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 144MB peak: 147MB)
 
 
-Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 147MB peak: 148MB)
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 148MB peak: 148MB)
 
 
-Starting Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 147MB peak: 148MB)
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 148MB peak: 149MB)
 
 
-Finished Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 147MB peak: 148MB)
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 148MB peak: 149MB)
 
 
-Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 147MB peak: 148MB)
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 147MB peak: 149MB)
 
 
-Finished preparing to map (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 147MB peak: 148MB)
+Finished preparing to map (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 148MB peak: 149MB)
 
 
-Finished technology mapping (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 181MB peak: 183MB)
+Finished technology mapping (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 168MB peak: 170MB)
 
 Pass		 CPU time		Worst Slack		Luts / Registers
 ------------------------------------------------------------
@@ -394,11 +402,11 @@ Pass		 CPU time		Worst Slack		Luts / Registers
 ------------------------------------------------------------
 
 
-Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 153MB peak: 183MB)
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 151MB peak: 170MB)
 
 @N: FX164 |The option to pack flops in the IOB has not been specified 
 
-Finished restoring hierarchy (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 153MB peak: 183MB)
+Finished restoring hierarchy (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 151MB peak: 170MB)
 
 
 
@@ -413,33 +421,33 @@ Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample I
 -------------------------------------------------------------------------------------------------
 @K:CKID0002       SYSCLK              port                   543        I2C_INST_MASTER_RD_NACKio
 =================================================================================================
-====================================================== Gated/Generated Clocks ======================================================
-Clock Tree ID     Driving Element           Drive Element Type     Fanout     Sample Instance              Explanation              
-------------------------------------------------------------------------------------------------------------------------------------
-@K:CKID0001       I2C_INST.CNT8_RNIR9LQ     ORCALUT4               8          I2C_INST.CHECKSUM_OUT[0]     No clocks found on inputs
-====================================================================================================================================
+======================================================= Gated/Generated Clocks ========================================================
+Clock Tree ID     Driving Element              Drive Element Type     Fanout     Sample Instance              Explanation              
+---------------------------------------------------------------------------------------------------------------------------------------
+@K:CKID0001       I2C_INST.un1_DOUT_0_a2_1     ORCALUT4               8          I2C_INST.CHECKSUM_OUT[0]     No clocks found on inputs
+=======================================================================================================================================
 
 
 ##### END OF CLOCK OPTIMIZATION REPORT ######]
 
 Writing Analyst data base E:\work\wolf\Status\BLD\Status\Status_Status.srm
-@W: MT462 :"e:\work\wolf\status\bld\..\src\i2c.v":122:43:122:82|Net I2C_INST.N_4_i appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"e:\work\wolf\status\bld\..\src\i2c.v":251:13:251:50|Net I2C_INST.un1_DOUT_1 appears to be an unidentified clock source. Assuming default frequency. 
 
-Finished Writing Netlist Databases (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 151MB peak: 183MB)
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 150MB peak: 170MB)
 
 Writing EDIF Netlist and constraint files
-@W: MT462 :"e:\work\wolf\status\bld\..\src\i2c.v":122:43:122:82|Net I2C_INST.N_4_i appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"e:\work\wolf\status\bld\..\src\i2c.v":251:13:251:50|Net I2C_INST.un1_DOUT_1 appears to be an unidentified clock source. Assuming default frequency. 
 I-2013.09L-SP1-1 
 @N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
 
-Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 155MB peak: 183MB)
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:03s; Memory used current: 154MB peak: 170MB)
 
 @W: MT420 |Found inferred clock TOP|SYSCLK with period 1000.00ns. Please declare a user-defined clock on object "p:SYSCLK"
 
 
 
 ##### START OF TIMING REPORT #####[
-# Timing Report written on Wed Mar 11 19:57:04 2015
+# Timing Report written on Mon Mar 16 19:42:48 2015
 #
 
 
@@ -682,7 +690,7 @@ IFS1P3DX:       4
 INV:            5
 OB:             78
 OFS1P3DX:       72
-ORCALUT4:       579
+ORCALUT4:       563
 PFUMX:          5
 PUR:            1
 VHI:            7
@@ -690,10 +698,10 @@ VLO:            8
 true:           1
 Mapper successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 54MB peak: 183MB)
+At Mapper Exit (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 54MB peak: 170MB)
 
 Process took 0h:00m:04s realtime, 0h:00m:04s cputime
-# Wed Mar 11 19:57:04 2015
+# Mon Mar 16 19:42:48 2015
 
 ###########################################################]
 
@@ -793,7 +801,7 @@ Running DRC...
     <postMsg mid="1163101" type="Warning" dynamic="1" navigation="0" arg0="32"  />
 
 Design Results:
-   1340 blocks expanded
+   1324 blocks expanded
 complete the first expansion
 Writing 'Status_Status.ngd' ...
 Total CPU Time: 0 secs  
@@ -841,12 +849,12 @@ Design Summary:
    Number of registers:    551 out of  2448 (23%)
       PFU registers:          475 out of  2112 (22%)
       PIO registers:           76 out of   336 (23%)
-   Number of SLICEs:       389 out of  1056 (37%)
-      SLICEs as Logic/ROM:    389 out of  1056 (37%)
+   Number of SLICEs:       381 out of  1056 (36%)
+      SLICEs as Logic/ROM:    381 out of  1056 (36%)
       SLICEs as RAM:            0 out of   792 (0%)
       SLICEs as Carry:         96 out of  1056 (9%)
-   Number of LUT4s:        775 out of  2112 (37%)
-      Number of logic LUTs:      583
+   Number of LUT4s:        759 out of  2112 (36%)
+      Number of logic LUTs:      567
       Number of distributed RAM:   0 (0 LUT4s)
       Number of ripple logic:     96 (192 LUT4s)
       Number of shift registers:   0
@@ -874,62 +882,62 @@ Design Summary:
       1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of distributed RAMs) + 2*(Number of ripple logic)
       2. Number of logic LUT4s does not include count of distributed RAM and ripple logic.
    Number of clocks:  2
-     Net SYSCLK_c: 328 loads, 324 rising, 4 falling (Driver: PIO SYSCLK )
-     Net I2C_INST/N_4_i: 4 loads, 4 rising, 0 falling (Driver: I2C_INST/CNT8_RNIR9LQ )
+     Net SYSCLK_c: 330 loads, 326 rising, 4 falling (Driver: PIO SYSCLK )
+     Net I2C_INST/un1_DOUT_1: 4 loads, 4 rising, 0 falling (Driver: I2C_INST/un1_DOUT_0_a2_1 )
    Number of Clock Enables:  39
      Net SGPIO_INST1.STATE[4]: 36 loads, 0 LSLICEs
-     Net I2C_INST/N_11: 1 loads, 1 LSLICEs
+     Net I2C_INST/N_13: 1 loads, 1 LSLICEs
      Net RESET_N_c: 2 loads, 2 LSLICEs
      Net I2C_INST/SCL_NCLK: 1 loads, 1 LSLICEs
-     Net I2C_INST/SCL_D2_RNIQG2U: 4 loads, 4 LSLICEs
+     Net I2C_INST/N_11: 4 loads, 4 LSLICEs
+     Net I2C_INST/un9_LOC_i: 5 loads, 5 LSLICEs
      Net I2C_INST/un7_SHIFT_DIN_i: 4 loads, 4 LSLICEs
      Net I2C_INST/SCL_PCLKD2: 1 loads, 1 LSLICEs
      Net I2C_INST/RD_END2: 4 loads, 4 LSLICEs
-     Net I2C_INST/N_16: 1 loads, 1 LSLICEs
-     Net I2C_INST/un9_LOC_i: 5 loads, 5 LSLICEs
+     Net I2C_INST/N_19: 1 loads, 1 LSLICEs
      Net I2C_INST/un1_DOUT_0_a2: 4 loads, 4 LSLICEs
-     Net I2C_INST/N_18: 2 loads, 2 LSLICEs
+     Net I2C_INST/un7_CNT_i_0: 2 loads, 2 LSLICEs
      Net I2C_INST/un2_RD_WR_0_a2: 1 loads, 1 LSLICEs
-     Net N_59_i: 1 loads, 0 LSLICEs
-     Net SGPIO_INST2/N_35_i: 4 loads, 4 LSLICEs
+     Net N_62_i: 1 loads, 0 LSLICEs
+     Net SGPIO_INST2/N_33_i: 4 loads, 4 LSLICEs
      Net SGPIO_INST2.STATE[4]: 36 loads, 0 LSLICEs
      Net SGPIO_INST2/un7_CNT_i: 13 loads, 13 LSLICEs
      Net SGPIO_INST2/N_153_i: 18 loads, 18 LSLICEs
-     Net SGPIO_INST1/N_64_i: 4 loads, 4 LSLICEs
+     Net SGPIO_INST1/N_61_i: 4 loads, 4 LSLICEs
      Net SGPIO_INST1/un7_CNT_i: 13 loads, 13 LSLICEs
      Net SGPIO_INST1/N_153_i: 18 loads, 18 LSLICEs
-     Net HEADER_INST/un1_DOUT_i_i_a7: 3 loads, 3 LSLICEs
-     Net GPIO_INST/un1_DOUT_i_i_a7_0: 4 loads, 4 LSLICEs
-     Net GPIO_INST/un1_GPO_B_0_a2_0_a7: 4 loads, 4 LSLICEs
-     Net GPIO_INST/un1_GPO_2_0_a2_0_a7: 4 loads, 4 LSLICEs
-     Net GPIO_INST/un1_GPO_5_0_a2_0_a7: 4 loads, 4 LSLICEs
-     Net GPIO_INST/un1_GPO_E_0_a3_RNIRJR11: 4 loads, 4 LSLICEs
-     Net GPIO_INST/un1_GPO_3_0_a3_0_a7: 4 loads, 4 LSLICEs
-     Net GPIO_INST/un1_GPO_0_0_a7: 4 loads, 4 LSLICEs
-     Net GPIO_INST/un1_GPO_1_0_a7: 4 loads, 4 LSLICEs
-     Net GPIO_INST/un1_GPO_F_0_a2_0_a7: 4 loads, 4 LSLICEs
-     Net GPIO_INST/un1_GPO_E_0_a7: 4 loads, 4 LSLICEs
-     Net GPIO_INST/un1_GPO_D_0_a3_0_a7: 4 loads, 4 LSLICEs
-     Net GPIO_INST/un1_GPO_C_0_a2_0_a7: 4 loads, 4 LSLICEs
-     Net GPIO_INST/un1_GPO_A_0_a7: 4 loads, 4 LSLICEs
-     Net GPIO_INST/un1_GPO_9_0_a2_0_a7: 4 loads, 4 LSLICEs
-     Net GPIO_INST/un1_GPO_8_0_a3_0_a7: 4 loads, 4 LSLICEs
-     Net GPIO_INST/un1_GPO_6_0_a7: 4 loads, 4 LSLICEs
-     Net GPIO_INST/un1_GPO_4_0_a7: 4 loads, 4 LSLICEs
+     Net HEADER_INST/N_4_i: 3 loads, 3 LSLICEs
+     Net GPIO_INST/N_267_i: 4 loads, 4 LSLICEs
+     Net GPIO_INST/un1_GPO_B_0_a2: 4 loads, 4 LSLICEs
+     Net GPIO_INST/un1_GPO_0: 4 loads, 4 LSLICEs
+     Net GPIO_INST/un1_GPO_0_0_RNIKDU41: 4 loads, 4 LSLICEs
+     Net GPIO_INST/un1_GPO_5_0_a2: 4 loads, 4 LSLICEs
+     Net GPIO_INST/DOUT_W_i_a2_2_1_RNI640I1[7]: 4 loads, 4 LSLICEs
+     Net GPIO_INST/un1_GPO_0_0_RNIIRS21_0: 4 loads, 4 LSLICEs
+     Net GPIO_INST/un1_GPO_0_0_RNIKDU41_0: 4 loads, 4 LSLICEs
+     Net GPIO_INST/un1_GPO_9_0_a2: 4 loads, 4 LSLICEs
+     Net GPIO_INST/un1_GPO_7_0_a2: 4 loads, 4 LSLICEs
+     Net GPIO_INST/un1_GPO_4_0_a2: 4 loads, 4 LSLICEs
+     Net GPIO_INST/un1_GPO_F_0_a2: 4 loads, 4 LSLICEs
+     Net GPIO_INST/un1_GPO_0_0_RNIIRS21: 4 loads, 4 LSLICEs
+     Net GPIO_INST/un1_GPO_C_0_a2: 4 loads, 4 LSLICEs
+     Net GPIO_INST/un1_GPO_3_0_a2: 4 loads, 4 LSLICEs
+     Net GPIO_INST/un1_GPO_6_0_a2: 4 loads, 4 LSLICEs
+     Net GPIO_INST/un1_GPO_2_0_a2: 4 loads, 4 LSLICEs
    Number of local set/reset loads for net RESET_N_c merged into GSR:  541
    Number of LSRs:  0
    Number of nets driven by tri-state buffers:  0
    Top 10 highest fanout non-clock nets:
      Net SGPIO_INST1.STATE[4]: 75 loads
      Net SGPIO_INST2.STATE[4]: 75 loads
-     Net I2C_INST.LOC[0]: 69 loads
-     Net I2C_INST.LOC[1]: 69 loads
+     Net I2C_INST.LOC[2]: 38 loads
      Net SGPIO_INST1/STATE[0]: 38 loads
      Net SGPIO_INST2/STATE[0]: 38 loads
-     Net RD_WR: 27 loads
+     Net RD_WR: 32 loads
+     Net I2C_INST.LOC[3]: 29 loads
+     Net I2C_INST.LOC[1]: 27 loads
      Net SGPIO_INST1/STATE_i[0]: 26 loads
      Net SGPIO_INST2/STATE_i[0]: 26 loads
-     Net GPIO_INST/N_374: 21 loads
  
 
    Number of warnings:  1
@@ -950,7 +958,7 @@ Removing old design directory at request of -rem command line option to this pro
 Running par. Please wait . . .
 
 Lattice Place and Route Report for Design "Status_Status_map.ncd"
-Wed Mar 11 19:57:11 2015
+Mon Mar 16 19:42:54 2015
 
 PAR: Place And Route Diamond (64-bit) 3.2.0.134.
 Command Line: par -w -l 5 -i 6 -t 1 -c 0 -e 0 -gui -exp parUseNBR=1:parCDP=0:parCDR=0:parPathBased=OFF Status_Status_map.ncd Status_Status.dir/5_1.ncd Status_Status.prf
@@ -978,42 +986,42 @@ Device utilization summary:
                   88+4(JTAG)/112     82% bonded
    IOLOGIC           76/216          35% used
 
-   SLICE            389/1056         36% used
+   SLICE            381/1056         36% used
 
    GSR                1/1           100% used
 
 
-Number of Signals: 1395
-Number of Connections: 3568
+Number of Signals: 1379
+Number of Connections: 3479
 
 Pin Constraint Summary:
    88 out of 88 pins locked (100% locked).
 
 The following 1 signal is selected to use the primary clock routing resources:
-    SYSCLK_c (driver: SYSCLK, clk load #: 328)
+    SYSCLK_c (driver: SYSCLK, clk load #: 330)
 
 
 The following 6 signals are selected to use the secondary clock routing resources:
     SGPIO_INST1.STATE[4] (driver: SGPIO_INST1/SLICE_253, clk load #: 0, sr load #: 0, ce load #: 36)
     SGPIO_INST2.STATE[4] (driver: SGPIO_INST2/SLICE_276, clk load #: 0, sr load #: 0, ce load #: 36)
-    SGPIO_INST2/N_153_i (driver: SGPIO_INST2/SLICE_410, clk load #: 0, sr load #: 0, ce load #: 18)
-    SGPIO_INST1/N_153_i (driver: SGPIO_INST1/SLICE_414, clk load #: 0, sr load #: 0, ce load #: 18)
-    SGPIO_INST2/un7_CNT_i (driver: SGPIO_INST2/SLICE_306, clk load #: 0, sr load #: 0, ce load #: 13)
-    SGPIO_INST1/un7_CNT_i (driver: SGPIO_INST1/SLICE_310, clk load #: 0, sr load #: 0, ce load #: 13)
+    SGPIO_INST2/N_153_i (driver: SGPIO_INST2/SLICE_405, clk load #: 0, sr load #: 0, ce load #: 18)
+    SGPIO_INST1/N_153_i (driver: SGPIO_INST1/SLICE_409, clk load #: 0, sr load #: 0, ce load #: 18)
+    SGPIO_INST2/un7_CNT_i (driver: SGPIO_INST2/SLICE_322, clk load #: 0, sr load #: 0, ce load #: 13)
+    SGPIO_INST1/un7_CNT_i (driver: SGPIO_INST1/SLICE_326, clk load #: 0, sr load #: 0, ce load #: 13)
 
 Signal RESET_N_c is selected as Global Set/Reset.
 Starting Placer Phase 0.
-..........
+...........
 Finished Placer Phase 0.  REAL time: 3 secs 
 
 Starting Placer Phase 1.
-....................
-Placer score = 157826.
+......................
+Placer score = 151203.
 Finished Placer Phase 1.  REAL time: 6 secs 
 
 Starting Placer Phase 2.
 .
-Placer score =  157167
+Placer score =  150906
 Finished Placer Phase 2.  REAL time: 6 secs 
 
 
@@ -1026,13 +1034,13 @@ Global Clock Resources:
   DCC        : 0 out of 8 (0%)
 
 Quadrants All (TL, TR, BL, BR) - Global Clocks:
-  PRIMARY "SYSCLK_c" from comp "SYSCLK" on CLK_PIN site "128 (PT17A)", clk load = 328
-  SECONDARY "SGPIO_INST1.STATE[4]" from Q0 on comp "SGPIO_INST1/SLICE_253" on site "R9C15D", clk load = 0, ce load = 36, sr load = 0
-  SECONDARY "SGPIO_INST2.STATE[4]" from Q0 on comp "SGPIO_INST2/SLICE_276" on site "R9C15B", clk load = 0, ce load = 36, sr load = 0
-  SECONDARY "SGPIO_INST2/N_153_i" from F0 on comp "SGPIO_INST2/SLICE_410" on site "R9C13B", clk load = 0, ce load = 18, sr load = 0
-  SECONDARY "SGPIO_INST1/N_153_i" from F0 on comp "SGPIO_INST1/SLICE_414" on site "R9C15A", clk load = 0, ce load = 18, sr load = 0
-  SECONDARY "SGPIO_INST2/un7_CNT_i" from F0 on comp "SGPIO_INST2/SLICE_306" on site "R7C25A", clk load = 0, ce load = 13, sr load = 0
-  SECONDARY "SGPIO_INST1/un7_CNT_i" from F0 on comp "SGPIO_INST1/SLICE_310" on site "R7C25D", clk load = 0, ce load = 13, sr load = 0
+  PRIMARY "SYSCLK_c" from comp "SYSCLK" on CLK_PIN site "128 (PT17A)", clk load = 330
+  SECONDARY "SGPIO_INST1.STATE[4]" from Q0 on comp "SGPIO_INST1/SLICE_253" on site "R9C15C", clk load = 0, ce load = 36, sr load = 0
+  SECONDARY "SGPIO_INST2.STATE[4]" from Q0 on comp "SGPIO_INST2/SLICE_276" on site "R9C13D", clk load = 0, ce load = 36, sr load = 0
+  SECONDARY "SGPIO_INST2/N_153_i" from F0 on comp "SGPIO_INST2/SLICE_405" on site "R9C13B", clk load = 0, ce load = 18, sr load = 0
+  SECONDARY "SGPIO_INST1/N_153_i" from F0 on comp "SGPIO_INST1/SLICE_409" on site "R9C15D", clk load = 0, ce load = 18, sr load = 0
+  SECONDARY "SGPIO_INST2/un7_CNT_i" from F0 on comp "SGPIO_INST2/SLICE_322" on site "R9C13C", clk load = 0, ce load = 13, sr load = 0
+  SECONDARY "SGPIO_INST1/un7_CNT_i" from F0 on comp "SGPIO_INST1/SLICE_326" on site "R9C13A", clk load = 0, ce load = 13, sr load = 0
 
   PRIMARY  : 1 out of 8 (12%)
   SECONDARY: 6 out of 8 (75%)
@@ -1061,7 +1069,7 @@ I/O Bank Usage Summary:
 | 5        | 9 / 10 ( 90%)  | 3.3V       | -         |
 +----------+----------------+------------+-----------+
 
-Total placer CPU time: 4 secs 
+Total placer CPU time: 5 secs 
 
 Dumping design to file Status_Status.dir/5_1.ncd.
 
@@ -1070,14 +1078,14 @@ Dumping design to file Status_Status.dir/5_1.ncd.
 INFO - par: ASE feature is off due to non timing-driven settings.  
 -----------------------------------------------------------------
 
-0 connections routed; 3568 unrouted.
+0 connections routed; 3479 unrouted.
 Starting router resource preassignment
 
-    <postMsg mid="66011008" type="Warning" dynamic="1" navigation="0" arg0="&#xA;   Signal=I2C_INST/N_4_i loads=4 clock_loads=4"  />
+    <postMsg mid="66011008" type="Warning" dynamic="1" navigation="0" arg0="&#xA;   Signal=I2C_INST/un1_DOUT_1 loads=4 clock_loads=4"  />
 
 Completed router resource preassignment. Real time: 7 secs 
 
-Start NBR router at 19:57:18 03/11/15
+Start NBR router at 19:43:01 03/16/15
 
 *****************************************************************
 Info: NBR allows conflicts(one node used by more than one signal)
@@ -1092,22 +1100,22 @@ Note: NBR uses a different method to calculate timing slacks. The
       your design. Thanks.                                       
 *****************************************************************
 
-Start NBR special constraint process at 19:57:18 03/11/15
+Start NBR special constraint process at 19:43:01 03/16/15
 
-Start NBR section for initial routing at 19:57:18 03/11/15
+Start NBR section for initial routing at 19:43:01 03/16/15
 Level 4, iteration 1
-113(0.09%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 8 secs 
+126(0.10%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 8 secs 
 
 Info: Initial congestion level at 75% usage is 0
 Info: Initial congestion area  at 75% usage is 0 (0.00%)
 
-Start NBR section for normal routing at 19:57:19 03/11/15
+Start NBR section for normal routing at 19:43:02 03/16/15
 Level 4, iteration 1
-58(0.04%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 8 secs 
+74(0.06%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 8 secs 
 Level 4, iteration 2
-33(0.03%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 8 secs 
+36(0.03%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 8 secs 
 Level 4, iteration 3
-13(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 8 secs 
+11(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 8 secs 
 Level 4, iteration 4
 3(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 8 secs 
 Level 4, iteration 5
@@ -1115,11 +1123,11 @@ Level 4, iteration 5
 Level 4, iteration 6
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; real time: 8 secs 
 
-Start NBR section for re-routing at 19:57:19 03/11/15
+Start NBR section for re-routing at 19:43:02 03/16/15
 Level 4, iteration 1
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; real time: 8 secs 
 
-Start NBR section for post-routing at 19:57:19 03/11/15
+Start NBR section for post-routing at 19:43:02 03/16/15
 
 End NBR router with 0 unrouted connection
 
@@ -1134,12 +1142,12 @@ Notes: The timing info is calculated for SETUP only and all PAR_ADJs are ignored
 
 
 
-    <postMsg mid="66011008" type="Warning" dynamic="1" navigation="0" arg0="&#xA;   Signal=I2C_INST/N_4_i loads=4 clock_loads=4"  />
+    <postMsg mid="66011008" type="Warning" dynamic="1" navigation="0" arg0="&#xA;   Signal=I2C_INST/un1_DOUT_1 loads=4 clock_loads=4"  />
 
-Total CPU time 6 secs 
+Total CPU time 7 secs 
 Total REAL time: 8 secs 
 Completely routed.
-End of route.  3568 routed (100.00%); 0 unrouted.
+End of route.  3479 routed (100.00%); 0 unrouted.
 Checking DRC ... 
 No errors found.
 
@@ -1158,7 +1166,7 @@ PAR_SUMMARY::Worst  slack<hold /<ns>> = <n/a>
 PAR_SUMMARY::Timing score<hold /<ns>> = <n/a>
 PAR_SUMMARY::Number of errors = 0
 
-Total CPU  time to completion: 7 secs 
+Total CPU  time to completion: 8 secs 
 Total REAL time to completion: 9 secs 
 
 par done!
@@ -1194,7 +1202,7 @@ Setup and Hold Report
 
 --------------------------------------------------------------------------------
 Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.2.0.134
-Wed Mar 11 19:57:21 2015
+Mon Mar 16 19:43:04 2015
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -1221,14 +1229,14 @@ BLOCK RESETPATHS
 Timing summary (Setup):
 ---------------
 
-Timing errors: 4102  Score: 22502545
-Cumulative negative slack: 22477448
+Timing errors: 4097  Score: 21128300
+Cumulative negative slack: 21105728
 
-Constraints cover 7304 paths, 2 nets, and 3348 connections (93.8% coverage)
+Constraints cover 7304 paths, 2 nets, and 3298 connections (94.8% coverage)
 
 --------------------------------------------------------------------------------
 Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.2.0.134
-Wed Mar 11 19:57:22 2015
+Mon Mar 16 19:43:05 2015
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -1254,24 +1262,24 @@ BLOCK RESETPATHS
 Timing summary (Hold):
 ---------------
 
-Timing errors: 35  Score: 20059
-Cumulative negative slack: 20059
+Timing errors: 35  Score: 16594
+Cumulative negative slack: 16594
 
-Constraints cover 7304 paths, 2 nets, and 3347 connections (93.8% coverage)
+Constraints cover 7304 paths, 2 nets, and 3297 connections (94.8% coverage)
 
 
 
 Timing summary (Setup and Hold):
 ---------------
 
-Timing errors: 4102 (setup), 35 (hold)
-Score: 22502545 (setup), 20059 (hold)
-Cumulative negative slack: 22497507 (22477448+20059)
+Timing errors: 4097 (setup), 35 (hold)
+Score: 21128300 (setup), 16594 (hold)
+Cumulative negative slack: 21122322 (21105728+16594)
 --------------------------------------------------------------------------------
 
 --------------------------------------------------------------------------------
 
-Total time: 2 secs 
+Total time: 0 secs 
 
 iotiming  "Status_Status.ncd" "Status_Status.prf"
 I/O Timing Report:

@@ -12,13 +12,13 @@
             <ID>66011008</ID>
             <Severity>Warning</Severity>
             <Dynamic>
-   Signal=I2C_INST/N_4_i loads=4 clock_loads=4</Dynamic>
+   Signal=I2C_INST/un1_DOUT_1 loads=4 clock_loads=4</Dynamic>
         </Message>
         <Message>
             <ID>66011008</ID>
             <Severity>Warning</Severity>
             <Dynamic>
-   Signal=I2C_INST/N_4_i loads=4 clock_loads=4</Dynamic>
+   Signal=I2C_INST/un1_DOUT_1 loads=4 clock_loads=4</Dynamic>
         </Message>
     </Task>
     <Task name="Translate">
@@ -1254,26 +1254,26 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>MT462 :&quot;e:\work\wolf\status\bld\..\src\i2c.v&quot;:122:43:122:82|Net I2C_INST.N_4_i appears to be an unidentified clock source. Assuming default frequency.</Dynamic>
+            <Dynamic>MT462 :&quot;e:\work\wolf\status\bld\..\src\i2c.v&quot;:251:13:251:50|Net I2C_INST.un1_DOUT_1 appears to be an unidentified clock source. Assuming default frequency.</Dynamic>
             <Navigation>MT462</Navigation>
             <Navigation>e:\work\wolf\status\bld\..\src\i2c.v</Navigation>
-            <Navigation>122</Navigation>
-            <Navigation>43</Navigation>
-            <Navigation>122</Navigation>
-            <Navigation>82</Navigation>
-            <Navigation>Net I2C_INST.N_4_i appears to be an unidentified clock source. Assuming default frequency. </Navigation>
+            <Navigation>251</Navigation>
+            <Navigation>13</Navigation>
+            <Navigation>251</Navigation>
+            <Navigation>50</Navigation>
+            <Navigation>Net I2C_INST.un1_DOUT_1 appears to be an unidentified clock source. Assuming default frequency. </Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>MT462 :&quot;e:\work\wolf\status\bld\..\src\i2c.v&quot;:122:43:122:82|Net I2C_INST.N_4_i appears to be an unidentified clock source. Assuming default frequency.</Dynamic>
+            <Dynamic>MT462 :&quot;e:\work\wolf\status\bld\..\src\i2c.v&quot;:251:13:251:50|Net I2C_INST.un1_DOUT_1 appears to be an unidentified clock source. Assuming default frequency.</Dynamic>
             <Navigation>MT462</Navigation>
             <Navigation>e:\work\wolf\status\bld\..\src\i2c.v</Navigation>
-            <Navigation>122</Navigation>
-            <Navigation>43</Navigation>
-            <Navigation>122</Navigation>
-            <Navigation>82</Navigation>
-            <Navigation>Net I2C_INST.N_4_i appears to be an unidentified clock source. Assuming default frequency. </Navigation>
+            <Navigation>251</Navigation>
+            <Navigation>13</Navigation>
+            <Navigation>251</Navigation>
+            <Navigation>50</Navigation>
+            <Navigation>Net I2C_INST.un1_DOUT_1 appears to be an unidentified clock source. Assuming default frequency. </Navigation>
         </Message>
         <Message>
             <ID>2019993</ID>

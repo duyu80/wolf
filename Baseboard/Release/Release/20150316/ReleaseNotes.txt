@@ -1,0 +1,4 @@
+Status_v0103
+Fix below issue
+D-0020588    0-None    Proposed Fix    <EVT FW SSM CPLD> Mapping of Register 11h,13h and LEDs are incorrect.‍
+

@@ -79,25 +79,25 @@ original code -> new code
 Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 147MB peak: 147MB)
 
 
-Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 145MB peak: 147MB)
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 144MB peak: 147MB)
 
 
-Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 147MB peak: 148MB)
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 148MB peak: 148MB)
 
 
-Starting Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 147MB peak: 148MB)
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 148MB peak: 149MB)
 
 
-Finished Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 147MB peak: 148MB)
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 148MB peak: 149MB)
 
 
-Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 147MB peak: 148MB)
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 147MB peak: 149MB)
 
 
-Finished preparing to map (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 147MB peak: 148MB)
+Finished preparing to map (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 148MB peak: 149MB)
 
 
-Finished technology mapping (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 181MB peak: 183MB)
+Finished technology mapping (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 168MB peak: 170MB)
 
 Pass		 CPU time		Worst Slack		Luts / Registers
 ------------------------------------------------------------
@@ -106,11 +106,11 @@ Pass		 CPU time		Worst Slack		Luts / Registers
 ------------------------------------------------------------
 
 
-Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 153MB peak: 183MB)
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 151MB peak: 170MB)
 
 @N: FX164 |The option to pack flops in the IOB has not been specified 
 
-Finished restoring hierarchy (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 153MB peak: 183MB)
+Finished restoring hierarchy (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 151MB peak: 170MB)
 
 
 
@@ -125,33 +125,33 @@ Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample I
 -------------------------------------------------------------------------------------------------
 @K:CKID0002       SYSCLK              port                   543        I2C_INST_MASTER_RD_NACKio
 =================================================================================================
-====================================================== Gated/Generated Clocks ======================================================
-Clock Tree ID     Driving Element           Drive Element Type     Fanout     Sample Instance              Explanation              
-------------------------------------------------------------------------------------------------------------------------------------
-@K:CKID0001       I2C_INST.CNT8_RNIR9LQ     ORCALUT4               8          I2C_INST.CHECKSUM_OUT[0]     No clocks found on inputs
-====================================================================================================================================
+======================================================= Gated/Generated Clocks ========================================================
+Clock Tree ID     Driving Element              Drive Element Type     Fanout     Sample Instance              Explanation              
+---------------------------------------------------------------------------------------------------------------------------------------
+@K:CKID0001       I2C_INST.un1_DOUT_0_a2_1     ORCALUT4               8          I2C_INST.CHECKSUM_OUT[0]     No clocks found on inputs
+=======================================================================================================================================
 
 
 ##### END OF CLOCK OPTIMIZATION REPORT ######]
 
 Writing Analyst data base E:\work\wolf\Status\BLD\Status\Status_Status.srm
-@W: MT462 :"e:\work\wolf\status\bld\..\src\i2c.v":122:43:122:82|Net I2C_INST.N_4_i appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"e:\work\wolf\status\bld\..\src\i2c.v":251:13:251:50|Net I2C_INST.un1_DOUT_1 appears to be an unidentified clock source. Assuming default frequency. 
 
-Finished Writing Netlist Databases (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 151MB peak: 183MB)
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 150MB peak: 170MB)
 
 Writing EDIF Netlist and constraint files
-@W: MT462 :"e:\work\wolf\status\bld\..\src\i2c.v":122:43:122:82|Net I2C_INST.N_4_i appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"e:\work\wolf\status\bld\..\src\i2c.v":251:13:251:50|Net I2C_INST.un1_DOUT_1 appears to be an unidentified clock source. Assuming default frequency. 
 I-2013.09L-SP1-1 
 @N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
 
-Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 155MB peak: 183MB)
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:03s; Memory used current: 154MB peak: 170MB)
 
 @W: MT420 |Found inferred clock TOP|SYSCLK with period 1000.00ns. Please declare a user-defined clock on object "p:SYSCLK"
 
 
 
 ##### START OF TIMING REPORT #####[
-# Timing Report written on Wed Mar 11 19:57:04 2015
+# Timing Report written on Mon Mar 16 19:42:48 2015
 #
 
 
@@ -394,7 +394,7 @@ IFS1P3DX:       4
 INV:            5
 OB:             78
 OFS1P3DX:       72
-ORCALUT4:       579
+ORCALUT4:       563
 PFUMX:          5
 PUR:            1
 VHI:            7
@@ -402,9 +402,9 @@ VLO:            8
 true:           1
 Mapper successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 54MB peak: 183MB)
+At Mapper Exit (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 54MB peak: 170MB)
 
 Process took 0h:00m:04s realtime, 0h:00m:04s cputime
-# Wed Mar 11 19:57:04 2015
+# Mon Mar 16 19:42:48 2015
 
 ###########################################################]

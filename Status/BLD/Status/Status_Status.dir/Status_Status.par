@@ -4,7 +4,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2014 Lattice Semiconductor Corporation,  All rights reserved.
-Wed Mar 11 19:57:11 2015
+Mon Mar 16 19:42:54 2015
 
 D:/lscc/diamond/3.2_x64/ispfpga\bin\nt64\par -f Status_Status.p2t
 Status_Status_map.ncd Status_Status.dir Status_Status.prf -gui

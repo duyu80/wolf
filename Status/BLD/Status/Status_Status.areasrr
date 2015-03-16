@@ -21,7 +21,7 @@ I/O cells:       88
                                 INV        5       100.0
                                  OB       78       100.0
                            OFS1P3DX       72       100.0
-                           ORCALUT4      579       100.0
+                           ORCALUT4      563       100.0
                               PFUMX        5       100.0
                                 PUR        1       100.0
                                 VHI        7       100.0
@@ -35,7 +35,7 @@ SUB MODULES
                               SGPIO        1       100.0
                             SGPIO_0        1       100.0
                             
-                         TOTAL          1348           
+                         TOTAL          1332           
 ----------------------------------------------------------------------
 Report for cell I2C.netlist
      Instance path:  I2C_INST
@@ -49,11 +49,11 @@ Report for cell I2C.netlist
                             FD1S3BX        1        33.3
                             FD1S3DX       21        15.2
                                 INV        2        40.0
-                           ORCALUT4       92        15.9
+                           ORCALUT4      106        18.8
                                 VHI        1        14.3
                                 VLO        1        12.5
                             
-                         TOTAL           187           
+                         TOTAL           201           
 ----------------------------------------------------------------------
 Report for cell SGPIO_0.netlist
   Original Cell name SGPIO
@@ -65,7 +65,7 @@ Report for cell SGPIO_0.netlist
                             FD1S3BX        1        33.3
                             FD1S3DX        7         5.1
                                 INV        1        20.0
-                           ORCALUT4       72        12.4
+                           ORCALUT4       72        12.8
                                 VHI        1        14.3
                                 VLO        1        12.5
                             
@@ -81,7 +81,7 @@ Report for cell SGPIO.netlist
                             FD1S3BX        1        33.3
                             FD1S3DX        7         5.1
                                 INV        1        20.0
-                           ORCALUT4       72        12.4
+                           ORCALUT4       72        12.8
                                 VHI        1        14.3
                                 VLO        1        12.5
                             
@@ -92,21 +92,21 @@ Report for cell HEADER.netlist
                                           Cell usage:
                                cell       count    Res Usage(%)
                             FD1P3DX        5         1.5
-                           ORCALUT4        3         0.5
+                           ORCALUT4        2         0.4
                                 VHI        1        14.3
                                 VLO        1        12.5
                             
-                         TOTAL            10           
+                         TOTAL             9           
 ----------------------------------------------------------------------
 Report for cell LED.netlist
      Instance path:  LED_INST
                                           Cell usage:
                                cell       count    Res Usage(%)
-                           ORCALUT4       30         5.2
+                           ORCALUT4       22         3.9
                               PFUMX        5       100.0
                                 VLO        1        12.5
                             
-                         TOTAL            36           
+                         TOTAL            28           
 ----------------------------------------------------------------------
 Report for cell LED_CNT.netlist
      Instance path:  LED_CNT_INST
@@ -114,19 +114,19 @@ Report for cell LED_CNT.netlist
                                cell       count    Res Usage(%)
                               CCU2D       52        54.2
                             FD1S3DX      103        74.6
-                           ORCALUT4      174        30.1
+                           ORCALUT4      176        31.3
                                 VHI        1        14.3
                                 VLO        1        12.5
                             
-                         TOTAL           331           
+                         TOTAL           333           
 ----------------------------------------------------------------------
 Report for cell GPIO.netlist
      Instance path:  GPIO_INST
                                           Cell usage:
                                cell       count    Res Usage(%)
                             FD1P3DX      136        42.1
-                           ORCALUT4      136        23.5
+                           ORCALUT4      113        20.1
                                 VHI        1        14.3
                                 VLO        1        12.5
                             
-                         TOTAL           274           
+                         TOTAL           251           
