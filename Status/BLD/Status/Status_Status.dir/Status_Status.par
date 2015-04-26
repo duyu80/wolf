@@ -4,9 +4,9 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2014 Lattice Semiconductor Corporation,  All rights reserved.
-Mon Mar 16 19:42:54 2015
+Sun Apr 26 22:22:11 2015
 
-D:/lscc/diamond/3.2_x64/ispfpga\bin\nt64\par -f Status_Status.p2t
+C:/lscc/diamond/3.2_x64/ispfpga\bin\nt64\par -f Status_Status.p2t
 Status_Status_map.ncd Status_Status.dir Status_Status.prf -gui
 
 
@@ -15,11 +15,11 @@ Preference file: Status_Status.prf.
 Level/      Number      Worst       Timing      Worst       Timing      Run         NCD
 Cost [ncd]  Unrouted    Slack       Score       Slack(hold) Score(hold) Time        Status
 ----------  --------    -----       ------      ----------- ----------- -----       ------
-5_1   *     0           -           -           -           -           09          Complete        
+5_1   *     0           -           -           -           -           11          Complete        
 
 
 * : Design saved.
 
-Total (real) run time for 1-seed: 9 secs 
+Total (real) run time for 1-seed: 11 secs 
 
 par done!

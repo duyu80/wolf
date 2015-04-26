@@ -3,78 +3,78 @@ Report for cell TOP
    Instance path: TOP
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     381.00        100.0
+                                  SLIC	     372.00        100.0
                                  IOLGC	      76.00        100.0
-                                  LUT4	     567.00        100.0
+                                  LUT4	     558.00        100.0
                                  IOREG	         76        100.0
                                  IOBUF	         88        100.0
-                                PFUREG	        475        100.0
-                                RIPPLE	         96        100.0
+                                PFUREG	        467        100.0
+                                RIPPLE	         91        100.0
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-                                 SGPIO	          1        14.1
-                               SGPIO_0	          1        14.1
-                               LED_CNT	          1        32.6
-                                   LED	          1         2.9
-                                   I2C	          1        14.5
-                                HEADER	          1         0.5
-                                  GPIO	          1        21.2
+                                 SGPIO	          1        14.5
+                               SGPIO_0	          1        14.5
+                               LED_CNT	          1        32.1
+                                   LED	          1         3.2
+                                   I2C	          1        13.1
+                                HEADER	          1         0.6
+                                  GPIO	          1        22.0
 ---------------------------------------------------
 Report for cell I2C
    Instance path: TOP/I2C_INST
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      55.20        14.5
-                                  LUT4	     107.00        18.9
-                                PFUREG	         81        17.1
-                                RIPPLE	         10        10.4
+                                  SLIC	      48.60        13.1
+                                  LUT4	      97.00        17.4
+                                PFUREG	         73        15.6
+                                RIPPLE	          5         5.5
 ---------------------------------------------------
 Report for cell SGPIO_0
    Instance path: TOP/SGPIO_INST2
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      53.75        14.1
-                                  LUT4	      73.00        12.9
-                                PFUREG	         75        15.8
-                                RIPPLE	         17        17.7
+                                  SLIC	      53.83        14.5
+                                  LUT4	      73.00        13.1
+                                PFUREG	         75        16.1
+                                RIPPLE	         17        18.7
 ---------------------------------------------------
 Report for cell SGPIO
    Instance path: TOP/SGPIO_INST1
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      53.83        14.1
-                                  LUT4	      73.00        12.9
-                                PFUREG	         75        15.8
-                                RIPPLE	         17        17.7
+                                  SLIC	      53.83        14.5
+                                  LUT4	      73.00        13.1
+                                PFUREG	         75        16.1
+                                RIPPLE	         17        18.7
 ---------------------------------------------------
 Report for cell HEADER
    Instance path: TOP/HEADER_INST
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	       1.73         0.5
-                                  LUT4	       2.00         0.4
+                                  SLIC	       2.08         0.6
+                                  LUT4	       3.00         0.5
                                 PFUREG	          5         1.1
 ---------------------------------------------------
 Report for cell LED
    Instance path: TOP/LED_INST
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      11.00         2.9
-                                  LUT4	      22.00         3.9
+                                  SLIC	      12.00         3.2
+                                  LUT4	      24.00         4.3
 ---------------------------------------------------
 Report for cell LED_CNT
    Instance path: TOP/LED_CNT_INST
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     124.33        32.6
-                                  LUT4	     176.00        31.0
-                                PFUREG	        103        21.7
-                                RIPPLE	         52        54.2
+                                  SLIC	     119.42        32.1
+                                  LUT4	     175.00        31.4
+                                PFUREG	        103        22.1
+                                RIPPLE	         52        57.1
 ---------------------------------------------------
 Report for cell GPIO
    Instance path: TOP/GPIO_INST
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      80.90        21.2
-                                  LUT4	     113.00        19.9
-                                PFUREG	        136        28.6
+                                  SLIC	      81.98        22.0
+                                  LUT4	     112.00        20.1
+                                PFUREG	        136        29.1

@@ -1,7 +1,7 @@
 # Synospys Constraint Checker(syntax only), version maplat, Build 908R, built Apr 16 2014
 # Copyright (C) 1994-2013, Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use or distribution of the software is strictly prohibited.
 
-# Written on Mon Mar 16 19:42:43 2015
+# Written on Sun Apr 26 22:21:55 2015
 
 
 ##### DESIGN INFO #######################################################
@@ -24,6 +24,5 @@ Clock Summary
 Start          Requested     Requested     Clock        Clock              
 Clock          Frequency     Period        Type         Group              
 ---------------------------------------------------------------------------
-System         1.0 MHz       1000.000      system       system_clkgroup    
 TOP|SYSCLK     1.0 MHz       1000.000      inferred     Inferred_clkgroup_0
 ===========================================================================

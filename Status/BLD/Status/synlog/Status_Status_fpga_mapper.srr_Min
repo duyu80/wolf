@@ -1,7 +1,7 @@
 
 
 ##### START OF TIMING REPORT #####[
-# Timing Report written on Mon Mar 16 19:42:48 2015
+# Timing Report written on Sun Apr 26 22:22:02 2015
 #
 
 
@@ -25,8 +25,7 @@ Worst slack in design: 0.401
                    Requested     Estimated     Requested     Estimated                 Clock        Clock              
 Starting Clock     Frequency     Frequency     Period        Period        Slack       Type         Group              
 -----------------------------------------------------------------------------------------------------------------------
-TOP|SYSCLK         1.0 MHz       124.9 MHz     1000.000      8.007         498.252     inferred     Inferred_clkgroup_0
-System             1.0 MHz       1.0 MHz       1000.000      998.826       1.174       system       system_clkgroup    
+TOP|SYSCLK         1.0 MHz       122.7 MHz     1000.000      8.153         498.252     inferred     Inferred_clkgroup_0
 =======================================================================================================================
 
 
@@ -38,9 +37,7 @@ Clocks                  |    rise  to  rise   |    fall  to  fall   |    rise  t
 ------------------------------------------------------------------------------------------------------------------
 Starting    Ending      |  constraint  slack  |  constraint  slack  |  constraint  slack    |  constraint  slack  
 ------------------------------------------------------------------------------------------------------------------
-System      TOP|SYSCLK  |  0.000       1.174  |  No paths    -      |  No paths    -        |  No paths    -      
-TOP|SYSCLK  System      |  No paths    -      |  No paths    -      |  No paths    -        |  0.000       0.702  
-TOP|SYSCLK  TOP|SYSCLK  |  0.000       0.401  |  No paths    -      |  500.000     500.524  |  500.000     501.225
+TOP|SYSCLK  TOP|SYSCLK  |  0.000       0.401  |  No paths    -      |  500.000     500.524  |  500.000     501.174
 ==================================================================================================================
  Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
        'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
@@ -126,82 +123,6 @@ I2C_INST.SCL_PCLKD2     FD1S3DX     Q        Out     0.731     0.731       -
 SCL_PCLKD2              Net         -        -       -         -           2         
 I2C_INST.I2C_NACK       FD1P3DX     SP       In      0.000     0.731       -         
 =====================================================================================
-
-
-
-
-====================================
-Detailed Report for Clock: System
-====================================
-
-
-
-Starting Points with Worst Slack
-********************************
-
-                             Starting                                              Arrival          
-Instance                     Reference     Type        Pin     Net                 Time        Slack
-                             Clock                                                                  
-----------------------------------------------------------------------------------------------------
-I2C_INST.CHECKSUM_OUT[0]     System        FD1S1AY     Q       CHECKSUM_OUT[0]     0.680       1.174
-I2C_INST.CHECKSUM_OUT[1]     System        FD1S1AY     Q       CHECKSUM_OUT[1]     0.680       1.886
-I2C_INST.CHECKSUM_OUT[2]     System        FD1S1AY     Q       CHECKSUM_OUT[2]     0.680       1.886
-I2C_INST.CHECKSUM_OUT[3]     System        FD1S1AY     Q       CHECKSUM_OUT[3]     0.680       1.886
-I2C_INST.CHECKSUM_OUT[4]     System        FD1S1AY     Q       CHECKSUM_OUT[4]     0.680       1.886
-I2C_INST.CHECKSUM_OUT[5]     System        FD1S1AY     Q       CHECKSUM_OUT[5]     0.680       1.886
-I2C_INST.CHECKSUM_OUT[6]     System        FD1S1AY     Q       CHECKSUM_OUT[6]     0.680       1.886
-I2C_INST.CHECKSUM_OUT[7]     System        FD1S1AY     Q       CHECKSUM_OUT[7]     0.680       1.886
-====================================================================================================
-
-
-Ending Points with Worst Slack
-******************************
-
-                           Starting                                              Required          
-Instance                   Reference     Type        Pin     Net                 Time         Slack
-                           Clock                                                                   
----------------------------------------------------------------------------------------------------
-I2C_INST.SHIFT_DOUT[0]     System        FD1P3DX     D       SHIFT_DOUT_2[0]     -0.062       1.174
-I2C_INST.SHIFT_DOUT[1]     System        FD1P3DX     D       SHIFT_DOUT_2[1]     -0.062       1.886
-I2C_INST.SHIFT_DOUT[2]     System        FD1P3DX     D       SHIFT_DOUT_2[2]     -0.062       1.886
-I2C_INST.SHIFT_DOUT[3]     System        FD1P3DX     D       SHIFT_DOUT_2[3]     -0.062       1.886
-I2C_INST.SHIFT_DOUT[4]     System        FD1P3DX     D       SHIFT_DOUT_2[4]     -0.062       1.886
-I2C_INST.SHIFT_DOUT[5]     System        FD1P3DX     D       SHIFT_DOUT_2[5]     -0.062       1.886
-I2C_INST.SHIFT_DOUT[6]     System        FD1P3DX     D       SHIFT_DOUT_2[6]     -0.062       1.886
-I2C_INST.SHIFT_DOUT[7]     System        FD1P3DX     D       SHIFT_DOUT_2[7]     -0.062       1.886
-===================================================================================================
-
-
-
-Worst Path Information
-***********************
-
-
-Path information for path number 1: 
-    Propagation time:                        1.112
-    + Clock delay at starting point:         0.000 (ideal)
--0.000
-    - Requested Period:                      0.000
-    - Hold time:                             -0.062
-    - Clock delay at ending point:           0.000 (ideal)
-    = Slack (non-critical) :                 1.174
-
-    Number of logic level(s):                1
-    Starting point:                          I2C_INST.CHECKSUM_OUT[0] / Q
-    Ending point:                            I2C_INST.SHIFT_DOUT[0] / D
-    The start point is clocked by            System [rising] on pin CK
-    The end   point is clocked by            TOP|SYSCLK [rising] on pin CK
-
-Instance / Net                              Pin      Pin               Arrival     No. of    
-Name                           Type         Name     Dir     Delay     Time        Fan Out(s)
----------------------------------------------------------------------------------------------
-I2C_INST.CHECKSUM_OUT[0]       FD1S1AY      Q        Out     0.680     0.680       -         
-CHECKSUM_OUT[0]                Net          -        -       -         -           1         
-I2C_INST.SHIFT_DOUT_RNO[0]     ORCALUT4     A        In      0.000     0.680       -         
-I2C_INST.SHIFT_DOUT_RNO[0]     ORCALUT4     Z        Out     0.432     1.112       -         
-SHIFT_DOUT_2[0]                Net          -        -       -         -           1         
-I2C_INST.SHIFT_DOUT[0]         FD1P3DX      D        In      0.000     1.112       -         
-=============================================================================================
 
 
 

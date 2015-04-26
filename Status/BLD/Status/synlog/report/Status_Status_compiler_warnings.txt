@@ -1,72 +1,73 @@
-@W: CG360 :"E:\work\wolf\Status\BLD\..\SRC\I2C.v":53:8:53:19|No assignment to wire TIMER_OVFLOW
-@W: CG133 :"E:\work\wolf\Status\BLD\..\SRC\I2C.v":54:7:54:17|No assignment to TIMER_CLR_N
-@W: CL169 :"E:\work\wolf\Status\BLD\..\SRC\I2C.v":257:0:257:5|Pruning register RD_END3 
-@W: CL169 :"E:\work\wolf\Status\BLD\..\SRC\I2C.v":257:0:257:5|Pruning register WR_END1 
-@W: CL169 :"E:\work\wolf\Status\BLD\..\SRC\I2C.v":257:0:257:5|Pruning register WR_END2 
-@W: CL169 :"E:\work\wolf\Status\BLD\..\SRC\I2C.v":257:0:257:5|Pruning register PORT_CSD2[15:0] 
-@W: CL169 :"E:\work\wolf\Status\BLD\..\SRC\I2C.v":242:0:242:5|Pruning register CHECKSUM_IN[7:0] 
-@W: CL169 :"E:\work\wolf\Status\BLD\..\SRC\I2C.v":178:0:178:5|Pruning register CNT9 
-@W: CL169 :"E:\work\wolf\Status\BLD\..\SRC\I2C.v":162:0:162:5|Pruning register START 
-@W: CL169 :"E:\work\wolf\Status\BLD\..\SRC\I2C.v":162:0:162:5|Pruning register STOP 
-@W: CL169 :"E:\work\wolf\Status\BLD\..\SRC\I2C.v":141:0:141:5|Pruning register SCL_PCLKD3 
-@W: CL169 :"E:\work\wolf\Status\BLD\..\SRC\I2C.v":141:0:141:5|Pruning register SDA_NCLK 
-@W: CL169 :"E:\work\wolf\Status\BLD\..\SRC\I2C.v":141:0:141:5|Pruning register SDA_PCLK 
-@W: CG360 :"E:\work\wolf\Status\BLD\..\SRC\TOP.v":114:27:114:31|No assignment to wire DIN_2
-@W: CG360 :"E:\work\wolf\Status\BLD\..\SRC\TOP.v":114:34:114:38|No assignment to wire DIN_3
-@W: CG360 :"E:\work\wolf\Status\BLD\..\SRC\TOP.v":114:41:114:45|No assignment to wire DIN_4
-@W: CG360 :"E:\work\wolf\Status\BLD\..\SRC\TOP.v":114:49:114:53|No assignment to wire DIN_5
-@W: CG360 :"E:\work\wolf\Status\BLD\..\SRC\TOP.v":114:56:114:60|No assignment to wire DIN_6
-@W: CG360 :"E:\work\wolf\Status\BLD\..\SRC\TOP.v":114:63:114:67|No assignment to wire DIN_7
-@W: CG360 :"E:\work\wolf\Status\BLD\..\SRC\TOP.v":115:16:115:20|No assignment to wire DIN_8
-@W: CG360 :"E:\work\wolf\Status\BLD\..\SRC\TOP.v":115:23:115:27|No assignment to wire DIN_9
-@W: CG360 :"E:\work\wolf\Status\BLD\..\SRC\TOP.v":115:30:115:34|No assignment to wire DIN_A
-@W: CG360 :"E:\work\wolf\Status\BLD\..\SRC\TOP.v":115:37:115:41|No assignment to wire DIN_B
-@W: CG360 :"E:\work\wolf\Status\BLD\..\SRC\TOP.v":115:44:115:48|No assignment to wire DIN_C
-@W: CG360 :"E:\work\wolf\Status\BLD\..\SRC\TOP.v":115:51:115:55|No assignment to wire DIN_D
-@W: CG360 :"E:\work\wolf\Status\BLD\..\SRC\TOP.v":115:58:115:62|No assignment to wire DIN_E
-@W: CG360 :"E:\work\wolf\Status\BLD\..\SRC\TOP.v":115:65:115:69|No assignment to wire DIN_F
-@W: CG360 :"E:\work\wolf\Status\BLD\..\SRC\TOP.v":116:7:116:11|No assignment to wire WR_EN
-@W: CL156 :"E:\work\wolf\Status\BLD\..\SRC\TOP.v":114:27:114:31|*Input DIN_2[7:0] to expression [instance] has undriven bits that are tied to 0 -- simulation mismatch possible.
-@W: CL156 :"E:\work\wolf\Status\BLD\..\SRC\TOP.v":114:34:114:38|*Input DIN_3[7:0] to expression [instance] has undriven bits that are tied to 0 -- simulation mismatch possible.
-@W: CL156 :"E:\work\wolf\Status\BLD\..\SRC\TOP.v":114:41:114:45|*Input DIN_4[7:0] to expression [instance] has undriven bits that are tied to 0 -- simulation mismatch possible.
-@W: CL156 :"E:\work\wolf\Status\BLD\..\SRC\TOP.v":114:49:114:53|*Input DIN_5[7:0] to expression [instance] has undriven bits that are tied to 0 -- simulation mismatch possible.
-@W: CL156 :"E:\work\wolf\Status\BLD\..\SRC\TOP.v":114:56:114:60|*Input DIN_6[7:0] to expression [instance] has undriven bits that are tied to 0 -- simulation mismatch possible.
-@W: CL156 :"E:\work\wolf\Status\BLD\..\SRC\TOP.v":114:63:114:67|*Input DIN_7[7:0] to expression [instance] has undriven bits that are tied to 0 -- simulation mismatch possible.
-@W: CL156 :"E:\work\wolf\Status\BLD\..\SRC\TOP.v":115:16:115:20|*Input DIN_8[7:0] to expression [instance] has undriven bits that are tied to 0 -- simulation mismatch possible.
-@W: CL156 :"E:\work\wolf\Status\BLD\..\SRC\TOP.v":115:23:115:27|*Input DIN_9[7:0] to expression [instance] has undriven bits that are tied to 0 -- simulation mismatch possible.
-@W: CL156 :"E:\work\wolf\Status\BLD\..\SRC\TOP.v":115:30:115:34|*Input DIN_A[7:0] to expression [instance] has undriven bits that are tied to 0 -- simulation mismatch possible.
-@W: CL156 :"E:\work\wolf\Status\BLD\..\SRC\TOP.v":115:37:115:41|*Input DIN_B[7:0] to expression [instance] has undriven bits that are tied to 0 -- simulation mismatch possible.
-@W: CL156 :"E:\work\wolf\Status\BLD\..\SRC\TOP.v":115:44:115:48|*Input DIN_C[7:0] to expression [instance] has undriven bits that are tied to 0 -- simulation mismatch possible.
-@W: CL156 :"E:\work\wolf\Status\BLD\..\SRC\TOP.v":115:51:115:55|*Input DIN_D[7:0] to expression [instance] has undriven bits that are tied to 0 -- simulation mismatch possible.
-@W: CL156 :"E:\work\wolf\Status\BLD\..\SRC\TOP.v":115:58:115:62|*Input DIN_E[7:0] to expression [instance] has undriven bits that are tied to 0 -- simulation mismatch possible.
-@W: CL156 :"E:\work\wolf\Status\BLD\..\SRC\TOP.v":115:65:115:69|*Input DIN_F[7:0] to expression [instance] has undriven bits that are tied to 0 -- simulation mismatch possible.
-@W: CL190 :"E:\work\wolf\Status\BLD\..\SRC\SGPIO.v":110:0:110:5|Optimizing register bit CNT[25] to a constant 0
-@W: CL190 :"E:\work\wolf\Status\BLD\..\SRC\SGPIO.v":110:0:110:5|Optimizing register bit CNT[26] to a constant 0
-@W: CL190 :"E:\work\wolf\Status\BLD\..\SRC\SGPIO.v":110:0:110:5|Optimizing register bit CNT[27] to a constant 0
-@W: CL190 :"E:\work\wolf\Status\BLD\..\SRC\SGPIO.v":110:0:110:5|Optimizing register bit CNT[28] to a constant 0
-@W: CL190 :"E:\work\wolf\Status\BLD\..\SRC\SGPIO.v":110:0:110:5|Optimizing register bit CNT[29] to a constant 0
-@W: CL190 :"E:\work\wolf\Status\BLD\..\SRC\SGPIO.v":110:0:110:5|Optimizing register bit CNT[30] to a constant 0
-@W: CL190 :"E:\work\wolf\Status\BLD\..\SRC\SGPIO.v":110:0:110:5|Optimizing register bit CNT[31] to a constant 0
-@W: CL190 :"E:\work\wolf\Status\BLD\..\SRC\SGPIO.v":62:0:62:5|Optimizing register bit HDD_CNT[6] to a constant 0
-@W: CL190 :"E:\work\wolf\Status\BLD\..\SRC\SGPIO.v":62:0:62:5|Optimizing register bit HDD_CNT[7] to a constant 0
-@W: CL279 :"E:\work\wolf\Status\BLD\..\SRC\SGPIO.v":62:0:62:5|Pruning register bits 7 to 6 of HDD_CNT[7:0] 
-@W: CL279 :"E:\work\wolf\Status\BLD\..\SRC\SGPIO.v":110:0:110:5|Pruning register bits 31 to 25 of CNT[31:0] 
-@W: CL279 :"E:\work\wolf\Status\BLD\..\SRC\HEADER.v":29:0:29:5|Pruning register bits 7 to 6 of DOUT[7:0] 
-@W: CL260 :"E:\work\wolf\Status\BLD\..\SRC\HEADER.v":29:0:29:5|Pruning register bit 4 of DOUT[7:0] 
-@W: CL246 :"E:\work\wolf\Status\BLD\..\SRC\HEADER.v":13:33:13:42|Input port bits 15 to 6 of OFFSET_SEL[15:0] are unused
-@W: CL247 :"E:\work\wolf\Status\BLD\..\SRC\HEADER.v":13:33:13:42|Input port bit 4 of OFFSET_SEL[15:0] is unused
-@W: CL159 :"E:\work\wolf\Status\BLD\..\SRC\HEADER.v":16:32:16:34|Input DIN is unused
-@W: CL159 :"E:\work\wolf\Status\BLD\..\SRC\LED.v":11:19:11:24|Input SYSCLK is unused
-@W: CL159 :"E:\work\wolf\Status\BLD\..\SRC\LED.v":12:19:12:25|Input RESET_N is unused
-@W: CL190 :"E:\work\wolf\Status\BLD\..\SRC\LED_CNT.v":33:0:33:5|Optimizing register bit CNT[24] to a constant 0
-@W: CL190 :"E:\work\wolf\Status\BLD\..\SRC\LED_CNT.v":53:0:53:5|Optimizing register bit CNT_500MS[24] to a constant 0
-@W: CL190 :"E:\work\wolf\Status\BLD\..\SRC\LED_CNT.v":53:0:53:5|Optimizing register bit CNT_3500MS[26] to a constant 0
-@W: CL190 :"E:\work\wolf\Status\BLD\..\SRC\LED_CNT.v":74:0:74:5|Optimizing register bit CNT_07S[23] to a constant 0
-@W: CL190 :"E:\work\wolf\Status\BLD\..\SRC\LED_CNT.v":74:0:74:5|Optimizing register bit CNT_07S[24] to a constant 0
-@W: CL190 :"E:\work\wolf\Status\BLD\..\SRC\LED_CNT.v":74:0:74:5|Optimizing register bit CNT_07S[25] to a constant 0
-@W: CL190 :"E:\work\wolf\Status\BLD\..\SRC\LED_CNT.v":74:0:74:5|Optimizing register bit CNT_07S[26] to a constant 0
-@W: CL279 :"E:\work\wolf\Status\BLD\..\SRC\LED_CNT.v":74:0:74:5|Pruning register bits 26 to 23 of CNT_07S[26:0] 
-@W: CL260 :"E:\work\wolf\Status\BLD\..\SRC\LED_CNT.v":53:0:53:5|Pruning register bit 26 of CNT_3500MS[26:0] 
-@W: CL260 :"E:\work\wolf\Status\BLD\..\SRC\LED_CNT.v":53:0:53:5|Pruning register bit 24 of CNT_500MS[24:0] 
-@W: CL260 :"E:\work\wolf\Status\BLD\..\SRC\LED_CNT.v":33:0:33:5|Pruning register bit 24 of CNT[24:0] 
+@W: CG360 :"F:\project\wolf\Status\BLD\..\SRC\I2C.v":53:8:53:19|No assignment to wire TIMER_OVFLOW
+@W: CG133 :"F:\project\wolf\Status\BLD\..\SRC\I2C.v":54:7:54:17|No assignment to TIMER_CLR_N
+@W: CL169 :"F:\project\wolf\Status\BLD\..\SRC\I2C.v":257:0:257:5|Pruning register RD_END3 
+@W: CL169 :"F:\project\wolf\Status\BLD\..\SRC\I2C.v":257:0:257:5|Pruning register WR_END1 
+@W: CL169 :"F:\project\wolf\Status\BLD\..\SRC\I2C.v":257:0:257:5|Pruning register WR_END2 
+@W: CL169 :"F:\project\wolf\Status\BLD\..\SRC\I2C.v":257:0:257:5|Pruning register PORT_CSD2[15:0] 
+@W: CL169 :"F:\project\wolf\Status\BLD\..\SRC\I2C.v":242:0:242:5|Pruning register CHECKSUM_IN[7:0] 
+@W: CL169 :"F:\project\wolf\Status\BLD\..\SRC\I2C.v":178:0:178:5|Pruning register CNT9 
+@W: CL169 :"F:\project\wolf\Status\BLD\..\SRC\I2C.v":162:0:162:5|Pruning register START 
+@W: CL169 :"F:\project\wolf\Status\BLD\..\SRC\I2C.v":162:0:162:5|Pruning register STOP 
+@W: CL169 :"F:\project\wolf\Status\BLD\..\SRC\I2C.v":141:0:141:5|Pruning register SCL_PCLKD3 
+@W: CL169 :"F:\project\wolf\Status\BLD\..\SRC\I2C.v":141:0:141:5|Pruning register SDA_NCLK 
+@W: CL169 :"F:\project\wolf\Status\BLD\..\SRC\I2C.v":141:0:141:5|Pruning register SDA_PCLK 
+@W: CG360 :"F:\project\wolf\Status\BLD\..\SRC\TOP.v":114:27:114:31|No assignment to wire DIN_2
+@W: CG360 :"F:\project\wolf\Status\BLD\..\SRC\TOP.v":114:34:114:38|No assignment to wire DIN_3
+@W: CG360 :"F:\project\wolf\Status\BLD\..\SRC\TOP.v":114:41:114:45|No assignment to wire DIN_4
+@W: CG360 :"F:\project\wolf\Status\BLD\..\SRC\TOP.v":114:49:114:53|No assignment to wire DIN_5
+@W: CG360 :"F:\project\wolf\Status\BLD\..\SRC\TOP.v":114:56:114:60|No assignment to wire DIN_6
+@W: CG360 :"F:\project\wolf\Status\BLD\..\SRC\TOP.v":114:63:114:67|No assignment to wire DIN_7
+@W: CG360 :"F:\project\wolf\Status\BLD\..\SRC\TOP.v":115:16:115:20|No assignment to wire DIN_8
+@W: CG360 :"F:\project\wolf\Status\BLD\..\SRC\TOP.v":115:23:115:27|No assignment to wire DIN_9
+@W: CG360 :"F:\project\wolf\Status\BLD\..\SRC\TOP.v":115:30:115:34|No assignment to wire DIN_A
+@W: CG360 :"F:\project\wolf\Status\BLD\..\SRC\TOP.v":115:37:115:41|No assignment to wire DIN_B
+@W: CG360 :"F:\project\wolf\Status\BLD\..\SRC\TOP.v":115:44:115:48|No assignment to wire DIN_C
+@W: CG360 :"F:\project\wolf\Status\BLD\..\SRC\TOP.v":115:51:115:55|No assignment to wire DIN_D
+@W: CG360 :"F:\project\wolf\Status\BLD\..\SRC\TOP.v":115:58:115:62|No assignment to wire DIN_E
+@W: CG360 :"F:\project\wolf\Status\BLD\..\SRC\TOP.v":115:65:115:69|No assignment to wire DIN_F
+@W: CG360 :"F:\project\wolf\Status\BLD\..\SRC\TOP.v":116:7:116:11|No assignment to wire WR_EN
+@W: CL156 :"F:\project\wolf\Status\BLD\..\SRC\TOP.v":114:27:114:31|*Input DIN_2[7:0] to expression [instance] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL156 :"F:\project\wolf\Status\BLD\..\SRC\TOP.v":114:34:114:38|*Input DIN_3[7:0] to expression [instance] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL156 :"F:\project\wolf\Status\BLD\..\SRC\TOP.v":114:41:114:45|*Input DIN_4[7:0] to expression [instance] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL156 :"F:\project\wolf\Status\BLD\..\SRC\TOP.v":114:49:114:53|*Input DIN_5[7:0] to expression [instance] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL156 :"F:\project\wolf\Status\BLD\..\SRC\TOP.v":114:56:114:60|*Input DIN_6[7:0] to expression [instance] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL156 :"F:\project\wolf\Status\BLD\..\SRC\TOP.v":114:63:114:67|*Input DIN_7[7:0] to expression [instance] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL156 :"F:\project\wolf\Status\BLD\..\SRC\TOP.v":115:16:115:20|*Input DIN_8[7:0] to expression [instance] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL156 :"F:\project\wolf\Status\BLD\..\SRC\TOP.v":115:23:115:27|*Input DIN_9[7:0] to expression [instance] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL156 :"F:\project\wolf\Status\BLD\..\SRC\TOP.v":115:30:115:34|*Input DIN_A[7:0] to expression [instance] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL156 :"F:\project\wolf\Status\BLD\..\SRC\TOP.v":115:37:115:41|*Input DIN_B[7:0] to expression [instance] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL156 :"F:\project\wolf\Status\BLD\..\SRC\TOP.v":115:44:115:48|*Input DIN_C[7:0] to expression [instance] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL156 :"F:\project\wolf\Status\BLD\..\SRC\TOP.v":115:51:115:55|*Input DIN_D[7:0] to expression [instance] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL156 :"F:\project\wolf\Status\BLD\..\SRC\TOP.v":115:58:115:62|*Input DIN_E[7:0] to expression [instance] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL156 :"F:\project\wolf\Status\BLD\..\SRC\TOP.v":115:65:115:69|*Input DIN_F[7:0] to expression [instance] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL190 :"F:\project\wolf\Status\BLD\..\SRC\SGPIO.v":110:0:110:5|Optimizing register bit CNT[25] to a constant 0
+@W: CL190 :"F:\project\wolf\Status\BLD\..\SRC\SGPIO.v":110:0:110:5|Optimizing register bit CNT[26] to a constant 0
+@W: CL190 :"F:\project\wolf\Status\BLD\..\SRC\SGPIO.v":110:0:110:5|Optimizing register bit CNT[27] to a constant 0
+@W: CL190 :"F:\project\wolf\Status\BLD\..\SRC\SGPIO.v":110:0:110:5|Optimizing register bit CNT[28] to a constant 0
+@W: CL190 :"F:\project\wolf\Status\BLD\..\SRC\SGPIO.v":110:0:110:5|Optimizing register bit CNT[29] to a constant 0
+@W: CL190 :"F:\project\wolf\Status\BLD\..\SRC\SGPIO.v":110:0:110:5|Optimizing register bit CNT[30] to a constant 0
+@W: CL190 :"F:\project\wolf\Status\BLD\..\SRC\SGPIO.v":110:0:110:5|Optimizing register bit CNT[31] to a constant 0
+@W: CL190 :"F:\project\wolf\Status\BLD\..\SRC\SGPIO.v":62:0:62:5|Optimizing register bit HDD_CNT[6] to a constant 0
+@W: CL190 :"F:\project\wolf\Status\BLD\..\SRC\SGPIO.v":62:0:62:5|Optimizing register bit HDD_CNT[7] to a constant 0
+@W: CL279 :"F:\project\wolf\Status\BLD\..\SRC\SGPIO.v":62:0:62:5|Pruning register bits 7 to 6 of HDD_CNT[7:0] 
+@W: CL279 :"F:\project\wolf\Status\BLD\..\SRC\SGPIO.v":110:0:110:5|Pruning register bits 31 to 25 of CNT[31:0] 
+@W: CL190 :"F:\project\wolf\Status\BLD\..\SRC\HEADER.v":29:0:29:5|Optimizing register bit DOUT[3] to a constant 0
+@W: CL260 :"F:\project\wolf\Status\BLD\..\SRC\HEADER.v":29:0:29:5|Pruning register bit 3 of DOUT[7:0] 
+@W: CL260 :"F:\project\wolf\Status\BLD\..\SRC\HEADER.v":29:0:29:5|Pruning register bit 7 of DOUT[7:4] 
+@W: CL246 :"F:\project\wolf\Status\BLD\..\SRC\HEADER.v":13:33:13:42|Input port bits 15 to 6 of OFFSET_SEL[15:0] are unused
+@W: CL247 :"F:\project\wolf\Status\BLD\..\SRC\HEADER.v":13:33:13:42|Input port bit 4 of OFFSET_SEL[15:0] is unused
+@W: CL159 :"F:\project\wolf\Status\BLD\..\SRC\HEADER.v":16:32:16:34|Input DIN is unused
+@W: CL159 :"F:\project\wolf\Status\BLD\..\SRC\LED.v":11:19:11:24|Input SYSCLK is unused
+@W: CL159 :"F:\project\wolf\Status\BLD\..\SRC\LED.v":12:19:12:25|Input RESET_N is unused
+@W: CL190 :"F:\project\wolf\Status\BLD\..\SRC\LED_CNT.v":33:0:33:5|Optimizing register bit CNT[24] to a constant 0
+@W: CL190 :"F:\project\wolf\Status\BLD\..\SRC\LED_CNT.v":53:0:53:5|Optimizing register bit CNT_500MS[24] to a constant 0
+@W: CL190 :"F:\project\wolf\Status\BLD\..\SRC\LED_CNT.v":53:0:53:5|Optimizing register bit CNT_3500MS[26] to a constant 0
+@W: CL190 :"F:\project\wolf\Status\BLD\..\SRC\LED_CNT.v":74:0:74:5|Optimizing register bit CNT_07S[23] to a constant 0
+@W: CL190 :"F:\project\wolf\Status\BLD\..\SRC\LED_CNT.v":74:0:74:5|Optimizing register bit CNT_07S[24] to a constant 0
+@W: CL190 :"F:\project\wolf\Status\BLD\..\SRC\LED_CNT.v":74:0:74:5|Optimizing register bit CNT_07S[25] to a constant 0
+@W: CL190 :"F:\project\wolf\Status\BLD\..\SRC\LED_CNT.v":74:0:74:5|Optimizing register bit CNT_07S[26] to a constant 0
+@W: CL279 :"F:\project\wolf\Status\BLD\..\SRC\LED_CNT.v":74:0:74:5|Pruning register bits 26 to 23 of CNT_07S[26:0] 
+@W: CL260 :"F:\project\wolf\Status\BLD\..\SRC\LED_CNT.v":53:0:53:5|Pruning register bit 26 of CNT_3500MS[26:0] 
+@W: CL260 :"F:\project\wolf\Status\BLD\..\SRC\LED_CNT.v":53:0:53:5|Pruning register bit 24 of CNT_500MS[24:0] 
+@W: CL260 :"F:\project\wolf\Status\BLD\..\SRC\LED_CNT.v":33:0:33:5|Pruning register bit 24 of CNT[24:0] 
 

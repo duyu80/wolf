@@ -1,0 +1,4 @@
+﻿Status_v0104
+Fix below issue
+<EVT FW BB/SSM CPLD> Sequential read doesn't take effect in SSM CPLD
+

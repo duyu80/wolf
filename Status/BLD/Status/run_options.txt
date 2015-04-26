@@ -1,18 +1,18 @@
 #--  Synopsys, Inc.
 #--  Version I-2013.09L-SP1-1 
-#--  Project file E:\work\wolf\Status\BLD\Status\run_options.txt
-#--  Written on Mon Mar 16 19:42:40 2015
+#--  Project file F:\project\wolf\Status\BLD\Status\run_options.txt
+#--  Written on Sun Apr 26 22:21:52 2015
 
 
 #project files
-add_file -verilog "E:/work/wolf/Status/BLD/../SRC/GPIO.v"
-add_file -verilog "E:/work/wolf/Status/BLD/../SRC/HEADER.v"
-add_file -verilog "E:/work/wolf/Status/BLD/../SRC/I2C.v"
-add_file -verilog "E:/work/wolf/Status/BLD/../SRC/LED.v"
-add_file -verilog "E:/work/wolf/Status/BLD/../SRC/LED_CNT.v"
-add_file -verilog "E:/work/wolf/Status/BLD/../SRC/SGPIO.v"
-add_file -verilog "E:/work/wolf/Status/BLD/../SRC/status_define.v"
-add_file -verilog "E:/work/wolf/Status/BLD/../SRC/TOP.v"
+add_file -verilog "F:/project/wolf/Status/BLD/../SRC/GPIO.v"
+add_file -verilog "F:/project/wolf/Status/BLD/../SRC/HEADER.v"
+add_file -verilog "F:/project/wolf/Status/BLD/../SRC/I2C.v"
+add_file -verilog "F:/project/wolf/Status/BLD/../SRC/LED.v"
+add_file -verilog "F:/project/wolf/Status/BLD/../SRC/LED_CNT.v"
+add_file -verilog "F:/project/wolf/Status/BLD/../SRC/SGPIO.v"
+add_file -verilog "F:/project/wolf/Status/BLD/../SRC/status_define.v"
+add_file -verilog "F:/project/wolf/Status/BLD/../SRC/TOP.v"
 
 
 
@@ -24,7 +24,7 @@ impl -add Status -type fpga
 
 set_option -vlog_std v2001
 set_option -project_relative_includes 1
-set_option -include_path {E:/work/wolf/Status/BLD}
+set_option -include_path {F:/project/wolf/Status/BLD}
 
 #device options
 set_option -technology MACHXO2
@@ -72,5 +72,5 @@ set_option -write_apr_constraint 1
 project -result_file "./Status_Status.edi"
 
 #set log file 
-set_option log_file "E:/work/wolf/Status/BLD/Status/Status_Status.srf" 
+set_option log_file "F:/project/wolf/Status/BLD/Status/Status_Status.srf" 
 impl -active "Status"

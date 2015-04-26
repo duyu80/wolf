@@ -1,6 +1,6 @@
 @N: MF248 |Running in 64-bit mode.
 @N: MF666 |Clock conversion enabled 
-@N: BN362 :"e:\work\wolf\status\bld\..\src\sgpio.v":62:0:62:5|Removing sequential instance FLT_LED[35:0] of view:PrimLib.dffre(prim) in hierarchy view:work.SGPIO_SGPIO_INST1(verilog) because there are no references to its outputs 
-@N: BN362 :"e:\work\wolf\status\bld\..\src\sgpio.v":62:0:62:5|Removing sequential instance FLT_LED[35:0] of view:PrimLib.dffre(prim) in hierarchy view:work.SGPIO_SGPIO_INST2(verilog) because there are no references to its outputs 
-@N: BN362 :"e:\work\wolf\status\bld\..\src\sgpio.v":62:0:62:5|Removing sequential instance FLT_LED_TMP[35:0] of view:PrimLib.dffre(prim) in hierarchy view:work.SGPIO_SGPIO_INST1(verilog) because there are no references to its outputs 
-@N: BN362 :"e:\work\wolf\status\bld\..\src\sgpio.v":62:0:62:5|Removing sequential instance FLT_LED_TMP[35:0] of view:PrimLib.dffre(prim) in hierarchy view:work.SGPIO_SGPIO_INST2(verilog) because there are no references to its outputs 
+@N: BN362 :"f:\project\wolf\status\bld\..\src\sgpio.v":62:0:62:5|Removing sequential instance FLT_LED[35:0] of view:PrimLib.dffre(prim) in hierarchy view:work.SGPIO_SGPIO_INST1(verilog) because there are no references to its outputs 
+@N: BN362 :"f:\project\wolf\status\bld\..\src\sgpio.v":62:0:62:5|Removing sequential instance FLT_LED[35:0] of view:PrimLib.dffre(prim) in hierarchy view:work.SGPIO_SGPIO_INST2(verilog) because there are no references to its outputs 
+@N: BN362 :"f:\project\wolf\status\bld\..\src\sgpio.v":62:0:62:5|Removing sequential instance FLT_LED_TMP[35:0] of view:PrimLib.dffre(prim) in hierarchy view:work.SGPIO_SGPIO_INST1(verilog) because there are no references to its outputs 
+@N: BN362 :"f:\project\wolf\status\bld\..\src\sgpio.v":62:0:62:5|Removing sequential instance FLT_LED_TMP[35:0] of view:PrimLib.dffre(prim) in hierarchy view:work.SGPIO_SGPIO_INST2(verilog) because there are no references to its outputs 

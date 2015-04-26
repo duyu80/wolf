@@ -43,21 +43,21 @@ set_option -resolve_multiple_driver 0
 
 
 #-- add_file options
-set_option -include_path {E:/work/wolf/Status/BLD}
-add_file -verilog {E:/work/wolf/Status/BLD/../SRC/GPIO.v}
-add_file -verilog {E:/work/wolf/Status/BLD/../SRC/HEADER.v}
-add_file -verilog {E:/work/wolf/Status/BLD/../SRC/I2C.v}
-add_file -verilog {E:/work/wolf/Status/BLD/../SRC/LED.v}
-add_file -verilog {E:/work/wolf/Status/BLD/../SRC/LED_CNT.v}
-add_file -verilog {E:/work/wolf/Status/BLD/../SRC/SGPIO.v}
-add_file -verilog {E:/work/wolf/Status/BLD/../SRC/status_define.v}
-add_file -verilog {E:/work/wolf/Status/BLD/../SRC/TOP.v}
+set_option -include_path {F:/project/wolf/Status/BLD}
+add_file -verilog {F:/project/wolf/Status/BLD/../SRC/GPIO.v}
+add_file -verilog {F:/project/wolf/Status/BLD/../SRC/HEADER.v}
+add_file -verilog {F:/project/wolf/Status/BLD/../SRC/I2C.v}
+add_file -verilog {F:/project/wolf/Status/BLD/../SRC/LED.v}
+add_file -verilog {F:/project/wolf/Status/BLD/../SRC/LED_CNT.v}
+add_file -verilog {F:/project/wolf/Status/BLD/../SRC/SGPIO.v}
+add_file -verilog {F:/project/wolf/Status/BLD/../SRC/status_define.v}
+add_file -verilog {F:/project/wolf/Status/BLD/../SRC/TOP.v}
 
 #-- top module name
 set_option -top_module TOP
 
 #-- set result format/file last
-project -result_file {E:/work/wolf/Status/BLD/Status/Status_Status.edi}
+project -result_file {F:/project/wolf/Status/BLD/Status/Status_Status.edi}
 
 #-- error message log file
 project -log_file {Status_Status.srf}

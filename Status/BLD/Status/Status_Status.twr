@@ -6,14 +6,14 @@ Vendor:      LATTICE
 Device:      LCMXO2-2000HC
 Package:     TQFP144
 Performance: 4
-Loading device for application trce from file 'xo2c2000.nph' in environment: D:/lscc/diamond/3.2_x64/ispfpga.
+Loading device for application trce from file 'xo2c2000.nph' in environment: C:/lscc/diamond/3.2_x64/ispfpga.
 Package Status:                     Final          Version 1.41
 Performance Hardware Data Status:   Final          Version 25.4
 Setup and Hold Report
 
 --------------------------------------------------------------------------------
 Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.2.0.134
-Mon Mar 16 19:43:04 2015
+Sun Apr 26 22:22:24 2015
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -43,493 +43,7 @@ Preference: FREQUENCY NET "SYSCLK_c" 269.469000 MHz ;
 --------------------------------------------------------------------------------
 
 
-Error: The following path exceeds requirements by 8.224ns (weighted slack = -1017.308ns)
-
- Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
-
-   Source:         FF         Q              I2C_INST/CHECKSUM_OUT[7]  (from I2C_INST/un1_DOUT_1 +)
-   Destination:    FF         Data in        I2C_INST/SHIFT_DOUT[7]  (to SYSCLK_c +)
-
-   Delay:               4.247ns  (34.0% logic, 66.0% route), 3 logic levels.
-
- Constraint Details:
-
-      4.247ns physical path delay I2C_INST/SLICE_0 to I2C_INST/SLICE_196 exceeds
-      (delay constraint based on source clock period of 2.883ns and destination clock period of 3.711ns)
-      0.030ns delay constraint less
-      3.841ns skew and
-      0.166ns DIN_SET requirement (totaling -3.977ns) by 8.224ns
-
- Physical Path Details:
-
-      Data path I2C_INST/SLICE_0 to I2C_INST/SLICE_196:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.452     R3C18A.CLK to      R3C18A.Q0 I2C_INST/SLICE_0 (from I2C_INST/un1_DOUT_1)
-ROUTE         1     1.801      R3C18A.Q0 to      R4C16B.A1 I2C_INST/CHECKSUM_OUT[7]
-CTOF_DEL    ---     0.495      R4C16B.A1 to      R4C16B.F1 SLICE_401
-ROUTE         1     1.004      R4C16B.F1 to      R4C16C.B1 I2C_INST/SHIFT_DOUT_2_1_0[7]
-CTOF_DEL    ---     0.495      R4C16C.B1 to      R4C16C.F1 I2C_INST/SLICE_196
-ROUTE         1     0.000      R4C16C.F1 to     R4C16C.DI1 I2C_INST/SHIFT_DOUT_2[7] (to SYSCLK_c)
-                  --------
-                    4.247   (34.0% logic, 66.0% route), 3 logic levels.
-
- Clock Skew Details: 
-
-      Source Clock Path SYSCLK to I2C_INST/SLICE_0:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-PADI_DEL    ---     1.132        128.PAD to      128.PADDI SYSCLK
-ROUTE       330     2.379      128.PADDI to     R4C21C.CLK SYSCLK_c
-REG_DEL     ---     0.452     R4C21C.CLK to      R4C21C.Q0 I2C_INST/SLICE_170
-ROUTE         3     1.349      R4C21C.Q0 to      R6C20A.B0 I2C_INST/CNT8
-CTOF_DEL    ---     0.495      R6C20A.B0 to      R6C20A.F0 SLICE_404
-ROUTE         4     1.545      R6C20A.F0 to     R3C18A.CLK I2C_INST/un1_DOUT_1
-                  --------
-                    7.352   (28.3% logic, 71.7% route), 3 logic levels.
-
-      Destination Clock Path SYSCLK to I2C_INST/SLICE_196:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-PADI_DEL    ---     1.132        128.PAD to      128.PADDI SYSCLK
-ROUTE       330     2.379      128.PADDI to     R4C16C.CLK SYSCLK_c
-                  --------
-                    3.511   (32.2% logic, 67.8% route), 1 logic levels.
-
-
-Error: The following path exceeds requirements by 7.918ns (weighted slack = -979.456ns)
-
- Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
-
-   Source:         FF         Q              I2C_INST/CHECKSUM_OUT[3]  (from I2C_INST/un1_DOUT_1 +)
-   Destination:    FF         Data in        I2C_INST/SHIFT_DOUT[3]  (to SYSCLK_c +)
-
-   Delay:               3.485ns  (41.4% logic, 58.6% route), 3 logic levels.
-
- Constraint Details:
-
-      3.485ns physical path delay I2C_INST/SLICE_2 to I2C_INST/SLICE_194 exceeds
-      (delay constraint based on source clock period of 2.883ns and destination clock period of 3.711ns)
-      0.030ns delay constraint less
-      4.297ns skew and
-      0.166ns DIN_SET requirement (totaling -4.433ns) by 7.918ns
-
- Physical Path Details:
-
-      Data path I2C_INST/SLICE_2 to I2C_INST/SLICE_194:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.452     R3C17C.CLK to      R3C17C.Q0 I2C_INST/SLICE_2 (from I2C_INST/un1_DOUT_1)
-ROUTE         1     1.299      R3C17C.Q0 to      R4C16B.A0 I2C_INST/CHECKSUM_OUT[3]
-CTOF_DEL    ---     0.495      R4C16B.A0 to      R4C16B.F0 SLICE_401
-ROUTE         1     0.744      R4C16B.F0 to      R3C16B.C1 I2C_INST/SHIFT_DOUT_2_1_0[3]
-CTOF_DEL    ---     0.495      R3C16B.C1 to      R3C16B.F1 I2C_INST/SLICE_194
-ROUTE         1     0.000      R3C16B.F1 to     R3C16B.DI1 I2C_INST/SHIFT_DOUT_2[3] (to SYSCLK_c)
-                  --------
-                    3.485   (41.4% logic, 58.6% route), 3 logic levels.
-
- Clock Skew Details: 
-
-      Source Clock Path SYSCLK to I2C_INST/SLICE_2:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-PADI_DEL    ---     1.132        128.PAD to      128.PADDI SYSCLK
-ROUTE       330     2.379      128.PADDI to     R4C21C.CLK SYSCLK_c
-REG_DEL     ---     0.452     R4C21C.CLK to      R4C21C.Q0 I2C_INST/SLICE_170
-ROUTE         3     1.349      R4C21C.Q0 to      R6C20A.B0 I2C_INST/CNT8
-CTOF_DEL    ---     0.495      R6C20A.B0 to      R6C20A.F0 SLICE_404
-ROUTE         4     2.001      R6C20A.F0 to     R3C17C.CLK I2C_INST/un1_DOUT_1
-                  --------
-                    7.808   (26.6% logic, 73.4% route), 3 logic levels.
-
-      Destination Clock Path SYSCLK to I2C_INST/SLICE_194:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-PADI_DEL    ---     1.132        128.PAD to      128.PADDI SYSCLK
-ROUTE       330     2.379      128.PADDI to     R3C16B.CLK SYSCLK_c
-                  --------
-                    3.511   (32.2% logic, 67.8% route), 1 logic levels.
-
-
-Error: The following path exceeds requirements by 7.620ns (weighted slack = -942.594ns)
-
- Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
-
-   Source:         FF         Q              I2C_INST/CHECKSUM_OUT[6]  (from I2C_INST/un1_DOUT_1 +)
-   Destination:    FF         Data in        I2C_INST/SHIFT_DOUT[6]  (to SYSCLK_c +)
-
-   Delay:               3.187ns  (45.2% logic, 54.8% route), 3 logic levels.
-
- Constraint Details:
-
-      3.187ns physical path delay I2C_INST/SLICE_1 to I2C_INST/SLICE_196 exceeds
-      (delay constraint based on source clock period of 2.883ns and destination clock period of 3.711ns)
-      0.030ns delay constraint less
-      4.297ns skew and
-      0.166ns DIN_SET requirement (totaling -4.433ns) by 7.620ns
-
- Physical Path Details:
-
-      Data path I2C_INST/SLICE_1 to I2C_INST/SLICE_196:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.452     R3C17D.CLK to      R3C17D.Q1 I2C_INST/SLICE_1 (from I2C_INST/un1_DOUT_1)
-ROUTE         1     1.001      R3C17D.Q1 to      R4C17D.B0 I2C_INST/CHECKSUM_OUT[6]
-CTOF_DEL    ---     0.495      R4C17D.B0 to      R4C17D.F0 SLICE_305
-ROUTE         1     0.744      R4C17D.F0 to      R4C16C.C0 I2C_INST/SHIFT_DOUT_2_1_0[6]
-CTOF_DEL    ---     0.495      R4C16C.C0 to      R4C16C.F0 I2C_INST/SLICE_196
-ROUTE         1     0.000      R4C16C.F0 to     R4C16C.DI0 I2C_INST/SHIFT_DOUT_2[6] (to SYSCLK_c)
-                  --------
-                    3.187   (45.2% logic, 54.8% route), 3 logic levels.
-
- Clock Skew Details: 
-
-      Source Clock Path SYSCLK to I2C_INST/SLICE_1:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-PADI_DEL    ---     1.132        128.PAD to      128.PADDI SYSCLK
-ROUTE       330     2.379      128.PADDI to     R4C21C.CLK SYSCLK_c
-REG_DEL     ---     0.452     R4C21C.CLK to      R4C21C.Q0 I2C_INST/SLICE_170
-ROUTE         3     1.349      R4C21C.Q0 to      R6C20A.B0 I2C_INST/CNT8
-CTOF_DEL    ---     0.495      R6C20A.B0 to      R6C20A.F0 SLICE_404
-ROUTE         4     2.001      R6C20A.F0 to     R3C17D.CLK I2C_INST/un1_DOUT_1
-                  --------
-                    7.808   (26.6% logic, 73.4% route), 3 logic levels.
-
-      Destination Clock Path SYSCLK to I2C_INST/SLICE_196:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-PADI_DEL    ---     1.132        128.PAD to      128.PADDI SYSCLK
-ROUTE       330     2.379      128.PADDI to     R4C16C.CLK SYSCLK_c
-                  --------
-                    3.511   (32.2% logic, 67.8% route), 1 logic levels.
-
-
-Error: The following path exceeds requirements by 7.591ns (weighted slack = -939.006ns)
-
- Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
-
-   Source:         FF         Q              I2C_INST/CHECKSUM_OUT[1]  (from I2C_INST/un1_DOUT_1 +)
-   Destination:    FF         Data in        I2C_INST/SHIFT_DOUT[1]  (to SYSCLK_c +)
-
-   Delay:               3.158ns  (45.7% logic, 54.3% route), 3 logic levels.
-
- Constraint Details:
-
-      3.158ns physical path delay I2C_INST/SLICE_3 to I2C_INST/SLICE_193 exceeds
-      (delay constraint based on source clock period of 2.883ns and destination clock period of 3.711ns)
-      0.030ns delay constraint less
-      4.297ns skew and
-      0.166ns DIN_SET requirement (totaling -4.433ns) by 7.591ns
-
- Physical Path Details:
-
-      Data path I2C_INST/SLICE_3 to I2C_INST/SLICE_193:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.452     R3C17B.CLK to      R3C17B.Q0 I2C_INST/SLICE_3 (from I2C_INST/un1_DOUT_1)
-ROUTE         1     1.023      R3C17B.Q0 to      R3C18D.B0 I2C_INST/CHECKSUM_OUT[1]
-CTOF_DEL    ---     0.495      R3C18D.B0 to      R3C18D.F0 SLICE_402
-ROUTE         1     0.693      R3C18D.F0 to      R3C18B.B1 I2C_INST/SHIFT_DOUT_2_1_0[1]
-CTOF_DEL    ---     0.495      R3C18B.B1 to      R3C18B.F1 I2C_INST/SLICE_193
-ROUTE         1     0.000      R3C18B.F1 to     R3C18B.DI1 I2C_INST/SHIFT_DOUT_2[1] (to SYSCLK_c)
-                  --------
-                    3.158   (45.7% logic, 54.3% route), 3 logic levels.
-
- Clock Skew Details: 
-
-      Source Clock Path SYSCLK to I2C_INST/SLICE_3:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-PADI_DEL    ---     1.132        128.PAD to      128.PADDI SYSCLK
-ROUTE       330     2.379      128.PADDI to     R4C21C.CLK SYSCLK_c
-REG_DEL     ---     0.452     R4C21C.CLK to      R4C21C.Q0 I2C_INST/SLICE_170
-ROUTE         3     1.349      R4C21C.Q0 to      R6C20A.B0 I2C_INST/CNT8
-CTOF_DEL    ---     0.495      R6C20A.B0 to      R6C20A.F0 SLICE_404
-ROUTE         4     2.001      R6C20A.F0 to     R3C17B.CLK I2C_INST/un1_DOUT_1
-                  --------
-                    7.808   (26.6% logic, 73.4% route), 3 logic levels.
-
-      Destination Clock Path SYSCLK to I2C_INST/SLICE_193:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-PADI_DEL    ---     1.132        128.PAD to      128.PADDI SYSCLK
-ROUTE       330     2.379      128.PADDI to     R3C18B.CLK SYSCLK_c
-                  --------
-                    3.511   (32.2% logic, 67.8% route), 1 logic levels.
-
-
-Error: The following path exceeds requirements by 7.586ns (weighted slack = -938.388ns)
-
- Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
-
-   Source:         FF         Q              I2C_INST/CHECKSUM_OUT[5]  (from I2C_INST/un1_DOUT_1 +)
-   Destination:    FF         Data in        I2C_INST/SHIFT_DOUT[5]  (to SYSCLK_c +)
-
-   Delay:               3.153ns  (45.7% logic, 54.3% route), 3 logic levels.
-
- Constraint Details:
-
-      3.153ns physical path delay I2C_INST/SLICE_1 to I2C_INST/SLICE_195 exceeds
-      (delay constraint based on source clock period of 2.883ns and destination clock period of 3.711ns)
-      0.030ns delay constraint less
-      4.297ns skew and
-      0.166ns DIN_SET requirement (totaling -4.433ns) by 7.586ns
-
- Physical Path Details:
-
-      Data path I2C_INST/SLICE_1 to I2C_INST/SLICE_195:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.452     R3C17D.CLK to      R3C17D.Q0 I2C_INST/SLICE_1 (from I2C_INST/un1_DOUT_1)
-ROUTE         1     0.964      R3C17D.Q0 to      R3C16D.A1 I2C_INST/CHECKSUM_OUT[5]
-CTOF_DEL    ---     0.495      R3C16D.A1 to      R3C16D.F1 SLICE_403
-ROUTE         1     0.747      R3C16D.F1 to      R3C16A.C1 I2C_INST/SHIFT_DOUT_2_1_0[5]
-CTOF_DEL    ---     0.495      R3C16A.C1 to      R3C16A.F1 I2C_INST/SLICE_195
-ROUTE         1     0.000      R3C16A.F1 to     R3C16A.DI1 I2C_INST/SHIFT_DOUT_2[5] (to SYSCLK_c)
-                  --------
-                    3.153   (45.7% logic, 54.3% route), 3 logic levels.
-
- Clock Skew Details: 
-
-      Source Clock Path SYSCLK to I2C_INST/SLICE_1:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-PADI_DEL    ---     1.132        128.PAD to      128.PADDI SYSCLK
-ROUTE       330     2.379      128.PADDI to     R4C21C.CLK SYSCLK_c
-REG_DEL     ---     0.452     R4C21C.CLK to      R4C21C.Q0 I2C_INST/SLICE_170
-ROUTE         3     1.349      R4C21C.Q0 to      R6C20A.B0 I2C_INST/CNT8
-CTOF_DEL    ---     0.495      R6C20A.B0 to      R6C20A.F0 SLICE_404
-ROUTE         4     2.001      R6C20A.F0 to     R3C17D.CLK I2C_INST/un1_DOUT_1
-                  --------
-                    7.808   (26.6% logic, 73.4% route), 3 logic levels.
-
-      Destination Clock Path SYSCLK to I2C_INST/SLICE_195:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-PADI_DEL    ---     1.132        128.PAD to      128.PADDI SYSCLK
-ROUTE       330     2.379      128.PADDI to     R3C16A.CLK SYSCLK_c
-                  --------
-                    3.511   (32.2% logic, 67.8% route), 1 logic levels.
-
-
-Error: The following path exceeds requirements by 7.543ns (weighted slack = -933.069ns)
-
- Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
-
-   Source:         FF         Q              I2C_INST/CHECKSUM_OUT[2]  (from I2C_INST/un1_DOUT_1 +)
-   Destination:    FF         Data in        I2C_INST/SHIFT_DOUT[2]  (to SYSCLK_c +)
-
-   Delay:               3.110ns  (46.4% logic, 53.6% route), 3 logic levels.
-
- Constraint Details:
-
-      3.110ns physical path delay I2C_INST/SLICE_3 to I2C_INST/SLICE_194 exceeds
-      (delay constraint based on source clock period of 2.883ns and destination clock period of 3.711ns)
-      0.030ns delay constraint less
-      4.297ns skew and
-      0.166ns DIN_SET requirement (totaling -4.433ns) by 7.543ns
-
- Physical Path Details:
-
-      Data path I2C_INST/SLICE_3 to I2C_INST/SLICE_194:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.452     R3C17B.CLK to      R3C17B.Q1 I2C_INST/SLICE_3 (from I2C_INST/un1_DOUT_1)
-ROUTE         1     1.023      R3C17B.Q1 to      R3C18D.B1 I2C_INST/CHECKSUM_OUT[2]
-CTOF_DEL    ---     0.495      R3C18D.B1 to      R3C18D.F1 SLICE_402
-ROUTE         1     0.645      R3C18D.F1 to      R3C16B.D0 I2C_INST/SHIFT_DOUT_2_1_0[2]
-CTOF_DEL    ---     0.495      R3C16B.D0 to      R3C16B.F0 I2C_INST/SLICE_194
-ROUTE         1     0.000      R3C16B.F0 to     R3C16B.DI0 I2C_INST/SHIFT_DOUT_2[2] (to SYSCLK_c)
-                  --------
-                    3.110   (46.4% logic, 53.6% route), 3 logic levels.
-
- Clock Skew Details: 
-
-      Source Clock Path SYSCLK to I2C_INST/SLICE_3:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-PADI_DEL    ---     1.132        128.PAD to      128.PADDI SYSCLK
-ROUTE       330     2.379      128.PADDI to     R4C21C.CLK SYSCLK_c
-REG_DEL     ---     0.452     R4C21C.CLK to      R4C21C.Q0 I2C_INST/SLICE_170
-ROUTE         3     1.349      R4C21C.Q0 to      R6C20A.B0 I2C_INST/CNT8
-CTOF_DEL    ---     0.495      R6C20A.B0 to      R6C20A.F0 SLICE_404
-ROUTE         4     2.001      R6C20A.F0 to     R3C17B.CLK I2C_INST/un1_DOUT_1
-                  --------
-                    7.808   (26.6% logic, 73.4% route), 3 logic levels.
-
-      Destination Clock Path SYSCLK to I2C_INST/SLICE_194:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-PADI_DEL    ---     1.132        128.PAD to      128.PADDI SYSCLK
-ROUTE       330     2.379      128.PADDI to     R3C16B.CLK SYSCLK_c
-                  --------
-                    3.511   (32.2% logic, 67.8% route), 1 logic levels.
-
-
-Error: The following path exceeds requirements by 7.487ns (weighted slack = -926.141ns)
-
- Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
-
-   Source:         FF         Q              I2C_INST/CHECKSUM_OUT[4]  (from I2C_INST/un1_DOUT_1 +)
-   Destination:    FF         Data in        I2C_INST/SHIFT_DOUT[4]  (to SYSCLK_c +)
-
-   Delay:               3.054ns  (47.2% logic, 52.8% route), 3 logic levels.
-
- Constraint Details:
-
-      3.054ns physical path delay I2C_INST/SLICE_2 to I2C_INST/SLICE_195 exceeds
-      (delay constraint based on source clock period of 2.883ns and destination clock period of 3.711ns)
-      0.030ns delay constraint less
-      4.297ns skew and
-      0.166ns DIN_SET requirement (totaling -4.433ns) by 7.487ns
-
- Physical Path Details:
-
-      Data path I2C_INST/SLICE_2 to I2C_INST/SLICE_195:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.452     R3C17C.CLK to      R3C17C.Q1 I2C_INST/SLICE_2 (from I2C_INST/un1_DOUT_1)
-ROUTE         1     0.986      R3C17C.Q1 to      R3C16D.A0 I2C_INST/CHECKSUM_OUT[4]
-CTOF_DEL    ---     0.495      R3C16D.A0 to      R3C16D.F0 SLICE_403
-ROUTE         1     0.626      R3C16D.F0 to      R3C16A.D0 I2C_INST/SHIFT_DOUT_2_1_0[4]
-CTOF_DEL    ---     0.495      R3C16A.D0 to      R3C16A.F0 I2C_INST/SLICE_195
-ROUTE         1     0.000      R3C16A.F0 to     R3C16A.DI0 I2C_INST/SHIFT_DOUT_2[4] (to SYSCLK_c)
-                  --------
-                    3.054   (47.2% logic, 52.8% route), 3 logic levels.
-
- Clock Skew Details: 
-
-      Source Clock Path SYSCLK to I2C_INST/SLICE_2:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-PADI_DEL    ---     1.132        128.PAD to      128.PADDI SYSCLK
-ROUTE       330     2.379      128.PADDI to     R4C21C.CLK SYSCLK_c
-REG_DEL     ---     0.452     R4C21C.CLK to      R4C21C.Q0 I2C_INST/SLICE_170
-ROUTE         3     1.349      R4C21C.Q0 to      R6C20A.B0 I2C_INST/CNT8
-CTOF_DEL    ---     0.495      R6C20A.B0 to      R6C20A.F0 SLICE_404
-ROUTE         4     2.001      R6C20A.F0 to     R3C17C.CLK I2C_INST/un1_DOUT_1
-                  --------
-                    7.808   (26.6% logic, 73.4% route), 3 logic levels.
-
-      Destination Clock Path SYSCLK to I2C_INST/SLICE_195:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-PADI_DEL    ---     1.132        128.PAD to      128.PADDI SYSCLK
-ROUTE       330     2.379      128.PADDI to     R3C16A.CLK SYSCLK_c
-                  --------
-                    3.511   (32.2% logic, 67.8% route), 1 logic levels.
-
-
-Error: The following path exceeds requirements by 5.671ns (weighted slack = -701.502ns)
-
- Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
-
-   Source:         FF         Q              I2C_INST/CHECKSUM_OUT[0]  (from I2C_INST/un1_DOUT_1 +)
-   Destination:    FF         Data in        I2C_INST/SHIFT_DOUT[0]  (to SYSCLK_c +)
-
-   Delay:               1.694ns  (55.9% logic, 44.1% route), 2 logic levels.
-
- Constraint Details:
-
-      1.694ns physical path delay I2C_INST/SLICE_0 to I2C_INST/SLICE_193 exceeds
-      (delay constraint based on source clock period of 2.883ns and destination clock period of 3.711ns)
-      0.030ns delay constraint less
-      3.841ns skew and
-      0.166ns DIN_SET requirement (totaling -3.977ns) by 5.671ns
-
- Physical Path Details:
-
-      Data path I2C_INST/SLICE_0 to I2C_INST/SLICE_193:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.452     R3C18A.CLK to      R3C18A.Q1 I2C_INST/SLICE_0 (from I2C_INST/un1_DOUT_1)
-ROUTE         1     0.747      R3C18A.Q1 to      R3C18B.C0 I2C_INST/CHECKSUM_OUT[0]
-CTOF_DEL    ---     0.495      R3C18B.C0 to      R3C18B.F0 I2C_INST/SLICE_193
-ROUTE         1     0.000      R3C18B.F0 to     R3C18B.DI0 I2C_INST/SHIFT_DOUT_2[0] (to SYSCLK_c)
-                  --------
-                    1.694   (55.9% logic, 44.1% route), 2 logic levels.
-
- Clock Skew Details: 
-
-      Source Clock Path SYSCLK to I2C_INST/SLICE_0:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-PADI_DEL    ---     1.132        128.PAD to      128.PADDI SYSCLK
-ROUTE       330     2.379      128.PADDI to     R4C21C.CLK SYSCLK_c
-REG_DEL     ---     0.452     R4C21C.CLK to      R4C21C.Q0 I2C_INST/SLICE_170
-ROUTE         3     1.349      R4C21C.Q0 to      R6C20A.B0 I2C_INST/CNT8
-CTOF_DEL    ---     0.495      R6C20A.B0 to      R6C20A.F0 SLICE_404
-ROUTE         4     1.545      R6C20A.F0 to     R3C18A.CLK I2C_INST/un1_DOUT_1
-                  --------
-                    7.352   (28.3% logic, 71.7% route), 3 logic levels.
-
-      Destination Clock Path SYSCLK to I2C_INST/SLICE_193:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-PADI_DEL    ---     1.132        128.PAD to      128.PADDI SYSCLK
-ROUTE       330     2.379      128.PADDI to     R3C18B.CLK SYSCLK_c
-                  --------
-                    3.511   (32.2% logic, 67.8% route), 1 logic levels.
-
-
-Error: The following path exceeds requirements by 8.033ns
-
- Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
-
-   Source:         FF         Q              SGPIO_INST1/CNT[6]  (from SYSCLK_c +)
-   Destination:    FF         Data in        SGPIO_INST1/CNT[6]  (to SYSCLK_c +)
-                   FF                        SGPIO_INST1/CNT[5]
-
-   Delay:              11.462ns  (29.9% logic, 70.1% route), 7 logic levels.
-
- Constraint Details:
-
-     11.462ns physical path delay SGPIO_INST1/SLICE_36 to SGPIO_INST1/SLICE_36 exceeds
-      3.711ns delay constraint less
-      0.000ns skew and
-      0.282ns CE_SET requirement (totaling 3.429ns) by 8.033ns
-
- Physical Path Details:
-
-      Data path SGPIO_INST1/SLICE_36 to SGPIO_INST1/SLICE_36:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.452    R12C10D.CLK to     R12C10D.Q1 SGPIO_INST1/SLICE_36 (from SYSCLK_c)
-ROUTE         3     1.313     R12C10D.Q1 to     R11C11A.A1 SGPIO_INST1/CNT[6]
-CTOF_DEL    ---     0.495     R11C11A.A1 to     R11C11A.F1 SGPIO_INST1/SLICE_328
-ROUTE         1     0.693     R11C11A.F1 to     R11C11A.B0 SGPIO_INST1/un5_CNTlto10_1
-CTOF_DEL    ---     0.495     R11C11A.B0 to     R11C11A.F0 SGPIO_INST1/SLICE_328
-ROUTE         1     0.626     R11C11A.F0 to     R11C11D.D1 SGPIO_INST1/un5_CNTlt14
-CTOF_DEL    ---     0.495     R11C11D.D1 to     R11C11D.F1 SGPIO_INST1/SLICE_327
-ROUTE         1     0.436     R11C11D.F1 to     R11C11D.C0 SGPIO_INST1/un5_CNTlt15
-CTOF_DEL    ---     0.495     R11C11D.C0 to     R11C11D.F0 SGPIO_INST1/SLICE_327
-ROUTE         1     1.072     R11C11D.F0 to      R9C13A.D1 SGPIO_INST1/un5_CNTlt22
-CTOF_DEL    ---     0.495      R9C13A.D1 to      R9C13A.F1 SGPIO_INST1/SLICE_326
-ROUTE         1     0.693      R9C13A.F1 to      R9C13A.B0 SGPIO_INST1/un5_CNTlt23
-CTOF_DEL    ---     0.495      R9C13A.B0 to      R9C13A.F0 SGPIO_INST1/SLICE_326
-ROUTE        13     3.207      R9C13A.F0 to     R12C10D.CE SGPIO_INST1/un7_CNT_i (to SYSCLK_c)
-                  --------
-                   11.462   (29.9% logic, 70.1% route), 7 logic levels.
-
- Clock Skew Details: 
-
-      Source Clock Path SYSCLK to SGPIO_INST1/SLICE_36:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       330     2.379      128.PADDI to    R12C10D.CLK SYSCLK_c
-                  --------
-                    2.379   (0.0% logic, 100.0% route), 0 logic levels.
-
-      Destination Clock Path SYSCLK to SGPIO_INST1/SLICE_36:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       330     2.379      128.PADDI to    R12C10D.CLK SYSCLK_c
-                  --------
-                    2.379   (0.0% logic, 100.0% route), 0 logic levels.
-
-
-Error: The following path exceeds requirements by 8.033ns
+Error: The following path exceeds requirements by 8.406ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
@@ -537,626 +51,557 @@ Error: The following path exceeds requirements by 8.033ns
    Destination:    FF         Data in        SGPIO_INST1/CNT[2]  (to SYSCLK_c +)
                    FF                        SGPIO_INST1/CNT[1]
 
-   Delay:              11.462ns  (29.9% logic, 70.1% route), 7 logic levels.
+   Delay:              11.835ns  (28.9% logic, 71.1% route), 7 logic levels.
 
  Constraint Details:
 
-     11.462ns physical path delay SGPIO_INST1/SLICE_36 to SGPIO_INST1/SLICE_38 exceeds
+     11.835ns physical path delay SGPIO_INST1/SLICE_31 to SGPIO_INST1/SLICE_33 exceeds
       3.711ns delay constraint less
       0.000ns skew and
-      0.282ns CE_SET requirement (totaling 3.429ns) by 8.033ns
+      0.282ns CE_SET requirement (totaling 3.429ns) by 8.406ns
 
  Physical Path Details:
 
-      Data path SGPIO_INST1/SLICE_36 to SGPIO_INST1/SLICE_38:
+      Data path SGPIO_INST1/SLICE_31 to SGPIO_INST1/SLICE_33:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.452    R12C10D.CLK to     R12C10D.Q1 SGPIO_INST1/SLICE_36 (from SYSCLK_c)
-ROUTE         3     1.313     R12C10D.Q1 to     R11C11A.A1 SGPIO_INST1/CNT[6]
-CTOF_DEL    ---     0.495     R11C11A.A1 to     R11C11A.F1 SGPIO_INST1/SLICE_328
-ROUTE         1     0.693     R11C11A.F1 to     R11C11A.B0 SGPIO_INST1/un5_CNTlto10_1
-CTOF_DEL    ---     0.495     R11C11A.B0 to     R11C11A.F0 SGPIO_INST1/SLICE_328
-ROUTE         1     0.626     R11C11A.F0 to     R11C11D.D1 SGPIO_INST1/un5_CNTlt14
-CTOF_DEL    ---     0.495     R11C11D.D1 to     R11C11D.F1 SGPIO_INST1/SLICE_327
-ROUTE         1     0.436     R11C11D.F1 to     R11C11D.C0 SGPIO_INST1/un5_CNTlt15
-CTOF_DEL    ---     0.495     R11C11D.C0 to     R11C11D.F0 SGPIO_INST1/SLICE_327
-ROUTE         1     1.072     R11C11D.F0 to      R9C13A.D1 SGPIO_INST1/un5_CNTlt22
-CTOF_DEL    ---     0.495      R9C13A.D1 to      R9C13A.F1 SGPIO_INST1/SLICE_326
-ROUTE         1     0.693      R9C13A.F1 to      R9C13A.B0 SGPIO_INST1/un5_CNTlt23
-CTOF_DEL    ---     0.495      R9C13A.B0 to      R9C13A.F0 SGPIO_INST1/SLICE_326
-ROUTE        13     3.207      R9C13A.F0 to     R12C10B.CE SGPIO_INST1/un7_CNT_i (to SYSCLK_c)
+REG_DEL     ---     0.452    R11C16D.CLK to     R11C16D.Q1 SGPIO_INST1/SLICE_31 (from SYSCLK_c)
+ROUTE         3     1.320     R11C16D.Q1 to     R10C17B.A1 SGPIO_INST1/CNT[6]
+CTOF_DEL    ---     0.495     R10C17B.A1 to     R10C17B.F1 SGPIO_INST1/SLICE_321
+ROUTE         1     0.436     R10C17B.F1 to     R10C17B.C0 SGPIO_INST1/un5_CNTlto10_1
+CTOF_DEL    ---     0.495     R10C17B.C0 to     R10C17B.F0 SGPIO_INST1/SLICE_321
+ROUTE         1     1.004     R10C17B.F0 to     R10C17D.B1 SGPIO_INST1/un5_CNTlt14
+CTOF_DEL    ---     0.495     R10C17D.B1 to     R10C17D.F1 SGPIO_INST1/SLICE_320
+ROUTE         1     0.436     R10C17D.F1 to     R10C17D.C0 SGPIO_INST1/un5_CNTlt15
+CTOF_DEL    ---     0.495     R10C17D.C0 to     R10C17D.F0 SGPIO_INST1/SLICE_320
+ROUTE         1     1.184     R10C17D.F0 to      R9C15C.D1 SGPIO_INST1/un5_CNTlt22
+CTOF_DEL    ---     0.495      R9C15C.D1 to      R9C15C.F1 SGPIO_INST1/SLICE_319
+ROUTE         1     0.436      R9C15C.F1 to      R9C15C.C0 SGPIO_INST1/un5_CNTlt23
+CTOF_DEL    ---     0.495      R9C15C.C0 to      R9C15C.F0 SGPIO_INST1/SLICE_319
+ROUTE        13     3.597      R9C15C.F0 to     R11C16B.CE SGPIO_INST1/un7_CNT_i (to SYSCLK_c)
                   --------
-                   11.462   (29.9% logic, 70.1% route), 7 logic levels.
+                   11.835   (28.9% logic, 71.1% route), 7 logic levels.
 
  Clock Skew Details: 
 
-      Source Clock Path SYSCLK to SGPIO_INST1/SLICE_36:
+      Source Clock Path SYSCLK to SGPIO_INST1/SLICE_31:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       330     2.379      128.PADDI to    R12C10D.CLK SYSCLK_c
+ROUTE       328     2.379      128.PADDI to    R11C16D.CLK SYSCLK_c
                   --------
                     2.379   (0.0% logic, 100.0% route), 0 logic levels.
 
-      Destination Clock Path SYSCLK to SGPIO_INST1/SLICE_38:
+      Destination Clock Path SYSCLK to SGPIO_INST1/SLICE_33:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       330     2.379      128.PADDI to    R12C10B.CLK SYSCLK_c
+ROUTE       328     2.379      128.PADDI to    R11C16B.CLK SYSCLK_c
                   --------
                     2.379   (0.0% logic, 100.0% route), 0 logic levels.
 
-Warning:   0.979MHz is the maximum frequency for this preference.
 
-
-================================================================================
-Preference: FREQUENCY NET "I2C_INST/un1_DOUT_1" 346.741000 MHz ;
-            36 items scored, 1 timing error detected.
---------------------------------------------------------------------------------
-
-
-Error: The following path exceeds requirements by 3.093ns (weighted slack = -44.585ns)
+Error: The following path exceeds requirements by 8.406ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              I2C_INST/REG_DIN[7]  (from SYSCLK_c -)
-   Destination:    FF         Data in        I2C_INST/CHECKSUM_OUT[7]  (to I2C_INST/un1_DOUT_1 +)
+   Source:         FF         Q              SGPIO_INST1/CNT[6]  (from SYSCLK_c +)
+   Destination:    FF         Data in        SGPIO_INST1/CNT[18]  (to SYSCLK_c +)
+                   FF                        SGPIO_INST1/CNT[17]
 
-   Delay:               6.736ns  (21.4% logic, 78.6% route), 3 logic levels.
+   Delay:              11.835ns  (28.9% logic, 71.1% route), 7 logic levels.
 
  Constraint Details:
 
-      6.736ns physical path delay I2C_INST/SLICE_183 to I2C_INST/SLICE_0 exceeds
-      (delay constraint based on source clock period of 3.711ns and destination clock period of 2.883ns)
-      0.200ns delay constraint less
-     -3.609ns skew and
-      0.166ns DIN_SET requirement (totaling 3.643ns) by 3.093ns
+     11.835ns physical path delay SGPIO_INST1/SLICE_31 to SGPIO_INST1/SLICE_25 exceeds
+      3.711ns delay constraint less
+      0.000ns skew and
+      0.282ns CE_SET requirement (totaling 3.429ns) by 8.406ns
 
  Physical Path Details:
 
-      Data path I2C_INST/SLICE_183 to I2C_INST/SLICE_0:
+      Data path SGPIO_INST1/SLICE_31 to SGPIO_INST1/SLICE_25:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.452     R4C16A.CLK to      R4C16A.Q1 I2C_INST/SLICE_183 (from SYSCLK_c)
-ROUTE         2     2.339      R4C16A.Q1 to      R9C12B.C0 I2C_INST/REG_DIN[7]
-CTOF_DEL    ---     0.495      R9C12B.C0 to      R9C12B.F0 SLICE_254
-ROUTE         1     2.955      R9C12B.F0 to      R3C18A.B0 I2C_INST/REG_DIN_i[7]
-CTOF_DEL    ---     0.495      R3C18A.B0 to      R3C18A.F0 I2C_INST/SLICE_0
-ROUTE         1     0.000      R3C18A.F0 to     R3C18A.DI0 I2C_INST/un1_REG_DIN_1_s_7_0_S0 (to I2C_INST/un1_DOUT_1)
+REG_DEL     ---     0.452    R11C16D.CLK to     R11C16D.Q1 SGPIO_INST1/SLICE_31 (from SYSCLK_c)
+ROUTE         3     1.320     R11C16D.Q1 to     R10C17B.A1 SGPIO_INST1/CNT[6]
+CTOF_DEL    ---     0.495     R10C17B.A1 to     R10C17B.F1 SGPIO_INST1/SLICE_321
+ROUTE         1     0.436     R10C17B.F1 to     R10C17B.C0 SGPIO_INST1/un5_CNTlto10_1
+CTOF_DEL    ---     0.495     R10C17B.C0 to     R10C17B.F0 SGPIO_INST1/SLICE_321
+ROUTE         1     1.004     R10C17B.F0 to     R10C17D.B1 SGPIO_INST1/un5_CNTlt14
+CTOF_DEL    ---     0.495     R10C17D.B1 to     R10C17D.F1 SGPIO_INST1/SLICE_320
+ROUTE         1     0.436     R10C17D.F1 to     R10C17D.C0 SGPIO_INST1/un5_CNTlt15
+CTOF_DEL    ---     0.495     R10C17D.C0 to     R10C17D.F0 SGPIO_INST1/SLICE_320
+ROUTE         1     1.184     R10C17D.F0 to      R9C15C.D1 SGPIO_INST1/un5_CNTlt22
+CTOF_DEL    ---     0.495      R9C15C.D1 to      R9C15C.F1 SGPIO_INST1/SLICE_319
+ROUTE         1     0.436      R9C15C.F1 to      R9C15C.C0 SGPIO_INST1/un5_CNTlt23
+CTOF_DEL    ---     0.495      R9C15C.C0 to      R9C15C.F0 SGPIO_INST1/SLICE_319
+ROUTE        13     3.597      R9C15C.F0 to     R11C18B.CE SGPIO_INST1/un7_CNT_i (to SYSCLK_c)
                   --------
-                    6.736   (21.4% logic, 78.6% route), 3 logic levels.
+                   11.835   (28.9% logic, 71.1% route), 7 logic levels.
 
  Clock Skew Details: 
 
-      Source Clock Path SYSCLK to I2C_INST/SLICE_183:
+      Source Clock Path SYSCLK to SGPIO_INST1/SLICE_31:
 
    Name    Fanout   Delay (ns)          Site               Resource
-PADI_DEL    ---     1.132        128.PAD to      128.PADDI SYSCLK
-ROUTE       330     2.379      128.PADDI to     R4C16A.CLK SYSCLK_c
+ROUTE       328     2.379      128.PADDI to    R11C16D.CLK SYSCLK_c
                   --------
-                    3.511   (32.2% logic, 67.8% route), 1 logic levels.
+                    2.379   (0.0% logic, 100.0% route), 0 logic levels.
 
-      Destination Clock Path SYSCLK to I2C_INST/SLICE_0:
+      Destination Clock Path SYSCLK to SGPIO_INST1/SLICE_25:
 
    Name    Fanout   Delay (ns)          Site               Resource
-PADI_DEL    ---     1.132        128.PAD to      128.PADDI SYSCLK
-ROUTE       330     2.379      128.PADDI to     R5C19B.CLK SYSCLK_c
-REG_DEL     ---     0.452     R5C19B.CLK to      R5C19B.Q1 I2C_INST/SLICE_198
-ROUTE        10     1.117      R5C19B.Q1 to      R6C20A.D0 I2C_INST/STATE[3]
-CTOF_DEL    ---     0.495      R6C20A.D0 to      R6C20A.F0 SLICE_404
-ROUTE         4     1.545      R6C20A.F0 to     R3C18A.CLK I2C_INST/un1_DOUT_1
+ROUTE       328     2.379      128.PADDI to    R11C18B.CLK SYSCLK_c
                   --------
-                    7.120   (29.2% logic, 70.8% route), 3 logic levels.
+                    2.379   (0.0% logic, 100.0% route), 0 logic levels.
 
 
-Passed: The following path meets requirements by 0.232ns (weighted slack = 3.344ns)
+Error: The following path exceeds requirements by 8.406ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              I2C_INST/REG_DIN[0]  (from SYSCLK_c -)
-   Destination:    FF         Data in        I2C_INST/CHECKSUM_OUT[7]  (to I2C_INST/un1_DOUT_1 +)
+   Source:         FF         Q              SGPIO_INST1/CNT[6]  (from SYSCLK_c +)
+   Destination:    FF         Data in        SGPIO_INST1/CNT[22]  (to SYSCLK_c +)
+                   FF                        SGPIO_INST1/CNT[21]
 
-   Delay:               3.411ns  (70.7% logic, 29.3% route), 6 logic levels.
+   Delay:              11.835ns  (28.9% logic, 71.1% route), 7 logic levels.
 
  Constraint Details:
 
-      3.411ns physical path delay I2C_INST/SLICE_180 to I2C_INST/SLICE_0 meets
-      (delay constraint based on source clock period of 3.711ns and destination clock period of 2.883ns)
-      0.200ns delay constraint less
-     -3.609ns skew and
-      0.166ns DIN_SET requirement (totaling 3.643ns) by 0.232ns
+     11.835ns physical path delay SGPIO_INST1/SLICE_31 to SGPIO_INST1/SLICE_23 exceeds
+      3.711ns delay constraint less
+      0.000ns skew and
+      0.282ns CE_SET requirement (totaling 3.429ns) by 8.406ns
 
  Physical Path Details:
 
-      Data path I2C_INST/SLICE_180 to I2C_INST/SLICE_0:
+      Data path SGPIO_INST1/SLICE_31 to SGPIO_INST1/SLICE_23:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.452     R3C16C.CLK to      R3C16C.Q0 I2C_INST/SLICE_180 (from SYSCLK_c)
-ROUTE         3     0.999      R3C16C.Q0 to      R3C17A.A1 I2C_INST/REG_DIN[0]
-C1TOFCO_DE  ---     0.889      R3C17A.A1 to     R3C17A.FCO SLICE_4
-ROUTE         1     0.000     R3C17A.FCO to     R3C17B.FCI I2C_INST/un1_REG_DIN_1_cry_0
-FCITOFCO_D  ---     0.162     R3C17B.FCI to     R3C17B.FCO I2C_INST/SLICE_3
-ROUTE         1     0.000     R3C17B.FCO to     R3C17C.FCI I2C_INST/un1_REG_DIN_1_cry_2
-FCITOFCO_D  ---     0.162     R3C17C.FCI to     R3C17C.FCO I2C_INST/SLICE_2
-ROUTE         1     0.000     R3C17C.FCO to     R3C17D.FCI I2C_INST/un1_REG_DIN_1_cry_4
-FCITOFCO_D  ---     0.162     R3C17D.FCI to     R3C17D.FCO I2C_INST/SLICE_1
-ROUTE         1     0.000     R3C17D.FCO to     R3C18A.FCI I2C_INST/un1_REG_DIN_1_cry_6
-FCITOF0_DE  ---     0.585     R3C18A.FCI to      R3C18A.F0 I2C_INST/SLICE_0
-ROUTE         1     0.000      R3C18A.F0 to     R3C18A.DI0 I2C_INST/un1_REG_DIN_1_s_7_0_S0 (to I2C_INST/un1_DOUT_1)
+REG_DEL     ---     0.452    R11C16D.CLK to     R11C16D.Q1 SGPIO_INST1/SLICE_31 (from SYSCLK_c)
+ROUTE         3     1.320     R11C16D.Q1 to     R10C17B.A1 SGPIO_INST1/CNT[6]
+CTOF_DEL    ---     0.495     R10C17B.A1 to     R10C17B.F1 SGPIO_INST1/SLICE_321
+ROUTE         1     0.436     R10C17B.F1 to     R10C17B.C0 SGPIO_INST1/un5_CNTlto10_1
+CTOF_DEL    ---     0.495     R10C17B.C0 to     R10C17B.F0 SGPIO_INST1/SLICE_321
+ROUTE         1     1.004     R10C17B.F0 to     R10C17D.B1 SGPIO_INST1/un5_CNTlt14
+CTOF_DEL    ---     0.495     R10C17D.B1 to     R10C17D.F1 SGPIO_INST1/SLICE_320
+ROUTE         1     0.436     R10C17D.F1 to     R10C17D.C0 SGPIO_INST1/un5_CNTlt15
+CTOF_DEL    ---     0.495     R10C17D.C0 to     R10C17D.F0 SGPIO_INST1/SLICE_320
+ROUTE         1     1.184     R10C17D.F0 to      R9C15C.D1 SGPIO_INST1/un5_CNTlt22
+CTOF_DEL    ---     0.495      R9C15C.D1 to      R9C15C.F1 SGPIO_INST1/SLICE_319
+ROUTE         1     0.436      R9C15C.F1 to      R9C15C.C0 SGPIO_INST1/un5_CNTlt23
+CTOF_DEL    ---     0.495      R9C15C.C0 to      R9C15C.F0 SGPIO_INST1/SLICE_319
+ROUTE        13     3.597      R9C15C.F0 to     R11C18D.CE SGPIO_INST1/un7_CNT_i (to SYSCLK_c)
                   --------
-                    3.411   (70.7% logic, 29.3% route), 6 logic levels.
+                   11.835   (28.9% logic, 71.1% route), 7 logic levels.
 
  Clock Skew Details: 
 
-      Source Clock Path SYSCLK to I2C_INST/SLICE_180:
+      Source Clock Path SYSCLK to SGPIO_INST1/SLICE_31:
 
    Name    Fanout   Delay (ns)          Site               Resource
-PADI_DEL    ---     1.132        128.PAD to      128.PADDI SYSCLK
-ROUTE       330     2.379      128.PADDI to     R3C16C.CLK SYSCLK_c
+ROUTE       328     2.379      128.PADDI to    R11C16D.CLK SYSCLK_c
                   --------
-                    3.511   (32.2% logic, 67.8% route), 1 logic levels.
+                    2.379   (0.0% logic, 100.0% route), 0 logic levels.
 
-      Destination Clock Path SYSCLK to I2C_INST/SLICE_0:
+      Destination Clock Path SYSCLK to SGPIO_INST1/SLICE_23:
 
    Name    Fanout   Delay (ns)          Site               Resource
-PADI_DEL    ---     1.132        128.PAD to      128.PADDI SYSCLK
-ROUTE       330     2.379      128.PADDI to     R5C19B.CLK SYSCLK_c
-REG_DEL     ---     0.452     R5C19B.CLK to      R5C19B.Q1 I2C_INST/SLICE_198
-ROUTE        10     1.117      R5C19B.Q1 to      R6C20A.D0 I2C_INST/STATE[3]
-CTOF_DEL    ---     0.495      R6C20A.D0 to      R6C20A.F0 SLICE_404
-ROUTE         4     1.545      R6C20A.F0 to     R3C18A.CLK I2C_INST/un1_DOUT_1
+ROUTE       328     2.379      128.PADDI to    R11C18D.CLK SYSCLK_c
                   --------
-                    7.120   (29.2% logic, 70.8% route), 3 logic levels.
+                    2.379   (0.0% logic, 100.0% route), 0 logic levels.
 
 
-Passed: The following path meets requirements by 0.288ns (weighted slack = 4.151ns)
+Error: The following path exceeds requirements by 8.406ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              I2C_INST/REG_DIN[1]  (from SYSCLK_c -)
-   Destination:    FF         Data in        I2C_INST/CHECKSUM_OUT[7]  (to I2C_INST/un1_DOUT_1 +)
+   Source:         FF         Q              SGPIO_INST1/CNT[6]  (from SYSCLK_c +)
+   Destination:    FF         Data in        SGPIO_INST1/CNT[6]  (to SYSCLK_c +)
+                   FF                        SGPIO_INST1/CNT[5]
 
-   Delay:               3.355ns  (71.1% logic, 28.9% route), 5 logic levels.
+   Delay:              11.835ns  (28.9% logic, 71.1% route), 7 logic levels.
 
  Constraint Details:
 
-      3.355ns physical path delay I2C_INST/SLICE_180 to I2C_INST/SLICE_0 meets
-      (delay constraint based on source clock period of 3.711ns and destination clock period of 2.883ns)
-      0.200ns delay constraint less
-     -3.609ns skew and
-      0.166ns DIN_SET requirement (totaling 3.643ns) by 0.288ns
+     11.835ns physical path delay SGPIO_INST1/SLICE_31 to SGPIO_INST1/SLICE_31 exceeds
+      3.711ns delay constraint less
+      0.000ns skew and
+      0.282ns CE_SET requirement (totaling 3.429ns) by 8.406ns
 
  Physical Path Details:
 
-      Data path I2C_INST/SLICE_180 to I2C_INST/SLICE_0:
+      Data path SGPIO_INST1/SLICE_31 to SGPIO_INST1/SLICE_31:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.452     R3C16C.CLK to      R3C16C.Q1 I2C_INST/SLICE_180 (from SYSCLK_c)
-ROUTE         2     0.971      R3C16C.Q1 to      R3C17B.A0 I2C_INST/REG_DIN[1]
-C0TOFCO_DE  ---     1.023      R3C17B.A0 to     R3C17B.FCO I2C_INST/SLICE_3
-ROUTE         1     0.000     R3C17B.FCO to     R3C17C.FCI I2C_INST/un1_REG_DIN_1_cry_2
-FCITOFCO_D  ---     0.162     R3C17C.FCI to     R3C17C.FCO I2C_INST/SLICE_2
-ROUTE         1     0.000     R3C17C.FCO to     R3C17D.FCI I2C_INST/un1_REG_DIN_1_cry_4
-FCITOFCO_D  ---     0.162     R3C17D.FCI to     R3C17D.FCO I2C_INST/SLICE_1
-ROUTE         1     0.000     R3C17D.FCO to     R3C18A.FCI I2C_INST/un1_REG_DIN_1_cry_6
-FCITOF0_DE  ---     0.585     R3C18A.FCI to      R3C18A.F0 I2C_INST/SLICE_0
-ROUTE         1     0.000      R3C18A.F0 to     R3C18A.DI0 I2C_INST/un1_REG_DIN_1_s_7_0_S0 (to I2C_INST/un1_DOUT_1)
+REG_DEL     ---     0.452    R11C16D.CLK to     R11C16D.Q1 SGPIO_INST1/SLICE_31 (from SYSCLK_c)
+ROUTE         3     1.320     R11C16D.Q1 to     R10C17B.A1 SGPIO_INST1/CNT[6]
+CTOF_DEL    ---     0.495     R10C17B.A1 to     R10C17B.F1 SGPIO_INST1/SLICE_321
+ROUTE         1     0.436     R10C17B.F1 to     R10C17B.C0 SGPIO_INST1/un5_CNTlto10_1
+CTOF_DEL    ---     0.495     R10C17B.C0 to     R10C17B.F0 SGPIO_INST1/SLICE_321
+ROUTE         1     1.004     R10C17B.F0 to     R10C17D.B1 SGPIO_INST1/un5_CNTlt14
+CTOF_DEL    ---     0.495     R10C17D.B1 to     R10C17D.F1 SGPIO_INST1/SLICE_320
+ROUTE         1     0.436     R10C17D.F1 to     R10C17D.C0 SGPIO_INST1/un5_CNTlt15
+CTOF_DEL    ---     0.495     R10C17D.C0 to     R10C17D.F0 SGPIO_INST1/SLICE_320
+ROUTE         1     1.184     R10C17D.F0 to      R9C15C.D1 SGPIO_INST1/un5_CNTlt22
+CTOF_DEL    ---     0.495      R9C15C.D1 to      R9C15C.F1 SGPIO_INST1/SLICE_319
+ROUTE         1     0.436      R9C15C.F1 to      R9C15C.C0 SGPIO_INST1/un5_CNTlt23
+CTOF_DEL    ---     0.495      R9C15C.C0 to      R9C15C.F0 SGPIO_INST1/SLICE_319
+ROUTE        13     3.597      R9C15C.F0 to     R11C16D.CE SGPIO_INST1/un7_CNT_i (to SYSCLK_c)
                   --------
-                    3.355   (71.1% logic, 28.9% route), 5 logic levels.
+                   11.835   (28.9% logic, 71.1% route), 7 logic levels.
 
  Clock Skew Details: 
 
-      Source Clock Path SYSCLK to I2C_INST/SLICE_180:
+      Source Clock Path SYSCLK to SGPIO_INST1/SLICE_31:
 
    Name    Fanout   Delay (ns)          Site               Resource
-PADI_DEL    ---     1.132        128.PAD to      128.PADDI SYSCLK
-ROUTE       330     2.379      128.PADDI to     R3C16C.CLK SYSCLK_c
+ROUTE       328     2.379      128.PADDI to    R11C16D.CLK SYSCLK_c
                   --------
-                    3.511   (32.2% logic, 67.8% route), 1 logic levels.
+                    2.379   (0.0% logic, 100.0% route), 0 logic levels.
 
-      Destination Clock Path SYSCLK to I2C_INST/SLICE_0:
+      Destination Clock Path SYSCLK to SGPIO_INST1/SLICE_31:
 
    Name    Fanout   Delay (ns)          Site               Resource
-PADI_DEL    ---     1.132        128.PAD to      128.PADDI SYSCLK
-ROUTE       330     2.379      128.PADDI to     R5C19B.CLK SYSCLK_c
-REG_DEL     ---     0.452     R5C19B.CLK to      R5C19B.Q1 I2C_INST/SLICE_198
-ROUTE        10     1.117      R5C19B.Q1 to      R6C20A.D0 I2C_INST/STATE[3]
-CTOF_DEL    ---     0.495      R6C20A.D0 to      R6C20A.F0 SLICE_404
-ROUTE         4     1.545      R6C20A.F0 to     R3C18A.CLK I2C_INST/un1_DOUT_1
+ROUTE       328     2.379      128.PADDI to    R11C16D.CLK SYSCLK_c
                   --------
-                    7.120   (29.2% logic, 70.8% route), 3 logic levels.
+                    2.379   (0.0% logic, 100.0% route), 0 logic levels.
 
 
-Passed: The following path meets requirements by 0.363ns (weighted slack = 5.232ns)
+Error: The following path exceeds requirements by 8.406ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              I2C_INST/REG_DIN[2]  (from SYSCLK_c -)
-   Destination:    FF         Data in        I2C_INST/CHECKSUM_OUT[7]  (to I2C_INST/un1_DOUT_1 +)
+   Source:         FF         Q              SGPIO_INST1/CNT[6]  (from SYSCLK_c +)
+   Destination:    FF         Data in        SGPIO_INST1/CNT[0]  (to SYSCLK_c +)
 
-   Delay:               3.280ns  (68.6% logic, 31.4% route), 5 logic levels.
+   Delay:              11.835ns  (28.9% logic, 71.1% route), 7 logic levels.
 
  Constraint Details:
 
-      3.280ns physical path delay I2C_INST/SLICE_181 to I2C_INST/SLICE_0 meets
-      (delay constraint based on source clock period of 3.711ns and destination clock period of 2.883ns)
-      0.200ns delay constraint less
-     -3.609ns skew and
-      0.166ns DIN_SET requirement (totaling 3.643ns) by 0.363ns
+     11.835ns physical path delay SGPIO_INST1/SLICE_31 to SGPIO_INST1/SLICE_34 exceeds
+      3.711ns delay constraint less
+      0.000ns skew and
+      0.282ns CE_SET requirement (totaling 3.429ns) by 8.406ns
 
  Physical Path Details:
 
-      Data path I2C_INST/SLICE_181 to I2C_INST/SLICE_0:
+      Data path SGPIO_INST1/SLICE_31 to SGPIO_INST1/SLICE_34:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.452     R3C15B.CLK to      R3C15B.Q0 I2C_INST/SLICE_181 (from SYSCLK_c)
-ROUTE         2     1.030      R3C15B.Q0 to      R3C17B.B1 I2C_INST/REG_DIN[2]
-C1TOFCO_DE  ---     0.889      R3C17B.B1 to     R3C17B.FCO I2C_INST/SLICE_3
-ROUTE         1     0.000     R3C17B.FCO to     R3C17C.FCI I2C_INST/un1_REG_DIN_1_cry_2
-FCITOFCO_D  ---     0.162     R3C17C.FCI to     R3C17C.FCO I2C_INST/SLICE_2
-ROUTE         1     0.000     R3C17C.FCO to     R3C17D.FCI I2C_INST/un1_REG_DIN_1_cry_4
-FCITOFCO_D  ---     0.162     R3C17D.FCI to     R3C17D.FCO I2C_INST/SLICE_1
-ROUTE         1     0.000     R3C17D.FCO to     R3C18A.FCI I2C_INST/un1_REG_DIN_1_cry_6
-FCITOF0_DE  ---     0.585     R3C18A.FCI to      R3C18A.F0 I2C_INST/SLICE_0
-ROUTE         1     0.000      R3C18A.F0 to     R3C18A.DI0 I2C_INST/un1_REG_DIN_1_s_7_0_S0 (to I2C_INST/un1_DOUT_1)
+REG_DEL     ---     0.452    R11C16D.CLK to     R11C16D.Q1 SGPIO_INST1/SLICE_31 (from SYSCLK_c)
+ROUTE         3     1.320     R11C16D.Q1 to     R10C17B.A1 SGPIO_INST1/CNT[6]
+CTOF_DEL    ---     0.495     R10C17B.A1 to     R10C17B.F1 SGPIO_INST1/SLICE_321
+ROUTE         1     0.436     R10C17B.F1 to     R10C17B.C0 SGPIO_INST1/un5_CNTlto10_1
+CTOF_DEL    ---     0.495     R10C17B.C0 to     R10C17B.F0 SGPIO_INST1/SLICE_321
+ROUTE         1     1.004     R10C17B.F0 to     R10C17D.B1 SGPIO_INST1/un5_CNTlt14
+CTOF_DEL    ---     0.495     R10C17D.B1 to     R10C17D.F1 SGPIO_INST1/SLICE_320
+ROUTE         1     0.436     R10C17D.F1 to     R10C17D.C0 SGPIO_INST1/un5_CNTlt15
+CTOF_DEL    ---     0.495     R10C17D.C0 to     R10C17D.F0 SGPIO_INST1/SLICE_320
+ROUTE         1     1.184     R10C17D.F0 to      R9C15C.D1 SGPIO_INST1/un5_CNTlt22
+CTOF_DEL    ---     0.495      R9C15C.D1 to      R9C15C.F1 SGPIO_INST1/SLICE_319
+ROUTE         1     0.436      R9C15C.F1 to      R9C15C.C0 SGPIO_INST1/un5_CNTlt23
+CTOF_DEL    ---     0.495      R9C15C.C0 to      R9C15C.F0 SGPIO_INST1/SLICE_319
+ROUTE        13     3.597      R9C15C.F0 to     R11C16A.CE SGPIO_INST1/un7_CNT_i (to SYSCLK_c)
                   --------
-                    3.280   (68.6% logic, 31.4% route), 5 logic levels.
+                   11.835   (28.9% logic, 71.1% route), 7 logic levels.
 
  Clock Skew Details: 
 
-      Source Clock Path SYSCLK to I2C_INST/SLICE_181:
+      Source Clock Path SYSCLK to SGPIO_INST1/SLICE_31:
 
    Name    Fanout   Delay (ns)          Site               Resource
-PADI_DEL    ---     1.132        128.PAD to      128.PADDI SYSCLK
-ROUTE       330     2.379      128.PADDI to     R3C15B.CLK SYSCLK_c
+ROUTE       328     2.379      128.PADDI to    R11C16D.CLK SYSCLK_c
                   --------
-                    3.511   (32.2% logic, 67.8% route), 1 logic levels.
+                    2.379   (0.0% logic, 100.0% route), 0 logic levels.
 
-      Destination Clock Path SYSCLK to I2C_INST/SLICE_0:
+      Destination Clock Path SYSCLK to SGPIO_INST1/SLICE_34:
 
    Name    Fanout   Delay (ns)          Site               Resource
-PADI_DEL    ---     1.132        128.PAD to      128.PADDI SYSCLK
-ROUTE       330     2.379      128.PADDI to     R5C19B.CLK SYSCLK_c
-REG_DEL     ---     0.452     R5C19B.CLK to      R5C19B.Q1 I2C_INST/SLICE_198
-ROUTE        10     1.117      R5C19B.Q1 to      R6C20A.D0 I2C_INST/STATE[3]
-CTOF_DEL    ---     0.495      R6C20A.D0 to      R6C20A.F0 SLICE_404
-ROUTE         4     1.545      R6C20A.F0 to     R3C18A.CLK I2C_INST/un1_DOUT_1
+ROUTE       328     2.379      128.PADDI to    R11C16A.CLK SYSCLK_c
                   --------
-                    7.120   (29.2% logic, 70.8% route), 3 logic levels.
+                    2.379   (0.0% logic, 100.0% route), 0 logic levels.
 
 
-Passed: The following path meets requirements by 0.391ns (weighted slack = 5.636ns)
+Error: The following path exceeds requirements by 8.406ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              I2C_INST/REG_DIN[3]  (from SYSCLK_c -)
-   Destination:    FF         Data in        I2C_INST/CHECKSUM_OUT[7]  (to I2C_INST/un1_DOUT_1 +)
+   Source:         FF         Q              SGPIO_INST1/CNT[6]  (from SYSCLK_c +)
+   Destination:    FF         Data in        SGPIO_INST1/CNT[8]  (to SYSCLK_c +)
+                   FF                        SGPIO_INST1/CNT[7]
 
-   Delay:               3.252ns  (68.3% logic, 31.7% route), 4 logic levels.
+   Delay:              11.835ns  (28.9% logic, 71.1% route), 7 logic levels.
 
  Constraint Details:
 
-      3.252ns physical path delay I2C_INST/SLICE_181 to I2C_INST/SLICE_0 meets
-      (delay constraint based on source clock period of 3.711ns and destination clock period of 2.883ns)
-      0.200ns delay constraint less
-     -3.609ns skew and
-      0.166ns DIN_SET requirement (totaling 3.643ns) by 0.391ns
+     11.835ns physical path delay SGPIO_INST1/SLICE_31 to SGPIO_INST1/SLICE_30 exceeds
+      3.711ns delay constraint less
+      0.000ns skew and
+      0.282ns CE_SET requirement (totaling 3.429ns) by 8.406ns
 
  Physical Path Details:
 
-      Data path I2C_INST/SLICE_181 to I2C_INST/SLICE_0:
+      Data path SGPIO_INST1/SLICE_31 to SGPIO_INST1/SLICE_30:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.452     R3C15B.CLK to      R3C15B.Q1 I2C_INST/SLICE_181 (from SYSCLK_c)
-ROUTE         2     1.030      R3C15B.Q1 to      R3C17C.B0 I2C_INST/REG_DIN[3]
-C0TOFCO_DE  ---     1.023      R3C17C.B0 to     R3C17C.FCO I2C_INST/SLICE_2
-ROUTE         1     0.000     R3C17C.FCO to     R3C17D.FCI I2C_INST/un1_REG_DIN_1_cry_4
-FCITOFCO_D  ---     0.162     R3C17D.FCI to     R3C17D.FCO I2C_INST/SLICE_1
-ROUTE         1     0.000     R3C17D.FCO to     R3C18A.FCI I2C_INST/un1_REG_DIN_1_cry_6
-FCITOF0_DE  ---     0.585     R3C18A.FCI to      R3C18A.F0 I2C_INST/SLICE_0
-ROUTE         1     0.000      R3C18A.F0 to     R3C18A.DI0 I2C_INST/un1_REG_DIN_1_s_7_0_S0 (to I2C_INST/un1_DOUT_1)
+REG_DEL     ---     0.452    R11C16D.CLK to     R11C16D.Q1 SGPIO_INST1/SLICE_31 (from SYSCLK_c)
+ROUTE         3     1.320     R11C16D.Q1 to     R10C17B.A1 SGPIO_INST1/CNT[6]
+CTOF_DEL    ---     0.495     R10C17B.A1 to     R10C17B.F1 SGPIO_INST1/SLICE_321
+ROUTE         1     0.436     R10C17B.F1 to     R10C17B.C0 SGPIO_INST1/un5_CNTlto10_1
+CTOF_DEL    ---     0.495     R10C17B.C0 to     R10C17B.F0 SGPIO_INST1/SLICE_321
+ROUTE         1     1.004     R10C17B.F0 to     R10C17D.B1 SGPIO_INST1/un5_CNTlt14
+CTOF_DEL    ---     0.495     R10C17D.B1 to     R10C17D.F1 SGPIO_INST1/SLICE_320
+ROUTE         1     0.436     R10C17D.F1 to     R10C17D.C0 SGPIO_INST1/un5_CNTlt15
+CTOF_DEL    ---     0.495     R10C17D.C0 to     R10C17D.F0 SGPIO_INST1/SLICE_320
+ROUTE         1     1.184     R10C17D.F0 to      R9C15C.D1 SGPIO_INST1/un5_CNTlt22
+CTOF_DEL    ---     0.495      R9C15C.D1 to      R9C15C.F1 SGPIO_INST1/SLICE_319
+ROUTE         1     0.436      R9C15C.F1 to      R9C15C.C0 SGPIO_INST1/un5_CNTlt23
+CTOF_DEL    ---     0.495      R9C15C.C0 to      R9C15C.F0 SGPIO_INST1/SLICE_319
+ROUTE        13     3.597      R9C15C.F0 to     R11C17A.CE SGPIO_INST1/un7_CNT_i (to SYSCLK_c)
                   --------
-                    3.252   (68.3% logic, 31.7% route), 4 logic levels.
+                   11.835   (28.9% logic, 71.1% route), 7 logic levels.
 
  Clock Skew Details: 
 
-      Source Clock Path SYSCLK to I2C_INST/SLICE_181:
+      Source Clock Path SYSCLK to SGPIO_INST1/SLICE_31:
 
    Name    Fanout   Delay (ns)          Site               Resource
-PADI_DEL    ---     1.132        128.PAD to      128.PADDI SYSCLK
-ROUTE       330     2.379      128.PADDI to     R3C15B.CLK SYSCLK_c
+ROUTE       328     2.379      128.PADDI to    R11C16D.CLK SYSCLK_c
                   --------
-                    3.511   (32.2% logic, 67.8% route), 1 logic levels.
+                    2.379   (0.0% logic, 100.0% route), 0 logic levels.
 
-      Destination Clock Path SYSCLK to I2C_INST/SLICE_0:
+      Destination Clock Path SYSCLK to SGPIO_INST1/SLICE_30:
 
    Name    Fanout   Delay (ns)          Site               Resource
-PADI_DEL    ---     1.132        128.PAD to      128.PADDI SYSCLK
-ROUTE       330     2.379      128.PADDI to     R5C19B.CLK SYSCLK_c
-REG_DEL     ---     0.452     R5C19B.CLK to      R5C19B.Q1 I2C_INST/SLICE_198
-ROUTE        10     1.117      R5C19B.Q1 to      R6C20A.D0 I2C_INST/STATE[3]
-CTOF_DEL    ---     0.495      R6C20A.D0 to      R6C20A.F0 SLICE_404
-ROUTE         4     1.545      R6C20A.F0 to     R3C18A.CLK I2C_INST/un1_DOUT_1
+ROUTE       328     2.379      128.PADDI to    R11C17A.CLK SYSCLK_c
                   --------
-                    7.120   (29.2% logic, 70.8% route), 3 logic levels.
+                    2.379   (0.0% logic, 100.0% route), 0 logic levels.
 
 
-Passed: The following path meets requirements by 0.411ns (weighted slack = 5.924ns)
+Error: The following path exceeds requirements by 8.406ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              I2C_INST/REG_DIN[6]  (from SYSCLK_c -)
-   Destination:    FF         Data in        I2C_INST/CHECKSUM_OUT[7]  (to I2C_INST/un1_DOUT_1 +)
+   Source:         FF         Q              SGPIO_INST1/CNT[6]  (from SYSCLK_c +)
+   Destination:    FF         Data in        SGPIO_INST1/CNT[20]  (to SYSCLK_c +)
+                   FF                        SGPIO_INST1/CNT[19]
 
-   Delay:               3.232ns  (59.6% logic, 40.4% route), 3 logic levels.
+   Delay:              11.835ns  (28.9% logic, 71.1% route), 7 logic levels.
 
  Constraint Details:
 
-      3.232ns physical path delay I2C_INST/SLICE_183 to I2C_INST/SLICE_0 meets
-      (delay constraint based on source clock period of 3.711ns and destination clock period of 2.883ns)
-      0.200ns delay constraint less
-     -3.609ns skew and
-      0.166ns DIN_SET requirement (totaling 3.643ns) by 0.411ns
+     11.835ns physical path delay SGPIO_INST1/SLICE_31 to SGPIO_INST1/SLICE_24 exceeds
+      3.711ns delay constraint less
+      0.000ns skew and
+      0.282ns CE_SET requirement (totaling 3.429ns) by 8.406ns
 
  Physical Path Details:
 
-      Data path I2C_INST/SLICE_183 to I2C_INST/SLICE_0:
+      Data path SGPIO_INST1/SLICE_31 to SGPIO_INST1/SLICE_24:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.452     R4C16A.CLK to      R4C16A.Q0 I2C_INST/SLICE_183 (from SYSCLK_c)
-ROUTE         2     1.306      R4C16A.Q0 to      R3C17D.A1 I2C_INST/REG_DIN[6]
-C1TOFCO_DE  ---     0.889      R3C17D.A1 to     R3C17D.FCO I2C_INST/SLICE_1
-ROUTE         1     0.000     R3C17D.FCO to     R3C18A.FCI I2C_INST/un1_REG_DIN_1_cry_6
-FCITOF0_DE  ---     0.585     R3C18A.FCI to      R3C18A.F0 I2C_INST/SLICE_0
-ROUTE         1     0.000      R3C18A.F0 to     R3C18A.DI0 I2C_INST/un1_REG_DIN_1_s_7_0_S0 (to I2C_INST/un1_DOUT_1)
+REG_DEL     ---     0.452    R11C16D.CLK to     R11C16D.Q1 SGPIO_INST1/SLICE_31 (from SYSCLK_c)
+ROUTE         3     1.320     R11C16D.Q1 to     R10C17B.A1 SGPIO_INST1/CNT[6]
+CTOF_DEL    ---     0.495     R10C17B.A1 to     R10C17B.F1 SGPIO_INST1/SLICE_321
+ROUTE         1     0.436     R10C17B.F1 to     R10C17B.C0 SGPIO_INST1/un5_CNTlto10_1
+CTOF_DEL    ---     0.495     R10C17B.C0 to     R10C17B.F0 SGPIO_INST1/SLICE_321
+ROUTE         1     1.004     R10C17B.F0 to     R10C17D.B1 SGPIO_INST1/un5_CNTlt14
+CTOF_DEL    ---     0.495     R10C17D.B1 to     R10C17D.F1 SGPIO_INST1/SLICE_320
+ROUTE         1     0.436     R10C17D.F1 to     R10C17D.C0 SGPIO_INST1/un5_CNTlt15
+CTOF_DEL    ---     0.495     R10C17D.C0 to     R10C17D.F0 SGPIO_INST1/SLICE_320
+ROUTE         1     1.184     R10C17D.F0 to      R9C15C.D1 SGPIO_INST1/un5_CNTlt22
+CTOF_DEL    ---     0.495      R9C15C.D1 to      R9C15C.F1 SGPIO_INST1/SLICE_319
+ROUTE         1     0.436      R9C15C.F1 to      R9C15C.C0 SGPIO_INST1/un5_CNTlt23
+CTOF_DEL    ---     0.495      R9C15C.C0 to      R9C15C.F0 SGPIO_INST1/SLICE_319
+ROUTE        13     3.597      R9C15C.F0 to     R11C18C.CE SGPIO_INST1/un7_CNT_i (to SYSCLK_c)
                   --------
-                    3.232   (59.6% logic, 40.4% route), 3 logic levels.
+                   11.835   (28.9% logic, 71.1% route), 7 logic levels.
 
  Clock Skew Details: 
 
-      Source Clock Path SYSCLK to I2C_INST/SLICE_183:
+      Source Clock Path SYSCLK to SGPIO_INST1/SLICE_31:
 
    Name    Fanout   Delay (ns)          Site               Resource
-PADI_DEL    ---     1.132        128.PAD to      128.PADDI SYSCLK
-ROUTE       330     2.379      128.PADDI to     R4C16A.CLK SYSCLK_c
+ROUTE       328     2.379      128.PADDI to    R11C16D.CLK SYSCLK_c
                   --------
-                    3.511   (32.2% logic, 67.8% route), 1 logic levels.
+                    2.379   (0.0% logic, 100.0% route), 0 logic levels.
 
-      Destination Clock Path SYSCLK to I2C_INST/SLICE_0:
+      Destination Clock Path SYSCLK to SGPIO_INST1/SLICE_24:
 
    Name    Fanout   Delay (ns)          Site               Resource
-PADI_DEL    ---     1.132        128.PAD to      128.PADDI SYSCLK
-ROUTE       330     2.379      128.PADDI to     R5C19B.CLK SYSCLK_c
-REG_DEL     ---     0.452     R5C19B.CLK to      R5C19B.Q1 I2C_INST/SLICE_198
-ROUTE        10     1.117      R5C19B.Q1 to      R6C20A.D0 I2C_INST/STATE[3]
-CTOF_DEL    ---     0.495      R6C20A.D0 to      R6C20A.F0 SLICE_404
-ROUTE         4     1.545      R6C20A.F0 to     R3C18A.CLK I2C_INST/un1_DOUT_1
+ROUTE       328     2.379      128.PADDI to    R11C18C.CLK SYSCLK_c
                   --------
-                    7.120   (29.2% logic, 70.8% route), 3 logic levels.
+                    2.379   (0.0% logic, 100.0% route), 0 logic levels.
 
 
-Passed: The following path meets requirements by 0.562ns (weighted slack = 8.101ns)
+Error: The following path exceeds requirements by 8.406ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              I2C_INST/REG_DIN[4]  (from SYSCLK_c -)
-   Destination:    FF         Data in        I2C_INST/CHECKSUM_OUT[7]  (to I2C_INST/un1_DOUT_1 +)
+   Source:         FF         Q              SGPIO_INST1/CNT[6]  (from SYSCLK_c +)
+   Destination:    FF         Data in        SGPIO_INST1/CNT[12]  (to SYSCLK_c +)
+                   FF                        SGPIO_INST1/CNT[11]
 
-   Delay:               3.081ns  (67.8% logic, 32.2% route), 4 logic levels.
+   Delay:              11.835ns  (28.9% logic, 71.1% route), 7 logic levels.
 
  Constraint Details:
 
-      3.081ns physical path delay I2C_INST/SLICE_182 to I2C_INST/SLICE_0 meets
-      (delay constraint based on source clock period of 3.711ns and destination clock period of 2.883ns)
-      0.200ns delay constraint less
-     -3.609ns skew and
-      0.166ns DIN_SET requirement (totaling 3.643ns) by 0.562ns
+     11.835ns physical path delay SGPIO_INST1/SLICE_31 to SGPIO_INST1/SLICE_28 exceeds
+      3.711ns delay constraint less
+      0.000ns skew and
+      0.282ns CE_SET requirement (totaling 3.429ns) by 8.406ns
 
  Physical Path Details:
 
-      Data path I2C_INST/SLICE_182 to I2C_INST/SLICE_0:
+      Data path SGPIO_INST1/SLICE_31 to SGPIO_INST1/SLICE_28:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.452     R3C15C.CLK to      R3C15C.Q0 I2C_INST/SLICE_182 (from SYSCLK_c)
-ROUTE         2     0.993      R3C15C.Q0 to      R3C17C.A1 I2C_INST/REG_DIN[4]
-C1TOFCO_DE  ---     0.889      R3C17C.A1 to     R3C17C.FCO I2C_INST/SLICE_2
-ROUTE         1     0.000     R3C17C.FCO to     R3C17D.FCI I2C_INST/un1_REG_DIN_1_cry_4
-FCITOFCO_D  ---     0.162     R3C17D.FCI to     R3C17D.FCO I2C_INST/SLICE_1
-ROUTE         1     0.000     R3C17D.FCO to     R3C18A.FCI I2C_INST/un1_REG_DIN_1_cry_6
-FCITOF0_DE  ---     0.585     R3C18A.FCI to      R3C18A.F0 I2C_INST/SLICE_0
-ROUTE         1     0.000      R3C18A.F0 to     R3C18A.DI0 I2C_INST/un1_REG_DIN_1_s_7_0_S0 (to I2C_INST/un1_DOUT_1)
+REG_DEL     ---     0.452    R11C16D.CLK to     R11C16D.Q1 SGPIO_INST1/SLICE_31 (from SYSCLK_c)
+ROUTE         3     1.320     R11C16D.Q1 to     R10C17B.A1 SGPIO_INST1/CNT[6]
+CTOF_DEL    ---     0.495     R10C17B.A1 to     R10C17B.F1 SGPIO_INST1/SLICE_321
+ROUTE         1     0.436     R10C17B.F1 to     R10C17B.C0 SGPIO_INST1/un5_CNTlto10_1
+CTOF_DEL    ---     0.495     R10C17B.C0 to     R10C17B.F0 SGPIO_INST1/SLICE_321
+ROUTE         1     1.004     R10C17B.F0 to     R10C17D.B1 SGPIO_INST1/un5_CNTlt14
+CTOF_DEL    ---     0.495     R10C17D.B1 to     R10C17D.F1 SGPIO_INST1/SLICE_320
+ROUTE         1     0.436     R10C17D.F1 to     R10C17D.C0 SGPIO_INST1/un5_CNTlt15
+CTOF_DEL    ---     0.495     R10C17D.C0 to     R10C17D.F0 SGPIO_INST1/SLICE_320
+ROUTE         1     1.184     R10C17D.F0 to      R9C15C.D1 SGPIO_INST1/un5_CNTlt22
+CTOF_DEL    ---     0.495      R9C15C.D1 to      R9C15C.F1 SGPIO_INST1/SLICE_319
+ROUTE         1     0.436      R9C15C.F1 to      R9C15C.C0 SGPIO_INST1/un5_CNTlt23
+CTOF_DEL    ---     0.495      R9C15C.C0 to      R9C15C.F0 SGPIO_INST1/SLICE_319
+ROUTE        13     3.597      R9C15C.F0 to     R11C17C.CE SGPIO_INST1/un7_CNT_i (to SYSCLK_c)
                   --------
-                    3.081   (67.8% logic, 32.2% route), 4 logic levels.
+                   11.835   (28.9% logic, 71.1% route), 7 logic levels.
 
  Clock Skew Details: 
 
-      Source Clock Path SYSCLK to I2C_INST/SLICE_182:
+      Source Clock Path SYSCLK to SGPIO_INST1/SLICE_31:
 
    Name    Fanout   Delay (ns)          Site               Resource
-PADI_DEL    ---     1.132        128.PAD to      128.PADDI SYSCLK
-ROUTE       330     2.379      128.PADDI to     R3C15C.CLK SYSCLK_c
+ROUTE       328     2.379      128.PADDI to    R11C16D.CLK SYSCLK_c
                   --------
-                    3.511   (32.2% logic, 67.8% route), 1 logic levels.
+                    2.379   (0.0% logic, 100.0% route), 0 logic levels.
 
-      Destination Clock Path SYSCLK to I2C_INST/SLICE_0:
+      Destination Clock Path SYSCLK to SGPIO_INST1/SLICE_28:
 
    Name    Fanout   Delay (ns)          Site               Resource
-PADI_DEL    ---     1.132        128.PAD to      128.PADDI SYSCLK
-ROUTE       330     2.379      128.PADDI to     R5C19B.CLK SYSCLK_c
-REG_DEL     ---     0.452     R5C19B.CLK to      R5C19B.Q1 I2C_INST/SLICE_198
-ROUTE        10     1.117      R5C19B.Q1 to      R6C20A.D0 I2C_INST/STATE[3]
-CTOF_DEL    ---     0.495      R6C20A.D0 to      R6C20A.F0 SLICE_404
-ROUTE         4     1.545      R6C20A.F0 to     R3C18A.CLK I2C_INST/un1_DOUT_1
+ROUTE       328     2.379      128.PADDI to    R11C17C.CLK SYSCLK_c
                   --------
-                    7.120   (29.2% logic, 70.8% route), 3 logic levels.
+                    2.379   (0.0% logic, 100.0% route), 0 logic levels.
 
 
-Passed: The following path meets requirements by 0.590ns (weighted slack = 8.504ns)
+Error: The following path exceeds requirements by 8.406ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              I2C_INST/REG_DIN[5]  (from SYSCLK_c -)
-   Destination:    FF         Data in        I2C_INST/CHECKSUM_OUT[7]  (to I2C_INST/un1_DOUT_1 +)
+   Source:         FF         Q              SGPIO_INST1/CNT[6]  (from SYSCLK_c +)
+   Destination:    FF         Data in        SGPIO_INST1/CNT[4]  (to SYSCLK_c +)
+                   FF                        SGPIO_INST1/CNT[3]
 
-   Delay:               3.053ns  (67.5% logic, 32.5% route), 3 logic levels.
+   Delay:              11.835ns  (28.9% logic, 71.1% route), 7 logic levels.
 
  Constraint Details:
 
-      3.053ns physical path delay I2C_INST/SLICE_182 to I2C_INST/SLICE_0 meets
-      (delay constraint based on source clock period of 3.711ns and destination clock period of 2.883ns)
-      0.200ns delay constraint less
-     -3.609ns skew and
-      0.166ns DIN_SET requirement (totaling 3.643ns) by 0.590ns
+     11.835ns physical path delay SGPIO_INST1/SLICE_31 to SGPIO_INST1/SLICE_32 exceeds
+      3.711ns delay constraint less
+      0.000ns skew and
+      0.282ns CE_SET requirement (totaling 3.429ns) by 8.406ns
 
  Physical Path Details:
 
-      Data path I2C_INST/SLICE_182 to I2C_INST/SLICE_0:
+      Data path SGPIO_INST1/SLICE_31 to SGPIO_INST1/SLICE_32:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.452     R3C15C.CLK to      R3C15C.Q1 I2C_INST/SLICE_182 (from SYSCLK_c)
-ROUTE         2     0.993      R3C15C.Q1 to      R3C17D.A0 I2C_INST/REG_DIN[5]
-C0TOFCO_DE  ---     1.023      R3C17D.A0 to     R3C17D.FCO I2C_INST/SLICE_1
-ROUTE         1     0.000     R3C17D.FCO to     R3C18A.FCI I2C_INST/un1_REG_DIN_1_cry_6
-FCITOF0_DE  ---     0.585     R3C18A.FCI to      R3C18A.F0 I2C_INST/SLICE_0
-ROUTE         1     0.000      R3C18A.F0 to     R3C18A.DI0 I2C_INST/un1_REG_DIN_1_s_7_0_S0 (to I2C_INST/un1_DOUT_1)
+REG_DEL     ---     0.452    R11C16D.CLK to     R11C16D.Q1 SGPIO_INST1/SLICE_31 (from SYSCLK_c)
+ROUTE         3     1.320     R11C16D.Q1 to     R10C17B.A1 SGPIO_INST1/CNT[6]
+CTOF_DEL    ---     0.495     R10C17B.A1 to     R10C17B.F1 SGPIO_INST1/SLICE_321
+ROUTE         1     0.436     R10C17B.F1 to     R10C17B.C0 SGPIO_INST1/un5_CNTlto10_1
+CTOF_DEL    ---     0.495     R10C17B.C0 to     R10C17B.F0 SGPIO_INST1/SLICE_321
+ROUTE         1     1.004     R10C17B.F0 to     R10C17D.B1 SGPIO_INST1/un5_CNTlt14
+CTOF_DEL    ---     0.495     R10C17D.B1 to     R10C17D.F1 SGPIO_INST1/SLICE_320
+ROUTE         1     0.436     R10C17D.F1 to     R10C17D.C0 SGPIO_INST1/un5_CNTlt15
+CTOF_DEL    ---     0.495     R10C17D.C0 to     R10C17D.F0 SGPIO_INST1/SLICE_320
+ROUTE         1     1.184     R10C17D.F0 to      R9C15C.D1 SGPIO_INST1/un5_CNTlt22
+CTOF_DEL    ---     0.495      R9C15C.D1 to      R9C15C.F1 SGPIO_INST1/SLICE_319
+ROUTE         1     0.436      R9C15C.F1 to      R9C15C.C0 SGPIO_INST1/un5_CNTlt23
+CTOF_DEL    ---     0.495      R9C15C.C0 to      R9C15C.F0 SGPIO_INST1/SLICE_319
+ROUTE        13     3.597      R9C15C.F0 to     R11C16C.CE SGPIO_INST1/un7_CNT_i (to SYSCLK_c)
                   --------
-                    3.053   (67.5% logic, 32.5% route), 3 logic levels.
+                   11.835   (28.9% logic, 71.1% route), 7 logic levels.
 
  Clock Skew Details: 
 
-      Source Clock Path SYSCLK to I2C_INST/SLICE_182:
+      Source Clock Path SYSCLK to SGPIO_INST1/SLICE_31:
 
    Name    Fanout   Delay (ns)          Site               Resource
-PADI_DEL    ---     1.132        128.PAD to      128.PADDI SYSCLK
-ROUTE       330     2.379      128.PADDI to     R3C15C.CLK SYSCLK_c
+ROUTE       328     2.379      128.PADDI to    R11C16D.CLK SYSCLK_c
                   --------
-                    3.511   (32.2% logic, 67.8% route), 1 logic levels.
+                    2.379   (0.0% logic, 100.0% route), 0 logic levels.
 
-      Destination Clock Path SYSCLK to I2C_INST/SLICE_0:
+      Destination Clock Path SYSCLK to SGPIO_INST1/SLICE_32:
 
    Name    Fanout   Delay (ns)          Site               Resource
-PADI_DEL    ---     1.132        128.PAD to      128.PADDI SYSCLK
-ROUTE       330     2.379      128.PADDI to     R5C19B.CLK SYSCLK_c
-REG_DEL     ---     0.452     R5C19B.CLK to      R5C19B.Q1 I2C_INST/SLICE_198
-ROUTE        10     1.117      R5C19B.Q1 to      R6C20A.D0 I2C_INST/STATE[3]
-CTOF_DEL    ---     0.495      R6C20A.D0 to      R6C20A.F0 SLICE_404
-ROUTE         4     1.545      R6C20A.F0 to     R3C18A.CLK I2C_INST/un1_DOUT_1
+ROUTE       328     2.379      128.PADDI to    R11C16C.CLK SYSCLK_c
                   --------
-                    7.120   (29.2% logic, 70.8% route), 3 logic levels.
+                    2.379   (0.0% logic, 100.0% route), 0 logic levels.
 
 
-Passed: The following path meets requirements by 0.792ns (weighted slack = 11.416ns)
+Error: The following path exceeds requirements by 8.406ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              I2C_INST/REG_DIN[0]  (from SYSCLK_c -)
-   Destination:    FF         Data in        I2C_INST/CHECKSUM_OUT[6]  (to I2C_INST/un1_DOUT_1 +)
+   Source:         FF         Q              SGPIO_INST1/CNT[6]  (from SYSCLK_c +)
+   Destination:    FF         Data in        SGPIO_INST1/CNT[16]  (to SYSCLK_c +)
+                   FF                        SGPIO_INST1/CNT[15]
 
-   Delay:               3.307ns  (69.8% logic, 30.2% route), 5 logic levels.
-
- Constraint Details:
-
-      3.307ns physical path delay I2C_INST/SLICE_180 to I2C_INST/SLICE_1 meets
-      (delay constraint based on source clock period of 3.711ns and destination clock period of 2.883ns)
-      0.200ns delay constraint less
-     -4.065ns skew and
-      0.166ns DIN_SET requirement (totaling 4.099ns) by 0.792ns
-
- Physical Path Details:
-
-      Data path I2C_INST/SLICE_180 to I2C_INST/SLICE_1:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.452     R3C16C.CLK to      R3C16C.Q0 I2C_INST/SLICE_180 (from SYSCLK_c)
-ROUTE         3     0.999      R3C16C.Q0 to      R3C17A.A1 I2C_INST/REG_DIN[0]
-C1TOFCO_DE  ---     0.889      R3C17A.A1 to     R3C17A.FCO SLICE_4
-ROUTE         1     0.000     R3C17A.FCO to     R3C17B.FCI I2C_INST/un1_REG_DIN_1_cry_0
-FCITOFCO_D  ---     0.162     R3C17B.FCI to     R3C17B.FCO I2C_INST/SLICE_3
-ROUTE         1     0.000     R3C17B.FCO to     R3C17C.FCI I2C_INST/un1_REG_DIN_1_cry_2
-FCITOFCO_D  ---     0.162     R3C17C.FCI to     R3C17C.FCO I2C_INST/SLICE_2
-ROUTE         1     0.000     R3C17C.FCO to     R3C17D.FCI I2C_INST/un1_REG_DIN_1_cry_4
-FCITOF1_DE  ---     0.643     R3C17D.FCI to      R3C17D.F1 I2C_INST/SLICE_1
-ROUTE         1     0.000      R3C17D.F1 to     R3C17D.DI1 I2C_INST/un1_REG_DIN_1_cry_5_0_S1 (to I2C_INST/un1_DOUT_1)
-                  --------
-                    3.307   (69.8% logic, 30.2% route), 5 logic levels.
-
- Clock Skew Details: 
-
-      Source Clock Path SYSCLK to I2C_INST/SLICE_180:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-PADI_DEL    ---     1.132        128.PAD to      128.PADDI SYSCLK
-ROUTE       330     2.379      128.PADDI to     R3C16C.CLK SYSCLK_c
-                  --------
-                    3.511   (32.2% logic, 67.8% route), 1 logic levels.
-
-      Destination Clock Path SYSCLK to I2C_INST/SLICE_1:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-PADI_DEL    ---     1.132        128.PAD to      128.PADDI SYSCLK
-ROUTE       330     2.379      128.PADDI to     R5C19B.CLK SYSCLK_c
-REG_DEL     ---     0.452     R5C19B.CLK to      R5C19B.Q1 I2C_INST/SLICE_198
-ROUTE        10     1.117      R5C19B.Q1 to      R6C20A.D0 I2C_INST/STATE[3]
-CTOF_DEL    ---     0.495      R6C20A.D0 to      R6C20A.F0 SLICE_404
-ROUTE         4     2.001      R6C20A.F0 to     R3C17D.CLK I2C_INST/un1_DOUT_1
-                  --------
-                    7.576   (27.4% logic, 72.6% route), 3 logic levels.
-
-
-Passed: The following path meets requirements by 0.848ns (weighted slack = 12.223ns)
-
- Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
-
-   Source:         FF         Q              I2C_INST/REG_DIN[1]  (from SYSCLK_c -)
-   Destination:    FF         Data in        I2C_INST/CHECKSUM_OUT[6]  (to I2C_INST/un1_DOUT_1 +)
-
-   Delay:               3.251ns  (70.1% logic, 29.9% route), 4 logic levels.
+   Delay:              11.835ns  (28.9% logic, 71.1% route), 7 logic levels.
 
  Constraint Details:
 
-      3.251ns physical path delay I2C_INST/SLICE_180 to I2C_INST/SLICE_1 meets
-      (delay constraint based on source clock period of 3.711ns and destination clock period of 2.883ns)
-      0.200ns delay constraint less
-     -4.065ns skew and
-      0.166ns DIN_SET requirement (totaling 4.099ns) by 0.848ns
+     11.835ns physical path delay SGPIO_INST1/SLICE_31 to SGPIO_INST1/SLICE_26 exceeds
+      3.711ns delay constraint less
+      0.000ns skew and
+      0.282ns CE_SET requirement (totaling 3.429ns) by 8.406ns
 
  Physical Path Details:
 
-      Data path I2C_INST/SLICE_180 to I2C_INST/SLICE_1:
+      Data path SGPIO_INST1/SLICE_31 to SGPIO_INST1/SLICE_26:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.452     R3C16C.CLK to      R3C16C.Q1 I2C_INST/SLICE_180 (from SYSCLK_c)
-ROUTE         2     0.971      R3C16C.Q1 to      R3C17B.A0 I2C_INST/REG_DIN[1]
-C0TOFCO_DE  ---     1.023      R3C17B.A0 to     R3C17B.FCO I2C_INST/SLICE_3
-ROUTE         1     0.000     R3C17B.FCO to     R3C17C.FCI I2C_INST/un1_REG_DIN_1_cry_2
-FCITOFCO_D  ---     0.162     R3C17C.FCI to     R3C17C.FCO I2C_INST/SLICE_2
-ROUTE         1     0.000     R3C17C.FCO to     R3C17D.FCI I2C_INST/un1_REG_DIN_1_cry_4
-FCITOF1_DE  ---     0.643     R3C17D.FCI to      R3C17D.F1 I2C_INST/SLICE_1
-ROUTE         1     0.000      R3C17D.F1 to     R3C17D.DI1 I2C_INST/un1_REG_DIN_1_cry_5_0_S1 (to I2C_INST/un1_DOUT_1)
+REG_DEL     ---     0.452    R11C16D.CLK to     R11C16D.Q1 SGPIO_INST1/SLICE_31 (from SYSCLK_c)
+ROUTE         3     1.320     R11C16D.Q1 to     R10C17B.A1 SGPIO_INST1/CNT[6]
+CTOF_DEL    ---     0.495     R10C17B.A1 to     R10C17B.F1 SGPIO_INST1/SLICE_321
+ROUTE         1     0.436     R10C17B.F1 to     R10C17B.C0 SGPIO_INST1/un5_CNTlto10_1
+CTOF_DEL    ---     0.495     R10C17B.C0 to     R10C17B.F0 SGPIO_INST1/SLICE_321
+ROUTE         1     1.004     R10C17B.F0 to     R10C17D.B1 SGPIO_INST1/un5_CNTlt14
+CTOF_DEL    ---     0.495     R10C17D.B1 to     R10C17D.F1 SGPIO_INST1/SLICE_320
+ROUTE         1     0.436     R10C17D.F1 to     R10C17D.C0 SGPIO_INST1/un5_CNTlt15
+CTOF_DEL    ---     0.495     R10C17D.C0 to     R10C17D.F0 SGPIO_INST1/SLICE_320
+ROUTE         1     1.184     R10C17D.F0 to      R9C15C.D1 SGPIO_INST1/un5_CNTlt22
+CTOF_DEL    ---     0.495      R9C15C.D1 to      R9C15C.F1 SGPIO_INST1/SLICE_319
+ROUTE         1     0.436      R9C15C.F1 to      R9C15C.C0 SGPIO_INST1/un5_CNTlt23
+CTOF_DEL    ---     0.495      R9C15C.C0 to      R9C15C.F0 SGPIO_INST1/SLICE_319
+ROUTE        13     3.597      R9C15C.F0 to     R11C18A.CE SGPIO_INST1/un7_CNT_i (to SYSCLK_c)
                   --------
-                    3.251   (70.1% logic, 29.9% route), 4 logic levels.
+                   11.835   (28.9% logic, 71.1% route), 7 logic levels.
 
  Clock Skew Details: 
 
-      Source Clock Path SYSCLK to I2C_INST/SLICE_180:
+      Source Clock Path SYSCLK to SGPIO_INST1/SLICE_31:
 
    Name    Fanout   Delay (ns)          Site               Resource
-PADI_DEL    ---     1.132        128.PAD to      128.PADDI SYSCLK
-ROUTE       330     2.379      128.PADDI to     R3C16C.CLK SYSCLK_c
+ROUTE       328     2.379      128.PADDI to    R11C16D.CLK SYSCLK_c
                   --------
-                    3.511   (32.2% logic, 67.8% route), 1 logic levels.
+                    2.379   (0.0% logic, 100.0% route), 0 logic levels.
 
-      Destination Clock Path SYSCLK to I2C_INST/SLICE_1:
+      Destination Clock Path SYSCLK to SGPIO_INST1/SLICE_26:
 
    Name    Fanout   Delay (ns)          Site               Resource
-PADI_DEL    ---     1.132        128.PAD to      128.PADDI SYSCLK
-ROUTE       330     2.379      128.PADDI to     R5C19B.CLK SYSCLK_c
-REG_DEL     ---     0.452     R5C19B.CLK to      R5C19B.Q1 I2C_INST/SLICE_198
-ROUTE        10     1.117      R5C19B.Q1 to      R6C20A.D0 I2C_INST/STATE[3]
-CTOF_DEL    ---     0.495      R6C20A.D0 to      R6C20A.F0 SLICE_404
-ROUTE         4     2.001      R6C20A.F0 to     R3C17D.CLK I2C_INST/un1_DOUT_1
+ROUTE       328     2.379      128.PADDI to    R11C18A.CLK SYSCLK_c
                   --------
-                    7.576   (27.4% logic, 72.6% route), 3 logic levels.
+                    2.379   (0.0% logic, 100.0% route), 0 logic levels.
 
-Warning:  21.067MHz is the maximum frequency for this preference.
+Warning:  82.529MHz is the maximum frequency for this preference.
 
 Report Summary
 --------------
@@ -1165,15 +610,12 @@ Preference                              |   Constraint|       Actual|Levels
 ----------------------------------------------------------------------------
                                         |             |             |
 FREQUENCY NET "SYSCLK_c" 269.469000 MHz |             |             |
-;                                       |  269.469 MHz|    0.979 MHz|   3 *
-                                        |             |             |
-FREQUENCY NET "I2C_INST/un1_DOUT_1"     |             |             |
-346.741000 MHz ;                        |  346.741 MHz|   21.067 MHz|   3 *
+;                                       |  269.469 MHz|   82.529 MHz|   7 *
                                         |             |             |
 ----------------------------------------------------------------------------
 
 
-2 preferences(marked by "*" above) not met.
+1 preference(marked by "*" above) not met.
 
 No net is responsible for more than 10% of the timing errors.
 
@@ -1181,34 +623,23 @@ No net is responsible for more than 10% of the timing errors.
 Clock Domains Analysis
 ------------------------
 
-Found 2 clocks:
+Found 1 clocks:
 
-Clock Domain: SYSCLK_c   Source: SYSCLK.PAD   Loads: 330
+Clock Domain: SYSCLK_c   Source: SYSCLK.PAD   Loads: 328
    Covered under: FREQUENCY NET "SYSCLK_c" 269.469000 MHz ;
-
-   Data transfers from:
-   Clock Domain: I2C_INST/un1_DOUT_1   Source: SLICE_404.F0
-      Covered under: FREQUENCY NET "SYSCLK_c" 269.469000 MHz ;   Transfers: 8
-
-Clock Domain: I2C_INST/un1_DOUT_1   Source: SLICE_404.F0   Loads: 4
-   No transfer within this clock domain is found
-
-   Data transfers from:
-   Clock Domain: SYSCLK_c   Source: SYSCLK.PAD
-      Covered under: FREQUENCY NET "I2C_INST/un1_DOUT_1" 346.741000 MHz ;   Transfers: 8
 
 
 Timing summary (Setup):
 ---------------
 
-Timing errors: 4097  Score: 21128300
-Cumulative negative slack: 21105728
+Timing errors: 4096  Score: 14146724
+Cumulative negative slack: 14123977
 
-Constraints cover 7304 paths, 2 nets, and 3298 connections (94.8% coverage)
+Constraints cover 7217 paths, 1 nets, and 3233 connections (94.5% coverage)
 
 --------------------------------------------------------------------------------
 Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.2.0.134
-Mon Mar 16 19:43:05 2015
+Sun Apr 26 22:22:25 2015
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -1248,77 +679,34 @@ Passed: The following path meets requirements by 0.283ns
 
  Constraint Details:
 
-      0.300ns physical path delay SGPIO_INST1/SLICE_240 to DRV12_ACT_LED_CATH_L_MGIOL meets
+      0.300ns physical path delay SGPIO_INST1/SLICE_234 to DRV12_ACT_LED_CATH_L_MGIOL meets
      -0.036ns DO_HLD and
       0.000ns delay constraint less
      -0.053ns skew requirement (totaling 0.017ns) by 0.283ns
 
  Physical Path Details:
 
-      Data path SGPIO_INST1/SLICE_240 to DRV12_ACT_LED_CATH_L_MGIOL:
+      Data path SGPIO_INST1/SLICE_234 to DRV12_ACT_LED_CATH_L_MGIOL:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.131     R2C22C.CLK to      R2C22C.Q1 SGPIO_INST1/SLICE_240 (from SYSCLK_c)
-ROUTE         2     0.169      R2C22C.Q1 to  IOL_T22A.OPOS SGPIO_INST1.ACT_LED_TMP[11] (to SYSCLK_c)
+REG_DEL     ---     0.131     R2C22A.CLK to      R2C22A.Q1 SGPIO_INST1/SLICE_234 (from SYSCLK_c)
+ROUTE         2     0.169      R2C22A.Q1 to  IOL_T22A.OPOS SGPIO_INST1.ACT_LED_TMP[11] (to SYSCLK_c)
                   --------
                     0.300   (43.7% logic, 56.3% route), 1 logic levels.
 
  Clock Skew Details: 
 
-      Source Clock Path SYSCLK to SGPIO_INST1/SLICE_240:
+      Source Clock Path SYSCLK to SGPIO_INST1/SLICE_234:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       330     0.840      128.PADDI to     R2C22C.CLK SYSCLK_c
+ROUTE       328     0.840      128.PADDI to     R2C22A.CLK SYSCLK_c
                   --------
                     0.840   (0.0% logic, 100.0% route), 0 logic levels.
 
       Destination Clock Path SYSCLK to DRV12_ACT_LED_CATH_L_MGIOL:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       330     0.893      128.PADDI to   IOL_T22A.CLK SYSCLK_c
-                  --------
-                    0.893   (0.0% logic, 100.0% route), 0 logic levels.
-
-
-Passed: The following path meets requirements by 0.283ns
-
- Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
-
-   Source:         FF         Q              SGPIO_INST1/ACT_LED_TMP[1]  (from SYSCLK_c +)
-   Destination:    FF         Data in        SGPIO_INST1_ACT_LEDio[1]  (to SYSCLK_c +)
-
-   Delay:               0.300ns  (43.7% logic, 56.3% route), 1 logic levels.
-
- Constraint Details:
-
-      0.300ns physical path delay SGPIO_INST1/SLICE_235 to DRV2_ACT_LED_CATH_L_MGIOL meets
-     -0.036ns DO_HLD and
-      0.000ns delay constraint less
-     -0.053ns skew requirement (totaling 0.017ns) by 0.283ns
-
- Physical Path Details:
-
-      Data path SGPIO_INST1/SLICE_235 to DRV2_ACT_LED_CATH_L_MGIOL:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.131     R2C10D.CLK to      R2C10D.Q1 SGPIO_INST1/SLICE_235 (from SYSCLK_c)
-ROUTE         2     0.169      R2C10D.Q1 to  IOL_T10A.OPOS SGPIO_INST1.ACT_LED_TMP[1] (to SYSCLK_c)
-                  --------
-                    0.300   (43.7% logic, 56.3% route), 1 logic levels.
-
- Clock Skew Details: 
-
-      Source Clock Path SYSCLK to SGPIO_INST1/SLICE_235:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       330     0.840      128.PADDI to     R2C10D.CLK SYSCLK_c
-                  --------
-                    0.840   (0.0% logic, 100.0% route), 0 logic levels.
-
-      Destination Clock Path SYSCLK to DRV2_ACT_LED_CATH_L_MGIOL:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       330     0.893      128.PADDI to   IOL_T10A.CLK SYSCLK_c
+ROUTE       328     0.893      128.PADDI to   IOL_T22A.CLK SYSCLK_c
                   --------
                     0.893   (0.0% logic, 100.0% route), 0 logic levels.
 
@@ -1334,34 +722,77 @@ Passed: The following path meets requirements by 0.283ns
 
  Constraint Details:
 
-      0.300ns physical path delay SGPIO_INST1/SLICE_236 to DRV4_ACT_LED_CATH_L_MGIOL meets
+      0.300ns physical path delay SGPIO_INST1/SLICE_230 to DRV4_ACT_LED_CATH_L_MGIOL meets
      -0.036ns DO_HLD and
       0.000ns delay constraint less
      -0.053ns skew requirement (totaling 0.017ns) by 0.283ns
 
  Physical Path Details:
 
-      Data path SGPIO_INST1/SLICE_236 to DRV4_ACT_LED_CATH_L_MGIOL:
+      Data path SGPIO_INST1/SLICE_230 to DRV4_ACT_LED_CATH_L_MGIOL:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.131     R2C11D.CLK to      R2C11D.Q1 SGPIO_INST1/SLICE_236 (from SYSCLK_c)
+REG_DEL     ---     0.131     R2C11D.CLK to      R2C11D.Q1 SGPIO_INST1/SLICE_230 (from SYSCLK_c)
 ROUTE         2     0.169      R2C11D.Q1 to  IOL_T11A.OPOS SGPIO_INST1.ACT_LED_TMP[3] (to SYSCLK_c)
                   --------
                     0.300   (43.7% logic, 56.3% route), 1 logic levels.
 
  Clock Skew Details: 
 
-      Source Clock Path SYSCLK to SGPIO_INST1/SLICE_236:
+      Source Clock Path SYSCLK to SGPIO_INST1/SLICE_230:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       330     0.840      128.PADDI to     R2C11D.CLK SYSCLK_c
+ROUTE       328     0.840      128.PADDI to     R2C11D.CLK SYSCLK_c
                   --------
                     0.840   (0.0% logic, 100.0% route), 0 logic levels.
 
       Destination Clock Path SYSCLK to DRV4_ACT_LED_CATH_L_MGIOL:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       330     0.893      128.PADDI to   IOL_T11A.CLK SYSCLK_c
+ROUTE       328     0.893      128.PADDI to   IOL_T11A.CLK SYSCLK_c
+                  --------
+                    0.893   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.283ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              SGPIO_INST1/ACT_LED_TMP[31]  (from SYSCLK_c +)
+   Destination:    FF         Data in        SGPIO_INST1_ACT_LEDio[31]  (to SYSCLK_c +)
+
+   Delay:               0.300ns  (43.7% logic, 56.3% route), 1 logic levels.
+
+ Constraint Details:
+
+      0.300ns physical path delay SGPIO_INST1/SLICE_244 to DRV56_ACT_LED_CATH_L_MGIOL meets
+     -0.036ns DO_HLD and
+      0.000ns delay constraint less
+     -0.053ns skew requirement (totaling 0.017ns) by 0.283ns
+
+ Physical Path Details:
+
+      Data path SGPIO_INST1/SLICE_244 to DRV56_ACT_LED_CATH_L_MGIOL:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.131    R13C21D.CLK to     R13C21D.Q1 SGPIO_INST1/SLICE_244 (from SYSCLK_c)
+ROUTE         2     0.169     R13C21D.Q1 to  IOL_B21A.OPOS SGPIO_INST1.ACT_LED_TMP[31] (to SYSCLK_c)
+                  --------
+                    0.300   (43.7% logic, 56.3% route), 1 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path SYSCLK to SGPIO_INST1/SLICE_244:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       328     0.840      128.PADDI to    R13C21D.CLK SYSCLK_c
+                  --------
+                    0.840   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path SYSCLK to DRV56_ACT_LED_CATH_L_MGIOL:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       328     0.893      128.PADDI to   IOL_B21A.CLK SYSCLK_c
                   --------
                     0.893   (0.0% logic, 100.0% route), 0 logic levels.
 
@@ -1377,34 +808,34 @@ Passed: The following path meets requirements by 0.283ns
 
  Constraint Details:
 
-      0.300ns physical path delay SGPIO_INST1/SLICE_238 to DRV8_ACT_LED_CATH_L_MGIOL meets
+      0.300ns physical path delay SGPIO_INST1/SLICE_232 to DRV8_ACT_LED_CATH_L_MGIOL meets
      -0.036ns DO_HLD and
       0.000ns delay constraint less
      -0.053ns skew requirement (totaling 0.017ns) by 0.283ns
 
  Physical Path Details:
 
-      Data path SGPIO_INST1/SLICE_238 to DRV8_ACT_LED_CATH_L_MGIOL:
+      Data path SGPIO_INST1/SLICE_232 to DRV8_ACT_LED_CATH_L_MGIOL:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.131     R2C19A.CLK to      R2C19A.Q1 SGPIO_INST1/SLICE_238 (from SYSCLK_c)
-ROUTE         2     0.169      R2C19A.Q1 to  IOL_T19A.OPOS SGPIO_INST1.ACT_LED_TMP[7] (to SYSCLK_c)
+REG_DEL     ---     0.131     R2C19B.CLK to      R2C19B.Q1 SGPIO_INST1/SLICE_232 (from SYSCLK_c)
+ROUTE         2     0.169      R2C19B.Q1 to  IOL_T19A.OPOS SGPIO_INST1.ACT_LED_TMP[7] (to SYSCLK_c)
                   --------
                     0.300   (43.7% logic, 56.3% route), 1 logic levels.
 
  Clock Skew Details: 
 
-      Source Clock Path SYSCLK to SGPIO_INST1/SLICE_238:
+      Source Clock Path SYSCLK to SGPIO_INST1/SLICE_232:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       330     0.840      128.PADDI to     R2C19A.CLK SYSCLK_c
+ROUTE       328     0.840      128.PADDI to     R2C19B.CLK SYSCLK_c
                   --------
                     0.840   (0.0% logic, 100.0% route), 0 logic levels.
 
       Destination Clock Path SYSCLK to DRV8_ACT_LED_CATH_L_MGIOL:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       330     0.893      128.PADDI to   IOL_T19A.CLK SYSCLK_c
+ROUTE       328     0.893      128.PADDI to   IOL_T19A.CLK SYSCLK_c
                   --------
                     0.893   (0.0% logic, 100.0% route), 0 logic levels.
 
@@ -1420,34 +851,34 @@ Passed: The following path meets requirements by 0.283ns
 
  Constraint Details:
 
-      0.300ns physical path delay SGPIO_INST1/SLICE_239 to DRV10_ACT_LED_CATH_L_MGIOL meets
+      0.300ns physical path delay SGPIO_INST1/SLICE_233 to DRV10_ACT_LED_CATH_L_MGIOL meets
      -0.036ns DO_HLD and
       0.000ns delay constraint less
      -0.053ns skew requirement (totaling 0.017ns) by 0.283ns
 
  Physical Path Details:
 
-      Data path SGPIO_INST1/SLICE_239 to DRV10_ACT_LED_CATH_L_MGIOL:
+      Data path SGPIO_INST1/SLICE_233 to DRV10_ACT_LED_CATH_L_MGIOL:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.131     R2C21A.CLK to      R2C21A.Q1 SGPIO_INST1/SLICE_239 (from SYSCLK_c)
-ROUTE         2     0.169      R2C21A.Q1 to  IOL_T21A.OPOS SGPIO_INST1.ACT_LED_TMP[9] (to SYSCLK_c)
+REG_DEL     ---     0.131     R2C21D.CLK to      R2C21D.Q1 SGPIO_INST1/SLICE_233 (from SYSCLK_c)
+ROUTE         2     0.169      R2C21D.Q1 to  IOL_T21A.OPOS SGPIO_INST1.ACT_LED_TMP[9] (to SYSCLK_c)
                   --------
                     0.300   (43.7% logic, 56.3% route), 1 logic levels.
 
  Clock Skew Details: 
 
-      Source Clock Path SYSCLK to SGPIO_INST1/SLICE_239:
+      Source Clock Path SYSCLK to SGPIO_INST1/SLICE_233:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       330     0.840      128.PADDI to     R2C21A.CLK SYSCLK_c
+ROUTE       328     0.840      128.PADDI to     R2C21D.CLK SYSCLK_c
                   --------
                     0.840   (0.0% logic, 100.0% route), 0 logic levels.
 
       Destination Clock Path SYSCLK to DRV10_ACT_LED_CATH_L_MGIOL:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       330     0.893      128.PADDI to   IOL_T21A.CLK SYSCLK_c
+ROUTE       328     0.893      128.PADDI to   IOL_T21A.CLK SYSCLK_c
                   --------
                     0.893   (0.0% logic, 100.0% route), 0 logic levels.
 
@@ -1463,34 +894,77 @@ Passed: The following path meets requirements by 0.283ns
 
  Constraint Details:
 
-      0.300ns physical path delay SGPIO_INST2/SLICE_258 to DRV14_ACT_LED_CATH_L_MGIOL meets
+      0.300ns physical path delay SGPIO_INST2/SLICE_252 to DRV14_ACT_LED_CATH_L_MGIOL meets
      -0.036ns DO_HLD and
       0.000ns delay constraint less
      -0.053ns skew requirement (totaling 0.017ns) by 0.283ns
 
  Physical Path Details:
 
-      Data path SGPIO_INST2/SLICE_258 to DRV14_ACT_LED_CATH_L_MGIOL:
+      Data path SGPIO_INST2/SLICE_252 to DRV14_ACT_LED_CATH_L_MGIOL:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.131     R2C23D.CLK to      R2C23D.Q1 SGPIO_INST2/SLICE_258 (from SYSCLK_c)
-ROUTE         2     0.169      R2C23D.Q1 to  IOL_T23A.OPOS SGPIO_INST2.ACT_LED_TMP[1] (to SYSCLK_c)
+REG_DEL     ---     0.131     R2C23A.CLK to      R2C23A.Q1 SGPIO_INST2/SLICE_252 (from SYSCLK_c)
+ROUTE         2     0.169      R2C23A.Q1 to  IOL_T23A.OPOS SGPIO_INST2.ACT_LED_TMP[1] (to SYSCLK_c)
                   --------
                     0.300   (43.7% logic, 56.3% route), 1 logic levels.
 
  Clock Skew Details: 
 
-      Source Clock Path SYSCLK to SGPIO_INST2/SLICE_258:
+      Source Clock Path SYSCLK to SGPIO_INST2/SLICE_252:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       330     0.840      128.PADDI to     R2C23D.CLK SYSCLK_c
+ROUTE       328     0.840      128.PADDI to     R2C23A.CLK SYSCLK_c
                   --------
                     0.840   (0.0% logic, 100.0% route), 0 logic levels.
 
       Destination Clock Path SYSCLK to DRV14_ACT_LED_CATH_L_MGIOL:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       330     0.893      128.PADDI to   IOL_T23A.CLK SYSCLK_c
+ROUTE       328     0.893      128.PADDI to   IOL_T23A.CLK SYSCLK_c
+                  --------
+                    0.893   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.283ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              SGPIO_INST1/ACT_LED_TMP[27]  (from SYSCLK_c +)
+   Destination:    FF         Data in        SGPIO_INST1_ACT_LEDio[27]  (to SYSCLK_c +)
+
+   Delay:               0.300ns  (43.7% logic, 56.3% route), 1 logic levels.
+
+ Constraint Details:
+
+      0.300ns physical path delay SGPIO_INST1/SLICE_242 to DRV52_ACT_LED_CATH_L_MGIOL meets
+     -0.036ns DO_HLD and
+      0.000ns delay constraint less
+     -0.053ns skew requirement (totaling 0.017ns) by 0.283ns
+
+ Physical Path Details:
+
+      Data path SGPIO_INST1/SLICE_242 to DRV52_ACT_LED_CATH_L_MGIOL:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.131    R13C18D.CLK to     R13C18D.Q1 SGPIO_INST1/SLICE_242 (from SYSCLK_c)
+ROUTE         2     0.169     R13C18D.Q1 to  IOL_B18A.OPOS SGPIO_INST1.ACT_LED_TMP[27] (to SYSCLK_c)
+                  --------
+                    0.300   (43.7% logic, 56.3% route), 1 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path SYSCLK to SGPIO_INST1/SLICE_242:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       328     0.840      128.PADDI to    R13C18D.CLK SYSCLK_c
+                  --------
+                    0.840   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path SYSCLK to DRV52_ACT_LED_CATH_L_MGIOL:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       328     0.893      128.PADDI to   IOL_B18A.CLK SYSCLK_c
                   --------
                     0.893   (0.0% logic, 100.0% route), 0 logic levels.
 
@@ -1506,34 +980,34 @@ Passed: The following path meets requirements by 0.283ns
 
  Constraint Details:
 
-      0.300ns physical path delay SGPIO_INST1/SLICE_237 to DRV6_ACT_LED_CATH_L_MGIOL meets
+      0.300ns physical path delay SGPIO_INST1/SLICE_231 to DRV6_ACT_LED_CATH_L_MGIOL meets
      -0.036ns DO_HLD and
       0.000ns delay constraint less
      -0.053ns skew requirement (totaling 0.017ns) by 0.283ns
 
  Physical Path Details:
 
-      Data path SGPIO_INST1/SLICE_237 to DRV6_ACT_LED_CATH_L_MGIOL:
+      Data path SGPIO_INST1/SLICE_231 to DRV6_ACT_LED_CATH_L_MGIOL:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.131     R2C13B.CLK to      R2C13B.Q1 SGPIO_INST1/SLICE_237 (from SYSCLK_c)
-ROUTE         2     0.169      R2C13B.Q1 to  IOL_T13A.OPOS SGPIO_INST1.ACT_LED_TMP[5] (to SYSCLK_c)
+REG_DEL     ---     0.131     R2C13A.CLK to      R2C13A.Q1 SGPIO_INST1/SLICE_231 (from SYSCLK_c)
+ROUTE         2     0.169      R2C13A.Q1 to  IOL_T13A.OPOS SGPIO_INST1.ACT_LED_TMP[5] (to SYSCLK_c)
                   --------
                     0.300   (43.7% logic, 56.3% route), 1 logic levels.
 
  Clock Skew Details: 
 
-      Source Clock Path SYSCLK to SGPIO_INST1/SLICE_237:
+      Source Clock Path SYSCLK to SGPIO_INST1/SLICE_231:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       330     0.840      128.PADDI to     R2C13B.CLK SYSCLK_c
+ROUTE       328     0.840      128.PADDI to     R2C13A.CLK SYSCLK_c
                   --------
                     0.840   (0.0% logic, 100.0% route), 0 logic levels.
 
       Destination Clock Path SYSCLK to DRV6_ACT_LED_CATH_L_MGIOL:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       330     0.893      128.PADDI to   IOL_T13A.CLK SYSCLK_c
+ROUTE       328     0.893      128.PADDI to   IOL_T13A.CLK SYSCLK_c
                   --------
                     0.893   (0.0% logic, 100.0% route), 0 logic levels.
 
@@ -1542,41 +1016,41 @@ Passed: The following path meets requirements by 0.284ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              SGPIO_INST2/ACT_LED_TMP[19]  (from SYSCLK_c +)
-   Destination:    FF         Data in        SGPIO_INST2_ACT_LEDio[19]  (to SYSCLK_c +)
+   Source:         FF         Q              SGPIO_INST2/ACT_LED_TMP[17]  (from SYSCLK_c +)
+   Destination:    FF         Data in        SGPIO_INST2_ACT_LEDio[17]  (to SYSCLK_c +)
 
    Delay:               0.301ns  (43.5% logic, 56.5% route), 1 logic levels.
 
  Constraint Details:
 
-      0.301ns physical path delay SGPIO_INST2/SLICE_267 to DRV44_ACT_LED_CATH_L_MGIOL meets
+      0.301ns physical path delay SGPIO_INST2/SLICE_260 to DRV42_ACT_LED_CATH_L_MGIOL meets
      -0.036ns DO_HLD and
       0.000ns delay constraint less
      -0.053ns skew requirement (totaling 0.017ns) by 0.284ns
 
  Physical Path Details:
 
-      Data path SGPIO_INST2/SLICE_267 to DRV44_ACT_LED_CATH_L_MGIOL:
+      Data path SGPIO_INST2/SLICE_260 to DRV42_ACT_LED_CATH_L_MGIOL:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.131     R13C5C.CLK to      R13C5C.Q1 SGPIO_INST2/SLICE_267 (from SYSCLK_c)
-ROUTE         2     0.170      R13C5C.Q1 to   IOL_B5A.OPOS SGPIO_INST2.ACT_LED_TMP[19] (to SYSCLK_c)
+REG_DEL     ---     0.131     R13C3C.CLK to      R13C3C.Q1 SGPIO_INST2/SLICE_260 (from SYSCLK_c)
+ROUTE         2     0.170      R13C3C.Q1 to   IOL_B3A.OPOS SGPIO_INST2.ACT_LED_TMP[17] (to SYSCLK_c)
                   --------
                     0.301   (43.5% logic, 56.5% route), 1 logic levels.
 
  Clock Skew Details: 
 
-      Source Clock Path SYSCLK to SGPIO_INST2/SLICE_267:
+      Source Clock Path SYSCLK to SGPIO_INST2/SLICE_260:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       330     0.840      128.PADDI to     R13C5C.CLK SYSCLK_c
+ROUTE       328     0.840      128.PADDI to     R13C3C.CLK SYSCLK_c
                   --------
                     0.840   (0.0% logic, 100.0% route), 0 logic levels.
 
-      Destination Clock Path SYSCLK to DRV44_ACT_LED_CATH_L_MGIOL:
+      Destination Clock Path SYSCLK to DRV42_ACT_LED_CATH_L_MGIOL:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       330     0.893      128.PADDI to    IOL_B5A.CLK SYSCLK_c
+ROUTE       328     0.893      128.PADDI to    IOL_B3A.CLK SYSCLK_c
                   --------
                     0.893   (0.0% logic, 100.0% route), 0 logic levels.
 
@@ -1592,603 +1066,36 @@ Passed: The following path meets requirements by 0.284ns
 
  Constraint Details:
 
-      0.301ns physical path delay SGPIO_INST1/SLICE_252 to DRV59_ACT_LED_CATH_L_MGIOL meets
+      0.301ns physical path delay SGPIO_INST1/SLICE_246 to DRV59_ACT_LED_CATH_L_MGIOL meets
      -0.036ns DO_HLD and
       0.000ns delay constraint less
      -0.053ns skew requirement (totaling 0.017ns) by 0.284ns
 
  Physical Path Details:
 
-      Data path SGPIO_INST1/SLICE_252 to DRV59_ACT_LED_CATH_L_MGIOL:
+      Data path SGPIO_INST1/SLICE_246 to DRV59_ACT_LED_CATH_L_MGIOL:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.131    R13C22C.CLK to     R13C22C.Q0 SGPIO_INST1/SLICE_252 (from SYSCLK_c)
+REG_DEL     ---     0.131    R13C22C.CLK to     R13C22C.Q0 SGPIO_INST1/SLICE_246 (from SYSCLK_c)
 ROUTE         2     0.170     R13C22C.Q0 to  IOL_B22B.OPOS SGPIO_INST1.ACT_LED_TMP[34] (to SYSCLK_c)
                   --------
                     0.301   (43.5% logic, 56.5% route), 1 logic levels.
 
  Clock Skew Details: 
 
-      Source Clock Path SYSCLK to SGPIO_INST1/SLICE_252:
+      Source Clock Path SYSCLK to SGPIO_INST1/SLICE_246:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       330     0.840      128.PADDI to    R13C22C.CLK SYSCLK_c
+ROUTE       328     0.840      128.PADDI to    R13C22C.CLK SYSCLK_c
                   --------
                     0.840   (0.0% logic, 100.0% route), 0 logic levels.
 
       Destination Clock Path SYSCLK to DRV59_ACT_LED_CATH_L_MGIOL:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       330     0.893      128.PADDI to   IOL_B22B.CLK SYSCLK_c
+ROUTE       328     0.893      128.PADDI to   IOL_B22B.CLK SYSCLK_c
                   --------
                     0.893   (0.0% logic, 100.0% route), 0 logic levels.
-
-
-Passed: The following path meets requirements by 0.284ns
-
- Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
-
-   Source:         FF         Q              SGPIO_INST2/ACT_LED_TMP[15]  (from SYSCLK_c +)
-   Destination:    FF         Data in        SGPIO_INST2_ACT_LEDio[15]  (to SYSCLK_c +)
-
-   Delay:               0.300ns  (43.7% logic, 56.3% route), 1 logic levels.
-
- Constraint Details:
-
-      0.300ns physical path delay SGPIO_INST2/SLICE_265 to DRV40_ACT_LED_CATH_L_MGIOL meets
-     -0.036ns DO_HLD and
-      0.000ns delay constraint less
-     -0.052ns skew requirement (totaling 0.016ns) by 0.284ns
-
- Physical Path Details:
-
-      Data path SGPIO_INST2/SLICE_265 to DRV40_ACT_LED_CATH_L_MGIOL:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.131     R7C25A.CLK to      R7C25A.Q1 SGPIO_INST2/SLICE_265 (from SYSCLK_c)
-ROUTE         2     0.169      R7C25A.Q1 to   IOL_R7C.OPOS SGPIO_INST2.ACT_LED_TMP[15] (to SYSCLK_c)
-                  --------
-                    0.300   (43.7% logic, 56.3% route), 1 logic levels.
-
- Clock Skew Details: 
-
-      Source Clock Path SYSCLK to SGPIO_INST2/SLICE_265:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       330     0.840      128.PADDI to     R7C25A.CLK SYSCLK_c
-                  --------
-                    0.840   (0.0% logic, 100.0% route), 0 logic levels.
-
-      Destination Clock Path SYSCLK to DRV40_ACT_LED_CATH_L_MGIOL:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       330     0.892      128.PADDI to    IOL_R7C.CLK SYSCLK_c
-                  --------
-                    0.892   (0.0% logic, 100.0% route), 0 logic levels.
-
-
-================================================================================
-Preference: FREQUENCY NET "I2C_INST/un1_DOUT_1" 346.741000 MHz ;
-            36 items scored, 35 timing errors detected.
---------------------------------------------------------------------------------
-
-
-Error: The following path exceeds requirements by 0.748ns
-
- Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
-
-   Source:         FF         Q              I2C_INST/REG_DIN[1]  (from SYSCLK_c -)
-   Destination:    FF         Data in        I2C_INST/CHECKSUM_OUT[1]  (to I2C_INST/un1_DOUT_1 +)
-
-   Delay:               0.438ns  (52.5% logic, 47.5% route), 2 logic levels.
-
- Constraint Details:
-
-      0.438ns physical path delay I2C_INST/SLICE_180 to I2C_INST/SLICE_3 exceeds
-      (delay constraint based on source clock period of 3.711ns and destination clock period of 2.883ns)
-     -0.013ns DIN_HLD and
-     -0.229ns delay constraint less
-     -1.428ns skew requirement (totaling 1.186ns) by 0.748ns
-
- Physical Path Details:
-
-      Data path I2C_INST/SLICE_180 to I2C_INST/SLICE_3:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.131     R3C16C.CLK to      R3C16C.Q1 I2C_INST/SLICE_180 (from SYSCLK_c)
-ROUTE         2     0.208      R3C16C.Q1 to      R3C17B.A0 I2C_INST/REG_DIN[1]
-CTOF_DEL    ---     0.099      R3C17B.A0 to      R3C17B.F0 I2C_INST/SLICE_3
-ROUTE         1     0.000      R3C17B.F0 to     R3C17B.DI0 I2C_INST/un1_REG_DIN_1_cry_1_0_S0 (to I2C_INST/un1_DOUT_1)
-                  --------
-                    0.438   (52.5% logic, 47.5% route), 2 logic levels.
-
- Clock Skew Details: 
-
-      Source Clock Path SYSCLK to I2C_INST/SLICE_180:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-PADI_DEL    ---     0.409        128.PAD to      128.PADDI SYSCLK
-ROUTE       330     0.840      128.PADDI to     R3C16C.CLK SYSCLK_c
-                  --------
-                    1.249   (32.7% logic, 67.3% route), 1 logic levels.
-
-      Destination Clock Path SYSCLK to I2C_INST/SLICE_3:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-PADI_DEL    ---     0.409        128.PAD to      128.PADDI SYSCLK
-ROUTE       330     0.840      128.PADDI to     R4C21C.CLK SYSCLK_c
-REG_DEL     ---     0.151     R4C21C.CLK to      R4C21C.Q0 I2C_INST/SLICE_170
-ROUTE         3     0.428      R4C21C.Q0 to      R6C20A.B0 I2C_INST/CNT8
-CTOF_DEL    ---     0.174      R6C20A.B0 to      R6C20A.F0 SLICE_404
-ROUTE         4     0.675      R6C20A.F0 to     R3C17B.CLK I2C_INST/un1_DOUT_1
-                  --------
-                    2.677   (27.4% logic, 72.6% route), 3 logic levels.
-
-
-Error: The following path exceeds requirements by 0.746ns
-
- Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
-
-   Source:         FF         Q              I2C_INST/REG_DIN[5]  (from SYSCLK_c -)
-   Destination:    FF         Data in        I2C_INST/CHECKSUM_OUT[5]  (to I2C_INST/un1_DOUT_1 +)
-
-   Delay:               0.440ns  (52.3% logic, 47.7% route), 2 logic levels.
-
- Constraint Details:
-
-      0.440ns physical path delay I2C_INST/SLICE_182 to I2C_INST/SLICE_1 exceeds
-      (delay constraint based on source clock period of 3.711ns and destination clock period of 2.883ns)
-     -0.013ns DIN_HLD and
-     -0.229ns delay constraint less
-     -1.428ns skew requirement (totaling 1.186ns) by 0.746ns
-
- Physical Path Details:
-
-      Data path I2C_INST/SLICE_182 to I2C_INST/SLICE_1:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.131     R3C15C.CLK to      R3C15C.Q1 I2C_INST/SLICE_182 (from SYSCLK_c)
-ROUTE         2     0.210      R3C15C.Q1 to      R3C17D.A0 I2C_INST/REG_DIN[5]
-CTOF_DEL    ---     0.099      R3C17D.A0 to      R3C17D.F0 I2C_INST/SLICE_1
-ROUTE         1     0.000      R3C17D.F0 to     R3C17D.DI0 I2C_INST/un1_REG_DIN_1_cry_5_0_S0 (to I2C_INST/un1_DOUT_1)
-                  --------
-                    0.440   (52.3% logic, 47.7% route), 2 logic levels.
-
- Clock Skew Details: 
-
-      Source Clock Path SYSCLK to I2C_INST/SLICE_182:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-PADI_DEL    ---     0.409        128.PAD to      128.PADDI SYSCLK
-ROUTE       330     0.840      128.PADDI to     R3C15C.CLK SYSCLK_c
-                  --------
-                    1.249   (32.7% logic, 67.3% route), 1 logic levels.
-
-      Destination Clock Path SYSCLK to I2C_INST/SLICE_1:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-PADI_DEL    ---     0.409        128.PAD to      128.PADDI SYSCLK
-ROUTE       330     0.840      128.PADDI to     R4C21C.CLK SYSCLK_c
-REG_DEL     ---     0.151     R4C21C.CLK to      R4C21C.Q0 I2C_INST/SLICE_170
-ROUTE         3     0.428      R4C21C.Q0 to      R6C20A.B0 I2C_INST/CNT8
-CTOF_DEL    ---     0.174      R6C20A.B0 to      R6C20A.F0 SLICE_404
-ROUTE         4     0.675      R6C20A.F0 to     R3C17D.CLK I2C_INST/un1_DOUT_1
-                  --------
-                    2.677   (27.4% logic, 72.6% route), 3 logic levels.
-
-
-Error: The following path exceeds requirements by 0.746ns
-
- Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
-
-   Source:         FF         Q              I2C_INST/REG_DIN[4]  (from SYSCLK_c -)
-   Destination:    FF         Data in        I2C_INST/CHECKSUM_OUT[4]  (to I2C_INST/un1_DOUT_1 +)
-
-   Delay:               0.440ns  (52.3% logic, 47.7% route), 2 logic levels.
-
- Constraint Details:
-
-      0.440ns physical path delay I2C_INST/SLICE_182 to I2C_INST/SLICE_2 exceeds
-      (delay constraint based on source clock period of 3.711ns and destination clock period of 2.883ns)
-     -0.013ns DIN_HLD and
-     -0.229ns delay constraint less
-     -1.428ns skew requirement (totaling 1.186ns) by 0.746ns
-
- Physical Path Details:
-
-      Data path I2C_INST/SLICE_182 to I2C_INST/SLICE_2:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.131     R3C15C.CLK to      R3C15C.Q0 I2C_INST/SLICE_182 (from SYSCLK_c)
-ROUTE         2     0.210      R3C15C.Q0 to      R3C17C.A1 I2C_INST/REG_DIN[4]
-CTOF_DEL    ---     0.099      R3C17C.A1 to      R3C17C.F1 I2C_INST/SLICE_2
-ROUTE         1     0.000      R3C17C.F1 to     R3C17C.DI1 I2C_INST/un1_REG_DIN_1_cry_3_0_S1 (to I2C_INST/un1_DOUT_1)
-                  --------
-                    0.440   (52.3% logic, 47.7% route), 2 logic levels.
-
- Clock Skew Details: 
-
-      Source Clock Path SYSCLK to I2C_INST/SLICE_182:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-PADI_DEL    ---     0.409        128.PAD to      128.PADDI SYSCLK
-ROUTE       330     0.840      128.PADDI to     R3C15C.CLK SYSCLK_c
-                  --------
-                    1.249   (32.7% logic, 67.3% route), 1 logic levels.
-
-      Destination Clock Path SYSCLK to I2C_INST/SLICE_2:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-PADI_DEL    ---     0.409        128.PAD to      128.PADDI SYSCLK
-ROUTE       330     0.840      128.PADDI to     R4C21C.CLK SYSCLK_c
-REG_DEL     ---     0.151     R4C21C.CLK to      R4C21C.Q0 I2C_INST/SLICE_170
-ROUTE         3     0.428      R4C21C.Q0 to      R6C20A.B0 I2C_INST/CNT8
-CTOF_DEL    ---     0.174      R6C20A.B0 to      R6C20A.F0 SLICE_404
-ROUTE         4     0.675      R6C20A.F0 to     R3C17C.CLK I2C_INST/un1_DOUT_1
-                  --------
-                    2.677   (27.4% logic, 72.6% route), 3 logic levels.
-
-
-Error: The following path exceeds requirements by 0.734ns
-
- Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
-
-   Source:         FF         Q              I2C_INST/REG_DIN[2]  (from SYSCLK_c -)
-   Destination:    FF         Data in        I2C_INST/CHECKSUM_OUT[2]  (to I2C_INST/un1_DOUT_1 +)
-
-   Delay:               0.452ns  (50.9% logic, 49.1% route), 2 logic levels.
-
- Constraint Details:
-
-      0.452ns physical path delay I2C_INST/SLICE_181 to I2C_INST/SLICE_3 exceeds
-      (delay constraint based on source clock period of 3.711ns and destination clock period of 2.883ns)
-     -0.013ns DIN_HLD and
-     -0.229ns delay constraint less
-     -1.428ns skew requirement (totaling 1.186ns) by 0.734ns
-
- Physical Path Details:
-
-      Data path I2C_INST/SLICE_181 to I2C_INST/SLICE_3:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.131     R3C15B.CLK to      R3C15B.Q0 I2C_INST/SLICE_181 (from SYSCLK_c)
-ROUTE         2     0.222      R3C15B.Q0 to      R3C17B.B1 I2C_INST/REG_DIN[2]
-CTOF_DEL    ---     0.099      R3C17B.B1 to      R3C17B.F1 I2C_INST/SLICE_3
-ROUTE         1     0.000      R3C17B.F1 to     R3C17B.DI1 I2C_INST/un1_REG_DIN_1_cry_1_0_S1 (to I2C_INST/un1_DOUT_1)
-                  --------
-                    0.452   (50.9% logic, 49.1% route), 2 logic levels.
-
- Clock Skew Details: 
-
-      Source Clock Path SYSCLK to I2C_INST/SLICE_181:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-PADI_DEL    ---     0.409        128.PAD to      128.PADDI SYSCLK
-ROUTE       330     0.840      128.PADDI to     R3C15B.CLK SYSCLK_c
-                  --------
-                    1.249   (32.7% logic, 67.3% route), 1 logic levels.
-
-      Destination Clock Path SYSCLK to I2C_INST/SLICE_3:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-PADI_DEL    ---     0.409        128.PAD to      128.PADDI SYSCLK
-ROUTE       330     0.840      128.PADDI to     R4C21C.CLK SYSCLK_c
-REG_DEL     ---     0.151     R4C21C.CLK to      R4C21C.Q0 I2C_INST/SLICE_170
-ROUTE         3     0.428      R4C21C.Q0 to      R6C20A.B0 I2C_INST/CNT8
-CTOF_DEL    ---     0.174      R6C20A.B0 to      R6C20A.F0 SLICE_404
-ROUTE         4     0.675      R6C20A.F0 to     R3C17B.CLK I2C_INST/un1_DOUT_1
-                  --------
-                    2.677   (27.4% logic, 72.6% route), 3 logic levels.
-
-
-Error: The following path exceeds requirements by 0.734ns
-
- Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
-
-   Source:         FF         Q              I2C_INST/REG_DIN[3]  (from SYSCLK_c -)
-   Destination:    FF         Data in        I2C_INST/CHECKSUM_OUT[3]  (to I2C_INST/un1_DOUT_1 +)
-
-   Delay:               0.452ns  (50.9% logic, 49.1% route), 2 logic levels.
-
- Constraint Details:
-
-      0.452ns physical path delay I2C_INST/SLICE_181 to I2C_INST/SLICE_2 exceeds
-      (delay constraint based on source clock period of 3.711ns and destination clock period of 2.883ns)
-     -0.013ns DIN_HLD and
-     -0.229ns delay constraint less
-     -1.428ns skew requirement (totaling 1.186ns) by 0.734ns
-
- Physical Path Details:
-
-      Data path I2C_INST/SLICE_181 to I2C_INST/SLICE_2:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.131     R3C15B.CLK to      R3C15B.Q1 I2C_INST/SLICE_181 (from SYSCLK_c)
-ROUTE         2     0.222      R3C15B.Q1 to      R3C17C.B0 I2C_INST/REG_DIN[3]
-CTOF_DEL    ---     0.099      R3C17C.B0 to      R3C17C.F0 I2C_INST/SLICE_2
-ROUTE         1     0.000      R3C17C.F0 to     R3C17C.DI0 I2C_INST/un1_REG_DIN_1_cry_3_0_S0 (to I2C_INST/un1_DOUT_1)
-                  --------
-                    0.452   (50.9% logic, 49.1% route), 2 logic levels.
-
- Clock Skew Details: 
-
-      Source Clock Path SYSCLK to I2C_INST/SLICE_181:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-PADI_DEL    ---     0.409        128.PAD to      128.PADDI SYSCLK
-ROUTE       330     0.840      128.PADDI to     R3C15B.CLK SYSCLK_c
-                  --------
-                    1.249   (32.7% logic, 67.3% route), 1 logic levels.
-
-      Destination Clock Path SYSCLK to I2C_INST/SLICE_2:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-PADI_DEL    ---     0.409        128.PAD to      128.PADDI SYSCLK
-ROUTE       330     0.840      128.PADDI to     R4C21C.CLK SYSCLK_c
-REG_DEL     ---     0.151     R4C21C.CLK to      R4C21C.Q0 I2C_INST/SLICE_170
-ROUTE         3     0.428      R4C21C.Q0 to      R6C20A.B0 I2C_INST/CNT8
-CTOF_DEL    ---     0.174      R6C20A.B0 to      R6C20A.F0 SLICE_404
-ROUTE         4     0.675      R6C20A.F0 to     R3C17C.CLK I2C_INST/un1_DOUT_1
-                  --------
-                    2.677   (27.4% logic, 72.6% route), 3 logic levels.
-
-
-Error: The following path exceeds requirements by 0.666ns
-
- Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
-
-   Source:         FF         Q              I2C_INST/REG_DIN[6]  (from SYSCLK_c -)
-   Destination:    FF         Data in        I2C_INST/CHECKSUM_OUT[6]  (to I2C_INST/un1_DOUT_1 +)
-
-   Delay:               0.520ns  (44.2% logic, 55.8% route), 2 logic levels.
-
- Constraint Details:
-
-      0.520ns physical path delay I2C_INST/SLICE_183 to I2C_INST/SLICE_1 exceeds
-      (delay constraint based on source clock period of 3.711ns and destination clock period of 2.883ns)
-     -0.013ns DIN_HLD and
-     -0.229ns delay constraint less
-     -1.428ns skew requirement (totaling 1.186ns) by 0.666ns
-
- Physical Path Details:
-
-      Data path I2C_INST/SLICE_183 to I2C_INST/SLICE_1:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.131     R4C16A.CLK to      R4C16A.Q0 I2C_INST/SLICE_183 (from SYSCLK_c)
-ROUTE         2     0.290      R4C16A.Q0 to      R3C17D.A1 I2C_INST/REG_DIN[6]
-CTOF_DEL    ---     0.099      R3C17D.A1 to      R3C17D.F1 I2C_INST/SLICE_1
-ROUTE         1     0.000      R3C17D.F1 to     R3C17D.DI1 I2C_INST/un1_REG_DIN_1_cry_5_0_S1 (to I2C_INST/un1_DOUT_1)
-                  --------
-                    0.520   (44.2% logic, 55.8% route), 2 logic levels.
-
- Clock Skew Details: 
-
-      Source Clock Path SYSCLK to I2C_INST/SLICE_183:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-PADI_DEL    ---     0.409        128.PAD to      128.PADDI SYSCLK
-ROUTE       330     0.840      128.PADDI to     R4C16A.CLK SYSCLK_c
-                  --------
-                    1.249   (32.7% logic, 67.3% route), 1 logic levels.
-
-      Destination Clock Path SYSCLK to I2C_INST/SLICE_1:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-PADI_DEL    ---     0.409        128.PAD to      128.PADDI SYSCLK
-ROUTE       330     0.840      128.PADDI to     R4C21C.CLK SYSCLK_c
-REG_DEL     ---     0.151     R4C21C.CLK to      R4C21C.Q0 I2C_INST/SLICE_170
-ROUTE         3     0.428      R4C21C.Q0 to      R6C20A.B0 I2C_INST/CNT8
-CTOF_DEL    ---     0.174      R6C20A.B0 to      R6C20A.F0 SLICE_404
-ROUTE         4     0.675      R6C20A.F0 to     R3C17D.CLK I2C_INST/un1_DOUT_1
-                  --------
-                    2.677   (27.4% logic, 72.6% route), 3 logic levels.
-
-
-Error: The following path exceeds requirements by 0.626ns
-
- Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
-
-   Source:         FF         Q              I2C_INST/REG_DIN[1]  (from SYSCLK_c -)
-   Destination:    FF         Data in        I2C_INST/CHECKSUM_OUT[2]  (to I2C_INST/un1_DOUT_1 +)
-
-   Delay:               0.560ns  (62.9% logic, 37.1% route), 2 logic levels.
-
- Constraint Details:
-
-      0.560ns physical path delay I2C_INST/SLICE_180 to I2C_INST/SLICE_3 exceeds
-      (delay constraint based on source clock period of 3.711ns and destination clock period of 2.883ns)
-     -0.013ns DIN_HLD and
-     -0.229ns delay constraint less
-     -1.428ns skew requirement (totaling 1.186ns) by 0.626ns
-
- Physical Path Details:
-
-      Data path I2C_INST/SLICE_180 to I2C_INST/SLICE_3:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.131     R3C16C.CLK to      R3C16C.Q1 I2C_INST/SLICE_180 (from SYSCLK_c)
-ROUTE         2     0.208      R3C16C.Q1 to      R3C17B.A0 I2C_INST/REG_DIN[1]
-CTOF1_DEL   ---     0.221      R3C17B.A0 to      R3C17B.F1 I2C_INST/SLICE_3
-ROUTE         1     0.000      R3C17B.F1 to     R3C17B.DI1 I2C_INST/un1_REG_DIN_1_cry_1_0_S1 (to I2C_INST/un1_DOUT_1)
-                  --------
-                    0.560   (62.9% logic, 37.1% route), 2 logic levels.
-
- Clock Skew Details: 
-
-      Source Clock Path SYSCLK to I2C_INST/SLICE_180:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-PADI_DEL    ---     0.409        128.PAD to      128.PADDI SYSCLK
-ROUTE       330     0.840      128.PADDI to     R3C16C.CLK SYSCLK_c
-                  --------
-                    1.249   (32.7% logic, 67.3% route), 1 logic levels.
-
-      Destination Clock Path SYSCLK to I2C_INST/SLICE_3:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-PADI_DEL    ---     0.409        128.PAD to      128.PADDI SYSCLK
-ROUTE       330     0.840      128.PADDI to     R4C21C.CLK SYSCLK_c
-REG_DEL     ---     0.151     R4C21C.CLK to      R4C21C.Q0 I2C_INST/SLICE_170
-ROUTE         3     0.428      R4C21C.Q0 to      R6C20A.B0 I2C_INST/CNT8
-CTOF_DEL    ---     0.174      R6C20A.B0 to      R6C20A.F0 SLICE_404
-ROUTE         4     0.675      R6C20A.F0 to     R3C17B.CLK I2C_INST/un1_DOUT_1
-                  --------
-                    2.677   (27.4% logic, 72.6% route), 3 logic levels.
-
-
-Error: The following path exceeds requirements by 0.624ns
-
- Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
-
-   Source:         FF         Q              I2C_INST/REG_DIN[5]  (from SYSCLK_c -)
-   Destination:    FF         Data in        I2C_INST/CHECKSUM_OUT[6]  (to I2C_INST/un1_DOUT_1 +)
-
-   Delay:               0.562ns  (62.6% logic, 37.4% route), 2 logic levels.
-
- Constraint Details:
-
-      0.562ns physical path delay I2C_INST/SLICE_182 to I2C_INST/SLICE_1 exceeds
-      (delay constraint based on source clock period of 3.711ns and destination clock period of 2.883ns)
-     -0.013ns DIN_HLD and
-     -0.229ns delay constraint less
-     -1.428ns skew requirement (totaling 1.186ns) by 0.624ns
-
- Physical Path Details:
-
-      Data path I2C_INST/SLICE_182 to I2C_INST/SLICE_1:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.131     R3C15C.CLK to      R3C15C.Q1 I2C_INST/SLICE_182 (from SYSCLK_c)
-ROUTE         2     0.210      R3C15C.Q1 to      R3C17D.A0 I2C_INST/REG_DIN[5]
-CTOF1_DEL   ---     0.221      R3C17D.A0 to      R3C17D.F1 I2C_INST/SLICE_1
-ROUTE         1     0.000      R3C17D.F1 to     R3C17D.DI1 I2C_INST/un1_REG_DIN_1_cry_5_0_S1 (to I2C_INST/un1_DOUT_1)
-                  --------
-                    0.562   (62.6% logic, 37.4% route), 2 logic levels.
-
- Clock Skew Details: 
-
-      Source Clock Path SYSCLK to I2C_INST/SLICE_182:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-PADI_DEL    ---     0.409        128.PAD to      128.PADDI SYSCLK
-ROUTE       330     0.840      128.PADDI to     R3C15C.CLK SYSCLK_c
-                  --------
-                    1.249   (32.7% logic, 67.3% route), 1 logic levels.
-
-      Destination Clock Path SYSCLK to I2C_INST/SLICE_1:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-PADI_DEL    ---     0.409        128.PAD to      128.PADDI SYSCLK
-ROUTE       330     0.840      128.PADDI to     R4C21C.CLK SYSCLK_c
-REG_DEL     ---     0.151     R4C21C.CLK to      R4C21C.Q0 I2C_INST/SLICE_170
-ROUTE         3     0.428      R4C21C.Q0 to      R6C20A.B0 I2C_INST/CNT8
-CTOF_DEL    ---     0.174      R6C20A.B0 to      R6C20A.F0 SLICE_404
-ROUTE         4     0.675      R6C20A.F0 to     R3C17D.CLK I2C_INST/un1_DOUT_1
-                  --------
-                    2.677   (27.4% logic, 72.6% route), 3 logic levels.
-
-
-Error: The following path exceeds requirements by 0.617ns
-
- Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
-
-   Source:         FF         Q              I2C_INST/REG_DIN[0]  (from SYSCLK_c -)
-   Destination:    FF         Data in        I2C_INST/CHECKSUM_OUT[0]  (to I2C_INST/un1_DOUT_1 +)
-
-   Delay:               0.396ns  (33.1% logic, 66.9% route), 1 logic levels.
-
- Constraint Details:
-
-      0.396ns physical path delay I2C_INST/SLICE_180 to I2C_INST/SLICE_0 exceeds
-      (delay constraint based on source clock period of 3.711ns and destination clock period of 2.883ns)
-     -0.019ns M_HLD and
-     -0.229ns delay constraint less
-     -1.261ns skew requirement (totaling 1.013ns) by 0.617ns
-
- Physical Path Details:
-
-      Data path I2C_INST/SLICE_180 to I2C_INST/SLICE_0:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.131     R3C16C.CLK to      R3C16C.Q0 I2C_INST/SLICE_180 (from SYSCLK_c)
-ROUTE         3     0.265      R3C16C.Q0 to      R3C18A.M1 I2C_INST/REG_DIN[0] (to I2C_INST/un1_DOUT_1)
-                  --------
-                    0.396   (33.1% logic, 66.9% route), 1 logic levels.
-
- Clock Skew Details: 
-
-      Source Clock Path SYSCLK to I2C_INST/SLICE_180:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-PADI_DEL    ---     0.409        128.PAD to      128.PADDI SYSCLK
-ROUTE       330     0.840      128.PADDI to     R3C16C.CLK SYSCLK_c
-                  --------
-                    1.249   (32.7% logic, 67.3% route), 1 logic levels.
-
-      Destination Clock Path SYSCLK to I2C_INST/SLICE_0:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-PADI_DEL    ---     0.409        128.PAD to      128.PADDI SYSCLK
-ROUTE       330     0.840      128.PADDI to     R4C21C.CLK SYSCLK_c
-REG_DEL     ---     0.151     R4C21C.CLK to      R4C21C.Q0 I2C_INST/SLICE_170
-ROUTE         3     0.428      R4C21C.Q0 to      R6C20A.B0 I2C_INST/CNT8
-CTOF_DEL    ---     0.174      R6C20A.B0 to      R6C20A.F0 SLICE_404
-ROUTE         4     0.508      R6C20A.F0 to     R3C18A.CLK I2C_INST/un1_DOUT_1
-                  --------
-                    2.510   (29.2% logic, 70.8% route), 3 logic levels.
-
-
-Error: The following path exceeds requirements by 0.612ns
-
- Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
-
-   Source:         FF         Q              I2C_INST/REG_DIN[3]  (from SYSCLK_c -)
-   Destination:    FF         Data in        I2C_INST/CHECKSUM_OUT[4]  (to I2C_INST/un1_DOUT_1 +)
-
-   Delay:               0.574ns  (61.3% logic, 38.7% route), 2 logic levels.
-
- Constraint Details:
-
-      0.574ns physical path delay I2C_INST/SLICE_181 to I2C_INST/SLICE_2 exceeds
-      (delay constraint based on source clock period of 3.711ns and destination clock period of 2.883ns)
-     -0.013ns DIN_HLD and
-     -0.229ns delay constraint less
-     -1.428ns skew requirement (totaling 1.186ns) by 0.612ns
-
- Physical Path Details:
-
-      Data path I2C_INST/SLICE_181 to I2C_INST/SLICE_2:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.131     R3C15B.CLK to      R3C15B.Q1 I2C_INST/SLICE_181 (from SYSCLK_c)
-ROUTE         2     0.222      R3C15B.Q1 to      R3C17C.B0 I2C_INST/REG_DIN[3]
-CTOF1_DEL   ---     0.221      R3C17C.B0 to      R3C17C.F1 I2C_INST/SLICE_2
-ROUTE         1     0.000      R3C17C.F1 to     R3C17C.DI1 I2C_INST/un1_REG_DIN_1_cry_3_0_S1 (to I2C_INST/un1_DOUT_1)
-                  --------
-                    0.574   (61.3% logic, 38.7% route), 2 logic levels.
-
- Clock Skew Details: 
-
-      Source Clock Path SYSCLK to I2C_INST/SLICE_181:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-PADI_DEL    ---     0.409        128.PAD to      128.PADDI SYSCLK
-ROUTE       330     0.840      128.PADDI to     R3C15B.CLK SYSCLK_c
-                  --------
-                    1.249   (32.7% logic, 67.3% route), 1 logic levels.
-
-      Destination Clock Path SYSCLK to I2C_INST/SLICE_2:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-PADI_DEL    ---     0.409        128.PAD to      128.PADDI SYSCLK
-ROUTE       330     0.840      128.PADDI to     R4C21C.CLK SYSCLK_c
-REG_DEL     ---     0.151     R4C21C.CLK to      R4C21C.Q0 I2C_INST/SLICE_170
-ROUTE         3     0.428      R4C21C.Q0 to      R6C20A.B0 I2C_INST/CNT8
-CTOF_DEL    ---     0.174      R6C20A.B0 to      R6C20A.F0 SLICE_404
-ROUTE         4     0.675      R6C20A.F0 to     R3C17C.CLK I2C_INST/un1_DOUT_1
-                  --------
-                    2.677   (27.4% logic, 72.6% route), 3 logic levels.
 
 Report Summary
 --------------
@@ -2199,84 +1106,37 @@ Preference(MIN Delays)                  |   Constraint|       Actual|Levels
 FREQUENCY NET "SYSCLK_c" 269.469000 MHz |             |             |
 ;                                       |     0.000 ns|     0.283 ns|   1  
                                         |             |             |
-FREQUENCY NET "I2C_INST/un1_DOUT_1"     |             |             |
-346.741000 MHz ;                        |     0.000 ns|    -0.748 ns|   2 *
-                                        |             |             |
 ----------------------------------------------------------------------------
 
 
-1 preference(marked by "*" above) not met.
-
-----------------------------------------------------------------------------
-Critical Nets                           |   Loads|  Errors| % of total
-----------------------------------------------------------------------------
-I2C_INST/un1_REG_DIN_1_cry_2            |       1|      15|     42.86%
-                                        |        |        |
-I2C_INST/un1_REG_DIN_1_cry_4            |       1|      15|     42.86%
-                                        |        |        |
-I2C_INST/REG_DIN[0]                     |       3|       8|     22.86%
-                                        |        |        |
-I2C_INST/un1_REG_DIN_1_cry_0            |       1|       7|     20.00%
-                                        |        |        |
-I2C_INST/un1_REG_DIN_1_cry_6            |       1|       7|     20.00%
-                                        |        |        |
-I2C_INST/un1_REG_DIN_1_cry_5_0_S1       |       1|       7|     20.00%
-                                        |        |        |
-I2C_INST/REG_DIN[1]                     |       2|       7|     20.00%
-                                        |        |        |
-I2C_INST/un1_REG_DIN_1_s_7_0_S0         |       1|       7|     20.00%
-                                        |        |        |
-I2C_INST/un1_REG_DIN_1_cry_5_0_S0       |       1|       6|     17.14%
-                                        |        |        |
-I2C_INST/REG_DIN[2]                     |       2|       6|     17.14%
-                                        |        |        |
-I2C_INST/un1_REG_DIN_1_cry_3_0_S1       |       1|       5|     14.29%
-                                        |        |        |
-I2C_INST/REG_DIN[3]                     |       2|       5|     14.29%
-                                        |        |        |
-I2C_INST/un1_REG_DIN_1_cry_3_0_S0       |       1|       4|     11.43%
-                                        |        |        |
-I2C_INST/REG_DIN[4]                     |       2|       4|     11.43%
-                                        |        |        |
-----------------------------------------------------------------------------
+All preferences were met.
 
 
 Clock Domains Analysis
 ------------------------
 
-Found 2 clocks:
+Found 1 clocks:
 
-Clock Domain: SYSCLK_c   Source: SYSCLK.PAD   Loads: 330
+Clock Domain: SYSCLK_c   Source: SYSCLK.PAD   Loads: 328
    Covered under: FREQUENCY NET "SYSCLK_c" 269.469000 MHz ;
-
-   Data transfers from:
-   Clock Domain: I2C_INST/un1_DOUT_1   Source: SLICE_404.F0
-      Covered under: FREQUENCY NET "SYSCLK_c" 269.469000 MHz ;   Transfers: 8
-
-Clock Domain: I2C_INST/un1_DOUT_1   Source: SLICE_404.F0   Loads: 4
-   No transfer within this clock domain is found
-
-   Data transfers from:
-   Clock Domain: SYSCLK_c   Source: SYSCLK.PAD
-      Covered under: FREQUENCY NET "I2C_INST/un1_DOUT_1" 346.741000 MHz ;   Transfers: 8
 
 
 Timing summary (Hold):
 ---------------
 
-Timing errors: 35  Score: 16594
-Cumulative negative slack: 16594
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
 
-Constraints cover 7304 paths, 2 nets, and 3297 connections (94.8% coverage)
+Constraints cover 7217 paths, 1 nets, and 3233 connections (94.5% coverage)
 
 
 
 Timing summary (Setup and Hold):
 ---------------
 
-Timing errors: 4097 (setup), 35 (hold)
-Score: 21128300 (setup), 16594 (hold)
-Cumulative negative slack: 21122322 (21105728+16594)
+Timing errors: 4096 (setup), 0 (hold)
+Score: 14146724 (setup), 0 (hold)
+Cumulative negative slack: 14123977 (14123977+0)
 --------------------------------------------------------------------------------
 
 --------------------------------------------------------------------------------
