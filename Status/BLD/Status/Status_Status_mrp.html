@@ -20,19 +20,19 @@ Target Vendor:  LATTICE
 Target Device:  LCMXO2-2000HCTQFP144
 Target Performance:   4
 Mapper:  xo2c00,  version:  Diamond (64-bit) 3.2.0.134
-Mapped on:  04/26/15  22:22:08
+Mapped on:  04/28/15  22:29:22
 
 
 <A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
    Number of registers:    543 out of  2448 (22%)
       PFU registers:          467 out of  2112 (22%)
       PIO registers:           76 out of   336 (23%)
-   Number of SLICEs:       372 out of  1056 (35%)
-      SLICEs as Logic/ROM:    372 out of  1056 (35%)
+   Number of SLICEs:       409 out of  1056 (39%)
+      SLICEs as Logic/ROM:    409 out of  1056 (39%)
       SLICEs as RAM:            0 out of   792 (0%)
       SLICEs as Carry:         91 out of  1056 (9%)
-   Number of LUT4s:        740 out of  2112 (35%)
-      Number of logic LUTs:      558
+   Number of LUT4s:        818 out of  2112 (39%)
+      Number of logic LUTs:      636
       Number of distributed RAM:   0 (0 LUT4s)
       Number of ripple logic:     91 (182 LUT4s)
       Number of shift registers:   0
@@ -62,7 +62,7 @@ Mapped on:  04/26/15  22:22:08
       2. Number of logic LUT4s does not include count of distributed RAM and
      ripple logic.
    Number of clocks:  1
-     Net SYSCLK_c: 328 loads, 324 rising, 4 falling (Driver: PIO SYSCLK )
+     Net SYSCLK_c: 334 loads, 330 rising, 4 falling (Driver: PIO SYSCLK )
    Number of Clock Enables:  39
      Net SGPIO_INST1.STATE[4]: 36 loads, 0 LSLICEs
 
@@ -86,24 +86,24 @@ Mapped on:  04/26/15  22:22:08
      Net SGPIO_INST1/N_105_i: 4 loads, 4 LSLICEs
      Net SGPIO_INST1/un7_CNT_i: 13 loads, 13 LSLICEs
      Net SGPIO_INST1/N_153_i: 18 loads, 18 LSLICEs
-     Net HEADER_INST/N_238_i: 3 loads, 3 LSLICEs
-     Net GPIO_INST/N_236_i: 4 loads, 4 LSLICEs
-     Net GPIO_INST/un1_GPO_C_0_a2: 4 loads, 4 LSLICEs
-     Net GPIO_INST/un1_GPO_F_0_a2: 4 loads, 4 LSLICEs
-     Net GPIO_INST/un1_GPO_E_0_a2: 4 loads, 4 LSLICEs
-     Net GPIO_INST/un1_GPO_D_0_a2: 4 loads, 4 LSLICEs
-     Net GPIO_INST/un1_GPO_B_0_a2: 4 loads, 4 LSLICEs
+     Net HEADER_INST/N_273_i: 3 loads, 3 LSLICEs
+     Net GPIO_INST/N_4_i: 4 loads, 4 LSLICEs
      Net GPIO_INST/un1_GPO_A: 4 loads, 4 LSLICEs
-     Net GPIO_INST/un1_GPO_9_0_a2: 4 loads, 4 LSLICEs
-     Net GPIO_INST/un1_GPO_8_0_a2: 4 loads, 4 LSLICEs
-     Net GPIO_INST/un1_GPO_7_0_a2: 4 loads, 4 LSLICEs
-     Net GPIO_INST/un1_GPO_6_0_a2: 4 loads, 4 LSLICEs
-     Net GPIO_INST/un1_GPO_5_0_a2: 4 loads, 4 LSLICEs
-     Net GPIO_INST/un1_GPO_4: 4 loads, 4 LSLICEs
-     Net GPIO_INST/un1_GPO_3_0_a2: 4 loads, 4 LSLICEs
-     Net GPIO_INST/un1_GPO_2: 4 loads, 4 LSLICEs
-     Net GPIO_INST/un1_GPO_1_0_a2: 4 loads, 4 LSLICEs
+     Net GPIO_INST/un1_GPO_8: 4 loads, 4 LSLICEs
+     Net GPIO_INST/un1_GPO_F: 4 loads, 4 LSLICEs
+     Net GPIO_INST/un1_GPO_3: 4 loads, 4 LSLICEs
+     Net GPIO_INST/un1_GPO_5: 4 loads, 4 LSLICEs
      Net GPIO_INST/un1_GPO_0: 4 loads, 4 LSLICEs
+     Net GPIO_INST/un1_GPO_0_0_RNIFGFE1: 4 loads, 4 LSLICEs
+     Net GPIO_INST/un1_GPO_D: 4 loads, 4 LSLICEs
+     Net GPIO_INST/un1_GPO_B: 4 loads, 4 LSLICEs
+     Net GPIO_INST/un1_GPO_2_0_a2: 4 loads, 4 LSLICEs
+     Net GPIO_INST/un1_GPO_1_0_a2: 4 loads, 4 LSLICEs
+     Net GPIO_INST/un1_GPO_9_0_a2: 4 loads, 4 LSLICEs
+     Net GPIO_INST/un1_GPO_7_0_a2: 4 loads, 4 LSLICEs
+     Net GPIO_INST/un1_GPO_E_0_a2: 4 loads, 4 LSLICEs
+     Net GPIO_INST/un1_GPO_C_0_a2: 4 loads, 4 LSLICEs
+     Net GPIO_INST/un1_GPO_4_0_a2: 4 loads, 4 LSLICEs
    Number of local set/reset loads for net RESET_N_c merged into GSR:  541
    Number of LSRs:  0
    Number of nets driven by tri-state buffers:  0
@@ -112,12 +112,12 @@ Mapped on:  04/26/15  22:22:08
      Net SGPIO_INST2.STATE[4]: 75 loads
      Net SGPIO_INST1/STATE[0]: 38 loads
      Net SGPIO_INST2/STATE[0]: 38 loads
-     Net RD_WR: 36 loads
-     Net I2C_INST.LOC[1]: 31 loads
-     Net I2C_INST.LOC[3]: 31 loads
+     Net RD_WR: 35 loads
+     Net I2C_INST.LOC[1]: 33 loads
+     Net I2C_INST.LOC[2]: 27 loads
      Net SGPIO_INST1/STATE_i[0]: 26 loads
      Net SGPIO_INST2/STATE_i[0]: 26 loads
-     Net I2C_INST.LOC[2]: 21 loads
+     Net I2C_INST/LOC[0]: 18 loads
 
 
 
@@ -329,8 +329,8 @@ WARNING - map: Using local reset signal 'RESET_N_c' to infer global GSR net.
 <A name="mrp_rm"></A><B><U><big>Removed logic</big></U></B>
 
 Block VCC undriven or does not drive anything - clipped.
-Block GPIO_INST/GND undriven or does not drive anything - clipped.
 Block GPIO_INST/VCC undriven or does not drive anything - clipped.
+Block GPIO_INST/GND undriven or does not drive anything - clipped.
 Block LED_INST/GND undriven or does not drive anything - clipped.
 Block HEADER_INST/GND undriven or does not drive anything - clipped.
 Block HEADER_INST/VCC undriven or does not drive anything - clipped.

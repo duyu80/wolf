@@ -30,7 +30,7 @@
 `define DEVICE_ID_MSB   8'h20
 `define DEVICE_ID_LSB   8'h14
 `define CPLD_MAJ_VER    8'h01
-`define CPLD_MIN_VER    8'h04
+`define CPLD_MIN_VER    8'h05
 `define CPLD_TEST_VER   8'h00
 `define CHECKSUM        8'h0 - `DEVICE_ID_MSB - `DEVICE_ID_LSB - `CPLD_MAJ_VER - `CPLD_MIN_VER - `CPLD_TEST_VER
 `define	CPLD_REV		8'h16

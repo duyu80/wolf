@@ -17,7 +17,7 @@ Max Top 5 critical clocks will be reported. For rest user needs to refer to Deta
 <row>
 <data>TOP|SYSCLK</data>
 <data>1.0 MHz</data>
-<data>122.7 MHz</data>
+<data>106.0 MHz</data>
 <data>498.252</data>
 </row>
 </report_table>

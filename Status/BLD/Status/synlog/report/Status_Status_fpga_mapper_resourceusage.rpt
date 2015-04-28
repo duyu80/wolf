@@ -16,11 +16,11 @@ FD1S3DX:        138
 GSR:            1
 IB:             9
 IFS1P3DX:       4
-INV:            4
+INV:            76
 OB:             78
-OFS1P3DX:       72
-ORCALUT4:       555
-PFUMX:          5
+OFS1P3BX:       72
+ORCALUT4:       561
+PFUMX:          7
 PUR:            1
 VHI:            7
 VLO:            8

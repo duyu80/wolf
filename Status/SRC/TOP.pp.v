@@ -205,27 +205,27 @@ SGPIO	SGPIO_INST2 (
 					);
 
 ; for ($i=1,$j=0; $i<=12,$j<12; $i++,$j++) {
-assign    DRV${i}_ACT_LED_CATH_L = ACT_LED1[${j}];
+assign    DRV${i}_ACT_LED_CATH_L = ~ACT_LED1[${j}];
 ; }
 
 ; for ($i=13,$j=0; $i<=24,$j<12; $i++,$j++) {
-assign    DRV${i}_ACT_LED_CATH_L = ACT_LED2[${j}];
+assign    DRV${i}_ACT_LED_CATH_L = ~ACT_LED2[${j}];
 ; }
 
 ; for ($i=25,$j=12; $i<=36,$j<24; $i++,$j++) {
-assign    DRV${i}_ACT_LED_CATH_L = ACT_LED1[${j}];
+assign    DRV${i}_ACT_LED_CATH_L = ~ACT_LED1[${j}];
 ; }
 
 ; for ($i=37,$j=12; $i<=48,$j<24; $i++,$j++) {
-assign    DRV${i}_ACT_LED_CATH_L = ACT_LED2[${j}];
+assign    DRV${i}_ACT_LED_CATH_L = ~ACT_LED2[${j}];
 ; }
 
 ; for ($i=49,$j=24; $i<=60,$j<36; $i++,$j++) {
-assign    DRV${i}_ACT_LED_CATH_L = ACT_LED1[${j}];
+assign    DRV${i}_ACT_LED_CATH_L = ~ACT_LED1[${j}];
 ; }
 
 ; for ($i=61,$j=24; $i<=72,$j<36; $i++,$j++) {
-assign    DRV${i}_ACT_LED_CATH_L = ACT_LED2[${j}];
+assign    DRV${i}_ACT_LED_CATH_L = ~ACT_LED2[${j}];
 ; }
 
 endmodule

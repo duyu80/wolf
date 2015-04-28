@@ -1,7 +1,7 @@
 
 
 ##### START OF TIMING REPORT #####[
-# Timing Report written on Sun Apr 26 22:22:02 2015
+# Timing Report written on Tue Apr 28 22:29:16 2015
 #
 
 
@@ -25,7 +25,7 @@ Worst slack in design: 0.401
                    Requested     Estimated     Requested     Estimated                 Clock        Clock              
 Starting Clock     Frequency     Frequency     Period        Period        Slack       Type         Group              
 -----------------------------------------------------------------------------------------------------------------------
-TOP|SYSCLK         1.0 MHz       122.7 MHz     1000.000      8.153         498.252     inferred     Inferred_clkgroup_0
+TOP|SYSCLK         1.0 MHz       106.0 MHz     1000.000      9.430         498.252     inferred     Inferred_clkgroup_0
 =======================================================================================================================
 
 
@@ -60,41 +60,41 @@ Detailed Report for Clock: TOP|SYSCLK
 Starting Points with Worst Slack
 ********************************
 
-                               Starting                                                  Arrival          
-Instance                       Reference      Type        Pin     Net                    Time        Slack
-                               Clock                                                                      
-----------------------------------------------------------------------------------------------------------
-I2C_INST.SCL_PCLKD2            TOP|SYSCLK     FD1S3DX     Q       SCL_PCLKD2             0.731       0.401
-I2C_INST.SCL_NCLK              TOP|SYSCLK     FD1P3AX     Q       SCL_NCLK               0.775       0.445
-SGPIO_INST2.ACT_LED_TMP[0]     TOP|SYSCLK     FD1P3DX     Q       ACT_LED_TMP[0]         0.680       0.606
-SGPIO_INST1.ACT_LED_TMP[0]     TOP|SYSCLK     FD1P3DX     Q       ACT_LED_TMP[0]         0.680       0.606
-I2C_INST.NEXT_STATE[0]         TOP|SYSCLK     FD1S3DX     Q       NEXT_STATE_Q[0]        0.680       0.606
-I2C_INST.NEXT_STATE_D1[0]      TOP|SYSCLK     FD1S3DX     Q       NEXT_STATE_D1_Q[0]     0.680       0.606
-I2C_INST.RD_END1               TOP|SYSCLK     FD1S3DX     Q       RD_END1                0.680       0.606
-I2C_INST.SHIFT_DOUT[7]         TOP|SYSCLK     FD1P3DX     Q       SHIFT_DOUT[7]          0.680       0.606
-SGPIO_INST1.STATE[4]           TOP|SYSCLK     FD1S3DX     Q       STATE[4]               0.975       0.645
-SGPIO_INST2.STATE[4]           TOP|SYSCLK     FD1S3DX     Q       STATE[4]               0.975       0.645
-==========================================================================================================
+                              Starting                                                  Arrival          
+Instance                      Reference      Type        Pin     Net                    Time        Slack
+                              Clock                                                                      
+---------------------------------------------------------------------------------------------------------
+I2C_INST.SCL_PCLKD2           TOP|SYSCLK     FD1S3DX     Q       SCL_PCLKD2             0.731       0.401
+I2C_INST.SCL_NCLK             TOP|SYSCLK     FD1P3AX     Q       SCL_NCLK               0.775       0.445
+I2C_INST.NEXT_STATE[0]        TOP|SYSCLK     FD1S3DX     Q       NEXT_STATE_Q[0]        0.680       0.606
+I2C_INST.NEXT_STATE_D1[0]     TOP|SYSCLK     FD1S3DX     Q       NEXT_STATE_D1_Q[0]     0.680       0.606
+I2C_INST.RD_END1              TOP|SYSCLK     FD1S3DX     Q       RD_END1                0.680       0.606
+I2C_INST.SHIFT_DOUT[7]        TOP|SYSCLK     FD1P3DX     Q       SHIFT_DOUT[7]          0.680       0.606
+SGPIO_INST2.STATE[4]          TOP|SYSCLK     FD1S3DX     Q       STATE[4]               0.975       0.645
+SGPIO_INST1.STATE[4]          TOP|SYSCLK     FD1S3DX     Q       STATE[4]               0.975       0.645
+I2C_INST.PORT_CS[0]           TOP|SYSCLK     FD1S3DX     Q       PORT_CS[0]             0.731       0.657
+I2C_INST.RD_EN                TOP|SYSCLK     FD1S3DX     Q       RD_EN                  0.731       0.657
+=========================================================================================================
 
 
 Ending Points with Worst Slack
 ******************************
 
-                              Starting                                                           Required          
-Instance                      Reference      Type         Pin     Net                            Time         Slack
-                              Clock                                                                                
--------------------------------------------------------------------------------------------------------------------
-I2C_INST.I2C_NACK             TOP|SYSCLK     FD1P3DX      SP      SCL_PCLKD2                     0.330        0.401
-I2C_INST.SDA_OUT              TOP|SYSCLK     FD1P3DX      SP      SCL_NCLK                       0.330        0.445
-I2C_INST.NEXT_STATE_D1[0]     TOP|SYSCLK     FD1S3DX      D       NEXT_STATE_Q[0]                0.074        0.606
-I2C_INST.NEXT_STATE_D2[0]     TOP|SYSCLK     FD1S3DX      D       NEXT_STATE_D1_Q[0]             0.074        0.606
-I2C_INST.RD_END2              TOP|SYSCLK     FD1S3DX      D       RD_END1                        0.074        0.606
-I2C_INST.SDA_OUT              TOP|SYSCLK     FD1P3DX      D       SHIFT_DOUT[7]                  0.074        0.606
-SGPIO_INST1_ACT_LEDio[0]      TOP|SYSCLK     OFS1P3DX     D       SGPIO_INST1.ACT_LED_TMP[0]     0.074        0.606
-SGPIO_INST2_ACT_LEDio[0]      TOP|SYSCLK     OFS1P3DX     D       SGPIO_INST2.ACT_LED_TMP[0]     0.074        0.606
-SGPIO_INST1_ACT_LEDio[0]      TOP|SYSCLK     OFS1P3DX     SP      SGPIO_INST1.STATE[4]           0.330        0.645
-SGPIO_INST1_ACT_LEDio[1]      TOP|SYSCLK     OFS1P3DX     SP      SGPIO_INST1.STATE[4]           0.330        0.645
-===================================================================================================================
+                               Starting                                                     Required          
+Instance                       Reference      Type         Pin     Net                      Time         Slack
+                               Clock                                                                          
+--------------------------------------------------------------------------------------------------------------
+I2C_INST.I2C_NACK              TOP|SYSCLK     FD1P3DX      SP      SCL_PCLKD2               0.330        0.401
+I2C_INST.SDA_OUT               TOP|SYSCLK     FD1P3DX      SP      SCL_NCLK                 0.330        0.445
+I2C_INST.NEXT_STATE_D1[0]      TOP|SYSCLK     FD1S3DX      D       NEXT_STATE_Q[0]          0.074        0.606
+I2C_INST.NEXT_STATE_D2[0]      TOP|SYSCLK     FD1S3DX      D       NEXT_STATE_D1_Q[0]       0.074        0.606
+I2C_INST.RD_END2               TOP|SYSCLK     FD1S3DX      D       RD_END1                  0.074        0.606
+I2C_INST.SDA_OUT               TOP|SYSCLK     FD1P3DX      D       SHIFT_DOUT[7]            0.074        0.606
+SGPIO_INST1_ACT_LED_iio[0]     TOP|SYSCLK     OFS1P3BX     SP      SGPIO_INST1.STATE[4]     0.330        0.645
+SGPIO_INST1_ACT_LED_iio[1]     TOP|SYSCLK     OFS1P3BX     SP      SGPIO_INST1.STATE[4]     0.330        0.645
+SGPIO_INST1_ACT_LED_iio[2]     TOP|SYSCLK     OFS1P3BX     SP      SGPIO_INST1.STATE[4]     0.330        0.645
+SGPIO_INST1_ACT_LED_iio[3]     TOP|SYSCLK     OFS1P3BX     SP      SGPIO_INST1.STATE[4]     0.330        0.645
+==============================================================================================================
 
 
 

@@ -7,7 +7,7 @@ Running in Lattice mode
 
 Starting:    C:\lscc\diamond\3.2_x64\synpbase\win64\mbin\synbatch.exe
 Install:     C:\lscc\diamond\3.2_x64\synpbase
-Date:        Sun Apr 26 22:21:51 2015
+Date:        Tue Apr 28 22:29:06 2015
 Version:     I-2013.09L-SP1-1 
 
 Arguments:   -product synplify_pro  -batch Status_Status_synplify.tcl
@@ -51,7 +51,7 @@ Running: Pre-mapping on proj_1|Status
 
 premap Completed with warnings
 Return Code: 1
-Run Time:0h:00m:02s
+Run Time:0h:00m:01s
 
 
 Complete: Compile on proj_1|Status

@@ -1,0 +1,7 @@
+﻿Status_v0105
+
+Fix below issue
+
+1) <EVT FW BB/SSM CPLD> Sequential read doesn't take effect in SSM CPLD
+2) <EVT FW BB CPLD> Register A0h hasn't control SGPIO outputs enbale or disable.
+

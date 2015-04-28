@@ -1,16 +1,16 @@
 @P:  Worst Slack : 498.252
-@P:  TOP|SYSCLK - Estimated Frequency : 122.7 MHz
+@P:  TOP|SYSCLK - Estimated Frequency : 106.0 MHz
 @P:  TOP|SYSCLK - Requested Frequency : 1.0 MHz
-@P:  TOP|SYSCLK - Estimated Period : 8.153
+@P:  TOP|SYSCLK - Estimated Period : 9.430
 @P:  TOP|SYSCLK - Requested Period : 1000.000
 @P:  TOP|SYSCLK - Slack : 498.252
 @P:  Worst Slack(min analysis) : 0.401
-@P:  TOP|SYSCLK - Estimated Frequency(min analysis) : 122.7 MHz
+@P:  TOP|SYSCLK - Estimated Frequency(min analysis) : 106.0 MHz
 @P:  TOP|SYSCLK - Requested Frequency(min analysis) : 1.0 MHz
-@P:  TOP|SYSCLK - Estimated Period(min analysis) : 8.153
+@P:  TOP|SYSCLK - Estimated Period(min analysis) : 9.430
 @P:  TOP|SYSCLK - Requested Period(min analysis) : 1000.000
 @P:  TOP|SYSCLK - Slack(min analysis) : 498.252
-@P:  Total Area : 559.0
+@P:  Total Area : 637.0
 @P:  Total Area : 0.0
 @P:  Total Area : 0.0
 @P:  Total Area : 0.0
@@ -18,4 +18,4 @@
 @P:  Total Area : 0.0
 @P:  Total Area : 0.0
 @P:  Total Area : 0.0
-@P:  CPU Time : 0h:00m:05s
+@P:  CPU Time : 0h:00m:06s
