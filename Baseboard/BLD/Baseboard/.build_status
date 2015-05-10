@@ -5,39 +5,39 @@
             <Task name="IBIS" build_result="0" update_result="3" update_time="0"/>
             <Task name="TimingSimFileVlg" build_result="0" update_result="3" update_time="0"/>
             <Task name="TimingSimFileVHD" build_result="0" update_result="3" update_time="0"/>
-            <Task name="Jedecgen" build_result="2" update_result="0" update_time="1426347328"/>
-            <Task name="Bitgen" build_result="2" update_result="0" update_time="1426347339"/>
+            <Task name="Jedecgen" build_result="2" update_result="0" update_time="1431265109"/>
+            <Task name="Bitgen" build_result="0" update_result="2" update_time="1426347339"/>
         </Milestone>
-        <Milestone name="Map" build_result="2" build_time="1426347259">
-            <Task name="Map" build_result="2" update_result="0" update_time="1426347259"/>
+        <Milestone name="Map" build_result="2" build_time="1431265065">
+            <Task name="Map" build_result="2" update_result="0" update_time="1431265065"/>
             <Task name="MapTrace" build_result="0" update_result="3" update_time="0"/>
             <Task name="MapVerilogSimFile" build_result="0" update_result="3" update_time="0"/>
             <Task name="MapVHDLSimFile" build_result="0" update_result="3" update_time="0"/>
         </Milestone>
-        <Milestone name="PAR" build_result="2" build_time="1426347316">
-            <Task name="PAR" build_result="2" update_result="0" update_time="1426347316"/>
+        <Milestone name="PAR" build_result="2" build_time="1431265100">
+            <Task name="PAR" build_result="2" update_result="0" update_time="1431265100"/>
             <Task name="PARTrace" build_result="0" update_result="3" update_time="0"/>
             <Task name="IOTiming" build_result="0" update_result="3" update_time="0"/>
         </Milestone>
-        <Milestone name="Synthesis" build_result="2" build_time="1426347245">
-            <Task name="Synplify_Synthesis" build_result="2" update_result="0" update_time="1426347245"/>
+        <Milestone name="Synthesis" build_result="2" build_time="1431265055">
+            <Task name="Synplify_Synthesis" build_result="2" update_result="0" update_time="1431265055"/>
         </Milestone>
         <Milestone name="TOOL_Report" build_result="0" build_time="0">
-            <Task name="HDLE" build_result="0" update_result="2" update_time="1426001719"/>
+            <Task name="HDLE" build_result="0" update_result="2" update_time="1431264937"/>
             <Task name="SSO" build_result="0" update_result="2" update_time="0"/>
             <Task name="PIODRC" build_result="0" update_result="2" update_time="0"/>
             <Task name="BKM" build_result="0" update_result="2" update_time="0"/>
             <Task name="DEC" build_result="0" update_result="2" update_time="0"/>
         </Milestone>
-        <Milestone name="Translate" build_result="2" build_time="1426347250">
-            <Task name="Translate" build_result="2" update_result="0" update_time="1426347250"/>
+        <Milestone name="Translate" build_result="2" build_time="1431265058">
+            <Task name="Translate" build_result="2" update_result="0" update_time="1431265058"/>
         </Milestone>
-        <Report name="Baseboard_Baseboard.bgn" last_build_time="1426347339" last_build_size="3632"/>
+        <Report name="Baseboard_Baseboard.bgn" last_build_time="1431265109" last_build_size="3909"/>
         <Report name="Baseboard_Baseboard.bit" last_build_time="1426347339" last_build_size="73591"/>
-        <Report name="Baseboard_Baseboard.edi" last_build_time="1426347241" last_build_size="3544947"/>
-        <Report name="Baseboard_Baseboard.jed" last_build_time="1426347328" last_build_size="1476020"/>
-        <Report name="Baseboard_Baseboard.ncd" last_build_time="1426347316" last_build_size="4292301"/>
-        <Report name="Baseboard_Baseboard.ngd" last_build_time="1426347250" last_build_size="3273647"/>
-        <Report name="Baseboard_Baseboard_map.ncd" last_build_time="1426347259" last_build_size="2861692"/>
+        <Report name="Baseboard_Baseboard.edi" last_build_time="1431265050" last_build_size="3518403"/>
+        <Report name="Baseboard_Baseboard.jed" last_build_time="1431265109" last_build_size="1476020"/>
+        <Report name="Baseboard_Baseboard.ncd" last_build_time="1431265100" last_build_size="4256933"/>
+        <Report name="Baseboard_Baseboard.ngd" last_build_time="1431265058" last_build_size="3263367"/>
+        <Report name="Baseboard_Baseboard_map.ncd" last_build_time="1431265065" last_build_size="2847337"/>
     </Strategy>
 </BuildStatus>

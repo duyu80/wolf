@@ -374,10 +374,10 @@ GPI    	GPI3_INST (
 			.DOUT2			(DIN_3_2),						
 			.RD_WR2		    (RD_WR_2),
 			
-			.DIN0           (  { DRV7_PWR_EN_L,DRV6_PWR_EN_L,DRV5_PWR_EN_L,DRV4_PWR_EN_L,
-			                     DRV3_PWR_EN_L,DRV2_PWR_EN_L,DRV1_PWR_EN_L,DRV0_PWR_EN_L           }  ),
+			.DIN0           (  { DRV7_PWR_EN,DRV6_PWR_EN,DRV5_PWR_EN,DRV4_PWR_EN,
+			                     DRV3_PWR_EN,DRV2_PWR_EN,DRV1_PWR_EN,DRV0_PWR_EN       }  ),
 			.DIN1           (  { DRV15_PWROK,DRV14_PWROK,DRV13_PWROK,DRV12_PWROK,      
-			                     DRV11_PWR_EN_L,DRV10_PWR_EN_L,DRV9_PWR_EN_L,DRV8_PWR_EN_L         }  ),
+			                     DRV11_PWR_EN,DRV10_PWR_EN,DRV9_PWR_EN,DRV8_PWR_EN     }  ),
 			.DIN2           (  { DRV23_PWROK,DRV22_PWROK,DRV21_PWROK,DRV20_PWROK,      
 			                     DRV19_PWROK,DRV18_PWROK,DRV17_PWROK,DRV16_PWROK       }  ),
 			.DIN3           (  { DRV31_PWROK,DRV30_PWROK,DRV29_PWROK,DRV28_PWROK,      

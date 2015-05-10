@@ -295,6 +295,8 @@ Selecting top level module BB_TOP
 @W: CL156 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":119:131:119:137|*Input DIN_D_2[7:0] to expression [instance] has undriven bits that are tied to 0 -- simulation mismatch possible.
 @W: CL156 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":119:140:119:146|*Input DIN_E_2[7:0] to expression [instance] has undriven bits that are tied to 0 -- simulation mismatch possible.
 @W: CL156 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":119:149:119:155|*Input DIN_F_2[7:0] to expression [instance] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL156 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":443:24:444:78|*Input un1_DRV0_PWR_EN[7:0] to expression [instance] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL156 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":445:24:446:78|*Input un1_DRV8_PWR_EN[7:0] to expression [instance] has undriven bits that are tied to 0 -- simulation mismatch possible.
 @W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_SGPIO.v":44:0:44:5|Optimizing register bit CNT[7] to a constant 0
 @W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_SGPIO.v":44:0:44:5|Optimizing register bit CNT[8] to a constant 0
 @W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_SGPIO.v":44:0:44:5|Optimizing register bit CNT[9] to a constant 0

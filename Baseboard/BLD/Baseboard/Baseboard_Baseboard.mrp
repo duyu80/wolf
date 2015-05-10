@@ -12,7 +12,7 @@ Target Vendor:  LATTICE
 Target Device:  LCMXO2-7000HCFPBGA484
 Target Performance:   4
 Mapper:  xo2c00,  version:  Diamond (64-bit) 3.2.0.134
-Mapped on:  03/14/15  23:34:11
+Mapped on:  05/10/15  21:37:39
 
 Design Summary
 --------------
@@ -20,12 +20,12 @@ Design Summary
    Number of registers:   2024 out of  7869 (26%)
       PFU registers:         1946 out of  6864 (28%)
       PIO registers:           78 out of  1005 (8%)
-   Number of SLICEs:      2058 out of  3432 (60%)
-      SLICEs as Logic/ROM:   2058 out of  3432 (60%)
+   Number of SLICEs:      2049 out of  3432 (60%)
+      SLICEs as Logic/ROM:   2049 out of  3432 (60%)
       SLICEs as RAM:            0 out of  2574 (0%)
       SLICEs as Carry:        384 out of  3432 (11%)
-   Number of LUT4s:        4086 out of  6864 (60%)
-      Number of logic LUTs:      3318
+   Number of LUT4s:        4064 out of  6864 (59%)
+      Number of logic LUTs:      3296
       Number of distributed RAM:   0 (0 LUT4s)
       Number of ripple logic:    384 (768 LUT4s)
       Number of shift registers:   0
@@ -64,7 +64,7 @@ Design Summary
 
 
 
-Design:  BB_TOP                                        Date:  03/14/15  23:34:11
+Design:  BB_TOP                                        Date:  05/10/15  21:37:39
 
 Design Summary (cont)
 ---------------------
@@ -72,88 +72,88 @@ Design Summary (cont)
      Net PRSNT_LED_CTRL_INST.un3_CNT_i: 54 loads, 18 LSLICEs
      Net I2C_INS_2/N_12: 1 loads, 1 LSLICEs
      Net I2C_INS_2/N_10: 4 loads, 4 LSLICEs
+     Net I2C_INS_2/un9_LOC_i: 5 loads, 5 LSLICEs
      Net I2C_INS_2/un7_SHIFT_DIN_i: 4 loads, 4 LSLICEs
      Net I2C_INS_2/SCL_NCLK: 1 loads, 1 LSLICEs
      Net I2C_INS_2/SCL_PCLKD2: 1 loads, 1 LSLICEs
      Net RESET_N_c: 4 loads, 4 LSLICEs
      Net I2C_INS_2/RD_END2: 4 loads, 4 LSLICEs
      Net I2C_INS_2/N_19: 1 loads, 1 LSLICEs
-     Net I2C_INS_2/un9_LOC_i: 5 loads, 5 LSLICEs
      Net I2C_INS_2/un1_DOUT_0_a2_0: 4 loads, 4 LSLICEs
      Net I2C_INS_2/N_21: 2 loads, 2 LSLICEs
      Net I2C_INS_2/un2_RD_WR_0_a2_0: 1 loads, 1 LSLICEs
-     Net I2C_INS_2.MASTER_RD_NACK_0_sqmuxa: 1 loads, 0 LSLICEs
+     Net N_67_i: 1 loads, 0 LSLICEs
      Net I2C_INS_1/N_11: 1 loads, 1 LSLICEs
      Net I2C_INS_1/SCL_NCLK: 1 loads, 1 LSLICEs
      Net I2C_INS_1/N_9: 4 loads, 4 LSLICEs
+     Net I2C_INS_1/un9_LOC_i: 5 loads, 5 LSLICEs
      Net I2C_INS_1/un7_SHIFT_DIN_i: 4 loads, 4 LSLICEs
      Net I2C_INS_1/SCL_PCLKD2: 1 loads, 1 LSLICEs
      Net I2C_INS_1/RD_END2: 4 loads, 4 LSLICEs
      Net I2C_INS_1/N_18: 1 loads, 1 LSLICEs
-     Net I2C_INS_1/un9_LOC_i: 5 loads, 5 LSLICEs
      Net I2C_INS_1/un1_DOUT_0_a2: 4 loads, 4 LSLICEs
      Net I2C_INS_1/N_20: 2 loads, 2 LSLICEs
      Net I2C_INS_1/un2_RD_WR_0_a2: 1 loads, 1 LSLICEs
-     Net I2C_INS_1.MASTER_RD_NACK_0_sqmuxa: 1 loads, 0 LSLICEs
-     Net BB_SGPIO_INST/N_1061_i: 4 loads, 4 LSLICEs
+     Net N_925_i: 1 loads, 0 LSLICEs
+     Net BB_SGPIO_INST/N_163_i: 4 loads, 4 LSLICEs
      Net BB_SGPIO_INST/N_41_i: 18 loads, 18 LSLICEs
      Net un1_STATE_9_i_i: 1 loads, 0 LSLICEs
      Net PCIE_RST_CTRL/un6_CNT9_i: 12 loads, 12 LSLICEs
      Net PCIE_RST_CTRL/un6_CNT8_i: 12 loads, 12 LSLICEs
-     Net PCIE_RST_CTRL/un6_CNT7_i: 12 loads, 12 LSLICEs
-     Net PCIE_RST_CTRL/un6_CNT6_i: 12 loads, 12 LSLICEs
-     Net PCIE_RST_CTRL/un6_CNT5_i: 12 loads, 12 LSLICEs
-     Net PCIE_RST_CTRL/un6_CNT4_i: 12 loads, 12 LSLICEs
+     Net PCIE_RST_CTRL/un6_CNT7_i_0: 12 loads, 12 LSLICEs
+     Net PCIE_RST_CTRL/un6_CNT6_i_0: 12 loads, 12 LSLICEs
+     Net PCIE_RST_CTRL/un6_CNT5_i_0: 12 loads, 12 LSLICEs
+     Net PCIE_RST_CTRL/un6_CNT4_i_0: 12 loads, 12 LSLICEs
      Net PCIE_RST_CTRL/un6_CNT3_i: 12 loads, 12 LSLICEs
      Net PCIE_RST_CTRL/un6_CNT2_i: 12 loads, 12 LSLICEs
-     Net PCIE_RST_CTRL/un6_CNT23_i: 12 loads, 12 LSLICEs
-     Net PCIE_RST_CTRL/un6_CNT21_i: 12 loads, 12 LSLICEs
-     Net PCIE_RST_CTRL/un6_CNT22_i: 12 loads, 12 LSLICEs
-     Net PCIE_RST_CTRL/un6_CNT20_i: 12 loads, 12 LSLICEs
+     Net PCIE_RST_CTRL/un6_CNT23_i_0: 12 loads, 12 LSLICEs
+     Net PCIE_RST_CTRL/un6_CNT21_i_0: 12 loads, 12 LSLICEs
+     Net PCIE_RST_CTRL/un6_CNT22_i_0: 12 loads, 12 LSLICEs
+     Net PCIE_RST_CTRL/un6_CNT20_i_0: 12 loads, 12 LSLICEs
      Net PCIE_RST_CTRL/un6_CNT1_i: 12 loads, 12 LSLICEs
      Net PCIE_RST_CTRL/un6_CNT19_i: 12 loads, 12 LSLICEs
      Net PCIE_RST_CTRL/un6_CNT18_i: 12 loads, 12 LSLICEs
      Net PCIE_RST_CTRL/un6_CNT17_i: 12 loads, 12 LSLICEs
      Net PCIE_RST_CTRL/un6_CNT16_i: 12 loads, 12 LSLICEs
-     Net PCIE_RST_CTRL/un6_CNT15_i: 12 loads, 12 LSLICEs
-     Net PCIE_RST_CTRL/un6_CNT14_i: 12 loads, 12 LSLICEs
-     Net PCIE_RST_CTRL/un6_CNT13_i: 12 loads, 12 LSLICEs
-     Net PCIE_RST_CTRL/un6_CNT12_i: 12 loads, 12 LSLICEs
+     Net PCIE_RST_CTRL/un6_CNT15_i_0: 12 loads, 12 LSLICEs
+     Net PCIE_RST_CTRL/un6_CNT14_i_0: 12 loads, 12 LSLICEs
+     Net PCIE_RST_CTRL/un6_CNT13_i_0: 12 loads, 12 LSLICEs
+     Net PCIE_RST_CTRL/un6_CNT12_i_0: 12 loads, 12 LSLICEs
      Net PCIE_RST_CTRL/un6_CNT11_i: 12 loads, 12 LSLICEs
      Net PCIE_RST_CTRL/un6_CNT10_i: 12 loads, 12 LSLICEs
      Net PCIE_RST_CTRL/un7_CNT0_i: 12 loads, 12 LSLICEs
-     Net GPOA_INST/un1_DOUT2: 4 loads, 4 LSLICEs
-     Net GPOA_INST/un1_DOUT1: 4 loads, 4 LSLICEs
+     Net GPOA_INST/N_2218_i: 4 loads, 4 LSLICEs
+     Net GPOA_INST/N_229_i: 4 loads, 4 LSLICEs
 
                                     Page 2
 
 
 
 
-Design:  BB_TOP                                        Date:  03/14/15  23:34:11
+Design:  BB_TOP                                        Date:  05/10/15  21:37:39
 
 Design Summary (cont)
 ---------------------
-     Net GPOA_INST/un9_DO9_i: 4 loads, 4 LSLICEs
-     Net GPOA_INST/un9_DO8_i: 4 loads, 4 LSLICEs
+     Net GPOA_INST/un9_DO9_i_0_0_0: 4 loads, 4 LSLICEs
+     Net GPOA_INST/un9_DO8_i_0_0: 4 loads, 4 LSLICEs
      Net GPOA_INST/un9_DO7_i_0_0: 4 loads, 4 LSLICEs
      Net GPOA_INST/un9_DO6_i_0: 4 loads, 4 LSLICEs
-     Net GPOA_INST/N_28: 4 loads, 4 LSLICEs
-     Net GPOA_INST/un9_DO4_i_0: 4 loads, 4 LSLICEs
+     Net GPOA_INST/N_231: 4 loads, 4 LSLICEs
+     Net GPOA_INST/un9_DO4_i_0_0: 4 loads, 4 LSLICEs
      Net GPOA_INST/un9_DO3_i_0: 4 loads, 4 LSLICEs
-     Net GPOA_INST/un9_DO2_i_0: 4 loads, 4 LSLICEs
-     Net GPOA_INST/N_4: 4 loads, 4 LSLICEs
-     Net GPOA_INST/un9_DO15_i: 4 loads, 4 LSLICEs
-     Net GPOA_INST/un9_DO14_i: 4 loads, 4 LSLICEs
-     Net GPOA_INST/un9_DO13_i_0: 4 loads, 4 LSLICEs
-     Net GPOA_INST/N_232: 4 loads, 4 LSLICEs
-     Net GPOA_INST/un9_DO11_i_0: 4 loads, 4 LSLICEs
-     Net GPOA_INST/N_230: 4 loads, 4 LSLICEs
-     Net GPOA_INST/un9_DO0_i_0: 5 loads, 5 LSLICEs
-     Net GPI9_INST/N_2617_i: 1 loads, 1 LSLICEs
-     Net GPI9_INST/N_2634_i: 1 loads, 1 LSLICEs
-     Net GPI8_INST/N_2616_i: 1 loads, 1 LSLICEs
-     Net GPI8_INST/N_2615_i: 1 loads, 1 LSLICEs
+     Net GPOA_INST/un9_DO2_i_0_0: 4 loads, 4 LSLICEs
+     Net GPOA_INST/un9_DO1_i_0_1: 4 loads, 4 LSLICEs
+     Net GPOA_INST/un9_DO15_i_0_0: 4 loads, 4 LSLICEs
+     Net GPOA_INST/un9_DO14_i_0: 4 loads, 4 LSLICEs
+     Net GPOA_INST/un9_DO13_i_0_0: 4 loads, 4 LSLICEs
+     Net GPOA_INST/un9_DO12_i_0: 4 loads, 4 LSLICEs
+     Net GPOA_INST/un9_DO11_i_0_0: 4 loads, 4 LSLICEs
+     Net GPOA_INST/un9_DO10_i_0: 4 loads, 4 LSLICEs
+     Net GPOA_INST/N_4: 5 loads, 5 LSLICEs
+     Net GPI9_INST/un1_DOUT2_0: 1 loads, 1 LSLICEs
+     Net GPI9_INST/N_2716_i: 1 loads, 1 LSLICEs
+     Net GPI8_INST/un1_DOUT2: 1 loads, 1 LSLICEs
+     Net GPI8_INST/N_2715_i: 1 loads, 1 LSLICEs
      Net GPO7_INST/N_59_i: 4 loads, 4 LSLICEs
      Net GPO7_INST/N_620: 4 loads, 4 LSLICEs
      Net GPO7_INST/un9_DO9_i_0_0: 4 loads, 4 LSLICEs
@@ -196,7 +196,7 @@ Design Summary (cont)
 
 
 
-Design:  BB_TOP                                        Date:  03/14/15  23:34:11
+Design:  BB_TOP                                        Date:  05/10/15  21:37:39
 
 Design Summary (cont)
 ---------------------
@@ -236,42 +236,42 @@ Design Summary (cont)
      Net GPO4_INST/N_57: 4 loads, 4 LSLICEs
      Net GPO4_INST/N_14: 4 loads, 4 LSLICEs
      Net GPO4_INST/N_7: 4 loads, 4 LSLICEs
-     Net GPI3_INST/N_223_i: 4 loads, 4 LSLICEs
-     Net GPI3_INST/N_221_i: 4 loads, 4 LSLICEs
+     Net GPI3_INST/N_227_i: 4 loads, 4 LSLICEs
+     Net GPI3_INST/N_225_i: 4 loads, 4 LSLICEs
      Net GPO2_INST/un1_TMP_EN6_2_i: 1 loads, 1 LSLICEs
      Net GPO2_INST/un1_i2c_access_p_1_i: 1 loads, 1 LSLICEs
-     Net GPO2_INST/N_2079_i: 4 loads, 4 LSLICEs
-     Net GPO2_INST/N_225_i: 4 loads, 4 LSLICEs
+     Net GPO2_INST/N_2054_i: 4 loads, 4 LSLICEs
+     Net GPO2_INST/N_920_i: 4 loads, 4 LSLICEs
      Net GPO2_INST/un2_DO0_9_i_0: 4 loads, 4 LSLICEs
-     Net GPO2_INST/un2_DO0_8_i_0: 4 loads, 4 LSLICEs
-     Net GPO2_INST/un2_DO0_7_i_0: 4 loads, 4 LSLICEs
-     Net GPO2_INST/un2_DO0_6_i_0: 4 loads, 4 LSLICEs
-     Net GPO2_INST/un2_DO0_5_i_0: 4 loads, 4 LSLICEs
-     Net GPO2_INST/un2_DO0_4_i_0: 4 loads, 4 LSLICEs
-     Net GPO2_INST/un2_DO0_3_i_0: 4 loads, 4 LSLICEs
+     Net GPO2_INST/un2_DO0_8_i_0_0: 4 loads, 4 LSLICEs
+     Net GPO2_INST/un2_DO0_7_i: 4 loads, 4 LSLICEs
+     Net GPO2_INST/un2_DO0_6_i: 4 loads, 4 LSLICEs
+     Net GPO2_INST/un2_DO0_5_i: 4 loads, 4 LSLICEs
+     Net GPO2_INST/N_205: 4 loads, 4 LSLICEs
+     Net GPO2_INST/un2_DO0_3_i_0_0: 5 loads, 5 LSLICEs
      Net GPO2_INST/un2_DO0_2_i_0: 4 loads, 4 LSLICEs
-     Net GPO2_INST/un2_DO0_1_i_0: 5 loads, 5 LSLICEs
+     Net GPO2_INST/un2_DO0_1_i_0: 4 loads, 4 LSLICEs
      Net GPO2_INST/un2_DO0_15_i_0: 4 loads, 4 LSLICEs
      Net GPO2_INST/un2_DO0_14_i: 4 loads, 4 LSLICEs
      Net GPO2_INST/un2_DO0_13_i_0: 4 loads, 4 LSLICEs
-     Net GPO2_INST/N_189: 4 loads, 4 LSLICEs
-     Net GPO2_INST/N_228: 4 loads, 4 LSLICEs
+     Net GPO2_INST/un2_DO0_12_i_0: 4 loads, 4 LSLICEs
+     Net GPO2_INST/un2_DO0_11_i_0: 4 loads, 4 LSLICEs
 
                                     Page 4
 
 
 
 
-Design:  BB_TOP                                        Date:  03/14/15  23:34:11
+Design:  BB_TOP                                        Date:  05/10/15  21:37:39
 
 Design Summary (cont)
 ---------------------
      Net GPO2_INST/un2_DO0_10_i_0: 4 loads, 4 LSLICEs
-     Net GPO2_INST/N_195: 5 loads, 5 LSLICEs
-     Net GPI1_INST/N_213_i: 4 loads, 4 LSLICEs
-     Net GPI1_INST/N_211_i: 4 loads, 4 LSLICEs
-     Net GPI0_INST/N_209_i: 3 loads, 3 LSLICEs
-     Net GPI0_INST/N_207_i: 3 loads, 3 LSLICEs
+     Net GPO2_INST/un2_DO0_i_0: 5 loads, 5 LSLICEs
+     Net GPI1_INST/N_217_i: 4 loads, 4 LSLICEs
+     Net GPI1_INST/N_215_i: 4 loads, 4 LSLICEs
+     Net GPI0_INST/N_213_i: 3 loads, 3 LSLICEs
+     Net GPI0_INST/N_211_i: 3 loads, 3 LSLICEs
    Number of local set/reset loads for net RESET_N_c merged into GSR:  1926
    Number of LSRs:  2
      Net un1_RESET_N_i: 68 loads, 30 LSLICEs
@@ -282,12 +282,12 @@ Design Summary (cont)
      Net GPO5_INST/N_380: 144 loads
      Net GPO6_INST/N_602: 144 loads
      Net GPO7_INST/N_380: 144 loads
-     Net N_2651: 113 loads
-     Net OFFSET_SEL_1[1]: 112 loads
-     Net N_2087: 111 loads
-     Net N_2653: 111 loads
-     Net N_248: 104 loads
-     Net N_2654: 102 loads
+     Net OFFSET_SEL_1[3]: 112 loads
+     Net OFFSET_SEL_1[2]: 111 loads
+     Net GPOA_INST/N_267: 108 loads
+     Net OFFSET_SEL_1[1]: 108 loads
+     Net OFFSET_SEL_1[0]: 106 loads
+     Net OFFSET_SEL_1[6]: 104 loads
 
 
 
@@ -328,7 +328,7 @@ IO (PIO) Attributes
 
 
 
-Design:  BB_TOP                                        Date:  03/14/15  23:34:11
+Design:  BB_TOP                                        Date:  05/10/15  21:37:39
 
 IO (PIO) Attributes (cont)
 --------------------------
@@ -394,7 +394,7 @@ IO (PIO) Attributes (cont)
 
 
 
-Design:  BB_TOP                                        Date:  03/14/15  23:34:11
+Design:  BB_TOP                                        Date:  05/10/15  21:37:39
 
 IO (PIO) Attributes (cont)
 --------------------------
@@ -460,7 +460,7 @@ IO (PIO) Attributes (cont)
 
 
 
-Design:  BB_TOP                                        Date:  03/14/15  23:34:11
+Design:  BB_TOP                                        Date:  05/10/15  21:37:39
 
 IO (PIO) Attributes (cont)
 --------------------------
@@ -526,7 +526,7 @@ IO (PIO) Attributes (cont)
 
 
 
-Design:  BB_TOP                                        Date:  03/14/15  23:34:11
+Design:  BB_TOP                                        Date:  05/10/15  21:37:39
 
 IO (PIO) Attributes (cont)
 --------------------------
@@ -592,7 +592,7 @@ IO (PIO) Attributes (cont)
 
 
 
-Design:  BB_TOP                                        Date:  03/14/15  23:34:11
+Design:  BB_TOP                                        Date:  05/10/15  21:37:39
 
 IO (PIO) Attributes (cont)
 --------------------------
@@ -658,7 +658,7 @@ IO (PIO) Attributes (cont)
 
 
 
-Design:  BB_TOP                                        Date:  03/14/15  23:34:11
+Design:  BB_TOP                                        Date:  05/10/15  21:37:39
 
 IO (PIO) Attributes (cont)
 --------------------------
@@ -724,7 +724,7 @@ IO (PIO) Attributes (cont)
 
 
 
-Design:  BB_TOP                                        Date:  03/14/15  23:34:11
+Design:  BB_TOP                                        Date:  05/10/15  21:37:39
 
 IO (PIO) Attributes (cont)
 --------------------------
@@ -790,7 +790,7 @@ IO (PIO) Attributes (cont)
 
 
 
-Design:  BB_TOP                                        Date:  03/14/15  23:34:11
+Design:  BB_TOP                                        Date:  05/10/15  21:37:39
 
 IO (PIO) Attributes (cont)
 --------------------------
@@ -856,7 +856,7 @@ IO (PIO) Attributes (cont)
 
 
 
-Design:  BB_TOP                                        Date:  03/14/15  23:34:11
+Design:  BB_TOP                                        Date:  05/10/15  21:37:39
 
 IO (PIO) Attributes (cont)
 --------------------------
@@ -922,7 +922,7 @@ IO (PIO) Attributes (cont)
 
 
 
-Design:  BB_TOP                                        Date:  03/14/15  23:34:11
+Design:  BB_TOP                                        Date:  05/10/15  21:37:39
 
 IO (PIO) Attributes (cont)
 --------------------------
@@ -969,8 +969,8 @@ Removed logic
 
 Block GPI0_INST/GND undriven or does not drive anything - clipped.
 Block GPI0_INST/VCC undriven or does not drive anything - clipped.
-Block GPI1_INST/VCC undriven or does not drive anything - clipped.
 Block GPI1_INST/GND undriven or does not drive anything - clipped.
+Block GPI1_INST/VCC undriven or does not drive anything - clipped.
 Block GPO2_INST/VCC undriven or does not drive anything - clipped.
 Block GPO2_INST/GND undriven or does not drive anything - clipped.
 Block GPI3_INST/GND undriven or does not drive anything - clipped.
@@ -988,7 +988,7 @@ Block GPO7_INST/GND undriven or does not drive anything - clipped.
 
 
 
-Design:  BB_TOP                                        Date:  03/14/15  23:34:11
+Design:  BB_TOP                                        Date:  05/10/15  21:37:39
 
 Removed logic (cont)
 --------------------
@@ -1054,7 +1054,7 @@ Signal LED_CNT_INST/un5_CNT_07S_1_cry_23_0_COUT undriven or does not drive
 
 
 
-Design:  BB_TOP                                        Date:  03/14/15  23:34:11
+Design:  BB_TOP                                        Date:  05/10/15  21:37:39
 
 Removed logic (cont)
 --------------------
@@ -1120,7 +1120,7 @@ Signal PCIE_RST_CTRL/CNT16_s_0_COUT[21] undriven or does not drive anything -
 
 
 
-Design:  BB_TOP                                        Date:  03/14/15  23:34:11
+Design:  BB_TOP                                        Date:  05/10/15  21:37:39
 
 Removed logic (cont)
 --------------------
@@ -1186,7 +1186,7 @@ Signal PCIE_RST_CTRL/CNT8_s_0_COUT[21] undriven or does not drive anything -
 
 
 
-Design:  BB_TOP                                        Date:  03/14/15  23:34:11
+Design:  BB_TOP                                        Date:  05/10/15  21:37:39
 
 Removed logic (cont)
 --------------------
@@ -1252,7 +1252,7 @@ Signal PCIE_RST_CTRL/CNT0_s_0_COUT[21] undriven or does not drive anything -
 
 
 
-Design:  BB_TOP                                        Date:  03/14/15  23:34:11
+Design:  BB_TOP                                        Date:  05/10/15  21:37:39
 
 Removed logic (cont)
 --------------------
@@ -1317,7 +1317,7 @@ GSR Component:
 
 
 
-Design:  BB_TOP                                        Date:  03/14/15  23:34:11
+Design:  BB_TOP                                        Date:  05/10/15  21:37:39
 
 GSR Usage (cont)
 ----------------
@@ -1348,9 +1348,9 @@ Type and instance name of component:
 Run Time and Memory Usage
 -------------------------
 
-   Total CPU Time: 6 secs
-   Total REAL Time: 9 secs
-   Peak Memory Usage: 95 MB
+   Total CPU Time: 5 secs
+   Total REAL Time: 7 secs
+   Peak Memory Usage: 94 MB
 
 
 

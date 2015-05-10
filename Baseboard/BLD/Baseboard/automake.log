@@ -12,7 +12,7 @@ Lattice Diamond Version 3.2.0.134
 #Implementation: Baseboard
 
 $ Start of Compile
-#Sat Mar 14 23:33:19 2015
+#Sun May 10 21:37:03 2015
 
 Synopsys Verilog Compiler, version comp201309rcp1, Build 147R, built Apr 16 2014
 @N|Running in 64-bit mode
@@ -43,14 +43,12 @@ File E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v changed - recompiling
 File E:\work\wolf\Baseboard\BLD\..\SRC\../SRC/baseboard_define.v changed - recompiling
 File E:\work\wolf\Baseboard\BLD\..\SRC\../SRC/baseboard_define.v changed - recompiling
 File E:\work\wolf\Baseboard\BLD\..\SRC\../SRC/baseboard_define.v changed - recompiling
-File E:\work\wolf\Baseboard\BLD\..\SRC\I2C.v changed - recompiling
 File E:\work\wolf\Baseboard\BLD\..\SRC\../SRC/baseboard_define.v changed - recompiling
 File E:\work\wolf\Baseboard\BLD\..\SRC\../SRC/baseboard_define.v changed - recompiling
 File E:\work\wolf\Baseboard\BLD\..\SRC\../SRC/baseboard_define.v changed - recompiling
 File E:\work\wolf\Baseboard\BLD\..\SRC\../SRC/baseboard_define.v changed - recompiling
 File E:\work\wolf\Baseboard\BLD\..\SRC\../SRC/baseboard_define.v changed - recompiling
-File E:\work\wolf\Baseboard\SRC\GPO_PROTECT.v changed - recompiling
-File E:\work\wolf\Baseboard\SRC\../SRC/baseboard_define.v changed - recompiling
+File E:\work\wolf\Baseboard\BLD\..\SRC\../SRC/baseboard_define.v changed - recompiling
 Selecting top level module BB_TOP
 @N: CG364 :"E:\work\wolf\Baseboard\BLD\..\SRC\I2C.v":18:7:18:9|Synthesizing module I2C
 
@@ -348,6 +346,8 @@ Selecting top level module BB_TOP
 @W: CL156 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":119:131:119:137|*Input DIN_D_2[7:0] to expression [instance] has undriven bits that are tied to 0 -- simulation mismatch possible.
 @W: CL156 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":119:140:119:146|*Input DIN_E_2[7:0] to expression [instance] has undriven bits that are tied to 0 -- simulation mismatch possible.
 @W: CL156 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":119:149:119:155|*Input DIN_F_2[7:0] to expression [instance] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL156 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":443:24:444:78|*Input un1_DRV0_PWR_EN[7:0] to expression [instance] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL156 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":445:24:446:78|*Input un1_DRV8_PWR_EN[7:0] to expression [instance] has undriven bits that are tied to 0 -- simulation mismatch possible.
 @W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_SGPIO.v":44:0:44:5|Optimizing register bit CNT[7] to a constant 0
 @W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_SGPIO.v":44:0:44:5|Optimizing register bit CNT[8] to a constant 0
 @W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_SGPIO.v":44:0:44:5|Optimizing register bit CNT[9] to a constant 0
@@ -703,10 +703,10 @@ State machine has 5 reachable states with original encodings of:
    00100000
 @END
 
-At c_ver Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 81MB peak: 88MB)
+At c_ver Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 81MB peak: 88MB)
 
-Process took 0h:00m:02s realtime, 0h:00m:02s cputime
-# Sat Mar 14 23:33:22 2015
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Sun May 10 21:37:06 2015
 
 ###########################################################]
 Pre-mapping Report
@@ -749,10 +749,10 @@ BB_TOP|SYSCLK     1.0 MHz       1000.000      inferred     Inferred_clkgroup_0
 
 Pre-mapping successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 83MB peak: 150MB)
+At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 83MB peak: 150MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Sat Mar 14 23:33:26 2015
+# Sun May 10 21:37:08 2015
 
 ###########################################################]
 Map & Optimize Report
@@ -788,20 +788,20 @@ Available hyper_sources - for debug and ip models
 
 Finished RTL optimizations (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 146MB peak: 149MB)
 
+@W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing instance GPI0_INST.DOUT2[4],  because it is equivalent to instance GPI0_INST.DOUT2[2]
+@W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing instance GPI0_INST.DOUT2[7],  because it is equivalent to instance GPI0_INST.DOUT2[6]
 @W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI9_INST.DOUT1[7],  because it is equivalent to instance GPI9_INST.DOUT1[6]
 @W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI9_INST.DOUT1[6],  because it is equivalent to instance GPI9_INST.DOUT1[5]
 @W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI9_INST.DOUT1[5],  because it is equivalent to instance GPI9_INST.DOUT1[4]
 @W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI9_INST.DOUT1[4],  because it is equivalent to instance GPI9_INST.DOUT1[3]
 @W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI9_INST.DOUT1[3],  because it is equivalent to instance GPI9_INST.DOUT1[2]
 @W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI9_INST.DOUT1[2],  because it is equivalent to instance GPI9_INST.DOUT1[1]
-@W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI0_INST.DOUT1[4],  because it is equivalent to instance GPI0_INST.DOUT1[2]
 @W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing instance GPI9_INST.DOUT2[7],  because it is equivalent to instance GPI9_INST.DOUT2[6]
 @W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing instance GPI9_INST.DOUT2[6],  because it is equivalent to instance GPI9_INST.DOUT2[5]
 @W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing instance GPI9_INST.DOUT2[5],  because it is equivalent to instance GPI9_INST.DOUT2[4]
 @W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing instance GPI9_INST.DOUT2[4],  because it is equivalent to instance GPI9_INST.DOUT2[3]
 @W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing instance GPI9_INST.DOUT2[3],  because it is equivalent to instance GPI9_INST.DOUT2[2]
 @W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing instance GPI9_INST.DOUT2[2],  because it is equivalent to instance GPI9_INST.DOUT2[1]
-@W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI0_INST.DOUT1[7],  because it is equivalent to instance GPI0_INST.DOUT1[6]
 @W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI8_INST.DOUT1[7],  because it is equivalent to instance GPI8_INST.DOUT1[6]
 @W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI8_INST.DOUT1[6],  because it is equivalent to instance GPI8_INST.DOUT1[5]
 @W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI8_INST.DOUT1[5],  because it is equivalent to instance GPI8_INST.DOUT1[4]
@@ -812,8 +812,8 @@ Finished RTL optimizations (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00
 @W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing instance GPI8_INST.DOUT2[5],  because it is equivalent to instance GPI8_INST.DOUT2[4]
 @W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing instance GPI8_INST.DOUT2[4],  because it is equivalent to instance GPI8_INST.DOUT2[3]
 @W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing instance GPI8_INST.DOUT2[3],  because it is equivalent to instance GPI8_INST.DOUT2[2]
-@W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing instance GPI0_INST.DOUT2[4],  because it is equivalent to instance GPI0_INST.DOUT2[2]
-@W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing instance GPI0_INST.DOUT2[7],  because it is equivalent to instance GPI0_INST.DOUT2[6]
+@W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI0_INST.DOUT1[4],  because it is equivalent to instance GPI0_INST.DOUT1[2]
+@W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI0_INST.DOUT1[7],  because it is equivalent to instance GPI0_INST.DOUT1[6]
 @N: BN362 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing sequential instance GPI8_INST.DOUT1[2] in hierarchy view:work.BB_TOP(verilog) because there are no references to its outputs 
 @A: BN291 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Boundary register GPI8_INST.DOUT1[2] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
 @N: BN362 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing sequential instance GPI8_INST.DOUT2[2] in hierarchy view:work.BB_TOP(verilog) because there are no references to its outputs 
@@ -878,28 +878,28 @@ original code -> new code
 @N: BN362 :"e:\work\wolf\baseboard\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CSD1[12] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C_I2C_INS_2(verilog) because there are no references to its outputs 
 @N: BN362 :"e:\work\wolf\baseboard\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CSD1[11] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C_I2C_INS_2(verilog) because there are no references to its outputs 
 
-Finished factoring (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:06s; Memory used current: 183MB peak: 185MB)
+Finished factoring (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 181MB peak: 182MB)
 
 
-Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:06s; Memory used current: 170MB peak: 185MB)
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 168MB peak: 182MB)
 
 
-Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:10s; Memory used current: 178MB peak: 209MB)
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:07s; Memory used current: 178MB peak: 208MB)
 
 
-Starting Early Timing Optimization (Real Time elapsed 0h:00m:13s; CPU Time elapsed 0h:00m:12s; Memory used current: 177MB peak: 209MB)
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:09s; CPU Time elapsed 0h:00m:09s; Memory used current: 177MB peak: 208MB)
 
 
-Finished Early Timing Optimization (Real Time elapsed 0h:00m:15s; CPU Time elapsed 0h:00m:13s; Memory used current: 177MB peak: 209MB)
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:09s; CPU Time elapsed 0h:00m:09s; Memory used current: 177MB peak: 208MB)
 
 
-Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:15s; CPU Time elapsed 0h:00m:14s; Memory used current: 176MB peak: 209MB)
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:10s; CPU Time elapsed 0h:00m:10s; Memory used current: 176MB peak: 208MB)
 
 
-Finished preparing to map (Real Time elapsed 0h:00m:19s; CPU Time elapsed 0h:00m:17s; Memory used current: 178MB peak: 209MB)
+Finished preparing to map (Real Time elapsed 0h:00m:12s; CPU Time elapsed 0h:00m:12s; Memory used current: 178MB peak: 208MB)
 
 
-Finished technology mapping (Real Time elapsed 0h:00m:22s; CPU Time elapsed 0h:00m:19s; Memory used current: 203MB peak: 209MB)
+Finished technology mapping (Real Time elapsed 0h:00m:14s; CPU Time elapsed 0h:00m:14s; Memory used current: 201MB peak: 208MB)
 
 Pass		 CPU time		Worst Slack		Luts / Registers
 ------------------------------------------------------------
@@ -908,11 +908,11 @@ Pass		 CPU time		Worst Slack		Luts / Registers
 ------------------------------------------------------------
 
 
-Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:24s; CPU Time elapsed 0h:00m:22s; Memory used current: 183MB peak: 209MB)
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:15s; CPU Time elapsed 0h:00m:15s; Memory used current: 181MB peak: 208MB)
 
 @N: FX164 |The option to pack flops in the IOB has not been specified 
 
-Finished restoring hierarchy (Real Time elapsed 0h:00m:29s; CPU Time elapsed 0h:00m:26s; Memory used current: 183MB peak: 209MB)
+Finished restoring hierarchy (Real Time elapsed 0h:00m:18s; CPU Time elapsed 0h:00m:18s; Memory used current: 181MB peak: 208MB)
 
 
 
@@ -933,20 +933,20 @@ Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample I
 
 Writing Analyst data base E:\work\wolf\Baseboard\BLD\Baseboard\Baseboard_Baseboard.srm
 
-Finished Writing Netlist Databases (Real Time elapsed 0h:00m:31s; CPU Time elapsed 0h:00m:28s; Memory used current: 177MB peak: 209MB)
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:20s; CPU Time elapsed 0h:00m:20s; Memory used current: 175MB peak: 208MB)
 
 Writing EDIF Netlist and constraint files
 I-2013.09L-SP1-1 
 @N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
 
-Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:33s; CPU Time elapsed 0h:00m:29s; Memory used current: 182MB peak: 209MB)
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:21s; CPU Time elapsed 0h:00m:21s; Memory used current: 180MB peak: 208MB)
 
 @W: MT420 |Found inferred clock BB_TOP|SYSCLK with period 1000.00ns. Please declare a user-defined clock on object "p:SYSCLK"
 
 
 
 ##### START OF TIMING REPORT #####[
-# Timing Report written on Sat Mar 14 23:34:01 2015
+# Timing Report written on Sun May 10 21:37:31 2015
 #
 
 
@@ -970,7 +970,7 @@ Worst slack in design: 496.219
                    Requested     Estimated     Requested     Estimated                 Clock        Clock              
 Starting Clock     Frequency     Frequency     Period        Period        Slack       Type         Group              
 -----------------------------------------------------------------------------------------------------------------------
-BB_TOP|SYSCLK      1.0 MHz       121.0 MHz     1000.000      8.265         496.219     inferred     Inferred_clkgroup_0
+BB_TOP|SYSCLK      1.0 MHz       121.3 MHz     1000.000      8.245         496.219     inferred     Inferred_clkgroup_0
 =======================================================================================================================
 
 
@@ -984,7 +984,7 @@ Clocks                        |    rise  to  rise     |    fall  to  fall   |   
 --------------------------------------------------------------------------------------------------------------------------
 Starting       Ending         |  constraint  slack    |  constraint  slack  |  constraint  slack    |  constraint  slack  
 --------------------------------------------------------------------------------------------------------------------------
-BB_TOP|SYSCLK  BB_TOP|SYSCLK  |  1000.000    991.735  |  No paths    -      |  500.000     496.219  |  500.000     498.500
+BB_TOP|SYSCLK  BB_TOP|SYSCLK  |  1000.000    991.755  |  No paths    -      |  500.000     496.219  |  500.000     498.500
 ==========================================================================================================================
  Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
        'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
@@ -1110,18 +1110,18 @@ IFS1P3DX:       76
 INV:            40
 OB:             137
 OFS1P3DX:       2
-ORCALUT4:       3281
-PFUMX:          73
+ORCALUT4:       3259
+PFUMX:          74
 PUR:            1
 VHI:            18
 VLO:            24
 true:           6
 Mapper successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:34s; CPU Time elapsed 0h:00m:31s; Memory used current: 62MB peak: 209MB)
+At Mapper Exit (Real Time elapsed 0h:00m:22s; CPU Time elapsed 0h:00m:22s; Memory used current: 62MB peak: 208MB)
 
-Process took 0h:00m:34s realtime, 0h:00m:31s cputime
-# Sat Mar 14 23:34:02 2015
+Process took 0h:00m:22s realtime, 0h:00m:22s cputime
+# Sun May 10 21:37:31 2015
 
 ###########################################################]
 
@@ -1291,12 +1291,12 @@ Running DRC...
     <postMsg mid="1163101" type="Warning" dynamic="1" navigation="0" arg0="103"  />
 
 Design Results:
-   6123 blocks expanded
+   6102 blocks expanded
 complete the first expansion
 Writing 'Baseboard_Baseboard.ngd' ...
 Total CPU Time: 1 secs  
 
-Total REAL Time: 2 secs  
+Total REAL Time: 0 secs  
 
 
 map -a "MachXO2" -p LCMXO2-7000HC -t FPBGA484 -s 4 -oc Commercial   "Baseboard_Baseboard.ngd" -o "Baseboard_Baseboard_map.ncd" -pr "Baseboard_Baseboard.prf" -mp "Baseboard_Baseboard.mrp" -lpf "E:/work/wolf/Baseboard/BLD/Baseboard/Baseboard_Baseboard_synplify.lpf" -lpf "E:/work/wolf/Baseboard/BLD/../SRC/Baseboard.lpf" -c 0            
@@ -1339,12 +1339,12 @@ Design Summary:
    Number of registers:   2024 out of  7869 (26%)
       PFU registers:         1946 out of  6864 (28%)
       PIO registers:           78 out of  1005 (8%)
-   Number of SLICEs:      2058 out of  3432 (60%)
-      SLICEs as Logic/ROM:   2058 out of  3432 (60%)
+   Number of SLICEs:      2049 out of  3432 (60%)
+      SLICEs as Logic/ROM:   2049 out of  3432 (60%)
       SLICEs as RAM:            0 out of  2574 (0%)
       SLICEs as Carry:        384 out of  3432 (11%)
-   Number of LUT4s:        4086 out of  6864 (60%)
-      Number of logic LUTs:      3318
+   Number of LUT4s:        4064 out of  6864 (59%)
+      Number of logic LUTs:      3296
       Number of distributed RAM:   0 (0 LUT4s)
       Number of ripple logic:    384 (768 LUT4s)
       Number of shift registers:   0
@@ -1379,78 +1379,78 @@ Design Summary:
      Net PRSNT_LED_CTRL_INST.un3_CNT_i: 54 loads, 18 LSLICEs
      Net I2C_INS_2/N_12: 1 loads, 1 LSLICEs
      Net I2C_INS_2/N_10: 4 loads, 4 LSLICEs
+     Net I2C_INS_2/un9_LOC_i: 5 loads, 5 LSLICEs
      Net I2C_INS_2/un7_SHIFT_DIN_i: 4 loads, 4 LSLICEs
      Net I2C_INS_2/SCL_NCLK: 1 loads, 1 LSLICEs
      Net I2C_INS_2/SCL_PCLKD2: 1 loads, 1 LSLICEs
      Net RESET_N_c: 4 loads, 4 LSLICEs
      Net I2C_INS_2/RD_END2: 4 loads, 4 LSLICEs
      Net I2C_INS_2/N_19: 1 loads, 1 LSLICEs
-     Net I2C_INS_2/un9_LOC_i: 5 loads, 5 LSLICEs
      Net I2C_INS_2/un1_DOUT_0_a2_0: 4 loads, 4 LSLICEs
      Net I2C_INS_2/N_21: 2 loads, 2 LSLICEs
      Net I2C_INS_2/un2_RD_WR_0_a2_0: 1 loads, 1 LSLICEs
-     Net I2C_INS_2.MASTER_RD_NACK_0_sqmuxa: 1 loads, 0 LSLICEs
+     Net N_67_i: 1 loads, 0 LSLICEs
      Net I2C_INS_1/N_11: 1 loads, 1 LSLICEs
      Net I2C_INS_1/SCL_NCLK: 1 loads, 1 LSLICEs
      Net I2C_INS_1/N_9: 4 loads, 4 LSLICEs
+     Net I2C_INS_1/un9_LOC_i: 5 loads, 5 LSLICEs
      Net I2C_INS_1/un7_SHIFT_DIN_i: 4 loads, 4 LSLICEs
      Net I2C_INS_1/SCL_PCLKD2: 1 loads, 1 LSLICEs
      Net I2C_INS_1/RD_END2: 4 loads, 4 LSLICEs
      Net I2C_INS_1/N_18: 1 loads, 1 LSLICEs
-     Net I2C_INS_1/un9_LOC_i: 5 loads, 5 LSLICEs
      Net I2C_INS_1/un1_DOUT_0_a2: 4 loads, 4 LSLICEs
      Net I2C_INS_1/N_20: 2 loads, 2 LSLICEs
      Net I2C_INS_1/un2_RD_WR_0_a2: 1 loads, 1 LSLICEs
-     Net I2C_INS_1.MASTER_RD_NACK_0_sqmuxa: 1 loads, 0 LSLICEs
-     Net BB_SGPIO_INST/N_1061_i: 4 loads, 4 LSLICEs
+     Net N_925_i: 1 loads, 0 LSLICEs
+     Net BB_SGPIO_INST/N_163_i: 4 loads, 4 LSLICEs
      Net BB_SGPIO_INST/N_41_i: 18 loads, 18 LSLICEs
      Net un1_STATE_9_i_i: 1 loads, 0 LSLICEs
      Net PCIE_RST_CTRL/un6_CNT9_i: 12 loads, 12 LSLICEs
      Net PCIE_RST_CTRL/un6_CNT8_i: 12 loads, 12 LSLICEs
-     Net PCIE_RST_CTRL/un6_CNT7_i: 12 loads, 12 LSLICEs
-     Net PCIE_RST_CTRL/un6_CNT6_i: 12 loads, 12 LSLICEs
-     Net PCIE_RST_CTRL/un6_CNT5_i: 12 loads, 12 LSLICEs
-     Net PCIE_RST_CTRL/un6_CNT4_i: 12 loads, 12 LSLICEs
+     Net PCIE_RST_CTRL/un6_CNT7_i_0: 12 loads, 12 LSLICEs
+     Net PCIE_RST_CTRL/un6_CNT6_i_0: 12 loads, 12 LSLICEs
+     Net PCIE_RST_CTRL/un6_CNT5_i_0: 12 loads, 12 LSLICEs
+     Net PCIE_RST_CTRL/un6_CNT4_i_0: 12 loads, 12 LSLICEs
      Net PCIE_RST_CTRL/un6_CNT3_i: 12 loads, 12 LSLICEs
      Net PCIE_RST_CTRL/un6_CNT2_i: 12 loads, 12 LSLICEs
-     Net PCIE_RST_CTRL/un6_CNT23_i: 12 loads, 12 LSLICEs
-     Net PCIE_RST_CTRL/un6_CNT21_i: 12 loads, 12 LSLICEs
-     Net PCIE_RST_CTRL/un6_CNT22_i: 12 loads, 12 LSLICEs
-     Net PCIE_RST_CTRL/un6_CNT20_i: 12 loads, 12 LSLICEs
+     Net PCIE_RST_CTRL/un6_CNT23_i_0: 12 loads, 12 LSLICEs
+     Net PCIE_RST_CTRL/un6_CNT21_i_0: 12 loads, 12 LSLICEs
+     Net PCIE_RST_CTRL/un6_CNT22_i_0: 12 loads, 12 LSLICEs
+     Net PCIE_RST_CTRL/un6_CNT20_i_0: 12 loads, 12 LSLICEs
      Net PCIE_RST_CTRL/un6_CNT1_i: 12 loads, 12 LSLICEs
      Net PCIE_RST_CTRL/un6_CNT19_i: 12 loads, 12 LSLICEs
      Net PCIE_RST_CTRL/un6_CNT18_i: 12 loads, 12 LSLICEs
      Net PCIE_RST_CTRL/un6_CNT17_i: 12 loads, 12 LSLICEs
      Net PCIE_RST_CTRL/un6_CNT16_i: 12 loads, 12 LSLICEs
-     Net PCIE_RST_CTRL/un6_CNT15_i: 12 loads, 12 LSLICEs
-     Net PCIE_RST_CTRL/un6_CNT14_i: 12 loads, 12 LSLICEs
-     Net PCIE_RST_CTRL/un6_CNT13_i: 12 loads, 12 LSLICEs
-     Net PCIE_RST_CTRL/un6_CNT12_i: 12 loads, 12 LSLICEs
+     Net PCIE_RST_CTRL/un6_CNT15_i_0: 12 loads, 12 LSLICEs
+     Net PCIE_RST_CTRL/un6_CNT14_i_0: 12 loads, 12 LSLICEs
+     Net PCIE_RST_CTRL/un6_CNT13_i_0: 12 loads, 12 LSLICEs
+     Net PCIE_RST_CTRL/un6_CNT12_i_0: 12 loads, 12 LSLICEs
      Net PCIE_RST_CTRL/un6_CNT11_i: 12 loads, 12 LSLICEs
      Net PCIE_RST_CTRL/un6_CNT10_i: 12 loads, 12 LSLICEs
      Net PCIE_RST_CTRL/un7_CNT0_i: 12 loads, 12 LSLICEs
-     Net GPOA_INST/un1_DOUT2: 4 loads, 4 LSLICEs
-     Net GPOA_INST/un1_DOUT1: 4 loads, 4 LSLICEs
-     Net GPOA_INST/un9_DO9_i: 4 loads, 4 LSLICEs
-     Net GPOA_INST/un9_DO8_i: 4 loads, 4 LSLICEs
+     Net GPOA_INST/N_2218_i: 4 loads, 4 LSLICEs
+     Net GPOA_INST/N_229_i: 4 loads, 4 LSLICEs
+     Net GPOA_INST/un9_DO9_i_0_0_0: 4 loads, 4 LSLICEs
+     Net GPOA_INST/un9_DO8_i_0_0: 4 loads, 4 LSLICEs
      Net GPOA_INST/un9_DO7_i_0_0: 4 loads, 4 LSLICEs
      Net GPOA_INST/un9_DO6_i_0: 4 loads, 4 LSLICEs
-     Net GPOA_INST/N_28: 4 loads, 4 LSLICEs
-     Net GPOA_INST/un9_DO4_i_0: 4 loads, 4 LSLICEs
+     Net GPOA_INST/N_231: 4 loads, 4 LSLICEs
+     Net GPOA_INST/un9_DO4_i_0_0: 4 loads, 4 LSLICEs
      Net GPOA_INST/un9_DO3_i_0: 4 loads, 4 LSLICEs
-     Net GPOA_INST/un9_DO2_i_0: 4 loads, 4 LSLICEs
-     Net GPOA_INST/N_4: 4 loads, 4 LSLICEs
-     Net GPOA_INST/un9_DO15_i: 4 loads, 4 LSLICEs
-     Net GPOA_INST/un9_DO14_i: 4 loads, 4 LSLICEs
-     Net GPOA_INST/un9_DO13_i_0: 4 loads, 4 LSLICEs
-     Net GPOA_INST/N_232: 4 loads, 4 LSLICEs
-     Net GPOA_INST/un9_DO11_i_0: 4 loads, 4 LSLICEs
-     Net GPOA_INST/N_230: 4 loads, 4 LSLICEs
-     Net GPOA_INST/un9_DO0_i_0: 5 loads, 5 LSLICEs
-     Net GPI9_INST/N_2617_i: 1 loads, 1 LSLICEs
-     Net GPI9_INST/N_2634_i: 1 loads, 1 LSLICEs
-     Net GPI8_INST/N_2616_i: 1 loads, 1 LSLICEs
-     Net GPI8_INST/N_2615_i: 1 loads, 1 LSLICEs
+     Net GPOA_INST/un9_DO2_i_0_0: 4 loads, 4 LSLICEs
+     Net GPOA_INST/un9_DO1_i_0_1: 4 loads, 4 LSLICEs
+     Net GPOA_INST/un9_DO15_i_0_0: 4 loads, 4 LSLICEs
+     Net GPOA_INST/un9_DO14_i_0: 4 loads, 4 LSLICEs
+     Net GPOA_INST/un9_DO13_i_0_0: 4 loads, 4 LSLICEs
+     Net GPOA_INST/un9_DO12_i_0: 4 loads, 4 LSLICEs
+     Net GPOA_INST/un9_DO11_i_0_0: 4 loads, 4 LSLICEs
+     Net GPOA_INST/un9_DO10_i_0: 4 loads, 4 LSLICEs
+     Net GPOA_INST/N_4: 5 loads, 5 LSLICEs
+     Net GPI9_INST/un1_DOUT2_0: 1 loads, 1 LSLICEs
+     Net GPI9_INST/N_2716_i: 1 loads, 1 LSLICEs
+     Net GPI8_INST/un1_DOUT2: 1 loads, 1 LSLICEs
+     Net GPI8_INST/N_2715_i: 1 loads, 1 LSLICEs
      Net GPO7_INST/N_59_i: 4 loads, 4 LSLICEs
      Net GPO7_INST/N_620: 4 loads, 4 LSLICEs
      Net GPO7_INST/un9_DO9_i_0_0: 4 loads, 4 LSLICEs
@@ -1523,32 +1523,32 @@ Design Summary:
      Net GPO4_INST/N_57: 4 loads, 4 LSLICEs
      Net GPO4_INST/N_14: 4 loads, 4 LSLICEs
      Net GPO4_INST/N_7: 4 loads, 4 LSLICEs
-     Net GPI3_INST/N_223_i: 4 loads, 4 LSLICEs
-     Net GPI3_INST/N_221_i: 4 loads, 4 LSLICEs
+     Net GPI3_INST/N_227_i: 4 loads, 4 LSLICEs
+     Net GPI3_INST/N_225_i: 4 loads, 4 LSLICEs
      Net GPO2_INST/un1_TMP_EN6_2_i: 1 loads, 1 LSLICEs
      Net GPO2_INST/un1_i2c_access_p_1_i: 1 loads, 1 LSLICEs
-     Net GPO2_INST/N_2079_i: 4 loads, 4 LSLICEs
-     Net GPO2_INST/N_225_i: 4 loads, 4 LSLICEs
+     Net GPO2_INST/N_2054_i: 4 loads, 4 LSLICEs
+     Net GPO2_INST/N_920_i: 4 loads, 4 LSLICEs
      Net GPO2_INST/un2_DO0_9_i_0: 4 loads, 4 LSLICEs
-     Net GPO2_INST/un2_DO0_8_i_0: 4 loads, 4 LSLICEs
-     Net GPO2_INST/un2_DO0_7_i_0: 4 loads, 4 LSLICEs
-     Net GPO2_INST/un2_DO0_6_i_0: 4 loads, 4 LSLICEs
-     Net GPO2_INST/un2_DO0_5_i_0: 4 loads, 4 LSLICEs
-     Net GPO2_INST/un2_DO0_4_i_0: 4 loads, 4 LSLICEs
-     Net GPO2_INST/un2_DO0_3_i_0: 4 loads, 4 LSLICEs
+     Net GPO2_INST/un2_DO0_8_i_0_0: 4 loads, 4 LSLICEs
+     Net GPO2_INST/un2_DO0_7_i: 4 loads, 4 LSLICEs
+     Net GPO2_INST/un2_DO0_6_i: 4 loads, 4 LSLICEs
+     Net GPO2_INST/un2_DO0_5_i: 4 loads, 4 LSLICEs
+     Net GPO2_INST/N_205: 4 loads, 4 LSLICEs
+     Net GPO2_INST/un2_DO0_3_i_0_0: 5 loads, 5 LSLICEs
      Net GPO2_INST/un2_DO0_2_i_0: 4 loads, 4 LSLICEs
-     Net GPO2_INST/un2_DO0_1_i_0: 5 loads, 5 LSLICEs
+     Net GPO2_INST/un2_DO0_1_i_0: 4 loads, 4 LSLICEs
      Net GPO2_INST/un2_DO0_15_i_0: 4 loads, 4 LSLICEs
      Net GPO2_INST/un2_DO0_14_i: 4 loads, 4 LSLICEs
      Net GPO2_INST/un2_DO0_13_i_0: 4 loads, 4 LSLICEs
-     Net GPO2_INST/N_189: 4 loads, 4 LSLICEs
-     Net GPO2_INST/N_228: 4 loads, 4 LSLICEs
+     Net GPO2_INST/un2_DO0_12_i_0: 4 loads, 4 LSLICEs
+     Net GPO2_INST/un2_DO0_11_i_0: 4 loads, 4 LSLICEs
      Net GPO2_INST/un2_DO0_10_i_0: 4 loads, 4 LSLICEs
-     Net GPO2_INST/N_195: 5 loads, 5 LSLICEs
-     Net GPI1_INST/N_213_i: 4 loads, 4 LSLICEs
-     Net GPI1_INST/N_211_i: 4 loads, 4 LSLICEs
-     Net GPI0_INST/N_209_i: 3 loads, 3 LSLICEs
-     Net GPI0_INST/N_207_i: 3 loads, 3 LSLICEs
+     Net GPO2_INST/un2_DO0_i_0: 5 loads, 5 LSLICEs
+     Net GPI1_INST/N_217_i: 4 loads, 4 LSLICEs
+     Net GPI1_INST/N_215_i: 4 loads, 4 LSLICEs
+     Net GPI0_INST/N_213_i: 3 loads, 3 LSLICEs
+     Net GPI0_INST/N_211_i: 3 loads, 3 LSLICEs
    Number of local set/reset loads for net RESET_N_c merged into GSR:  1926
    Number of LSRs:  2
      Net un1_RESET_N_i: 68 loads, 30 LSLICEs
@@ -1559,12 +1559,12 @@ Design Summary:
      Net GPO5_INST/N_380: 144 loads
      Net GPO6_INST/N_602: 144 loads
      Net GPO7_INST/N_380: 144 loads
-     Net N_2651: 113 loads
-     Net OFFSET_SEL_1[1]: 112 loads
-     Net N_2087: 111 loads
-     Net N_2653: 111 loads
-     Net N_248: 104 loads
-     Net N_2654: 102 loads
+     Net OFFSET_SEL_1[3]: 112 loads
+     Net OFFSET_SEL_1[2]: 111 loads
+     Net GPOA_INST/N_267: 108 loads
+     Net OFFSET_SEL_1[1]: 108 loads
+     Net OFFSET_SEL_1[0]: 106 loads
+     Net OFFSET_SEL_1[6]: 104 loads
  
 
    Number of warnings:  1
@@ -1572,9 +1572,9 @@ Design Summary:
 
 
 
-Total CPU Time: 6 secs  
-Total REAL Time: 9 secs  
-Peak Memory Usage: 95 MB
+Total CPU Time: 5 secs  
+Total REAL Time: 7 secs  
+Peak Memory Usage: 94 MB
 
 Dumping design to file Baseboard_Baseboard_map.ncd.
 
@@ -1585,7 +1585,7 @@ Removing old design directory at request of -rem command line option to this pro
 Running par. Please wait . . .
 
 Lattice Place and Route Report for Design "Baseboard_Baseboard_map.ncd"
-Sat Mar 14 23:34:20 2015
+Sun May 10 21:37:46 2015
 
 PAR: Place And Route Diamond (64-bit) 3.2.0.134.
 Command Line: par -w -l 5 -i 6 -t 1 -c 0 -e 0 -gui -exp parUseNBR=1:parCDP=0:parCDR=0:parPathBased=OFF Baseboard_Baseboard_map.ncd Baseboard_Baseboard.dir/5_1.ncd Baseboard_Baseboard.prf
@@ -1613,13 +1613,13 @@ Device utilization summary:
                  278+4(JTAG)/335     84% bonded
    IOLOGIC           78/336          23% used
 
-   SLICE           2058/3432         59% used
+   SLICE           2049/3432         59% used
 
    GSR                1/1           100% used
 
 
-Number of Signals: 6459
-Number of Connections: 18305
+Number of Signals: 6436
+Number of Connections: 18168
 
 Pin Constraint Summary:
    278 out of 278 pins locked (100% locked).
@@ -1629,29 +1629,29 @@ The following 1 signal is selected to use the primary clock routing resources:
 
 
 The following 8 signals are selected to use the secondary clock routing resources:
-    un1_RESET_N_i (driver: SLICE_1072, clk load #: 0, sr load #: 68, ce load #: 0)
-    PRSNT_LED_CTRL_INST.un3_CNT_i (driver: SLICE_1162, clk load #: 0, sr load #: 0, ce load #: 54)
-    BB_SGPIO_INST/N_41_i (driver: BB_SGPIO_INST/SLICE_1724, clk load #: 0, sr load #: 0, ce load #: 18)
-    PCIE_RST_CTRL/un6_CNT9_i (driver: PCIE_RST_CTRL/SLICE_1239, clk load #: 0, sr load #: 0, ce load #: 12)
-    PCIE_RST_CTRL/un6_CNT8_i (driver: PCIE_RST_CTRL/SLICE_1238, clk load #: 0, sr load #: 0, ce load #: 12)
-    PCIE_RST_CTRL/un6_CNT7_i (driver: PCIE_RST_CTRL/SLICE_1237, clk load #: 0, sr load #: 0, ce load #: 12)
-    PCIE_RST_CTRL/un6_CNT6_i (driver: PCIE_RST_CTRL/SLICE_1236, clk load #: 0, sr load #: 0, ce load #: 12)
-    PCIE_RST_CTRL/un6_CNT5_i (driver: PCIE_RST_CTRL/SLICE_1235, clk load #: 0, sr load #: 0, ce load #: 12)
+    un1_RESET_N_i (driver: SLICE_1070, clk load #: 0, sr load #: 68, ce load #: 0)
+    PRSNT_LED_CTRL_INST.un3_CNT_i (driver: SLICE_1164, clk load #: 0, sr load #: 0, ce load #: 54)
+    BB_SGPIO_INST/N_41_i (driver: BB_SGPIO_INST/SLICE_1661, clk load #: 0, sr load #: 0, ce load #: 18)
+    PCIE_RST_CTRL/un6_CNT9_i (driver: PCIE_RST_CTRL/SLICE_1231, clk load #: 0, sr load #: 0, ce load #: 12)
+    PCIE_RST_CTRL/un6_CNT8_i (driver: PCIE_RST_CTRL/SLICE_1230, clk load #: 0, sr load #: 0, ce load #: 12)
+    PCIE_RST_CTRL/un6_CNT7_i_0 (driver: PCIE_RST_CTRL/SLICE_1242, clk load #: 0, sr load #: 0, ce load #: 12)
+    PCIE_RST_CTRL/un6_CNT6_i_0 (driver: PCIE_RST_CTRL/SLICE_1241, clk load #: 0, sr load #: 0, ce load #: 12)
+    PCIE_RST_CTRL/un6_CNT5_i_0 (driver: PCIE_RST_CTRL/SLICE_1240, clk load #: 0, sr load #: 0, ce load #: 12)
 
 Signal RESET_N_c is selected as Global Set/Reset.
 Starting Placer Phase 0.
 ..........
-Finished Placer Phase 0.  REAL time: 10 secs 
+Finished Placer Phase 0.  REAL time: 6 secs 
 
 Starting Placer Phase 1.
 ........................
-Placer score = 1592899.
-Finished Placer Phase 1.  REAL time: 24 secs 
+Placer score = 1554511.
+Finished Placer Phase 1.  REAL time: 15 secs 
 
 Starting Placer Phase 2.
 .
-Placer score =  1578482
-Finished Placer Phase 2.  REAL time: 26 secs 
+Placer score =  1539809
+Finished Placer Phase 2.  REAL time: 15 secs 
 
 
 ------------------ Clock Report ------------------
@@ -1664,14 +1664,14 @@ Global Clock Resources:
 
 Quadrants All (TL, TR, BL, BR) - Global Clocks:
   PRIMARY "SYSCLK_c" from comp "SYSCLK" on CLK_PIN site "B9 (PT18A)", clk load = 1124
-  SECONDARY "un1_RESET_N_i" from F1 on comp "SLICE_1072" on site "R14C18C", clk load = 0, ce load = 0, sr load = 68
-  SECONDARY "PRSNT_LED_CTRL_INST.un3_CNT_i" from F0 on comp "SLICE_1162" on site "R21C18D", clk load = 0, ce load = 54, sr load = 0
-  SECONDARY "BB_SGPIO_INST/N_41_i" from F0 on comp "BB_SGPIO_INST/SLICE_1724" on site "R9C2A", clk load = 0, ce load = 18, sr load = 0
-  SECONDARY "PCIE_RST_CTRL/un6_CNT9_i" from F0 on comp "PCIE_RST_CTRL/SLICE_1239" on site "R25C6D", clk load = 0, ce load = 12, sr load = 0
-  SECONDARY "PCIE_RST_CTRL/un6_CNT8_i" from F0 on comp "PCIE_RST_CTRL/SLICE_1238" on site "R25C6B", clk load = 0, ce load = 12, sr load = 0
-  SECONDARY "PCIE_RST_CTRL/un6_CNT7_i" from F0 on comp "PCIE_RST_CTRL/SLICE_1237" on site "R14C20A", clk load = 0, ce load = 12, sr load = 0
-  SECONDARY "PCIE_RST_CTRL/un6_CNT6_i" from F0 on comp "PCIE_RST_CTRL/SLICE_1236" on site "R21C20C", clk load = 0, ce load = 12, sr load = 0
-  SECONDARY "PCIE_RST_CTRL/un6_CNT5_i" from F0 on comp "PCIE_RST_CTRL/SLICE_1235" on site "R25C12C", clk load = 0, ce load = 12, sr load = 0
+  SECONDARY "un1_RESET_N_i" from F0 on comp "SLICE_1070" on site "R14C20C", clk load = 0, ce load = 0, sr load = 68
+  SECONDARY "PRSNT_LED_CTRL_INST.un3_CNT_i" from F0 on comp "SLICE_1164" on site "R14C20A", clk load = 0, ce load = 54, sr load = 0
+  SECONDARY "BB_SGPIO_INST/N_41_i" from F0 on comp "BB_SGPIO_INST/SLICE_1661" on site "R14C18B", clk load = 0, ce load = 18, sr load = 0
+  SECONDARY "PCIE_RST_CTRL/un6_CNT9_i" from F0 on comp "PCIE_RST_CTRL/SLICE_1231" on site "R25C38D", clk load = 0, ce load = 12, sr load = 0
+  SECONDARY "PCIE_RST_CTRL/un6_CNT8_i" from F0 on comp "PCIE_RST_CTRL/SLICE_1230" on site "R25C6B", clk load = 0, ce load = 12, sr load = 0
+  SECONDARY "PCIE_RST_CTRL/un6_CNT7_i_0" from F0 on comp "PCIE_RST_CTRL/SLICE_1242" on site "R21C18B", clk load = 0, ce load = 12, sr load = 0
+  SECONDARY "PCIE_RST_CTRL/un6_CNT6_i_0" from F0 on comp "PCIE_RST_CTRL/SLICE_1241" on site "R25C12C", clk load = 0, ce load = 12, sr load = 0
+  SECONDARY "PCIE_RST_CTRL/un6_CNT5_i_0" from F0 on comp "PCIE_RST_CTRL/SLICE_1240" on site "R2C22B", clk load = 0, ce load = 12, sr load = 0
 
   PRIMARY  : 1 out of 8 (12%)
   SECONDARY: 8 out of 8 (100%)
@@ -1700,7 +1700,7 @@ I/O Bank Usage Summary:
 | 5        | 8 / 32 ( 25%)  | 3.3V       | -         |
 +----------+----------------+------------+-----------+
 
-Total placer CPU time: 23 secs 
+Total placer CPU time: 14 secs 
 
 Dumping design to file Baseboard_Baseboard.dir/5_1.ncd.
 
@@ -1709,12 +1709,12 @@ Dumping design to file Baseboard_Baseboard.dir/5_1.ncd.
 INFO - par: ASE feature is off due to non timing-driven settings.  
 -----------------------------------------------------------------
 
-0 connections routed; 18305 unrouted.
+0 connections routed; 18168 unrouted.
 Starting router resource preassignment
 
-Completed router resource preassignment. Real time: 31 secs 
+Completed router resource preassignment. Real time: 19 secs 
 
-Start NBR router at 23:34:51 03/14/15
+Start NBR router at 21:38:05 05/10/15
 
 *****************************************************************
 Info: NBR allows conflicts(one node used by more than one signal)
@@ -1729,42 +1729,42 @@ Note: NBR uses a different method to calculate timing slacks. The
       your design. Thanks.                                       
 *****************************************************************
 
-Start NBR special constraint process at 23:34:52 03/14/15
+Start NBR special constraint process at 21:38:05 05/10/15
 
-Start NBR section for initial routing at 23:34:52 03/14/15
+Start NBR section for initial routing at 21:38:05 05/10/15
 Level 4, iteration 1
-756(0.20%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 39 secs 
+684(0.18%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 24 secs 
 
 Info: Initial congestion level at 75% usage is 0
-Info: Initial congestion area  at 75% usage is 47 (4.70%)
+Info: Initial congestion area  at 75% usage is 10 (1.00%)
 
-Start NBR section for normal routing at 23:34:59 03/14/15
+Start NBR section for normal routing at 21:38:10 05/10/15
 Level 4, iteration 1
-479(0.13%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 42 secs 
+390(0.10%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 25 secs 
 Level 4, iteration 2
-243(0.06%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 44 secs 
+207(0.05%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 26 secs 
 Level 4, iteration 3
-125(0.03%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 45 secs 
+99(0.03%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 27 secs 
 Level 4, iteration 4
-53(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 46 secs 
+40(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 27 secs 
 Level 4, iteration 5
-40(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 47 secs 
+14(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 28 secs 
 Level 4, iteration 6
-22(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 47 secs 
+8(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 28 secs 
 Level 4, iteration 7
-11(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 47 secs 
+3(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 28 secs 
 Level 4, iteration 8
-2(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 48 secs 
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; real time: 28 secs 
 Level 4, iteration 9
-1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; real time: 48 secs 
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; real time: 28 secs 
 Level 4, iteration 10
-0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; real time: 48 secs 
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; real time: 28 secs 
 
-Start NBR section for re-routing at 23:35:08 03/14/15
+Start NBR section for re-routing at 21:38:14 05/10/15
 Level 4, iteration 1
-0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; real time: 48 secs 
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; real time: 28 secs 
 
-Start NBR section for post-routing at 23:35:08 03/14/15
+Start NBR section for post-routing at 21:38:14 05/10/15
 
 End NBR router with 0 unrouted connection
 
@@ -1779,10 +1779,10 @@ Notes: The timing info is calculated for SETUP only and all PAR_ADJs are ignored
 
 
 
-Total CPU time 44 secs 
-Total REAL time: 50 secs 
+Total CPU time 28 secs 
+Total REAL time: 29 secs 
 Completely routed.
-End of route.  18305 routed (100.00%); 0 unrouted.
+End of route.  18168 routed (100.00%); 0 unrouted.
 Checking DRC ... 
 No errors found.
 
@@ -1801,8 +1801,8 @@ PAR_SUMMARY::Worst  slack<hold /<ns>> = <n/a>
 PAR_SUMMARY::Timing score<hold /<ns>> = <n/a>
 PAR_SUMMARY::Number of errors = 0
 
-Total CPU  time to completion: 49 secs 
-Total REAL time to completion: 56 secs 
+Total CPU  time to completion: 32 secs 
+Total REAL time to completion: 34 secs 
 
 par done!
 
@@ -1893,73 +1893,3 @@ UFM Utilization: General Purpose Flash Memory.
 Available General Purpose Flash Memory: 2046 Pages (Page 0 to Page 2045).
 Initialized UFM Pages:                     0 Page.
  
-
-bitgen -f "Baseboard_Baseboard.t2b" -w "Baseboard_Baseboard.ncd" "Baseboard_Baseboard.prf"
-
-
-BITGEN: Bitstream Generator Diamond (64-bit) 3.2.0.134
-Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
-Copyright (c) 1995 AT&T Corp.   All rights reserved.
-Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
-Copyright (c) 2001 Agere Systems   All rights reserved.
-Copyright (c) 2002-2014 Lattice Semiconductor Corporation,  All rights reserved.
-
-
-Loading design for application Bitgen from file Baseboard_Baseboard.ncd.
-Design name: BB_TOP
-NCD version: 3.2
-Vendor:      LATTICE
-Device:      LCMXO2-7000HC
-Package:     FPBGA484
-Performance: 4
-Loading device for application Bitgen from file 'xo2c7000.nph' in environment: D:/lscc/diamond/3.2_x64/ispfpga.
-Package Status:                     Final          Version 1.36
-Performance Hardware Data Status:   Final          Version 25.4
-
-Running DRC.
-DRC detected 0 errors and 0 warnings.
-Reading Preference File from Baseboard_Baseboard.prf.
-
-Preference Summary:
-+---------------------------------+---------------------------------+
-|  Preference                     |  Current Setting                |
-+---------------------------------+---------------------------------+
-|                         RamCfg  |                        Reset**  |
-+---------------------------------+---------------------------------+
-|                     MCCLK_FREQ  |                         2.08**  |
-+---------------------------------+---------------------------------+
-|                  CONFIG_SECURE  |                          OFF**  |
-+---------------------------------+---------------------------------+
-|                      JTAG_PORT  |                       ENABLE**  |
-+---------------------------------+---------------------------------+
-|                       SDM_PORT  |                      DISABLE**  |
-+---------------------------------+---------------------------------+
-|                 SLAVE_SPI_PORT  |                      DISABLE**  |
-+---------------------------------+---------------------------------+
-|                MASTER_SPI_PORT  |                      DISABLE**  |
-+---------------------------------+---------------------------------+
-|                       I2C_PORT  |                         ENABLE  |
-+---------------------------------+---------------------------------+
-|        MUX_CONFIGURATION_PORTS  |                      DISABLE**  |
-+---------------------------------+---------------------------------+
-|                  CONFIGURATION  |                          CFG**  |
-+---------------------------------+---------------------------------+
-|                COMPRESS_CONFIG  |                           ON**  |
-+---------------------------------+---------------------------------+
-|                        MY_ASSP  |                          OFF**  |
-+---------------------------------+---------------------------------+
-|               ONE_TIME_PROGRAM  |                          OFF**  |
-+---------------------------------+---------------------------------+
-|                 ENABLE_TRANSFR  |                      DISABLE**  |
-+---------------------------------+---------------------------------+
-|                  SHAREDEBRINIT  |                      DISABLE**  |
-+---------------------------------+---------------------------------+
- *  Default setting.
- ** The specified setting matches the default setting.
-
-
-Creating bit map...
- 
-Bitstream Status: Final           Version 1.83.
- 
-Saving bit stream in "Baseboard_Baseboard.bit".

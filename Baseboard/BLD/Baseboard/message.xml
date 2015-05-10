@@ -2225,6 +2225,30 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
+            <Dynamic>CL156 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:443:24:444:78|*Input un1_DRV0_PWR_EN[7:0] to expression [instance] has undriven bits that are tied to 0 -- simulation mismatch possible.</Dynamic>
+            <Navigation>CL156</Navigation>
+            <Navigation>E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v</Navigation>
+            <Navigation>443</Navigation>
+            <Navigation>24</Navigation>
+            <Navigation>444</Navigation>
+            <Navigation>78</Navigation>
+            <Navigation>*Input un1_DRV0_PWR_EN[7:0] to expression [instance] has undriven bits that are tied to 0 -- simulation mismatch possible.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL156 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:445:24:446:78|*Input un1_DRV8_PWR_EN[7:0] to expression [instance] has undriven bits that are tied to 0 -- simulation mismatch possible.</Dynamic>
+            <Navigation>CL156</Navigation>
+            <Navigation>E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v</Navigation>
+            <Navigation>445</Navigation>
+            <Navigation>24</Navigation>
+            <Navigation>446</Navigation>
+            <Navigation>78</Navigation>
+            <Navigation>*Input un1_DRV8_PWR_EN[7:0] to expression [instance] has undriven bits that are tied to 0 -- simulation mismatch possible.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
             <Dynamic>CL190 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_SGPIO.v&quot;:44:0:44:5|Optimizing register bit CNT[7] to a constant 0</Dynamic>
             <Navigation>CL190</Navigation>
             <Navigation>E:\work\wolf\Baseboard\BLD\..\SRC\BB_SGPIO.v</Navigation>
@@ -5945,6 +5969,30 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
+            <Dynamic>BN132 :&quot;e:\work\wolf\baseboard\bld\..\src\gpi.v&quot;:79:0:79:5|Removing instance GPI0_INST.DOUT2[4],  because it is equivalent to instance GPI0_INST.DOUT2[2]</Dynamic>
+            <Navigation>BN132</Navigation>
+            <Navigation>e:\work\wolf\baseboard\bld\..\src\gpi.v</Navigation>
+            <Navigation>79</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>79</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Removing instance GPI0_INST.DOUT2[4],  because it is equivalent to instance GPI0_INST.DOUT2[2]</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>BN132 :&quot;e:\work\wolf\baseboard\bld\..\src\gpi.v&quot;:79:0:79:5|Removing instance GPI0_INST.DOUT2[7],  because it is equivalent to instance GPI0_INST.DOUT2[6]</Dynamic>
+            <Navigation>BN132</Navigation>
+            <Navigation>e:\work\wolf\baseboard\bld\..\src\gpi.v</Navigation>
+            <Navigation>79</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>79</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Removing instance GPI0_INST.DOUT2[7],  because it is equivalent to instance GPI0_INST.DOUT2[6]</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
             <Dynamic>BN132 :&quot;e:\work\wolf\baseboard\bld\..\src\gpi.v&quot;:67:0:67:5|Removing instance GPI9_INST.DOUT1[7],  because it is equivalent to instance GPI9_INST.DOUT1[6]</Dynamic>
             <Navigation>BN132</Navigation>
             <Navigation>e:\work\wolf\baseboard\bld\..\src\gpi.v</Navigation>
@@ -6017,18 +6065,6 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>BN132 :&quot;e:\work\wolf\baseboard\bld\..\src\gpi.v&quot;:67:0:67:5|Removing instance GPI0_INST.DOUT1[4],  because it is equivalent to instance GPI0_INST.DOUT1[2]</Dynamic>
-            <Navigation>BN132</Navigation>
-            <Navigation>e:\work\wolf\baseboard\bld\..\src\gpi.v</Navigation>
-            <Navigation>67</Navigation>
-            <Navigation>0</Navigation>
-            <Navigation>67</Navigation>
-            <Navigation>5</Navigation>
-            <Navigation>Removing instance GPI0_INST.DOUT1[4],  because it is equivalent to instance GPI0_INST.DOUT1[2]</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
             <Dynamic>BN132 :&quot;e:\work\wolf\baseboard\bld\..\src\gpi.v&quot;:79:0:79:5|Removing instance GPI9_INST.DOUT2[7],  because it is equivalent to instance GPI9_INST.DOUT2[6]</Dynamic>
             <Navigation>BN132</Navigation>
             <Navigation>e:\work\wolf\baseboard\bld\..\src\gpi.v</Navigation>
@@ -6097,18 +6133,6 @@
             <Navigation>79</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Removing instance GPI9_INST.DOUT2[2],  because it is equivalent to instance GPI9_INST.DOUT2[1]</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>BN132 :&quot;e:\work\wolf\baseboard\bld\..\src\gpi.v&quot;:67:0:67:5|Removing instance GPI0_INST.DOUT1[7],  because it is equivalent to instance GPI0_INST.DOUT1[6]</Dynamic>
-            <Navigation>BN132</Navigation>
-            <Navigation>e:\work\wolf\baseboard\bld\..\src\gpi.v</Navigation>
-            <Navigation>67</Navigation>
-            <Navigation>0</Navigation>
-            <Navigation>67</Navigation>
-            <Navigation>5</Navigation>
-            <Navigation>Removing instance GPI0_INST.DOUT1[7],  because it is equivalent to instance GPI0_INST.DOUT1[6]</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
@@ -6233,26 +6257,26 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>BN132 :&quot;e:\work\wolf\baseboard\bld\..\src\gpi.v&quot;:79:0:79:5|Removing instance GPI0_INST.DOUT2[4],  because it is equivalent to instance GPI0_INST.DOUT2[2]</Dynamic>
+            <Dynamic>BN132 :&quot;e:\work\wolf\baseboard\bld\..\src\gpi.v&quot;:67:0:67:5|Removing instance GPI0_INST.DOUT1[4],  because it is equivalent to instance GPI0_INST.DOUT1[2]</Dynamic>
             <Navigation>BN132</Navigation>
             <Navigation>e:\work\wolf\baseboard\bld\..\src\gpi.v</Navigation>
-            <Navigation>79</Navigation>
+            <Navigation>67</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>79</Navigation>
+            <Navigation>67</Navigation>
             <Navigation>5</Navigation>
-            <Navigation>Removing instance GPI0_INST.DOUT2[4],  because it is equivalent to instance GPI0_INST.DOUT2[2]</Navigation>
+            <Navigation>Removing instance GPI0_INST.DOUT1[4],  because it is equivalent to instance GPI0_INST.DOUT1[2]</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>BN132 :&quot;e:\work\wolf\baseboard\bld\..\src\gpi.v&quot;:79:0:79:5|Removing instance GPI0_INST.DOUT2[7],  because it is equivalent to instance GPI0_INST.DOUT2[6]</Dynamic>
+            <Dynamic>BN132 :&quot;e:\work\wolf\baseboard\bld\..\src\gpi.v&quot;:67:0:67:5|Removing instance GPI0_INST.DOUT1[7],  because it is equivalent to instance GPI0_INST.DOUT1[6]</Dynamic>
             <Navigation>BN132</Navigation>
             <Navigation>e:\work\wolf\baseboard\bld\..\src\gpi.v</Navigation>
-            <Navigation>79</Navigation>
+            <Navigation>67</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>79</Navigation>
+            <Navigation>67</Navigation>
             <Navigation>5</Navigation>
-            <Navigation>Removing instance GPI0_INST.DOUT2[7],  because it is equivalent to instance GPI0_INST.DOUT2[6]</Navigation>
+            <Navigation>Removing instance GPI0_INST.DOUT1[7],  because it is equivalent to instance GPI0_INST.DOUT1[6]</Navigation>
         </Message>
         <Message>
             <ID>2019993</ID>
