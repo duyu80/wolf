@@ -15,7 +15,7 @@
 #Implementation: Baseboard
 
 $ Start of Compile
-#Sun May 10 21:37:03 2015
+#Tue May 19 19:41:36 2015
 
 Synopsys Verilog Compiler, version comp201309rcp1, Build 147R, built Apr 16 2014
 @N|Running in 64-bit mode
@@ -41,16 +41,25 @@ Copyright (C) 1994-2013 Synopsys, Inc. This software and the associated document
 @I::"E:\work\wolf\Baseboard\BLD\..\SRC\GPO_PROTECT.v"
 Verilog syntax check successful!
 File E:\work\wolf\Baseboard\BLD\..\SRC\baseboard_define.v changed - recompiling
+File E:\work\wolf\Baseboard\BLD\..\SRC\BB_SGPIO.v changed - recompiling
 File E:\work\wolf\Baseboard\BLD\..\SRC\../SRC/baseboard_define.v changed - recompiling
 File E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v changed - recompiling
 File E:\work\wolf\Baseboard\BLD\..\SRC\../SRC/baseboard_define.v changed - recompiling
+File E:\work\wolf\Baseboard\BLD\..\SRC\GPI.v changed - recompiling
 File E:\work\wolf\Baseboard\BLD\..\SRC\../SRC/baseboard_define.v changed - recompiling
+File E:\work\wolf\Baseboard\BLD\..\SRC\GPO.v changed - recompiling
 File E:\work\wolf\Baseboard\BLD\..\SRC\../SRC/baseboard_define.v changed - recompiling
+File E:\work\wolf\Baseboard\BLD\..\SRC\I2C.v changed - recompiling
 File E:\work\wolf\Baseboard\BLD\..\SRC\../SRC/baseboard_define.v changed - recompiling
+File E:\work\wolf\Baseboard\BLD\..\SRC\LED.v changed - recompiling
 File E:\work\wolf\Baseboard\BLD\..\SRC\../SRC/baseboard_define.v changed - recompiling
+File E:\work\wolf\Baseboard\BLD\..\SRC\LED_CNT.v changed - recompiling
 File E:\work\wolf\Baseboard\BLD\..\SRC\../SRC/baseboard_define.v changed - recompiling
+File E:\work\wolf\Baseboard\BLD\..\SRC\PCIE_RST_CTRL.v changed - recompiling
 File E:\work\wolf\Baseboard\BLD\..\SRC\../SRC/baseboard_define.v changed - recompiling
+File E:\work\wolf\Baseboard\BLD\..\SRC\PRSNT_LED_CTRL.v changed - recompiling
 File E:\work\wolf\Baseboard\BLD\..\SRC\../SRC/baseboard_define.v changed - recompiling
+File E:\work\wolf\Baseboard\BLD\..\SRC\GPO_PROTECT.v changed - recompiling
 File E:\work\wolf\Baseboard\BLD\..\SRC\../SRC/baseboard_define.v changed - recompiling
 Selecting top level module BB_TOP
 @N: CG364 :"E:\work\wolf\Baseboard\BLD\..\SRC\I2C.v":18:7:18:9|Synthesizing module I2C
@@ -220,7 +229,7 @@ Selecting top level module BB_TOP
 @W: CG133 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_SGPIO.v":39:7:39:14|No assignment to TIME_OUT
 @N: CG364 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":11:7:11:12|Synthesizing module BB_TOP
 
-@N: CG179 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":1211:58:1211:62|Removing redundant assignment
+@N: CG179 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":1203:58:1203:62|Removing redundant assignment
 @W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":276:20:276:20|Port-width mismatch for port DIN7. Formal has width 8, Actual 32
 @W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":277:20:277:20|Port-width mismatch for port DIN8. Formal has width 8, Actual 32
 @W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":278:20:278:20|Port-width mismatch for port DIN9. Formal has width 8, Actual 32
@@ -236,60 +245,60 @@ Selecting top level module BB_TOP
 @W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":315:22:315:41|Port-width mismatch for port DIN13. Formal has width 8, Actual 32
 @W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":316:22:316:41|Port-width mismatch for port DIN14. Formal has width 8, Actual 32
 @W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":317:22:317:41|Port-width mismatch for port DIN15. Formal has width 8, Actual 32
-@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":460:19:460:19|Undriven input DIN5 on instance GPI3_INST, tying to 0
-@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":461:19:461:19|Undriven input DIN6 on instance GPI3_INST, tying to 0
-@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":462:19:462:19|Undriven input DIN7 on instance GPI3_INST, tying to 0
-@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":463:19:463:19|Undriven input DIN8 on instance GPI3_INST, tying to 0
-@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":464:19:464:19|Undriven input DIN9 on instance GPI3_INST, tying to 0
-@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":465:19:465:19|Undriven input DIN10 on instance GPI3_INST, tying to 0
-@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":466:19:466:19|Undriven input DIN11 on instance GPI3_INST, tying to 0
-@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":467:19:467:19|Undriven input DIN12 on instance GPI3_INST, tying to 0
-@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":468:19:468:19|Undriven input DIN13 on instance GPI3_INST, tying to 0
-@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":469:19:469:19|Undriven input DIN14 on instance GPI3_INST, tying to 0
-@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":470:19:470:19|Undriven input DIN15 on instance GPI3_INST, tying to 0
-@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":664:25:664:78|Port-width mismatch for port DIN0. Formal has width 8, Actual 2
-@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":666:22:666:48|Port-width mismatch for port DIN2. Formal has width 8, Actual 32
-@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":667:22:667:48|Port-width mismatch for port DIN3. Formal has width 8, Actual 32
-@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":668:22:668:48|Port-width mismatch for port DIN4. Formal has width 8, Actual 32
-@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":669:22:669:48|Port-width mismatch for port DIN5. Formal has width 8, Actual 32
-@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":670:22:670:48|Port-width mismatch for port DIN6. Formal has width 8, Actual 32
-@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":671:22:671:48|Port-width mismatch for port DIN7. Formal has width 8, Actual 32
-@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":672:22:672:48|Port-width mismatch for port DIN8. Formal has width 8, Actual 32
-@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":673:22:673:48|Port-width mismatch for port DIN9. Formal has width 8, Actual 32
-@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":674:22:674:48|Port-width mismatch for port DIN10. Formal has width 8, Actual 32
-@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":675:22:675:48|Port-width mismatch for port DIN11. Formal has width 8, Actual 32
-@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":676:22:676:48|Port-width mismatch for port DIN12. Formal has width 8, Actual 32
-@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":677:22:677:48|Port-width mismatch for port DIN13. Formal has width 8, Actual 32
-@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":678:22:678:48|Port-width mismatch for port DIN14. Formal has width 8, Actual 32
-@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":679:22:679:48|Port-width mismatch for port DIN15. Formal has width 8, Actual 32
-@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":698:22:698:41|Port-width mismatch for port DIN1. Formal has width 8, Actual 32
-@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":699:22:699:41|Port-width mismatch for port DIN2. Formal has width 8, Actual 32
-@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":700:22:700:41|Port-width mismatch for port DIN3. Formal has width 8, Actual 32
-@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":701:22:701:41|Port-width mismatch for port DIN4. Formal has width 8, Actual 32
-@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":702:22:702:41|Port-width mismatch for port DIN5. Formal has width 8, Actual 32
-@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":703:22:703:41|Port-width mismatch for port DIN6. Formal has width 8, Actual 32
-@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":704:22:704:41|Port-width mismatch for port DIN7. Formal has width 8, Actual 32
-@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":705:22:705:41|Port-width mismatch for port DIN8. Formal has width 8, Actual 32
-@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":706:22:706:41|Port-width mismatch for port DIN9. Formal has width 8, Actual 32
-@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":707:22:707:41|Port-width mismatch for port DIN10. Formal has width 8, Actual 32
-@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":708:22:708:41|Port-width mismatch for port DIN11. Formal has width 8, Actual 32
-@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":709:22:709:41|Port-width mismatch for port DIN12. Formal has width 8, Actual 32
-@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":710:22:710:41|Port-width mismatch for port DIN13. Formal has width 8, Actual 32
-@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":711:22:711:41|Port-width mismatch for port DIN14. Formal has width 8, Actual 32
-@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":712:22:712:41|Port-width mismatch for port DIN15. Formal has width 8, Actual 32
-@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":732:15:732:33|Port-width mismatch for port DO0. Formal has width 8, Actual 1
-@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":849:36:849:36|Undriven input LED_REG2 on instance FLT_AMB_LED_INST2, tying to 0
-@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":850:36:850:36|Undriven input LED_REG3 on instance FLT_AMB_LED_INST2, tying to 0
-@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":851:36:851:36|Undriven input LED_REG4 on instance FLT_AMB_LED_INST2, tying to 0
-@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":852:36:852:36|Undriven input LED_REG5 on instance FLT_AMB_LED_INST2, tying to 0
-@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":853:36:853:36|Undriven input LED_REG6 on instance FLT_AMB_LED_INST2, tying to 0
-@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":854:36:854:36|Undriven input LED_REG7 on instance FLT_AMB_LED_INST2, tying to 0
-@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":961:36:961:36|Undriven input LED_REG2 on instance IFDET_BLUE_LED_INST2, tying to 0
-@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":962:36:962:36|Undriven input LED_REG3 on instance IFDET_BLUE_LED_INST2, tying to 0
-@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":963:36:963:36|Undriven input LED_REG4 on instance IFDET_BLUE_LED_INST2, tying to 0
-@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":964:36:964:36|Undriven input LED_REG5 on instance IFDET_BLUE_LED_INST2, tying to 0
-@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":965:36:965:36|Undriven input LED_REG6 on instance IFDET_BLUE_LED_INST2, tying to 0
-@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":966:36:966:36|Undriven input LED_REG7 on instance IFDET_BLUE_LED_INST2, tying to 0
+@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":452:19:452:19|Undriven input DIN5 on instance GPI3_INST, tying to 0
+@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":453:19:453:19|Undriven input DIN6 on instance GPI3_INST, tying to 0
+@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":454:19:454:19|Undriven input DIN7 on instance GPI3_INST, tying to 0
+@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":455:19:455:19|Undriven input DIN8 on instance GPI3_INST, tying to 0
+@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":456:19:456:19|Undriven input DIN9 on instance GPI3_INST, tying to 0
+@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":457:19:457:19|Undriven input DIN10 on instance GPI3_INST, tying to 0
+@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":458:19:458:19|Undriven input DIN11 on instance GPI3_INST, tying to 0
+@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":459:19:459:19|Undriven input DIN12 on instance GPI3_INST, tying to 0
+@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":460:19:460:19|Undriven input DIN13 on instance GPI3_INST, tying to 0
+@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":461:19:461:19|Undriven input DIN14 on instance GPI3_INST, tying to 0
+@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":462:19:462:19|Undriven input DIN15 on instance GPI3_INST, tying to 0
+@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":656:25:656:78|Port-width mismatch for port DIN0. Formal has width 8, Actual 2
+@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":658:22:658:48|Port-width mismatch for port DIN2. Formal has width 8, Actual 32
+@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":659:22:659:48|Port-width mismatch for port DIN3. Formal has width 8, Actual 32
+@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":660:22:660:48|Port-width mismatch for port DIN4. Formal has width 8, Actual 32
+@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":661:22:661:48|Port-width mismatch for port DIN5. Formal has width 8, Actual 32
+@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":662:22:662:48|Port-width mismatch for port DIN6. Formal has width 8, Actual 32
+@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":663:22:663:48|Port-width mismatch for port DIN7. Formal has width 8, Actual 32
+@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":664:22:664:48|Port-width mismatch for port DIN8. Formal has width 8, Actual 32
+@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":665:22:665:48|Port-width mismatch for port DIN9. Formal has width 8, Actual 32
+@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":666:22:666:48|Port-width mismatch for port DIN10. Formal has width 8, Actual 32
+@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":667:22:667:48|Port-width mismatch for port DIN11. Formal has width 8, Actual 32
+@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":668:22:668:48|Port-width mismatch for port DIN12. Formal has width 8, Actual 32
+@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":669:22:669:48|Port-width mismatch for port DIN13. Formal has width 8, Actual 32
+@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":670:22:670:48|Port-width mismatch for port DIN14. Formal has width 8, Actual 32
+@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":671:22:671:48|Port-width mismatch for port DIN15. Formal has width 8, Actual 32
+@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":690:22:690:41|Port-width mismatch for port DIN1. Formal has width 8, Actual 32
+@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":691:22:691:41|Port-width mismatch for port DIN2. Formal has width 8, Actual 32
+@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":692:22:692:41|Port-width mismatch for port DIN3. Formal has width 8, Actual 32
+@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":693:22:693:41|Port-width mismatch for port DIN4. Formal has width 8, Actual 32
+@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":694:22:694:41|Port-width mismatch for port DIN5. Formal has width 8, Actual 32
+@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":695:22:695:41|Port-width mismatch for port DIN6. Formal has width 8, Actual 32
+@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":696:22:696:41|Port-width mismatch for port DIN7. Formal has width 8, Actual 32
+@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":697:22:697:41|Port-width mismatch for port DIN8. Formal has width 8, Actual 32
+@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":698:22:698:41|Port-width mismatch for port DIN9. Formal has width 8, Actual 32
+@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":699:22:699:41|Port-width mismatch for port DIN10. Formal has width 8, Actual 32
+@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":700:22:700:41|Port-width mismatch for port DIN11. Formal has width 8, Actual 32
+@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":701:22:701:41|Port-width mismatch for port DIN12. Formal has width 8, Actual 32
+@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":702:22:702:41|Port-width mismatch for port DIN13. Formal has width 8, Actual 32
+@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":703:22:703:41|Port-width mismatch for port DIN14. Formal has width 8, Actual 32
+@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":704:22:704:41|Port-width mismatch for port DIN15. Formal has width 8, Actual 32
+@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":724:15:724:33|Port-width mismatch for port DO0. Formal has width 8, Actual 1
+@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":841:36:841:36|Undriven input LED_REG2 on instance FLT_AMB_LED_INST2, tying to 0
+@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":842:36:842:36|Undriven input LED_REG3 on instance FLT_AMB_LED_INST2, tying to 0
+@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":843:36:843:36|Undriven input LED_REG4 on instance FLT_AMB_LED_INST2, tying to 0
+@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":844:36:844:36|Undriven input LED_REG5 on instance FLT_AMB_LED_INST2, tying to 0
+@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":845:36:845:36|Undriven input LED_REG6 on instance FLT_AMB_LED_INST2, tying to 0
+@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":846:36:846:36|Undriven input LED_REG7 on instance FLT_AMB_LED_INST2, tying to 0
+@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":953:36:953:36|Undriven input LED_REG2 on instance IFDET_BLUE_LED_INST2, tying to 0
+@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":954:36:954:36|Undriven input LED_REG3 on instance IFDET_BLUE_LED_INST2, tying to 0
+@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":955:36:955:36|Undriven input LED_REG4 on instance IFDET_BLUE_LED_INST2, tying to 0
+@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":956:36:956:36|Undriven input LED_REG5 on instance IFDET_BLUE_LED_INST2, tying to 0
+@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":957:36:957:36|Undriven input LED_REG6 on instance IFDET_BLUE_LED_INST2, tying to 0
+@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":958:36:958:36|Undriven input LED_REG7 on instance IFDET_BLUE_LED_INST2, tying to 0
 @W: CG360 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":111:113:111:119|No assignment to wire DIN_B_1
 
 @W: CG360 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":111:122:111:128|No assignment to wire DIN_C_1
@@ -330,14 +339,14 @@ Selecting top level module BB_TOP
 
 @W: CG360 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":130:14:130:21|No assignment to wire LED_REG7
 
-@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":1201:0:1201:5|Optimizing register bit CNT[25] to a constant 0
-@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":1201:0:1201:5|Optimizing register bit CNT[26] to a constant 0
-@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":1201:0:1201:5|Optimizing register bit CNT[27] to a constant 0
-@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":1201:0:1201:5|Optimizing register bit CNT[28] to a constant 0
-@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":1201:0:1201:5|Optimizing register bit CNT[29] to a constant 0
-@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":1201:0:1201:5|Optimizing register bit CNT[30] to a constant 0
-@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":1201:0:1201:5|Optimizing register bit CNT[31] to a constant 0
-@W: CL279 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":1201:0:1201:5|Pruning register bits 31 to 25 of CNT[31:0] 
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":1193:0:1193:5|Optimizing register bit CNT[25] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":1193:0:1193:5|Optimizing register bit CNT[26] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":1193:0:1193:5|Optimizing register bit CNT[27] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":1193:0:1193:5|Optimizing register bit CNT[28] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":1193:0:1193:5|Optimizing register bit CNT[29] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":1193:0:1193:5|Optimizing register bit CNT[30] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":1193:0:1193:5|Optimizing register bit CNT[31] to a constant 0
+@W: CL279 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":1193:0:1193:5|Pruning register bits 31 to 25 of CNT[31:0] 
 
 @W: CL156 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":111:113:111:119|*Input DIN_B_1[7:0] to expression [instance] has undriven bits that are tied to 0 -- simulation mismatch possible.
 @W: CL156 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":111:122:111:128|*Input DIN_C_1[7:0] to expression [instance] has undriven bits that are tied to 0 -- simulation mismatch possible.
@@ -349,8 +358,6 @@ Selecting top level module BB_TOP
 @W: CL156 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":119:131:119:137|*Input DIN_D_2[7:0] to expression [instance] has undriven bits that are tied to 0 -- simulation mismatch possible.
 @W: CL156 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":119:140:119:146|*Input DIN_E_2[7:0] to expression [instance] has undriven bits that are tied to 0 -- simulation mismatch possible.
 @W: CL156 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":119:149:119:155|*Input DIN_F_2[7:0] to expression [instance] has undriven bits that are tied to 0 -- simulation mismatch possible.
-@W: CL156 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":443:24:444:78|*Input un1_DRV0_PWR_EN[7:0] to expression [instance] has undriven bits that are tied to 0 -- simulation mismatch possible.
-@W: CL156 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":445:24:446:78|*Input un1_DRV8_PWR_EN[7:0] to expression [instance] has undriven bits that are tied to 0 -- simulation mismatch possible.
 @W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_SGPIO.v":44:0:44:5|Optimizing register bit CNT[7] to a constant 0
 @W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_SGPIO.v":44:0:44:5|Optimizing register bit CNT[8] to a constant 0
 @W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_SGPIO.v":44:0:44:5|Optimizing register bit CNT[9] to a constant 0
@@ -709,7 +716,7 @@ State machine has 5 reachable states with original encodings of:
 At c_ver Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 81MB peak: 88MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Sun May 10 21:37:06 2015
+# Tue May 19 19:41:38 2015
 
 ###########################################################]
 Pre-mapping Report
@@ -752,10 +759,10 @@ BB_TOP|SYSCLK     1.0 MHz       1000.000      inferred     Inferred_clkgroup_0
 
 Pre-mapping successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 83MB peak: 150MB)
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 84MB peak: 150MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Sun May 10 21:37:08 2015
+# Tue May 19 19:41:40 2015
 
 ###########################################################]
 Map & Optimize Report
@@ -789,22 +796,23 @@ Available hyper_sources - for debug and ip models
 	None Found
 
 
-Finished RTL optimizations (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 146MB peak: 149MB)
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 146MB peak: 149MB)
 
-@W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing instance GPI0_INST.DOUT2[4],  because it is equivalent to instance GPI0_INST.DOUT2[2]
-@W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing instance GPI0_INST.DOUT2[7],  because it is equivalent to instance GPI0_INST.DOUT2[6]
 @W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI9_INST.DOUT1[7],  because it is equivalent to instance GPI9_INST.DOUT1[6]
 @W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI9_INST.DOUT1[6],  because it is equivalent to instance GPI9_INST.DOUT1[5]
 @W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI9_INST.DOUT1[5],  because it is equivalent to instance GPI9_INST.DOUT1[4]
 @W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI9_INST.DOUT1[4],  because it is equivalent to instance GPI9_INST.DOUT1[3]
 @W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI9_INST.DOUT1[3],  because it is equivalent to instance GPI9_INST.DOUT1[2]
 @W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI9_INST.DOUT1[2],  because it is equivalent to instance GPI9_INST.DOUT1[1]
+@W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI0_INST.DOUT1[4],  because it is equivalent to instance GPI0_INST.DOUT1[2]
 @W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing instance GPI9_INST.DOUT2[7],  because it is equivalent to instance GPI9_INST.DOUT2[6]
 @W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing instance GPI9_INST.DOUT2[6],  because it is equivalent to instance GPI9_INST.DOUT2[5]
 @W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing instance GPI9_INST.DOUT2[5],  because it is equivalent to instance GPI9_INST.DOUT2[4]
 @W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing instance GPI9_INST.DOUT2[4],  because it is equivalent to instance GPI9_INST.DOUT2[3]
 @W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing instance GPI9_INST.DOUT2[3],  because it is equivalent to instance GPI9_INST.DOUT2[2]
 @W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing instance GPI9_INST.DOUT2[2],  because it is equivalent to instance GPI9_INST.DOUT2[1]
+@W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI0_INST.DOUT1[7],  because it is equivalent to instance GPI0_INST.DOUT1[6]
+@W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI0_INST.DOUT1[6],  because it is equivalent to instance GPI0_INST.DOUT1[3]
 @W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI8_INST.DOUT1[7],  because it is equivalent to instance GPI8_INST.DOUT1[6]
 @W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI8_INST.DOUT1[6],  because it is equivalent to instance GPI8_INST.DOUT1[5]
 @W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI8_INST.DOUT1[5],  because it is equivalent to instance GPI8_INST.DOUT1[4]
@@ -815,8 +823,9 @@ Finished RTL optimizations (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00
 @W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing instance GPI8_INST.DOUT2[5],  because it is equivalent to instance GPI8_INST.DOUT2[4]
 @W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing instance GPI8_INST.DOUT2[4],  because it is equivalent to instance GPI8_INST.DOUT2[3]
 @W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing instance GPI8_INST.DOUT2[3],  because it is equivalent to instance GPI8_INST.DOUT2[2]
-@W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI0_INST.DOUT1[4],  because it is equivalent to instance GPI0_INST.DOUT1[2]
-@W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing instance GPI0_INST.DOUT1[7],  because it is equivalent to instance GPI0_INST.DOUT1[6]
+@W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing instance GPI0_INST.DOUT2[4],  because it is equivalent to instance GPI0_INST.DOUT2[2]
+@W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing instance GPI0_INST.DOUT2[7],  because it is equivalent to instance GPI0_INST.DOUT2[6]
+@W: BN132 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing instance GPI0_INST.DOUT2[6],  because it is equivalent to instance GPI0_INST.DOUT2[3]
 @N: BN362 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Removing sequential instance GPI8_INST.DOUT1[2] in hierarchy view:work.BB_TOP(verilog) because there are no references to its outputs 
 @A: BN291 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":67:0:67:5|Boundary register GPI8_INST.DOUT1[2] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
 @N: BN362 :"e:\work\wolf\baseboard\bld\..\src\gpi.v":79:0:79:5|Removing sequential instance GPI8_INST.DOUT2[2] in hierarchy view:work.BB_TOP(verilog) because there are no references to its outputs 
@@ -881,28 +890,28 @@ original code -> new code
 @N: BN362 :"e:\work\wolf\baseboard\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CSD1[12] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C_I2C_INS_2(verilog) because there are no references to its outputs 
 @N: BN362 :"e:\work\wolf\baseboard\bld\..\src\i2c.v":257:0:257:5|Removing sequential instance PORT_CSD1[11] of view:PrimLib.dffr(prim) in hierarchy view:work.I2C_I2C_INS_2(verilog) because there are no references to its outputs 
 
-Finished factoring (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 181MB peak: 182MB)
+Finished factoring (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 182MB peak: 183MB)
 
 
-Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 168MB peak: 182MB)
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 168MB peak: 183MB)
 
 
-Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:07s; Memory used current: 178MB peak: 208MB)
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:06s; Memory used current: 178MB peak: 208MB)
 
 
-Starting Early Timing Optimization (Real Time elapsed 0h:00m:09s; CPU Time elapsed 0h:00m:09s; Memory used current: 177MB peak: 208MB)
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:07s; Memory used current: 176MB peak: 208MB)
 
 
-Finished Early Timing Optimization (Real Time elapsed 0h:00m:09s; CPU Time elapsed 0h:00m:09s; Memory used current: 177MB peak: 208MB)
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:08s; CPU Time elapsed 0h:00m:08s; Memory used current: 177MB peak: 208MB)
 
 
-Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:10s; CPU Time elapsed 0h:00m:10s; Memory used current: 176MB peak: 208MB)
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:08s; CPU Time elapsed 0h:00m:08s; Memory used current: 176MB peak: 208MB)
 
 
-Finished preparing to map (Real Time elapsed 0h:00m:12s; CPU Time elapsed 0h:00m:12s; Memory used current: 178MB peak: 208MB)
+Finished preparing to map (Real Time elapsed 0h:00m:10s; CPU Time elapsed 0h:00m:10s; Memory used current: 178MB peak: 208MB)
 
 
-Finished technology mapping (Real Time elapsed 0h:00m:14s; CPU Time elapsed 0h:00m:14s; Memory used current: 201MB peak: 208MB)
+Finished technology mapping (Real Time elapsed 0h:00m:12s; CPU Time elapsed 0h:00m:12s; Memory used current: 201MB peak: 208MB)
 
 Pass		 CPU time		Worst Slack		Luts / Registers
 ------------------------------------------------------------
@@ -911,24 +920,24 @@ Pass		 CPU time		Worst Slack		Luts / Registers
 ------------------------------------------------------------
 
 
-Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:15s; CPU Time elapsed 0h:00m:15s; Memory used current: 181MB peak: 208MB)
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:13s; CPU Time elapsed 0h:00m:13s; Memory used current: 182MB peak: 208MB)
 
 @N: FX164 |The option to pack flops in the IOB has not been specified 
 
-Finished restoring hierarchy (Real Time elapsed 0h:00m:18s; CPU Time elapsed 0h:00m:18s; Memory used current: 181MB peak: 208MB)
+Finished restoring hierarchy (Real Time elapsed 0h:00m:16s; CPU Time elapsed 0h:00m:16s; Memory used current: 182MB peak: 208MB)
 
 
 
 #### START OF CLOCK OPTIMIZATION REPORT #####[
 
-1 non-gated/non-generated clock tree(s) driving 2024 clock pin(s) of sequential element(s)
+1 non-gated/non-generated clock tree(s) driving 2022 clock pin(s) of sequential element(s)
 0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
 0 instances converted, 0 sequential instances remain driven by gated/generated clocks
 
 =========================== Non-Gated/Non-Generated Clocks ============================
 Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance
 ---------------------------------------------------------------------------------------
-@K:CKID0001       SYSCLK              port                   2024       BB_CPLD_ALT_L  
+@K:CKID0001       SYSCLK              port                   2022       BB_CPLD_ALT_L  
 =======================================================================================
 
 
@@ -936,20 +945,20 @@ Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample I
 
 Writing Analyst data base E:\work\wolf\Baseboard\BLD\Baseboard\Baseboard_Baseboard.srm
 
-Finished Writing Netlist Databases (Real Time elapsed 0h:00m:20s; CPU Time elapsed 0h:00m:20s; Memory used current: 175MB peak: 208MB)
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:18s; CPU Time elapsed 0h:00m:17s; Memory used current: 176MB peak: 208MB)
 
 Writing EDIF Netlist and constraint files
 I-2013.09L-SP1-1 
 @N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
 
-Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:21s; CPU Time elapsed 0h:00m:21s; Memory used current: 180MB peak: 208MB)
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:19s; CPU Time elapsed 0h:00m:19s; Memory used current: 181MB peak: 208MB)
 
 @W: MT420 |Found inferred clock BB_TOP|SYSCLK with period 1000.00ns. Please declare a user-defined clock on object "p:SYSCLK"
 
 
 
 ##### START OF TIMING REPORT #####[
-# Timing Report written on Sun May 10 21:37:31 2015
+# Timing Report written on Tue May 19 19:42:00 2015
 #
 
 
@@ -973,7 +982,7 @@ Worst slack in design: 496.219
                    Requested     Estimated     Requested     Estimated                 Clock        Clock              
 Starting Clock     Frequency     Frequency     Period        Period        Slack       Type         Group              
 -----------------------------------------------------------------------------------------------------------------------
-BB_TOP|SYSCLK      1.0 MHz       121.3 MHz     1000.000      8.245         496.219     inferred     Inferred_clkgroup_0
+BB_TOP|SYSCLK      1.0 MHz       121.0 MHz     1000.000      8.265         496.219     inferred     Inferred_clkgroup_0
 =======================================================================================================================
 
 
@@ -987,7 +996,7 @@ Clocks                        |    rise  to  rise     |    fall  to  fall   |   
 --------------------------------------------------------------------------------------------------------------------------
 Starting       Ending         |  constraint  slack    |  constraint  slack  |  constraint  slack    |  constraint  slack  
 --------------------------------------------------------------------------------------------------------------------------
-BB_TOP|SYSCLK  BB_TOP|SYSCLK  |  1000.000    991.755  |  No paths    -      |  500.000     496.219  |  500.000     498.500
+BB_TOP|SYSCLK  BB_TOP|SYSCLK  |  1000.000    991.735  |  No paths    -      |  500.000     496.219  |  500.000     498.500
 ==========================================================================================================================
  Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
        'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
@@ -1018,10 +1027,10 @@ I2C_INS_2.PORT_CSD1[0]     BB_TOP|SYSCLK     FD1S3DX     Q       PORT_CSD1[0]   
 I2C_INS_1.PORT_CSD1[0]     BB_TOP|SYSCLK     FD1S3DX     Q       PORT_CSD1[0]     1.220       496.219
 I2C_INS_2.PORT_CSD1[1]     BB_TOP|SYSCLK     FD1S3DX     Q       PORT_CSD1[1]     1.220       496.219
 I2C_INS_1.PORT_CSD1[1]     BB_TOP|SYSCLK     FD1S3DX     Q       PORT_CSD1[1]     1.220       496.219
-I2C_INS_2.PORT_CSD1[2]     BB_TOP|SYSCLK     FD1S3DX     Q       PORT_CSD1[2]     1.220       496.219
 I2C_INS_1.PORT_CSD1[2]     BB_TOP|SYSCLK     FD1S3DX     Q       PORT_CSD1[2]     1.220       496.219
-I2C_INS_2.PORT_CSD1[3]     BB_TOP|SYSCLK     FD1S3DX     Q       PORT_CSD1[3]     1.220       496.219
+I2C_INS_2.PORT_CSD1[2]     BB_TOP|SYSCLK     FD1S3DX     Q       PORT_CSD1[2]     1.220       496.219
 I2C_INS_1.PORT_CSD1[3]     BB_TOP|SYSCLK     FD1S3DX     Q       PORT_CSD1[3]     1.220       496.219
+I2C_INS_2.PORT_CSD1[3]     BB_TOP|SYSCLK     FD1S3DX     Q       PORT_CSD1[3]     1.220       496.219
 I2C_INS_2.PORT_CSD1[5]     BB_TOP|SYSCLK     FD1S3DX     Q       PORT_CSD1[5]     1.220       496.219
 I2C_INS_1.PORT_CSD1[5]     BB_TOP|SYSCLK     FD1S3DX     Q       PORT_CSD1[5]     1.220       496.219
 =====================================================================================================
@@ -1064,7 +1073,7 @@ Path information for path number 1:
 
     Number of logic level(s):                3
     Starting point:                          I2C_INS_2.PORT_CSD1[0] / Q
-    Ending point:                            I2C_INS_2.REG_DIN[3] / D
+    Ending point:                            I2C_INS_2.REG_DIN[5] / D
     The start point is clocked by            BB_TOP|SYSCLK [rising] on pin CK
     The end   point is clocked by            BB_TOP|SYSCLK [falling] on pin CK
 
@@ -1073,16 +1082,16 @@ Name                           Type         Name     Dir     Delay     Time     
 ---------------------------------------------------------------------------------------------
 I2C_INS_2.PORT_CSD1[0]         FD1S3DX      Q        Out     1.220     1.220       -         
 PORT_CSD1[0]                   Net          -        -       -         -           8         
-I2C_INS_2.un2_REG_DIN_0[3]     ORCALUT4     C        In      0.000     1.220       -         
-I2C_INS_2.un2_REG_DIN_0[3]     ORCALUT4     Z        Out     1.017     2.237       -         
-un2_REG_DIN_0_0[3]             Net          -        -       -         -           1         
-I2C_INS_2.un2_REG_DIN_4[3]     ORCALUT4     C        In      0.000     2.237       -         
-I2C_INS_2.un2_REG_DIN_4[3]     ORCALUT4     Z        Out     1.017     3.253       -         
-un2_REG_DIN_4[3]               Net          -        -       -         -           1         
-I2C_INS_2.un2_REG_DIN[3]       ORCALUT4     D        In      0.000     3.253       -         
-I2C_INS_2.un2_REG_DIN[3]       ORCALUT4     Z        Out     0.617     3.870       -         
-un2_REG_DIN_0[3]               Net          -        -       -         -           1         
-I2C_INS_2.REG_DIN[3]           FD1P3DX      D        In      0.000     3.870       -         
+I2C_INS_2.un2_REG_DIN_0[5]     ORCALUT4     C        In      0.000     1.220       -         
+I2C_INS_2.un2_REG_DIN_0[5]     ORCALUT4     Z        Out     1.017     2.237       -         
+un2_REG_DIN_0_0[5]             Net          -        -       -         -           1         
+I2C_INS_2.un2_REG_DIN_4[5]     ORCALUT4     C        In      0.000     2.237       -         
+I2C_INS_2.un2_REG_DIN_4[5]     ORCALUT4     Z        Out     1.017     3.253       -         
+un2_REG_DIN_4[5]               Net          -        -       -         -           1         
+I2C_INS_2.un2_REG_DIN[5]       ORCALUT4     D        In      0.000     3.253       -         
+I2C_INS_2.un2_REG_DIN[5]       ORCALUT4     Z        Out     0.617     3.870       -         
+un2_REG_DIN_0[5]               Net          -        -       -         -           1         
+I2C_INS_2.REG_DIN[5]           FD1P3DX      D        In      0.000     3.870       -         
 =============================================================================================
 
 
@@ -1093,7 +1102,7 @@ I2C_INS_2.REG_DIN[3]           FD1P3DX      D        In      0.000     3.870    
 Resource Usage Report
 Part: lcmxo2_7000hc-4
 
-Register bits: 2024 of 6864 (29%)
+Register bits: 2022 of 6864 (29%)
 PIC Latch:       0
 I/O cells:       278
 
@@ -1103,28 +1112,28 @@ BB:             74
 CCU2D:          384
 FD1P3AX:        4
 FD1P3BX:        2
-FD1P3DX:        1619
+FD1P3DX:        1617
 FD1S3BX:        2
-FD1S3DX:        318
+FD1S3DX:        354
 FD1S3JX:        1
 GSR:            1
 IB:             67
-IFS1P3DX:       76
-INV:            40
+IFS1P3DX:       40
+INV:            76
 OB:             137
 OFS1P3DX:       2
-ORCALUT4:       3259
-PFUMX:          74
+ORCALUT4:       3264
+PFUMX:          73
 PUR:            1
 VHI:            18
 VLO:            24
 true:           6
 Mapper successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:22s; CPU Time elapsed 0h:00m:22s; Memory used current: 62MB peak: 208MB)
+At Mapper Exit (Real Time elapsed 0h:00m:19s; CPU Time elapsed 0h:00m:19s; Memory used current: 61MB peak: 208MB)
 
-Process took 0h:00m:22s realtime, 0h:00m:22s cputime
-# Sun May 10 21:37:31 2015
+Process took 0h:00m:19s realtime, 0h:00m:19s cputime
+# Tue May 19 19:42:01 2015
 
 ###########################################################]
 

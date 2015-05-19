@@ -7,7 +7,7 @@ Running in Lattice mode
 
 Starting:    D:\lscc\diamond\3.2_x64\synpbase\win64\mbin\synbatch.exe
 Install:     D:\lscc\diamond\3.2_x64\synpbase
-Date:        Sun May 10 21:37:03 2015
+Date:        Tue May 19 19:41:36 2015
 Version:     I-2013.09L-SP1-1 
 
 Arguments:   -product synplify_pro  -batch Baseboard_Baseboard_synplify.tcl
@@ -39,7 +39,7 @@ Copied E:\work\wolf\Baseboard\BLD\Baseboard\synwork\Baseboard_Baseboard_comp.srs
 
 compiler Completed with warnings
 Return Code: 1
-Run Time:0h:00m:04s
+Run Time:0h:00m:03s
 
 
 Copied E:\work\wolf\Baseboard\BLD\Baseboard\Baseboard_Baseboard.srr to E:\work\wolf\Baseboard\BLD\Baseboard\Baseboard_Baseboard.srf
@@ -51,7 +51,7 @@ Running: Pre-mapping on proj_1|Baseboard
 
 premap Completed with warnings
 Return Code: 1
-Run Time:0h:00m:01s
+Run Time:0h:00m:02s
 
 
 Complete: Compile on proj_1|Baseboard
@@ -64,7 +64,7 @@ Running: Map & Optimize on proj_1|Baseboard
 
 fpga_mapper Completed with warnings
 Return Code: 1
-Run Time:0h:00m:24s
+Run Time:0h:00m:20s
 
 
 Complete: Map on proj_1|Baseboard

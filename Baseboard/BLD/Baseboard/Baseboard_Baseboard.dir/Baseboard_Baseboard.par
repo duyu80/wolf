@@ -4,7 +4,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2014 Lattice Semiconductor Corporation,  All rights reserved.
-Sun May 10 21:37:46 2015
+Tue May 19 19:42:12 2015
 
 D:/lscc/diamond/3.2_x64/ispfpga\bin\nt64\par -f Baseboard_Baseboard.p2t
 Baseboard_Baseboard_map.ncd Baseboard_Baseboard.dir Baseboard_Baseboard.prf
@@ -16,11 +16,11 @@ Preference file: Baseboard_Baseboard.prf.
 Level/      Number      Worst       Timing      Worst       Timing      Run         NCD
 Cost [ncd]  Unrouted    Slack       Score       Slack(hold) Score(hold) Time        Status
 ----------  --------    -----       ------      ----------- ----------- -----       ------
-5_1   *     0           -           -           -           -           34          Complete        
+5_1   *     0           -           -           -           -           30          Complete        
 
 
 * : Design saved.
 
-Total (real) run time for 1-seed: 34 secs 
+Total (real) run time for 1-seed: 31 secs 
 
 par done!

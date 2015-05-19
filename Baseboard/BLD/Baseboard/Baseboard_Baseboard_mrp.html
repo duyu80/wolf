@@ -20,19 +20,19 @@ Target Vendor:  LATTICE
 Target Device:  LCMXO2-7000HCFPBGA484
 Target Performance:   4
 Mapper:  xo2c00,  version:  Diamond (64-bit) 3.2.0.134
-Mapped on:  05/10/15  21:37:39
+Mapped on:  05/19/15  19:42:08
 
 
 <A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
-   Number of registers:   2024 out of  7869 (26%)
-      PFU registers:         1946 out of  6864 (28%)
-      PIO registers:           78 out of  1005 (8%)
-   Number of SLICEs:      2049 out of  3432 (60%)
-      SLICEs as Logic/ROM:   2049 out of  3432 (60%)
+   Number of registers:   2022 out of  7869 (26%)
+      PFU registers:         1980 out of  6864 (29%)
+      PIO registers:           42 out of  1005 (4%)
+   Number of SLICEs:      2067 out of  3432 (60%)
+      SLICEs as Logic/ROM:   2067 out of  3432 (60%)
       SLICEs as RAM:            0 out of  2574 (0%)
       SLICEs as Carry:        384 out of  3432 (11%)
-   Number of LUT4s:        4064 out of  6864 (59%)
-      Number of logic LUTs:      3296
+   Number of LUT4s:        4105 out of  6864 (60%)
+      Number of logic LUTs:      3337
       Number of distributed RAM:   0 (0 LUT4s)
       Number of ripple logic:    384 (768 LUT4s)
       Number of shift registers:   0
@@ -62,11 +62,11 @@ Mapped on:  05/10/15  21:37:39
       2. Number of logic LUT4s does not include count of distributed RAM and
      ripple logic.
    Number of clocks:  1
-     Net SYSCLK_c: 1124 loads, 1116 rising, 8 falling (Driver: PIO SYSCLK )
+     Net SYSCLK_c: 1105 loads, 1097 rising, 8 falling (Driver: PIO SYSCLK )
    Number of Clock Enables:  175
-     Net un1_BB_CPLD_ALT_L_i: 1 loads, 1 LSLICEs
+     Net N_27: 1 loads, 1 LSLICEs
 
-     Net N_170_i: 1 loads, 0 LSLICEs
+     Net un1_SGPIO_LD_1_sqmuxa_1_0_0: 1 loads, 0 LSLICEs
      Net PRSNT_LED_CTRL_INST.un3_CNT_i: 54 loads, 18 LSLICEs
      Net I2C_INS_2/N_12: 1 loads, 1 LSLICEs
      Net I2C_INS_2/N_10: 4 loads, 4 LSLICEs
@@ -80,7 +80,7 @@ Mapped on:  05/10/15  21:37:39
      Net I2C_INS_2/un1_DOUT_0_a2_0: 4 loads, 4 LSLICEs
      Net I2C_INS_2/N_21: 2 loads, 2 LSLICEs
      Net I2C_INS_2/un2_RD_WR_0_a2_0: 1 loads, 1 LSLICEs
-     Net N_67_i: 1 loads, 0 LSLICEs
+     Net N_69_i: 1 loads, 0 LSLICEs
      Net I2C_INS_1/N_11: 1 loads, 1 LSLICEs
      Net I2C_INS_1/SCL_NCLK: 1 loads, 1 LSLICEs
      Net I2C_INS_1/N_9: 4 loads, 4 LSLICEs
@@ -92,57 +92,57 @@ Mapped on:  05/10/15  21:37:39
      Net I2C_INS_1/un1_DOUT_0_a2: 4 loads, 4 LSLICEs
      Net I2C_INS_1/N_20: 2 loads, 2 LSLICEs
      Net I2C_INS_1/un2_RD_WR_0_a2: 1 loads, 1 LSLICEs
-     Net N_925_i: 1 loads, 0 LSLICEs
-     Net BB_SGPIO_INST/N_163_i: 4 loads, 4 LSLICEs
-     Net BB_SGPIO_INST/N_41_i: 18 loads, 18 LSLICEs
-     Net un1_STATE_9_i_i: 1 loads, 0 LSLICEs
-     Net PCIE_RST_CTRL/un6_CNT9_i: 12 loads, 12 LSLICEs
-     Net PCIE_RST_CTRL/un6_CNT8_i: 12 loads, 12 LSLICEs
+     Net N_68_i: 1 loads, 0 LSLICEs
+     Net BB_SGPIO_INST/N_161_i: 4 loads, 4 LSLICEs
+     Net BB_SGPIO_INST/un1_STATE_10_0_a3_0: 18 loads, 18 LSLICEs
+     Net N_42: 1 loads, 0 LSLICEs
+     Net PCIE_RST_CTRL/un6_CNT9_i_0: 12 loads, 12 LSLICEs
+     Net PCIE_RST_CTRL/un6_CNT8_i_0: 12 loads, 12 LSLICEs
      Net PCIE_RST_CTRL/un6_CNT7_i_0: 12 loads, 12 LSLICEs
      Net PCIE_RST_CTRL/un6_CNT6_i_0: 12 loads, 12 LSLICEs
      Net PCIE_RST_CTRL/un6_CNT5_i_0: 12 loads, 12 LSLICEs
      Net PCIE_RST_CTRL/un6_CNT4_i_0: 12 loads, 12 LSLICEs
      Net PCIE_RST_CTRL/un6_CNT3_i: 12 loads, 12 LSLICEs
-     Net PCIE_RST_CTRL/un6_CNT2_i: 12 loads, 12 LSLICEs
      Net PCIE_RST_CTRL/un6_CNT23_i_0: 12 loads, 12 LSLICEs
      Net PCIE_RST_CTRL/un6_CNT21_i_0: 12 loads, 12 LSLICEs
+     Net PCIE_RST_CTRL/un6_CNT2_i_0: 12 loads, 12 LSLICEs
      Net PCIE_RST_CTRL/un6_CNT22_i_0: 12 loads, 12 LSLICEs
      Net PCIE_RST_CTRL/un6_CNT20_i_0: 12 loads, 12 LSLICEs
-     Net PCIE_RST_CTRL/un6_CNT1_i: 12 loads, 12 LSLICEs
-     Net PCIE_RST_CTRL/un6_CNT19_i: 12 loads, 12 LSLICEs
-     Net PCIE_RST_CTRL/un6_CNT18_i: 12 loads, 12 LSLICEs
-     Net PCIE_RST_CTRL/un6_CNT17_i: 12 loads, 12 LSLICEs
-     Net PCIE_RST_CTRL/un6_CNT16_i: 12 loads, 12 LSLICEs
-     Net PCIE_RST_CTRL/un6_CNT15_i_0: 12 loads, 12 LSLICEs
+     Net PCIE_RST_CTRL/un6_CNT1_i_0: 12 loads, 12 LSLICEs
+     Net PCIE_RST_CTRL/un6_CNT19_i_0: 12 loads, 12 LSLICEs
+     Net PCIE_RST_CTRL/un6_CNT18_i_0: 12 loads, 12 LSLICEs
+     Net PCIE_RST_CTRL/un6_CNT17_i_0: 12 loads, 12 LSLICEs
+     Net PCIE_RST_CTRL/un6_CNT16_i_0: 12 loads, 12 LSLICEs
+     Net PCIE_RST_CTRL/un6_CNT15_i: 12 loads, 12 LSLICEs
      Net PCIE_RST_CTRL/un6_CNT14_i_0: 12 loads, 12 LSLICEs
      Net PCIE_RST_CTRL/un6_CNT13_i_0: 12 loads, 12 LSLICEs
      Net PCIE_RST_CTRL/un6_CNT12_i_0: 12 loads, 12 LSLICEs
-     Net PCIE_RST_CTRL/un6_CNT11_i: 12 loads, 12 LSLICEs
-     Net PCIE_RST_CTRL/un6_CNT10_i: 12 loads, 12 LSLICEs
-     Net PCIE_RST_CTRL/un7_CNT0_i: 12 loads, 12 LSLICEs
-     Net GPOA_INST/N_2218_i: 4 loads, 4 LSLICEs
-     Net GPOA_INST/N_229_i: 4 loads, 4 LSLICEs
+     Net PCIE_RST_CTRL/un6_CNT11_i_0: 12 loads, 12 LSLICEs
+     Net PCIE_RST_CTRL/un6_CNT10_i_0: 12 loads, 12 LSLICEs
+     Net PCIE_RST_CTRL/un7_CNT0_i_0: 12 loads, 12 LSLICEs
+     Net GPOA_INST/N_2083_i: 4 loads, 4 LSLICEs
+     Net GPOA_INST/N_381_i: 4 loads, 4 LSLICEs
 
-     Net GPOA_INST/un9_DO9_i_0_0_0: 4 loads, 4 LSLICEs
-     Net GPOA_INST/un9_DO8_i_0_0: 4 loads, 4 LSLICEs
-     Net GPOA_INST/un9_DO7_i_0_0: 4 loads, 4 LSLICEs
-     Net GPOA_INST/un9_DO6_i_0: 4 loads, 4 LSLICEs
-     Net GPOA_INST/N_231: 4 loads, 4 LSLICEs
-     Net GPOA_INST/un9_DO4_i_0_0: 4 loads, 4 LSLICEs
-     Net GPOA_INST/un9_DO3_i_0: 4 loads, 4 LSLICEs
-     Net GPOA_INST/un9_DO2_i_0_0: 4 loads, 4 LSLICEs
-     Net GPOA_INST/un9_DO1_i_0_1: 4 loads, 4 LSLICEs
-     Net GPOA_INST/un9_DO15_i_0_0: 4 loads, 4 LSLICEs
+     Net GPOA_INST/un9_DO9_i_0_1: 4 loads, 4 LSLICEs
+     Net GPOA_INST/un9_DO8_i_0: 4 loads, 4 LSLICEs
+     Net GPOA_INST/un9_DO7_i_0: 4 loads, 4 LSLICEs
+     Net GPOA_INST/un9_DO6_i_0_0: 4 loads, 4 LSLICEs
+     Net GPOA_INST/un9_DO5_i_0: 4 loads, 4 LSLICEs
+     Net GPOA_INST/un9_DO4_i_0: 4 loads, 4 LSLICEs
+     Net GPOA_INST/un9_DO3_i_0_0: 4 loads, 4 LSLICEs
+     Net GPOA_INST/un9_DO2_i_0: 4 loads, 4 LSLICEs
+     Net GPOA_INST/N_4: 4 loads, 4 LSLICEs
+     Net GPOA_INST/un9_DO15_i_0: 4 loads, 4 LSLICEs
      Net GPOA_INST/un9_DO14_i_0: 4 loads, 4 LSLICEs
-     Net GPOA_INST/un9_DO13_i_0_0: 4 loads, 4 LSLICEs
+     Net GPOA_INST/N_204: 4 loads, 4 LSLICEs
      Net GPOA_INST/un9_DO12_i_0: 4 loads, 4 LSLICEs
-     Net GPOA_INST/un9_DO11_i_0_0: 4 loads, 4 LSLICEs
+     Net GPOA_INST/N_222: 4 loads, 4 LSLICEs
      Net GPOA_INST/un9_DO10_i_0: 4 loads, 4 LSLICEs
-     Net GPOA_INST/N_4: 5 loads, 5 LSLICEs
-     Net GPI9_INST/un1_DOUT2_0: 1 loads, 1 LSLICEs
-     Net GPI9_INST/N_2716_i: 1 loads, 1 LSLICEs
-     Net GPI8_INST/un1_DOUT2: 1 loads, 1 LSLICEs
-     Net GPI8_INST/N_2715_i: 1 loads, 1 LSLICEs
+     Net GPOA_INST/N_29: 5 loads, 5 LSLICEs
+     Net GPI9_INST/N_2860_i: 1 loads, 1 LSLICEs
+     Net GPI9_INST/N_2859_i: 1 loads, 1 LSLICEs
+     Net GPI8_INST/N_2721_i: 1 loads, 1 LSLICEs
+     Net GPI8_INST/N_2720_i: 1 loads, 1 LSLICEs
      Net GPO7_INST/N_59_i: 4 loads, 4 LSLICEs
      Net GPO7_INST/N_620: 4 loads, 4 LSLICEs
      Net GPO7_INST/un9_DO9_i_0_0: 4 loads, 4 LSLICEs
@@ -156,10 +156,10 @@ Mapped on:  05/10/15  21:37:39
      Net GPO7_INST/N_36: 4 loads, 4 LSLICEs
      Net GPO7_INST/N_34: 4 loads, 4 LSLICEs
      Net GPO7_INST/un9_DO1_i_0_0: 4 loads, 4 LSLICEs
-     Net GPO7_INST/N_28: 4 loads, 4 LSLICEs
      Net GPO7_INST/N_31: 4 loads, 4 LSLICEs
-     Net GPO7_INST/N_25: 4 loads, 4 LSLICEs
      Net GPO7_INST/N_63: 4 loads, 4 LSLICEs
+     Net GPO7_INST/N_28: 4 loads, 4 LSLICEs
+     Net GPO7_INST/N_25: 4 loads, 4 LSLICEs
      Net GPO7_INST/N_61: 4 loads, 4 LSLICEs
      Net GPO6_INST/N_817_i: 4 loads, 4 LSLICEs
      Net GPO6_INST/N_8_i: 4 loads, 4 LSLICEs
@@ -176,8 +176,8 @@ Mapped on:  05/10/15  21:37:39
      Net GPO6_INST/N_26: 4 loads, 4 LSLICEs
      Net GPO6_INST/N_23: 4 loads, 4 LSLICEs
      Net GPO6_INST/N_20: 4 loads, 4 LSLICEs
-     Net GPO6_INST/N_57: 4 loads, 4 LSLICEs
      Net GPO6_INST/N_14: 4 loads, 4 LSLICEs
+     Net GPO6_INST/N_57: 4 loads, 4 LSLICEs
      Net GPO6_INST/N_7: 4 loads, 4 LSLICEs
 
      Net GPO5_INST/N_59_i: 4 loads, 4 LSLICEs
@@ -209,43 +209,43 @@ Mapped on:  05/10/15  21:37:39
      Net GPO4_INST/N_9: 4 loads, 4 LSLICEs
      Net GPO4_INST/N_10: 4 loads, 4 LSLICEs
      Net GPO4_INST/un9_DO15_i_0_0_0: 4 loads, 4 LSLICEs
-     Net GPO4_INST/N_26: 4 loads, 4 LSLICEs
-     Net GPO4_INST/N_6: 4 loads, 4 LSLICEs
      Net GPO4_INST/N_23: 4 loads, 4 LSLICEs
+     Net GPO4_INST/N_6: 4 loads, 4 LSLICEs
+     Net GPO4_INST/N_26: 4 loads, 4 LSLICEs
      Net GPO4_INST/N_20: 4 loads, 4 LSLICEs
      Net GPO4_INST/N_57: 4 loads, 4 LSLICEs
      Net GPO4_INST/N_14: 4 loads, 4 LSLICEs
      Net GPO4_INST/N_7: 4 loads, 4 LSLICEs
-     Net GPI3_INST/N_227_i: 4 loads, 4 LSLICEs
-     Net GPI3_INST/N_225_i: 4 loads, 4 LSLICEs
+     Net GPI3_INST/N_362_i: 4 loads, 4 LSLICEs
+     Net GPI3_INST/N_360_i: 4 loads, 4 LSLICEs
      Net GPO2_INST/un1_TMP_EN6_2_i: 1 loads, 1 LSLICEs
      Net GPO2_INST/un1_i2c_access_p_1_i: 1 loads, 1 LSLICEs
-     Net GPO2_INST/N_2054_i: 4 loads, 4 LSLICEs
-     Net GPO2_INST/N_920_i: 4 loads, 4 LSLICEs
+     Net GPO2_INST/N_2856_i: 4 loads, 4 LSLICEs
+     Net GPO2_INST/N_2877_i: 4 loads, 4 LSLICEs
      Net GPO2_INST/un2_DO0_9_i_0: 4 loads, 4 LSLICEs
-     Net GPO2_INST/un2_DO0_8_i_0_0: 4 loads, 4 LSLICEs
-     Net GPO2_INST/un2_DO0_7_i: 4 loads, 4 LSLICEs
-     Net GPO2_INST/un2_DO0_6_i: 4 loads, 4 LSLICEs
-     Net GPO2_INST/un2_DO0_5_i: 4 loads, 4 LSLICEs
-     Net GPO2_INST/N_205: 4 loads, 4 LSLICEs
-     Net GPO2_INST/un2_DO0_3_i_0_0: 5 loads, 5 LSLICEs
-     Net GPO2_INST/un2_DO0_2_i_0: 4 loads, 4 LSLICEs
+     Net GPO2_INST/un2_DO0_8_i_0: 4 loads, 4 LSLICEs
+     Net GPO2_INST/un2_DO0_7_i_0: 4 loads, 4 LSLICEs
+     Net GPO2_INST/un2_DO0_6_i_0: 4 loads, 4 LSLICEs
+     Net GPO2_INST/un2_DO0_5_i_0: 4 loads, 4 LSLICEs
+     Net GPO2_INST/un2_DO0_4_i_0: 5 loads, 5 LSLICEs
+     Net GPO2_INST/un2_DO0_3_i_0: 4 loads, 4 LSLICEs
+     Net GPO2_INST/N_5: 4 loads, 4 LSLICEs
      Net GPO2_INST/un2_DO0_1_i_0: 4 loads, 4 LSLICEs
-     Net GPO2_INST/un2_DO0_15_i_0: 4 loads, 4 LSLICEs
-     Net GPO2_INST/un2_DO0_14_i: 4 loads, 4 LSLICEs
-     Net GPO2_INST/un2_DO0_13_i_0: 4 loads, 4 LSLICEs
-     Net GPO2_INST/un2_DO0_12_i_0: 4 loads, 4 LSLICEs
+     Net GPO2_INST/N_274: 4 loads, 4 LSLICEs
+     Net GPO2_INST/N_292: 4 loads, 4 LSLICEs
+     Net GPO2_INST/N_310: 4 loads, 4 LSLICEs
      Net GPO2_INST/un2_DO0_11_i_0: 4 loads, 4 LSLICEs
+     Net GPO2_INST/N_328: 4 loads, 4 LSLICEs
 
      Net GPO2_INST/un2_DO0_10_i_0: 4 loads, 4 LSLICEs
-     Net GPO2_INST/un2_DO0_i_0: 5 loads, 5 LSLICEs
-     Net GPI1_INST/N_217_i: 4 loads, 4 LSLICEs
-     Net GPI1_INST/N_215_i: 4 loads, 4 LSLICEs
-     Net GPI0_INST/N_213_i: 3 loads, 3 LSLICEs
-     Net GPI0_INST/N_211_i: 3 loads, 3 LSLICEs
-   Number of local set/reset loads for net RESET_N_c merged into GSR:  1926
+     Net GPO2_INST/un2_DO0_i_0_0: 4 loads, 4 LSLICEs
+     Net GPI1_INST/N_352_i: 4 loads, 4 LSLICEs
+     Net GPI1_INST/N_350_i: 4 loads, 4 LSLICEs
+     Net GPI0_INST/N_348_i: 3 loads, 3 LSLICEs
+     Net GPI0_INST/N_346_i: 3 loads, 3 LSLICEs
+   Number of local set/reset loads for net RESET_N_c merged into GSR:  1924
    Number of LSRs:  2
-     Net un1_RESET_N_i: 68 loads, 30 LSLICEs
+     Net un1_RESET_N_i: 50 loads, 48 LSLICEs
      Net GPO2_INST/i2c_access_ds_i: 1 loads, 1 LSLICEs
    Number of nets driven by tri-state buffers:  0
    Top 10 highest fanout non-clock nets:
@@ -253,12 +253,12 @@ Mapped on:  05/10/15  21:37:39
      Net GPO5_INST/N_380: 144 loads
      Net GPO6_INST/N_602: 144 loads
      Net GPO7_INST/N_380: 144 loads
-     Net OFFSET_SEL_1[3]: 112 loads
-     Net OFFSET_SEL_1[2]: 111 loads
-     Net GPOA_INST/N_267: 108 loads
-     Net OFFSET_SEL_1[1]: 108 loads
-     Net OFFSET_SEL_1[0]: 106 loads
-     Net OFFSET_SEL_1[6]: 104 loads
+     Net N_2657: 110 loads
+     Net OFFSET_SEL_1[2]: 110 loads
+     Net OFFSET_SEL_1[6]: 103 loads
+     Net N_2653: 102 loads
+     Net OFFSET_SEL_1[4]: 102 loads
+     Net OFFSET_SEL_1[9]: 102 loads
 
 
 
@@ -766,78 +766,78 @@ WARNING - map: Using local reset signal 'RESET_N_c' to infer global GSR net.
 +---------------------+-----------+-----------+------------+
 | DRV2_PWR_EN_L       | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
-| DRV32_ACT_LED       | INPUT     | LVCMOS33  | IN         |
+| DRV32_ACT_LED       | INPUT     | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
-| DRV33_ACT_LED       | INPUT     | LVCMOS33  | IN         |
+| DRV33_ACT_LED       | INPUT     | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
-| DRV34_ACT_LED       | INPUT     | LVCMOS33  | IN         |
+| DRV34_ACT_LED       | INPUT     | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
-| DRV35_ACT_LED       | INPUT     | LVCMOS33  | IN         |
+| DRV35_ACT_LED       | INPUT     | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
-| DRV28_ACT_LED       | INPUT     | LVCMOS33  | IN         |
+| DRV28_ACT_LED       | INPUT     | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
-| DRV29_ACT_LED       | INPUT     | LVCMOS33  | IN         |
+| DRV29_ACT_LED       | INPUT     | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
-| DRV30_ACT_LED       | INPUT     | LVCMOS33  | IN         |
+| DRV30_ACT_LED       | INPUT     | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
-| DRV31_ACT_LED       | INPUT     | LVCMOS33  | IN         |
+| DRV31_ACT_LED       | INPUT     | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
-| DRV24_ACT_LED       | INPUT     | LVCMOS33  | IN         |
+| DRV24_ACT_LED       | INPUT     | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
-| DRV25_ACT_LED       | INPUT     | LVCMOS33  | IN         |
+| DRV25_ACT_LED       | INPUT     | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
-| DRV26_ACT_LED       | INPUT     | LVCMOS33  | IN         |
+| DRV26_ACT_LED       | INPUT     | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
-| DRV27_ACT_LED       | INPUT     | LVCMOS33  | IN         |
+| DRV27_ACT_LED       | INPUT     | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
-| DRV20_ACT_LED       | INPUT     | LVCMOS33  | IN         |
+| DRV20_ACT_LED       | INPUT     | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
-| DRV21_ACT_LED       | INPUT     | LVCMOS33  | IN         |
+| DRV21_ACT_LED       | INPUT     | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
-| DRV22_ACT_LED       | INPUT     | LVCMOS33  | IN         |
+| DRV22_ACT_LED       | INPUT     | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
-| DRV23_ACT_LED       | INPUT     | LVCMOS33  | IN         |
+| DRV23_ACT_LED       | INPUT     | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
-| DRV16_ACT_LED       | INPUT     | LVCMOS33  | IN         |
+| DRV16_ACT_LED       | INPUT     | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
-| DRV17_ACT_LED       | INPUT     | LVCMOS33  | IN         |
+| DRV17_ACT_LED       | INPUT     | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
-| DRV18_ACT_LED       | INPUT     | LVCMOS33  | IN         |
+| DRV18_ACT_LED       | INPUT     | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
-| DRV19_ACT_LED       | INPUT     | LVCMOS33  | IN         |
+| DRV19_ACT_LED       | INPUT     | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
-| DRV12_ACT_LED       | INPUT     | LVCMOS33  | IN         |
+| DRV12_ACT_LED       | INPUT     | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
-| DRV13_ACT_LED       | INPUT     | LVCMOS33  | IN         |
+| DRV13_ACT_LED       | INPUT     | LVCMOS33  |            |
 
 +---------------------+-----------+-----------+------------+
-| DRV14_ACT_LED       | INPUT     | LVCMOS33  | IN         |
+| DRV14_ACT_LED       | INPUT     | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
-| DRV15_ACT_LED       | INPUT     | LVCMOS33  | IN         |
+| DRV15_ACT_LED       | INPUT     | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
-| DRV8_ACT_LED        | INPUT     | LVCMOS33  | IN         |
+| DRV8_ACT_LED        | INPUT     | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
-| DRV9_ACT_LED        | INPUT     | LVCMOS33  | IN         |
+| DRV9_ACT_LED        | INPUT     | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
-| DRV10_ACT_LED       | INPUT     | LVCMOS33  | IN         |
+| DRV10_ACT_LED       | INPUT     | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
-| DRV11_ACT_LED       | INPUT     | LVCMOS33  | IN         |
+| DRV11_ACT_LED       | INPUT     | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
-| DRV4_ACT_LED        | INPUT     | LVCMOS33  | IN         |
+| DRV4_ACT_LED        | INPUT     | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
-| DRV5_ACT_LED        | INPUT     | LVCMOS33  | IN         |
+| DRV5_ACT_LED        | INPUT     | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
-| DRV6_ACT_LED        | INPUT     | LVCMOS33  | IN         |
+| DRV6_ACT_LED        | INPUT     | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
-| DRV7_ACT_LED        | INPUT     | LVCMOS33  | IN         |
+| DRV7_ACT_LED        | INPUT     | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
-| DRV0_ACT_LED        | INPUT     | LVCMOS33  | IN         |
+| DRV0_ACT_LED        | INPUT     | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
-| DRV1_ACT_LED        | INPUT     | LVCMOS33  | IN         |
+| DRV1_ACT_LED        | INPUT     | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
-| DRV2_ACT_LED        | INPUT     | LVCMOS33  | IN         |
+| DRV2_ACT_LED        | INPUT     | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
-| DRV3_ACT_LED        | INPUT     | LVCMOS33  | IN         |
+| DRV3_ACT_LED        | INPUT     | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
 | SDA_2               | BIDIR     | LVCMOS33  | IN         |
 +---------------------+-----------+-----------+------------+
@@ -854,10 +854,10 @@ WARNING - map: Using local reset signal 'RESET_N_c' to infer global GSR net.
 
 Block GPI0_INST/GND undriven or does not drive anything - clipped.
 Block GPI0_INST/VCC undriven or does not drive anything - clipped.
-Block GPI1_INST/GND undriven or does not drive anything - clipped.
 Block GPI1_INST/VCC undriven or does not drive anything - clipped.
-Block GPO2_INST/VCC undriven or does not drive anything - clipped.
+Block GPI1_INST/GND undriven or does not drive anything - clipped.
 Block GPO2_INST/GND undriven or does not drive anything - clipped.
+Block GPO2_INST/VCC undriven or does not drive anything - clipped.
 Block GPI3_INST/GND undriven or does not drive anything - clipped.
 Block GPI3_INST/VCC undriven or does not drive anything - clipped.
 Block GPO4_INST/GND undriven or does not drive anything - clipped.
@@ -1184,8 +1184,8 @@ Type and instance name of component:
 <A name="mrp_runtime"></A><B><U><big>Run Time and Memory Usage</big></U></B>
 -------------------------
 
-   Total CPU Time: 5 secs
-   Total REAL Time: 7 secs
+   Total CPU Time: 4 secs
+   Total REAL Time: 4 secs
    Peak Memory Usage: 94 MB
 
 

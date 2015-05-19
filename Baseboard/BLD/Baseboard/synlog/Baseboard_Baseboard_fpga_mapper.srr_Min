@@ -1,7 +1,7 @@
 
 
 ##### START OF TIMING REPORT #####[
-# Timing Report written on Sun May 10 21:37:31 2015
+# Timing Report written on Tue May 19 19:42:01 2015
 #
 
 
@@ -25,7 +25,7 @@ Worst slack in design: 0.401
                    Requested     Estimated     Requested     Estimated                 Clock        Clock              
 Starting Clock     Frequency     Frequency     Period        Period        Slack       Type         Group              
 -----------------------------------------------------------------------------------------------------------------------
-BB_TOP|SYSCLK      1.0 MHz       121.3 MHz     1000.000      8.245         496.219     inferred     Inferred_clkgroup_0
+BB_TOP|SYSCLK      1.0 MHz       121.0 MHz     1000.000      8.265         496.219     inferred     Inferred_clkgroup_0
 =======================================================================================================================
 
 
@@ -90,10 +90,10 @@ I2C_INS_1.SDA_OUT              BB_TOP|SYSCLK     FD1P3DX     SP      SCL_NCLK   
 I2C_INS_2.SDA_OUT              BB_TOP|SYSCLK     FD1P3DX     SP      SCL_NCLK                 0.330        0.445
 I2C_INS_1.NEXT_STATE_D1[0]     BB_TOP|SYSCLK     FD1S3DX     D       NEXT_STATE_Q[0]          0.074        0.606
 I2C_INS_2.NEXT_STATE_D1[0]     BB_TOP|SYSCLK     FD1S3DX     D       NEXT_STATE_Q_0[0]        0.074        0.606
-I2C_INS_2.NEXT_STATE_D2[0]     BB_TOP|SYSCLK     FD1S3DX     D       NEXT_STATE_D1_Q_0[0]     0.074        0.606
 I2C_INS_1.NEXT_STATE_D2[0]     BB_TOP|SYSCLK     FD1S3DX     D       NEXT_STATE_D1_Q[0]       0.074        0.606
-I2C_INS_1.RD_END2              BB_TOP|SYSCLK     FD1S3DX     D       RD_END1                  0.074        0.606
+I2C_INS_2.NEXT_STATE_D2[0]     BB_TOP|SYSCLK     FD1S3DX     D       NEXT_STATE_D1_Q_0[0]     0.074        0.606
 I2C_INS_2.RD_END2              BB_TOP|SYSCLK     FD1S3DX     D       RD_END1                  0.074        0.606
+I2C_INS_1.RD_END2              BB_TOP|SYSCLK     FD1S3DX     D       RD_END1                  0.074        0.606
 ================================================================================================================
 
 
