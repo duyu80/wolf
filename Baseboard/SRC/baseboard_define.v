@@ -45,7 +45,7 @@
 
 `define FRQ_100K        32'd125
 `define TIME_1S         32'd25000000
-`define TIME_100MS      32'd3000000
+`define TIME_100MS      32'd2500000
 //`define TIME_100MS      32'd2500
 `define TIME_99MS       32'd2475000
 

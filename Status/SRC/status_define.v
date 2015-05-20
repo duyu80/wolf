@@ -23,8 +23,8 @@
 `ifdef SIM
 `define	CLK_FRQ			25'd1000
 `else
-`define	CLK_FRQ			25'd10500000
-//`define	CLK_FRQ			25'd25000000
+//`define	CLK_FRQ			25'd10500000
+`define	CLK_FRQ			25'd25000000
 `endif
 
 `define DEVICE_ID_MSB   8'h20
