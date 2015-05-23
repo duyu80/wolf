@@ -5,7 +5,7 @@ Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2014 Lattice Semiconductor Corporation,  All rights reserved.
 
-Command: bitgen -g RamCfg:Reset -path F:/project/wolf/Status/BLD -w -gui Status_Status.ncd Status_Status.prf 
+Command: bitgen -g RamCfg:Reset -path E:/work/wolf/Status/BLD -w -gui Status_Status.ncd Status_Status.prf 
 
 Loading design for application Bitgen from file Status_Status.ncd.
 Design name: TOP

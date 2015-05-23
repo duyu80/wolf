@@ -166,7 +166,7 @@ Selecting top level module BB_TOP
 @W: CG133 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_SGPIO.v":39:7:39:14|No assignment to TIME_OUT
 @N: CG364 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":11:7:11:12|Synthesizing module BB_TOP
 
-@N: CG179 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":1203:58:1203:62|Removing redundant assignment
+@N: CG179 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":1227:58:1227:62|Removing redundant assignment
 @W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":276:20:276:20|Port-width mismatch for port DIN7. Formal has width 8, Actual 32
 @W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":277:20:277:20|Port-width mismatch for port DIN8. Formal has width 8, Actual 32
 @W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":278:20:278:20|Port-width mismatch for port DIN9. Formal has width 8, Actual 32
@@ -182,60 +182,60 @@ Selecting top level module BB_TOP
 @W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":315:22:315:41|Port-width mismatch for port DIN13. Formal has width 8, Actual 32
 @W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":316:22:316:41|Port-width mismatch for port DIN14. Formal has width 8, Actual 32
 @W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":317:22:317:41|Port-width mismatch for port DIN15. Formal has width 8, Actual 32
-@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":452:19:452:19|Undriven input DIN5 on instance GPI3_INST, tying to 0
-@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":453:19:453:19|Undriven input DIN6 on instance GPI3_INST, tying to 0
-@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":454:19:454:19|Undriven input DIN7 on instance GPI3_INST, tying to 0
-@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":455:19:455:19|Undriven input DIN8 on instance GPI3_INST, tying to 0
-@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":456:19:456:19|Undriven input DIN9 on instance GPI3_INST, tying to 0
-@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":457:19:457:19|Undriven input DIN10 on instance GPI3_INST, tying to 0
-@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":458:19:458:19|Undriven input DIN11 on instance GPI3_INST, tying to 0
-@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":459:19:459:19|Undriven input DIN12 on instance GPI3_INST, tying to 0
-@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":460:19:460:19|Undriven input DIN13 on instance GPI3_INST, tying to 0
-@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":461:19:461:19|Undriven input DIN14 on instance GPI3_INST, tying to 0
-@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":462:19:462:19|Undriven input DIN15 on instance GPI3_INST, tying to 0
-@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":656:25:656:78|Port-width mismatch for port DIN0. Formal has width 8, Actual 2
-@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":658:22:658:48|Port-width mismatch for port DIN2. Formal has width 8, Actual 32
-@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":659:22:659:48|Port-width mismatch for port DIN3. Formal has width 8, Actual 32
-@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":660:22:660:48|Port-width mismatch for port DIN4. Formal has width 8, Actual 32
-@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":661:22:661:48|Port-width mismatch for port DIN5. Formal has width 8, Actual 32
-@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":662:22:662:48|Port-width mismatch for port DIN6. Formal has width 8, Actual 32
-@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":663:22:663:48|Port-width mismatch for port DIN7. Formal has width 8, Actual 32
-@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":664:22:664:48|Port-width mismatch for port DIN8. Formal has width 8, Actual 32
-@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":665:22:665:48|Port-width mismatch for port DIN9. Formal has width 8, Actual 32
-@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":666:22:666:48|Port-width mismatch for port DIN10. Formal has width 8, Actual 32
-@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":667:22:667:48|Port-width mismatch for port DIN11. Formal has width 8, Actual 32
-@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":668:22:668:48|Port-width mismatch for port DIN12. Formal has width 8, Actual 32
-@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":669:22:669:48|Port-width mismatch for port DIN13. Formal has width 8, Actual 32
-@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":670:22:670:48|Port-width mismatch for port DIN14. Formal has width 8, Actual 32
-@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":671:22:671:48|Port-width mismatch for port DIN15. Formal has width 8, Actual 32
-@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":690:22:690:41|Port-width mismatch for port DIN1. Formal has width 8, Actual 32
-@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":691:22:691:41|Port-width mismatch for port DIN2. Formal has width 8, Actual 32
-@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":692:22:692:41|Port-width mismatch for port DIN3. Formal has width 8, Actual 32
-@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":693:22:693:41|Port-width mismatch for port DIN4. Formal has width 8, Actual 32
-@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":694:22:694:41|Port-width mismatch for port DIN5. Formal has width 8, Actual 32
-@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":695:22:695:41|Port-width mismatch for port DIN6. Formal has width 8, Actual 32
-@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":696:22:696:41|Port-width mismatch for port DIN7. Formal has width 8, Actual 32
-@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":697:22:697:41|Port-width mismatch for port DIN8. Formal has width 8, Actual 32
-@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":698:22:698:41|Port-width mismatch for port DIN9. Formal has width 8, Actual 32
-@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":699:22:699:41|Port-width mismatch for port DIN10. Formal has width 8, Actual 32
-@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":700:22:700:41|Port-width mismatch for port DIN11. Formal has width 8, Actual 32
-@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":701:22:701:41|Port-width mismatch for port DIN12. Formal has width 8, Actual 32
-@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":702:22:702:41|Port-width mismatch for port DIN13. Formal has width 8, Actual 32
-@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":703:22:703:41|Port-width mismatch for port DIN14. Formal has width 8, Actual 32
-@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":704:22:704:41|Port-width mismatch for port DIN15. Formal has width 8, Actual 32
-@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":724:15:724:33|Port-width mismatch for port DO0. Formal has width 8, Actual 1
-@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":841:36:841:36|Undriven input LED_REG2 on instance FLT_AMB_LED_INST2, tying to 0
-@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":842:36:842:36|Undriven input LED_REG3 on instance FLT_AMB_LED_INST2, tying to 0
-@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":843:36:843:36|Undriven input LED_REG4 on instance FLT_AMB_LED_INST2, tying to 0
-@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":844:36:844:36|Undriven input LED_REG5 on instance FLT_AMB_LED_INST2, tying to 0
-@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":845:36:845:36|Undriven input LED_REG6 on instance FLT_AMB_LED_INST2, tying to 0
-@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":846:36:846:36|Undriven input LED_REG7 on instance FLT_AMB_LED_INST2, tying to 0
-@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":953:36:953:36|Undriven input LED_REG2 on instance IFDET_BLUE_LED_INST2, tying to 0
-@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":954:36:954:36|Undriven input LED_REG3 on instance IFDET_BLUE_LED_INST2, tying to 0
-@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":955:36:955:36|Undriven input LED_REG4 on instance IFDET_BLUE_LED_INST2, tying to 0
-@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":956:36:956:36|Undriven input LED_REG5 on instance IFDET_BLUE_LED_INST2, tying to 0
-@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":957:36:957:36|Undriven input LED_REG6 on instance IFDET_BLUE_LED_INST2, tying to 0
-@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":958:36:958:36|Undriven input LED_REG7 on instance IFDET_BLUE_LED_INST2, tying to 0
+@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":476:19:476:19|Undriven input DIN5 on instance GPI3_INST, tying to 0
+@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":477:19:477:19|Undriven input DIN6 on instance GPI3_INST, tying to 0
+@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":478:19:478:19|Undriven input DIN7 on instance GPI3_INST, tying to 0
+@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":479:19:479:19|Undriven input DIN8 on instance GPI3_INST, tying to 0
+@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":480:19:480:19|Undriven input DIN9 on instance GPI3_INST, tying to 0
+@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":481:19:481:19|Undriven input DIN10 on instance GPI3_INST, tying to 0
+@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":482:19:482:19|Undriven input DIN11 on instance GPI3_INST, tying to 0
+@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":483:19:483:19|Undriven input DIN12 on instance GPI3_INST, tying to 0
+@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":484:19:484:19|Undriven input DIN13 on instance GPI3_INST, tying to 0
+@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":485:19:485:19|Undriven input DIN14 on instance GPI3_INST, tying to 0
+@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":486:19:486:19|Undriven input DIN15 on instance GPI3_INST, tying to 0
+@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":680:25:680:78|Port-width mismatch for port DIN0. Formal has width 8, Actual 2
+@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":682:22:682:48|Port-width mismatch for port DIN2. Formal has width 8, Actual 32
+@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":683:22:683:48|Port-width mismatch for port DIN3. Formal has width 8, Actual 32
+@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":684:22:684:48|Port-width mismatch for port DIN4. Formal has width 8, Actual 32
+@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":685:22:685:48|Port-width mismatch for port DIN5. Formal has width 8, Actual 32
+@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":686:22:686:48|Port-width mismatch for port DIN6. Formal has width 8, Actual 32
+@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":687:22:687:48|Port-width mismatch for port DIN7. Formal has width 8, Actual 32
+@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":688:22:688:48|Port-width mismatch for port DIN8. Formal has width 8, Actual 32
+@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":689:22:689:48|Port-width mismatch for port DIN9. Formal has width 8, Actual 32
+@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":690:22:690:48|Port-width mismatch for port DIN10. Formal has width 8, Actual 32
+@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":691:22:691:48|Port-width mismatch for port DIN11. Formal has width 8, Actual 32
+@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":692:22:692:48|Port-width mismatch for port DIN12. Formal has width 8, Actual 32
+@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":693:22:693:48|Port-width mismatch for port DIN13. Formal has width 8, Actual 32
+@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":694:22:694:48|Port-width mismatch for port DIN14. Formal has width 8, Actual 32
+@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":695:22:695:48|Port-width mismatch for port DIN15. Formal has width 8, Actual 32
+@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":714:22:714:41|Port-width mismatch for port DIN1. Formal has width 8, Actual 32
+@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":715:22:715:41|Port-width mismatch for port DIN2. Formal has width 8, Actual 32
+@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":716:22:716:41|Port-width mismatch for port DIN3. Formal has width 8, Actual 32
+@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":717:22:717:41|Port-width mismatch for port DIN4. Formal has width 8, Actual 32
+@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":718:22:718:41|Port-width mismatch for port DIN5. Formal has width 8, Actual 32
+@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":719:22:719:41|Port-width mismatch for port DIN6. Formal has width 8, Actual 32
+@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":720:22:720:41|Port-width mismatch for port DIN7. Formal has width 8, Actual 32
+@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":721:22:721:41|Port-width mismatch for port DIN8. Formal has width 8, Actual 32
+@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":722:22:722:41|Port-width mismatch for port DIN9. Formal has width 8, Actual 32
+@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":723:22:723:41|Port-width mismatch for port DIN10. Formal has width 8, Actual 32
+@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":724:22:724:41|Port-width mismatch for port DIN11. Formal has width 8, Actual 32
+@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":725:22:725:41|Port-width mismatch for port DIN12. Formal has width 8, Actual 32
+@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":726:22:726:41|Port-width mismatch for port DIN13. Formal has width 8, Actual 32
+@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":727:22:727:41|Port-width mismatch for port DIN14. Formal has width 8, Actual 32
+@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":728:22:728:41|Port-width mismatch for port DIN15. Formal has width 8, Actual 32
+@W: CS263 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":748:15:748:33|Port-width mismatch for port DO0. Formal has width 8, Actual 1
+@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":865:36:865:36|Undriven input LED_REG2 on instance FLT_AMB_LED_INST2, tying to 0
+@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":866:36:866:36|Undriven input LED_REG3 on instance FLT_AMB_LED_INST2, tying to 0
+@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":867:36:867:36|Undriven input LED_REG4 on instance FLT_AMB_LED_INST2, tying to 0
+@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":868:36:868:36|Undriven input LED_REG5 on instance FLT_AMB_LED_INST2, tying to 0
+@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":869:36:869:36|Undriven input LED_REG6 on instance FLT_AMB_LED_INST2, tying to 0
+@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":870:36:870:36|Undriven input LED_REG7 on instance FLT_AMB_LED_INST2, tying to 0
+@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":977:36:977:36|Undriven input LED_REG2 on instance IFDET_BLUE_LED_INST2, tying to 0
+@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":978:36:978:36|Undriven input LED_REG3 on instance IFDET_BLUE_LED_INST2, tying to 0
+@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":979:36:979:36|Undriven input LED_REG4 on instance IFDET_BLUE_LED_INST2, tying to 0
+@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":980:36:980:36|Undriven input LED_REG5 on instance IFDET_BLUE_LED_INST2, tying to 0
+@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":981:36:981:36|Undriven input LED_REG6 on instance IFDET_BLUE_LED_INST2, tying to 0
+@W: CG781 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":982:36:982:36|Undriven input LED_REG7 on instance IFDET_BLUE_LED_INST2, tying to 0
 @W: CG360 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":111:113:111:119|No assignment to wire DIN_B_1
 
 @W: CG360 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":111:122:111:128|No assignment to wire DIN_C_1
@@ -276,14 +276,14 @@ Selecting top level module BB_TOP
 
 @W: CG360 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":130:14:130:21|No assignment to wire LED_REG7
 
-@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":1193:0:1193:5|Optimizing register bit CNT[25] to a constant 0
-@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":1193:0:1193:5|Optimizing register bit CNT[26] to a constant 0
-@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":1193:0:1193:5|Optimizing register bit CNT[27] to a constant 0
-@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":1193:0:1193:5|Optimizing register bit CNT[28] to a constant 0
-@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":1193:0:1193:5|Optimizing register bit CNT[29] to a constant 0
-@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":1193:0:1193:5|Optimizing register bit CNT[30] to a constant 0
-@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":1193:0:1193:5|Optimizing register bit CNT[31] to a constant 0
-@W: CL279 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":1193:0:1193:5|Pruning register bits 31 to 25 of CNT[31:0] 
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":1217:0:1217:5|Optimizing register bit CNT[25] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":1217:0:1217:5|Optimizing register bit CNT[26] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":1217:0:1217:5|Optimizing register bit CNT[27] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":1217:0:1217:5|Optimizing register bit CNT[28] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":1217:0:1217:5|Optimizing register bit CNT[29] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":1217:0:1217:5|Optimizing register bit CNT[30] to a constant 0
+@W: CL190 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":1217:0:1217:5|Optimizing register bit CNT[31] to a constant 0
+@W: CL279 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":1217:0:1217:5|Pruning register bits 31 to 25 of CNT[31:0] 
 
 @W: CL156 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":111:113:111:119|*Input DIN_B_1[7:0] to expression [instance] has undriven bits that are tied to 0 -- simulation mismatch possible.
 @W: CL156 :"E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v":111:122:111:128|*Input DIN_C_1[7:0] to expression [instance] has undriven bits that are tied to 0 -- simulation mismatch possible.

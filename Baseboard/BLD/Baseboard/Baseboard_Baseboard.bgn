@@ -14,7 +14,7 @@ Vendor:      LATTICE
 Device:      LCMXO2-7000HC
 Package:     FPBGA484
 Performance: 4
-Loading device for application Bitgen from file 'xo2c7000.nph' in environment: D:/lscc/diamond/3.2_x64/ispfpga.
+Loading device for application Bitgen from file 'xo2c7000.nph' in environment: C:/lscc/diamond/3.2_x64/ispfpga.
 Package Status:                     Final          Version 1.36
 Performance Hardware Data Status:   Final          Version 25.4
 

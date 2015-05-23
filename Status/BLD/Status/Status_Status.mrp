@@ -6,28 +6,28 @@ Design Information
 Command line:   map -a MachXO2 -p LCMXO2-2000HC -t TQFP144 -s 4 -oc Commercial
      Status_Status.ngd -o Status_Status_map.ncd -pr Status_Status.prf -mp
      Status_Status.mrp -lpf
-     F:/project/wolf/Status/BLD/Status/Status_Status_synplify.lpf -lpf
-     F:/project/wolf/Status/BLD/../SRC/Status.lpf -c 0 -gui
+     E:/work/wolf/Status/BLD/Status/Status_Status_synplify.lpf -lpf
+     E:/work/wolf/Status/BLD/../SRC/Status.lpf -c 0 -gui
 Target Vendor:  LATTICE
 Target Device:  LCMXO2-2000HCTQFP144
 Target Performance:   4
 Mapper:  xo2c00,  version:  Diamond (64-bit) 3.2.0.134
-Mapped on:  04/28/15  22:29:22
+Mapped on:  05/23/15  15:59:44
 
 Design Summary
 --------------
 
-   Number of registers:    543 out of  2448 (22%)
-      PFU registers:          467 out of  2112 (22%)
+   Number of registers:    549 out of  2448 (22%)
+      PFU registers:          473 out of  2112 (22%)
       PIO registers:           76 out of   336 (23%)
-   Number of SLICEs:       409 out of  1056 (39%)
-      SLICEs as Logic/ROM:    409 out of  1056 (39%)
+   Number of SLICEs:       413 out of  1056 (39%)
+      SLICEs as Logic/ROM:    413 out of  1056 (39%)
       SLICEs as RAM:            0 out of   792 (0%)
-      SLICEs as Carry:         91 out of  1056 (9%)
-   Number of LUT4s:        818 out of  2112 (39%)
-      Number of logic LUTs:      636
+      SLICEs as Carry:         92 out of  1056 (9%)
+   Number of LUT4s:        825 out of  2112 (39%)
+      Number of logic LUTs:      641
       Number of distributed RAM:   0 (0 LUT4s)
-      Number of ripple logic:     91 (182 LUT4s)
+      Number of ripple logic:     92 (184 LUT4s)
       Number of shift registers:   0
    Number of PIO sites used: 88 + 4(JTAG) out of 112 (82%)
    Number of block RAMs:  0 out of 8 (0%)
@@ -55,7 +55,7 @@ Design Summary
       2. Number of logic LUT4s does not include count of distributed RAM and
      ripple logic.
    Number of clocks:  1
-     Net SYSCLK_c: 334 loads, 330 rising, 4 falling (Driver: PIO SYSCLK )
+     Net SYSCLK_c: 338 loads, 334 rising, 4 falling (Driver: PIO SYSCLK )
    Number of Clock Enables:  39
      Net SGPIO_INST1.STATE[4]: 36 loads, 0 LSLICEs
 
@@ -64,7 +64,7 @@ Design Summary
 
 
 
-Design:  TOP                                           Date:  04/28/15  22:29:22
+Design:  TOP                                           Date:  05/23/15  15:59:44
 
 Design Summary (cont)
 ---------------------
@@ -81,32 +81,32 @@ Design Summary (cont)
      Net I2C_INST/N_19: 2 loads, 2 LSLICEs
      Net I2C_INST/un2_RD_WR_0_a2: 1 loads, 1 LSLICEs
      Net N_67_i: 1 loads, 0 LSLICEs
-     Net SGPIO_INST2/N_38_i: 4 loads, 4 LSLICEs
+     Net SGPIO_INST2/N_39_i: 4 loads, 4 LSLICEs
      Net SGPIO_INST2.STATE[4]: 36 loads, 0 LSLICEs
      Net SGPIO_INST2/un7_CNT_i: 13 loads, 13 LSLICEs
      Net SGPIO_INST2/N_153_i: 18 loads, 18 LSLICEs
      Net SGPIO_INST1/N_105_i: 4 loads, 4 LSLICEs
      Net SGPIO_INST1/un7_CNT_i: 13 loads, 13 LSLICEs
      Net SGPIO_INST1/N_153_i: 18 loads, 18 LSLICEs
-     Net HEADER_INST/N_273_i: 3 loads, 3 LSLICEs
-     Net GPIO_INST/N_4_i: 4 loads, 4 LSLICEs
-     Net GPIO_INST/un1_GPO_A: 4 loads, 4 LSLICEs
-     Net GPIO_INST/un1_GPO_8: 4 loads, 4 LSLICEs
-     Net GPIO_INST/un1_GPO_F: 4 loads, 4 LSLICEs
-     Net GPIO_INST/un1_GPO_3: 4 loads, 4 LSLICEs
-     Net GPIO_INST/un1_GPO_5: 4 loads, 4 LSLICEs
-     Net GPIO_INST/un1_GPO_0: 4 loads, 4 LSLICEs
-     Net GPIO_INST/un1_GPO_0_0_RNIFGFE1: 4 loads, 4 LSLICEs
+     Net HEADER_INST/N_281_i: 3 loads, 3 LSLICEs
+     Net GPIO_INST/N_279_i: 4 loads, 4 LSLICEs
+     Net GPIO_INST/un1_GPO_F_0_a2: 4 loads, 4 LSLICEs
+     Net GPIO_INST/un1_GPO_E_0_a2: 4 loads, 4 LSLICEs
      Net GPIO_INST/un1_GPO_D: 4 loads, 4 LSLICEs
-     Net GPIO_INST/un1_GPO_B: 4 loads, 4 LSLICEs
+     Net GPIO_INST/un1_GPO_C_0_a2: 4 loads, 4 LSLICEs
+     Net GPIO_INST/un1_GPO_B_0_a2: 4 loads, 4 LSLICEs
+     Net GPIO_INST/un1_GPO_A: 4 loads, 4 LSLICEs
+     Net GPIO_INST/un1_GPO_9_0_a2: 4 loads, 4 LSLICEs
+     Net GPIO_INST/un1_GPO_8_0_a2: 4 loads, 4 LSLICEs
+     Net GPIO_INST/un1_GPO_7_0_a2: 4 loads, 4 LSLICEs
+     Net GPIO_INST/un1_GPO_6_0_a2: 4 loads, 4 LSLICEs
+     Net GPIO_INST/un1_GPO_5_0_a2: 4 loads, 4 LSLICEs
+     Net GPIO_INST/un1_GPO_4: 4 loads, 4 LSLICEs
+     Net GPIO_INST/un1_GPO_3_0_a2: 4 loads, 4 LSLICEs
      Net GPIO_INST/un1_GPO_2_0_a2: 4 loads, 4 LSLICEs
      Net GPIO_INST/un1_GPO_1_0_a2: 4 loads, 4 LSLICEs
-     Net GPIO_INST/un1_GPO_9_0_a2: 4 loads, 4 LSLICEs
-     Net GPIO_INST/un1_GPO_7_0_a2: 4 loads, 4 LSLICEs
-     Net GPIO_INST/un1_GPO_E_0_a2: 4 loads, 4 LSLICEs
-     Net GPIO_INST/un1_GPO_C_0_a2: 4 loads, 4 LSLICEs
-     Net GPIO_INST/un1_GPO_4_0_a2: 4 loads, 4 LSLICEs
-   Number of local set/reset loads for net RESET_N_c merged into GSR:  541
+     Net GPIO_INST/un1_GPO_0: 4 loads, 4 LSLICEs
+   Number of local set/reset loads for net RESET_N_c merged into GSR:  547
    Number of LSRs:  0
    Number of nets driven by tri-state buffers:  0
    Top 10 highest fanout non-clock nets:
@@ -114,12 +114,12 @@ Design Summary (cont)
      Net SGPIO_INST2.STATE[4]: 75 loads
      Net SGPIO_INST1/STATE[0]: 38 loads
      Net SGPIO_INST2/STATE[0]: 38 loads
-     Net RD_WR: 35 loads
-     Net I2C_INST.LOC[1]: 33 loads
-     Net I2C_INST.LOC[2]: 27 loads
+     Net RD_WR: 36 loads
      Net SGPIO_INST1/STATE_i[0]: 26 loads
      Net SGPIO_INST2/STATE_i[0]: 26 loads
-     Net I2C_INST/LOC[0]: 18 loads
+     Net I2C_INST.LOC[0]: 19 loads
+     Net I2C_INST.LOC[1]: 19 loads
+     Net I2C_INST.LOC[2]: 19 loads
 
 
 
@@ -130,7 +130,7 @@ Design Summary (cont)
 
 
 
-Design:  TOP                                           Date:  04/28/15  22:29:22
+Design:  TOP                                           Date:  05/23/15  15:59:44
 
 
 
@@ -196,7 +196,7 @@ IO (PIO) Attributes
 
 
 
-Design:  TOP                                           Date:  04/28/15  22:29:22
+Design:  TOP                                           Date:  05/23/15  15:59:44
 
 IO (PIO) Attributes (cont)
 --------------------------
@@ -262,7 +262,7 @@ IO (PIO) Attributes (cont)
 
 
 
-Design:  TOP                                           Date:  04/28/15  22:29:22
+Design:  TOP                                           Date:  05/23/15  15:59:44
 
 IO (PIO) Attributes (cont)
 --------------------------
@@ -328,7 +328,7 @@ IO (PIO) Attributes (cont)
 
 
 
-Design:  TOP                                           Date:  04/28/15  22:29:22
+Design:  TOP                                           Date:  05/23/15  15:59:44
 
 IO (PIO) Attributes (cont)
 --------------------------
@@ -361,8 +361,8 @@ Removed logic
 -------------
 
 Block VCC undriven or does not drive anything - clipped.
-Block GPIO_INST/VCC undriven or does not drive anything - clipped.
 Block GPIO_INST/GND undriven or does not drive anything - clipped.
+Block GPIO_INST/VCC undriven or does not drive anything - clipped.
 Block LED_INST/GND undriven or does not drive anything - clipped.
 Block HEADER_INST/GND undriven or does not drive anything - clipped.
 Block HEADER_INST/VCC undriven or does not drive anything - clipped.
@@ -376,44 +376,38 @@ Signal SGPIO_INST1/GND undriven or does not drive anything - clipped.
 Signal SGPIO_INST2/GND undriven or does not drive anything - clipped.
 Signal I2C_INST/GND undriven or does not drive anything - clipped.
 Signal VCC undriven or does not drive anything - clipped.
-Signal LED_CNT_INST/un5_CNT_1_s_23_0_S1 undriven or does not drive anything -
-     clipped.
-Signal LED_CNT_INST/un5_CNT_1_s_23_0_COUT undriven or does not drive anything -
-     clipped.
+Signal LED_CNT_INST/un5_CNT_1_cry_23_0_COUT undriven or does not drive anything
+     - clipped.
 Signal LED_CNT_INST/un3_CNT_500MS_1_cry_0_0_S1 undriven or does not drive
      anything - clipped.
 Signal LED_CNT_INST/un3_CNT_500MS_1_cry_0_0_S0 undriven or does not drive
      anything - clipped.
 Signal LED_CNT_INST/N_2 undriven or does not drive anything - clipped.
-Signal LED_CNT_INST/un3_CNT_500MS_1_s_23_0_S1 undriven or does not drive
+Signal LED_CNT_INST/un3_CNT_500MS_1_cry_23_0_COUT undriven or does not drive
      anything - clipped.
-Signal LED_CNT_INST/un3_CNT_500MS_1_s_23_0_COUT undriven or does not drive
+Signal LED_CNT_INST/un6_CNT_3500MS_1_cry_0_0_S1 undriven or does not drive
+     anything - clipped.
+Signal LED_CNT_INST/un6_CNT_3500MS_1_cry_0_0_S0 undriven or does not drive
 
                                     Page 6
 
 
 
 
-Design:  TOP                                           Date:  04/28/15  22:29:22
+Design:  TOP                                           Date:  05/23/15  15:59:44
 
 Removed logic (cont)
 --------------------
      anything - clipped.
-Signal LED_CNT_INST/un6_CNT_3500MS_1_cry_0_0_S1 undriven or does not drive
-     anything - clipped.
-Signal LED_CNT_INST/un6_CNT_3500MS_1_cry_0_0_S0 undriven or does not drive
-     anything - clipped.
 Signal LED_CNT_INST/N_3 undriven or does not drive anything - clipped.
-Signal LED_CNT_INST/un6_CNT_3500MS_1_s_25_0_S1 undriven or does not drive
-     anything - clipped.
-Signal LED_CNT_INST/un6_CNT_3500MS_1_s_25_0_COUT undriven or does not drive
+Signal LED_CNT_INST/un6_CNT_3500MS_1_cry_25_0_COUT undriven or does not drive
      anything - clipped.
 Signal LED_CNT_INST/un5_CNT_07S_1_cry_0_0_S1 undriven or does not drive anything
      - clipped.
 Signal LED_CNT_INST/un5_CNT_07S_1_cry_0_0_S0 undriven or does not drive anything
      - clipped.
 Signal LED_CNT_INST/N_4 undriven or does not drive anything - clipped.
-Signal LED_CNT_INST/un5_CNT_07S_1_cry_21_0_COUT undriven or does not drive
+Signal LED_CNT_INST/un5_CNT_07S_1_cry_23_0_COUT undriven or does not drive
      anything - clipped.
 Signal LED_CNT_INST/un5_CNT_1_cry_0_0_S1 undriven or does not drive anything -
      clipped.
@@ -455,17 +449,17 @@ Block SGPIO_INST1/GND was optimized away.
 Block SGPIO_INST2/GND was optimized away.
 Block I2C_INST/GND was optimized away.
 
+Memory Usage
+------------
+
+
+
                                     Page 7
 
 
 
 
-Design:  TOP                                           Date:  04/28/15  22:29:22
-
-
-Memory Usage
-------------
-
+Design:  TOP                                           Date:  05/23/15  15:59:44
 
 GSR Usage
 ---------
@@ -496,9 +490,15 @@ Type and instance name of component:
 Run Time and Memory Usage
 -------------------------
 
-   Total CPU Time: 1 secs
+   Total CPU Time: 2 secs
    Total REAL Time: 2 secs
-   Peak Memory Usage: 55 MB
+   Peak Memory Usage: 56 MB
+
+
+
+
+
+
 
 
 

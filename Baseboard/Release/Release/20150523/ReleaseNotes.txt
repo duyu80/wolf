@@ -1,0 +1,8 @@
+﻿Baseboard_v0203
+Status_v0106
+
+Fix below issue
+
+1) Reverse SGPIO Active signal to solve 20586
+2) Correct power enable to solve 20539
+

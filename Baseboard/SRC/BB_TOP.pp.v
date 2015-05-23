@@ -360,6 +360,18 @@ GPO2_INST (
 			);
 
 //POWER OK 30H
+; for ($i=12,$j=4; $i<16,$j<8; $i++,$j++) {
+assign    DRV${i}_PWROK_R = IDENT[${i}]? DRV${i}_PWROK : DRV_PWR_EN1[${j}];
+; }
+; for ($i=16,$j=0; $i<24,$j<8; $i++,$j++) {
+assign    DRV${i}_PWROK_R = IDENT[${i}]? DRV${i}_PWROK : DRV_PWR_EN2[${j}];
+; }
+; for ($i=24,$j=0; $i<32,$j<8; $i++,$j++) {
+assign    DRV${i}_PWROK_R = IDENT[${i}]? DRV${i}_PWROK : DRV_PWR_EN3[${j}];
+; }
+; for ($i=32,$j=0; $i<36,$j<4; $i++,$j++) {
+assign    DRV${i}_PWROK_R = IDENT[${i}]? DRV${i}_PWROK : DRV_PWR_EN4[${j}];
+; }
 GPI    	GPI3_INST (
 			.RESET_N		(RESET_N),
 			.SYSCLK			(SYSCLK),
@@ -376,13 +388,13 @@ GPI    	GPI3_INST (
 			
 			.DIN0           (  { DRV_PWR_EN0[7],DRV_PWR_EN0[6],DRV_PWR_EN0[5],DRV_PWR_EN0[4],
 			                     DRV_PWR_EN0[3],DRV_PWR_EN0[2],DRV_PWR_EN0[1],DRV_PWR_EN0[0]       }  ),
-			.DIN1           (  { DRV15_PWROK,DRV14_PWROK,DRV13_PWROK,DRV12_PWROK,      
+			.DIN1           (  { DRV15_PWROK_R,DRV14_PWROK_R,DRV13_PWROK_R,DRV12_PWROK_R,      
 			                     DRV_PWR_EN1[3],DRV_PWR_EN1[2],DRV_PWR_EN1[1],DRV_PWR_EN1[0]       }  ),
-			.DIN2           (  { DRV23_PWROK,DRV22_PWROK,DRV21_PWROK,DRV20_PWROK,      
-			                     DRV19_PWROK,DRV18_PWROK,DRV17_PWROK,DRV16_PWROK       }  ),
-			.DIN3           (  { DRV31_PWROK,DRV30_PWROK,DRV29_PWROK,DRV28_PWROK,      
-			                     DRV27_PWROK,DRV26_PWROK,DRV25_PWROK,DRV24_PWROK       }  ),
-			.DIN4           (  { 4'h0,DRV35_PWROK,DRV34_PWROK,DRV33_PWROK,DRV32_PWROK  }  ),		
+			.DIN2           (  { DRV23_PWROK_R,DRV22_PWROK_R,DRV21_PWROK_R,DRV20_PWROK_R,      
+			                     DRV19_PWROK_R,DRV18_PWROK_R,DRV17_PWROK_R,DRV16_PWROK_R       }  ),
+			.DIN3           (  { DRV31_PWROK_R,DRV30_PWROK_R,DRV29_PWROK_R,DRV28_PWROK_R,      
+			                     DRV27_PWROK_R,DRV26_PWROK_R,DRV25_PWROK_R,DRV24_PWROK_R       }  ),
+			.DIN4           (  { 4'h0,DRV35_PWROK_R,DRV34_PWROK_R,DRV33_PWROK_R,DRV32_PWROK_R  }  ),		
 			.DIN5           (  ),
 			.DIN6           (  ),
 			.DIN7           (  ),

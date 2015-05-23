@@ -36,9 +36,9 @@ BB_TOP|SYSCLK     1.0 MHz       1000.000      inferred     Inferred_clkgroup_0
 
 Pre-mapping successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 84MB peak: 150MB)
+At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 84MB peak: 150MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Tue May 19 19:41:40 2015
+# Sat May 23 22:58:27 2015
 
 ###########################################################]

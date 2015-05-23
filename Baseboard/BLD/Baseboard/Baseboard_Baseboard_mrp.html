@@ -20,19 +20,19 @@ Target Vendor:  LATTICE
 Target Device:  LCMXO2-7000HCFPBGA484
 Target Performance:   4
 Mapper:  xo2c00,  version:  Diamond (64-bit) 3.2.0.134
-Mapped on:  05/19/15  19:42:08
+Mapped on:  05/23/15  22:59:08
 
 
 <A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
-   Number of registers:   2022 out of  7869 (26%)
-      PFU registers:         1980 out of  6864 (29%)
+   Number of registers:   2024 out of  7869 (26%)
+      PFU registers:         1982 out of  6864 (29%)
       PIO registers:           42 out of  1005 (4%)
-   Number of SLICEs:      2067 out of  3432 (60%)
-      SLICEs as Logic/ROM:   2067 out of  3432 (60%)
+   Number of SLICEs:      2077 out of  3432 (61%)
+      SLICEs as Logic/ROM:   2077 out of  3432 (61%)
       SLICEs as RAM:            0 out of  2574 (0%)
       SLICEs as Carry:        384 out of  3432 (11%)
-   Number of LUT4s:        4105 out of  6864 (60%)
-      Number of logic LUTs:      3337
+   Number of LUT4s:        4150 out of  6864 (60%)
+      Number of logic LUTs:      3382
       Number of distributed RAM:   0 (0 LUT4s)
       Number of ripple logic:    384 (768 LUT4s)
       Number of shift registers:   0
@@ -62,87 +62,87 @@ Mapped on:  05/19/15  19:42:08
       2. Number of logic LUT4s does not include count of distributed RAM and
      ripple logic.
    Number of clocks:  1
-     Net SYSCLK_c: 1105 loads, 1097 rising, 8 falling (Driver: PIO SYSCLK )
+     Net SYSCLK_c: 1107 loads, 1099 rising, 8 falling (Driver: PIO SYSCLK )
    Number of Clock Enables:  175
-     Net N_27: 1 loads, 1 LSLICEs
+     Net un1_BB_CPLD_ALT_L_i: 1 loads, 1 LSLICEs
 
      Net un1_SGPIO_LD_1_sqmuxa_1_0_0: 1 loads, 0 LSLICEs
      Net PRSNT_LED_CTRL_INST.un3_CNT_i: 54 loads, 18 LSLICEs
-     Net I2C_INS_2/N_12: 1 loads, 1 LSLICEs
-     Net I2C_INS_2/N_10: 4 loads, 4 LSLICEs
-     Net I2C_INS_2/un9_LOC_i: 5 loads, 5 LSLICEs
+     Net I2C_INS_2/N_7: 4 loads, 4 LSLICEs
+     Net I2C_INS_2/N_9: 1 loads, 1 LSLICEs
      Net I2C_INS_2/un7_SHIFT_DIN_i: 4 loads, 4 LSLICEs
      Net I2C_INS_2/SCL_NCLK: 1 loads, 1 LSLICEs
      Net I2C_INS_2/SCL_PCLKD2: 1 loads, 1 LSLICEs
      Net RESET_N_c: 4 loads, 4 LSLICEs
      Net I2C_INS_2/RD_END2: 4 loads, 4 LSLICEs
-     Net I2C_INS_2/N_19: 1 loads, 1 LSLICEs
+     Net I2C_INS_2/N_16: 1 loads, 1 LSLICEs
+     Net I2C_INS_2/un9_LOC_i: 5 loads, 5 LSLICEs
      Net I2C_INS_2/un1_DOUT_0_a2_0: 4 loads, 4 LSLICEs
-     Net I2C_INS_2/N_21: 2 loads, 2 LSLICEs
+     Net I2C_INS_2/N_18: 2 loads, 2 LSLICEs
      Net I2C_INS_2/un2_RD_WR_0_a2_0: 1 loads, 1 LSLICEs
-     Net N_69_i: 1 loads, 0 LSLICEs
-     Net I2C_INS_1/N_11: 1 loads, 1 LSLICEs
+     Net I2C_INS_2.MASTER_RD_NACK_0_sqmuxa: 1 loads, 0 LSLICEs
+     Net I2C_INS_1/N_13: 1 loads, 1 LSLICEs
      Net I2C_INS_1/SCL_NCLK: 1 loads, 1 LSLICEs
-     Net I2C_INS_1/N_9: 4 loads, 4 LSLICEs
-     Net I2C_INS_1/un9_LOC_i: 5 loads, 5 LSLICEs
+     Net I2C_INS_1/un7_SHIFT_DOUT_i_0: 4 loads, 4 LSLICEs
      Net I2C_INS_1/un7_SHIFT_DIN_i: 4 loads, 4 LSLICEs
      Net I2C_INS_1/SCL_PCLKD2: 1 loads, 1 LSLICEs
      Net I2C_INS_1/RD_END2: 4 loads, 4 LSLICEs
-     Net I2C_INS_1/N_18: 1 loads, 1 LSLICEs
+     Net I2C_INS_1/un5_RD_WR_i_0: 1 loads, 1 LSLICEs
+     Net I2C_INS_1/un9_LOC_i: 5 loads, 5 LSLICEs
      Net I2C_INS_1/un1_DOUT_0_a2: 4 loads, 4 LSLICEs
-     Net I2C_INS_1/N_20: 2 loads, 2 LSLICEs
+     Net I2C_INS_1/N_22: 2 loads, 2 LSLICEs
      Net I2C_INS_1/un2_RD_WR_0_a2: 1 loads, 1 LSLICEs
-     Net N_68_i: 1 loads, 0 LSLICEs
-     Net BB_SGPIO_INST/N_161_i: 4 loads, 4 LSLICEs
+     Net I2C_INS_1.MASTER_RD_NACK_0_sqmuxa: 1 loads, 0 LSLICEs
+     Net BB_SGPIO_INST/N_1087_i: 4 loads, 4 LSLICEs
      Net BB_SGPIO_INST/un1_STATE_10_0_a3_0: 18 loads, 18 LSLICEs
      Net N_42: 1 loads, 0 LSLICEs
-     Net PCIE_RST_CTRL/un6_CNT9_i_0: 12 loads, 12 LSLICEs
-     Net PCIE_RST_CTRL/un6_CNT8_i_0: 12 loads, 12 LSLICEs
-     Net PCIE_RST_CTRL/un6_CNT7_i_0: 12 loads, 12 LSLICEs
-     Net PCIE_RST_CTRL/un6_CNT6_i_0: 12 loads, 12 LSLICEs
-     Net PCIE_RST_CTRL/un6_CNT5_i_0: 12 loads, 12 LSLICEs
-     Net PCIE_RST_CTRL/un6_CNT4_i_0: 12 loads, 12 LSLICEs
+     Net PCIE_RST_CTRL/un6_CNT9_i: 12 loads, 12 LSLICEs
+     Net PCIE_RST_CTRL/N_211: 12 loads, 12 LSLICEs
+     Net PCIE_RST_CTRL/un6_CNT7_i: 12 loads, 12 LSLICEs
+     Net PCIE_RST_CTRL/un6_CNT6_i: 12 loads, 12 LSLICEs
+     Net PCIE_RST_CTRL/un6_CNT5_i: 12 loads, 12 LSLICEs
+     Net PCIE_RST_CTRL/un6_CNT4_i: 12 loads, 12 LSLICEs
      Net PCIE_RST_CTRL/un6_CNT3_i: 12 loads, 12 LSLICEs
-     Net PCIE_RST_CTRL/un6_CNT23_i_0: 12 loads, 12 LSLICEs
-     Net PCIE_RST_CTRL/un6_CNT21_i_0: 12 loads, 12 LSLICEs
      Net PCIE_RST_CTRL/un6_CNT2_i_0: 12 loads, 12 LSLICEs
-     Net PCIE_RST_CTRL/un6_CNT22_i_0: 12 loads, 12 LSLICEs
-     Net PCIE_RST_CTRL/un6_CNT20_i_0: 12 loads, 12 LSLICEs
-     Net PCIE_RST_CTRL/un6_CNT1_i_0: 12 loads, 12 LSLICEs
-     Net PCIE_RST_CTRL/un6_CNT19_i_0: 12 loads, 12 LSLICEs
+     Net PCIE_RST_CTRL/un6_CNT23_i: 12 loads, 12 LSLICEs
+     Net PCIE_RST_CTRL/un6_CNT21_i: 12 loads, 12 LSLICEs
+     Net PCIE_RST_CTRL/N_12: 12 loads, 12 LSLICEs
+     Net PCIE_RST_CTRL/un6_CNT20_i: 12 loads, 12 LSLICEs
+     Net PCIE_RST_CTRL/un6_CNT1_i: 12 loads, 12 LSLICEs
+     Net PCIE_RST_CTRL/un6_CNT19_i: 12 loads, 12 LSLICEs
      Net PCIE_RST_CTRL/un6_CNT18_i_0: 12 loads, 12 LSLICEs
-     Net PCIE_RST_CTRL/un6_CNT17_i_0: 12 loads, 12 LSLICEs
-     Net PCIE_RST_CTRL/un6_CNT16_i_0: 12 loads, 12 LSLICEs
+     Net PCIE_RST_CTRL/un6_CNT17_i: 12 loads, 12 LSLICEs
+     Net PCIE_RST_CTRL/un6_CNT16_i: 12 loads, 12 LSLICEs
      Net PCIE_RST_CTRL/un6_CNT15_i: 12 loads, 12 LSLICEs
-     Net PCIE_RST_CTRL/un6_CNT14_i_0: 12 loads, 12 LSLICEs
-     Net PCIE_RST_CTRL/un6_CNT13_i_0: 12 loads, 12 LSLICEs
-     Net PCIE_RST_CTRL/un6_CNT12_i_0: 12 loads, 12 LSLICEs
-     Net PCIE_RST_CTRL/un6_CNT11_i_0: 12 loads, 12 LSLICEs
+     Net PCIE_RST_CTRL/un6_CNT14_i: 12 loads, 12 LSLICEs
+     Net PCIE_RST_CTRL/un6_CNT13_i: 12 loads, 12 LSLICEs
+     Net PCIE_RST_CTRL/un6_CNT12_i: 12 loads, 12 LSLICEs
+     Net PCIE_RST_CTRL/un6_CNT11_i: 12 loads, 12 LSLICEs
      Net PCIE_RST_CTRL/un6_CNT10_i_0: 12 loads, 12 LSLICEs
-     Net PCIE_RST_CTRL/un7_CNT0_i_0: 12 loads, 12 LSLICEs
-     Net GPOA_INST/N_2083_i: 4 loads, 4 LSLICEs
-     Net GPOA_INST/N_381_i: 4 loads, 4 LSLICEs
+     Net PCIE_RST_CTRL/N_209: 12 loads, 12 LSLICEs
+     Net GPOA_INST/un9_DO6_i_o3_RNIACR41: 4 loads, 4 LSLICEs
+     Net GPOA_INST/un9_DO14_i_o3_RNI86VD1: 4 loads, 4 LSLICEs
 
-     Net GPOA_INST/un9_DO9_i_0_1: 4 loads, 4 LSLICEs
-     Net GPOA_INST/un9_DO8_i_0: 4 loads, 4 LSLICEs
-     Net GPOA_INST/un9_DO7_i_0: 4 loads, 4 LSLICEs
-     Net GPOA_INST/un9_DO6_i_0_0: 4 loads, 4 LSLICEs
+     Net GPOA_INST/N_244_i: 4 loads, 4 LSLICEs
+     Net GPOA_INST/N_2648_i: 4 loads, 4 LSLICEs
+     Net GPOA_INST/N_171: 4 loads, 4 LSLICEs
+     Net GPOA_INST/un9_DO8_i: 4 loads, 4 LSLICEs
+     Net GPOA_INST/un9_DO7_i_0_0: 4 loads, 4 LSLICEs
      Net GPOA_INST/un9_DO5_i_0: 4 loads, 4 LSLICEs
-     Net GPOA_INST/un9_DO4_i_0: 4 loads, 4 LSLICEs
-     Net GPOA_INST/un9_DO3_i_0_0: 4 loads, 4 LSLICEs
-     Net GPOA_INST/un9_DO2_i_0: 4 loads, 4 LSLICEs
-     Net GPOA_INST/N_4: 4 loads, 4 LSLICEs
+     Net GPOA_INST/un9_DO4_i_0_0: 4 loads, 4 LSLICEs
+     Net GPOA_INST/un9_DO3_i_0: 4 loads, 4 LSLICEs
+     Net GPOA_INST/un9_DO2_i_0_0: 4 loads, 4 LSLICEs
+     Net GPOA_INST/un9_DO1_i_0_1: 4 loads, 4 LSLICEs
      Net GPOA_INST/un9_DO15_i_0: 4 loads, 4 LSLICEs
-     Net GPOA_INST/un9_DO14_i_0: 4 loads, 4 LSLICEs
-     Net GPOA_INST/N_204: 4 loads, 4 LSLICEs
+     Net GPOA_INST/un9_DO13_i: 4 loads, 4 LSLICEs
      Net GPOA_INST/un9_DO12_i_0: 4 loads, 4 LSLICEs
-     Net GPOA_INST/N_222: 4 loads, 4 LSLICEs
+     Net GPOA_INST/un9_DO11_i_0: 4 loads, 4 LSLICEs
      Net GPOA_INST/un9_DO10_i_0: 4 loads, 4 LSLICEs
-     Net GPOA_INST/N_29: 5 loads, 5 LSLICEs
-     Net GPI9_INST/N_2860_i: 1 loads, 1 LSLICEs
-     Net GPI9_INST/N_2859_i: 1 loads, 1 LSLICEs
-     Net GPI8_INST/N_2721_i: 1 loads, 1 LSLICEs
-     Net GPI8_INST/N_2720_i: 1 loads, 1 LSLICEs
+     Net GPOA_INST/un9_DO0_i_0: 5 loads, 5 LSLICEs
+     Net GPI9_INST/N_2710_i: 1 loads, 1 LSLICEs
+     Net GPI9_INST/N_218_i: 1 loads, 1 LSLICEs
+     Net GPI8_INST/N_242_i: 1 loads, 1 LSLICEs
+     Net GPI8_INST/N_240_i: 1 loads, 1 LSLICEs
      Net GPO7_INST/N_59_i: 4 loads, 4 LSLICEs
      Net GPO7_INST/N_620: 4 loads, 4 LSLICEs
      Net GPO7_INST/un9_DO9_i_0_0: 4 loads, 4 LSLICEs
@@ -156,10 +156,10 @@ Mapped on:  05/19/15  19:42:08
      Net GPO7_INST/N_36: 4 loads, 4 LSLICEs
      Net GPO7_INST/N_34: 4 loads, 4 LSLICEs
      Net GPO7_INST/un9_DO1_i_0_0: 4 loads, 4 LSLICEs
-     Net GPO7_INST/N_31: 4 loads, 4 LSLICEs
-     Net GPO7_INST/N_63: 4 loads, 4 LSLICEs
      Net GPO7_INST/N_28: 4 loads, 4 LSLICEs
+     Net GPO7_INST/N_31: 4 loads, 4 LSLICEs
      Net GPO7_INST/N_25: 4 loads, 4 LSLICEs
+     Net GPO7_INST/N_63: 4 loads, 4 LSLICEs
      Net GPO7_INST/N_61: 4 loads, 4 LSLICEs
      Net GPO6_INST/N_817_i: 4 loads, 4 LSLICEs
      Net GPO6_INST/N_8_i: 4 loads, 4 LSLICEs
@@ -176,8 +176,8 @@ Mapped on:  05/19/15  19:42:08
      Net GPO6_INST/N_26: 4 loads, 4 LSLICEs
      Net GPO6_INST/N_23: 4 loads, 4 LSLICEs
      Net GPO6_INST/N_20: 4 loads, 4 LSLICEs
-     Net GPO6_INST/N_14: 4 loads, 4 LSLICEs
      Net GPO6_INST/N_57: 4 loads, 4 LSLICEs
+     Net GPO6_INST/N_14: 4 loads, 4 LSLICEs
      Net GPO6_INST/N_7: 4 loads, 4 LSLICEs
 
      Net GPO5_INST/N_59_i: 4 loads, 4 LSLICEs
@@ -209,41 +209,41 @@ Mapped on:  05/19/15  19:42:08
      Net GPO4_INST/N_9: 4 loads, 4 LSLICEs
      Net GPO4_INST/N_10: 4 loads, 4 LSLICEs
      Net GPO4_INST/un9_DO15_i_0_0_0: 4 loads, 4 LSLICEs
-     Net GPO4_INST/N_23: 4 loads, 4 LSLICEs
-     Net GPO4_INST/N_6: 4 loads, 4 LSLICEs
      Net GPO4_INST/N_26: 4 loads, 4 LSLICEs
+     Net GPO4_INST/N_6: 4 loads, 4 LSLICEs
+     Net GPO4_INST/N_23: 4 loads, 4 LSLICEs
      Net GPO4_INST/N_20: 4 loads, 4 LSLICEs
      Net GPO4_INST/N_57: 4 loads, 4 LSLICEs
      Net GPO4_INST/N_14: 4 loads, 4 LSLICEs
      Net GPO4_INST/N_7: 4 loads, 4 LSLICEs
-     Net GPI3_INST/N_362_i: 4 loads, 4 LSLICEs
-     Net GPI3_INST/N_360_i: 4 loads, 4 LSLICEs
+     Net GPI3_INST/N_238_i: 4 loads, 4 LSLICEs
+     Net GPI3_INST/N_236_i: 4 loads, 4 LSLICEs
      Net GPO2_INST/un1_TMP_EN6_2_i: 1 loads, 1 LSLICEs
      Net GPO2_INST/un1_i2c_access_p_1_i: 1 loads, 1 LSLICEs
-     Net GPO2_INST/N_2856_i: 4 loads, 4 LSLICEs
-     Net GPO2_INST/N_2877_i: 4 loads, 4 LSLICEs
+     Net GPO2_INST/N_228_i: 4 loads, 4 LSLICEs
+     Net GPO2_INST/N_4_i: 4 loads, 4 LSLICEs
      Net GPO2_INST/un2_DO0_9_i_0: 4 loads, 4 LSLICEs
      Net GPO2_INST/un2_DO0_8_i_0: 4 loads, 4 LSLICEs
      Net GPO2_INST/un2_DO0_7_i_0: 4 loads, 4 LSLICEs
      Net GPO2_INST/un2_DO0_6_i_0: 4 loads, 4 LSLICEs
-     Net GPO2_INST/un2_DO0_5_i_0: 4 loads, 4 LSLICEs
-     Net GPO2_INST/un2_DO0_4_i_0: 5 loads, 5 LSLICEs
-     Net GPO2_INST/un2_DO0_3_i_0: 4 loads, 4 LSLICEs
-     Net GPO2_INST/N_5: 4 loads, 4 LSLICEs
+     Net GPO2_INST/N_272: 4 loads, 4 LSLICEs
+     Net GPO2_INST/un2_DO0_4_i_0: 4 loads, 4 LSLICEs
+     Net GPO2_INST/un2_DO0_3_i: 4 loads, 4 LSLICEs
+     Net GPO2_INST/un2_DO0_2_i_0: 4 loads, 4 LSLICEs
      Net GPO2_INST/un2_DO0_1_i_0: 4 loads, 4 LSLICEs
-     Net GPO2_INST/N_274: 4 loads, 4 LSLICEs
-     Net GPO2_INST/N_292: 4 loads, 4 LSLICEs
-     Net GPO2_INST/N_310: 4 loads, 4 LSLICEs
-     Net GPO2_INST/un2_DO0_11_i_0: 4 loads, 4 LSLICEs
-     Net GPO2_INST/N_328: 4 loads, 4 LSLICEs
+     Net GPO2_INST/un2_DO0_15_i: 4 loads, 4 LSLICEs
+     Net GPO2_INST/N_182: 4 loads, 4 LSLICEs
+     Net GPO2_INST/N_200: 4 loads, 4 LSLICEs
+     Net GPO2_INST/un2_DO0_12_i: 4 loads, 4 LSLICEs
+     Net GPO2_INST/N_268: 4 loads, 4 LSLICEs
 
-     Net GPO2_INST/un2_DO0_10_i_0: 4 loads, 4 LSLICEs
-     Net GPO2_INST/un2_DO0_i_0_0: 4 loads, 4 LSLICEs
-     Net GPI1_INST/N_352_i: 4 loads, 4 LSLICEs
-     Net GPI1_INST/N_350_i: 4 loads, 4 LSLICEs
-     Net GPI0_INST/N_348_i: 3 loads, 3 LSLICEs
-     Net GPI0_INST/N_346_i: 3 loads, 3 LSLICEs
-   Number of local set/reset loads for net RESET_N_c merged into GSR:  1924
+     Net GPO2_INST/N_270: 4 loads, 4 LSLICEs
+     Net GPO2_INST/N_189: 4 loads, 4 LSLICEs
+     Net GPI1_INST/N_226_i: 4 loads, 4 LSLICEs
+     Net GPI1_INST/N_224_i: 4 loads, 4 LSLICEs
+     Net GPI0_INST/N_222_i: 3 loads, 3 LSLICEs
+     Net GPI0_INST/N_220_i: 3 loads, 3 LSLICEs
+   Number of local set/reset loads for net RESET_N_c merged into GSR:  1926
    Number of LSRs:  2
      Net un1_RESET_N_i: 50 loads, 48 LSLICEs
      Net GPO2_INST/i2c_access_ds_i: 1 loads, 1 LSLICEs
@@ -253,12 +253,12 @@ Mapped on:  05/19/15  19:42:08
      Net GPO5_INST/N_380: 144 loads
      Net GPO6_INST/N_602: 144 loads
      Net GPO7_INST/N_380: 144 loads
-     Net N_2657: 110 loads
+     Net OFFSET_SEL_1[3]: 111 loads
+     Net OFFSET_SEL_1[1]: 110 loads
      Net OFFSET_SEL_1[2]: 110 loads
-     Net OFFSET_SEL_1[6]: 103 loads
-     Net N_2653: 102 loads
-     Net OFFSET_SEL_1[4]: 102 loads
-     Net OFFSET_SEL_1[9]: 102 loads
+     Net N_255: 106 loads
+     Net N_258: 102 loads
+     Net N_261: 102 loads
 
 
 
@@ -854,8 +854,8 @@ WARNING - map: Using local reset signal 'RESET_N_c' to infer global GSR net.
 
 Block GPI0_INST/GND undriven or does not drive anything - clipped.
 Block GPI0_INST/VCC undriven or does not drive anything - clipped.
-Block GPI1_INST/VCC undriven or does not drive anything - clipped.
 Block GPI1_INST/GND undriven or does not drive anything - clipped.
+Block GPI1_INST/VCC undriven or does not drive anything - clipped.
 Block GPO2_INST/GND undriven or does not drive anything - clipped.
 Block GPO2_INST/VCC undriven or does not drive anything - clipped.
 Block GPI3_INST/GND undriven or does not drive anything - clipped.
@@ -1005,35 +1005,35 @@ Signal PCIE_RST_CTRL/CNT13_s_0_COUT[21] undriven or does not drive anything -
      clipped.
 Signal PCIE_RST_CTRL/CNT12_cry_0_S0[0] undriven or does not drive anything -
      clipped.
-Signal PCIE_RST_CTRL/N_12 undriven or does not drive anything - clipped.
+Signal PCIE_RST_CTRL/N_13 undriven or does not drive anything - clipped.
 Signal PCIE_RST_CTRL/CNT12_s_0_S1[21] undriven or does not drive anything -
      clipped.
 Signal PCIE_RST_CTRL/CNT12_s_0_COUT[21] undriven or does not drive anything -
      clipped.
 Signal PCIE_RST_CTRL/CNT11_cry_0_S0[0] undriven or does not drive anything -
      clipped.
-Signal PCIE_RST_CTRL/N_13 undriven or does not drive anything - clipped.
+Signal PCIE_RST_CTRL/N_14 undriven or does not drive anything - clipped.
 Signal PCIE_RST_CTRL/CNT11_s_0_S1[21] undriven or does not drive anything -
      clipped.
 Signal PCIE_RST_CTRL/CNT11_s_0_COUT[21] undriven or does not drive anything -
      clipped.
 Signal PCIE_RST_CTRL/CNT10_cry_0_S0[0] undriven or does not drive anything -
      clipped.
-Signal PCIE_RST_CTRL/N_14 undriven or does not drive anything - clipped.
+Signal PCIE_RST_CTRL/N_15 undriven or does not drive anything - clipped.
 Signal PCIE_RST_CTRL/CNT10_s_0_S1[21] undriven or does not drive anything -
      clipped.
 Signal PCIE_RST_CTRL/CNT10_s_0_COUT[21] undriven or does not drive anything -
      clipped.
 Signal PCIE_RST_CTRL/CNT9_cry_0_S0[0] undriven or does not drive anything -
      clipped.
-Signal PCIE_RST_CTRL/N_15 undriven or does not drive anything - clipped.
+Signal PCIE_RST_CTRL/N_16 undriven or does not drive anything - clipped.
 Signal PCIE_RST_CTRL/CNT9_s_0_S1[21] undriven or does not drive anything -
      clipped.
 Signal PCIE_RST_CTRL/CNT9_s_0_COUT[21] undriven or does not drive anything -
      clipped.
 Signal PCIE_RST_CTRL/CNT8_cry_0_S0[0] undriven or does not drive anything -
      clipped.
-Signal PCIE_RST_CTRL/N_16 undriven or does not drive anything - clipped.
+Signal PCIE_RST_CTRL/N_17 undriven or does not drive anything - clipped.
 Signal PCIE_RST_CTRL/CNT8_s_0_S1[21] undriven or does not drive anything -
      clipped.
 Signal PCIE_RST_CTRL/CNT8_s_0_COUT[21] undriven or does not drive anything -
@@ -1041,56 +1041,56 @@ Signal PCIE_RST_CTRL/CNT8_s_0_COUT[21] undriven or does not drive anything -
 
 Signal PCIE_RST_CTRL/CNT7_cry_0_S0[0] undriven or does not drive anything -
      clipped.
-Signal PCIE_RST_CTRL/N_17 undriven or does not drive anything - clipped.
+Signal PCIE_RST_CTRL/N_18 undriven or does not drive anything - clipped.
 Signal PCIE_RST_CTRL/CNT7_s_0_S1[21] undriven or does not drive anything -
      clipped.
 Signal PCIE_RST_CTRL/CNT7_s_0_COUT[21] undriven or does not drive anything -
      clipped.
 Signal PCIE_RST_CTRL/CNT6_cry_0_S0[0] undriven or does not drive anything -
      clipped.
-Signal PCIE_RST_CTRL/N_18 undriven or does not drive anything - clipped.
+Signal PCIE_RST_CTRL/N_19 undriven or does not drive anything - clipped.
 Signal PCIE_RST_CTRL/CNT6_s_0_S1[21] undriven or does not drive anything -
      clipped.
 Signal PCIE_RST_CTRL/CNT6_s_0_COUT[21] undriven or does not drive anything -
      clipped.
 Signal PCIE_RST_CTRL/CNT5_cry_0_S0[0] undriven or does not drive anything -
      clipped.
-Signal PCIE_RST_CTRL/N_19 undriven or does not drive anything - clipped.
+Signal PCIE_RST_CTRL/N_20 undriven or does not drive anything - clipped.
 Signal PCIE_RST_CTRL/CNT5_s_0_S1[21] undriven or does not drive anything -
      clipped.
 Signal PCIE_RST_CTRL/CNT5_s_0_COUT[21] undriven or does not drive anything -
      clipped.
 Signal PCIE_RST_CTRL/CNT4_cry_0_S0[0] undriven or does not drive anything -
      clipped.
-Signal PCIE_RST_CTRL/N_20 undriven or does not drive anything - clipped.
+Signal PCIE_RST_CTRL/N_21 undriven or does not drive anything - clipped.
 Signal PCIE_RST_CTRL/CNT4_s_0_S1[21] undriven or does not drive anything -
      clipped.
 Signal PCIE_RST_CTRL/CNT4_s_0_COUT[21] undriven or does not drive anything -
      clipped.
 Signal PCIE_RST_CTRL/CNT3_cry_0_S0[0] undriven or does not drive anything -
      clipped.
-Signal PCIE_RST_CTRL/N_21 undriven or does not drive anything - clipped.
+Signal PCIE_RST_CTRL/N_22 undriven or does not drive anything - clipped.
 Signal PCIE_RST_CTRL/CNT3_s_0_S1[21] undriven or does not drive anything -
      clipped.
 Signal PCIE_RST_CTRL/CNT3_s_0_COUT[21] undriven or does not drive anything -
      clipped.
 Signal PCIE_RST_CTRL/CNT2_cry_0_S0[0] undriven or does not drive anything -
      clipped.
-Signal PCIE_RST_CTRL/N_22 undriven or does not drive anything - clipped.
+Signal PCIE_RST_CTRL/N_23 undriven or does not drive anything - clipped.
 Signal PCIE_RST_CTRL/CNT2_s_0_S1[21] undriven or does not drive anything -
      clipped.
 Signal PCIE_RST_CTRL/CNT2_s_0_COUT[21] undriven or does not drive anything -
      clipped.
 Signal PCIE_RST_CTRL/CNT1_cry_0_S0[0] undriven or does not drive anything -
      clipped.
-Signal PCIE_RST_CTRL/N_23 undriven or does not drive anything - clipped.
+Signal PCIE_RST_CTRL/N_24 undriven or does not drive anything - clipped.
 Signal PCIE_RST_CTRL/CNT1_s_0_S1[21] undriven or does not drive anything -
      clipped.
 Signal PCIE_RST_CTRL/CNT1_s_0_COUT[21] undriven or does not drive anything -
      clipped.
 Signal PCIE_RST_CTRL/CNT0_cry_0_S0[0] undriven or does not drive anything -
      clipped.
-Signal PCIE_RST_CTRL/N_24 undriven or does not drive anything - clipped.
+Signal PCIE_RST_CTRL/N_25 undriven or does not drive anything - clipped.
 Signal PCIE_RST_CTRL/CNT0_s_0_S1[21] undriven or does not drive anything -
      clipped.
 Signal PCIE_RST_CTRL/CNT0_s_0_COUT[21] undriven or does not drive anything -
@@ -1184,9 +1184,9 @@ Type and instance name of component:
 <A name="mrp_runtime"></A><B><U><big>Run Time and Memory Usage</big></U></B>
 -------------------------
 
-   Total CPU Time: 4 secs
-   Total REAL Time: 4 secs
-   Peak Memory Usage: 94 MB
+   Total CPU Time: 6 secs
+   Total REAL Time: 7 secs
+   Peak Memory Usage: 96 MB
 
 
 

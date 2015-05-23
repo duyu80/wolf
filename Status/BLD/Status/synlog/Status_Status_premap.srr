@@ -4,8 +4,8 @@ Product Version I-2013.09L-SP1-1
 
 Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
 
-@L: F:\project\wolf\Status\BLD\Status\Status_Status_scck.rpt 
-Printing clock  summary report in "F:\project\wolf\Status\BLD\Status\Status_Status_scck.rpt" file 
+@L: E:\work\wolf\Status\BLD\Status\Status_Status_scck.rpt 
+Printing clock  summary report in "E:\work\wolf\Status\BLD\Status\Status_Status_scck.rpt" file 
 @N: MF248 |Running in 64-bit mode.
 @N: MF666 |Clock conversion enabled 
 
@@ -18,12 +18,12 @@ Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0
 Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 112MB)
 
 
-Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 114MB)
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 115MB)
 
-@N: BN362 :"f:\project\wolf\status\bld\..\src\sgpio.v":62:0:62:5|Removing sequential instance FLT_LED[35:0] of view:PrimLib.dffre(prim) in hierarchy view:work.SGPIO_SGPIO_INST1(verilog) because there are no references to its outputs 
-@N: BN362 :"f:\project\wolf\status\bld\..\src\sgpio.v":62:0:62:5|Removing sequential instance FLT_LED[35:0] of view:PrimLib.dffre(prim) in hierarchy view:work.SGPIO_SGPIO_INST2(verilog) because there are no references to its outputs 
-@N: BN362 :"f:\project\wolf\status\bld\..\src\sgpio.v":62:0:62:5|Removing sequential instance FLT_LED_TMP[35:0] of view:PrimLib.dffre(prim) in hierarchy view:work.SGPIO_SGPIO_INST1(verilog) because there are no references to its outputs 
-@N: BN362 :"f:\project\wolf\status\bld\..\src\sgpio.v":62:0:62:5|Removing sequential instance FLT_LED_TMP[35:0] of view:PrimLib.dffre(prim) in hierarchy view:work.SGPIO_SGPIO_INST2(verilog) because there are no references to its outputs 
+@N: BN362 :"e:\work\wolf\status\bld\..\src\sgpio.v":62:0:62:5|Removing sequential instance FLT_LED[35:0] of view:PrimLib.dffre(prim) in hierarchy view:work.SGPIO_SGPIO_INST1(verilog) because there are no references to its outputs 
+@N: BN362 :"e:\work\wolf\status\bld\..\src\sgpio.v":62:0:62:5|Removing sequential instance FLT_LED[35:0] of view:PrimLib.dffre(prim) in hierarchy view:work.SGPIO_SGPIO_INST2(verilog) because there are no references to its outputs 
+@N: BN362 :"e:\work\wolf\status\bld\..\src\sgpio.v":62:0:62:5|Removing sequential instance FLT_LED_TMP[35:0] of view:PrimLib.dffre(prim) in hierarchy view:work.SGPIO_SGPIO_INST1(verilog) because there are no references to its outputs 
+@N: BN362 :"e:\work\wolf\status\bld\..\src\sgpio.v":62:0:62:5|Removing sequential instance FLT_LED_TMP[35:0] of view:PrimLib.dffre(prim) in hierarchy view:work.SGPIO_SGPIO_INST2(verilog) because there are no references to its outputs 
 syn_allowed_resources : blockrams=8  set on top level netlist TOP
 
 
@@ -36,13 +36,13 @@ Clock          Frequency     Period        Type         Group
 TOP|SYSCLK     1.0 MHz       1000.000      inferred     Inferred_clkgroup_0
 ===========================================================================
 
-@W: MT529 :"f:\project\wolf\status\bld\..\src\gpio.v":96:0:96:5|Found inferred clock TOP|SYSCLK which controls 570 sequential elements including GPIO_INST.DOUT[7:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+@W: MT529 :"e:\work\wolf\status\bld\..\src\gpio.v":96:0:96:5|Found inferred clock TOP|SYSCLK which controls 575 sequential elements including GPIO_INST.DOUT[7:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
 
 Pre-mapping successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 76MB peak: 140MB)
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 77MB peak: 141MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Tue Apr 28 22:29:10 2015
+# Sat May 23 15:59:32 2015
 
 ###########################################################]

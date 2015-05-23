@@ -10,7 +10,7 @@
 @P:  BB_TOP|SYSCLK - Estimated Period(min analysis) : 8.265
 @P:  BB_TOP|SYSCLK - Requested Period(min analysis) : 1000.000
 @P:  BB_TOP|SYSCLK - Slack(min analysis) : 496.219
-@P:  Total Area : 3340.0
+@P:  Total Area : 3385.0
 @P:  Total Area : 0.0
 @P:  Total Area : 0.0
 @P:  Total Area : 0.0
@@ -34,4 +34,4 @@
 @P:  Total Area : 0.0
 @P:  Total Area : 0.0
 @P:  Total Area : 0.0
-@P:  CPU Time : 0h:00m:19s
+@P:  CPU Time : 0h:00m:27s

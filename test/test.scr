@@ -1,0 +1,70 @@
+main()
+{
+// device info
+addr = 0xc2;
+
+//Write 57h to Protect Key Register 1 at register offset F5h.
+print("Write 57h to Protect Key Register 1 at register offset F5h.\n");
+send_message(addr, FALSE, "f5 57", TRUE);
+//Write 6Ch to Protect Key Register 2 at register offset FAh.
+print("Write 6Ch to Protect Key Register 2 at register offset FAh.\n");
+send_message(addr, FALSE, "fa 6c", TRUE);
+//Write power 20h
+print("Write power 20h\n");
+send_message(addr, FALSE, "20 ff", TRUE);
+
+//Write 57h to Protect Key Register 1 at register offset F5h.
+print("Write 57h to Protect Key Register 1 at register offset F5h.\n");
+send_message(addr, FALSE, "f5 57", TRUE);
+//Write 6Ch to Protect Key Register 2 at register offset FAh.
+print("Write 6Ch to Protect Key Register 2 at register offset FAh.\n");
+send_message(addr, FALSE, "fa 6c", TRUE);
+//Write power 21h
+print("Write power 21h\n");
+send_message(addr, FALSE, "21 ff", TRUE);
+
+//Write 57h to Protect Key Register 1 at register offset F5h.
+print("Write 57h to Protect Key Register 1 at register offset F5h.\n");
+send_message(addr, FALSE, "f5 57", TRUE);
+//Write 6Ch to Protect Key Register 2 at register offset FAh.
+print("Write 6Ch to Protect Key Register 2 at register offset FAh.\n");
+send_message(addr, FALSE, "fa 6c", TRUE);
+//Write power 22h
+print("Write power 22h\n");
+send_message(addr, FALSE, "22 ff", TRUE);
+
+//Write 57h to Protect Key Register 1 at register offset F5h.
+print("Write 57h to Protect Key Register 1 at register offset F5h.\n");
+send_message(addr, FALSE, "f5 57", TRUE);
+//Write 6Ch to Protect Key Register 2 at register offset FAh.
+print("Write 6Ch to Protect Key Register 2 at register offset FAh.\n");
+send_message(addr, FALSE, "fa 6c", TRUE);
+//Write power 23h
+print("Write power 23h\n");
+send_message(addr, FALSE, "23 ff", TRUE);
+
+//Write 57h to Protect Key Register 1 at register offset F5h.
+print("Write 57h to Protect Key Register 1 at register offset F5h.\n");
+send_message(addr, FALSE, "f5 57", TRUE);
+//Write 6Ch to Protect Key Register 2 at register offset FAh.
+print("Write 6Ch to Protect Key Register 2 at register offset FAh.\n");
+send_message(addr, FALSE, "fa 6c", TRUE);
+//Write power 24h
+print("Write power 24h\n");
+send_message(addr, FALSE, "24 ff", TRUE);
+pause(100);
+
+//read power enable
+print("Read power enable 20h-24h\n");
+send_message(addr, FALSE, "20", TRUE);  //read back
+readback = receive_message(addr, FALSE, 5, TRUE);
+print(readback);
+print("\n");
+
+//read power ok
+print("Read power ok 30h-34h\n");
+send_message(addr, FALSE, "30", TRUE);  //read back
+readback = receive_message(addr, FALSE, 5, TRUE);
+print(readback);
+print("\n");
+}

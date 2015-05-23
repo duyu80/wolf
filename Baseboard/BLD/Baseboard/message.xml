@@ -1121,648 +1121,648 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CG781 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:452:19:452:19|Undriven input DIN5 on instance GPI3_INST, tying to 0</Dynamic>
+            <Dynamic>CG781 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:476:19:476:19|Undriven input DIN5 on instance GPI3_INST, tying to 0</Dynamic>
             <Navigation>CG781</Navigation>
             <Navigation>E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v</Navigation>
-            <Navigation>452</Navigation>
+            <Navigation>476</Navigation>
             <Navigation>19</Navigation>
-            <Navigation>452</Navigation>
+            <Navigation>476</Navigation>
             <Navigation>19</Navigation>
             <Navigation>Undriven input DIN5 on instance GPI3_INST, tying to 0</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CG781 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:453:19:453:19|Undriven input DIN6 on instance GPI3_INST, tying to 0</Dynamic>
+            <Dynamic>CG781 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:477:19:477:19|Undriven input DIN6 on instance GPI3_INST, tying to 0</Dynamic>
             <Navigation>CG781</Navigation>
             <Navigation>E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v</Navigation>
-            <Navigation>453</Navigation>
+            <Navigation>477</Navigation>
             <Navigation>19</Navigation>
-            <Navigation>453</Navigation>
+            <Navigation>477</Navigation>
             <Navigation>19</Navigation>
             <Navigation>Undriven input DIN6 on instance GPI3_INST, tying to 0</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CG781 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:454:19:454:19|Undriven input DIN7 on instance GPI3_INST, tying to 0</Dynamic>
+            <Dynamic>CG781 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:478:19:478:19|Undriven input DIN7 on instance GPI3_INST, tying to 0</Dynamic>
             <Navigation>CG781</Navigation>
             <Navigation>E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v</Navigation>
-            <Navigation>454</Navigation>
+            <Navigation>478</Navigation>
             <Navigation>19</Navigation>
-            <Navigation>454</Navigation>
+            <Navigation>478</Navigation>
             <Navigation>19</Navigation>
             <Navigation>Undriven input DIN7 on instance GPI3_INST, tying to 0</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CG781 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:455:19:455:19|Undriven input DIN8 on instance GPI3_INST, tying to 0</Dynamic>
+            <Dynamic>CG781 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:479:19:479:19|Undriven input DIN8 on instance GPI3_INST, tying to 0</Dynamic>
             <Navigation>CG781</Navigation>
             <Navigation>E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v</Navigation>
-            <Navigation>455</Navigation>
+            <Navigation>479</Navigation>
             <Navigation>19</Navigation>
-            <Navigation>455</Navigation>
+            <Navigation>479</Navigation>
             <Navigation>19</Navigation>
             <Navigation>Undriven input DIN8 on instance GPI3_INST, tying to 0</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CG781 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:456:19:456:19|Undriven input DIN9 on instance GPI3_INST, tying to 0</Dynamic>
+            <Dynamic>CG781 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:480:19:480:19|Undriven input DIN9 on instance GPI3_INST, tying to 0</Dynamic>
             <Navigation>CG781</Navigation>
             <Navigation>E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v</Navigation>
-            <Navigation>456</Navigation>
+            <Navigation>480</Navigation>
             <Navigation>19</Navigation>
-            <Navigation>456</Navigation>
+            <Navigation>480</Navigation>
             <Navigation>19</Navigation>
             <Navigation>Undriven input DIN9 on instance GPI3_INST, tying to 0</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CG781 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:457:19:457:19|Undriven input DIN10 on instance GPI3_INST, tying to 0</Dynamic>
+            <Dynamic>CG781 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:481:19:481:19|Undriven input DIN10 on instance GPI3_INST, tying to 0</Dynamic>
             <Navigation>CG781</Navigation>
             <Navigation>E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v</Navigation>
-            <Navigation>457</Navigation>
+            <Navigation>481</Navigation>
             <Navigation>19</Navigation>
-            <Navigation>457</Navigation>
+            <Navigation>481</Navigation>
             <Navigation>19</Navigation>
             <Navigation>Undriven input DIN10 on instance GPI3_INST, tying to 0</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CG781 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:458:19:458:19|Undriven input DIN11 on instance GPI3_INST, tying to 0</Dynamic>
+            <Dynamic>CG781 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:482:19:482:19|Undriven input DIN11 on instance GPI3_INST, tying to 0</Dynamic>
             <Navigation>CG781</Navigation>
             <Navigation>E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v</Navigation>
-            <Navigation>458</Navigation>
+            <Navigation>482</Navigation>
             <Navigation>19</Navigation>
-            <Navigation>458</Navigation>
+            <Navigation>482</Navigation>
             <Navigation>19</Navigation>
             <Navigation>Undriven input DIN11 on instance GPI3_INST, tying to 0</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CG781 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:459:19:459:19|Undriven input DIN12 on instance GPI3_INST, tying to 0</Dynamic>
+            <Dynamic>CG781 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:483:19:483:19|Undriven input DIN12 on instance GPI3_INST, tying to 0</Dynamic>
             <Navigation>CG781</Navigation>
             <Navigation>E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v</Navigation>
-            <Navigation>459</Navigation>
+            <Navigation>483</Navigation>
             <Navigation>19</Navigation>
-            <Navigation>459</Navigation>
+            <Navigation>483</Navigation>
             <Navigation>19</Navigation>
             <Navigation>Undriven input DIN12 on instance GPI3_INST, tying to 0</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CG781 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:460:19:460:19|Undriven input DIN13 on instance GPI3_INST, tying to 0</Dynamic>
+            <Dynamic>CG781 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:484:19:484:19|Undriven input DIN13 on instance GPI3_INST, tying to 0</Dynamic>
             <Navigation>CG781</Navigation>
             <Navigation>E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v</Navigation>
-            <Navigation>460</Navigation>
+            <Navigation>484</Navigation>
             <Navigation>19</Navigation>
-            <Navigation>460</Navigation>
+            <Navigation>484</Navigation>
             <Navigation>19</Navigation>
             <Navigation>Undriven input DIN13 on instance GPI3_INST, tying to 0</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CG781 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:461:19:461:19|Undriven input DIN14 on instance GPI3_INST, tying to 0</Dynamic>
+            <Dynamic>CG781 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:485:19:485:19|Undriven input DIN14 on instance GPI3_INST, tying to 0</Dynamic>
             <Navigation>CG781</Navigation>
             <Navigation>E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v</Navigation>
-            <Navigation>461</Navigation>
+            <Navigation>485</Navigation>
             <Navigation>19</Navigation>
-            <Navigation>461</Navigation>
+            <Navigation>485</Navigation>
             <Navigation>19</Navigation>
             <Navigation>Undriven input DIN14 on instance GPI3_INST, tying to 0</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CG781 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:462:19:462:19|Undriven input DIN15 on instance GPI3_INST, tying to 0</Dynamic>
+            <Dynamic>CG781 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:486:19:486:19|Undriven input DIN15 on instance GPI3_INST, tying to 0</Dynamic>
             <Navigation>CG781</Navigation>
             <Navigation>E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v</Navigation>
-            <Navigation>462</Navigation>
+            <Navigation>486</Navigation>
             <Navigation>19</Navigation>
-            <Navigation>462</Navigation>
+            <Navigation>486</Navigation>
             <Navigation>19</Navigation>
             <Navigation>Undriven input DIN15 on instance GPI3_INST, tying to 0</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CS263 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:656:25:656:78|Port-width mismatch for port DIN0. Formal has width 8, Actual 2</Dynamic>
+            <Dynamic>CS263 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:680:25:680:78|Port-width mismatch for port DIN0. Formal has width 8, Actual 2</Dynamic>
             <Navigation>CS263</Navigation>
             <Navigation>E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v</Navigation>
-            <Navigation>656</Navigation>
+            <Navigation>680</Navigation>
             <Navigation>25</Navigation>
-            <Navigation>656</Navigation>
+            <Navigation>680</Navigation>
             <Navigation>78</Navigation>
             <Navigation>Port-width mismatch for port DIN0. Formal has width 8, Actual 2</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CS263 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:658:22:658:48|Port-width mismatch for port DIN2. Formal has width 8, Actual 32</Dynamic>
+            <Dynamic>CS263 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:682:22:682:48|Port-width mismatch for port DIN2. Formal has width 8, Actual 32</Dynamic>
             <Navigation>CS263</Navigation>
             <Navigation>E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v</Navigation>
-            <Navigation>658</Navigation>
+            <Navigation>682</Navigation>
             <Navigation>22</Navigation>
-            <Navigation>658</Navigation>
+            <Navigation>682</Navigation>
             <Navigation>48</Navigation>
             <Navigation>Port-width mismatch for port DIN2. Formal has width 8, Actual 32</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CS263 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:659:22:659:48|Port-width mismatch for port DIN3. Formal has width 8, Actual 32</Dynamic>
+            <Dynamic>CS263 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:683:22:683:48|Port-width mismatch for port DIN3. Formal has width 8, Actual 32</Dynamic>
             <Navigation>CS263</Navigation>
             <Navigation>E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v</Navigation>
-            <Navigation>659</Navigation>
+            <Navigation>683</Navigation>
             <Navigation>22</Navigation>
-            <Navigation>659</Navigation>
+            <Navigation>683</Navigation>
             <Navigation>48</Navigation>
             <Navigation>Port-width mismatch for port DIN3. Formal has width 8, Actual 32</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CS263 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:660:22:660:48|Port-width mismatch for port DIN4. Formal has width 8, Actual 32</Dynamic>
+            <Dynamic>CS263 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:684:22:684:48|Port-width mismatch for port DIN4. Formal has width 8, Actual 32</Dynamic>
             <Navigation>CS263</Navigation>
             <Navigation>E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v</Navigation>
-            <Navigation>660</Navigation>
+            <Navigation>684</Navigation>
             <Navigation>22</Navigation>
-            <Navigation>660</Navigation>
+            <Navigation>684</Navigation>
             <Navigation>48</Navigation>
             <Navigation>Port-width mismatch for port DIN4. Formal has width 8, Actual 32</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CS263 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:661:22:661:48|Port-width mismatch for port DIN5. Formal has width 8, Actual 32</Dynamic>
+            <Dynamic>CS263 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:685:22:685:48|Port-width mismatch for port DIN5. Formal has width 8, Actual 32</Dynamic>
             <Navigation>CS263</Navigation>
             <Navigation>E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v</Navigation>
-            <Navigation>661</Navigation>
+            <Navigation>685</Navigation>
             <Navigation>22</Navigation>
-            <Navigation>661</Navigation>
+            <Navigation>685</Navigation>
             <Navigation>48</Navigation>
             <Navigation>Port-width mismatch for port DIN5. Formal has width 8, Actual 32</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CS263 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:662:22:662:48|Port-width mismatch for port DIN6. Formal has width 8, Actual 32</Dynamic>
+            <Dynamic>CS263 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:686:22:686:48|Port-width mismatch for port DIN6. Formal has width 8, Actual 32</Dynamic>
             <Navigation>CS263</Navigation>
             <Navigation>E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v</Navigation>
-            <Navigation>662</Navigation>
+            <Navigation>686</Navigation>
             <Navigation>22</Navigation>
-            <Navigation>662</Navigation>
+            <Navigation>686</Navigation>
             <Navigation>48</Navigation>
             <Navigation>Port-width mismatch for port DIN6. Formal has width 8, Actual 32</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CS263 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:663:22:663:48|Port-width mismatch for port DIN7. Formal has width 8, Actual 32</Dynamic>
+            <Dynamic>CS263 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:687:22:687:48|Port-width mismatch for port DIN7. Formal has width 8, Actual 32</Dynamic>
             <Navigation>CS263</Navigation>
             <Navigation>E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v</Navigation>
-            <Navigation>663</Navigation>
+            <Navigation>687</Navigation>
             <Navigation>22</Navigation>
-            <Navigation>663</Navigation>
+            <Navigation>687</Navigation>
             <Navigation>48</Navigation>
             <Navigation>Port-width mismatch for port DIN7. Formal has width 8, Actual 32</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CS263 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:664:22:664:48|Port-width mismatch for port DIN8. Formal has width 8, Actual 32</Dynamic>
+            <Dynamic>CS263 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:688:22:688:48|Port-width mismatch for port DIN8. Formal has width 8, Actual 32</Dynamic>
             <Navigation>CS263</Navigation>
             <Navigation>E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v</Navigation>
-            <Navigation>664</Navigation>
+            <Navigation>688</Navigation>
             <Navigation>22</Navigation>
-            <Navigation>664</Navigation>
+            <Navigation>688</Navigation>
             <Navigation>48</Navigation>
             <Navigation>Port-width mismatch for port DIN8. Formal has width 8, Actual 32</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CS263 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:665:22:665:48|Port-width mismatch for port DIN9. Formal has width 8, Actual 32</Dynamic>
+            <Dynamic>CS263 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:689:22:689:48|Port-width mismatch for port DIN9. Formal has width 8, Actual 32</Dynamic>
             <Navigation>CS263</Navigation>
             <Navigation>E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v</Navigation>
-            <Navigation>665</Navigation>
+            <Navigation>689</Navigation>
             <Navigation>22</Navigation>
-            <Navigation>665</Navigation>
+            <Navigation>689</Navigation>
             <Navigation>48</Navigation>
             <Navigation>Port-width mismatch for port DIN9. Formal has width 8, Actual 32</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CS263 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:666:22:666:48|Port-width mismatch for port DIN10. Formal has width 8, Actual 32</Dynamic>
+            <Dynamic>CS263 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:690:22:690:48|Port-width mismatch for port DIN10. Formal has width 8, Actual 32</Dynamic>
             <Navigation>CS263</Navigation>
             <Navigation>E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v</Navigation>
-            <Navigation>666</Navigation>
+            <Navigation>690</Navigation>
             <Navigation>22</Navigation>
-            <Navigation>666</Navigation>
+            <Navigation>690</Navigation>
             <Navigation>48</Navigation>
             <Navigation>Port-width mismatch for port DIN10. Formal has width 8, Actual 32</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CS263 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:667:22:667:48|Port-width mismatch for port DIN11. Formal has width 8, Actual 32</Dynamic>
+            <Dynamic>CS263 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:691:22:691:48|Port-width mismatch for port DIN11. Formal has width 8, Actual 32</Dynamic>
             <Navigation>CS263</Navigation>
             <Navigation>E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v</Navigation>
-            <Navigation>667</Navigation>
+            <Navigation>691</Navigation>
             <Navigation>22</Navigation>
-            <Navigation>667</Navigation>
+            <Navigation>691</Navigation>
             <Navigation>48</Navigation>
             <Navigation>Port-width mismatch for port DIN11. Formal has width 8, Actual 32</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CS263 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:668:22:668:48|Port-width mismatch for port DIN12. Formal has width 8, Actual 32</Dynamic>
+            <Dynamic>CS263 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:692:22:692:48|Port-width mismatch for port DIN12. Formal has width 8, Actual 32</Dynamic>
             <Navigation>CS263</Navigation>
             <Navigation>E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v</Navigation>
-            <Navigation>668</Navigation>
+            <Navigation>692</Navigation>
             <Navigation>22</Navigation>
-            <Navigation>668</Navigation>
+            <Navigation>692</Navigation>
             <Navigation>48</Navigation>
             <Navigation>Port-width mismatch for port DIN12. Formal has width 8, Actual 32</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CS263 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:669:22:669:48|Port-width mismatch for port DIN13. Formal has width 8, Actual 32</Dynamic>
+            <Dynamic>CS263 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:693:22:693:48|Port-width mismatch for port DIN13. Formal has width 8, Actual 32</Dynamic>
             <Navigation>CS263</Navigation>
             <Navigation>E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v</Navigation>
-            <Navigation>669</Navigation>
+            <Navigation>693</Navigation>
             <Navigation>22</Navigation>
-            <Navigation>669</Navigation>
+            <Navigation>693</Navigation>
             <Navigation>48</Navigation>
             <Navigation>Port-width mismatch for port DIN13. Formal has width 8, Actual 32</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CS263 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:670:22:670:48|Port-width mismatch for port DIN14. Formal has width 8, Actual 32</Dynamic>
+            <Dynamic>CS263 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:694:22:694:48|Port-width mismatch for port DIN14. Formal has width 8, Actual 32</Dynamic>
             <Navigation>CS263</Navigation>
             <Navigation>E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v</Navigation>
-            <Navigation>670</Navigation>
+            <Navigation>694</Navigation>
             <Navigation>22</Navigation>
-            <Navigation>670</Navigation>
+            <Navigation>694</Navigation>
             <Navigation>48</Navigation>
             <Navigation>Port-width mismatch for port DIN14. Formal has width 8, Actual 32</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CS263 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:671:22:671:48|Port-width mismatch for port DIN15. Formal has width 8, Actual 32</Dynamic>
+            <Dynamic>CS263 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:695:22:695:48|Port-width mismatch for port DIN15. Formal has width 8, Actual 32</Dynamic>
             <Navigation>CS263</Navigation>
             <Navigation>E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v</Navigation>
-            <Navigation>671</Navigation>
+            <Navigation>695</Navigation>
             <Navigation>22</Navigation>
-            <Navigation>671</Navigation>
+            <Navigation>695</Navigation>
             <Navigation>48</Navigation>
             <Navigation>Port-width mismatch for port DIN15. Formal has width 8, Actual 32</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CS263 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:690:22:690:41|Port-width mismatch for port DIN1. Formal has width 8, Actual 32</Dynamic>
+            <Dynamic>CS263 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:714:22:714:41|Port-width mismatch for port DIN1. Formal has width 8, Actual 32</Dynamic>
             <Navigation>CS263</Navigation>
             <Navigation>E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v</Navigation>
-            <Navigation>690</Navigation>
+            <Navigation>714</Navigation>
             <Navigation>22</Navigation>
-            <Navigation>690</Navigation>
+            <Navigation>714</Navigation>
             <Navigation>41</Navigation>
             <Navigation>Port-width mismatch for port DIN1. Formal has width 8, Actual 32</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CS263 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:691:22:691:41|Port-width mismatch for port DIN2. Formal has width 8, Actual 32</Dynamic>
+            <Dynamic>CS263 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:715:22:715:41|Port-width mismatch for port DIN2. Formal has width 8, Actual 32</Dynamic>
             <Navigation>CS263</Navigation>
             <Navigation>E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v</Navigation>
-            <Navigation>691</Navigation>
+            <Navigation>715</Navigation>
             <Navigation>22</Navigation>
-            <Navigation>691</Navigation>
+            <Navigation>715</Navigation>
             <Navigation>41</Navigation>
             <Navigation>Port-width mismatch for port DIN2. Formal has width 8, Actual 32</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CS263 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:692:22:692:41|Port-width mismatch for port DIN3. Formal has width 8, Actual 32</Dynamic>
+            <Dynamic>CS263 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:716:22:716:41|Port-width mismatch for port DIN3. Formal has width 8, Actual 32</Dynamic>
             <Navigation>CS263</Navigation>
             <Navigation>E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v</Navigation>
-            <Navigation>692</Navigation>
+            <Navigation>716</Navigation>
             <Navigation>22</Navigation>
-            <Navigation>692</Navigation>
+            <Navigation>716</Navigation>
             <Navigation>41</Navigation>
             <Navigation>Port-width mismatch for port DIN3. Formal has width 8, Actual 32</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CS263 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:693:22:693:41|Port-width mismatch for port DIN4. Formal has width 8, Actual 32</Dynamic>
+            <Dynamic>CS263 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:717:22:717:41|Port-width mismatch for port DIN4. Formal has width 8, Actual 32</Dynamic>
             <Navigation>CS263</Navigation>
             <Navigation>E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v</Navigation>
-            <Navigation>693</Navigation>
+            <Navigation>717</Navigation>
             <Navigation>22</Navigation>
-            <Navigation>693</Navigation>
+            <Navigation>717</Navigation>
             <Navigation>41</Navigation>
             <Navigation>Port-width mismatch for port DIN4. Formal has width 8, Actual 32</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CS263 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:694:22:694:41|Port-width mismatch for port DIN5. Formal has width 8, Actual 32</Dynamic>
+            <Dynamic>CS263 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:718:22:718:41|Port-width mismatch for port DIN5. Formal has width 8, Actual 32</Dynamic>
             <Navigation>CS263</Navigation>
             <Navigation>E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v</Navigation>
-            <Navigation>694</Navigation>
+            <Navigation>718</Navigation>
             <Navigation>22</Navigation>
-            <Navigation>694</Navigation>
+            <Navigation>718</Navigation>
             <Navigation>41</Navigation>
             <Navigation>Port-width mismatch for port DIN5. Formal has width 8, Actual 32</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CS263 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:695:22:695:41|Port-width mismatch for port DIN6. Formal has width 8, Actual 32</Dynamic>
+            <Dynamic>CS263 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:719:22:719:41|Port-width mismatch for port DIN6. Formal has width 8, Actual 32</Dynamic>
             <Navigation>CS263</Navigation>
             <Navigation>E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v</Navigation>
-            <Navigation>695</Navigation>
+            <Navigation>719</Navigation>
             <Navigation>22</Navigation>
-            <Navigation>695</Navigation>
+            <Navigation>719</Navigation>
             <Navigation>41</Navigation>
             <Navigation>Port-width mismatch for port DIN6. Formal has width 8, Actual 32</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CS263 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:696:22:696:41|Port-width mismatch for port DIN7. Formal has width 8, Actual 32</Dynamic>
+            <Dynamic>CS263 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:720:22:720:41|Port-width mismatch for port DIN7. Formal has width 8, Actual 32</Dynamic>
             <Navigation>CS263</Navigation>
             <Navigation>E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v</Navigation>
-            <Navigation>696</Navigation>
+            <Navigation>720</Navigation>
             <Navigation>22</Navigation>
-            <Navigation>696</Navigation>
+            <Navigation>720</Navigation>
             <Navigation>41</Navigation>
             <Navigation>Port-width mismatch for port DIN7. Formal has width 8, Actual 32</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CS263 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:697:22:697:41|Port-width mismatch for port DIN8. Formal has width 8, Actual 32</Dynamic>
+            <Dynamic>CS263 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:721:22:721:41|Port-width mismatch for port DIN8. Formal has width 8, Actual 32</Dynamic>
             <Navigation>CS263</Navigation>
             <Navigation>E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v</Navigation>
-            <Navigation>697</Navigation>
+            <Navigation>721</Navigation>
             <Navigation>22</Navigation>
-            <Navigation>697</Navigation>
+            <Navigation>721</Navigation>
             <Navigation>41</Navigation>
             <Navigation>Port-width mismatch for port DIN8. Formal has width 8, Actual 32</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CS263 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:698:22:698:41|Port-width mismatch for port DIN9. Formal has width 8, Actual 32</Dynamic>
+            <Dynamic>CS263 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:722:22:722:41|Port-width mismatch for port DIN9. Formal has width 8, Actual 32</Dynamic>
             <Navigation>CS263</Navigation>
             <Navigation>E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v</Navigation>
-            <Navigation>698</Navigation>
+            <Navigation>722</Navigation>
             <Navigation>22</Navigation>
-            <Navigation>698</Navigation>
+            <Navigation>722</Navigation>
             <Navigation>41</Navigation>
             <Navigation>Port-width mismatch for port DIN9. Formal has width 8, Actual 32</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CS263 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:699:22:699:41|Port-width mismatch for port DIN10. Formal has width 8, Actual 32</Dynamic>
+            <Dynamic>CS263 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:723:22:723:41|Port-width mismatch for port DIN10. Formal has width 8, Actual 32</Dynamic>
             <Navigation>CS263</Navigation>
             <Navigation>E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v</Navigation>
-            <Navigation>699</Navigation>
+            <Navigation>723</Navigation>
             <Navigation>22</Navigation>
-            <Navigation>699</Navigation>
+            <Navigation>723</Navigation>
             <Navigation>41</Navigation>
             <Navigation>Port-width mismatch for port DIN10. Formal has width 8, Actual 32</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CS263 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:700:22:700:41|Port-width mismatch for port DIN11. Formal has width 8, Actual 32</Dynamic>
+            <Dynamic>CS263 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:724:22:724:41|Port-width mismatch for port DIN11. Formal has width 8, Actual 32</Dynamic>
             <Navigation>CS263</Navigation>
             <Navigation>E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v</Navigation>
-            <Navigation>700</Navigation>
+            <Navigation>724</Navigation>
             <Navigation>22</Navigation>
-            <Navigation>700</Navigation>
+            <Navigation>724</Navigation>
             <Navigation>41</Navigation>
             <Navigation>Port-width mismatch for port DIN11. Formal has width 8, Actual 32</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CS263 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:701:22:701:41|Port-width mismatch for port DIN12. Formal has width 8, Actual 32</Dynamic>
+            <Dynamic>CS263 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:725:22:725:41|Port-width mismatch for port DIN12. Formal has width 8, Actual 32</Dynamic>
             <Navigation>CS263</Navigation>
             <Navigation>E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v</Navigation>
-            <Navigation>701</Navigation>
+            <Navigation>725</Navigation>
             <Navigation>22</Navigation>
-            <Navigation>701</Navigation>
+            <Navigation>725</Navigation>
             <Navigation>41</Navigation>
             <Navigation>Port-width mismatch for port DIN12. Formal has width 8, Actual 32</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CS263 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:702:22:702:41|Port-width mismatch for port DIN13. Formal has width 8, Actual 32</Dynamic>
+            <Dynamic>CS263 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:726:22:726:41|Port-width mismatch for port DIN13. Formal has width 8, Actual 32</Dynamic>
             <Navigation>CS263</Navigation>
             <Navigation>E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v</Navigation>
-            <Navigation>702</Navigation>
+            <Navigation>726</Navigation>
             <Navigation>22</Navigation>
-            <Navigation>702</Navigation>
+            <Navigation>726</Navigation>
             <Navigation>41</Navigation>
             <Navigation>Port-width mismatch for port DIN13. Formal has width 8, Actual 32</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CS263 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:703:22:703:41|Port-width mismatch for port DIN14. Formal has width 8, Actual 32</Dynamic>
+            <Dynamic>CS263 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:727:22:727:41|Port-width mismatch for port DIN14. Formal has width 8, Actual 32</Dynamic>
             <Navigation>CS263</Navigation>
             <Navigation>E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v</Navigation>
-            <Navigation>703</Navigation>
+            <Navigation>727</Navigation>
             <Navigation>22</Navigation>
-            <Navigation>703</Navigation>
+            <Navigation>727</Navigation>
             <Navigation>41</Navigation>
             <Navigation>Port-width mismatch for port DIN14. Formal has width 8, Actual 32</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CS263 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:704:22:704:41|Port-width mismatch for port DIN15. Formal has width 8, Actual 32</Dynamic>
+            <Dynamic>CS263 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:728:22:728:41|Port-width mismatch for port DIN15. Formal has width 8, Actual 32</Dynamic>
             <Navigation>CS263</Navigation>
             <Navigation>E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v</Navigation>
-            <Navigation>704</Navigation>
+            <Navigation>728</Navigation>
             <Navigation>22</Navigation>
-            <Navigation>704</Navigation>
+            <Navigation>728</Navigation>
             <Navigation>41</Navigation>
             <Navigation>Port-width mismatch for port DIN15. Formal has width 8, Actual 32</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CS263 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:724:15:724:33|Port-width mismatch for port DO0. Formal has width 8, Actual 1</Dynamic>
+            <Dynamic>CS263 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:748:15:748:33|Port-width mismatch for port DO0. Formal has width 8, Actual 1</Dynamic>
             <Navigation>CS263</Navigation>
             <Navigation>E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v</Navigation>
-            <Navigation>724</Navigation>
+            <Navigation>748</Navigation>
             <Navigation>15</Navigation>
-            <Navigation>724</Navigation>
+            <Navigation>748</Navigation>
             <Navigation>33</Navigation>
             <Navigation>Port-width mismatch for port DO0. Formal has width 8, Actual 1</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CG781 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:841:36:841:36|Undriven input LED_REG2 on instance FLT_AMB_LED_INST2, tying to 0</Dynamic>
+            <Dynamic>CG781 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:865:36:865:36|Undriven input LED_REG2 on instance FLT_AMB_LED_INST2, tying to 0</Dynamic>
             <Navigation>CG781</Navigation>
             <Navigation>E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v</Navigation>
-            <Navigation>841</Navigation>
+            <Navigation>865</Navigation>
             <Navigation>36</Navigation>
-            <Navigation>841</Navigation>
+            <Navigation>865</Navigation>
             <Navigation>36</Navigation>
             <Navigation>Undriven input LED_REG2 on instance FLT_AMB_LED_INST2, tying to 0</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CG781 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:842:36:842:36|Undriven input LED_REG3 on instance FLT_AMB_LED_INST2, tying to 0</Dynamic>
+            <Dynamic>CG781 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:866:36:866:36|Undriven input LED_REG3 on instance FLT_AMB_LED_INST2, tying to 0</Dynamic>
             <Navigation>CG781</Navigation>
             <Navigation>E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v</Navigation>
-            <Navigation>842</Navigation>
+            <Navigation>866</Navigation>
             <Navigation>36</Navigation>
-            <Navigation>842</Navigation>
+            <Navigation>866</Navigation>
             <Navigation>36</Navigation>
             <Navigation>Undriven input LED_REG3 on instance FLT_AMB_LED_INST2, tying to 0</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CG781 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:843:36:843:36|Undriven input LED_REG4 on instance FLT_AMB_LED_INST2, tying to 0</Dynamic>
+            <Dynamic>CG781 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:867:36:867:36|Undriven input LED_REG4 on instance FLT_AMB_LED_INST2, tying to 0</Dynamic>
             <Navigation>CG781</Navigation>
             <Navigation>E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v</Navigation>
-            <Navigation>843</Navigation>
+            <Navigation>867</Navigation>
             <Navigation>36</Navigation>
-            <Navigation>843</Navigation>
+            <Navigation>867</Navigation>
             <Navigation>36</Navigation>
             <Navigation>Undriven input LED_REG4 on instance FLT_AMB_LED_INST2, tying to 0</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CG781 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:844:36:844:36|Undriven input LED_REG5 on instance FLT_AMB_LED_INST2, tying to 0</Dynamic>
+            <Dynamic>CG781 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:868:36:868:36|Undriven input LED_REG5 on instance FLT_AMB_LED_INST2, tying to 0</Dynamic>
             <Navigation>CG781</Navigation>
             <Navigation>E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v</Navigation>
-            <Navigation>844</Navigation>
+            <Navigation>868</Navigation>
             <Navigation>36</Navigation>
-            <Navigation>844</Navigation>
+            <Navigation>868</Navigation>
             <Navigation>36</Navigation>
             <Navigation>Undriven input LED_REG5 on instance FLT_AMB_LED_INST2, tying to 0</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CG781 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:845:36:845:36|Undriven input LED_REG6 on instance FLT_AMB_LED_INST2, tying to 0</Dynamic>
+            <Dynamic>CG781 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:869:36:869:36|Undriven input LED_REG6 on instance FLT_AMB_LED_INST2, tying to 0</Dynamic>
             <Navigation>CG781</Navigation>
             <Navigation>E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v</Navigation>
-            <Navigation>845</Navigation>
+            <Navigation>869</Navigation>
             <Navigation>36</Navigation>
-            <Navigation>845</Navigation>
+            <Navigation>869</Navigation>
             <Navigation>36</Navigation>
             <Navigation>Undriven input LED_REG6 on instance FLT_AMB_LED_INST2, tying to 0</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CG781 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:846:36:846:36|Undriven input LED_REG7 on instance FLT_AMB_LED_INST2, tying to 0</Dynamic>
+            <Dynamic>CG781 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:870:36:870:36|Undriven input LED_REG7 on instance FLT_AMB_LED_INST2, tying to 0</Dynamic>
             <Navigation>CG781</Navigation>
             <Navigation>E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v</Navigation>
-            <Navigation>846</Navigation>
+            <Navigation>870</Navigation>
             <Navigation>36</Navigation>
-            <Navigation>846</Navigation>
+            <Navigation>870</Navigation>
             <Navigation>36</Navigation>
             <Navigation>Undriven input LED_REG7 on instance FLT_AMB_LED_INST2, tying to 0</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CG781 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:953:36:953:36|Undriven input LED_REG2 on instance IFDET_BLUE_LED_INST2, tying to 0</Dynamic>
+            <Dynamic>CG781 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:977:36:977:36|Undriven input LED_REG2 on instance IFDET_BLUE_LED_INST2, tying to 0</Dynamic>
             <Navigation>CG781</Navigation>
             <Navigation>E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v</Navigation>
-            <Navigation>953</Navigation>
+            <Navigation>977</Navigation>
             <Navigation>36</Navigation>
-            <Navigation>953</Navigation>
+            <Navigation>977</Navigation>
             <Navigation>36</Navigation>
             <Navigation>Undriven input LED_REG2 on instance IFDET_BLUE_LED_INST2, tying to 0</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CG781 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:954:36:954:36|Undriven input LED_REG3 on instance IFDET_BLUE_LED_INST2, tying to 0</Dynamic>
+            <Dynamic>CG781 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:978:36:978:36|Undriven input LED_REG3 on instance IFDET_BLUE_LED_INST2, tying to 0</Dynamic>
             <Navigation>CG781</Navigation>
             <Navigation>E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v</Navigation>
-            <Navigation>954</Navigation>
+            <Navigation>978</Navigation>
             <Navigation>36</Navigation>
-            <Navigation>954</Navigation>
+            <Navigation>978</Navigation>
             <Navigation>36</Navigation>
             <Navigation>Undriven input LED_REG3 on instance IFDET_BLUE_LED_INST2, tying to 0</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CG781 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:955:36:955:36|Undriven input LED_REG4 on instance IFDET_BLUE_LED_INST2, tying to 0</Dynamic>
+            <Dynamic>CG781 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:979:36:979:36|Undriven input LED_REG4 on instance IFDET_BLUE_LED_INST2, tying to 0</Dynamic>
             <Navigation>CG781</Navigation>
             <Navigation>E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v</Navigation>
-            <Navigation>955</Navigation>
+            <Navigation>979</Navigation>
             <Navigation>36</Navigation>
-            <Navigation>955</Navigation>
+            <Navigation>979</Navigation>
             <Navigation>36</Navigation>
             <Navigation>Undriven input LED_REG4 on instance IFDET_BLUE_LED_INST2, tying to 0</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CG781 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:956:36:956:36|Undriven input LED_REG5 on instance IFDET_BLUE_LED_INST2, tying to 0</Dynamic>
+            <Dynamic>CG781 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:980:36:980:36|Undriven input LED_REG5 on instance IFDET_BLUE_LED_INST2, tying to 0</Dynamic>
             <Navigation>CG781</Navigation>
             <Navigation>E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v</Navigation>
-            <Navigation>956</Navigation>
+            <Navigation>980</Navigation>
             <Navigation>36</Navigation>
-            <Navigation>956</Navigation>
+            <Navigation>980</Navigation>
             <Navigation>36</Navigation>
             <Navigation>Undriven input LED_REG5 on instance IFDET_BLUE_LED_INST2, tying to 0</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CG781 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:957:36:957:36|Undriven input LED_REG6 on instance IFDET_BLUE_LED_INST2, tying to 0</Dynamic>
+            <Dynamic>CG781 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:981:36:981:36|Undriven input LED_REG6 on instance IFDET_BLUE_LED_INST2, tying to 0</Dynamic>
             <Navigation>CG781</Navigation>
             <Navigation>E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v</Navigation>
-            <Navigation>957</Navigation>
+            <Navigation>981</Navigation>
             <Navigation>36</Navigation>
-            <Navigation>957</Navigation>
+            <Navigation>981</Navigation>
             <Navigation>36</Navigation>
             <Navigation>Undriven input LED_REG6 on instance IFDET_BLUE_LED_INST2, tying to 0</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CG781 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:958:36:958:36|Undriven input LED_REG7 on instance IFDET_BLUE_LED_INST2, tying to 0</Dynamic>
+            <Dynamic>CG781 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:982:36:982:36|Undriven input LED_REG7 on instance IFDET_BLUE_LED_INST2, tying to 0</Dynamic>
             <Navigation>CG781</Navigation>
             <Navigation>E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v</Navigation>
-            <Navigation>958</Navigation>
+            <Navigation>982</Navigation>
             <Navigation>36</Navigation>
-            <Navigation>958</Navigation>
+            <Navigation>982</Navigation>
             <Navigation>36</Navigation>
             <Navigation>Undriven input LED_REG7 on instance IFDET_BLUE_LED_INST2, tying to 0</Navigation>
         </Message>
@@ -2009,96 +2009,96 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL190 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:1193:0:1193:5|Optimizing register bit CNT[25] to a constant 0</Dynamic>
+            <Dynamic>CL190 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:1217:0:1217:5|Optimizing register bit CNT[25] to a constant 0</Dynamic>
             <Navigation>CL190</Navigation>
             <Navigation>E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v</Navigation>
-            <Navigation>1193</Navigation>
+            <Navigation>1217</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>1193</Navigation>
+            <Navigation>1217</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Optimizing register bit CNT[25] to a constant 0</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL190 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:1193:0:1193:5|Optimizing register bit CNT[26] to a constant 0</Dynamic>
+            <Dynamic>CL190 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:1217:0:1217:5|Optimizing register bit CNT[26] to a constant 0</Dynamic>
             <Navigation>CL190</Navigation>
             <Navigation>E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v</Navigation>
-            <Navigation>1193</Navigation>
+            <Navigation>1217</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>1193</Navigation>
+            <Navigation>1217</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Optimizing register bit CNT[26] to a constant 0</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL190 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:1193:0:1193:5|Optimizing register bit CNT[27] to a constant 0</Dynamic>
+            <Dynamic>CL190 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:1217:0:1217:5|Optimizing register bit CNT[27] to a constant 0</Dynamic>
             <Navigation>CL190</Navigation>
             <Navigation>E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v</Navigation>
-            <Navigation>1193</Navigation>
+            <Navigation>1217</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>1193</Navigation>
+            <Navigation>1217</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Optimizing register bit CNT[27] to a constant 0</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL190 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:1193:0:1193:5|Optimizing register bit CNT[28] to a constant 0</Dynamic>
+            <Dynamic>CL190 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:1217:0:1217:5|Optimizing register bit CNT[28] to a constant 0</Dynamic>
             <Navigation>CL190</Navigation>
             <Navigation>E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v</Navigation>
-            <Navigation>1193</Navigation>
+            <Navigation>1217</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>1193</Navigation>
+            <Navigation>1217</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Optimizing register bit CNT[28] to a constant 0</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL190 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:1193:0:1193:5|Optimizing register bit CNT[29] to a constant 0</Dynamic>
+            <Dynamic>CL190 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:1217:0:1217:5|Optimizing register bit CNT[29] to a constant 0</Dynamic>
             <Navigation>CL190</Navigation>
             <Navigation>E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v</Navigation>
-            <Navigation>1193</Navigation>
+            <Navigation>1217</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>1193</Navigation>
+            <Navigation>1217</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Optimizing register bit CNT[29] to a constant 0</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL190 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:1193:0:1193:5|Optimizing register bit CNT[30] to a constant 0</Dynamic>
+            <Dynamic>CL190 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:1217:0:1217:5|Optimizing register bit CNT[30] to a constant 0</Dynamic>
             <Navigation>CL190</Navigation>
             <Navigation>E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v</Navigation>
-            <Navigation>1193</Navigation>
+            <Navigation>1217</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>1193</Navigation>
+            <Navigation>1217</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Optimizing register bit CNT[30] to a constant 0</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL190 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:1193:0:1193:5|Optimizing register bit CNT[31] to a constant 0</Dynamic>
+            <Dynamic>CL190 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:1217:0:1217:5|Optimizing register bit CNT[31] to a constant 0</Dynamic>
             <Navigation>CL190</Navigation>
             <Navigation>E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v</Navigation>
-            <Navigation>1193</Navigation>
+            <Navigation>1217</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>1193</Navigation>
+            <Navigation>1217</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Optimizing register bit CNT[31] to a constant 0</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL279 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:1193:0:1193:5|Pruning register bits 31 to 25 of CNT[31:0]</Dynamic>
+            <Dynamic>CL279 :&quot;E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v&quot;:1217:0:1217:5|Pruning register bits 31 to 25 of CNT[31:0]</Dynamic>
             <Navigation>CL279</Navigation>
             <Navigation>E:\work\wolf\Baseboard\BLD\..\SRC\BB_TOP.v</Navigation>
-            <Navigation>1193</Navigation>
+            <Navigation>1217</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>1193</Navigation>
+            <Navigation>1217</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Pruning register bits 31 to 25 of CNT[31:0] </Navigation>
         </Message>
@@ -6017,18 +6017,6 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>BN132 :&quot;e:\work\wolf\baseboard\bld\..\src\gpi.v&quot;:67:0:67:5|Removing instance GPI0_INST.DOUT1[4],  because it is equivalent to instance GPI0_INST.DOUT1[2]</Dynamic>
-            <Navigation>BN132</Navigation>
-            <Navigation>e:\work\wolf\baseboard\bld\..\src\gpi.v</Navigation>
-            <Navigation>67</Navigation>
-            <Navigation>0</Navigation>
-            <Navigation>67</Navigation>
-            <Navigation>5</Navigation>
-            <Navigation>Removing instance GPI0_INST.DOUT1[4],  because it is equivalent to instance GPI0_INST.DOUT1[2]</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
             <Dynamic>BN132 :&quot;e:\work\wolf\baseboard\bld\..\src\gpi.v&quot;:79:0:79:5|Removing instance GPI9_INST.DOUT2[7],  because it is equivalent to instance GPI9_INST.DOUT2[6]</Dynamic>
             <Navigation>BN132</Navigation>
             <Navigation>e:\work\wolf\baseboard\bld\..\src\gpi.v</Navigation>
@@ -6109,18 +6097,6 @@
             <Navigation>67</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Removing instance GPI0_INST.DOUT1[7],  because it is equivalent to instance GPI0_INST.DOUT1[6]</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>BN132 :&quot;e:\work\wolf\baseboard\bld\..\src\gpi.v&quot;:67:0:67:5|Removing instance GPI0_INST.DOUT1[6],  because it is equivalent to instance GPI0_INST.DOUT1[3]</Dynamic>
-            <Navigation>BN132</Navigation>
-            <Navigation>e:\work\wolf\baseboard\bld\..\src\gpi.v</Navigation>
-            <Navigation>67</Navigation>
-            <Navigation>0</Navigation>
-            <Navigation>67</Navigation>
-            <Navigation>5</Navigation>
-            <Navigation>Removing instance GPI0_INST.DOUT1[6],  because it is equivalent to instance GPI0_INST.DOUT1[3]</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
@@ -6245,18 +6221,6 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>BN132 :&quot;e:\work\wolf\baseboard\bld\..\src\gpi.v&quot;:79:0:79:5|Removing instance GPI0_INST.DOUT2[4],  because it is equivalent to instance GPI0_INST.DOUT2[2]</Dynamic>
-            <Navigation>BN132</Navigation>
-            <Navigation>e:\work\wolf\baseboard\bld\..\src\gpi.v</Navigation>
-            <Navigation>79</Navigation>
-            <Navigation>0</Navigation>
-            <Navigation>79</Navigation>
-            <Navigation>5</Navigation>
-            <Navigation>Removing instance GPI0_INST.DOUT2[4],  because it is equivalent to instance GPI0_INST.DOUT2[2]</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
             <Dynamic>BN132 :&quot;e:\work\wolf\baseboard\bld\..\src\gpi.v&quot;:79:0:79:5|Removing instance GPI0_INST.DOUT2[7],  because it is equivalent to instance GPI0_INST.DOUT2[6]</Dynamic>
             <Navigation>BN132</Navigation>
             <Navigation>e:\work\wolf\baseboard\bld\..\src\gpi.v</Navigation>
@@ -6265,18 +6229,6 @@
             <Navigation>79</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Removing instance GPI0_INST.DOUT2[7],  because it is equivalent to instance GPI0_INST.DOUT2[6]</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>BN132 :&quot;e:\work\wolf\baseboard\bld\..\src\gpi.v&quot;:79:0:79:5|Removing instance GPI0_INST.DOUT2[6],  because it is equivalent to instance GPI0_INST.DOUT2[3]</Dynamic>
-            <Navigation>BN132</Navigation>
-            <Navigation>e:\work\wolf\baseboard\bld\..\src\gpi.v</Navigation>
-            <Navigation>79</Navigation>
-            <Navigation>0</Navigation>
-            <Navigation>79</Navigation>
-            <Navigation>5</Navigation>
-            <Navigation>Removing instance GPI0_INST.DOUT2[6],  because it is equivalent to instance GPI0_INST.DOUT2[3]</Navigation>
         </Message>
         <Message>
             <ID>2019993</ID>
